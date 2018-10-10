@@ -172,10 +172,11 @@ contains
         n = n+1
         ig = i + grid%idg_offset
         ! surface temperature in Kelvin
-        o2x(ind%o2x_So_t, n) = ocn_public%t_surf(ig,jg) * grid%mask2dT(i,j)
-        o2x(ind%o2x_So_s, n) = ocn_public%s_surf(ig,jg) * grid%mask2dT(i,j)
-        o2x(ind%o2x_So_u, n) = ocn_public%u_surf(ig,jg) * grid%mask2dT(i,j)
-        o2x(ind%o2x_So_v, n) = ocn_public%v_surf(ig,jg) * grid%mask2dT(i,j)
+        o2x(ind%o2x_So_t, n)  = ocn_public%t_surf(ig,jg) * grid%mask2dT(i,j)
+        o2x(ind%o2x_So_s, n)  = ocn_public%s_surf(ig,jg) * grid%mask2dT(i,j)
+        o2x(ind%o2x_So_u, n)  = ocn_public%u_surf(ig,jg) * grid%mask2dT(i,j)
+        o2x(ind%o2x_So_v, n)  = ocn_public%v_surf(ig,jg) * grid%mask2dT(i,j)
+        o2x(ind%o2x_So_mr, n) = ocn_public%v_surf(ig,jg) * grid%mask2dT(i,j) ! TODO: pass the actual melt rate
         ! ocean melt and freeze potential (o2x_Fioo_q), W m-2
         if (ocn_public%frazil(ig,jg) > 0.0) then
           ! Frazil: change from J/m^2 to W/m^2
