@@ -427,6 +427,7 @@ subroutine ocn_run_mct( EClock, cdata_o, x2o_o, o2x_o)
   integer                   :: ocn_cpl_dt   !< one ocn coupling interval in seconds. (to be received from cesm)
   real (kind=8)             :: mom_cpl_dt   !< one ocn coupling interval in seconds. (internal)
   integer                   :: ncouple_per_day !< number of ocean coupled call in one day (non-dim)
+  logical                   :: atm_present  !< true if there is an atm component present
 
   ! reset shr logging to ocn log file:
   if (is_root_pe()) then
@@ -453,20 +454,19 @@ subroutine ocn_run_mct( EClock, cdata_o, x2o_o, o2x_o)
   ! With this change, MOM6 starts at the same date as the other components, and runs for the same
   ! duration as other components, unlike POP, which would have one missing interval due to ocean
   ! lag. MOM6 accounts for this lag by doubling the duration of the first coupling interval.
+  ! Note: this is done only if ATM is present (whether data or prognostic)
   if (firstCall) then
-
     runtype = get_runtype()
-    if (runtype /= "continue" .and. runtype /= "branch") then
+    call seq_infodata_GetData( glb%infodata, atm_present=atm_present )
 
-      if (debug .and. is_root_pe()) then
-        write(glb%stdout,*) 'doubling first interval duration!'
-      endif
+    if (runtype /= "continue" .and. runtype /= "branch" .and. atm_present) then
+      if (debug .and. is_root_pe()) write(glb%stdout,*) 'doubling first interval duration!'
 
       ! shift back the start time by one coupling interval (to align the start time with other components)
       time_start = time_start-coupling_timestep
       ! double the first coupling interval (to account for the missing coupling interval to due to lag)
       coupling_timestep = coupling_timestep*2
-    end if
+    endif
 
     firstCall = .false.
   end if
