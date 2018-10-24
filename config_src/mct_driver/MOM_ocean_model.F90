@@ -141,7 +141,8 @@ type, public ::  ocean_public_type
                          !! formation in the ocean.
     melt_potential => NULL(), & !< Accumulated heat used to melt sea ice (in W/m^2)
     area => NULL(), &    !< cell area of the ocean surface, in m2.
-    OBLD => NULL()       !< Ocean boundary layer depth, in m.
+    OBLD => NULL(), &    !< Ocean boundary layer depth, in m.
+    melt_rate  => NULL() !< melt_rate: basal melt rate in kg/m^2/s
   type(coupler_2d_bc_type) :: fields    !< A structure that may contain an
                                         !! array of named tracer-related fields.
   integer                  :: avg_kount !< Used for accumulating averages of this type.
@@ -735,6 +736,7 @@ subroutine initialize_ocean_public_type(input_domain, Ocean_sfc, diag, maskmap, 
             Ocean_sfc%area   (isc:iec,jsc:jec), &
             Ocean_sfc%OBLD   (isc:iec,jsc:jec), &
             Ocean_sfc%melt_potential(isc:iec,jsc:jec), &
+            Ocean_sfc%melt_rate(isc:iec,jsc:jec), &
             Ocean_sfc%frazil (isc:iec,jsc:jec))
 
   Ocean_sfc%t_surf  = 0.0  ! time averaged sst (Kelvin) passed to atmosphere/ice model
@@ -744,6 +746,7 @@ subroutine initialize_ocean_public_type(input_domain, Ocean_sfc, diag, maskmap, 
   Ocean_sfc%sea_lev = 0.0  ! time averaged thickness of top model grid cell (m) plus patm/rho0/grav
   Ocean_sfc%frazil  = 0.0  ! time accumulated frazil (J/m^2) passed to ice model
   Ocean_sfc%melt_potential  = 0.0  ! time accumulated melt potential (J/m^2) passed to ice model
+  Ocean_sfc%melt_rate = 0.0  ! melt_rate: basal melt rate in kg/m^2/s
   Ocean_sfc%OBLD    = 0.0  ! ocean boundary layer depth, in m
   Ocean_sfc%area    = 0.0
   Ocean_sfc%axes    = diag%axesT1%handles !diag axes to be used by coupler tracer flux diagnostics
@@ -815,6 +818,9 @@ subroutine convert_state_to_ocean_type(state, Ocean_sfc, G, patm, press_to_z)
       Ocean_sfc%frazil(i,j) = state%frazil(i+i0,j+j0)
     if (allocated(state%melt_potential)) &
       Ocean_sfc%melt_potential(i,j) = state%melt_potential(i+i0,j+j0)
+    !AA TODO: uncomment the following line and pass the melt rate here !!!!
+    !if (allocated(state%melt_rate)) &
+    !  Ocean_sfc%melt_rate(i,j) = state%melt_rate(i+i0,j+j0)
     if (allocated(state%Hml)) &
       Ocean_sfc%OBLD(i,j) = state%Hml(i+i0,j+j0)
   enddo ; enddo
