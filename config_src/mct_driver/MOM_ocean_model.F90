@@ -252,7 +252,8 @@ subroutine ocean_model_init(Ocean_sfc, OS, Time_init, Time_in, gas_fields_ocn, i
                          !! The actual depth over which melt potential is computed will
                          !! min(HFrz, OBLD), where OBLD is the boundary layer depth.
                          !! If HFrz <= 0 (default), melt potential will not be computed.
-  logical :: use_melt_pot!< If true, allocate melt_potential array
+  logical :: use_melt_pot  !< If true, allocate melt_potential array
+
 
 #include "version_variable.h"
   character(len=40)  :: mdl = "ocean_model_init"  !< This module's name.
@@ -353,6 +354,7 @@ subroutine ocean_model_init(Ocean_sfc, OS, Time_init, Time_in, gas_fields_ocn, i
                  "where OBLD is the boundary layer depth. If HFREEZE <= 0 (default), \n"//&
                  "melt potential will not be computed.", units="m", default=-1.0, do_not_log=.true.)
 
+
   if (HFrz .gt. 0.0) then
     use_melt_pot=.true.
   else
@@ -360,7 +362,8 @@ subroutine ocean_model_init(Ocean_sfc, OS, Time_init, Time_in, gas_fields_ocn, i
   endif
 
   call allocate_surface_state(OS%sfc_state, OS%grid, use_temperature, do_integrals=.true., &
-                              gas_fields_ocn=gas_fields_ocn, use_meltpot=use_melt_pot)
+                              gas_fields_ocn=gas_fields_ocn, use_meltpot=use_melt_pot, &
+                              use_ice_shelf=OS%use_ice_shelf)
 
   call surface_forcing_init(Time_in, OS%grid, param_file, OS%diag, &
                             OS%forcing_CSp, OS%restore_salinity, OS%restore_temp)
@@ -819,8 +822,8 @@ subroutine convert_state_to_ocean_type(state, Ocean_sfc, G, patm, press_to_z)
     if (allocated(state%melt_potential)) &
       Ocean_sfc%melt_potential(i,j) = state%melt_potential(i+i0,j+j0)
     !AA TODO: uncomment the following line and pass the melt rate here !!!!
-    !if (allocated(state%melt_rate)) &
-    !  Ocean_sfc%melt_rate(i,j) = state%melt_rate(i+i0,j+j0)
+    if (allocated(state%melt_rate)) &
+      Ocean_sfc%melt_rate(i,j) = state%melt_rate(i+i0,j+j0)
     if (allocated(state%Hml)) &
       Ocean_sfc%OBLD(i,j) = state%Hml(i+i0,j+j0)
   enddo ; enddo
