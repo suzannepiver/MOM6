@@ -42,6 +42,7 @@ type, public :: surface
                 !! used, that is compensated for in sea_lev.
     melt_potential, & !< instantaneous amount of heat that can be used to melt sea ice,
                       !! in J m-2. This is computed w.r.t. surface freezing temperature.
+    melt_rate, &   !< Sub-ice-shelf melt rate, in kg m-2 s-1.
     ocean_mass, &  !< The total mass of the ocean in kg m-2.
     ocean_heat, &  !< The total heat content of the ocean in C kg m-2.
     ocean_salt, &  !< The total salt content of the ocean in kgSalt m-2.
@@ -292,7 +293,7 @@ contains
 !> Allocates the fields for the surface (return) properties of
 !! the ocean model. Unused fields are unallocated.
 subroutine allocate_surface_state(sfc_state, G, use_temperature, do_integrals, &
-                                  gas_fields_ocn, use_meltpot)
+                                  gas_fields_ocn, use_meltpot, use_ice_shelf)
   type(ocean_grid_type), intent(in)    :: G                !< ocean grid structure
   type(surface),         intent(inout) :: sfc_state        !< ocean surface state type to be allocated.
   logical,     optional, intent(in)    :: use_temperature  !< If true, allocate the space for thermodynamic variables.
@@ -304,10 +305,11 @@ subroutine allocate_surface_state(sfc_state, G, use_temperature, do_integrals, &
                                               !! in the calculation of additional gas or other
                                               !! tracer fluxes, and can be used to spawn related
                                               !! internal variables in the ice model.
-  logical,     optional, intent(in)    :: use_meltpot      !< If true, allocate the space for melt potential
+  logical,     optional, intent(in)    :: use_meltpot   !< If true, allocate the space for melt potential
+  logical,     optional, intent(in)    :: use_ice_shelf !< If true, allocate the space for sub-ice-shelf melt rate
 
   ! local variables
-  logical :: use_temp, alloc_integ, use_melt_potential
+  logical :: use_temp, alloc_integ, use_melt_potential, ice_shelf
   integer :: is, ie, js, je, isd, ied, jsd, jed
   integer :: isdB, iedB, jsdB, jedB
 
@@ -318,6 +320,7 @@ subroutine allocate_surface_state(sfc_state, G, use_temperature, do_integrals, &
   use_temp = .true. ; if (present(use_temperature)) use_temp = use_temperature
   alloc_integ = .true. ; if (present(do_integrals)) alloc_integ = do_integrals
   use_melt_potential = .false. ; if (present(use_meltpot)) use_melt_potential = use_meltpot
+  ice_shelf = .false. ; if (present(use_ice_shelf)) ice_shelf = use_ice_shelf
 
   if (sfc_state%arrays_allocated) return
 
@@ -334,6 +337,10 @@ subroutine allocate_surface_state(sfc_state, G, use_temperature, do_integrals, &
 
   if (use_melt_potential) then
     allocate(sfc_state%melt_potential(isd:ied,jsd:jed)) ; sfc_state%melt_potential(:,:) = 0.0
+  endif
+
+  if (ice_shelf) then
+    allocate(sfc_state%melt_rate(isd:ied,jsd:jed)) ; sfc_state%melt_rate(:,:) = 0.0
   endif
 
   if (alloc_integ) then
@@ -360,6 +367,7 @@ subroutine deallocate_surface_state(sfc_state)
 
   if (.not.sfc_state%arrays_allocated) return
 
+  if (allocated(sfc_state%melt_rate)) deallocate(sfc_state%melt_rate)
   if (allocated(sfc_state%melt_potential)) deallocate(sfc_state%melt_potential)
   if (allocated(sfc_state%SST)) deallocate(sfc_state%SST)
   if (allocated(sfc_state%SSS)) deallocate(sfc_state%SSS)

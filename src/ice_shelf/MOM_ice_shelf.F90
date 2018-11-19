@@ -940,6 +940,10 @@ subroutine add_shelf_flux(G, CS, state, fluxes)
         fluxes%evap(i,j) = frac_area*ISS%water_flux(i,j)*CS%flux_factor
       endif
     endif
+    ! the following is used to pass melt rate (kg/(m^2 s)) to the MCT cap
+    ! so that CISM can use it
+    if (allocated(state%melt_rate)) &
+      state%melt_rate(i,j) =  frac_area*ISS%water_flux(i,j)*CS%flux_factor
 
     if (associated(fluxes%sens)) &
       fluxes%sens(i,j) = -frac_area*ISS%tflux_ocn(i,j)*CS%flux_factor
