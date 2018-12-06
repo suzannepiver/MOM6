@@ -176,14 +176,13 @@ end subroutine ocn_import
 !=======================================================================
 
 !> Maps outgoing ocean data to MCT attribute vector real array
-subroutine ocn_export(ind, ocn_public, grid, o2x, dt_int, ncouple_per_day)
+subroutine ocn_export(ind, ocn_public, grid, o2x, dt_int)
   type(cpl_indices_type),  intent(inout) :: ind        !< Structure with coupler indices and vectors
   type(ocean_public_type), intent(in)    :: ocn_public !< Ocean surface state
   type(ocean_grid_type),   intent(in)    :: grid       !< Ocean model grid
   real(kind=8),            intent(inout) :: o2x(:,:)   !< MCT outgoing bugger
   real(kind=8), intent(in)               :: dt_int     !< Amount of time over which to advance the
                                                        !! ocean (ocean_coupling_time_step), in sec
-  integer, intent(in)                    :: ncouple_per_day !< Number of ocean coupling calls per day
 
   ! Local variables
   real, dimension(grid%isd:grid%ied,grid%jsd:grid%jed) :: ssh !< Local copy of sea_lev with updated halo
@@ -219,7 +218,7 @@ subroutine ocn_export(ind, ocn_public, grid, o2x, dt_int, ncouple_per_day)
         o2x(ind%o2x_Fioo_q, n) = ocn_public%frazil(ig,jg) * grid%mask2dT(i,j) * I_time_int
       else
         ! Melt_potential: change from J/m^2 to W/m^2
-        o2x(ind%o2x_Fioo_q, n) = -ocn_public%melt_potential(ig,jg) * grid%mask2dT(i,j) * I_time_int !* ncouple_per_day
+        o2x(ind%o2x_Fioo_q, n) = -ocn_public%melt_potential(ig,jg) * grid%mask2dT(i,j) * I_time_int
         ! make sure Melt_potential is always <= 0
         if (o2x(ind%o2x_Fioo_q, n) > 0.0) o2x(ind%o2x_Fioo_q, n) = 0.0
       endif
