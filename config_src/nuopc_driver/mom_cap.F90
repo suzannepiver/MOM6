@@ -825,8 +825,8 @@ contains
     Time = set_date (YEAR,MONTH,DAY,HOUR,MINUTE,SECOND)
 
     ! rsd need to figure out how to get this without share code
-    !call shr_nuopc_get_component_instance(gcomp, inst_suffix, inst_index)
-    !inst_name = "OCN"//trim(inst_suffix)
+    ! call get_component_instance(gcomp, inst_suffix, inst_index)
+    ! inst_name = "OCN"//trim(inst_suffix)
 
     ! reset shr logging to my log file
     if (is_root_pe()) then
