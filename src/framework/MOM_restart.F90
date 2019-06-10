@@ -1306,6 +1306,7 @@ function open_restart_units(filename, directory, G, CS, units, file_paths, &
     enddo
 
     if ((fname(1:1)=='r') .and. ( len_trim(fname) == 1)) then
+
       err = 0
       if (num_restart > 0) err = 1 ! Avoid going through the file list twice.
       do while (err == 0)
@@ -1358,27 +1359,48 @@ function open_restart_units(filename, directory, G, CS, units, file_paths, &
           err = 1 ; exit
         endif
       enddo ! while (err == 0) loop
-    else
-      filepath = trim(directory)//trim(fname)
-      inquire(file=filepath, exist=fexists)
-      if (.not. fexists) filepath = trim(filepath)//".nc"
 
-      inquire(file=filepath, exist=fexists)
-      if (fexists) then
-        if (present(units)) &
-          call open_file(units(n), trim(filepath), READONLY_FILE, NETCDF_FILE, &
-                       threading = MULTIPLE, fileset = SINGLE_FILE)
-        if (present(global_files)) global_files(n) = .true.
-        if (present(file_paths)) file_paths(n) = filepath
-        n = n + 1
-        if (is_root_pe() .and. (present(units))) &
-          call MOM_error(NOTE,"MOM_restart: MOM run restarted using : "//trim(filepath))
-      else
-        if (present(units)) &
-          call MOM_error(WARNING,"MOM_restart: Unable to find restart file : "//trim(filepath))
-      endif
+    else
+
+      err = 0
+      if (num_restart > 0) err = 1 ! Avoid going through the file list twice.
+      do while (err == 0)
+
+         ! Determine filename to open
+         filepath = trim(directory)//trim(fname)
+         length = len_trim(filepath)
+         if (num_restart > 0) then
+            if (num_restart < 10) then
+               write(suffix,'("_",I1)') num_restart
+            else
+               write(suffix,'("_",I2)') num_restart
+            endif
+            if (num_restart > 0) filepath = trim(filepath(1:length-3)) // trim(suffix) // '.nc'
+         end if
+         num_restart = num_restart + 1
+
+         ! Now open the target file
+         inquire(file=filepath, exist=fexists)
+         if (fexists) then
+            if (present(units)) then
+               call open_file(units(n), trim(filepath), READONLY_FILE, NETCDF_FILE, &
+                    threading = MULTIPLE, fileset = SINGLE_FILE)
+            end if
+            if (present(global_files)) global_files(n) = .true.
+            if (present(file_paths)) file_paths(n) = filepath
+            n = n + 1
+            if (is_root_pe() .and. (present(units))) &
+                 call MOM_error(NOTE, "MOM_restart: MOM run restarted using : "//trim(filepath))
+         else
+            if (present(units)) then
+               call MOM_error(WARNING,"MOM_restart: Unable to find restart file : "//trim(filepath))
+            end if
+            err = 1 ; exit
+         endif
+      enddo ! while (err == 0) loop
 
     endif
+
   enddo ! while (start_char < strlen(filename)) loop
   num_files = n-1
 
