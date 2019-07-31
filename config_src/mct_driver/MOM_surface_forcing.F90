@@ -411,7 +411,7 @@ subroutine convert_IOB_to_fluxes(IOB, fluxes, index_bounds, Time, G, US, CS, &
   endif
 
   ! obtain fluxes from IOB; note the staggering of indices
-  i0 = 0; j0 = 0
+  i0 = is - isc_bnd ; j0 = js - jsc_bnd
   do j=js,je ; do i=is,ie
     ! liquid precipitation (rain)
     if (associated(IOB%lprec)) &
@@ -623,8 +623,7 @@ subroutine convert_IOB_to_forces(IOB, forces, index_bounds, Time, G, US, CS)
   isd  = G%isd   ; ied  = G%ied    ; jsd  = G%jsd   ; jed  = G%jed
   IsdB = G%IsdB  ; IedB = G%IedB   ; JsdB = G%JsdB  ; JedB = G%JedB
   isr = is-isd+1 ; ier  = ie-isd+1 ; jsr = js-jsd+1 ; jer = je-jsd+1
- !i0 = is - isc_bnd ; j0 = js - jsc_bnd
-  i0 = 0; j0 = 0
+  i0 = is - isc_bnd ; j0 = js - jsc_bnd
 
   Irho0 = 1.0/CS%Rho0
 
