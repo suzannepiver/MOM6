@@ -1,0 +1,13 @@
+digraph "mom_spatial_means::adjust_area_mean_to_zero"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_spatial_means::\ladjust_area_mean_to_zero",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Adjust 2d array such that area mean is zero without moving the zero contour."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_surface_forcing\l_mct::convert_iob_to\l_fluxes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing__mct.html#aa3c9e5f049ed451d4cd519e820a42169",tooltip="This subroutine translates the Ice_ocean_boundary_type into a MOM thermodynamic forcing type,..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_surface_forcing\l_nuopc::convert_iob\l_to_fluxes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing__nuopc.html#af81080e103477c19da28fa632eca7fe3",tooltip="This subroutine translates the Ice_ocean_boundary_type into a MOM thermodynamic forcing type,..."];
+}

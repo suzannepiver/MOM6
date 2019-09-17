@@ -1,0 +1,48 @@
+digraph "mom_diag_mediator::query_averaging_enabled"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_diag_mediator::\lquery_averaging_enabled",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Call this subroutine to determine whether the averaging is currently enabled. .true...."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_lateral_mixing\l_coeffs::calc_resoln\l_function",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#a8652c5651033573cfd6f09b789d64713",tooltip="Calculates and stores the non-dimensional resolution functions."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom::step_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a972730596703580d4646320f2c9085a5",tooltip="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom::step_offline",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#ade4f7557fcda73ffc12284d3cecf4182",tooltip="step_offline is the main driver for running tracers offline in MOM6. This has been primarily develope..."];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_ocean_model_mct\l::update_ocean_model",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__mct.html#a422ba42ca07c0bf28ec5113aba4f1e96",tooltip="update_ocean_model uses the forcing in Ice_ocean_boundary to advance the ocean model's state from the..."];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_ocean_model_nuopc\l::update_ocean_model",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__nuopc.html#a02a87b4944febcc6828c55e8e4375e62",tooltip="update_ocean_model uses the forcing in Ice_ocean_boundary to advance the ocean model's state from the..."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_lateral_mixing\l_coeffs::calc_slope\l_functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#a90d17b7e05aab37752c8d9061de29170",tooltip="Calculates and stores functions of isopycnal slopes, e.g. Sx, Sy, S*N, mostly used in the Visbeck et ..."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_lateral_mixing\l_coeffs::calc_visbeck\l_coeffs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#ae7965329069235d5ae10f0700504ce20",tooltip="Calculates factors used when setting diffusivity coefficients similar to Visbeck et al."];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom_forcing_type::forcing\l_diagnostics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__forcing__type.html#a44a9dacaf67968ab9a0e625c4d890680",tooltip="Offer buoyancy forcing fields for diagnostics for those fields registered as part of register_forcing..."];
+  Node10 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="mom_forcing_type::mech\l_forcing_diags",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__forcing__type.html#a82044f26f452bedcb3fce9a02a636934",tooltip="Offer mechanical forcing fields for diagnostics for those fields registered as part of register_forci..."];
+  Node11 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="mom_opacity::set_opacity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__opacity.html#aefadc7465f74c0cab731cf1adf5f3a57",tooltip="This sets the opacity of sea water based based on one of several different schemes."];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="mom_diabatic_driver\l::diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a9005de9f3ad26b32de53e3cd9826b9b9",tooltip="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu..."];
+  Node12 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="mom_diabatic_driver\l::legacy_diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a9cdc6d13fb212778da2d58f286528fde",tooltip="Imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentum and tracers us..."];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="mom::step_mom_thermo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a1a81ea749a309f10f5c3c7a17efa3606",tooltip="MOM_step_thermo orchestrates the thermodynamic time stepping and vertical remapping,..."];
+  Node15 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="mom_offline_main::offline\l_diabatic_ale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__offline__main.html#aaef35c02f93931567c41ae8bc0544bdd",tooltip="The vertical/diabatic driver for offline tracers. First the eatr/ebtr associated with the interpolate..."];
+}

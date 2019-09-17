@@ -1,0 +1,19 @@
+digraph "mom_ocean_model_mct::convert_state_to_ocean_type"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_ocean_model_mct\l::convert_state_to_ocean_type",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine translates the coupler's ocean_data_type into MOM's surface state variable...."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_ocean_model_mct\l::ocean_model_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__mct.html#ab85c4a8f30fcf7782a514a3fc66165a2",tooltip="ocean_model_init initializes the ocean model, including registering fields for restarts and reading r..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ocn_comp_mct::ocean\l_model_init_sfc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceocn__comp__mct.html#a5f19e1874046a092e4773c541467593b",tooltip="It has to be separate from the ocean_initialization call because the coupler module allocates the spa..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ocn_comp_mct::ocn_init_mct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceocn__comp__mct.html#adfe794cbbae40df4bdb9fcec95d4ff9c",tooltip="This subroutine initializes MOM6."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_ocean_model_mct\l::ocean_model_init_sfc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__mct.html#a9974d833c3841e52263348f33cb9bba1",tooltip="This subroutine extracts the surface properties from the ocean's internal state and stores them in th..."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_ocean_model_mct\l::update_ocean_model",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__mct.html#a422ba42ca07c0bf28ec5113aba4f1e96",tooltip="update_ocean_model uses the forcing in Ice_ocean_boundary to advance the ocean model's state from the..."];
+}

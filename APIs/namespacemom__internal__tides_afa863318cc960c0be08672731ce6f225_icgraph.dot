@@ -1,0 +1,15 @@
+digraph "mom_internal_tides::ppm_reconstruction_x"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_internal_tides\l::ppm_reconstruction_x",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Calculates left/right edge values for PPM reconstruction in x-direction."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_internal_tides\l::propagate_x",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__internal__tides.html#a487e6cad7cea4c5095f198c236628d6d",tooltip="Propagates the internal wave energy in the logical x-direction."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_internal_tides\l::propagate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__internal__tides.html#af70118539fe63af49c203de9bdfafe8a",tooltip="Propagates internal waves at a single frequency."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_internal_tides\l::propagate_int_tide",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__internal__tides.html#aeeeea20ff7fe971846b7539d377f4389",tooltip="Calls subroutines in this file that are needed to refract, propagate, and dissipate energy density of..."];
+}

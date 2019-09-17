@@ -1,0 +1,13 @@
+digraph "idealized_hurricane::scm_idealized_hurricane_wind_forcing"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="idealized_hurricane\l::scm_idealized_hurricane\l_wind_forcing",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine is primarily needed as a legacy for reproducing answers. It is included as an additio..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_forcing_type::allocate\l_mech_forcing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__forcing__type.html#a7a9bb1457a8615a3e0b6e38f8d3e32bf",tooltip="Conditionally allocate fields within the mechanical forcing type."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_forcing_type::myalloc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__forcing__type.html#aa9a495456715378fe3dd5fb2bd21eec8",tooltip="Allocates and zeroes-out array."];
+}

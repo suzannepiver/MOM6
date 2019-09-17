@@ -1,0 +1,22 @@
+digraph "mom_remapping::integraterecononinterval"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_remapping::integraterecononinterval",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Integrate the reconstructed column profile over a single cell."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_remapping::remapbydeltaz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__remapping.html#ad41da2080e01eaed0b189079801b3c9b",tooltip="Remaps column of values u0 on grid h0 to implied grid h1 where the interfaces of h1 differ from those..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_remapping::remapping\l_unit_tests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__remapping.html#a5849f564453d5ed76fb4feffd41eca26",tooltip="Runs unit tests on remapping functions. Should only be called from a single/root thread Returns True ..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_unit_tests::unit\l_tests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__unit__tests.html#a57645db02bc734c32de50d028ef906ac",tooltip="Calls unit tests for other modules. Note that if a unit test returns true, a FATAL error is triggered..."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom::initialize_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a96708b16215666edbfa5b46228f3a200",tooltip="Initialize MOM, including memory allocation, setting up parameters and diagnostics,..."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_remapping::remapbyprojection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__remapping.html#add104225e8ea85f4e6a324da6be3dba2",tooltip="Remaps column of values u0 on grid h0 to grid h1 by integrating over the projection of each h1 cell o..."];
+  Node7 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

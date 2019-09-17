@@ -1,0 +1,20 @@
+digraph "mom_ocean_model_nuopc::ocean_public_type"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="mom_ocean_model_nuopc\l::ocean_public_type",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This type is used for communication with other components via the FMS coupler. The element names and ..."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" maskmap\nis_ocean_pe" ,fontname="Helvetica"];
+  Node2 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fields" ,fontname="Helvetica"];
+  Node3 [label="coupler_2d_bc_type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" domain" ,fontname="Helvetica"];
+  Node4 [label="domain2d",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" instance_name" ,fontname="Helvetica"];
+  Node5 [label="character(len=32)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" v_surf\nu_surf\nt_surf\ns_surf\nmelt_potential\nfrazil\nobld\narea\nsea_lev" ,fontname="Helvetica"];
+  Node6 [label="real",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" axes\npelist\navg_kount\nstagger" ,fontname="Helvetica"];
+  Node7 [label="integer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

@@ -1,0 +1,23 @@
+digraph "mom_ale::ale_update_regrid_weights"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_ale::ale_update\l_regrid_weights",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Updates the weights for time filtering the new grid generated in regridding."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_ale::ale_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ale.html#adea2f311b77b5bc6adc199ed6d82135e",tooltip="Takes care of (1) building a new grid and (2) remapping all variables between the old grid and the ne..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_ale::ale_main_offline",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ale.html#a5a39781fe9a087c4ab8b4b2ea86ef05c",tooltip="Takes care of (1) building a new grid and (2) remapping all variables between the old grid and the ne..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_offline_main::offline\l_advection_ale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__offline__main.html#ae85546d26ceb447742abe3c528cad2d7",tooltip="3D advection is done by doing flux-limited nonlinear horizontal advection interspersed with an ALE re..."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_ale::ale_regrid\l_accelerated",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ale.html#aaa82975639f59d30c233567cd9ef19c7",tooltip="For a state-based coordinate, accelerate the process of regridding by repeatedly applying the grid ca..."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_state_initialization\l::mom_initialize_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__state__initialization.html#a81503d4f1855cb185f122d6314e4f06c",tooltip="Initialize temporally evolving fields, either as initial conditions or by reading them from a restart..."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom::initialize_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a96708b16215666edbfa5b46228f3a200",tooltip="Initialize MOM, including memory allocation, setting up parameters and diagnostics,..."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+}

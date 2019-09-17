@@ -1,0 +1,11 @@
+digraph "mom_ocean_model_nuopc::initialize_ocean_public_type"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_ocean_model_nuopc\l::initialize_ocean_public_type",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Initialize the public ocean type."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_ocean_model_nuopc\l::ocean_model_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__nuopc.html#a7682efcc4c80e04e7e3d1f3ca9b123f7",tooltip="ocean_model_init initializes the ocean model, including registering fields for restarts and reading r..."];
+}

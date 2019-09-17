@@ -1,0 +1,11 @@
+digraph "mom_eos_nemo::calculate_density_derivs_array_nemo"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_eos_nemo::calculate\l_density_derivs_array_nemo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="For a given thermodynamic state, calculate the derivatives of density with conservative temperature a..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_eos_nemo::calculate\l_density_derivs_scalar_nemo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__eos__nemo.html#a07b8b3637c4d692b17a97c1e58dddbf7",tooltip="Wrapper to calculate_density_derivs_array for scalar inputs."];
+}

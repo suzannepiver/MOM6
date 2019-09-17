@@ -1,0 +1,14 @@
+digraph "mom_barotropic::find_uhbt"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_barotropic::find_uhbt",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The function find_uhbt determines the zonal transport for a given velocity."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_barotropic::apply\l_velocity_obcs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#a1f34ad960c893916f0703db07badc57c",tooltip="The following 4 subroutines apply the open boundary conditions. This subroutine applies the open boun..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_barotropic::btstep",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#a1468df372a5d1dcb95e0b35d782895de",tooltip="This subroutine time steps the barotropic equations explicitly. For gravity waves,..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

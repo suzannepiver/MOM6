@@ -1,0 +1,11 @@
+digraph "mom_diag_mediator::diag_mediator_end"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_diag_mediator::\ldiag_mediator_end",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_diag_mediator::\ldiag_grid_storage_end",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a4f82f684f05d581ea5b62a9c62a54af3",tooltip="Deallocates the fields in the remapping fields container."];
+}

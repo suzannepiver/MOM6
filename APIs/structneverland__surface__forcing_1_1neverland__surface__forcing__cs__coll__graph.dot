@@ -1,0 +1,16 @@
+digraph "neverland_surface_forcing::neverland_surface_forcing_cs"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="neverland_surface_forcing\l::neverland_surface_forcing_cs",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This control structure should be used to store any run-time variables associated with the Neverland f..."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" restorebuoy\nfirst_call\nuse_temperature" ,fontname="Helvetica"];
+  Node2 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" inputdir" ,fontname="Helvetica"];
+  Node3 [label="character(len=200)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" diag" ,fontname="Helvetica"];
+  Node4 [label="diag_ctrl",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" buoy_restore\nflux_const\nrho0\ng_earth" ,fontname="Helvetica"];
+  Node5 [label="real",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

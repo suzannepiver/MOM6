@@ -1,0 +1,40 @@
+digraph "mom::step_mom_dynamics"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom::step_mom_dynamics",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Time step the ocean dynamics, including the momentum and continuity equations."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_error_handler::\lcalltree_waypoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a34a02e601a60f03cb97a72fe25a32853",tooltip="Writes a message about reaching a milestone if call tree reporting is active."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_error_handler::\lis_root_pe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71",tooltip="This returns .true. if the current PE is the root PE."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_meke::step_forward_meke",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__meke.html#a5f752f097ddeba7071e1703110e51bc2",tooltip="Integrates forward-in-time the MEKE eddy energy equation. See MEKE equations."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_meke::meke_equilibrium",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__meke.html#a0ef9a8bcdf705b544db9b8c28a5e6a56",tooltip="Calculates the equilibrium solutino where the source depends only on MEKE diffusivity and there is no..."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_meke::meke_lengthscales_0d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__meke.html#a94cd50f776e4a1af3f865a2bcdd5fbf9",tooltip="Calculates the eddy mixing length scale and  and  functions that are ratios of either bottom or barot..."];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_meke::meke_lengthscales",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__meke.html#a8180d5d0cacf48bcbdffead9e6a06efd",tooltip="Calculates the eddy mixing length scale and  and  functions that are ratios of either bottom or barot..."];
+  Node7 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_error_handler::\lmom_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67",tooltip="This provides a convenient interface for writing an mpp_error message with run-time filter based on a..."];
+  Node8 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_thickness_diffuse\l::thickness_diffuse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__thickness__diffuse.html#a8a538b778a567f489bfd9c5eadeeebef",tooltip="Calculates thickness diffusion coefficients and applies thickness diffusion to layer thicknesses,..."];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom_thickness_diffuse\l::add_detangling_kh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__thickness__diffuse.html#ab6206370a3f642ad57c63b6e268ee0fb",tooltip="Modifies thickness diffusivities to untangle layer structures."];
+  Node9 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="mom_diag_mediator::\ldiag_update_remap_grids",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a2e9db121a293f242f5a42e9d16d0d2e4",tooltip="Build/update vertical grids for diagnostic remapping."];
+  Node11 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="mom_thickness_diffuse\l::thickness_diffuse_full",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__thickness__diffuse.html#ae9909642254fcf0160afe46997e10c30",tooltip="Calculates parameterized layer transports for use in the continuity equation. Fluxes are limited to g..."];
+  Node12 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="mom_thickness_diffuse\l::streamfn_solver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__thickness__diffuse.html#a52d5fe57d53414fdc05f669723c9774e",tooltip="Tridiagonal solver for streamfunction at interfaces."];
+  Node12 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="mom_thickness_diffuse\l::vert_fill_ts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__thickness__diffuse.html#aff6aa879773518e476ed0a603a1a301e",tooltip="Fills tracer values in massless layers with sensible values by diffusing vertically with a (small) co..."];
+}

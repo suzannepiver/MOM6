@@ -1,0 +1,33 @@
+digraph "dyed_obc_tracer::register_dyed_obc_tracer"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="dyed_obc_tracer::register\l_dyed_obc_tracer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Register tracer fields and subroutines to be used with MOM."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="atmos_ocean_fluxes\l_mod::aof_set_coupler_flux",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceatmos__ocean__fluxes__mod.html#a1bd0443a803dd443bd7a4f24dae28e13",tooltip="This subroutine duplicates an interface used by the FMS coupler, but only returns a value of -1...."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_error_handler::\lmom_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67",tooltip="This provides a convenient interface for writing an mpp_error message with run-time filter based on a..."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_error_handler::\lis_root_pe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71",tooltip="This returns .true. if the current PE is the root PE."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_tracer_registry\l::register_tracer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__registry.html#a97a70989bd0318f51d90c2fc6f87c6f5",tooltip="This subroutine registers a tracer to be advected and laterally diffused."];
+  Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_io::query_vardesc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__io.html#aa583d22dfaf16e3157b2741d838f5240",tooltip="This routine queries vardesc."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_io::safe_string_copy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__io.html#ac4bc408e8b38dbd669842753f26ebf88",tooltip="Copies a string."];
+  Node7 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_tracer_registry\l::tracer_registry_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__registry.html#a452937bf1f9d01a47d1a80793e317b33",tooltip="Initialize the tracer registry."];
+  Node8 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_io::var_desc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__io.html#a09be50ad112d6bc134d06d82fcbe1fdc",tooltip="Returns a vardesc type whose elements have been filled with the provided fields. The argument name is..."];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom_io::modify_vardesc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__io.html#a0dff28e4952f43175f84cd9cdcda9837",tooltip="This routine modifies the named elements of a vardesc type. All arguments are optional,..."];
+  Node10 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

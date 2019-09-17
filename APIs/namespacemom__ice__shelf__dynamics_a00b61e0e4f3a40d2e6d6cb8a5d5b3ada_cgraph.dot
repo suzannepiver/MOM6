@@ -1,0 +1,29 @@
+digraph "mom_ice_shelf_dynamics::ice_shelf_advect"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_ice_shelf_dynamics\l::ice_shelf_advect",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine takes the velocity (on the Bgrid) and timesteps h_t = - div (uh) once...."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_ice_shelf_dynamics\l::calve_to_mask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf__dynamics.html#a5c1d3896958689e3bd2086b539d2b3bc",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_ice_shelf_dynamics\l::ice_shelf_advect_thickness_x",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf__dynamics.html#a6dd0f5659b10ce490b8074fa7b1e7ef1",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_ice_shelf_dynamics\l::slope_limiter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf__dynamics.html#a0e3d8eb91b7cbea4bb6b5063f5b1aada",tooltip="used for flux limiting in advective subroutines Van Leer limiter (source: Wikipedia)"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_ice_shelf_dynamics\l::ice_shelf_advect_thickness_y",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf__dynamics.html#a6deb62e779d364f4031c4dc514606042",tooltip=" "];
+  Node5 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_ice_shelf_dynamics\l::ice_shelf_min_thickness_calve",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf__dynamics.html#a71ba9a76c9d137d14964cebc7c835b5a",tooltip="Apply a very simple calving law using a minimum thickness rule."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_ice_shelf_dynamics\l::shelf_advance_front",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf__dynamics.html#aa83d53e0d36750d4ed2c7a9f0b6d491d",tooltip=" "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_error_handler::\lis_root_pe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71",tooltip="This returns .true. if the current PE is the root PE."];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_error_handler::\lmom_mesg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a1c462df7b61f1296407b4af51dfeceab",tooltip="This provides a convenient interface for writing an informative comment."];
+  Node9 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom_ice_shelf_dynamics\l::update_velocity_masks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf__dynamics.html#a4f87da4ad4dafef238d6f55a4c0d9d8d",tooltip=" "];
+}

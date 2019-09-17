@@ -1,0 +1,17 @@
+digraph "mom_diag_mediator::define_axes_group"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_diag_mediator::\ldefine_axes_group",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Defines a group of \"axes\" from list of handles."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_internal_tides\l::internal_tides_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__internal__tides.html#a48431ac355c6fa3de7548bfdec620eb0",tooltip="This subroutine initializes the internal tides module."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_diabatic_driver\l::diabatic_driver_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a51d273bae7e5d2217fa5498620532888",tooltip="This routine initializes the diabatic driver module."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_diag_mediator::\lset_axes_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a76c9267c7744e3573f78afbaa0b716a5",tooltip="Sets up diagnostics axes."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_oda_driver_mod\l::init_oda",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__oda__driver__mod.html#aaaf67b8d0e0db3ba3dfe09e24d2b8b24",tooltip="initialize First_guess (prior) and Analysis grid information for all ensemble members"];
+}

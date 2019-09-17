@@ -1,0 +1,11 @@
+digraph "mom_barotropic::register_barotropic_restarts"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_barotropic::register\l_barotropic_restarts",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine is used to register any fields from MOM_barotropic.F90 that should be written to or r..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_dynamics_split\l_rk2::register_restarts\l_dyn_split_rk2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__dynamics__split__rk2.html#a9f889b82fd5ed29a854da99d3c929366",tooltip="This subroutine sets up any auxiliary restart variables that are specific to the unsplit time steppin..."];
+}

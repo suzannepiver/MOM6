@@ -1,0 +1,58 @@
+digraph "mom_grid_initialize::set_grid_metrics"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_grid_initialize\l::set_grid_metrics",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="set_grid_metrics is used to set the primary values in the model's horizontal grid...."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_error_handler::\lcalltree_enter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a9cda07a87815f0e5594066162b4345c3",tooltip="Writes a message about entering a subroutine if call tree reporting is active."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_error_handler::\lis_root_pe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71",tooltip="This returns .true. if the current PE is the root PE."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_error_handler::\lcalltree_leave",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a88ea67781e2ed9b73ab7eac8ea5e8578",tooltip="Writes a message about leaving a subroutine if call tree reporting is active."];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_grid_initialize\l::grid_metrics_chksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#aaa2e124bccd43d4f8735c4ef8e07f287",tooltip="grid_metrics_chksum performs a set of checksums on metrics on the grid for debugging."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_dyn_horgrid::set\l_derived_dyn_horgrid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__dyn__horgrid.html#aefa448039e24b26fe06f9251848b6aac",tooltip="set_derived_dyn_horgrid calculates metric terms that are derived from other metrics."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_dyn_horgrid::adcroft\l_reciprocal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__dyn__horgrid.html#aa6579f50769698067defbc3c676e0191",tooltip="Adcroft_reciprocal(x) = 1/x for |x|>0 or 0 for x=0."];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_grid_initialize\l::set_grid_metrics_cartesian",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a4f9a9f748316e1edd893da9c44cb940e",tooltip="Calculate the values of the metric terms for a Cartesian grid that might be used and save them in arr..."];
+  Node8 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_grid_initialize\l::set_grid_metrics_from\l_mosaic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a59e71c4235b01cf3ad4fb6252ef74248",tooltip="Sets the grid metrics from a mosaic file."];
+  Node9 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom_grid_initialize\l::extrapolate_metric",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#ac78daa312636b0ef9a93694901b5c705",tooltip="Extrapolates missing metric data into all the halo regions."];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="mom_grid_initialize\l::set_grid_metrics_mercator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#ac37d98379b33a9e95d0bbffc1d7a730f",tooltip="Calculate the values of the metric terms that might be used and save them in arrays."];
+  Node11 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="mom_grid_initialize::dl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#aac9e8e21e95ba01e853569e3060ee8d3",tooltip="This function returns the contribution from the line integral along one of the four sides of a cell f..."];
+  Node11 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="mom_grid_initialize\l::ds_di",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a5a50815c6d1d0948dfbae076da654b94",tooltip="This function returns the grid spacing in the logical x direction."];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="mom_grid_initialize\l::dx_di",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#afa76ec84052508b78fde53cd6ed70161",tooltip="This function calculates and returns the value of dx/di, where x is the longitude in Radians,..."];
+  Node11 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="mom_grid_initialize\l::ds_dj",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#aaa3a376606d5067107c3a43beb6f8032",tooltip="This function returns the grid spacing in the logical y direction."];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="mom_grid_initialize\l::dy_dj",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#aff493c70cca560bfefcdbfabdf778656",tooltip="This subroutine calculates and returns the value of dy/dj, where y is the latitude in Radians,..."];
+  Node11 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="mom_grid_initialize\l::find_root",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a25cb0001f061ef10b90e637f98ed9fcc",tooltip="This subroutine finds and returns the value of y at which the monotonically increasing function fn ta..."];
+  Node11 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="mom_grid_initialize\l::int_di_dx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#aee53e3cf4937fa86949aa376d5f3d82a",tooltip="This function calculates and returns the integral of the inverse of dx/di to the point x,..."];
+  Node11 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="mom_grid_initialize\l::int_dj_dy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a8ed056787130f21f4b9c1bc81bd60c50",tooltip="This subroutine calculates and returns the integral of the inverse of dy/dj to the point y,..."];
+  Node1 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="mom_grid_initialize\l::set_grid_metrics_spherical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a3ede1d607f09115204c0ea0fbde5e9f8",tooltip="Calculate the values of the metric terms that might be used and save them in arrays."];
+  Node20 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,23 @@
+digraph "mom_open_boundary::segment_tracer_registry_init"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_open_boundary::\lsegment_tracer_registry_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Initialize the segment tracer registry."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_open_boundary::\lregister_segment_tracer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__open__boundary.html#a5d5843dd1a4e1475f69b5eb2c5b0197d",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="dome_initialization\l::dome_set_obc_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedome__initialization.html#a7f1f259541709210b38665ea779e623c",tooltip="This subroutine sets the properties of flow at open boundary conditions. This particular example is f..."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="dyed_obcs_initialization\l::dyed_obcs_set_obc_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedyed__obcs__initialization.html#a46b0e1f06662e2a74b9912114ed0ebcb",tooltip="This subroutine sets the dye properties at open boundary conditions."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_state_initialization\l::mom_initialize_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__state__initialization.html#a81503d4f1855cb185f122d6314e4f06c",tooltip="Initialize temporally evolving fields, either as initial conditions or by reading them from a restart..."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom::initialize_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a96708b16215666edbfa5b46228f3a200",tooltip="Initialize MOM, including memory allocation, setting up parameters and diagnostics,..."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_open_boundary::\lregister_temp_salt_segments",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__open__boundary.html#a0459cfc5b4e4115bde6ada1dd7c25139",tooltip=" "];
+}

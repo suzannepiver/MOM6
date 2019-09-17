@@ -1,0 +1,25 @@
+digraph "mom_open_boundary::setup_u_point_obc"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_open_boundary::\lsetup_u_point_obc",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Parse an OBC_SEGMENT_%%% string starting with \"I=\" and configure placement and type of OBC accordingl..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_open_boundary::\lallocate_obc_segment_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__open__boundary.html#aa7f532a65dd8ae4db981f2ef4791fc56",tooltip="Allocate segment data fields."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_error_handler::\lmom_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67",tooltip="This provides a convenient interface for writing an mpp_error message with run-time filter based on a..."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_error_handler::\lis_root_pe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71",tooltip="This returns .true. if the current PE is the root PE."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_open_boundary::\lparse_segment_str",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__open__boundary.html#a0eb361009a2dddf3ad9a24d0d7223898",tooltip="Parse an OBC_SEGMENT_%%% string."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_string_functions\l::extract_word",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__string__functions.html#aad76dee92b69dab4488da049fe11cdb8",tooltip="Returns the string corresponding to the nth word in the argument or \"\" if the string is not long enou..."];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="interpret_int_expr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90",tooltip=" "];
+  Node7 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_open_boundary::\lsetup_segment_indices",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__open__boundary.html#ac357a1fb341db3aaffdfeca2eacab60b",tooltip="Define indices for segment and store in hor_index_type using global segment bounds corresponding to q..."];
+}

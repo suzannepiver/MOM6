@@ -1,0 +1,11 @@
+digraph "polynomial_functions::first_derivative_polynomial"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="polynomial_functions\l::first_derivative_polynomial",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Calculates the first derivative of a polynomial evaluated at a point x."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_neutral_diffusion\l_aux::refine_nondim_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__neutral__diffusion__aux.html#ad302934829676e3e00fad2f704fee5e4",tooltip="Use root-finding methods to find where dRho = 0, based on the equation of state and the polynomial re..."];
+}

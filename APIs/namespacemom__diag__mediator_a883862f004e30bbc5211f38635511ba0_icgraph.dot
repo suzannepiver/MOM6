@@ -1,0 +1,54 @@
+digraph "mom_diag_mediator::initialize_diag_type"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_diag_mediator::\linitialize_diag_type",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Initializes a diag_type (used after allocating new memory)"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_diag_mediator::\ldiag_mediator_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a3c99ff49de6d5e43f0d1bba79290eb71",tooltip="diag_mediator_init initializes the MOM diag_mediator and opens the available diagnostics file,..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_diag_mediator::\lget_new_diag_id",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a3f7442639213320f7429e2288a79fda2",tooltip="Returns a new diagnostic id, it may be necessary to expand the diagnostics array."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_diag_mediator::\ladd_diag_to_list",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a8415b33a337b1fbc7535688eca85ab37",tooltip="Create a diagnostic type and attached to list."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_diag_mediator::\lregister_diag_field\l_expand_cmor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#ae50b35cba800ac5fd8975929fd2b9f4a",tooltip="Returns True if either the native or CMOr version of the diagnostic were registered...."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_diag_mediator::\lregister_diag_field",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#ada491446bf7216fe101e6b0f6ed551e1",tooltip="Returns the \"diag_mediator\" handle for a group (native, CMOR, z-coord, ...) of diagnostics derived fr..."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_coriolisadv::coriolisadv_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coriolisadv.html#ad3ce07f23ce7b484a5a9e0c0abe8b1cd",tooltip="Initializes the control structure for coriolisadv_cs."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_dynamics_split\l_rk2::initialize_dyn\l_split_rk2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__dynamics__split__rk2.html#aa9a0a027754d3ca2d49f3993bc64b1b7",tooltip="This subroutine initializes all of the variables that are used by this dynamic core,..."];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_dynamics_unsplit\l::initialize_dyn_unsplit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__dynamics__unsplit.html#a190363f34b9f08eb7965356876dbddc4",tooltip="Initialize parameters and allocate memory associated with the unsplit dynamics module."];
+  Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom_dynamics_unsplit\l_rk2::initialize_dyn\l_unsplit_rk2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__dynamics__unsplit__rk2.html#a7703d91136bb80cdba5bae91d6f86239",tooltip="Initialize parameters and allocate memory associated with the unsplit RK2 dynamics module."];
+  Node6 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="mom_diapyc_energy_req\l::diapyc_energy_req_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diapyc__energy__req.html#a63b127bfd78461d8df3449591792b224",tooltip="Initialize parameters and allocate memory associated with the diapycnal energy requirement module."];
+  Node6 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="mom_int_tide_input\l::int_tide_input_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__int__tide__input.html#a134b589adde1907265c096afdb9a23b8",tooltip="Initializes the data related to the internal tide input module."];
+  Node6 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="mom_cvmix_kpp::kpp_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__cvmix__kpp.html#ada767f6da63b74348a7461eb1d12c5d6",tooltip="Initialize the CVMix KPP module and set up diagnostics Returns True if KPP is to be used,..."];
+  Node6 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="mom_diag_mediator::\locean_register_diag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a21267e25d12fa3e5d2540d2a299d2d2c",tooltip="Registers a diagnostic using the information encapsulated in the vardesc type argument and returns an..."];
+  Node6 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="mom_opacity::opacity_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__opacity.html#ab8dbcd70b93f5bd77b2a525cd73f0eb9",tooltip=" "];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="mom_diabatic_driver\l::diabatic_driver_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a51d273bae7e5d2217fa5498620532888",tooltip="This routine initializes the diabatic driver module."];
+  Node6 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="mom_diag_mediator::\lregister_cell_measure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a820eb49d3acf041c630ce1373bef799e",tooltip="Sets a handle inside diagnostics mediator to associate 3d cell measures."];
+  Node6 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="mom_offline_main::register\l_diags_offline_transport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__offline__main.html#a0adf88ec8f84684573c1bafd91b22cf6",tooltip="Initialize additional diagnostics required for offline tracer transport."];
+  Node6 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="mom_set_diffusivity\l::set_diffusivity_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__set__diffusivity.html#a99cccff4bd9b753e86e50f1a188c3283",tooltip=" "];
+  Node6 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="mom_tracer_hor_diff\l::tracer_hor_diff_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__hor__diff.html#a4eba08cd6b1839922b3ffd50ae532934",tooltip="Initialize lateral tracer diffusion module."];
+  Node3 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="mom_diag_mediator::\lregister_scalar_field",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#afb4254e1cfbbcfc43028f14915173f80",tooltip=" "];
+  Node3 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="mom_diag_mediator::\lregister_static_field",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a87fa69b9e2ba3205756d93e1e13e1dc7",tooltip="Registers a static diagnostic, returning an integer handle."];
+  Node22 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="mom_geothermal::geothermal_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__geothermal.html#a0abbb7953860e3357bbd3d35f46fd851",tooltip="Initialize parameters and allocate memory associated with the geothermal heating module."];
+  Node23 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

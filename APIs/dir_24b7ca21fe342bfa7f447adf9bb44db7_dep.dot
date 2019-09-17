@@ -1,0 +1,11 @@
+digraph "/glade/work/altuntas/doxygen/MOM6/config_src/nuopc_driver" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_bbbeac63f53ec5ea699fa4cbaa8c4afb {
+    graph [ bgcolor="#ddddee", pencolor="black", label="config_src" fontname="Helvetica", fontsize="10", URL="dir_bbbeac63f53ec5ea699fa4cbaa8c4afb.html"]
+  dir_24b7ca21fe342bfa7f447adf9bb44db7 [shape=box, label="nuopc_driver", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_24b7ca21fe342bfa7f447adf9bb44db7.html"];
+  }
+  dir_68267d1309a1af8e8297ef4c3efbcdba [shape=box label="src" fillcolor="white" style="filled" color="red" URL="dir_68267d1309a1af8e8297ef4c3efbcdba.html"];
+  dir_24b7ca21fe342bfa7f447adf9bb44db7->dir_68267d1309a1af8e8297ef4c3efbcdba [headlabel="1", labeldistance=1.5 headhref="dir_000002_000005.html"];
+}

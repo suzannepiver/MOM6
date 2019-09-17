@@ -1,0 +1,15 @@
+digraph "mom_diag_mediator::diag_copy_storage_to_diag"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_diag_mediator::\ldiag_copy_storage_to_diag",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Copy from the stored diagnostic arrays to the main diagnostic grids."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_diagnostics::calculate\l_diagnostic_fields",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diagnostics.html#a6bd689b4d9f660020d8e3960879b4799",tooltip="Diagnostics not more naturally calculated elsewhere are computed here."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_tracer_registry\l::post_tracer_diagnostics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__registry.html#aae115ceac71649d8499b52a5d1d1bd8b",tooltip="post_tracer_diagnostics does post_data calls for any diagnostics that are being handled via the trace..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_diagnostics::post\l_transport_diagnostics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diagnostics.html#a3063bd5f420fc4d89a6d26ae85c9f247",tooltip="This routine posts diagnostics of the transports, including the subgridscale contributions."];
+}

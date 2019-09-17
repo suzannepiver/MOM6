@@ -1,0 +1,16 @@
+digraph "/glade/work/altuntas/doxygen/MOM6/config_src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_bbbeac63f53ec5ea699fa4cbaa8c4afb {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_bbbeac63f53ec5ea699fa4cbaa8c4afb.html"];
+    dir_bbbeac63f53ec5ea699fa4cbaa8c4afb [shape=plaintext label="config_src"];
+    dir_549bebe32c2edfb405289e93a5218a19 [shape=box label="mct_driver" color="black" fillcolor="white" style="filled" URL="dir_549bebe32c2edfb405289e93a5218a19.html"];
+    dir_24b7ca21fe342bfa7f447adf9bb44db7 [shape=box label="nuopc_driver" color="black" fillcolor="white" style="filled" URL="dir_24b7ca21fe342bfa7f447adf9bb44db7.html"];
+    dir_ccbaa27a715db0631841e4cd1db1cd75 [shape=box label="solo_driver" color="black" fillcolor="white" style="filled" URL="dir_ccbaa27a715db0631841e4cd1db1cd75.html"];
+  }
+  dir_68267d1309a1af8e8297ef4c3efbcdba [shape=box label="src" fillcolor="white" style="filled" color="red" URL="dir_68267d1309a1af8e8297ef4c3efbcdba.html"];
+  dir_24b7ca21fe342bfa7f447adf9bb44db7->dir_68267d1309a1af8e8297ef4c3efbcdba [headlabel="1", labeldistance=1.5 headhref="dir_000002_000005.html"];
+  dir_ccbaa27a715db0631841e4cd1db1cd75->dir_68267d1309a1af8e8297ef4c3efbcdba [headlabel="3", labeldistance=1.5 headhref="dir_000003_000005.html"];
+  dir_549bebe32c2edfb405289e93a5218a19->dir_68267d1309a1af8e8297ef4c3efbcdba [headlabel="1", labeldistance=1.5 headhref="dir_000001_000005.html"];
+}

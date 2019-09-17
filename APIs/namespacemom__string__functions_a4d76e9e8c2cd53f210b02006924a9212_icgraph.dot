@@ -1,0 +1,46 @@
+digraph "mom_string_functions::lowercase"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_string_functions\l::lowercase",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Return a string in which all uppercase letters have been replaced by their lowercase counterparts."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_io::cmor_long_std",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__io.html#ab4558f715ee39149cfe675832b7fa99d",tooltip="This function returns the CMOR standard name given a CMOR longname, based on the standard pattern of ..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_tracer_registry\l::register_tracer_diagnostics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__registry.html#ac11b2e622e1faf6667d2203854203643",tooltip="register_tracer_diagnostics does a set of register_diag_field calls for any previously registered in ..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_diag_remap::diag\l_remap_configure_axes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__remap.html#a0f3324e591a16e1ef6e3fc7b9f800270",tooltip="Configure the vertical axes for a diagnostic remapping control structure. Reads a configuration param..."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_oda_driver_mod\l::init_oda",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__oda__driver__mod.html#aaaf67b8d0e0db3ba3dfe09e24d2b8b24",tooltip="initialize First_guess (prior) and Analysis grid information for all ensemble members"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_state_initialization\l::mom_initialize_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__state__initialization.html#a81503d4f1855cb185f122d6314e4f06c",tooltip="Initialize temporally evolving fields, either as initial conditions or by reading them from a restart..."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom::initialize_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a96708b16215666edbfa5b46228f3a200",tooltip="Initialize MOM, including memory allocation, setting up parameters and diagnostics,..."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_io::num_timelevels",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__io.html#a79952045e028c6882f5b04ea5a1a83f7",tooltip="This function determines how many time levels a variable has."];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom_surface_forcing\l::surface_forcing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing.html#a791cb2bd2daa4fd3f036b121995bfb6c",tooltip="Initialize the surface forcing module."];
+  Node10 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="mom_restart::restore\l_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__restart.html#aec60d8a437fc858db4a020f9985b449d",tooltip="restore_state reads the model state from previously generated files. All restart variables are read f..."];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="mom_ice_shelf::initialize\l_ice_shelf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf.html#a5990f9918493ff4984245eac74e5f4d9",tooltip="Initializes shelf model data, parameters and diagnostics."];
+  Node12 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="mom_surface_forcing\l_mct::surface_forcing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing__mct.html#a9b444c1127c12220af99c66f7d38460d",tooltip="Initialize the surface forcing, including setting parameters and allocating permanent memory."];
+  Node11 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="mom_surface_forcing\l_nuopc::surface_forcing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing__nuopc.html#a06657bd6f01be304accc1f2e964fefa1",tooltip="Initialize the surface forcing, including setting parameters and allocating permanent memory."];
+  Node11 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="mom_tidal_mixing::tidal\l_mixing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tidal__mixing.html#a6278fe41ef74ac23ba02ae1540104c5f",tooltip="Initializes internal tidal dissipation scheme for diapycnal mixing."];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="mom_tracer_registry\l::tracer_name_lookup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__registry.html#a67e71e90d3747dd97a917f6541f39b56",tooltip="Find a tracer in the tracer registry by name."];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="dome_initialization\l::dome_set_obc_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedome__initialization.html#a7f1f259541709210b38665ea779e623c",tooltip="This subroutine sets the properties of flow at open boundary conditions. This particular example is f..."];
+}

@@ -1,0 +1,11 @@
+digraph "mom_restart::register_restart_field_ptr3d"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_restart::register\l_restart_field_ptr3d",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Register a 3-d field for restarts, providing the metadata in a structure."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_restart::register\l_restart_field_3d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__restart.html#a7d067c88e93f53ec678706711aace49b",tooltip="Register a 3-d field for restarts, providing the metadata as individual arguments."];
+}

@@ -1,0 +1,11 @@
+digraph "mom_diag_mediator::diag_associate_volume_cell_measure"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_diag_mediator::\ldiag_associate_volume\l_cell_measure",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Attaches the id of cell volumes to axes groups for use with cell_measures."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_diag_mediator::\lregister_cell_measure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a820eb49d3acf041c630ce1373bef799e",tooltip="Sets a handle inside diagnostics mediator to associate 3d cell measures."];
+}

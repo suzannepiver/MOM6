@@ -1,0 +1,11 @@
+digraph "mom_neutral_diffusion_aux::check_neutral_positions"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_neutral_diffusion\l_aux::check_neutral_positions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="polynomial_functions\l::evaluation_polynomial",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacepolynomial__functions.html#adb2b5d18db527314545e8e21638a2872",tooltip="Pointwise evaluation of a polynomial at x."];
+}

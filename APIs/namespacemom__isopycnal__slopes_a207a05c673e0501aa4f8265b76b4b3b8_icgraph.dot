@@ -1,0 +1,13 @@
+digraph "mom_isopycnal_slopes::vert_fill_ts"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_isopycnal_slopes\l::vert_fill_ts",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Returns tracer arrays (nominally T and S) with massless layers filled with sensible values,..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_isopycnal_slopes\l::calc_isoneutral_slopes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__isopycnal__slopes.html#a08dfdd6e2381a4865d94fb4a91f1d878",tooltip="Calculate isopycnal slopes, and optionally return N2 used in calculation."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_lateral_mixing\l_coeffs::calc_slope\l_functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#a90d17b7e05aab37752c8d9061de29170",tooltip="Calculates and stores functions of isopycnal slopes, e.g. Sx, Sy, S*N, mostly used in the Visbeck et ..."];
+}

@@ -1,0 +1,24 @@
+digraph "mom_grid_initialize::find_root"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_grid_initialize\l::find_root",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine finds and returns the value of y at which the monotonically increasing function fn ta..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_grid_initialize\l::set_grid_metrics_mercator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#ac37d98379b33a9e95d0bbffc1d7a730f",tooltip="Calculate the values of the metric terms that might be used and save them in arrays."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_grid_initialize\l::set_grid_metrics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a80ff9ab4bfca58b9858abc4ce95b06e9",tooltip="set_grid_metrics is used to set the primary values in the model's horizontal grid...."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_oda_driver_mod\l::init_oda",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__oda__driver__mod.html#aaaf67b8d0e0db3ba3dfe09e24d2b8b24",tooltip="initialize First_guess (prior) and Analysis grid information for all ensemble members"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_ice_shelf::initialize\l_ice_shelf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf.html#a5990f9918493ff4984245eac74e5f4d9",tooltip="Initializes shelf model data, parameters and diagnostics."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_fixed_initialization\l::mom_initialize_fixed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__fixed__initialization.html#a79fad1bd49f85eaa0579def2d9d4ae53",tooltip="MOM_initialize_fixed sets up time-invariant quantities related to MOM6's horizontal grid,..."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom::initialize_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a96708b16215666edbfa5b46228f3a200",tooltip="Initialize MOM, including memory allocation, setting up parameters and diagnostics,..."];
+  Node8 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

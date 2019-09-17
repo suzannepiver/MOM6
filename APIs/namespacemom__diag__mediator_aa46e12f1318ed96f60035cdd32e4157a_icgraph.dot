@@ -1,0 +1,13 @@
+digraph "mom_diag_mediator::downsample_field_2d"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_diag_mediator::\ldownsample_field_2d",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine allocates and computes a down sampled 2d array given an input array The down sample m..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_diag_mediator::\lpost_data_2d_low",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a633c4a461809f5843ac522616db8f382",tooltip="Make a real 2-d array diagnostic available for averaging or output using a diag_type instead of an in..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_diag_mediator::\lpost_data_2d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a2b87038d2cfd2f6709ecb9f4481e0e75",tooltip="Make a real 2-d array diagnostic available for averaging or output."];
+}

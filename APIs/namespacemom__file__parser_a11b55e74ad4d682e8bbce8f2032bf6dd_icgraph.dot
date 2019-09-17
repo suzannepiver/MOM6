@@ -1,0 +1,11 @@
+digraph "mom_file_parser::log_param_logical"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_file_parser::log\l_param_logical",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Log the name and value of a logical model parameter in documentation files."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_file_parser::get\l_param_logical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__file__parser.html#a470b3af82a8b146f375e4ca13c58e70f",tooltip="This subroutine reads the value of a logical model parameter from a parameter file and logs it in doc..."];
+}

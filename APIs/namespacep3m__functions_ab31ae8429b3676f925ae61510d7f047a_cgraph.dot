@@ -1,0 +1,19 @@
+digraph "p3m_functions::p3m_limiter"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="p3m_functions::p3m\l_limiter",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Adust a piecewise cubic reconstruction with a limiter that adjusts the edge values and slopes."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="regrid_edge_values\l::average_discontinuous\l_edge_values",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceregrid__edge__values.html#ad43eb7fa3a284e2b33068f47232521ca",tooltip="Replace discontinuous collocated edge values with their average."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="regrid_edge_values\l::bound_edge_values",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceregrid__edge__values.html#aa3c7ea104f554d508b69efd860fc6b10",tooltip="Bound edge values by neighboring cell averages."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="p3m_functions::build\l_cubic_interpolant",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacep3m__functions.html#af4668b1791bbeae193f0f301cf101f6b",tooltip="Build cubic interpolant in cell k."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="p3m_functions::is_cubic\l_monotonic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacep3m__functions.html#a2eaa8b32f092bbbb0e2cfcd78b0e700f",tooltip="Check whether the cubic reconstruction in cell k is monotonic."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="p3m_functions::monotonize\l_cubic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacep3m__functions.html#adb96651fe725f11e90dec2b8509989b0",tooltip="Monotonize a cubic curve by modifying the edge slopes."];
+}

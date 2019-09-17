@@ -1,0 +1,15 @@
+digraph "mom_set_diffusivity::set_diffusivity_end"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_set_diffusivity\l::set_diffusivity_end",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Clear pointers and dealocate memory."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_bkgnd_mixing::bkgnd\l_mixing_end",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__bkgnd__mixing.html#a1d7ebcf89d3ec5dfff1bb7977a7eb08c",tooltip="Clear pointers and dealocate memory."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_cvmix_shear::cvmix\l_shear_end",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__cvmix__shear.html#a0c9f49bd2f832f20f4675b63b85e0e8e",tooltip="Clear pointers and dealocate memory."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="user_change_diffusivity\l::user_change_diff_end",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__change__diffusivity.html#ad92d8d57a14b020dcff685bc1da32507",tooltip="Clean up the module control structure."];
+}

@@ -1,0 +1,41 @@
+digraph "mom_restart::mom_restart_cs"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_restart::mom_restart_cs",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A restart registry and the control structure for restarts."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" restartfile" ,fontname="Helvetica"];
+  Node2 [label="character(len=240)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" large_file_support\nchecksum_required\nnew_run_set\nnew_run\nparallel_restartfiles\nrestart" ,fontname="Helvetica"];
+  Node3 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" restart_field" ,fontname="Helvetica"];
+  Node4 [label="mom_restart::field\l_restart",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmom__restart_1_1field__restart.html",tooltip="A structure with information about a single restart field."];
+  Node3 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mand_var\ninitialized" ,fontname="Helvetica"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" vars" ,fontname="Helvetica"];
+  Node5 [label="vardesc",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" var_name" ,fontname="Helvetica"];
+  Node6 [label="character(len=32)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" var_ptr2d" ,fontname="Helvetica"];
+  Node7 [label="mom_restart::p2d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmom__restart_1_1p2d.html",tooltip="A type for making arrays of pointers to 2-d arrays."];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" p" ,fontname="Helvetica"];
+  Node8 [label="real",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" restart_obsolete" ,fontname="Helvetica"];
+  Node9 [label="mom_restart::obsolete\l_restart",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmom__restart_1_1obsolete__restart.html",tooltip="A structure to store information about restart fields that are no longer used."];
+  Node6 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" replacement_name\nfield_name" ,fontname="Helvetica"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" var_ptr3d" ,fontname="Helvetica"];
+  Node10 [label="mom_restart::p3d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmom__restart_1_1p3d.html",tooltip="A type for making arrays of pointers to 3-d arrays."];
+  Node8 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" p" ,fontname="Helvetica"];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" var_ptr4d" ,fontname="Helvetica"];
+  Node11 [label="mom_restart::p4d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmom__restart_1_1p4d.html",tooltip="A type for making arrays of pointers to 4-d arrays."];
+  Node8 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" p" ,fontname="Helvetica"];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" var_ptr0d" ,fontname="Helvetica"];
+  Node12 [label="mom_restart::p0d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmom__restart_1_1p0d.html",tooltip="A type for making arrays of pointers to scalars."];
+  Node8 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" p" ,fontname="Helvetica"];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" max_fields\nnum_obsolete_vars\nnovars" ,fontname="Helvetica"];
+  Node13 [label="integer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" var_ptr1d" ,fontname="Helvetica"];
+  Node14 [label="mom_restart::p1d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmom__restart_1_1p1d.html",tooltip="A type for making arrays of pointers to 1-d arrays."];
+  Node8 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" p" ,fontname="Helvetica"];
+}

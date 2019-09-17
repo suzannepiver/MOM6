@@ -1,0 +1,33 @@
+<map id="mom_ice_shelf_dynamics::update_ice_shelf" name="mom_ice_shelf_dynamics::update_ice_shelf">
+<area shape="rect" id="node1" title="This subroutine updates the ice shelf velocities, mass, stresses and properties due to the ice shelf ..." alt="" coords="5,332,188,373"/>
+<area shape="rect" id="node2" href="$namespacemom__diag__mediator.html#a1761df399ba39742e34ab989469da0f2" title="Call this subroutine to avoid averaging any offered fields." alt="" coords="259,136,415,177"/>
+<area shape="rect" id="node3" href="$namespacemom__diag__mediator.html#a91244f765f2964dfb11f8787f65042f1" title="This subroutine enables the accumulation of time averages over the specified time interval." alt="" coords="259,201,415,243"/>
+<area shape="rect" id="node4" href="$namespacemom__ice__shelf__dynamics.html#a00b61e0e4f3a40d2e6d6cb8a5d5b3ada" title="This subroutine takes the velocity (on the Bgrid) and timesteps h_t = &#45; div (uh) once...." alt="" coords="246,332,429,373"/>
+<area shape="rect" id="node14" href="$namespacemom__ice__shelf__dynamics.html#a4401e1ab9adde64c413a355641dc570b" title=" " alt="" coords="246,673,429,715"/>
+<area shape="rect" id="node27" href="$namespacemom__ice__shelf__dynamics.html#aed75a750ef5f5f2ca0d53b3a1d804073" title="This subroutine updates the vertically averaged ice shelf temperature." alt="" coords="246,267,429,308"/>
+<area shape="rect" id="node30" href="$namespacemom__ice__shelf__dynamics.html#af4d6d4d402d1660aa068ab12d3a7d745" title=" " alt="" coords="246,739,429,780"/>
+<area shape="rect" id="node31" href="$namespacemom__ice__shelf__dynamics.html#a4f860e8b97ca0400263678b1470c3e20" title=" " alt="" coords="236,804,439,845"/>
+<area shape="rect" id="node5" href="$namespacemom__ice__shelf__dynamics.html#a5c1d3896958689e3bd2086b539d2b3bc" title=" " alt="" coords="507,267,689,308"/>
+<area shape="rect" id="node6" href="$namespacemom__ice__shelf__dynamics.html#a6dd0f5659b10ce490b8074fa7b1e7ef1" title=" " alt="" coords="490,397,706,439"/>
+<area shape="rect" id="node8" href="$namespacemom__ice__shelf__dynamics.html#a6deb62e779d364f4031c4dc514606042" title=" " alt="" coords="490,136,706,177"/>
+<area shape="rect" id="node9" href="$namespacemom__ice__shelf__dynamics.html#a71ba9a76c9d137d14964cebc7c835b5a" title="Apply a very simple calving law using a minimum thickness rule." alt="" coords="487,332,709,373"/>
+<area shape="rect" id="node10" href="$namespacemom__ice__shelf__dynamics.html#aa83d53e0d36750d4ed2c7a9f0b6d491d" title=" " alt="" coords="507,463,689,504"/>
+<area shape="rect" id="node13" href="$namespacemom__ice__shelf__dynamics.html#a4f87da4ad4dafef238d6f55a4c0d9d8d" title=" " alt="" coords="507,201,689,243"/>
+<area shape="rect" id="node7" href="$namespacemom__ice__shelf__dynamics.html#a0e3d8eb91b7cbea4bb6b5063f5b1aada" title="used for flux limiting in advective subroutines Van Leer limiter (source: Wikipedia)" alt="" coords="757,104,940,145"/>
+<area shape="rect" id="node11" href="$namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" title="This returns .true. if the current PE is the root PE." alt="" coords="1011,484,1164,525"/>
+<area shape="rect" id="node12" href="$namespacemom__error__handler.html#a1c462df7b61f1296407b4af51dfeceab" title="This provides a convenient interface for writing an informative comment." alt="" coords="772,513,925,555"/>
+<area shape="rect" id="node15" href="$namespacemom__ice__shelf__dynamics.html#a80832e49ec6ba0f5061a95dfad0275b8" title=" " alt="" coords="757,891,940,932"/>
+<area shape="rect" id="node16" href="$namespacemom__ice__shelf__dynamics.html#a257855320072cd237f07d325331e4ecf" title="This subroutine calculates the gradients of bilinear basis elements that that are centered at the ver..." alt="" coords="995,891,1179,932"/>
+<area shape="rect" id="node19" href="$namespacemom__ice__shelf__dynamics.html#ad57b8fb98fdef287509cea5d1ef25c2e" title=" " alt="" coords="506,630,690,686"/>
+<area shape="rect" id="node20" href="$namespacemom__ice__shelf__dynamics.html#ae9c409260aebab7242cf508c396c89b8" title=" " alt="" coords="505,711,691,752"/>
+<area shape="rect" id="node21" href="$namespacemom__ice__shelf__dynamics.html#ad6231edc6ae3c63008992a4cb0baec33" title="Update depth integrated viscosity, based on horizontal strain rates, and also update the nonlinear pa..." alt="" coords="507,776,689,817"/>
+<area shape="rect" id="node22" href="$namespacemom__ice__shelf__dynamics.html#ad0df9a4e6af446d7fab86850cc5d464e" title=" " alt="" coords="757,1021,940,1063"/>
+<area shape="rect" id="node23" href="$namespacemom__ice__shelf__dynamics.html#ad90fe54af0b51e4b6e6adf069c7155ec" title=" " alt="" coords="507,959,689,1000"/>
+<area shape="rect" id="node26" href="$namespacemom__ice__shelf__dynamics.html#a92ddf971169ef3b1e28c6dde0f3a66f2" title="Interpolate the ice shelf thickness from tracer point to nodal points, subject to a mask." alt="" coords="507,841,689,883"/>
+<area shape="rect" id="node18" href="$namespacemom__ice__shelf__dynamics.html#a34bac8fd815ba44183f74a75ea3067bb" title=" " alt="" coords="996,1021,1179,1063"/>
+<area shape="rect" id="node17" href="$namespacemom__ice__shelf__dynamics.html#a44ac16282b7667409d32e7eb3e667822" title="Calculate area of quadrilateral." alt="" coords="1235,891,1417,932"/>
+<area shape="rect" id="node24" href="$namespacemom__ice__shelf__dynamics.html#af47f38c9ad80827fa68290fde53cbd7e" title="returns the diagonal entries of the matrix for a Jacobi preconditioning" alt="" coords="757,956,940,997"/>
+<area shape="rect" id="node25" href="$namespacemom__ice__shelf__dynamics.html#afd4f2ba56c579a806aaa7e55a4caf392" title=" " alt="" coords="988,956,1187,997"/>
+<area shape="rect" id="node28" href="$namespacemom__ice__shelf__dynamics.html#a35d04c53a336a68833557924e6f90e3a" title=" " alt="" coords="504,5,692,47"/>
+<area shape="rect" id="node29" href="$namespacemom__ice__shelf__dynamics.html#a210fb4837553eca5fc60c86367bbad26" title=" " alt="" coords="504,71,692,112"/>
+</map>

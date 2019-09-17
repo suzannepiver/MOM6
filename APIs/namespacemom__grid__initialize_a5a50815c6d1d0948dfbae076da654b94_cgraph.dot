@@ -1,0 +1,11 @@
+digraph "mom_grid_initialize::ds_di"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_grid_initialize\l::ds_di",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This function returns the grid spacing in the logical x direction."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_grid_initialize\l::dx_di",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#afa76ec84052508b78fde53cd6ed70161",tooltip="This function calculates and returns the value of dx/di, where x is the longitude in Radians,..."];
+}

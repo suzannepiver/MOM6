@@ -1,0 +1,42 @@
+digraph "user_initialization::write_user_log"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="user_initialization\l::write_user_log",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Write output about the parameter values being used."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="user_initialization\l::user_init_temperature\l_salinity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__initialization.html#aa6db7133a474bd7832e85ad5bd9df0ca",tooltip="This function puts the initial layer temperatures and salinities into T(:,:,:) and S(:,..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="user_initialization\l::user_initialize_sponges",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__initialization.html#a6ec70f2ab81af41619df4db0f7da098f",tooltip="Set up the sponges."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_state_initialization\l::mom_initialize_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__state__initialization.html#a81503d4f1855cb185f122d6314e4f06c",tooltip="Initialize temporally evolving fields, either as initial conditions or by reading them from a restart..."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom::initialize_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a96708b16215666edbfa5b46228f3a200",tooltip="Initialize MOM, including memory allocation, setting up parameters and diagnostics,..."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="user_initialization\l::user_initialize_thickness",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__initialization.html#a3ee75fd9d1d059afb7f07ff13561a565",tooltip="initialize thicknesses."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="user_initialization\l::user_initialize_topography",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__initialization.html#ad48bbaeae8df60afdaffe34590d835ab",tooltip="Initialize topography."];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_fixed_initialization\l::mom_initialize_topography",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__fixed__initialization.html#ae980c841ada6296d07df08442398e87b",tooltip="MOM_initialize_topography makes the appropriate call to set up the bathymetry. At this point the topo..."];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom_oda_driver_mod\l::init_oda",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__oda__driver__mod.html#aaaf67b8d0e0db3ba3dfe09e24d2b8b24",tooltip="initialize First_guess (prior) and Analysis grid information for all ensemble members"];
+  Node9 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="mom_fixed_initialization\l::mom_initialize_fixed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__fixed__initialization.html#a79fad1bd49f85eaa0579def2d9d4ae53",tooltip="MOM_initialize_fixed sets up time-invariant quantities related to MOM6's horizontal grid,..."];
+  Node11 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="user_initialization\l::user_initialize_velocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__initialization.html#a45e373a6e0147bb93d41bf9ba2618c77",tooltip="initialize velocities."];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="user_initialization\l::user_set_coord",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__initialization.html#a541d25539cbb198ae0ed7c1356f267cf",tooltip="Set vertical coordinates."];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="mom_coord_initialization\l::mom_initialize_coord",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coord__initialization.html#a08150041e51696069c49248793248c77",tooltip="MOM_initialize_coord sets up time-invariant quantities related to MOM6's vertical coordinate."];
+  Node14 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="user_initialization\l::user_set_obc_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__initialization.html#a257e5194c434ba287d296f7a228c6a0c",tooltip="This subroutine sets the properties of flow at open boundary conditions."];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="user_initialization\l::user_set_rotation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__initialization.html#a83f001dcb5625d866c1265120a248e3c",tooltip=" "];
+}

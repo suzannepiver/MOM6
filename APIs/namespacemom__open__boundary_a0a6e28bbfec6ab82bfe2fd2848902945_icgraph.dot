@@ -1,0 +1,21 @@
+digraph "mom_open_boundary::obc_registry_init"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_open_boundary::\lobc_registry_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This routine include declares and sets the variable \"version\"."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_open_boundary::\lregister_obc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__open__boundary.html#a8e0e22d829c122134f039228c6f1c7fb",tooltip="register open boundary objects for boundary updates."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="dyed_channel_initialization\l::register_dyed_channel_obc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedyed__channel__initialization.html#a3b2f27c5213cbae5174f1e841d5f0d97",tooltip="Add dyed channel to OBC registry."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_open_boundary::\lregister_file_obc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__open__boundary.html#a05d15beca2ef2b44fb36d129166907fa",tooltip="Add file to OBC registry."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_boundary_update\l::call_obc_register",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__boundary__update.html#a455e3d4565a6023e3c144eefb9bafac5",tooltip="The following subroutines and associated definitions provide the machinery to register and call the s..."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom::initialize_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a96708b16215666edbfa5b46228f3a200",tooltip="Initialize MOM, including memory allocation, setting up parameters and diagnostics,..."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+}

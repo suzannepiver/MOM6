@@ -1,0 +1,41 @@
+digraph "mom_tracer_diabatic::tracer_vertdiff"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_tracer_diabatic\l::tracer_vertdiff",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine solves a tridiagonal equation for the final tracer concentrations after the dual-entr..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="advection_test_tracer\l::advection_test_tracer\l_column_physics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceadvection__test__tracer.html#a02a7937d0c46fd2b70a64161d25ed378",tooltip="Applies diapycnal diffusion and any other column tracer physics or chemistry to the tracers from this..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="boundary_impulse_tracer\l::boundary_impulse_tracer\l_column_physics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceboundary__impulse__tracer.html#aca66c0e29a18f158c998ab10fecd6beb",tooltip="Apply source or sink at boundary and do vertical diffusion."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_diabatic_driver\l::diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a9005de9f3ad26b32de53e3cd9826b9b9",tooltip="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu..."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="dome_tracer::dome_tracer\l_column_physics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedome__tracer.html#a51c45f9e7745b7e0ac334c8e29c60bcd",tooltip="This subroutine applies diapycnal diffusion and any other column tracer physics or chemistry to the t..."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="regional_dyes::dye\l_tracer_column_physics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceregional__dyes.html#a071a809a79a9ca752f395a35b4887ca1",tooltip="This subroutine applies diapycnal diffusion and any other column tracer physics or chemistry to the t..."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="dyed_obc_tracer::dyed\l_obc_tracer_column_physics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedyed__obc__tracer.html#a3149333be10d81c4c0ed1a04d77b8fea",tooltip="This subroutine applies diapycnal diffusion and any other column tracer physics or chemistry to the t..."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="ideal_age_example::\lideal_age_tracer_column\l_physics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceideal__age__example.html#a910b9f6a989e02e130231ce67b708bfe",tooltip="Applies diapycnal diffusion, aging and regeneration at the surface to the ideal age tracers."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="isomip_tracer::isomip\l_tracer_column_physics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceisomip__tracer.html#ab39c7461cc8f1db9e0b681b9250abad1",tooltip="This subroutine applies diapycnal diffusion, including the surface boundary conditions and any other ..."];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom_diabatic_driver\l::legacy_diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a9cdc6d13fb212778da2d58f286528fde",tooltip="Imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentum and tracers us..."];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="mom::step_mom_thermo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a1a81ea749a309f10f5c3c7a17efa3606",tooltip="MOM_step_thermo orchestrates the thermodynamic time stepping and vertical remapping,..."];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="mom::step_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a972730596703580d4646320f2c9085a5",tooltip="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to..."];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="mom_ocmip2_cfc::ocmip2\l_cfc_column_physics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocmip2__cfc.html#af97d6b5ffc3e2a02d565592ba52bd39b",tooltip="This subroutine applies diapycnal diffusion, souces and sinks and any other column tracer physics or ..."];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="oil_tracer::oil_tracer\l_column_physics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceoil__tracer.html#a16435914b962aacb079217f7c88d7b0a",tooltip="Apply sources, sinks, diapycnal mixing and rising motions to the oil tracers."];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="pseudo_salt_tracer\l::pseudo_salt_tracer\l_column_physics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacepseudo__salt__tracer.html#a006d8a5e36cc4ed2aed60fb0bace3902",tooltip="Apply sources, sinks and diapycnal diffusion to the tracers in this package."];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="rgc_tracer::rgc_tracer\l_column_physics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacergc__tracer.html#a5436bf02a726235fd067f0d2d9b49e28",tooltip="This subroutine applies diapycnal diffusion and any other column tracer physics or chemistry to the t..."];
+}

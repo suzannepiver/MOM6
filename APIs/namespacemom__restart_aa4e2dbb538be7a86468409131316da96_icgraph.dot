@@ -1,0 +1,32 @@
+digraph "mom_restart::open_restart_units"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_restart::open_restart\l_units",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="open_restart_units determines the number of existing restart files and optionally opens them and retu..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_restart::determine\l_is_new_run",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__restart.html#aa0656a2a04e437574054ef3411aeee8c",tooltip="determine_is_new_run determines from the value of filename and the existence automatically named rest..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_state_initialization\l::mom_initialize_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__state__initialization.html#a81503d4f1855cb185f122d6314e4f06c",tooltip="Initialize temporally evolving fields, either as initial conditions or by reading them from a restart..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom::initialize_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a96708b16215666edbfa5b46228f3a200",tooltip="Initialize MOM, including memory allocation, setting up parameters and diagnostics,..."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_restart::restart\l_files_exist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__restart.html#a252c2d46a89c5e4db14cc8ebfefd01b5",tooltip="restart_files_exist determines whether any restart files exist."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_restart::restore\l_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__restart.html#aec60d8a437fc858db4a020f9985b449d",tooltip="restore_state reads the model state from previously generated files. All restart variables are read f..."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_ice_shelf::initialize\l_ice_shelf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf.html#a5990f9918493ff4984245eac74e5f4d9",tooltip="Initializes shelf model data, parameters and diagnostics."];
+  Node8 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_surface_forcing\l_mct::surface_forcing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing__mct.html#a9b444c1127c12220af99c66f7d38460d",tooltip="Initialize the surface forcing, including setting parameters and allocating permanent memory."];
+  Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom_surface_forcing\l_nuopc::surface_forcing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing__nuopc.html#a06657bd6f01be304accc1f2e964fefa1",tooltip="Initialize the surface forcing, including setting parameters and allocating permanent memory."];
+  Node7 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="mom_surface_forcing\l::surface_forcing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing.html#a791cb2bd2daa4fd3f036b121995bfb6c",tooltip="Initialize the surface forcing module."];
+  Node11 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,15 @@
+digraph "mom_wave_speed::wave_speed_set_param"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_wave_speed::wave\l_speed_set_param",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Sets internal parameters for MOM_wave_speed."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_wave_speed::wave\l_speed_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__wave__speed.html#a46e21529ec8098b0b19053afa133b971",tooltip="Initialize control structure for MOM_wave_speed."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_diagnostics::mom\l_diagnostics_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diagnostics.html#ae8281123dfff124b0a362ea9fd1e0078",tooltip="This subroutine registers various diagnostics and allocates space for fields that other diagnostis de..."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_lateral_mixing\l_coeffs::varmix_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#a1070a864ca570c00f483a8617afca133",tooltip="Initializes the variables mixing coefficients container."];
+}

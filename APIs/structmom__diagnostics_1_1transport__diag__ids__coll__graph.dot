@@ -1,0 +1,10 @@
+digraph "mom_diagnostics::transport_diag_ids"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="mom_diagnostics::transport\l_diag_ids",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A structure with diagnostic IDs of mass transport related diagnostics."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" id_umo\nid_vmo\nid_vhtr\nid_uhtr\nid_dynamics\l_h_tendency\nid_vmo_2d\nid_umo_2d\nid_dynamics_h" ,fontname="Helvetica"];
+  Node2 [label="integer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

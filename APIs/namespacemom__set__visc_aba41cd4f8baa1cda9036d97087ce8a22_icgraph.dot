@@ -1,0 +1,15 @@
+digraph "mom_set_visc::set_viscous_ml"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_set_visc::set_viscous_ml",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Calculates the thickness of the surface boundary layer for applying an elevated viscosity."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_dynamics_split\l_rk2::step_mom_dyn_split_rk2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__dynamics__split__rk2.html#a976e700971f232fc11bc69b31d611c32",tooltip="RK2 splitting for time stepping MOM adiabatic dynamics."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_dynamics_unsplit\l::step_mom_dyn_unsplit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__dynamics__unsplit.html#ab72d911d187f9247b6cc72d87e815370",tooltip="Step the MOM6 dynamics using an unsplit mixed 2nd order (for continuity) and 3rd order (for the invis..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_dynamics_unsplit\l_rk2::step_mom_dyn_unsplit_rk2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__dynamics__unsplit__rk2.html#a25424d65cc3339442e528c0a92b173a3",tooltip="Step the MOM6 dynamics using an unsplit quasi-2nd order Runge-Kutta scheme."];
+}

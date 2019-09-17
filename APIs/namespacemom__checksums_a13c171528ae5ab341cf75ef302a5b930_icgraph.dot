@@ -1,0 +1,53 @@
+digraph "mom_checksums::bitcount"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_checksums::bitcount",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Does a bitcount of a number by first casting to an integer and then using BTEST to check bit by bit."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_checksums::chksum0",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a94aae972d8c543ede8792d20b9af94e2",tooltip="Checksum a scalar field (consistent with array checksums)"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_checksums::chksum1d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#aa064e020b99a0efca89590774af3454d",tooltip="chksum1d does a checksum of a 1-dimensional array."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_checksums::chksum2d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a06dcbee42e0aa2afca2803757905effd",tooltip="chksum2d does a checksum of all data in a 2-d array."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_checksums::chksum3d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a4538309762110054a606a863a2efcd40",tooltip="chksum3d does a checksum of all data in a 2-d array."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="subchk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__checksums_8F90.html#a9a7c036cc3f0557b0ca26ff97aa2ad1b",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_checksums::chksum_b_2d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a49d2774940029da8ff95cf4c9cf578fd",tooltip="Checksums a 2d array staggered at corner points."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_checksums::chksum\l_pair_b_2d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#acac01c61044b1c7f67392c90b736f77a",tooltip="Checksums on a pair of 2d arrays staggered at q-points."];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_checksums::chksum_b_3d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a4f6f9fc4c335aa2c0e4457a236d49b14",tooltip="Checksums a 3d array staggered at corner points."];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom_checksums::chksum\l_pair_b_3d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a5b80a1eab30e07bd0d8ac6756807aac0",tooltip="Checksums on a pair of 3d arrays staggered at q-points."];
+  Node6 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="mom_checksums::chksum_h_2d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#afa9bfb664bf3ee16447d4ebff9b78ea8",tooltip="Checksums a 2d array staggered at tracer points."];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="mom_checksums::chksum\l_pair_h_2d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a359f5f74582dc1452f249a92e8d0563b",tooltip="Checksums on a pair of 2d arrays staggered at tracer points."];
+  Node6 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="mom_checksums::chksum_h_3d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a656dc8f5cc5bdb1ab2ffbf164cfc4e5c",tooltip="Checksums a 3d array staggered at tracer points."];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="mom_checksums::chksum\l_pair_h_3d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a56121166371f5d8ada74b74158b4af8d",tooltip="Checksums on a pair of 3d arrays staggered at tracer points."];
+  Node6 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="mom_checksums::chksum_u_2d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a170da5dcb63242191738bab00ae7a98c",tooltip="Checksums a 2d array staggered at C-grid u points."];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="mom_checksums::chksum\l_uv_2d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#ae29414a605b6acb789b3abfce920955e",tooltip="Checksums a pair of 2d velocity arrays staggered at C-grid locations."];
+  Node6 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="mom_checksums::chksum_u_3d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a002adb81ca40e3604e68c69c470e3a60",tooltip="Checksums a 3d array staggered at C-grid u points."];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="mom_checksums::chksum\l_uv_3d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a15b3a92eedc3c63382ae26e985b5d7a9",tooltip="Checksums a pair of 3d velocity arrays staggered at C-grid locations."];
+  Node6 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="mom_checksums::chksum_v_2d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a036af9a886db469fc5ea2af3137b36f6",tooltip="Checksums a 2d array staggered at C-grid v points."];
+  Node19 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="mom_checksums::chksum_v_3d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a3c48ee0130a4658c4c4224cdbe4449b9",tooltip="Checksums a 3d array staggered at C-grid v points."];
+  Node20 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="subchk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__checksums_8F90.html#a11889addbbd6d0919cf61aa07fd30ae8",tooltip=" "];
+  Node6 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="mom_checksums::zchksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a4407f1e35457aa61e99ed08ae13b9eeb",tooltip="Checksum a 1d array (typically a column)."];
+}

@@ -1,0 +1,36 @@
+digraph "mom_open_boundary::obc_segment_type"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_open_boundary::\lobc_segment_type",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Open boundary segment data structure."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" on_pe\noblique\ntemp_segment_data\l_exists\nspecified\nis_n_or_s\ngradient\nspecified_tan\nnudged_grad\nsalt_segment\l_data_exists\nvalues_needed\n..." ,fontname="Helvetica"];
+  Node2 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" field" ,fontname="Helvetica"];
+  Node3 [label="mom_open_boundary::\lobc_segment_data_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmom__open__boundary_1_1obc__segment__data__type.html",tooltip="Open boundary segment data from files (mostly)."];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" name" ,fontname="Helvetica"];
+  Node4 [label="character(len=8)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" buffer_src\nbuffer_dst\ndz_src\nvalue\nbt_vel" ,fontname="Helvetica"];
+  Node5 [label="real",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" nk_src\nfid_dz\nfid" ,fontname="Helvetica"];
+  Node6 [label="integer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" field_names" ,fontname="Helvetica"];
+  Node7 [label="character(len=32)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" nudged_tangential_grad\ntangential_grad\nhtot\nnormal_vel\nh\nrx_normal\ntangential_vel\ncg\ntr_invlscale3\l_in\nry_normal\n..." ,fontname="Helvetica"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" js_obc\ndirection\nis_obc\nje_obc\nnum_fields\nie_obc" ,fontname="Helvetica"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" hi" ,fontname="Helvetica"];
+  Node8 [label="hor_index_type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tr_reg" ,fontname="Helvetica"];
+  Node9 [label="mom_open_boundary::\lsegment_tracer_registry_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmom__open__boundary_1_1segment__tracer__registry__type.html",tooltip="Registry type for tracers on segments."];
+  Node2 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" locked" ,fontname="Helvetica"];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tr" ,fontname="Helvetica"];
+  Node10 [label="mom_open_boundary::\lobc_segment_tracer_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmom__open__boundary_1_1obc__segment__tracer__type.html",tooltip="Tracer segment data structure, for putting into an array of objects, not all the same shape."];
+  Node2 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" is_initialized" ,fontname="Helvetica"];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tr" ,fontname="Helvetica"];
+  Node11 [label="tracer_type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" name" ,fontname="Helvetica"];
+  Node5 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" obc_inflow_conc\ntres\nt" ,fontname="Helvetica"];
+  Node6 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ntseg" ,fontname="Helvetica"];
+}

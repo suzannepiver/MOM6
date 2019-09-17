@@ -1,0 +1,10 @@
+digraph "ocn_cpl_indices::cpl_indices_type"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="ocn_cpl_indices::cpl\l_indices_type",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Structure with indices needed for MCT attribute vectors."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" x2o_faxa_dstdry3\nx2o_faxa_ocphidry\nx2o_faxa_bcphodry\nx2o_fioi_meltw\nx2o_foxx_swnet\nx2o_qsw_fracr_col\nx2o_faxa_dstdry4\nx2o_foxx_lwup\nx2o_sw_vstokes\no2x_faoo_fco2_ocn\n..." ,fontname="Helvetica"];
+  Node2 [label="integer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

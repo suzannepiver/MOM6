@@ -1,0 +1,16 @@
+digraph "mom_ice_shelf_dynamics::ice_shelf_dyn_cs"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="mom_ice_shelf_dynamics\l::ice_shelf_dyn_cs",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The control structure for the ice shelf dynamics."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" use_reproducing_sums\nmoving_shelf_front\ncalve_to_mask\ngl_couple\ngl_regularize\ndebug\nmodule_is_initialized" ,fontname="Helvetica"];
+  Node2 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" diag" ,fontname="Helvetica"];
+  Node3 [label="diag_ctrl",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" id_od_av\ncg_max_iterations\nid_t_shelf\nid_col_thick\nid_u_shelf\nid_v_shelf\nnonlin_solve_err\l_mode\nod_rt_counter\nid_v_mask\nn_sub_regularize\n..." ,fontname="Helvetica"];
+  Node4 [label="integer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" v_face_mask\nu_face_mask_bdry\na_glen_isothermal\nthresh_float_col_depth\ntaub_beta_eff\nu_bdry_val\nu_face_mask\nn_basal_friction\nod_rt\nt_bdry_val\n..." ,fontname="Helvetica"];
+  Node5 [label="real",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

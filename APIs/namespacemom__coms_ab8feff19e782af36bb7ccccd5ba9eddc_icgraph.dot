@@ -1,0 +1,19 @@
+digraph "mom_coms::regularize_ints"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_coms::regularize_ints",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine carries the overflow, and then makes sure that all integers are of the same sign as t..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_coms::efp_to_real",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coms.html#a4aaf51b372bcaf7b46939145577eff92",tooltip="Return the real number that an extended-fixed-point number corresponds with."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_coms::efp_list\l_sum_across_pes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coms.html#a6cbcab29d87b134dcd5c4bdb922b4344",tooltip="This subroutine does a sum across PEs of a list of EFP variables, returning the sums in place,..."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_coms::efp_real_diff",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coms.html#a8f23ba3eaaf03101afa61c339fac805b",tooltip="Take the difference between two extended-fixed-point numbers (EFP1 - EFP2) and return the result as a..."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_coms::reproducing\l_sum_2d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coms.html#a99e145acc9227dad1bddc6cf211e4daf",tooltip="This subroutine uses a conversion to an integer representation of real numbers to give an order-invar..."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_coms::reproducing\l_sum_3d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coms.html#aa21533e0badf43b331b5f7a9730c005f",tooltip="This subroutine uses a conversion to an integer representation of real numbers to give an order-invar..."];
+}

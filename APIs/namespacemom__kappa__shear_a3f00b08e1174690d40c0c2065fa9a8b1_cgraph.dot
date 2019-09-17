@@ -1,0 +1,15 @@
+digraph "mom_kappa_shear::calculate_kappa_shear"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_kappa_shear::calculate\l_kappa_shear",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Subroutine for calculating shear-driven diffusivity and TKE in tracer columns."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_kappa_shear::kappa\l_shear_column",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__kappa__shear.html#a2e958f055f3a86997c989f200f2752ba",tooltip="This subroutine calculates shear-driven diffusivity and TKE in a single column."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_kappa_shear::calculate\l_projected_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__kappa__shear.html#a0b931b0b834d887e321eb6eb1924fa9a",tooltip="This subroutine calculates the velocities, temperature and salinity that the water column will have a..."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_kappa_shear::find\l_kappa_tke",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__kappa__shear.html#a351d44e4fe5cfb5852d019a0c1e66100",tooltip="This subroutine calculates new, consistent estimates of TKE and kappa."];
+}

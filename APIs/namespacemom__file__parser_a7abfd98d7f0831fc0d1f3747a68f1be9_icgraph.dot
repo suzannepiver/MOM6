@@ -1,0 +1,37 @@
+digraph "mom_file_parser::populate_param_data"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_file_parser::populate\l_param_data",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Read the contents of a parameter input file, and store the contents in a file_data_type after removin..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_file_parser::open\l_param_file",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__file__parser.html#abecae1b9386aafa17aec927af1f8c448",tooltip="Make the contents of a parameter input file availalble in a param_file_type."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_get_input::get\l_mom_input",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__get__input.html#a46e89b56d1317f17ccb44b3fa7694731",tooltip="Get the names of the I/O directories and initialization file. Also calls the subroutine that opens ru..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_tracer_flow_control\l::call_tracer_flux_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__flow__control.html#a736899f8b0b79d0e98384abf2b084880",tooltip="This subroutine carries out a series of calls to initialize the air-sea tracer fluxes,..."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_ocean_model_nuopc\l::ocean_model_flux_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__nuopc.html#ab8a89646dbbad4bae06c0d416f21160a",tooltip="ocean_model_flux_init is used to initialize properties of the air-sea fluxes as determined by various..."];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_ocean_model_mct\l::ocean_model_flux_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__mct.html#aa8515d789e0bf3e772b3e78d6e5754cb",tooltip="ocean_model_flux_init is used to initialize properties of the air-sea fluxes as determined by various..."];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_oda_driver_mod\l::init_oda",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__oda__driver__mod.html#aaaf67b8d0e0db3ba3dfe09e24d2b8b24",tooltip="initialize First_guess (prior) and Analysis grid information for all ensemble members"];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_ice_shelf::initialize\l_ice_shelf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf.html#a5990f9918493ff4984245eac74e5f4d9",tooltip="Initializes shelf model data, parameters and diagnostics."];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+  Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom::initialize_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a96708b16215666edbfa5b46228f3a200",tooltip="Initialize MOM, including memory allocation, setting up parameters and diagnostics,..."];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="ocn_comp_mct::ocn_init_mct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceocn__comp__mct.html#adfe794cbbae40df4bdb9fcec95d4ff9c",tooltip="This subroutine initializes MOM6."];
+  Node3 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="mom_surface_forcing\l_mct::surface_forcing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing__mct.html#a9b444c1127c12220af99c66f7d38460d",tooltip="Initialize the surface forcing, including setting parameters and allocating permanent memory."];
+  Node3 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="mom_surface_forcing\l_nuopc::surface_forcing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing__nuopc.html#a06657bd6f01be304accc1f2e964fefa1",tooltip="Initialize the surface forcing, including setting parameters and allocating permanent memory."];
+  Node3 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="mom_surface_forcing\l::surface_forcing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing.html#a791cb2bd2daa4fd3f036b121995bfb6c",tooltip="Initialize the surface forcing module."];
+  Node14 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

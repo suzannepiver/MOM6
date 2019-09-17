@@ -1,0 +1,34 @@
+digraph "mom_offline_main::offline_redistribute_residual"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_offline_main::offline\l_redistribute_residual",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="In the case where the main advection routine did not converge, something needs to be done with the re..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_tracer_advect::\ladvect_tracer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__advect.html#a4c97e84c1a3c433d0c2e84b57926bc08",tooltip="This routine time steps the tracer concentration using a monotonic, conservative, weakly diffusive sc..."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_tracer_advect::\ladvect_x",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__advect.html#a642efcd418e9c8abfeff1f3c9fb79122",tooltip="This subroutine does 1-d flux-form advection in the zonal direction using a monotonic piecewise linea..."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_tracer_advect::\ladvect_y",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__advect.html#a6ad4bd56b70992ba99f6dce298ff15fa",tooltip="This subroutine does 1-d flux-form advection using a monotonic piecewise linear scheme."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_domains::do_group_pass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__domains.html#aac3bc012a8c214cbd73bb00668ff165e",tooltip="do_group_pass carries out a group halo update."];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_error_handler::\lmom_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67",tooltip="This provides a convenient interface for writing an mpp_error message with run-time filter based on a..."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_error_handler::\lis_root_pe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71",tooltip="This returns .true. if the current PE is the root PE."];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_offline_aux::distribute\l_residual_uh_upwards",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__offline__aux.html#a926820f5e1a788c56f1f5f485f667a1f",tooltip="In the case where offline advection has failed to converge, redistribute the u-flux into layers above..."];
+  Node8 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_offline_aux::distribute\l_residual_vh_upwards",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__offline__aux.html#ae89d0bdb8c648bc137a188c4f7fa956d",tooltip="In the case where offline advection has failed to converge, redistribute the u-flux into layers above..."];
+  Node9 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom_tracer_registry\l::mom_tracer_chkinv",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__registry.html#a86cd924ede0ff77b15065f5b3bd2cb29",tooltip="Calculates and prints the global inventory of all tracers in the registry."];
+  Node10 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="mom_tracer_registry\l::mom_tracer_chksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__registry.html#ad350bb834bb3dcfd6e603bb136bd8098",tooltip="This subroutine writes out chksums for tracers."];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="mom_offline_main::remaining\l_transport_sum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__offline__main.html#a713ee3448313842b0f07a5a750a01c60",tooltip="Sums any non-negligible remaining transport to check for advection convergence."];
+}

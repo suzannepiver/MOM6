@@ -1,0 +1,11 @@
+digraph "mom_tidal_mixing::calculate_cvmix_tidal"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_tidal_mixing::calculate\l_cvmix_tidal",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Calls the CVMix routines to compute tidal dissipation and to add the effect of internal-tide-driven m..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_tidal_mixing::calculate\l_tidal_mixing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tidal__mixing.html#abf084268fd9c71f20880838d2bce7e3e",tooltip="Depending on whether or not CVMix is active, calls the associated subroutine to compute internal tida..."];
+}

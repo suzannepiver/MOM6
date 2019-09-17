@@ -1,0 +1,11 @@
+digraph "mom_diagnostics::calculate_vertical_integrals"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_diagnostics::calculate\l_vertical_integrals",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine calculates vertical integrals of several tracers, along with the mass-weight of these..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_diagnostics::calculate\l_diagnostic_fields",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diagnostics.html#a6bd689b4d9f660020d8e3960879b4799",tooltip="Diagnostics not more naturally calculated elsewhere are computed here."];
+}

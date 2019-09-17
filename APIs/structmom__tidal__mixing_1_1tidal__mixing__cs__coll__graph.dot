@@ -1,0 +1,28 @@
+digraph "mom_tidal_mixing::tidal_mixing_cs"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_tidal_mixing::tidal\l_mixing_cs",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Control structure with parameters for the tidal mixing module."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" int_tide_dissipation\nlee_wave_dissipation\nuse_cvmix_tidal\nlowmode_itidal_dissipation\ndebug" ,fontname="Helvetica"];
+  Node2 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" remap_cs" ,fontname="Helvetica"];
+  Node3 [label="remapping_cs",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" inputdir" ,fontname="Helvetica"];
+  Node4 [label="character(len=200)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cvmix_glb_params" ,fontname="Helvetica"];
+  Node5 [label="type(cvmix_global_params\l_type)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dd" ,fontname="Helvetica"];
+  Node6 [label="mom_tidal_mixing::tidal\l_mixing_diags",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmom__tidal__mixing_1_1tidal__mixing__diags.html",tooltip="Containers for tidal mixing diagnostics."];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tidal_qe_md\npolzin_decay_scale\nn2_meanz\nkd_itidal\nkd_lowmode_work\nfl_itidal\nschmittner_coeff\l_3d\nn2_int\nkd_itidal_work\nkd_niku\n..." ,fontname="Helvetica"];
+  Node7 [label="real",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cvmix_tidal_params" ,fontname="Helvetica"];
+  Node8 [label="type(cvmix_tidal_params\l_type)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" diag" ,fontname="Helvetica"];
+  Node9 [label="diag_ctrl",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" kappa_itides\ngamma_itides\npolzin_decay_scale\l_factor\nmu_itides\ntidal_qe_3d_in\ntidal_qe_2d\ngamma_lee\nnb\nutide\nh_src\n..." ,fontname="Helvetica"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" id_n2_int\nid_polzin_decay\l_scale_scaled\nid_kd_lowmode\nid_vert_dep\nid_polzin_decay\l_scale\nid_schmittner\l_coeff\nid_nb\nid_kd_niku_work\nid_simmons_coeff\nid_tke_itidal\n..." ,fontname="Helvetica"];
+  Node10 [label="integer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

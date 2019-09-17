@@ -1,0 +1,23 @@
+digraph "mom_tracer_registry::mom_tracer_chkinv"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_tracer_registry\l::mom_tracer_chkinv",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Calculates and prints the global inventory of all tracers in the registry."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_ale::ale_offline\l_inputs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ale.html#a1e8b6f82cdc9d20abf0506b3ab7004b6",tooltip="Regrid/remap stored fields used for offline tracer integrations. These input fields are assumed to ha..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_offline_main::update\l_offline_fields",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__offline__main.html#a2e59b996b88713928c04f72d57c5a531",tooltip="Update fields used in this round of offline transport. First fields are updated from files or from ar..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_offline_main::offline\l_advection_ale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__offline__main.html#ae85546d26ceb447742abe3c528cad2d7",tooltip="3D advection is done by doing flux-limited nonlinear horizontal advection interspersed with an ALE re..."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_offline_main::offline\l_diabatic_ale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__offline__main.html#aaef35c02f93931567c41ae8bc0544bdd",tooltip="The vertical/diabatic driver for offline tracers. First the eatr/ebtr associated with the interpolate..."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_offline_main::offline\l_fw_fluxes_into_ocean",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__offline__main.html#a04d329761570d6d9fbc38589bea929cc",tooltip="Apply positive freshwater fluxes (into the ocean) and update netMassOut with only the negative (out o..."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_offline_main::offline\l_fw_fluxes_out_ocean",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__offline__main.html#ad96c09ff7c8f34d9602fd111ec492cfe",tooltip="Apply negative freshwater fluxes (out of the ocean)"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_offline_main::offline\l_redistribute_residual",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__offline__main.html#a312c47e83e64a6bdf064526f77a8a8ec",tooltip="In the case where the main advection routine did not converge, something needs to be done with the re..."];
+}

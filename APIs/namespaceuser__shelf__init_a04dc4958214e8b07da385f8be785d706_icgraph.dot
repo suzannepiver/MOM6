@@ -1,0 +1,19 @@
+digraph "user_shelf_init::write_user_log"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="user_shelf_init::write\l_user_log",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine writes out the user ice shelf code version number to the model log."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="user_shelf_init::user\l_initialize_shelf_mass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__shelf__init.html#abfa7467860df5279c0c9f95d79cb51cf",tooltip="This subroutine sets up the initial mass and area covered by the ice shelf, based on user-provided co..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="user_shelf_init::user\l_init_ice_thickness",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__shelf__init.html#a2e30414d0486dbf423978be7eea677bd",tooltip="This subroutine updates the ice shelf thickness, as specified by user-provided code."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_ice_shelf_initialize\l::initialize_ice_thickness",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf__initialize.html#a1a45ca83d02a01108e202584a95e7527",tooltip="Initialize ice shelf thickness."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_ice_shelf::initialize\l_ice_shelf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf.html#a5990f9918493ff4984245eac74e5f4d9",tooltip="Initializes shelf model data, parameters and diagnostics."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+}

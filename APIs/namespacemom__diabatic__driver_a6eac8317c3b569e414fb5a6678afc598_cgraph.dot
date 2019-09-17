@@ -1,0 +1,17 @@
+digraph "mom_diabatic_driver::diabatic_driver_end"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_diabatic_driver\l::diabatic_driver_end",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Routine to close the diabatic driver module."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_cvmix_conv::cvmix\l_conv_end",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__cvmix__conv.html#a4f35df3a407ded91cd67384a14da3a3c",tooltip="Clear pointers and dealocate memory."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_entrain_diffusive\l::entrain_diffusive_end",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__entrain__diffusive.html#a0e71b47abe1e1889f4b687139615ca14",tooltip="This subroutine cleans up and deallocates any memory associated with the entrain_diffusive module."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_opacity::opacity_end",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__opacity.html#ab5c0caabbf8a806a95bcc416da673841",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_tidal_mixing::tidal\l_mixing_end",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tidal__mixing.html#a4ec08e118dea2ecbac7e719ed73acc70",tooltip="Clear pointers and deallocate memory."];
+}

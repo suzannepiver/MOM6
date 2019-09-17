@@ -1,0 +1,24 @@
+digraph "mom_meke::meke_alloc_register_restart"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_meke::meke_alloc\l_register_restart",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Allocates memory and register restart fields for the MOM_MEKE module."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_error_handler::\lmom_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67",tooltip="This provides a convenient interface for writing an mpp_error message with run-time filter based on a..."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_error_handler::\lis_root_pe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71",tooltip="This returns .true. if the current PE is the root PE."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_error_handler::\lmom_mesg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a1c462df7b61f1296407b4af51dfeceab",tooltip="This provides a convenient interface for writing an informative comment."];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_io::var_desc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__io.html#a09be50ad112d6bc134d06d82fcbe1fdc",tooltip="Returns a vardesc type whose elements have been filled with the provided fields. The argument name is..."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_io::modify_vardesc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__io.html#a0dff28e4952f43175f84cd9cdcda9837",tooltip="This routine modifies the named elements of a vardesc type. All arguments are optional,..."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_io::safe_string_copy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__io.html#ac4bc408e8b38dbd669842753f26ebf88",tooltip="Copies a string."];
+  Node7 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

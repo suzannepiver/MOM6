@@ -1,0 +1,13 @@
+digraph "mom_tidal_mixing::read_tidal_constituents"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_tidal_mixing::read\l_tidal_constituents",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine reads tidal input energy from a file by constituent."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_tidal_mixing::read\l_tidal_energy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tidal__mixing.html#adfd3a137ee6402fdcdfb7c46711e0e23",tooltip="This subroutine read tidal energy inputs from a file."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_tidal_mixing::tidal\l_mixing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tidal__mixing.html#a6278fe41ef74ac23ba02ae1540104c5f",tooltip="Initializes internal tidal dissipation scheme for diapycnal mixing."];
+}

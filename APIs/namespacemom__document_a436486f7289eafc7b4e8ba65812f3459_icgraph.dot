@@ -1,0 +1,11 @@
+digraph "mom_document::real_array_string"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_document::real\l_array_string",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Returns a character string of a comma-separated, compact formatted, reals e.g. \"1...."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_document::doc_param\l_real_array",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__document.html#ae4b7c9070b5a4be36cb73f173fa82acd",tooltip="This subroutine handles parameter documentation for arrays of reals."];
+}

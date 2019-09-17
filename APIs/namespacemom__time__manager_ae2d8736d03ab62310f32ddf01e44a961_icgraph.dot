@@ -1,0 +1,31 @@
+digraph "mom_time_manager::real_to_time"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_time_manager::real\l_to_time",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This is an alternate implementation of the FMS function real_to_time_type that is accurate over a lar..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_ice_shelf::add\l_shelf_flux",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf.html#a2ca397210116eed3aeeb2fd533aad3ad",tooltip="Updates surface fluxes that are influenced by sub-ice-shelf melting."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_ice_shelf::shelf\l_calc_flux",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf.html#a84aff10af35c11912502a9cd7834dd50",tooltip="Calculates fluxes between the ocean and ice-shelf using the three-equations formulation (optional to ..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_controlled_forcing\l::apply_ctrl_forcing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__controlled__forcing.html#a85da71986854af22d2f4f7c621e307a3",tooltip="This subroutine calls any of the other subroutines in this file that are needed to specify the curren..."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_barotropic::btstep",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#a1468df372a5d1dcb95e0b35d782895de",tooltip="This subroutine time steps the barotropic equations explicitly. For gravity waves,..."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_diabatic_driver\l::diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a9005de9f3ad26b32de53e3cd9826b9b9",tooltip="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu..."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_diabatic_driver\l::legacy_diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a9cdc6d13fb212778da2d58f286528fde",tooltip="Imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentum and tracers us..."];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom::step_mom_thermo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a1a81ea749a309f10f5c3c7a17efa3606",tooltip="MOM_step_thermo orchestrates the thermodynamic time stepping and vertical remapping,..."];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom::step_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a972730596703580d4646320f2c9085a5",tooltip="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to..."];
+  Node10 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="mom_dynamics_unsplit\l::step_mom_dyn_unsplit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__dynamics__unsplit.html#ab72d911d187f9247b6cc72d87e815370",tooltip="Step the MOM6 dynamics using an unsplit mixed 2nd order (for continuity) and 3rd order (for the invis..."];
+}

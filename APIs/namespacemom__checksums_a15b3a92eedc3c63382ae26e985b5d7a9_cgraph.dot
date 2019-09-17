@@ -1,0 +1,40 @@
+digraph "mom_checksums::chksum_uv_3d"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_checksums::chksum\l_uv_3d",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Checksums a pair of 3d velocity arrays staggered at C-grid locations."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_checksums::chksum_u_3d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a002adb81ca40e3604e68c69c470e3a60",tooltip="Checksums a 3d array staggered at C-grid u points."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_checksums::chk\l_sum_msg_nsew",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a2bbf928379ba9abdc67a2f6f93ea8c34",tooltip="Write a message including checksums of non-shifted and laterally shifted arrays."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_error_handler::\lis_root_pe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71",tooltip="This returns .true. if the current PE is the root PE."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_checksums::chk\l_sum_msg_w",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#ad46f7b2b2e81477204b3eca85f920d11",tooltip="Write a message including checksums of non-shifted and westward shifted arrays."];
+  Node5 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_checksums::chksum\l_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a6400a8423305b77e4aed5d1cb4c24520",tooltip="A wrapper for MOM_error used in the checksum code."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_error_handler::\lmom_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67",tooltip="This provides a convenient interface for writing an mpp_error message with run-time filter based on a..."];
+  Node7 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="subchk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__checksums_8F90.html#a9a7c036cc3f0557b0ca26ff97aa2ad1b",tooltip=" "];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_checksums::bitcount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a13c171528ae5ab341cf75ef302a5b930",tooltip="Does a bitcount of a number by first casting to an integer and then using BTEST to check bit by bit."];
+  Node2 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="substats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__checksums_8F90.html#ad399546f73e634377973802b3dc64d28",tooltip=" "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="mom_checksums::chksum_v_3d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a3c48ee0130a4658c4c4224cdbe4449b9",tooltip="Checksums a 3d array staggered at C-grid v points."];
+  Node11 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="mom_checksums::chk\l_sum_msg_s",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksums.html#a980dd3235b339afa9decbe8474a0bc58",tooltip="Write a message including checksums of non-shifted and southward shifted arrays."];
+  Node12 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

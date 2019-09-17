@@ -1,0 +1,15 @@
+digraph "mom_spatial_means::global_mass_integral"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_spatial_means::\lglobal_mass_integral",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Find the global mass-weighted integral of a variable. This uses reproducing sums."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom::get_ocean_stocks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a462293ed92e99927ef9939747d633080",tooltip="Find the global integrals of various quantities."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_ocean_model_nuopc\l::ocean_stock_pe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__nuopc.html#a8f12e00dd1cb9f454bca8ad2e74fde40",tooltip="Ocean_stock_pe - returns the integrated stocks of heat, water, etc. for conservation checks...."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_ocean_model_mct\l::ocean_stock_pe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__mct.html#af453e38e57801cebcc7145c370c30f28",tooltip="Ocean_stock_pe - returns the integrated stocks of heat, water, etc. for conservation checks...."];
+}

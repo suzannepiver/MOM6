@@ -1,0 +1,45 @@
+digraph "mom_ocean_model_nuopc::ocean_state_type"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_ocean_model_nuopc\l::ocean_state_type",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The ocean_state_type contains all information about the state of the ocean, with a format that is pri..."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" use_waves\nrestore_temp\nthermo_spans_coupling\noffline_tracer_mode\nrestore_salinity\nicebergs_alter_ocean\nis_ocean_pe\ndiabatic_first\nsingle_step_call\nuse_ice_shelf\n..." ,fontname="Helvetica"];
+  Node2 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" us" ,fontname="Helvetica"];
+  Node3 [label="unit_scale_type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" time" ,fontname="Helvetica"];
+  Node4 [label="time_type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dirs" ,fontname="Helvetica"];
+  Node5 [label="directories",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" forces" ,fontname="Helvetica"];
+  Node6 [label="mech_forcing",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sfc_state" ,fontname="Helvetica"];
+  Node7 [label="surface",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" flux_tmp\nfluxes" ,fontname="Helvetica"];
+  Node8 [label="forcing",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" restart_csp" ,fontname="Helvetica"];
+  Node9 [label="type(mom_restart_cs)\l, pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" waves" ,fontname="Helvetica"];
+  Node10 [label="type(wave_parameters\l_cs), pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" diag" ,fontname="Helvetica"];
+  Node11 [label="diag_ctrl",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" marine_ice_csp" ,fontname="Helvetica"];
+  Node12 [label="type(marine_ice_cs)\l, pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mom_csp" ,fontname="Helvetica"];
+  Node13 [label="type(mom_control_struct)\l, pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" forcing_csp" ,fontname="Helvetica"];
+  Node14 [label="type(surface_forcing\l_cs), pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gv" ,fontname="Helvetica"];
+  Node15 [label="type(verticalgrid_type)\l, pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node16 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" grid" ,fontname="Helvetica"];
+  Node16 [label="ocean_grid_type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node17 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" press_to_z\ndt_therm\nc_p\neps_omesh\ndt" ,fontname="Helvetica"];
+  Node17 [label="real",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node18 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" nstep\nrestart_control" ,fontname="Helvetica"];
+  Node18 [label="integer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node19 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ice_shelf_csp" ,fontname="Helvetica"];
+  Node19 [label="type(ice_shelf_cs),\l pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

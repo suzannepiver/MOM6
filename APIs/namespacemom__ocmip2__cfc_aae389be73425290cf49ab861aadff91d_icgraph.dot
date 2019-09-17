@@ -1,0 +1,11 @@
+digraph "mom_ocmip2_cfc::flux_init_ocmip2_cfc"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_ocmip2_cfc::flux\l_init_ocmip2_cfc",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine initializes the air-sea CFC fluxes, and optionally returns the indicies of these flux..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_ocmip2_cfc::register\l_ocmip2_cfc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocmip2__cfc.html#ac04494ce35222c8583a7ee7589e1cf13",tooltip="Register the OCMIP2 CFC tracers to be used with MOM and read the parameters that are used with this t..."];
+}

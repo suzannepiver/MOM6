@@ -1,0 +1,14 @@
+digraph "mom_surface_forcing_mct::ice_ocean_boundary_type"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="mom_surface_forcing\l_mct::ice_ocean_boundary_type",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Structure corresponding to forcing, but with the elements, units, and conventions that exactly confor..."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fluxes" ,fontname="Helvetica"];
+  Node2 [label="coupler_2d_bc_type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" wind_stagger\nxtype" ,fontname="Helvetica"];
+  Node3 [label="integer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fprec\nsalt_flux\ncalving_hflx\nv_flux\nrunoff_hflx\nrunoff\nseaice_melt\l_heat\nu_flux\nseaice_melt\nt_flux\n..." ,fontname="Helvetica"];
+  Node4 [label="real",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

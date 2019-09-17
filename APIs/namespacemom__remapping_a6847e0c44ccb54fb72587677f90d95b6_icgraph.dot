@@ -1,0 +1,39 @@
+digraph "mom_remapping::initialize_remapping"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_remapping::initialize\l_remapping",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Constructor for remapping control structure."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_oda_driver_mod\l::init_oda",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__oda__driver__mod.html#aaaf67b8d0e0db3ba3dfe09e24d2b8b24",tooltip="initialize First_guess (prior) and Analysis grid information for all ensemble members"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_ale_sponge::initialize\l_ale_sponge_fixed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ale__sponge.html#a15129d167423dc162d22ef7cf4742651",tooltip="This subroutine determines the number of points which are within sponges in this computational domain..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_ale_sponge::initialize\l_ale_sponge_varying",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ale__sponge.html#a0febb96fb2fd40a72580d078ca023098",tooltip="This subroutine determines the number of points which are within sponges in this computational domain..."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_open_boundary::\linitialize_segment_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__open__boundary.html#adb17aba34a8aaceb524910d2e1196a0c",tooltip="Allocate space for reading OBC data from files. It sets up the required vertical remapping...."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_open_boundary::\lopen_boundary_config",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__open__boundary.html#ac94938f1a657896ff03efd3864faa02a",tooltip="Enables OBC module and reads configuration parameters This routine is called from MOM_initialize_fixe..."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_tidal_mixing::read\l_tidal_constituents",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tidal__mixing.html#a30a24b88982a5134253679d9484b3708",tooltip="This subroutine reads tidal input energy from a file by constituent."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_tidal_mixing::read\l_tidal_energy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tidal__mixing.html#adfd3a137ee6402fdcdfb7c46711e0e23",tooltip="This subroutine read tidal energy inputs from a file."];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_tidal_mixing::tidal\l_mixing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tidal__mixing.html#a6278fe41ef74ac23ba02ae1540104c5f",tooltip="Initializes internal tidal dissipation scheme for diapycnal mixing."];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom_remapping::remapping\l_unit_tests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__remapping.html#a5849f564453d5ed76fb4feffd41eca26",tooltip="Runs unit tests on remapping functions. Should only be called from a single/root thread Returns True ..."];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="mom_unit_tests::unit\l_tests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__unit__tests.html#a57645db02bc734c32de50d028ef906ac",tooltip="Calls unit tests for other modules. Note that if a unit test returns true, a FATAL error is triggered..."];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="mom::initialize_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a96708b16215666edbfa5b46228f3a200",tooltip="Initialize MOM, including memory allocation, setting up parameters and diagnostics,..."];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="mom_wave_speed::wave\l_speed_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__wave__speed.html#a46e21529ec8098b0b19053afa133b971",tooltip="Initialize control structure for MOM_wave_speed."];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="mom_diagnostics::mom\l_diagnostics_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diagnostics.html#ae8281123dfff124b0a362ea9fd1e0078",tooltip="This subroutine registers various diagnostics and allocates space for fields that other diagnostis de..."];
+  Node14 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="mom_lateral_mixing\l_coeffs::varmix_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#a1070a864ca570c00f483a8617afca133",tooltip="Initializes the variables mixing coefficients container."];
+}

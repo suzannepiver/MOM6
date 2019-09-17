@@ -1,0 +1,11 @@
+digraph "mom_ice_shelf_dynamics::ice_shelf_advect_thickness_x"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_ice_shelf_dynamics\l::ice_shelf_advect_thickness_x",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_ice_shelf_dynamics\l::slope_limiter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ice__shelf__dynamics.html#a0e3d8eb91b7cbea4bb6b5063f5b1aada",tooltip="used for flux limiting in advective subroutines Van Leer limiter (source: Wikipedia)"];
+}

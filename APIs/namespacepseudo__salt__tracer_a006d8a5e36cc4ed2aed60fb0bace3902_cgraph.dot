@@ -1,0 +1,18 @@
+digraph "pseudo_salt_tracer::pseudo_salt_tracer_column_physics"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="pseudo_salt_tracer\l::pseudo_salt_tracer\l_column_physics",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Apply sources, sinks and diapycnal diffusion to the tracers in this package."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_tracer_diabatic\l::applytracerboundaryfluxesinout",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__diabatic.html#ad4d3d4de0f2b84c15bccc5eb2f767df3",tooltip="This routine is modeled after applyBoundaryFluxesInOut in MOM_diabatic_aux.F90 NOTE: Please note that..."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_error_handler::\lmom_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67",tooltip="This provides a convenient interface for writing an mpp_error message with run-time filter based on a..."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_error_handler::\lis_root_pe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71",tooltip="This returns .true. if the current PE is the root PE."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_tracer_diabatic\l::tracer_vertdiff",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__diabatic.html#ac5d57973547cc4ed3a89808d3910943e",tooltip="This subroutine solves a tridiagonal equation for the final tracer concentrations after the dual-entr..."];
+  Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

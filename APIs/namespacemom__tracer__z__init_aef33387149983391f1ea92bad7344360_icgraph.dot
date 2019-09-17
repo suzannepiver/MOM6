@@ -1,0 +1,17 @@
+digraph "mom_tracer_z_init::tracer_z_init"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_tracer_z_init::\ltracer_z_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This function initializes a tracer by reading a Z-space file, returning .true. if this appears to hav..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_ocmip2_cfc::init\l_tracer_cfc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocmip2__cfc.html#a293cd355bf164bfd6bbe2cda4b00ad12",tooltip="This subroutine initializes a tracer array."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_ocmip2_cfc::initialize\l_ocmip2_cfc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocmip2__cfc.html#aaaa0b7695728d3761d5f25688838f5fc",tooltip="Initialize the OCMP2 CFC tracer fields and set up the tracer output."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ideal_age_example::\linitialize_ideal_age\l_tracer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceideal__age__example.html#ae8c12d0128c24a491f7af62d4dd6ec5d",tooltip="Sets the ideal age traces to their initial values and sets up the tracer output."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="oil_tracer::initialize\l_oil_tracer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceoil__tracer.html#a3cb362789ef0ea593f8b7de22016a92e",tooltip="Initialize the oil tracers and set up tracer output."];
+}

@@ -1,0 +1,28 @@
+digraph "mom_sponge::initialize_sponge"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_sponge::initialize\l_sponge",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine determines the number of points which are within sponges in this computational domain..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="bfb_initialization\l::bfb_initialize_sponges\l_southonly",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacebfb__initialization.html#af1bf4c8e60817f03359d3fd31aab5a90",tooltip="This subroutine sets up the sponges for the southern bouundary of the domain. Maximum damping occurs ..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_state_initialization\l::mom_initialize_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__state__initialization.html#a81503d4f1855cb185f122d6314e4f06c",tooltip="Initialize temporally evolving fields, either as initial conditions or by reading them from a restart..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom::initialize_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a96708b16215666edbfa5b46228f3a200",tooltip="Initialize MOM, including memory allocation, setting up parameters and diagnostics,..."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="dome2d_initialization\l::dome2d_initialize_sponges",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedome2d__initialization.html#ab0df2b602fe1c83baa66ba03cc2c6dd4",tooltip="Set up sponges in 2d DOME configuration."];
+  Node6 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="dome_initialization\l::dome_initialize_sponges",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedome__initialization.html#a41b5a1805fffbbcbdce1ac7bfc7623f1",tooltip="This subroutine sets the inverse restoration time (Idamp), and ! the values towards which the interfa..."];
+  Node7 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="isomip_initialization\l::isomip_initialize_sponges",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceisomip__initialization.html#a5605d312795e2d4770571052da07859f",tooltip="Sets up the the inverse restoration time (Idamp), and."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="phillips_initialization\l::phillips_initialize\l_sponges",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacephillips__initialization.html#ac1b07586a1ded5ee253cba3c67d0249a",tooltip="Sets up the the inverse restoration time (Idamp), and the values towards which the interface heights ..."];
+  Node9 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

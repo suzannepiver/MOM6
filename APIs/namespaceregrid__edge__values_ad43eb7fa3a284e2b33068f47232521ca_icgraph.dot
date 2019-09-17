@@ -1,0 +1,32 @@
+digraph "regrid_edge_values::average_discontinuous_edge_values"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="regrid_edge_values\l::average_discontinuous\l_edge_values",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Replace discontinuous collocated edge values with their average."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="p1m_functions::p1m\l_interpolation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacep1m__functions.html#a18ffae209ddc4c4aba923b68ed16aee4",tooltip="Linearly interpolate between edge values."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="regrid_interp::regridding\l_set_ppolys",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceregrid__interp.html#a3d1406836d089b4553421776277e1339",tooltip="Builds an interpolated profile for the densities within each grid cell."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="regrid_interp::build\l_and_interpolate_grid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceregrid__interp.html#abaef8cc7e1258b61710adbd6fb742122",tooltip="Build a grid by interpolating for target values."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="coord_hycom::build\l_hycom1_column",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacecoord__hycom.html#aec801ef9df8a887e77b7c1ecf459bd5a",tooltip="Build a HyCOM coordinate column."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_regridding::build\l_grid_hycom1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__regridding.html#acbb6035a98bdce7e8d2d5a10174c0e22",tooltip="Builds a simple HyCOM-like grid with the deepest location of potential density interpolated from the ..."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_regridding::regridding_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__regridding.html#ab354fe3423a39fef6f2b66f409b1682c",tooltip="Dispatching regridding routine for orchestrating regridding & remapping."];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="coord_rho::build_rho\l_column",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacecoord__rho.html#ac3f19bfa0e6b622cdf045c348ec4d183",tooltip="Build a rho coordinate column."];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_diag_remap::diag\l_remap_update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__remap.html#a1951a63528283e209401e317872f650b",tooltip="Build/update target vertical grids for diagnostic remapping."];
+  Node4 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="coord_rho::build_rho\l_column_iteratively",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacecoord__rho.html#aa5b249b62eabf07cdc7f02649f029cae",tooltip="Iteratively build a rho coordinate column."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="p3m_functions::p3m\l_limiter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacep3m__functions.html#ab31ae8429b3676f925ae61510d7f047a",tooltip="Adust a piecewise cubic reconstruction with a limiter that adjusts the edge values and slopes."];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="p3m_functions::p3m\l_interpolation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacep3m__functions.html#af8700cc6f491ea22ec0cff6208dc2483",tooltip="Set up a piecewise cubic interpolation from cell averages and estimated edge slopes and values."];
+  Node12 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

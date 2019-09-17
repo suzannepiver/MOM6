@@ -1,0 +1,15 @@
+digraph "ppm_functions::ppm_reconstruction"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ppm_functions::ppm\l_reconstruction",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Builds quadratic polynomials coefficients from cell mean and edge values."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ppm_functions::ppm\l_limiter_standard",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceppm__functions.html#a10ee2c234d48b1d9375bcd7deee7be0c",tooltip="Adjusts edge values using the standard PPM limiter (Colella & Woodward, JCP 1984) after first checkin..."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="regrid_edge_values\l::bound_edge_values",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceregrid__edge__values.html#aa3c7ea104f554d508b69efd860fc6b10",tooltip="Bound edge values by neighboring cell averages."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="regrid_edge_values\l::check_discontinuous\l_edge_values",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceregrid__edge__values.html#a4a496536a77bef8467c441731619761d",tooltip="Check discontinuous edge values and replace them with their average if not monotonic."];
+}

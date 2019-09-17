@@ -1,0 +1,15 @@
+digraph "mom_forcing_type::forcing_diagnostics"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_forcing_type::forcing\l_diagnostics",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Offer buoyancy forcing fields for diagnostics for those fields registered as part of register_forcing..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_ocean_model_mct\l::update_ocean_model",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__mct.html#a422ba42ca07c0bf28ec5113aba4f1e96",tooltip="update_ocean_model uses the forcing in Ice_ocean_boundary to advance the ocean model's state from the..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_ocean_model_nuopc\l::update_ocean_model",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__nuopc.html#a02a87b4944febcc6828c55e8e4375e62",tooltip="update_ocean_model uses the forcing in Ice_ocean_boundary to advance the ocean model's state from the..."];
+}

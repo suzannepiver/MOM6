@@ -1,0 +1,13 @@
+digraph "mom_full_convection::full_convection"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_full_convection\l::full_convection",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Calculate new temperatures and salinities that have been subject to full convective mixing."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_full_convection\l::is_unstable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__full__convection.html#a2d2d4f8f10e25a0d9dc9bdfbf6729fe0",tooltip="This function returns True if the profiles around the given interface will be statically unstable aft..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_full_convection\l::smoothed_drdt_drds",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__full__convection.html#a2e24ce95201c7690b82f38ecbdf6620b",tooltip="Returns the partial derivatives of locally referenced potential density with temperature and salinity..."];
+}

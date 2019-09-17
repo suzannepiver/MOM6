@@ -1,0 +1,33 @@
+digraph "mom_set_diffusivity::set_diffusivity_cs"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_set_diffusivity\l::set_diffusivity_cs",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This control structure contains parameters for MOM_set_diffusivity."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" use_lotw_bbl_diffusivity\ndouble_diffusion\nml_use_omega\nbulkmixedlayer\nml_radiation\nsimple_tke_to_kd\nlotw_bbl_use_omega\nml_rad_tke_decay\nbottomdraglaw\nbbl_mixing_as_max\n..." ,fontname="Helvetica"];
+  Node2 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cvmix_ddiff_csp" ,fontname="Helvetica"];
+  Node3 [label="type(cvmix_ddiff_cs)\l, pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" inputdir" ,fontname="Helvetica"];
+  Node4 [label="character(len=200)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" user_change_diff_csp" ,fontname="Helvetica"];
+  Node5 [label="type(user_change_diff\l_cs), pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bkgnd_mixing_csp" ,fontname="Helvetica"];
+  Node6 [label="bkgnd_mixing_cs",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" kappashear_csp" ,fontname="Helvetica"];
+  Node7 [label="type(kappa_shear_cs)\l, pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cvmix_shear_csp" ,fontname="Helvetica"];
+  Node8 [label="type(cvmix_shear_cs)\l, pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" diag" ,fontname="Helvetica"];
+  Node9 [label="diag_ctrl",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" id_kd_user\nid_maxtke\nid_tke_to_kd\nid_n2\nid_ks_extra\nid_kt_extra\nid_kd_bbl\nid_kd_work\nid_kd_layer" ,fontname="Helvetica"];
+  Node10 [label="integer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tm_csp" ,fontname="Helvetica"];
+  Node11 [label="tidal_mixing_cs",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cdrag\nmax_rrho_salt_fingers\nhmix\nml_rad_coeff\nmax_salt_diff\l_salt_fingers\ntke_decay\nml_rad_kd_max\nmstar\ndissip_kd_min\nml_rad_efold\l_coeff\n..." ,fontname="Helvetica"];
+  Node12 [label="real",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" int_tide_csp" ,fontname="Helvetica"];
+  Node13 [label="type(int_tide_cs),\l pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

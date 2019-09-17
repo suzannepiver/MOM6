@@ -1,0 +1,17 @@
+digraph "mom_remapping::test_answer"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_remapping::test\l_answer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Returns true if any cell of u and u_true are not identical. Returns false otherwise."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_remapping::remapping\l_unit_tests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__remapping.html#a5849f564453d5ed76fb4feffd41eca26",tooltip="Runs unit tests on remapping functions. Should only be called from a single/root thread Returns True ..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_unit_tests::unit\l_tests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__unit__tests.html#a57645db02bc734c32de50d028ef906ac",tooltip="Calls unit tests for other modules. Note that if a unit test returns true, a FATAL error is triggered..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom::initialize_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a96708b16215666edbfa5b46228f3a200",tooltip="Initialize MOM, including memory allocation, setting up parameters and diagnostics,..."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+}

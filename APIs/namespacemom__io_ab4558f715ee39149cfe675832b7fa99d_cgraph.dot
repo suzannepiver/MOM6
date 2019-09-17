@@ -1,0 +1,11 @@
+digraph "mom_io::cmor_long_std"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_io::cmor_long_std",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This function returns the CMOR standard name given a CMOR longname, based on the standard pattern of ..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_string_functions\l::lowercase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__string__functions.html#a4d76e9e8c2cd53f210b02006924a9212",tooltip="Return a string in which all uppercase letters have been replaced by their lowercase counterparts."];
+}

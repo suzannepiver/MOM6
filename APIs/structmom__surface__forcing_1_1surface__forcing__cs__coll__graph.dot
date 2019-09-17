@@ -1,0 +1,45 @@
+digraph "mom_surface_forcing::surface_forcing_cs"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_surface_forcing\l::surface_forcing_cs",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Structure containing pointers to the forcing fields that may be used to drive MOM...."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" scm_cvmix_tests_csp" ,fontname="Helvetica"];
+  Node2 [label="type(scm_cvmix_tests\l_cs), pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" neverland_forcing_csp" ,fontname="Helvetica"];
+  Node3 [label="type(neverland_surface\l_forcing_cs), pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" handles" ,fontname="Helvetica"];
+  Node4 [label="forcing_diags",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" first_call_set_forcing\nvariable_winds\nrestorebuoy\nread_gust_2d\nuse_temperature\narchaic_omip_file\nadiabatic\ndataoverrideisinitialized\nvariable_buoyforce" ,fontname="Helvetica"];
+  Node5 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" user_forcing_csp" ,fontname="Helvetica"];
+  Node6 [label="type(user_surface_forcing\l_cs), pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tracer_flow_csp" ,fontname="Helvetica"];
+  Node7 [label="type(tracer_flow_control\l_cs), pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" shortwaveup_file\nrunoff_file\nlatentheat_file\nshortwave_file\nsalinityrestore_file\nevaporation_file\nsnow_file\nsensibleheat_file\nwind_config\nrain_file\n..." ,fontname="Helvetica"];
+  Node8 [label="character(len=200)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" idealized_hurricane_csp" ,fontname="Helvetica"];
+  Node9 [label="type(idealized_hurricane\l_cs), pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bfb_forcing_csp" ,fontname="Helvetica"];
+  Node10 [label="type(bfb_surface_forcing\l_cs), pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" snow_var\nlw_var\nrain_var\nsens_var\nlatent_var\nustar_var\nsst_restore\l_var\nfrunoff_var\nsw_var\nlrunoff_var\n..." ,fontname="Helvetica"];
+  Node11 [label="character(len=80)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" restart_csp" ,fontname="Helvetica"];
+  Node12 [label="type(mom_restart_cs)\l, pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" diag" ,fontname="Helvetica"];
+  Node13 [label="diag_ctrl",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" wind_stagger" ,fontname="Helvetica"];
+  Node14 [label="character(len=8)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" meso_forcing_csp" ,fontname="Helvetica"];
+  Node15 [label="type(meso_surface_forcing\l_cs), pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node16 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dumbbell_forcing_csp" ,fontname="Helvetica"];
+  Node16 [label="type(dumbbell_surface\l_forcing_cs), pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node17 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" urf_cs" ,fontname="Helvetica"];
+  Node17 [label="type(user_revise_forcing\l_cs), pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node18 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sss_last_lev\nwind_nlev\nsw_last_lev\nlw_nlev\nsst_nlev\nprecip_last_lev\nsss_nlev\nrunoff_nlev\nlatent_last_lev\nevap_nlev\n..." ,fontname="Helvetica"];
+  Node18 [label="integer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node19 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" wind_scale\ngyres_taux_const\nflux_const_s\nlatent_heat_fusion\nflux_const_t\nflux_const\ngyres_taux_n_pis\ngyres_taux_sin_amp\ndens_restore\ngyres_taux_cos_amp\n..." ,fontname="Helvetica"];
+  Node19 [label="real",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

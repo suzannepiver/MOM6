@@ -1,0 +1,12 @@
+digraph "mom_forcing_type::mech_forcing"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="mom_forcing_type::mech\l_forcing",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Structure that contains pointers to the mechanical forcing at the surface used to drive the liquid oc..."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" net_mass_src_set\naccumulate_p_surf\ninitialized\naccumulate_rigidity" ,fontname="Helvetica"];
+  Node2 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" p_surf_ssh\ntaux\nfrac_shelf_u\ntauy\nfrac_shelf_v\ndt_force_accum\np_surf_full\nrigidity_ice_u\narea_berg\nrigidity_ice_v\n..." ,fontname="Helvetica"];
+  Node3 [label="real",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}
