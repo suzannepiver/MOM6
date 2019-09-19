@@ -111,6 +111,9 @@ Collaboration diagram for mom_diabatic_driver::diabatic_cs:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public variables and constants</h2></td></tr>
+<tr class="memitem:a5bd2eff26a3a26043ea8f9646dbc9fbb"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a5bd2eff26a3a26043ea8f9646dbc9fbb">use_legacy_diabatic</a></td></tr>
+<tr class="memdesc:a5bd2eff26a3a26043ea8f9646dbc9fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true (default), use the a legacy version of the diabatic algorithm. This is temporary and is needed to avoid change in answers.  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a5bd2eff26a3a26043ea8f9646dbc9fbb">More...</a><br /></td></tr>
+<tr class="separator:a5bd2eff26a3a26043ea8f9646dbc9fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1239e538166ddce06395b0f701b4bb9"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#ae1239e538166ddce06395b0f701b4bb9">bulkmixedlayer</a></td></tr>
 <tr class="memdesc:ae1239e538166ddce06395b0f701b4bb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, a refined bulk mixed layer is used with nkml sublayers (and additional buffer layers).  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#ae1239e538166ddce06395b0f701b4bb9">More...</a><br /></td></tr>
 <tr class="separator:ae1239e538166ddce06395b0f701b4bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,30 +153,9 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a513aa98f93e49f62bb0de24693646e78"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a513aa98f93e49f62bb0de24693646e78">nmode</a> = 1</td></tr>
 <tr class="memdesc:a513aa98f93e49f62bb0de24693646e78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of baroclinic modes to consider.  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a513aa98f93e49f62bb0de24693646e78">More...</a><br /></td></tr>
 <tr class="separator:a513aa98f93e49f62bb0de24693646e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aec306e365824099258045eebaee4cd"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a8aec306e365824099258045eebaee4cd">int_tide_source_test</a></td></tr>
-<tr class="memdesc:a8aec306e365824099258045eebaee4cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, apply an arbitrary generation site for internal tide testing (BDM)  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a8aec306e365824099258045eebaee4cd">More...</a><br /></td></tr>
-<tr class="separator:a8aec306e365824099258045eebaee4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04827c5a980a1a0e055fce69f12844b6"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a04827c5a980a1a0e055fce69f12844b6">int_tide_source_x</a></td></tr>
-<tr class="memdesc:a04827c5a980a1a0e055fce69f12844b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">X Location of generation site for internal tide for testing (BDM)  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a04827c5a980a1a0e055fce69f12844b6">More...</a><br /></td></tr>
-<tr class="separator:a04827c5a980a1a0e055fce69f12844b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2117f9a4f89c0c747cd86ae7008243ae"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a2117f9a4f89c0c747cd86ae7008243ae">int_tide_source_y</a></td></tr>
-<tr class="memdesc:a2117f9a4f89c0c747cd86ae7008243ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y Location of generation site for internal tide for testing (BDM)  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a2117f9a4f89c0c747cd86ae7008243ae">More...</a><br /></td></tr>
-<tr class="separator:a2117f9a4f89c0c747cd86ae7008243ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0ccc33ad76b10c7b6208f9d3b9bed79"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#af0ccc33ad76b10c7b6208f9d3b9bed79">tlen_days</a></td></tr>
-<tr class="memdesc:af0ccc33ad76b10c7b6208f9d3b9bed79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time interval from start for adding wave source for testing internal tides (BDM)  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#af0ccc33ad76b10c7b6208f9d3b9bed79">More...</a><br /></td></tr>
-<tr class="separator:af0ccc33ad76b10c7b6208f9d3b9bed79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6d994ebbbb4165e68c4b614a82b88c1"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#ab6d994ebbbb4165e68c4b614a82b88c1">uniform_cg</a></td></tr>
-<tr class="memdesc:ab6d994ebbbb4165e68c4b614a82b88c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, set cg = cg_test everywhere for testing internal tides (BDM)  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#ab6d994ebbbb4165e68c4b614a82b88c1">More...</a><br /></td></tr>
-<tr class="separator:ab6d994ebbbb4165e68c4b614a82b88c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62ba456270dd68d118d40280381b73c7"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a62ba456270dd68d118d40280381b73c7">cg_test</a></td></tr>
-<tr class="memdesc:a62ba456270dd68d118d40280381b73c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uniform group velocity of internal tide for testing internal tides (BDM)  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a62ba456270dd68d118d40280381b73c7">More...</a><br /></td></tr>
-<tr class="separator:a62ba456270dd68d118d40280381b73c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f1b9345cdc0c0feaa076e018b670077"><td class="memItemLeft" align="right" valign="top">type(time_type)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a1f1b9345cdc0c0feaa076e018b670077">time_max_source</a></td></tr>
-<tr class="memdesc:a1f1b9345cdc0c0feaa076e018b670077"><td class="mdescLeft">&#160;</td><td class="mdescRight">For use in testing internal tides (BDM)  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a1f1b9345cdc0c0feaa076e018b670077">More...</a><br /></td></tr>
-<tr class="separator:a1f1b9345cdc0c0feaa076e018b670077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5c21bc03227bd1ab074f71d6b585a84"><td class="memItemLeft" align="right" valign="top">type(time_type)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#ab5c21bc03227bd1ab074f71d6b585a84">time_end</a></td></tr>
-<tr class="memdesc:ab5c21bc03227bd1ab074f71d6b585a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">For use in testing internal tides (BDM)  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#ab5c21bc03227bd1ab074f71d6b585a84">More...</a><br /></td></tr>
-<tr class="separator:ab5c21bc03227bd1ab074f71d6b585a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60e6b202da9066d5da09a87ded3dc6c6"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a60e6b202da9066d5da09a87ded3dc6c6">uniform_test_cg</a></td></tr>
+<tr class="memdesc:a60e6b202da9066d5da09a87ded3dc6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uniform group velocity of internal tide for testing internal tides [L T-1 ~&gt; m s-1].  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a60e6b202da9066d5da09a87ded3dc6c6">More...</a><br /></td></tr>
+<tr class="separator:a60e6b202da9066d5da09a87ded3dc6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb81c8fdf4289f3abaca9917b4b0986a"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#acb81c8fdf4289f3abaca9917b4b0986a">usealealgorithm</a></td></tr>
 <tr class="memdesc:acb81c8fdf4289f3abaca9917b4b0986a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, use the ALE algorithm rather than layered isopycnal/stacked shallow water mode. This logical passed by argument to diabatic_driver_init.  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#acb81c8fdf4289f3abaca9917b4b0986a">More...</a><br /></td></tr>
 <tr class="separator:acb81c8fdf4289f3abaca9917b4b0986a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,10 +175,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:acdbc93fad5ccaf80c982fd0bd33bd3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, mix the passive tracers in massless layers at the bottom into the interior as though a diffusivity of Kd_min_tr (see below) were operating.  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#acdbc93fad5ccaf80c982fd0bd33bd3f0">More...</a><br /></td></tr>
 <tr class="separator:acdbc93fad5ccaf80c982fd0bd33bd3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a2a9d44c61025fff535ee80fff924ca"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a3a2a9d44c61025fff535ee80fff924ca">kd_bbl_tr</a></td></tr>
-<tr class="memdesc:a3a2a9d44c61025fff535ee80fff924ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">A bottom boundary layer tracer diffusivity that will allow for explicitly specified bottom fluxes [Z2 s-1 ~&gt; m2 s-1]. The entrainment at the bottom is at least sqrt(Kd_BBL_tr*dt) over the same distance.  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a3a2a9d44c61025fff535ee80fff924ca">More...</a><br /></td></tr>
+<tr class="memdesc:a3a2a9d44c61025fff535ee80fff924ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">A bottom boundary layer tracer diffusivity that will allow for explicitly specified bottom fluxes [Z2 T-1 ~&gt; m2 s-1]. The entrainment at the bottom is at least sqrt(Kd_BBL_tr*dt) over the same distance.  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a3a2a9d44c61025fff535ee80fff924ca">More...</a><br /></td></tr>
 <tr class="separator:a3a2a9d44c61025fff535ee80fff924ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a727bb828cfbb14eb6158debbd9f194e3"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a727bb828cfbb14eb6158debbd9f194e3">kd_min_tr</a></td></tr>
-<tr class="memdesc:a727bb828cfbb14eb6158debbd9f194e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A minimal diffusivity that should always be applied to tracers, especially in massless layers near the bottom [Z2 s-1 ~&gt; m2 s-1].  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a727bb828cfbb14eb6158debbd9f194e3">More...</a><br /></td></tr>
+<tr class="memdesc:a727bb828cfbb14eb6158debbd9f194e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A minimal diffusivity that should always be applied to tracers, especially in massless layers near the bottom [Z2 T-1 ~&gt; m2 s-1].  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a727bb828cfbb14eb6158debbd9f194e3">More...</a><br /></td></tr>
 <tr class="separator:a727bb828cfbb14eb6158debbd9f194e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae46b3e905e6fe6ba3070b5781cedc9"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a1ae46b3e905e6fe6ba3070b5781cedc9">minimum_forcing_depth</a> = 0.001</td></tr>
 <tr class="memdesc:a1ae46b3e905e6fe6ba3070b5781cedc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The smallest depth over which heat and freshwater fluxes are applied [m].  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a1ae46b3e905e6fe6ba3070b5781cedc9">More...</a><br /></td></tr>
@@ -237,9 +219,6 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:ab6a151e4d44524727664d11bf70868cc"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#ab6a151e4d44524727664d11bf70868cc">dz_subml_n2</a></td></tr>
 <tr class="memdesc:ab6a151e4d44524727664d11bf70868cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The distance over which to calculate a diagnostic of the average stratification at the base of the mixed layer [Z ~&gt; m].  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#ab6a151e4d44524727664d11bf70868cc">More...</a><br /></td></tr>
 <tr class="separator:ab6a151e4d44524727664d11bf70868cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14ce50a6d59a65c1980675b16a92c144"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a14ce50a6d59a65c1980675b16a92c144">nsw</a></td></tr>
-<tr class="memdesc:a14ce50a6d59a65c1980675b16a92c144"><td class="mdescLeft">&#160;</td><td class="mdescRight">SW_NBANDS.  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a14ce50a6d59a65c1980675b16a92c144">More...</a><br /></td></tr>
-<tr class="separator:a14ce50a6d59a65c1980675b16a92c144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:afe5f397d84f9480951b3f96b80e25e1b"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#afe5f397d84f9480951b3f96b80e25e1b">id_cg1</a> = -1</td></tr>
 <tr class="memdesc:afe5f397d84f9480951b3f96b80e25e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#afe5f397d84f9480951b3f96b80e25e1b">More...</a><br /></td></tr>
@@ -479,7 +458,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a0645ee2b30c0d9a8b8778dcb06efb5c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">KPP non-local transport for scalars [m s-1].  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a0645ee2b30c0d9a8b8778dcb06efb5c8">More...</a><br /></td></tr>
 <tr class="separator:a0645ee2b30c0d9a8b8778dcb06efb5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4710d267f33a1aa8959a79c8ef71e63"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#af4710d267f33a1aa8959a79c8ef71e63">kpp_buoy_flux</a></td></tr>
-<tr class="memdesc:af4710d267f33a1aa8959a79c8ef71e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">KPP forcing buoyancy flux [m2 s-3].  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#af4710d267f33a1aa8959a79c8ef71e63">More...</a><br /></td></tr>
+<tr class="memdesc:af4710d267f33a1aa8959a79c8ef71e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">KPP forcing buoyancy flux [L2 T-3 ~&gt; m2 s-3].  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#af4710d267f33a1aa8959a79c8ef71e63">More...</a><br /></td></tr>
 <tr class="separator:af4710d267f33a1aa8959a79c8ef71e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82b29ef7cdf0470f81974be9ef20597c"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a82b29ef7cdf0470f81974be9ef20597c">kpp_temp_flux</a></td></tr>
 <tr class="memdesc:a82b29ef7cdf0470f81974be9ef20597c"><td class="mdescLeft">&#160;</td><td class="mdescRight">KPP effective temperature flux [degC m s-1].  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a82b29ef7cdf0470f81974be9ef20597c">More...</a><br /></td></tr>
@@ -506,8 +485,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Determines whether net incoming/outgoing surface FW fluxes are applied separately or combined before being applied. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00136">136</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">logical</span> :: aggregate_FW_forcing<span class="comment">    !&lt; Determines whether net incoming/outgoing surface</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00128">128</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">logical</span> :: aggregate_FW_forcing<span class="comment">    !&lt; Determines whether net incoming/outgoing surface</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -525,8 +504,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00235">235</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordtype">type</span>(ALE_sponge_CS),          <span class="keywordtype">pointer</span> :: ALE_sponge_CSp        =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00226">226</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordtype">type</span>(ALE_sponge_CS),          <span class="keywordtype">pointer</span> :: ALE_sponge_CSp        =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -544,8 +523,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true calculate frazil diagnostics. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00218">218</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordtype">logical</span> :: boundary_forcing_tendency_diag = .false. <span class="comment">!&lt; If true calculate frazil diagnostics</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00209">209</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keywordtype">logical</span> :: boundary_forcing_tendency_diag = .false. <span class="comment">!&lt; If true calculate frazil diagnostics</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -563,8 +542,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, a refined bulk mixed layer is used with nkml sublayers (and additional buffer layers). </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00093">93</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">logical</span> :: bulkmixedlayer<span class="comment">          !&lt; If true, a refined bulk mixed layer is used with</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00097">97</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">logical</span> :: bulkmixedlayer<span class="comment">          !&lt; If true, a refined bulk mixed layer is used with</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -582,27 +561,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00225">225</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordtype">type</span>(bulkmixedlayer_CS),      <span class="keywordtype">pointer</span> :: bulkmixedlayer_CSp    =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a62ba456270dd68d118d40280381b73c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62ba456270dd68d118d40280381b73c7">&#9670;&nbsp;</a></span>cg_test</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">real mom_diabatic_driver::diabatic_cs::cg_test</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Uniform group velocity of internal tide for testing internal tides (BDM) </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00129">129</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">  real</span>    :: cg_test<span class="comment">                 !&lt; Uniform group velocity of internal tide</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00216">216</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordtype">type</span>(bulkmixedlayer_CS),      <span class="keywordtype">pointer</span> :: bulkmixedlayer_CSp    =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -620,8 +580,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00240">240</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordtype">type</span>(CVMix_conv_cs),          <span class="keywordtype">pointer</span> :: CVMix_conv_csp        =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00231">231</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keywordtype">type</span>(CVMix_conv_cs),          <span class="keywordtype">pointer</span> :: CVMix_conv_csp        =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -639,8 +599,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, write verbose checksums for debugging purposes. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00168">168</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">                   !&lt; If true, write verbose checksums for debugging purposes.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00160">160</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">                   !&lt; If true, write verbose checksums for debugging purposes.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -658,8 +618,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, test the mixing energy requirement code. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00172">172</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordtype">logical</span> :: debug_energy_req<span class="comment">        !&lt; If true, test the mixing energy requirement code.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00164">164</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">logical</span> :: debug_energy_req<span class="comment">        !&lt; If true, test the mixing energy requirement code.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -677,8 +637,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, monitor conservation and extrema. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00169">169</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordtype">logical</span> :: debugConservation<span class="comment">       !&lt; If true, monitor conservation and extrema.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00161">161</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">logical</span> :: debugConservation<span class="comment">       !&lt; If true, monitor conservation and extrema.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -696,8 +656,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00223">223</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keywordtype">type</span>(diabatic_aux_CS),        <span class="keywordtype">pointer</span> :: diabatic_aux_CSp      =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00214">214</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordtype">type</span>(diabatic_aux_CS),        <span class="keywordtype">pointer</span> :: diabatic_aux_CSp      =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -715,8 +675,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true calculate diffusive tendency diagnostics. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00217">217</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keywordtype">logical</span> :: diabatic_diff_tendency_diag = .false. <span class="comment">!&lt; If true calculate diffusive tendency diagnostics</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00208">208</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keywordtype">logical</span> :: diabatic_diff_tendency_diag = .false. <span class="comment">!&lt; If true calculate diffusive tendency diagnostics</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -734,8 +694,8 @@ Public variables and constants</h2></td></tr>
 
 <p>structure used to regulate timing of diagnostic output </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00173">173</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag<span class="comment">   !&lt; structure used to regulate timing of diagnostic output</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00165">165</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag<span class="comment">   !&lt; structure used to regulate timing of diagnostic output</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -753,8 +713,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Stores diagnostic grids at some previous point in the algorithm. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00245">245</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keywordtype">type</span>(diag_grid_storage) :: diag_grids_prev<span class="comment">!&lt; Stores diagnostic grids at some previous point in the algorithm</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00236">236</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keywordtype">type</span>(diag_grid_storage) :: diag_grids_prev<span class="comment">!&lt; Stores diagnostic grids at some previous point in the algorithm</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -772,8 +732,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00241">241</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordtype">type</span>(diapyc_energy_req_CS),   <span class="keywordtype">pointer</span> :: diapyc_en_rec_CSp     =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00232">232</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordtype">type</span>(diapyc_energy_req_CS),   <span class="keywordtype">pointer</span> :: diapyc_en_rec_CSp     =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -791,8 +751,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The distance over which to calculate a diagnostic of the average stratification at the base of the mixed layer [Z ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00175">175</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keywordtype">  real</span> :: dz_subML_N2<span class="comment">                !&lt; The distance over which to calculate a diagnostic of the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00167">167</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keywordtype">  real</span> :: dz_subML_N2<span class="comment">                !&lt; The distance over which to calculate a diagnostic of the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -810,8 +770,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00226">226</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordtype">type</span>(energetic_PBL_CS),       <span class="keywordtype">pointer</span> :: energetic_PBL_CSp     =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00217">217</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keywordtype">type</span>(energetic_PBL_CS),       <span class="keywordtype">pointer</span> :: energetic_PBL_CSp     =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -829,8 +789,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00224">224</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">type</span>(entrain_diffusive_CS),   <span class="keywordtype">pointer</span> :: entrain_diffusive_CSp =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00215">215</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keywordtype">type</span>(entrain_diffusive_CS),   <span class="keywordtype">pointer</span> :: entrain_diffusive_CSp =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -848,8 +808,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the diffusivity from ePBL is added to all other diffusivities. Otherwise, the larger of kappa- shear and ePBL diffusivities are used. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">logical</span> :: ePBL_is_additive<span class="comment">        !&lt; If true, the diffusivity from ePBL is added to all</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">logical</span> :: ePBL_is_additive<span class="comment">        !&lt; If true, the diffusivity from ePBL is added to all</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -867,8 +827,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The largest fraction of a layer that can be evaporated in one time-step [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00161">161</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keywordtype">  real</span>    :: evap_CFL_limit = 0.8<span class="comment">    !&lt; The largest fraction of a layer that can be</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00153">153</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keywordtype">  real</span>    :: evap_CFL_limit = 0.8<span class="comment">    !&lt; The largest fraction of a layer that can be</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -886,8 +846,8 @@ Public variables and constants</h2></td></tr>
 
 <p>diagnose 3d heat tendency from frazil </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00220">220</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: frazil_heat_diag<span class="comment"> !&lt; diagnose 3d heat tendency from frazil</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00211">211</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: frazil_heat_diag<span class="comment"> !&lt; diagnose 3d heat tendency from frazil</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -905,8 +865,8 @@ Public variables and constants</h2></td></tr>
 
 <p>diagnose 3d temp tendency from frazil </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00221">221</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: frazil_temp_diag<span class="comment"> !&lt; diagnose 3d temp tendency from frazil</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00212">212</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: frazil_temp_diag<span class="comment"> !&lt; diagnose 3d temp tendency from frazil</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -924,8 +884,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true calculate frazil tendency diagnostics. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00219">219</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordtype">logical</span> :: frazil_tendency_diag = .false. <span class="comment">!&lt; If true calculate frazil tendency diagnostics</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00210">210</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordtype">logical</span> :: frazil_tendency_diag = .false. <span class="comment">!&lt; If true calculate frazil tendency diagnostics</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -943,8 +903,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00228">228</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keywordtype">type</span>(geothermal_CS),          <span class="keywordtype">pointer</span> :: geothermal_CSp        =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00219">219</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordtype">type</span>(geothermal_CS),          <span class="keywordtype">pointer</span> :: geothermal_CSp        =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -962,8 +922,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The temperature, salinity and thickness halo size that must be valid for the diffusivity calculations. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00163">163</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordtype">integer</span> :: halo_TS_diff = 0<span class="comment">        !&lt; The temperature, salinity and thickness halo size that</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00155">155</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordtype">integer</span> :: halo_TS_diff = 0<span class="comment">        !&lt; The temperature, salinity and thickness halo size that</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -981,8 +941,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00202">202</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_h       = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00193">193</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_h       = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1000,8 +960,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00203">203</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_h_tendency   = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00194">194</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_h_tendency   = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1019,8 +979,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00206">206</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_heat_tend    = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00197">197</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_heat_tend    = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1038,8 +998,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00208">208</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_heat_tend_2d = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00199">199</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_heat_tend_2d = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1057,8 +1017,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00205">205</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_saln_tend    = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00196">196</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_saln_tend    = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1076,8 +1036,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00207">207</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_salt_tend    = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00198">198</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_salt_tend    = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1095,8 +1055,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00209">209</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_salt_tend_2d = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00200">200</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_salt_tend_2d = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1114,8 +1074,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00204">204</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_temp_tend    = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00195">195</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">integer</span> :: id_boundary_forcing_temp_tend    = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1133,7 +1093,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00188">188</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00179">179</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1151,8 +1111,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00180">180</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordtype">integer</span> :: id_cg1      = -1                 <span class="comment">! diag handle for mode-1 speed (BDM)</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00171">171</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordtype">integer</span> :: id_cg1      = -1                 <span class="comment">! diag handle for mode-1 speed (BDM)</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1170,8 +1130,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00181">181</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:)</span> :: id_cn <span class="comment">! diag handle for all mode speeds (BDM)</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00172">172</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:)</span> :: id_cn <span class="comment">! diag handle for all mode speeds (BDM)</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1189,8 +1149,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00200">200</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">integer</span> :: id_diabatic_diff_h= -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00191">191</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordtype">integer</span> :: id_diabatic_diff_h= -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1208,8 +1168,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00196">196</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordtype">integer</span> :: id_diabatic_diff_heat_tend     = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00187">187</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordtype">integer</span> :: id_diabatic_diff_heat_tend     = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1227,8 +1187,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00198">198</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">integer</span> :: id_diabatic_diff_heat_tend_2d  = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00189">189</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordtype">integer</span> :: id_diabatic_diff_heat_tend_2d  = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1246,8 +1206,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00195">195</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">integer</span> :: id_diabatic_diff_saln_tend     = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00186">186</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordtype">integer</span> :: id_diabatic_diff_saln_tend     = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1265,8 +1225,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00197">197</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">integer</span> :: id_diabatic_diff_salt_tend     = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00188">188</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordtype">integer</span> :: id_diabatic_diff_salt_tend     = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1284,8 +1244,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00199">199</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">integer</span> :: id_diabatic_diff_salt_tend_2d  = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00190">190</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">integer</span> :: id_diabatic_diff_salt_tend_2d  = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1303,8 +1263,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00194">194</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordtype">integer</span> :: id_diabatic_diff_temp_tend     = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00185">185</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordtype">integer</span> :: id_diabatic_diff_temp_tend     = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1322,8 +1282,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00183">183</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">integer</span> :: id_dudt_dia = -1, id_dvdt_dia = -1, id_ea_s         = -1, id_eb_s     = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00174">174</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordtype">integer</span> :: id_dudt_dia = -1, id_dvdt_dia = -1, id_ea_s         = -1, id_eb_s     = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1341,7 +1301,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00183">183</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00174">174</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1359,7 +1319,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00192">192</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00183">183</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1377,7 +1337,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00182">182</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00173">173</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1395,7 +1355,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00183">183</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00174">174</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1413,8 +1373,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00184">184</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordtype">integer</span> :: id_ea_t     = -1, id_eb_t     = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00175">175</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordtype">integer</span> :: id_ea_t     = -1, id_eb_t     = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1432,7 +1392,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00182">182</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00173">173</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1450,7 +1410,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00183">183</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00174">174</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1468,7 +1428,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00184">184</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00175">175</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1486,8 +1446,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00211">211</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keywordtype">integer</span> :: id_frazil_h    = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00202">202</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordtype">integer</span> :: id_frazil_h    = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1505,8 +1465,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00213">213</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keywordtype">integer</span> :: id_frazil_heat_tend    = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00204">204</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordtype">integer</span> :: id_frazil_heat_tend    = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1524,8 +1484,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00214">214</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordtype">integer</span> :: id_frazil_heat_tend_2d = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00205">205</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordtype">integer</span> :: id_frazil_heat_tend_2d = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1543,8 +1503,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00212">212</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordtype">integer</span> :: id_frazil_temp_tend    = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00203">203</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordtype">integer</span> :: id_frazil_temp_tend    = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1562,7 +1522,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00191">191</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00182">182</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1580,7 +1540,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00185">185</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00176">176</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1598,8 +1558,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00185">185</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordtype">integer</span> :: id_Kd_heat  = -1, id_kd_salt  = -1, id_kd_interface = -1, id_kd_epbl  = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00176">176</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordtype">integer</span> :: id_Kd_heat  = -1, id_kd_salt  = -1, id_kd_interface = -1, id_kd_epbl  = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1617,7 +1577,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00185">185</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00176">176</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1635,7 +1595,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00185">185</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00176">176</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1653,8 +1613,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00187">187</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordtype">integer</span> :: id_MLD_003  = -1, id_mld_0125  = -1, id_mld_user     = -1, id_mlotstsq = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00178">178</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordtype">integer</span> :: id_MLD_003  = -1, id_mld_0125  = -1, id_mld_user     = -1, id_mlotstsq = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1672,7 +1632,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00187">187</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00178">178</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1690,7 +1650,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00187">187</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00178">178</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1708,7 +1668,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00187">187</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00178">178</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1726,7 +1686,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00192">192</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00183">183</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1744,7 +1704,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00186">186</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00177">177</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1762,7 +1722,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00186">186</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00177">177</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1780,8 +1740,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00188">188</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordtype">integer</span> :: id_subMLN2  = -1, id_brine_lay = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00179">179</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordtype">integer</span> :: id_subMLN2  = -1, id_brine_lay = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1799,8 +1759,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00192">192</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordtype">integer</span> :: id_T_predia = -1, id_s_predia = -1, id_e_predia = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00183">183</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">integer</span> :: id_T_predia = -1, id_s_predia = -1, id_e_predia = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1818,7 +1778,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00186">186</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00177">177</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1836,8 +1796,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00186">186</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordtype">integer</span> :: id_Tdif     = -1, id_tadv     = -1, id_sdif         = -1, id_sadv     = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00177">177</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">integer</span> :: id_Tdif     = -1, id_tadv     = -1, id_sdif         = -1, id_sadv     = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1855,8 +1815,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00191">191</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordtype">integer</span> :: id_u_predia = -1, id_v_predia = -1, id_h_predia = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00182">182</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordtype">integer</span> :: id_u_predia = -1, id_v_predia = -1, id_h_predia = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1874,7 +1834,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00191">191</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00182">182</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
 
 </div>
 </div>
@@ -1892,8 +1852,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00182">182</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordtype">integer</span> :: id_wd       = -1, id_ea       = -1, id_eb           = -1 <span class="comment">! used by layer diabatic</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00173">173</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordtype">integer</span> :: id_wd       = -1, id_ea       = -1, id_eb           = -1 <span class="comment">! used by layer diabatic</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1911,8 +1871,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00229">229</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordtype">type</span>(int_tide_CS),            <span class="keywordtype">pointer</span> :: int_tide_CSp          =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00220">220</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordtype">type</span>(int_tide_CS),            <span class="keywordtype">pointer</span> :: int_tide_CSp          =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1930,8 +1890,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00231">231</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keywordtype">type</span>(int_tide_input_type),    <span class="keywordtype">pointer</span> :: int_tide_input        =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00222">222</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keywordtype">type</span>(int_tide_input_type),    <span class="keywordtype">pointer</span> :: int_tide_input        =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1949,65 +1909,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00230">230</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordtype">type</span>(int_tide_input_CS),      <span class="keywordtype">pointer</span> :: int_tide_input_CSp    =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a8aec306e365824099258045eebaee4cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8aec306e365824099258045eebaee4cd">&#9670;&nbsp;</a></span>int_tide_source_test</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">logical mom_diabatic_driver::diabatic_cs::int_tide_source_test</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>If true, apply an arbitrary generation site for internal tide testing (BDM) </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">logical</span> :: int_tide_source_test<span class="comment">    !&lt; If true, apply an arbitrary generation site</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a04827c5a980a1a0e055fce69f12844b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04827c5a980a1a0e055fce69f12844b6">&#9670;&nbsp;</a></span>int_tide_source_x</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">real mom_diabatic_driver::diabatic_cs::int_tide_source_x</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>X Location of generation site for internal tide for testing (BDM) </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keywordtype">  real</span>    :: int_tide_source_x<span class="comment">       !&lt; X Location of generation site</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a2117f9a4f89c0c747cd86ae7008243ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2117f9a4f89c0c747cd86ae7008243ae">&#9670;&nbsp;</a></span>int_tide_source_y</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">real mom_diabatic_driver::diabatic_cs::int_tide_source_y</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Y Location of generation site for internal tide for testing (BDM) </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">  real</span>    :: int_tide_source_y<span class="comment">       !&lt; Y Location of generation site</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00221">221</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordtype">type</span>(int_tide_input_CS),      <span class="keywordtype">pointer</span> :: int_tide_input_CSp    =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2023,10 +1926,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A bottom boundary layer tracer diffusivity that will allow for explicitly specified bottom fluxes [Z2 s-1 ~&gt; m2 s-1]. The entrainment at the bottom is at least sqrt(Kd_BBL_tr*dt) over the same distance. </p>
+<p>A bottom boundary layer tracer diffusivity that will allow for explicitly specified bottom fluxes [Z2 T-1 ~&gt; m2 s-1]. The entrainment at the bottom is at least sqrt(Kd_BBL_tr*dt) over the same distance. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00152">152</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keywordtype">  real</span>    :: Kd_BBL_tr<span class="comment">               !&lt; A bottom boundary layer tracer diffusivity that</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00144">144</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keywordtype">  real</span>    :: Kd_BBL_tr<span class="comment">               !&lt; A bottom boundary layer tracer diffusivity that</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2042,10 +1945,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A minimal diffusivity that should always be applied to tracers, especially in massless layers near the bottom [Z2 s-1 ~&gt; m2 s-1]. </p>
+<p>A minimal diffusivity that should always be applied to tracers, especially in massless layers near the bottom [Z2 T-1 ~&gt; m2 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00156">156</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keywordtype">  real</span>    :: Kd_min_tr<span class="comment">               !&lt; A minimal diffusivity that should always be</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00148">148</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keywordtype">  real</span>    :: Kd_min_tr<span class="comment">               !&lt; A minimal diffusivity that should always be</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2061,10 +1964,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>KPP forcing buoyancy flux [m2 s-3]. </p>
+<p>KPP forcing buoyancy flux [L2 T-3 ~&gt; m2 s-3]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00249">249</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: KPP_buoy_flux<span class="comment">  !&lt; KPP forcing buoyancy flux [m2 s-3]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00240">240</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: KPP_buoy_flux<span class="comment">  !&lt; KPP forcing buoyancy flux [L2 T-3 ~&gt; m2 s-3]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2082,8 +1985,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00238">238</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordtype">type</span>(KPP_CS),                 <span class="keywordtype">pointer</span> :: KPP_CSp               =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00229">229</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordtype">type</span>(KPP_CS),                 <span class="keywordtype">pointer</span> :: KPP_CSp               =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2101,8 +2004,8 @@ Public variables and constants</h2></td></tr>
 
 <p>KPP non-local transport for heat [m s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00247">247</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: KPP_NLTheat<span class="comment">    !&lt; KPP non-local transport for heat [m s-1]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00238">238</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: KPP_NLTheat<span class="comment">    !&lt; KPP non-local transport for heat [m s-1]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2120,8 +2023,8 @@ Public variables and constants</h2></td></tr>
 
 <p>KPP non-local transport for scalars [m s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00248">248</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: KPP_NLTscalar<span class="comment">  !&lt; KPP non-local transport for scalars [m s-1]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00239">239</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: KPP_NLTscalar<span class="comment">  !&lt; KPP non-local transport for scalars [m s-1]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2139,8 +2042,8 @@ Public variables and constants</h2></td></tr>
 
 <p>KPP effective salt flux [ppt m s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00251">251</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span>   :: KPP_salt_flux<span class="comment">  !&lt; KPP effective salt flux [ppt m s-1]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00242">242</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span>   :: KPP_salt_flux<span class="comment">  !&lt; KPP effective salt flux [ppt m s-1]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2158,8 +2061,8 @@ Public variables and constants</h2></td></tr>
 
 <p>KPP effective temperature flux [degC m s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00250">250</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span>   :: KPP_temp_flux<span class="comment">  !&lt; KPP effective temperature flux [degC m s-1]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00241">241</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span>   :: KPP_temp_flux<span class="comment">  !&lt; KPP effective temperature flux [degC m s-1]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2177,8 +2080,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, KPP is in passive mode, not changing answers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00167">167</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordtype">logical</span> :: KPPisPassive<span class="comment">            !&lt; If true, KPP is in passive mode, not changing answers.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00159">159</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">logical</span> :: KPPisPassive<span class="comment">            !&lt; If true, KPP is in passive mode, not changing answers.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2196,8 +2099,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true (the default), keep the T &amp; S consistent with the target values. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00146">146</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordtype">logical</span> :: massless_match_targets<span class="comment">  !&lt; If true (the default), keep the T &amp; S</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00138">138</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordtype">logical</span> :: massless_match_targets<span class="comment">  !&lt; If true (the default), keep the T &amp; S</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2215,8 +2118,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The smallest depth over which heat and freshwater fluxes are applied [m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00159">159</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keywordtype">  real</span>    :: minimum_forcing_depth = 0.001<span class="comment"> !&lt; The smallest depth over which heat and freshwater</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00151">151</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keywordtype">  real</span>    :: minimum_forcing_depth = 0.001<span class="comment"> !&lt; The smallest depth over which heat and freshwater</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2234,8 +2137,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, mix the passive tracers in massless layers at the bottom into the interior as though a diffusivity of Kd_min_tr (see below) were operating. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00148">148</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordtype">logical</span> :: mix_boundary_tracers<span class="comment">    !&lt; If true, mix the passive tracers in massless</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00140">140</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordtype">logical</span> :: mix_boundary_tracers<span class="comment">    !&lt; If true, mix the passive tracers in massless</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2253,8 +2156,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The nondimensional fraction of the mixed layer algorithm that is applied before diffusive mixing. The default is 0, while 0.5 gives Strang splitting and 1 is a sensible value too. Note that if there are convective instabilities in the initial state, the first call may do much more than the second. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00139">139</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keywordtype">  real</span> :: ML_mix_first<span class="comment">               !&lt; The nondimensional fraction of the mixed layer</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">  real</span> :: ML_mix_first<span class="comment">               !&lt; The nondimensional fraction of the mixed layer</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2272,8 +2175,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Density difference used to determine MLD_user. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00174">174</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keywordtype">  real</span> :: MLDdensityDifference<span class="comment">       !&lt; Density difference used to determine MLD_user</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keywordtype">  real</span> :: MLDdensityDifference<span class="comment">       !&lt; Density difference used to determine MLD_user</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2291,8 +2194,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of buffer layers (if bulk_mixed_layer) </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00145">145</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordtype">integer</span> :: NKBL<span class="comment">                    !&lt; The number of buffer layers (if bulk_mixed_layer)</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00137">137</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">integer</span> :: NKBL<span class="comment">                    !&lt; The number of buffer layers (if bulk_mixed_layer)</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2310,27 +2213,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Number of baroclinic modes to consider. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00118">118</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">integer</span> :: nMode = 1<span class="comment">               !&lt; Number of baroclinic modes to consider</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a14ce50a6d59a65c1980675b16a92c144"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14ce50a6d59a65c1980675b16a92c144">&#9670;&nbsp;</a></span>nsw</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">integer mom_diabatic_driver::diabatic_cs::nsw</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>SW_NBANDS. </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00177">177</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">integer</span> :: nsw<span class="comment">                     !&lt; SW_NBANDS</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">integer</span> :: nMode = 1<span class="comment">               !&lt; Number of baroclinic modes to consider</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2348,8 +2232,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00232">232</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordtype">type</span>(opacity_CS),             <span class="keywordtype">pointer</span> :: opacity_CSp           =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00223">223</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keywordtype">type</span>(opacity_CS),             <span class="keywordtype">pointer</span> :: opacity_CSp           =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2367,8 +2251,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00237">237</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordtype">type</span>(optics_type),            <span class="keywordtype">pointer</span> :: optics                =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00228">228</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keywordtype">type</span>(optics_type),            <span class="keywordtype">pointer</span> :: optics                =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2386,8 +2270,8 @@ Public variables and constants</h2></td></tr>
 
 <p>For group halo pass. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00243">243</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_hold_eb_ea<span class="comment"> !&lt; For group halo pass</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00234">234</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_hold_eb_ea<span class="comment"> !&lt; For group halo pass</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2405,8 +2289,8 @@ Public variables and constants</h2></td></tr>
 
 <p>For group halo pass. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00244">244</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_Kv<span class="comment">         !&lt; For group halo pass</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00235">235</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_Kv<span class="comment">         !&lt; For group halo pass</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2424,8 +2308,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00227">227</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordtype">type</span>(regularize_layers_CS),   <span class="keywordtype">pointer</span> :: regularize_layers_CSp =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00218">218</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordtype">type</span>(regularize_layers_CS),   <span class="keywordtype">pointer</span> :: regularize_layers_CSp =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2443,8 +2327,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, add salt below mixed layer (layer mode only) </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordtype">logical</span> :: salt_reject_below_ML<span class="comment">    !&lt; If true, add salt below mixed layer (layer mode only)</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">logical</span> :: salt_reject_below_ML<span class="comment">    !&lt; If true, add salt below mixed layer (layer mode only)</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2462,8 +2346,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00233">233</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordtype">type</span>(set_diffusivity_CS),     <span class="keywordtype">pointer</span> :: set_diff_CSp          =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00224">224</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">type</span>(set_diffusivity_CS),     <span class="keywordtype">pointer</span> :: set_diff_CSp          =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2481,8 +2365,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00234">234</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="keywordtype">type</span>(sponge_CS),              <span class="keywordtype">pointer</span> :: sponge_CSp            =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00225">225</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordtype">type</span>(sponge_CS),              <span class="keywordtype">pointer</span> :: sponge_CSp            =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2500,8 +2384,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00239">239</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="keywordtype">type</span>(tidal_mixing_cs),        <span class="keywordtype">pointer</span> :: tidal_mixing_csp      =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00230">230</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordtype">type</span>(tidal_mixing_cs),        <span class="keywordtype">pointer</span> :: tidal_mixing_csp      =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2519,65 +2403,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Pointer to model time (needed for sponges) </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00253">253</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time<span class="comment"> !&lt; Pointer to model time (needed for sponges)</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ab5c21bc03227bd1ab074f71d6b585a84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5c21bc03227bd1ab074f71d6b585a84">&#9670;&nbsp;</a></span>time_end</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">type(time_type) mom_diabatic_driver::diabatic_cs::time_end</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>For use in testing internal tides (BDM) </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00132">132</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">type</span>(time_type) :: time_end<span class="comment">        !&lt; For use in testing internal tides (BDM)</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1f1b9345cdc0c0feaa076e018b670077"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f1b9345cdc0c0feaa076e018b670077">&#9670;&nbsp;</a></span>time_max_source</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">type(time_type) mom_diabatic_driver::diabatic_cs::time_max_source</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>For use in testing internal tides (BDM) </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">type</span>(time_type) :: time_max_source<span class="comment"> !&lt; For use in testing internal tides (BDM)</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="af0ccc33ad76b10c7b6208f9d3b9bed79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0ccc33ad76b10c7b6208f9d3b9bed79">&#9670;&nbsp;</a></span>tlen_days</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">integer mom_diabatic_driver::diabatic_cs::tlen_days</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Time interval from start for adding wave source for testing internal tides (BDM) </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">integer</span> :: tlen_days<span class="comment">               !&lt; Time interval from start for adding wave source</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00244">244</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time<span class="comment"> !&lt; Pointer to model time (needed for sponges)</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2595,8 +2422,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00236">236</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keywordtype">type</span>(tracer_flow_control_CS), <span class="keywordtype">pointer</span> :: tracer_flow_CSp       =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00227">227</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordtype">type</span>(tracer_flow_control_CS), <span class="keywordtype">pointer</span> :: tracer_flow_CSp       =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2614,27 +2441,27 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use tracer_vertdiff instead of tridiagTS for vertical diffusion of T and S. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00170">170</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordtype">logical</span> :: tracer_tridiag<span class="comment">          !&lt; If true, use tracer_vertdiff instead of tridiagTS for</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00162">162</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">logical</span> :: tracer_tridiag<span class="comment">          !&lt; If true, use tracer_vertdiff instead of tridiagTS for</span></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ab6d994ebbbb4165e68c4b614a82b88c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6d994ebbbb4165e68c4b614a82b88c1">&#9670;&nbsp;</a></span>uniform_cg</h2>
+<a id="a60e6b202da9066d5da09a87ded3dc6c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60e6b202da9066d5da09a87ded3dc6c6">&#9670;&nbsp;</a></span>uniform_test_cg</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">logical mom_diabatic_driver::diabatic_cs::uniform_cg</td>
+          <td class="memname">real mom_diabatic_driver::diabatic_cs::uniform_test_cg</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>If true, set cg = cg_test everywhere for testing internal tides (BDM) </p>
+<p>Uniform group velocity of internal tide for testing internal tides [L T-1 ~&gt; m s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00127">127</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">logical</span> :: uniform_cg<span class="comment">              !&lt; If true, set cg = cg_test everywhere</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">  real</span>    :: uniform_test_cg<span class="comment">         !&lt; Uniform group velocity of internal tide</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2652,8 +2479,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the CVMix module to get enhanced mixing due to convection. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00106">106</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">logical</span> :: use_CVMix_conv<span class="comment">          !&lt; If true, use the CVMix module to get enhanced</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00110">110</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">logical</span> :: use_CVMix_conv<span class="comment">          !&lt; If true, use the CVMix module to get enhanced</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2671,8 +2498,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the CVMix double diffusion module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00104">104</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">logical</span> :: use_CVMix_ddiff<span class="comment">         !&lt; If true, use the CVMix double diffusion module.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00108">108</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">logical</span> :: use_CVMix_ddiff<span class="comment">         !&lt; If true, use the CVMix double diffusion module.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2690,8 +2517,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the CVMix module to find the shear-driven diapycnal diffusivity. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">logical</span> :: use_CVMix_shear<span class="comment">         !&lt; If true, use the CVMix module to find the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00106">106</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">logical</span> :: use_CVMix_shear<span class="comment">         !&lt; If true, use the CVMix module to find the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2709,8 +2536,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the implicit energetics planetary boundary layer scheme to determine the diffusivity in the surface boundary layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00095">95</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">logical</span> :: use_energetic_PBL<span class="comment">       !&lt; If true, use the implicit energetics planetary</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00099">99</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">logical</span> :: use_energetic_PBL<span class="comment">       !&lt; If true, use the implicit energetics planetary</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2728,8 +2555,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, apply geothermal heating. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">logical</span> :: use_geothermal<span class="comment">          !&lt; If true, apply geothermal heating.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00116">116</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">logical</span> :: use_geothermal<span class="comment">          !&lt; If true, apply geothermal heating.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2747,8 +2574,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the code that advances a separate set of equations for the internal tide energy density. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">logical</span> :: use_int_tides<span class="comment">           !&lt; If true, use the code that advances a separate set</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00117">117</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">logical</span> :: use_int_tides<span class="comment">           !&lt; If true, use the code that advances a separate set</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2766,8 +2593,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the kappa_shear module to find the shear-driven diapycnal diffusivity. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00100">100</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">logical</span> :: use_kappa_shear<span class="comment">         !&lt; If true, use the kappa_shear module to find the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00104">104</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">logical</span> :: use_kappa_shear<span class="comment">         !&lt; If true, use the kappa_shear module to find the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2785,8 +2612,27 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use CVMix/KPP boundary layer scheme to determine the OBLD and the diffusivities within this layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00098">98</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">logical</span> :: use_KPP<span class="comment">                 !&lt; If true, use CVMix/KPP boundary layer scheme to determine the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">logical</span> :: use_KPP<span class="comment">                 !&lt; If true, use CVMix/KPP boundary layer scheme to determine the</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5bd2eff26a3a26043ea8f9646dbc9fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd2eff26a3a26043ea8f9646dbc9fbb">&#9670;&nbsp;</a></span>use_legacy_diabatic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">logical mom_diabatic_driver::diabatic_cs::use_legacy_diabatic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true (default), use the a legacy version of the diabatic algorithm. This is temporary and is needed to avoid change in answers. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">logical</span> :: use_legacy_diabatic<span class="comment">     !&lt; If true (default), use the a legacy version of the diabatic</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2804,8 +2650,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, sponges may be applied anywhere in the domain. The exact location and properties of those sponges are set by calls to initialize_sponge and set_up_sponge_field. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00108">108</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">logical</span> :: use_sponge<span class="comment">              !&lt; If true, sponges may be applied anywhere in the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">logical</span> :: use_sponge<span class="comment">              !&lt; If true, sponges may be applied anywhere in the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2823,8 +2669,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, activate tidal mixing diffusivity. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00105">105</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">logical</span> :: use_tidal_mixing<span class="comment">        !&lt; If true, activate tidal mixing diffusivity.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">logical</span> :: use_tidal_mixing<span class="comment">        !&lt; If true, activate tidal mixing diffusivity.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2842,8 +2688,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the ALE algorithm rather than layered isopycnal/stacked shallow water mode. This logical passed by argument to diabatic_driver_init. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00133">133</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">logical</span> :: useALEalgorithm<span class="comment">         !&lt; If true, use the ALE algorithm rather than layered</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">logical</span> :: useALEalgorithm<span class="comment">         !&lt; If true, use the ALE algorithm rather than layered</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2861,8 +2707,8 @@ Public variables and constants</h2></td></tr>
 
 <p>use CVMix/KPP diffusivities and non-local transport </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00165">165</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">logical</span> :: useKPP = .false.        <span class="comment">!&lt; use CVMix/KPP diffusivities and non-local transport</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00157">157</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordtype">logical</span> :: useKPP = .false.        <span class="comment">!&lt; use CVMix/KPP diffusivities and non-local transport</span></div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -5,7 +5,7 @@ var MOM__entrain__diffusive_8F90 =
     [ "determine_ea_kb", "MOM__entrain__diffusive_8F90.html#a541b3aadc418110f7359b0ae401e4e78", null ],
     [ "entrain_diffusive_end", "MOM__entrain__diffusive_8F90.html#a0e71b47abe1e1889f4b687139615ca14", null ],
     [ "entrain_diffusive_init", "MOM__entrain__diffusive_8F90.html#a179b8c36dfbffa7a7803d313482402f8", null ],
-    [ "entrainment_diffusive", "MOM__entrain__diffusive_8F90.html#a6cf7391c9958b4ac00c1cd4f89bfd868", null ],
+    [ "entrainment_diffusive", "MOM__entrain__diffusive_8F90.html#ae68ab2fa707778de2f92ce179729f2ff", null ],
     [ "f_kb_to_ea_kb", "MOM__entrain__diffusive_8F90.html#adce1b1ba57f5245f1eda57e7a254d4df", null ],
     [ "f_to_ent", "MOM__entrain__diffusive_8F90.html#a13bbe9f35e3198470100375d9d016b7a", null ],
     [ "find_maxf_kb", "MOM__entrain__diffusive_8F90.html#ae45dbf976314c3a9e278ebcebedab109", null ],

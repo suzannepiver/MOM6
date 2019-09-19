@@ -127,10 +127,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:ad271bbc774136fac980de11a64a18415"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface height above bottom [Z ~&gt; m]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#ad271bbc774136fac980de11a64a18415">More...</a><br /></td></tr>
 <tr class="separator:ad271bbc774136fac980de11a64a18415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed2f081c50f1f23e03b9a47781cca473"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#aed2f081c50f1f23e03b9a47781cca473">du_dt</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:aed2f081c50f1f23e03b9a47781cca473"><td class="mdescLeft">&#160;</td><td class="mdescRight">net i-acceleration [m s-2]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#aed2f081c50f1f23e03b9a47781cca473">More...</a><br /></td></tr>
+<tr class="memdesc:aed2f081c50f1f23e03b9a47781cca473"><td class="mdescLeft">&#160;</td><td class="mdescRight">net i-acceleration [L T-1 s-1 ~&gt; m s-2]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#aed2f081c50f1f23e03b9a47781cca473">More...</a><br /></td></tr>
 <tr class="separator:aed2f081c50f1f23e03b9a47781cca473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ac7f7d67d666780270751b2304a5b9d"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a3ac7f7d67d666780270751b2304a5b9d">dv_dt</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a3ac7f7d67d666780270751b2304a5b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">net j-acceleration [m s-2]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a3ac7f7d67d666780270751b2304a5b9d">More...</a><br /></td></tr>
+<tr class="memdesc:a3ac7f7d67d666780270751b2304a5b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">net j-acceleration [L T-1 s-1 ~&gt; m s-2]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a3ac7f7d67d666780270751b2304a5b9d">More...</a><br /></td></tr>
 <tr class="separator:a3ac7f7d67d666780270751b2304a5b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71e82a28dab00874a6519510dca4ea8e"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a71e82a28dab00874a6519510dca4ea8e">dh_dt</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a71e82a28dab00874a6519510dca4ea8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">thickness rate of change [H s-1 ~&gt; m s-1 or kg m-2 s-1]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a71e82a28dab00874a6519510dca4ea8e">More...</a><br /></td></tr>
@@ -545,12 +545,12 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>net i-acceleration [m s-2] </p>
+<p>net i-acceleration [L T-1 s-1 ~&gt; m s-2] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00068">68</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    du_dt =&gt; null(), &amp; <span class="comment">!&lt; net i-acceleration [m s-2]</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    dv_dt =&gt; null(), &amp; <span class="comment">!&lt; net j-acceleration [m s-2]</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    du_dt =&gt; null(), &amp; <span class="comment">!&lt; net i-acceleration [L T-1 s-1 ~&gt; m s-2]</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    dv_dt =&gt; null(), &amp; <span class="comment">!&lt; net j-acceleration [L T-1 s-1 ~&gt; m s-2]</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    dh_dt =&gt; null(), &amp; <span class="comment">!&lt; thickness rate of change [H s-1 ~&gt; m s-1 or kg m-2 s-1]</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    p_ebt =&gt; null()    <span class="comment">!&lt; Equivalent barotropic modal structure [nondim]</span></div>
 </div><!-- fragment -->
@@ -568,7 +568,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>net j-acceleration [m s-2] </p>
+<p>net j-acceleration [L T-1 s-1 ~&gt; m s-2] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00068">68</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 

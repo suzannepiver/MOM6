@@ -265,11 +265,11 @@ $(document).ready(function(){initNavTree('user__shelf__init_8F90_source.html',''
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        h_shelf(i,j) = 0.0</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">if</span> (g%geoLonCu(i,j) &gt; edge_pos) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;          area_shelf_h(i,j) = g%areaT(i,j) * (edge_pos - g%geoLonCu(i-1,j)) / &amp;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;          area_shelf_h(i,j) = g%US%L_to_m**2*g%areaT(i,j) * (edge_pos - g%geoLonCu(i-1,j)) / &amp;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                              (g%geoLonCu(i,j) - g%geoLonCu(i-1,j))</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;          hmask(i,j) = 2.0</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;          area_shelf_h(i,j) = g%areaT(i,j)</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;          area_shelf_h(i,j) = g%US%L_to_m**2*g%areaT(i,j)</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;          hmask(i,j) = 1.0</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keywordflow">        endif</span></div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
@@ -328,7 +328,7 @@ $(document).ready(function(){initNavTree('user__shelf__init_8F90_source.html',''
 <div class="ttc" id="anamespaceuser__shelf__init_html"><div class="ttname"><a href="namespaceuser__shelf__init.html">user_shelf_init</a></div><div class="ttdoc">This module specifies the initial values and evolving properties of the MOM6 ice shelf,...</div><div class="ttdef"><b>Definition:</b> <a href="user__shelf__init_8F90_source.html#l00003">user_shelf_init.F90:3</a></div></div>
 <div class="ttc" id="anamespacemom__error__handler_html"><div class="ttname"><a href="namespacemom__error__handler.html">mom_error_handler</a></div><div class="ttdoc">Routines for error handling and I/O management.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__error__handler_8F90_source.html#l00002">MOM_error_handler.F90:2</a></div></div>
 <div class="ttc" id="astructuser__shelf__init_1_1user__ice__shelf__cs_html"><div class="ttname"><a href="structuser__shelf__init_1_1user__ice__shelf__cs.html">user_shelf_init::user_ice_shelf_cs</a></div><div class="ttdoc">The control structure for the user_ice_shelf module.</div><div class="ttdef"><b>Definition:</b> <a href="user__shelf__init_8F90_source.html#l00029">user_shelf_init.F90:29</a></div></div>
-<div class="ttc" id="astructmom__grid_1_1ocean__grid__type_html"><div class="ttname"><a href="structmom__grid_1_1ocean__grid__type.html">mom_grid::ocean_grid_type</a></div><div class="ttdoc">Ocean grid type. See mom_grid for details.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__grid_8F90_source.html#l00025">MOM_grid.F90:25</a></div></div>
+<div class="ttc" id="astructmom__grid_1_1ocean__grid__type_html"><div class="ttname"><a href="structmom__grid_1_1ocean__grid__type.html">mom_grid::ocean_grid_type</a></div><div class="ttdoc">Ocean grid type. See mom_grid for details.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__grid_8F90_source.html#l00026">MOM_grid.F90:26</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

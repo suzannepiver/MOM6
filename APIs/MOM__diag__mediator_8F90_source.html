@@ -3965,7 +3965,7 @@ $(document).ready(function(){initNavTree('MOM__diag__mediator_8F90_source.html',
 <div class="line"><a name="l03868"></a><span class="lineno"> 3868</span>&#160;        total_weight = 0.0</div>
 <div class="line"><a name="l03869"></a><span class="lineno"> 3869</span>&#160;        <span class="keywordflow">do</span> jj=j0,j0+dl-1 ; <span class="keywordflow">do</span> ii=i0,i0+dl-1</div>
 <div class="line"><a name="l03870"></a><span class="lineno"> 3870</span>&#160;<span class="comment">!        do ii=i0,i0+dl-1 ; do jj=j0,j0+dl-1 !This seems to be faster!!!!</span></div>
-<div class="line"><a name="l03871"></a><span class="lineno"> 3871</span>&#160;           weight = mask(ii,jj,k)*diag_cs%G%areaT(ii,jj)*diag_cs%h(ii,jj,k)</div>
+<div class="line"><a name="l03871"></a><span class="lineno"> 3871</span>&#160;           weight = mask(ii,jj,k)*diag_cs%G%US%L_to_m**2*diag_cs%G%areaT(ii,jj)*diag_cs%h(ii,jj,k)</div>
 <div class="line"><a name="l03872"></a><span class="lineno"> 3872</span>&#160;           total_weight = total_weight + weight</div>
 <div class="line"><a name="l03873"></a><span class="lineno"> 3873</span>&#160;           ave=ave+field_in(ii,jj,k)*weight</div>
 <div class="line"><a name="l03874"></a><span class="lineno"> 3874</span>&#160;        enddo;<span class="keywordflow"> enddo</span></div>
@@ -3993,7 +3993,7 @@ $(document).ready(function(){initNavTree('MOM__diag__mediator_8F90_source.html',
 <div class="line"><a name="l03896"></a><span class="lineno"> 3896</span>&#160;        total_weight = 0.0</div>
 <div class="line"><a name="l03897"></a><span class="lineno"> 3897</span>&#160;        <span class="keywordflow">do</span> jj=j0,j0+dl-1 ; <span class="keywordflow">do</span> ii=i0,i0+dl-1</div>
 <div class="line"><a name="l03898"></a><span class="lineno"> 3898</span>&#160;<span class="comment">!        do ii=i0,i0+dl-1 ; do jj=j0,j0+dl-1</span></div>
-<div class="line"><a name="l03899"></a><span class="lineno"> 3899</span>&#160;           weight = mask(ii,jj,k)*diag_cs%G%areaT(ii,jj)</div>
+<div class="line"><a name="l03899"></a><span class="lineno"> 3899</span>&#160;           weight = mask(ii,jj,k)*diag_cs%G%US%L_to_m**2*diag_cs%G%areaT(ii,jj)</div>
 <div class="line"><a name="l03900"></a><span class="lineno"> 3900</span>&#160;           total_weight = total_weight + weight</div>
 <div class="line"><a name="l03901"></a><span class="lineno"> 3901</span>&#160;           ave=ave+field_in(ii,jj,k)*weight</div>
 <div class="line"><a name="l03902"></a><span class="lineno"> 3902</span>&#160;        enddo;<span class="keywordflow"> enddo</span></div>
@@ -4007,7 +4007,7 @@ $(document).ready(function(){initNavTree('MOM__diag__mediator_8F90_source.html',
 <div class="line"><a name="l03910"></a><span class="lineno"> 3910</span>&#160;        total_weight = 0.0</div>
 <div class="line"><a name="l03911"></a><span class="lineno"> 3911</span>&#160;        ii=i0</div>
 <div class="line"><a name="l03912"></a><span class="lineno"> 3912</span>&#160;        <span class="keywordflow">do</span> jj=j0,j0+dl-1</div>
-<div class="line"><a name="l03913"></a><span class="lineno"> 3913</span>&#160;           weight =mask(ii,jj,k)*diag_cs%G%dyCu(ii,jj)*diag_cs%h(ii,jj,k)</div>
+<div class="line"><a name="l03913"></a><span class="lineno"> 3913</span>&#160;           weight =mask(ii,jj,k)*diag_cs%G%US%L_to_m*diag_cs%G%dyCu(ii,jj) * diag_cs%h(ii,jj,k)</div>
 <div class="line"><a name="l03914"></a><span class="lineno"> 3914</span>&#160;           total_weight = total_weight +weight</div>
 <div class="line"><a name="l03915"></a><span class="lineno"> 3915</span>&#160;           ave=ave+field_in(ii,jj,k)*weight</div>
 <div class="line"><a name="l03916"></a><span class="lineno"> 3916</span>&#160;<span class="keywordflow">        enddo</span></div>
@@ -4063,7 +4063,7 @@ $(document).ready(function(){initNavTree('MOM__diag__mediator_8F90_source.html',
 <div class="line"><a name="l03966"></a><span class="lineno"> 3966</span>&#160;        total_weight = 0.0</div>
 <div class="line"><a name="l03967"></a><span class="lineno"> 3967</span>&#160;        jj=j0</div>
 <div class="line"><a name="l03968"></a><span class="lineno"> 3968</span>&#160;        <span class="keywordflow">do</span> ii=i0,i0+dl-1</div>
-<div class="line"><a name="l03969"></a><span class="lineno"> 3969</span>&#160;           weight = mask(ii,jj,k)*diag_cs%G%dxCv(ii,jj)*diag_cs%h(ii,jj,k)</div>
+<div class="line"><a name="l03969"></a><span class="lineno"> 3969</span>&#160;           weight = mask(ii,jj,k)*diag_cs%G%US%L_to_m*diag_cs%G%dxCv(ii,jj)*diag_cs%h(ii,jj,k)</div>
 <div class="line"><a name="l03970"></a><span class="lineno"> 3970</span>&#160;           total_weight = total_weight + weight</div>
 <div class="line"><a name="l03971"></a><span class="lineno"> 3971</span>&#160;           ave=ave+field_in(ii,jj,k)*weight</div>
 <div class="line"><a name="l03972"></a><span class="lineno"> 3972</span>&#160;<span class="keywordflow">        enddo</span></div>
@@ -4134,7 +4134,7 @@ $(document).ready(function(){initNavTree('MOM__diag__mediator_8F90_source.html',
 <div class="line"><a name="l04037"></a><span class="lineno"> 4037</span>&#160;        total_weight = 0.0</div>
 <div class="line"><a name="l04038"></a><span class="lineno"> 4038</span>&#160;        <span class="keywordflow">do</span> jj=j0,j0+dl-1 ; <span class="keywordflow">do</span> ii=i0,i0+dl-1</div>
 <div class="line"><a name="l04039"></a><span class="lineno"> 4039</span>&#160;<span class="comment">!        do ii=i0,i0+dl-1 ; do jj=j0,j0+dl-1</span></div>
-<div class="line"><a name="l04040"></a><span class="lineno"> 4040</span>&#160;           weight = mask(ii,jj)*diag_cs%G%areaT(ii,jj)</div>
+<div class="line"><a name="l04040"></a><span class="lineno"> 4040</span>&#160;           weight = mask(ii,jj)*diag_cs%G%US%L_to_m**2*diag_cs%G%areaT(ii,jj)</div>
 <div class="line"><a name="l04041"></a><span class="lineno"> 4041</span>&#160;           total_weight = total_weight + weight</div>
 <div class="line"><a name="l04042"></a><span class="lineno"> 4042</span>&#160;           ave=ave+field_in(ii,jj)*weight</div>
 <div class="line"><a name="l04043"></a><span class="lineno"> 4043</span>&#160;        enddo;<span class="keywordflow"> enddo</span></div>
@@ -4190,7 +4190,7 @@ $(document).ready(function(){initNavTree('MOM__diag__mediator_8F90_source.html',
 <div class="line"><a name="l04093"></a><span class="lineno"> 4093</span>&#160;        total_weight = 0.0</div>
 <div class="line"><a name="l04094"></a><span class="lineno"> 4094</span>&#160;        ii=i0</div>
 <div class="line"><a name="l04095"></a><span class="lineno"> 4095</span>&#160;        <span class="keywordflow">do</span> jj=j0,j0+dl-1</div>
-<div class="line"><a name="l04096"></a><span class="lineno"> 4096</span>&#160;           weight =mask(ii,jj)*diag_cs%G%dyCu(ii,jj)<span class="comment">!*diag_cs%h(ii,jj,1) !Niki?</span></div>
+<div class="line"><a name="l04096"></a><span class="lineno"> 4096</span>&#160;           weight = mask(ii,jj)*diag_cs%G%US%L_to_m*diag_cs%G%dyCu(ii,jj)<span class="comment">!*diag_cs%h(ii,jj,1) !Niki?</span></div>
 <div class="line"><a name="l04097"></a><span class="lineno"> 4097</span>&#160;           total_weight = total_weight +weight</div>
 <div class="line"><a name="l04098"></a><span class="lineno"> 4098</span>&#160;           ave=ave+field_in(ii,jj)*weight</div>
 <div class="line"><a name="l04099"></a><span class="lineno"> 4099</span>&#160;<span class="keywordflow">        enddo</span></div>
@@ -4204,7 +4204,7 @@ $(document).ready(function(){initNavTree('MOM__diag__mediator_8F90_source.html',
 <div class="line"><a name="l04107"></a><span class="lineno"> 4107</span>&#160;        total_weight = 0.0</div>
 <div class="line"><a name="l04108"></a><span class="lineno"> 4108</span>&#160;        jj=j0</div>
 <div class="line"><a name="l04109"></a><span class="lineno"> 4109</span>&#160;        <span class="keywordflow">do</span> ii=i0,i0+dl-1</div>
-<div class="line"><a name="l04110"></a><span class="lineno"> 4110</span>&#160;           weight =mask(ii,jj)*diag_cs%G%dxCv(ii,jj)<span class="comment">!*diag_cs%h(ii,jj,1) !Niki?</span></div>
+<div class="line"><a name="l04110"></a><span class="lineno"> 4110</span>&#160;           weight = mask(ii,jj)*diag_cs%G%US%L_to_m*diag_cs%G%dxCv(ii,jj)<span class="comment">!*diag_cs%h(ii,jj,1) !Niki?</span></div>
 <div class="line"><a name="l04111"></a><span class="lineno"> 4111</span>&#160;           total_weight = total_weight +weight</div>
 <div class="line"><a name="l04112"></a><span class="lineno"> 4112</span>&#160;           ave=ave+field_in(ii,jj)*weight</div>
 <div class="line"><a name="l04113"></a><span class="lineno"> 4113</span>&#160;<span class="keywordflow">        enddo</span></div>
@@ -4438,7 +4438,7 @@ $(document).ready(function(){initNavTree('MOM__diag__mediator_8F90_source.html',
 <div class="ttc" id="anamespacemom__diag__mediator_html_a8e211bead8fe3f37da32dfa010b55b90"><div class="ttname"><a href="namespacemom__diag__mediator.html#a8e211bead8fe3f37da32dfa010b55b90">mom_diag_mediator::downsample_mask_2d</a></div><div class="ttdeci">subroutine downsample_mask_2d(field_in, field_out, dl, isc_o, jsc_o, isc_d, iec_d, jsc_d, jec_d, isd_d, ied_d, jsd_d, jed_d)</div><div class="ttdoc">Allocate and compute the 2d down sampled mask The masks are down sampled based on a minority rule,...</div><div class="ttdef"><b>Definition:</b> <a href="MOM__diag__mediator_8F90_source.html#l04139">MOM_diag_mediator.F90:4139</a></div></div>
 <div class="ttc" id="anamespacemom__error__handler_html"><div class="ttname"><a href="namespacemom__error__handler.html">mom_error_handler</a></div><div class="ttdoc">Routines for error handling and I/O management.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__error__handler_8F90_source.html#l00002">MOM_error_handler.F90:2</a></div></div>
 <div class="ttc" id="anamespacemom__diag__mediator_html_ab98d892c30de2ee865416e519eacfd79"><div class="ttname"><a href="namespacemom__diag__mediator.html#ab98d892c30de2ee865416e519eacfd79">mom_diag_mediator::post_data_0d</a></div><div class="ttdeci">subroutine post_data_0d(diag_field_id, field, diag_cs, is_static)</div><div class="ttdoc">Make a real scalar diagnostic available for averaging or output.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__diag__mediator_8F90_source.html#l01199">MOM_diag_mediator.F90:1199</a></div></div>
-<div class="ttc" id="astructmom__grid_1_1ocean__grid__type_html"><div class="ttname"><a href="structmom__grid_1_1ocean__grid__type.html">mom_grid::ocean_grid_type</a></div><div class="ttdoc">Ocean grid type. See mom_grid for details.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__grid_8F90_source.html#l00025">MOM_grid.F90:25</a></div></div>
+<div class="ttc" id="astructmom__grid_1_1ocean__grid__type_html"><div class="ttname"><a href="structmom__grid_1_1ocean__grid__type.html">mom_grid::ocean_grid_type</a></div><div class="ttdoc">Ocean grid type. See mom_grid for details.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__grid_8F90_source.html#l00026">MOM_grid.F90:26</a></div></div>
 <div class="ttc" id="anamespacemom__diag__mediator_html_a19d8a5e2782eb57ab3d7824028fafd56"><div class="ttname"><a href="namespacemom__diag__mediator.html#a19d8a5e2782eb57ab3d7824028fafd56">mom_diag_mediator::set_masks_for_axes</a></div><div class="ttdeci">subroutine, public set_masks_for_axes(G, diag_cs)</div><div class="ttdoc">set_masks_for_axes sets up the 2d and 3d masks for diagnostics using the current grid recorded after ...</div><div class="ttdef"><b>Definition:</b> <a href="MOM__diag__mediator_8F90_source.html#l00706">MOM_diag_mediator.F90:706</a></div></div>
 <div class="ttc" id="anamespacemom__diag__mediator_html_acfce430f0605a56afdb438107afc0d47"><div class="ttname"><a href="namespacemom__diag__mediator.html#acfce430f0605a56afdb438107afc0d47">mom_diag_mediator::diag_copy_storage_to_diag</a></div><div class="ttdeci">subroutine, public diag_copy_storage_to_diag(diag, grid_storage)</div><div class="ttdoc">Copy from the stored diagnostic arrays to the main diagnostic grids.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__diag__mediator_8F90_source.html#l03508">MOM_diag_mediator.F90:3508</a></div></div>
 <div class="ttc" id="anamespacemom__diag__mediator_html_a8a8e75119f340f174cfef580ded1dd79"><div class="ttname"><a href="namespacemom__diag__mediator.html#a8a8e75119f340f174cfef580ded1dd79">mom_diag_mediator::id_clock_diag_remap</a></div><div class="ttdeci">integer id_clock_diag_remap</div><div class="ttdoc">Sets up diagnostics axes.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__diag__mediator_8F90_source.html#l00338">MOM_diag_mediator.F90:338</a></div></div>

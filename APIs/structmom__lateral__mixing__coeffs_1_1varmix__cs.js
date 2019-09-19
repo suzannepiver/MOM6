@@ -62,7 +62,6 @@ var structmom__lateral__mixing__coeffs_1_1varmix__cs =
     [ "use_stored_slopes", "structmom__lateral__mixing__coeffs_1_1varmix__cs.html#abc71e92bc5b685437dcd8aed1e53ec4f", null ],
     [ "use_variable_mixing", "structmom__lateral__mixing__coeffs_1_1varmix__cs.html#a284617559ea9f1ca18d469a54b89211f", null ],
     [ "use_visbeck", "structmom__lateral__mixing__coeffs_1_1varmix__cs.html#a89545cca8a4fb96aad51cf4ac1c5379e", null ],
-    [ "use_visbeck_slope_bug", "structmom__lateral__mixing__coeffs_1_1varmix__cs.html#a6d4ecfb4f804c2ffb319ce1bb6b3d6c4", null ],
     [ "varmix_ktop", "structmom__lateral__mixing__coeffs_1_1varmix__cs.html#acc23da8f8c4820374dfba32ef8df2581", null ],
     [ "visbeck_l_scale", "structmom__lateral__mixing__coeffs_1_1varmix__cs.html#a38e5fba32ec0a65c560ef7308407e2ff", null ],
     [ "visbeck_s_max", "structmom__lateral__mixing__coeffs_1_1varmix__cs.html#a311a90b88029d63f65dfa2ba67aae27a", null ],

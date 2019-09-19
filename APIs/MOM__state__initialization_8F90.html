@@ -148,18 +148,18 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a69c6f01824f00611082b6d5f1b6ca738"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__state__initialization.html#a69c6f01824f00611082b6d5f1b6ca738">mom_state_initialization::cut_off_column_top</a> (nk, tv, GV, G_earth, depth, min_thickness, T, T_t, T_b, S, S_t, S_b, p_surf, h, remap_CS, z_tol)</td></tr>
 <tr class="memdesc:a69c6f01824f00611082b6d5f1b6ca738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust the layer thicknesses by removing the top of the water column above the depth where the hydrostatic pressure matches p_surf.  <a href="namespacemom__state__initialization.html#a69c6f01824f00611082b6d5f1b6ca738">More...</a><br /></td></tr>
 <tr class="separator:a69c6f01824f00611082b6d5f1b6ca738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2b1b3bb5314096758090a074e552181"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__state__initialization.html#ae2b1b3bb5314096758090a074e552181">mom_state_initialization::initialize_velocity_from_file</a> (u, v, G, param_file, just_read_params)</td></tr>
-<tr class="memdesc:ae2b1b3bb5314096758090a074e552181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize horizontal velocity components from file.  <a href="namespacemom__state__initialization.html#ae2b1b3bb5314096758090a074e552181">More...</a><br /></td></tr>
-<tr class="separator:ae2b1b3bb5314096758090a074e552181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcedb30eb6f940cef3fbdd4328aedef8"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__state__initialization.html#adcedb30eb6f940cef3fbdd4328aedef8">mom_state_initialization::initialize_velocity_from_file</a> (u, v, G, US, param_file, just_read_params)</td></tr>
+<tr class="memdesc:adcedb30eb6f940cef3fbdd4328aedef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize horizontal velocity components from file.  <a href="namespacemom__state__initialization.html#adcedb30eb6f940cef3fbdd4328aedef8">More...</a><br /></td></tr>
+<tr class="separator:adcedb30eb6f940cef3fbdd4328aedef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1de6eb1d89deb76196b2876c8982a956"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__state__initialization.html#a1de6eb1d89deb76196b2876c8982a956">mom_state_initialization::initialize_velocity_zero</a> (u, v, G, param_file, just_read_params)</td></tr>
 <tr class="memdesc:a1de6eb1d89deb76196b2876c8982a956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize horizontal velocity components to zero.  <a href="namespacemom__state__initialization.html#a1de6eb1d89deb76196b2876c8982a956">More...</a><br /></td></tr>
 <tr class="separator:a1de6eb1d89deb76196b2876c8982a956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a066c9ee574ec6649c2fed6529fc3d4f7"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__state__initialization.html#a066c9ee574ec6649c2fed6529fc3d4f7">mom_state_initialization::initialize_velocity_uniform</a> (u, v, G, param_file, just_read_params)</td></tr>
-<tr class="memdesc:a066c9ee574ec6649c2fed6529fc3d4f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the initial velocity components to uniform.  <a href="namespacemom__state__initialization.html#a066c9ee574ec6649c2fed6529fc3d4f7">More...</a><br /></td></tr>
-<tr class="separator:a066c9ee574ec6649c2fed6529fc3d4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31cf431d9c7cf6351b13e733a43050b9"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__state__initialization.html#a31cf431d9c7cf6351b13e733a43050b9">mom_state_initialization::initialize_velocity_circular</a> (u, v, G, param_file, just_read_params)</td></tr>
-<tr class="memdesc:a31cf431d9c7cf6351b13e733a43050b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the initial velocity components to be circular with no flow at edges of domain and center.  <a href="namespacemom__state__initialization.html#a31cf431d9c7cf6351b13e733a43050b9">More...</a><br /></td></tr>
-<tr class="separator:a31cf431d9c7cf6351b13e733a43050b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10655a7937f2239ff8ae9b899f4bc4b"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__state__initialization.html#ac10655a7937f2239ff8ae9b899f4bc4b">mom_state_initialization::initialize_velocity_uniform</a> (u, v, G, US, param_file, just_read_params)</td></tr>
+<tr class="memdesc:ac10655a7937f2239ff8ae9b899f4bc4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the initial velocity components to uniform.  <a href="namespacemom__state__initialization.html#ac10655a7937f2239ff8ae9b899f4bc4b">More...</a><br /></td></tr>
+<tr class="separator:ac10655a7937f2239ff8ae9b899f4bc4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ebdba67fde58a9aa7633bca4c117ba"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__state__initialization.html#af4ebdba67fde58a9aa7633bca4c117ba">mom_state_initialization::initialize_velocity_circular</a> (u, v, G, US, param_file, just_read_params)</td></tr>
+<tr class="memdesc:af4ebdba67fde58a9aa7633bca4c117ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the initial velocity components to be circular with no flow at edges of domain and center.  <a href="namespacemom__state__initialization.html#af4ebdba67fde58a9aa7633bca4c117ba">More...</a><br /></td></tr>
+<tr class="separator:af4ebdba67fde58a9aa7633bca4c117ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2156cd3a64fba763c9841cd587f10ea8"><td class="memItemLeft" align="right" valign="top">real function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MOM__state__initialization_8F90.html#a2156cd3a64fba763c9841cd587f10ea8">my_psi</a> (ig, jg)</td></tr>
 <tr class="memdesc:a2156cd3a64fba763c9841cd587f10ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of a circular stream function at (ig,jg)  <a href="MOM__state__initialization_8F90.html#a2156cd3a64fba763c9841cd587f10ea8">More...</a><br /></td></tr>
 <tr class="separator:a2156cd3a64fba763c9841cd587f10ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,20 +244,20 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__state__initialization_8F90_source.html#l01400">1400</a> of file <a class="el" href="MOM__state__initialization_8F90_source.html">MOM_state_initialization.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;    <span class="keywordtype">integer</span> :: ig<span class="comment"> !&lt; Global i-index</span></div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;    <span class="keywordtype">integer</span> :: jg<span class="comment"> !&lt; Global j-index</span></div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;    <span class="comment">! Local variables</span></div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;<span class="keywordtype">    real</span> :: x, y, r</div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160; </div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;    x = 2.0*(g%geoLonBu(ig,jg)-g%west_lon)/g%len_lon-1.0  <span class="comment">! -1&lt;x&lt;1</span></div>
-<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;    y = 2.0*(g%geoLatBu(ig,jg)-g%south_lat)/g%len_lat-1.0 <span class="comment">! -1&lt;y&lt;1</span></div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;    r = sqrt( x**2 + y**2 ) <span class="comment">! Circulat stream fn nis fn of radius only</span></div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;    r = min(1.0,r) <span class="comment">! Flatten stream function in corners of box</span></div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;    <a class="code" href="MOM__state__initialization_8F90.html#a2156cd3a64fba763c9841cd587f10ea8">my_psi</a> = 0.5*(1.0 - cos(dpi*r))</div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;    <a class="code" href="MOM__state__initialization_8F90.html#a2156cd3a64fba763c9841cd587f10ea8">my_psi</a> = <a class="code" href="MOM__state__initialization_8F90.html#a2156cd3a64fba763c9841cd587f10ea8">my_psi</a> * (circular_max_u*g%len_lon*1e3/dpi) <span class="comment">! len_lon is in km</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__state__initialization_8F90_source.html#l01416">1416</a> of file <a class="el" href="MOM__state__initialization_8F90_source.html">MOM_state_initialization.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;    <span class="keywordtype">integer</span> :: ig<span class="comment"> !&lt; Global i-index</span></div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;    <span class="keywordtype">integer</span> :: jg<span class="comment"> !&lt; Global j-index</span></div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;    <span class="comment">! Local variables</span></div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;<span class="keywordtype">    real</span> :: x, y, r</div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160; </div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;    x = 2.0*(g%geoLonBu(ig,jg)-g%west_lon) / g%len_lon - 1.0  <span class="comment">! -1&lt;x&lt;1</span></div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;    y = 2.0*(g%geoLatBu(ig,jg)-g%south_lat) / g%len_lat - 1.0 <span class="comment">! -1&lt;y&lt;1</span></div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;    r = sqrt( x**2 + y**2 ) <span class="comment">! Circular stream function is a function of radius only</span></div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;    r = min(1.0, r) <span class="comment">! Flatten stream function in corners of box</span></div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;    <a class="code" href="MOM__state__initialization_8F90.html#a2156cd3a64fba763c9841cd587f10ea8">my_psi</a> = 0.5*(1.0 - cos(dpi*r))</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;    <a class="code" href="MOM__state__initialization_8F90.html#a2156cd3a64fba763c9841cd587f10ea8">my_psi</a> = <a class="code" href="MOM__state__initialization_8F90.html#a2156cd3a64fba763c9841cd587f10ea8">my_psi</a> * (circular_max_u*g%len_lon*1e3 / dpi) <span class="comment">! len_lon is in km</span></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="MOM__state__initialization_8F90_source.html#l01356">mom_state_initialization::initialize_velocity_circular()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__state__initialization_8F90_source.html#l01371">mom_state_initialization::initialize_velocity_circular()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -269,7 +269,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aMOM__state__initialization_8F90_html_a2156cd3a64fba763c9841cd587f10ea8"><div class="ttname"><a href="MOM__state__initialization_8F90.html#a2156cd3a64fba763c9841cd587f10ea8">my_psi</a></div><div class="ttdeci">real function my_psi(ig, jg)</div><div class="ttdoc">Returns the value of a circular stream function at (ig,jg)</div><div class="ttdef"><b>Definition:</b> <a href="MOM__state__initialization_8F90_source.html#l01400">MOM_state_initialization.F90:1400</a></div></div>
+<div class="ttc" id="aMOM__state__initialization_8F90_html_a2156cd3a64fba763c9841cd587f10ea8"><div class="ttname"><a href="MOM__state__initialization_8F90.html#a2156cd3a64fba763c9841cd587f10ea8">my_psi</a></div><div class="ttdeci">real function my_psi(ig, jg)</div><div class="ttdoc">Returns the value of a circular stream function at (ig,jg)</div><div class="ttdef"><b>Definition:</b> <a href="MOM__state__initialization_8F90_source.html#l01416">MOM_state_initialization.F90:1416</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

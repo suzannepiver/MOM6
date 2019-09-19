@@ -104,7 +104,6 @@ var annotated_dup =
     [ "mom_safe_alloc", "namespacemom__safe__alloc.html", "namespacemom__safe__alloc" ],
     [ "mom_set_diffusivity", "namespacemom__set__diffusivity.html", "namespacemom__set__diffusivity" ],
     [ "mom_set_visc", "namespacemom__set__visc.html", "namespacemom__set__visc" ],
-    [ "mom_shortwave_abs", "namespacemom__shortwave__abs.html", "namespacemom__shortwave__abs" ],
     [ "mom_sponge", "namespacemom__sponge.html", "namespacemom__sponge" ],
     [ "mom_sum_output", "namespacemom__sum__output.html", "namespacemom__sum__output" ],
     [ "mom_surface_forcing", "namespacemom__surface__forcing.html", "namespacemom__surface__forcing" ],

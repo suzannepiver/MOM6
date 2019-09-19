@@ -11,7 +11,6 @@ var MOM__tidal__mixing_8F90 =
     [ "setup_tidal_diagnostics", "MOM__tidal__mixing_8F90.html#a7d2dfb64df35957d1252ce841c0cdf43", null ],
     [ "tidal_mixing_end", "MOM__tidal__mixing_8F90.html#a4ec08e118dea2ecbac7e719ed73acc70", null ],
     [ "tidal_mixing_init", "MOM__tidal__mixing_8F90.html#a6278fe41ef74ac23ba02ae1540104c5f", null ],
-    [ "mdl", "MOM__tidal__mixing_8F90.html#a925ef652b1932e881b0f10e3d2fe17fa", null ],
     [ "polzin_09", "MOM__tidal__mixing_8F90.html#afed6c5ada4d2eeb610c5c87029d36ac3", null ],
     [ "polzin_profile_string", "MOM__tidal__mixing_8F90.html#ab6b1348f160c8cab37a087b10cf11e7f", null ],
     [ "schmittner", "MOM__tidal__mixing_8F90.html#a96e82abebc8049e136886af73ae99906", null ],

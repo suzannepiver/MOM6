@@ -272,7 +272,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>, and <a class="el" href="dyed__channel__initialization_8F90_source.html#l00034">ntr</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__state__initialization_8F90_source.html#l00124">mom_state_initialization::mom_initialize_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__state__initialization_8F90_source.html#l00125">mom_state_initialization::mom_initialize_state()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -368,9 +368,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      jsd = segment%HI%jsd ; jed = segment%HI%jed</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      isdb = segment%HI%IsdB ; iedb = segment%HI%IedB</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <span class="keywordflow">if</span> (cs%frequency == 0.0) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        flow = cs%zonal_flow</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        flow = g%US%m_s_to_L_T*cs%zonal_flow</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        flow = cs%zonal_flow + cs%tidal_amp * cos(2 * pi * cs%frequency * time_sec)</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        flow = g%US%m_s_to_L_T*cs%zonal_flow + cs%tidal_amp * cos(2 * pi * cs%frequency * time_sec)</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordflow">      endif</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="keywordflow">do</span> k=1,g%ke</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">do</span> j=jsd,jed ; <span class="keywordflow">do</span> i=isdb,iedb</div>
@@ -478,7 +478,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  register_dyed_channel_obc = .true.</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>, and <a class="el" href="MOM__open__boundary_8F90_source.html#l03414">mom_open_boundary::register_obc()</a>.</p>
+<p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>, and <a class="el" href="MOM__open__boundary_8F90_source.html#l03539">mom_open_boundary::register_obc()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

@@ -449,7 +449,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    stocks(m) = 0.0</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;      stocks(m) = stocks(m) + cs%tr(i,j,k,m) * &amp;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                             (g%mask2dT(i,j) * g%areaT(i,j) * h(i,j,k))</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                             (g%mask2dT(i,j) * g%US%L_to_m**2*g%areaT(i,j) * h(i,j,k))</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    stocks(m) = gv%H_to_kg_m2 * stocks(m)</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="keywordflow">  enddo</span></div>
@@ -667,7 +667,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      <span class="keywordflow">if</span> (k&gt;0) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        k=min(k,k_max) <span class="comment">! Only insert k or first layer with interface 10 m above bottom</span></div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        cs%tr(i,j,k,m) = cs%tr(i,j,k,m) + cs%oil_source_rate*dt / &amp;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                ((h_new(i,j,k)+gv%H_subroundoff) * g%areaT(i,j) )</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                ((h_new(i,j,k)+gv%H_subroundoff) * g%US%L_to_m**2*g%areaT(i,j) )</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      <span class="keywordflow">elseif</span> (k&lt;0) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        h_total=gv%H_subroundoff</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="keywordflow">do</span> k=1, nz</div>
@@ -675,7 +675,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="keywordflow">        enddo</span></div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="keywordflow">do</span> k=1, nz</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;          cs%tr(i,j,k,m) = cs%tr(i,j,k,m) + cs%oil_source_rate*dt/(h_total &amp;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                                           * g%areaT(i,j) )</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                                           * g%US%L_to_m**2*g%areaT(i,j) )</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="keywordflow">        enddo</span></div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="keywordflow">      endif</span></div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="keywordflow">    enddo</span></div>

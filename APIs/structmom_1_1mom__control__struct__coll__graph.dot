@@ -16,7 +16,7 @@ digraph "mom::mom_control_struct"
   Node5 [label="type(thickness_diffuse\l_cs), pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sfc_ids" ,fontname="Helvetica"];
   Node6 [label="type(surface_diag_ids)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
-  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" thickness_diffuse\nuse_ale_algorithm\nsplit\ncount_calls\nuse_legacy_diabatic\l_driver\nusemeke\nthermo_spans_coupling\ncheck_bad_sfc_vals\nuse_rk2\noffline_tracer\l_mode\n..." ,fontname="Helvetica"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" thickness_diffuse\nuse_ale_algorithm\nsplit\ncount_calls\nusemeke\nthermo_spans_coupling\ncheck_bad_sfc_vals\nuse_rk2\noffline_tracer\l_mode\ninterp_p_surf\n..." ,fontname="Helvetica"];
   Node7 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" odacs" ,fontname="Helvetica"];
   Node8 [label="type(oda_cs), pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];

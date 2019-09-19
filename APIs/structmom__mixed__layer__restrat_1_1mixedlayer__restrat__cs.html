@@ -118,19 +118,19 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a06433ac689959db83b2639974cab8237"><td class="mdescLeft">&#160;</td><td class="mdescRight">As for ml_restrat_coef but using the slow filtered MLD [nondim].  <a href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#a06433ac689959db83b2639974cab8237">More...</a><br /></td></tr>
 <tr class="separator:a06433ac689959db83b2639974cab8237"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3da0185fcda8dd50f063568533c02a07"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#a3da0185fcda8dd50f063568533c02a07">front_length</a></td></tr>
-<tr class="memdesc:a3da0185fcda8dd50f063568533c02a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">If non-zero, is the frontal-length scale [m] used to calculate the upscaling of buoyancy gradients that is otherwise represented by the parameter FOX_KEMPER_ML_RESTRAT_COEF. If MLE_FRONT_LENGTH is non-zero, it is recommended to set FOX_KEMPER_ML_RESTRAT_COEF=1.0.  <a href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#a3da0185fcda8dd50f063568533c02a07">More...</a><br /></td></tr>
+<tr class="memdesc:a3da0185fcda8dd50f063568533c02a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">If non-zero, is the frontal-length scale [L ~&gt; m] used to calculate the upscaling of buoyancy gradients that is otherwise represented by the parameter FOX_KEMPER_ML_RESTRAT_COEF. If MLE_FRONT_LENGTH is non-zero, it is recommended to set FOX_KEMPER_ML_RESTRAT_COEF=1.0.  <a href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#a3da0185fcda8dd50f063568533c02a07">More...</a><br /></td></tr>
 <tr class="separator:a3da0185fcda8dd50f063568533c02a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a8920dc6083e5e6cd21542da3796344"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#a4a8920dc6083e5e6cd21542da3796344">mle_use_pbl_mld</a></td></tr>
 <tr class="memdesc:a4a8920dc6083e5e6cd21542da3796344"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, use the MLD provided by the PBL parameterization. if false, MLE will calculate a MLD based on a density difference based on the parameter MLE_DENSITY_DIFF.  <a href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#a4a8920dc6083e5e6cd21542da3796344">More...</a><br /></td></tr>
 <tr class="separator:a4a8920dc6083e5e6cd21542da3796344"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef00be2e2540af77c5de10ee49550871"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#aef00be2e2540af77c5de10ee49550871">mle_mld_decay_time</a></td></tr>
-<tr class="memdesc:aef00be2e2540af77c5de10ee49550871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time-scale to use in a running-mean when MLD is retreating [s].  <a href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#aef00be2e2540af77c5de10ee49550871">More...</a><br /></td></tr>
+<tr class="memdesc:aef00be2e2540af77c5de10ee49550871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time-scale to use in a running-mean when MLD is retreating [T ~&gt; s].  <a href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#aef00be2e2540af77c5de10ee49550871">More...</a><br /></td></tr>
 <tr class="separator:aef00be2e2540af77c5de10ee49550871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8770beb5c336b36bcf5aa563e2be7f5f"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#a8770beb5c336b36bcf5aa563e2be7f5f">mle_mld_decay_time2</a></td></tr>
-<tr class="memdesc:a8770beb5c336b36bcf5aa563e2be7f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time-scale to use in a running-mean when filtered MLD is retreating [s].  <a href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#a8770beb5c336b36bcf5aa563e2be7f5f">More...</a><br /></td></tr>
+<tr class="memdesc:a8770beb5c336b36bcf5aa563e2be7f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time-scale to use in a running-mean when filtered MLD is retreating [T ~&gt; s].  <a href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#a8770beb5c336b36bcf5aa563e2be7f5f">More...</a><br /></td></tr>
 <tr class="separator:a8770beb5c336b36bcf5aa563e2be7f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b028e0e7dffb27211dcfc6d5cd932f0"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#a7b028e0e7dffb27211dcfc6d5cd932f0">mle_density_diff</a></td></tr>
-<tr class="memdesc:a7b028e0e7dffb27211dcfc6d5cd932f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Density difference used in detecting mixed-layer depth [kgm-3].  <a href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#a7b028e0e7dffb27211dcfc6d5cd932f0">More...</a><br /></td></tr>
+<tr class="memdesc:a7b028e0e7dffb27211dcfc6d5cd932f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Density difference used in detecting mixed-layer depth [kg m-3].  <a href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#a7b028e0e7dffb27211dcfc6d5cd932f0">More...</a><br /></td></tr>
 <tr class="separator:a7b028e0e7dffb27211dcfc6d5cd932f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e00bdde7bc6ca83358e1149e8734df7"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#a2e00bdde7bc6ca83358e1149e8734df7">mle_tail_dh</a></td></tr>
 <tr class="memdesc:a2e00bdde7bc6ca83358e1149e8734df7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fraction by which to extend the mixed-layer restratification depth used for a smoother stream function at the base of the mixed-layer [nondim].  <a href="structmom__mixed__layer__restrat_1_1mixedlayer__restrat__cs.html#a2e00bdde7bc6ca83358e1149e8734df7">More...</a><br /></td></tr>
@@ -236,10 +236,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>If non-zero, is the frontal-length scale [m] used to calculate the upscaling of buoyancy gradients that is otherwise represented by the parameter FOX_KEMPER_ML_RESTRAT_COEF. If MLE_FRONT_LENGTH is non-zero, it is recommended to set FOX_KEMPER_ML_RESTRAT_COEF=1.0. </p>
+<p>If non-zero, is the frontal-length scale [L ~&gt; m] used to calculate the upscaling of buoyancy gradients that is otherwise represented by the parameter FOX_KEMPER_ML_RESTRAT_COEF. If MLE_FRONT_LENGTH is non-zero, it is recommended to set FOX_KEMPER_ML_RESTRAT_COEF=1.0. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__mixed__layer__restrat_8F90_source.html#l00044">44</a> of file <a class="el" href="MOM__mixed__layer__restrat_8F90_source.html">MOM_mixed_layer_restrat.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">  real</span>    :: front_length<span class="comment">          !&lt; If non-zero, is the frontal-length scale [m] used to calculate the</span></div>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">  real</span>    :: front_length<span class="comment">          !&lt; If non-zero, is the frontal-length scale [L ~&gt; m] used to calculate the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -522,10 +522,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Density difference used in detecting mixed-layer depth [kgm-3]. </p>
+<p>Density difference used in detecting mixed-layer depth [kg m-3]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__mixed__layer__restrat_8F90_source.html#l00053">53</a> of file <a class="el" href="MOM__mixed__layer__restrat_8F90_source.html">MOM_mixed_layer_restrat.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">  real</span>    :: MLE_density_diff<span class="comment">      !&lt; Density difference used in detecting mixed-layer depth [kgm-3].</span></div>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">  real</span>    :: MLE_density_diff<span class="comment">      !&lt; Density difference used in detecting mixed-layer depth [kg m-3].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -541,10 +541,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Time-scale to use in a running-mean when MLD is retreating [s]. </p>
+<p>Time-scale to use in a running-mean when MLD is retreating [T ~&gt; s]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__mixed__layer__restrat_8F90_source.html#l00051">51</a> of file <a class="el" href="MOM__mixed__layer__restrat_8F90_source.html">MOM_mixed_layer_restrat.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">  real</span>    :: MLE_MLD_decay_time<span class="comment">    !&lt; Time-scale to use in a running-mean when MLD is retreating [s].</span></div>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">  real</span>    :: MLE_MLD_decay_time<span class="comment">    !&lt; Time-scale to use in a running-mean when MLD is retreating [T ~&gt; s].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -560,10 +560,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Time-scale to use in a running-mean when filtered MLD is retreating [s]. </p>
+<p>Time-scale to use in a running-mean when filtered MLD is retreating [T ~&gt; s]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__mixed__layer__restrat_8F90_source.html#l00052">52</a> of file <a class="el" href="MOM__mixed__layer__restrat_8F90_source.html">MOM_mixed_layer_restrat.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">  real</span>    :: MLE_MLD_decay_time2<span class="comment">   !&lt; Time-scale to use in a running-mean when filtered MLD is retreating [s].</span></div>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">  real</span>    :: MLE_MLD_decay_time2<span class="comment">   !&lt; Time-scale to use in a running-mean when filtered MLD is retreating [T ~&gt; s].</span></div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -92,7 +92,6 @@ var structmom_1_1mom__control__struct =
     [ "update_obc_csp", "structmom_1_1mom__control__struct.html#a133556146aca486aa24e33d12772b404", null ],
     [ "us", "structmom_1_1mom__control__struct.html#a49d85380cefccee147f10996ac288b4c", null ],
     [ "use_ale_algorithm", "structmom_1_1mom__control__struct.html#a3da458f68d8939c9f3a99726b8a7cd3c", null ],
-    [ "use_legacy_diabatic_driver", "structmom_1_1mom__control__struct.html#ac2ffdf02306c77fde7f7d02e5d292702", null ],
     [ "use_rk2", "structmom_1_1mom__control__struct.html#a73e0ffc2be4b504f7126a2e256140b79", null ],
     [ "usemeke", "structmom_1_1mom__control__struct.html#a7a5574f401322901f56a30f01c9a659e", null ],
     [ "usewaves", "structmom_1_1mom__control__struct.html#aba5ba389f5025b7b04df1cef7df6cf85", null ],

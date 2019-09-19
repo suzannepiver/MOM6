@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('structmom__thickness__diffuse_1_1thick
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Control structure for thickness diffusion. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00035">35</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00037">37</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_thickness_diffuse::thickness_diffuse_cs:</div>
 <div class="dyncontent">
@@ -112,7 +112,7 @@ Collaboration diagram for mom_thickness_diffuse::thickness_diffuse_cs:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public variables and constants</h2></td></tr>
 <tr class="memitem:a822806ccf24449978f907aa2829e4ad0"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a822806ccf24449978f907aa2829e4ad0">khth</a></td></tr>
-<tr class="memdesc:a822806ccf24449978f907aa2829e4ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background interface depth diffusivity [m2 s-1].  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a822806ccf24449978f907aa2829e4ad0">More...</a><br /></td></tr>
+<tr class="memdesc:a822806ccf24449978f907aa2829e4ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background interface depth diffusivity [L2 T-1 ~&gt; m2 s-1].  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a822806ccf24449978f907aa2829e4ad0">More...</a><br /></td></tr>
 <tr class="separator:a822806ccf24449978f907aa2829e4ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f536ed134b565501461ed7105ab7f77"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a2f536ed134b565501461ed7105ab7f77">khth_slope_cff</a></td></tr>
 <tr class="memdesc:a2f536ed134b565501461ed7105ab7f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slope dependence coefficient of Khth [m2 s-1].  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a2f536ed134b565501461ed7105ab7f77">More...</a><br /></td></tr>
@@ -121,16 +121,16 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a3c60a2fa8481a66083b9243354976eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum value of the diffusive CFL for thickness diffusion.  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a3c60a2fa8481a66083b9243354976eb7">More...</a><br /></td></tr>
 <tr class="separator:a3c60a2fa8481a66083b9243354976eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ec2e8b5412b1d193c7729eac02a525e"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a3ec2e8b5412b1d193c7729eac02a525e">khth_min</a></td></tr>
-<tr class="memdesc:a3ec2e8b5412b1d193c7729eac02a525e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum value of Khth [m2 s-1].  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a3ec2e8b5412b1d193c7729eac02a525e">More...</a><br /></td></tr>
+<tr class="memdesc:a3ec2e8b5412b1d193c7729eac02a525e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum value of Khth [L2 T-1 ~&gt; m2 s-1].  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a3ec2e8b5412b1d193c7729eac02a525e">More...</a><br /></td></tr>
 <tr class="separator:a3ec2e8b5412b1d193c7729eac02a525e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f8b53d94896af5e2494a3561153dd75"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a5f8b53d94896af5e2494a3561153dd75">khth_max</a></td></tr>
-<tr class="memdesc:a5f8b53d94896af5e2494a3561153dd75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum value of Khth [m2 s-1], or 0 for no max.  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a5f8b53d94896af5e2494a3561153dd75">More...</a><br /></td></tr>
+<tr class="memdesc:a5f8b53d94896af5e2494a3561153dd75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum value of Khth [L2 T-1 ~&gt; m2 s-1], or 0 for no max.  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a5f8b53d94896af5e2494a3561153dd75">More...</a><br /></td></tr>
 <tr class="separator:a5f8b53d94896af5e2494a3561153dd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5a4d0b600601c6ad01fc10da11bef2b"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#aa5a4d0b600601c6ad01fc10da11bef2b">slope_max</a></td></tr>
 <tr class="memdesc:aa5a4d0b600601c6ad01fc10da11bef2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slopes steeper than slope_max are limited in some way [nondim].  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#aa5a4d0b600601c6ad01fc10da11bef2b">More...</a><br /></td></tr>
 <tr class="separator:aa5a4d0b600601c6ad01fc10da11bef2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6a6ed6658c8e82f93bd0a8e6ce61b6a"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#ae6a6ed6658c8e82f93bd0a8e6ce61b6a">kappa_smooth</a></td></tr>
-<tr class="memdesc:ae6a6ed6658c8e82f93bd0a8e6ce61b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical diffusivity used to interpolate more sensible values of T &amp; S into thin layers [Z2 s-1 ~&gt; m2 s-1].  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#ae6a6ed6658c8e82f93bd0a8e6ce61b6a">More...</a><br /></td></tr>
+<tr class="memdesc:ae6a6ed6658c8e82f93bd0a8e6ce61b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical diffusivity used to interpolate more sensible values of T &amp; S into thin layers [Z2 T-1 ~&gt; m2 s-1].  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#ae6a6ed6658c8e82f93bd0a8e6ce61b6a">More...</a><br /></td></tr>
 <tr class="separator:ae6a6ed6658c8e82f93bd0a8e6ce61b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae75bc502571ff2d95285f4537314bcf0"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#ae75bc502571ff2d95285f4537314bcf0">thickness_diffuse</a></td></tr>
 <tr class="memdesc:ae75bc502571ff2d95285f4537314bcf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, interfaces heights are diffused.  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#ae75bc502571ff2d95285f4537314bcf0">More...</a><br /></td></tr>
@@ -145,13 +145,13 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a560e87e9063c6635813a524e5a6c8d1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A minimum wave speed used in the Ferrari et al., 2010, streamfunction formulation [m s-1].  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a560e87e9063c6635813a524e5a6c8d1d">More...</a><br /></td></tr>
 <tr class="separator:a560e87e9063c6635813a524e5a6c8d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad167def69274020f0f0374fd8d35f707"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#ad167def69274020f0f0374fd8d35f707">n2_floor</a></td></tr>
-<tr class="memdesc:ad167def69274020f0f0374fd8d35f707"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floor for Brunt-Vasaila frequency in the Ferrari et al., 2010, streamfunction formulation [s-2].  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#ad167def69274020f0f0374fd8d35f707">More...</a><br /></td></tr>
+<tr class="memdesc:ad167def69274020f0f0374fd8d35f707"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floor for Brunt-Vasaila frequency in the Ferrari et al., 2010, streamfunction formulation [T-2 ~&gt; s-2].  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#ad167def69274020f0f0374fd8d35f707">More...</a><br /></td></tr>
 <tr class="separator:ad167def69274020f0f0374fd8d35f707"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada10cbc3837edd18d042a0ac3dc8b788"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#ada10cbc3837edd18d042a0ac3dc8b788">detangle_interfaces</a></td></tr>
 <tr class="memdesc:ada10cbc3837edd18d042a0ac3dc8b788"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, add 3-d structured interface height diffusivities to horizontally smooth jagged layers.  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#ada10cbc3837edd18d042a0ac3dc8b788">More...</a><br /></td></tr>
 <tr class="separator:ada10cbc3837edd18d042a0ac3dc8b788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed330bf2012d92fb00770c6d935e3f7d"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#aed330bf2012d92fb00770c6d935e3f7d">detangle_time</a></td></tr>
-<tr class="memdesc:aed330bf2012d92fb00770c6d935e3f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If detangle_interfaces is true, this is the timescale over which maximally jagged grid-scale thickness variations are suppressed [s]. This must be longer than DT, or 0 (the default) to use DT.  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#aed330bf2012d92fb00770c6d935e3f7d">More...</a><br /></td></tr>
+<tr class="memdesc:aed330bf2012d92fb00770c6d935e3f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If detangle_interfaces is true, this is the timescale over which maximally jagged grid-scale thickness variations are suppressed [T ~&gt; s]. This must be longer than DT, or 0 (the default) to use DT.  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#aed330bf2012d92fb00770c6d935e3f7d">More...</a><br /></td></tr>
 <tr class="separator:aed330bf2012d92fb00770c6d935e3f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fb34a0f4714997e965ce8163c863b25"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a3fb34a0f4714997e965ce8163c863b25">nkml</a></td></tr>
 <tr class="memdesc:a3fb34a0f4714997e965ce8163c863b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of layers within mixed layer  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a3fb34a0f4714997e965ce8163c863b25">More...</a><br /></td></tr>
@@ -169,7 +169,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a19b8215b33ed7123074781ffd2072b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">The nondimensional coefficient governing the efficiency of the GEOMETRIC thickness difussion [nondim].  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a19b8215b33ed7123074781ffd2072b93">More...</a><br /></td></tr>
 <tr class="separator:a19b8215b33ed7123074781ffd2072b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a294ad26706b1c5484174a1f0072a546e"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a294ad26706b1c5484174a1f0072a546e">meke_geometric_epsilon</a></td></tr>
-<tr class="memdesc:a294ad26706b1c5484174a1f0072a546e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum Eady growth rate for the GEOMETRIC thickness diffusivity [s-1].  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a294ad26706b1c5484174a1f0072a546e">More...</a><br /></td></tr>
+<tr class="memdesc:a294ad26706b1c5484174a1f0072a546e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum Eady growth rate for the GEOMETRIC thickness diffusivity [T-1 ~&gt; s-1].  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a294ad26706b1c5484174a1f0072a546e">More...</a><br /></td></tr>
 <tr class="separator:a294ad26706b1c5484174a1f0072a546e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec66023978e88f8ae8319001c263fca0"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#aec66023978e88f8ae8319001c263fca0">use_kh_in_meke</a></td></tr>
 <tr class="memdesc:aec66023978e88f8ae8319001c263fca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, uses the thickness diffusivity calculated here to diffuse MEKE.  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#aec66023978e88f8ae8319001c263fca0">More...</a><br /></td></tr>
@@ -190,10 +190,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a92d560bdd821d0ca2171a21b5fa8040e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic: zonal neutral slope [nondim].  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a92d560bdd821d0ca2171a21b5fa8040e">More...</a><br /></td></tr>
 <tr class="separator:a92d560bdd821d0ca2171a21b5fa8040e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abac13ce8def97efdaa916f547ca21d4f"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#abac13ce8def97efdaa916f547ca21d4f">kh_u_gme</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:abac13ce8def97efdaa916f547ca21d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface height diffusivities in u-columns (m2 s-1)  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#abac13ce8def97efdaa916f547ca21d4f">More...</a><br /></td></tr>
+<tr class="memdesc:abac13ce8def97efdaa916f547ca21d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface height diffusivities in u-columns [L2 T-1 ~&gt; m2 s-1]  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#abac13ce8def97efdaa916f547ca21d4f">More...</a><br /></td></tr>
 <tr class="separator:abac13ce8def97efdaa916f547ca21d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3dc595dc7a996ffe55fd0731a42f55e"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#af3dc595dc7a996ffe55fd0731a42f55e">kh_v_gme</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:af3dc595dc7a996ffe55fd0731a42f55e"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface height diffusivities in v-columns (m2 s-1)  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#af3dc595dc7a996ffe55fd0731a42f55e">More...</a><br /></td></tr>
+<tr class="memdesc:af3dc595dc7a996ffe55fd0731a42f55e"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface height diffusivities in v-columns [L2 T-1 ~&gt; m2 s-1]  <a href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#af3dc595dc7a996ffe55fd0731a42f55e">More...</a><br /></td></tr>
 <tr class="separator:af3dc595dc7a996ffe55fd0731a42f55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a197234a1e570a63c33cc0bc83f3171a6"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a197234a1e570a63c33cc0bc83f3171a6">id_uhgm</a> = -1</td></tr>
@@ -257,8 +257,8 @@ Public variables and constants</h2></td></tr>
 
 <p>write verbose checksums for debugging purposes </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00061">61</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">               !&lt; write verbose checksums for debugging purposes</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00063">63</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">               !&lt; write verbose checksums for debugging purposes</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -276,8 +276,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, add 3-d structured interface height diffusivities to horizontally smooth jagged layers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00054">54</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">logical</span> :: detangle_interfaces<span class="comment"> !&lt; If true, add 3-d structured interface height</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00056">56</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">logical</span> :: detangle_interfaces<span class="comment"> !&lt; If true, add 3-d structured interface height</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -293,10 +293,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>If detangle_interfaces is true, this is the timescale over which maximally jagged grid-scale thickness variations are suppressed [s]. This must be longer than DT, or 0 (the default) to use DT. </p>
+<p>If detangle_interfaces is true, this is the timescale over which maximally jagged grid-scale thickness variations are suppressed [T ~&gt; s]. This must be longer than DT, or 0 (the default) to use DT. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00056">56</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">  real</span>    :: detangle_time<span class="comment">       !&lt; If detangle_interfaces is true, this is the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00058">58</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">  real</span>    :: detangle_time<span class="comment">       !&lt; If detangle_interfaces is true, this is the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -314,8 +314,8 @@ Public variables and constants</h2></td></tr>
 
 <p>structure used to regulate timing of diagnostics </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00073">73</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; structure used to regulate timing of diagnostics</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; structure used to regulate timing of diagnostics</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -333,8 +333,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic: zonal neutral slope [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: diagSlopeX(:,:,:) =&gt; null()  <span class="comment">!&lt; Diagnostic: zonal neutral slope [nondim]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00077">77</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: diagSlopeX(:,:,:) =&gt; null()  <span class="comment">!&lt; Diagnostic: zonal neutral slope [nondim]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -352,8 +352,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic: zonal neutral slope [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: diagSlopeY(:,:,:) =&gt; null()  <span class="comment">!&lt; Diagnostic: zonal neutral slope [nondim]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: diagSlopeY(:,:,:) =&gt; null()  <span class="comment">!&lt; Diagnostic: zonal neutral slope [nondim]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -371,8 +371,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A minimum wave speed used in the Ferrari et al., 2010, streamfunction formulation [m s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00050">50</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">  real</span>    :: FGNV_c_min<span class="comment">          !&lt; A minimum wave speed used in the Ferrari et al., 2010,</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00052">52</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">  real</span>    :: FGNV_c_min<span class="comment">          !&lt; A minimum wave speed used in the Ferrari et al., 2010,</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -390,8 +390,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A coefficient scaling the vertical smoothing term in the Ferrari et al., 2010, streamfunction formulation [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00048">48</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">  real</span>    :: FGNV_scale<span class="comment">          !&lt; A coefficient scaling the vertical smoothing term in the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00050">50</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">  real</span>    :: FGNV_scale<span class="comment">          !&lt; A coefficient scaling the vertical smoothing term in the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -409,8 +409,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the GM energy conversion form S^2*N^2*kappa rather than the streamfunction for the GM source term. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">logical</span> :: GM_src_alt<span class="comment">          !&lt; If true, use the GM energy conversion form S^2*N^2*kappa rather</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00073">73</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">logical</span> :: GM_src_alt<span class="comment">          !&lt; If true, use the GM energy conversion form S^2*N^2*kappa rather</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -428,8 +428,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Work by thickness diffusivity [W m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00074">74</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: GMwork(:,:)       =&gt; null()  <span class="comment">!&lt; Work by thickness diffusivity [W m-2]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: GMwork(:,:)       =&gt; null()  <span class="comment">!&lt; Work by thickness diffusivity [W m-2]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -447,7 +447,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00084">84</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
 
 </div>
 </div>
@@ -465,7 +465,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
 
 </div>
 </div>
@@ -483,7 +483,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
 
 </div>
 </div>
@@ -501,8 +501,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">integer</span> :: id_KH_u    = -1, id_kh_v    = -1, id_kh_t   = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">integer</span> :: id_KH_u    = -1, id_kh_v    = -1, id_kh_t   = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -520,8 +520,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">integer</span> :: id_KH_u1   = -1, id_kh_v1   = -1, id_kh_t1  = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">integer</span> :: id_KH_u1   = -1, id_kh_v1   = -1, id_kh_t1  = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -539,7 +539,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
 
 </div>
 </div>
@@ -557,7 +557,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
 
 </div>
 </div>
@@ -575,8 +575,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">integer</span> :: id_sfn_unlim_x = -1, id_sfn_unlim_y = -1, id_sfn_x = -1, id_sfn_y = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">integer</span> :: id_sfn_unlim_x = -1, id_sfn_unlim_y = -1, id_sfn_x = -1, id_sfn_y = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -594,7 +594,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
 
 </div>
 </div>
@@ -612,7 +612,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
 
 </div>
 </div>
@@ -630,7 +630,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
 
 </div>
 </div>
@@ -648,8 +648,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">integer</span> :: id_slope_x = -1, id_slope_y = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00089">89</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">integer</span> :: id_slope_x = -1, id_slope_y = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -667,7 +667,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00089">89</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
 
 </div>
 </div>
@@ -685,8 +685,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00084">84</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">integer</span> :: id_uhGM    = -1, id_vhgm    = -1, id_gmwork = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">integer</span> :: id_uhGM    = -1, id_vhgm    = -1, id_gmwork = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -704,7 +704,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifier. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00084">84</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
 
 </div>
 </div>
@@ -720,10 +720,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Vertical diffusivity used to interpolate more sensible values of T &amp; S into thin layers [Z2 s-1 ~&gt; m2 s-1]. </p>
+<p>Vertical diffusivity used to interpolate more sensible values of T &amp; S into thin layers [Z2 T-1 ~&gt; m2 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00042">42</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">  real</span>    :: kappa_smooth<span class="comment">        !&lt; Vertical diffusivity used to interpolate more</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00044">44</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">  real</span>    :: kappa_smooth<span class="comment">        !&lt; Vertical diffusivity used to interpolate more</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -739,12 +739,12 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>interface height diffusivities in u-columns (m2 s-1) </p>
+<p>interface height diffusivities in u-columns [L2 T-1 ~&gt; m2 s-1] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: &amp;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    KH_u_GME =&gt; null(), &amp;        <span class="comment">!&lt; interface height diffusivities in u-columns (m2 s-1)</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    kh_v_gme =&gt; null()           <span class="comment">!&lt; interface height diffusivities in v-columns (m2 s-1)</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00080">80</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: &amp;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    KH_u_GME =&gt; null(), &amp;        <span class="comment">!&lt; interface height diffusivities in u-columns [L2 T-1 ~&gt; m2 s-1]</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    kh_v_gme =&gt; null()           <span class="comment">!&lt; interface height diffusivities in v-columns [L2 T-1 ~&gt; m2 s-1]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -760,9 +760,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>interface height diffusivities in v-columns (m2 s-1) </p>
+<p>interface height diffusivities in v-columns [L2 T-1 ~&gt; m2 s-1] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00080">80</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
 
 </div>
 </div>
@@ -778,10 +778,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Background interface depth diffusivity [m2 s-1]. </p>
+<p>Background interface depth diffusivity [L2 T-1 ~&gt; m2 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00036">36</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">  real</span>    :: Khth<span class="comment">                !&lt; Background interface depth diffusivity [m2 s-1]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00038">38</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">  real</span>    :: Khth<span class="comment">                !&lt; Background interface depth diffusivity [L2 T-1 ~&gt; m2 s-1]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -797,10 +797,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Maximum value of Khth [m2 s-1], or 0 for no max. </p>
+<p>Maximum value of Khth [L2 T-1 ~&gt; m2 s-1], or 0 for no max. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00040">40</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">  real</span>    :: Khth_Max<span class="comment">            !&lt; Maximum value of Khth [m2 s-1], or 0 for no max</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00042">42</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">  real</span>    :: Khth_Max<span class="comment">            !&lt; Maximum value of Khth [L2 T-1 ~&gt; m2 s-1], or 0 for no max</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -816,10 +816,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Minimum value of Khth [m2 s-1]. </p>
+<p>Minimum value of Khth [L2 T-1 ~&gt; m2 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00039">39</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">  real</span>    :: Khth_Min<span class="comment">            !&lt; Minimum value of Khth [m2 s-1]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00041">41</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">  real</span>    :: Khth_Min<span class="comment">            !&lt; Minimum value of Khth [L2 T-1 ~&gt; m2 s-1]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -837,8 +837,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Slope dependence coefficient of Khth [m2 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00037">37</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">  real</span>    :: Khth_Slope_Cff<span class="comment">      !&lt; Slope dependence coefficient of Khth [m2 s-1]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00039">39</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">  real</span>    :: Khth_Slope_Cff<span class="comment">      !&lt; Slope dependence coefficient of Khth [m2 s-1]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -856,8 +856,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Maximum value of the diffusive CFL for thickness diffusion. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00038">38</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">  real</span>    :: max_Khth_CFL<span class="comment">        !&lt; Maximum value of the diffusive CFL for thickness diffusion</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00040">40</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">  real</span>    :: max_Khth_CFL<span class="comment">        !&lt; Maximum value of the diffusive CFL for thickness diffusion</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -875,8 +875,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, uses the GM coefficient formulation from the GEOMETRIC framework (Marshall et al., 2012) </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00064">64</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">logical</span> :: MEKE_GEOMETRIC<span class="comment">      !&lt; If true, uses the GM coefficient formulation from the GEOMETRIC</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00066">66</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">logical</span> :: MEKE_GEOMETRIC<span class="comment">      !&lt; If true, uses the GM coefficient formulation from the GEOMETRIC</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -894,8 +894,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The nondimensional coefficient governing the efficiency of the GEOMETRIC thickness difussion [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00066">66</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">  real</span>    :: MEKE_GEOMETRIC_alpha<span class="comment">!&lt; The nondimensional coefficient governing the efficiency of</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00068">68</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">  real</span>    :: MEKE_GEOMETRIC_alpha<span class="comment">!&lt; The nondimensional coefficient governing the efficiency of</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -911,10 +911,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Minimum Eady growth rate for the GEOMETRIC thickness diffusivity [s-1]. </p>
+<p>Minimum Eady growth rate for the GEOMETRIC thickness diffusivity [T-1 ~&gt; s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00068">68</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">  real</span>    :: MEKE_GEOMETRIC_epsilon<span class="comment"> !&lt; Minimum Eady growth rate for the GEOMETRIC thickness</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00070">70</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">  real</span>    :: MEKE_GEOMETRIC_epsilon<span class="comment"> !&lt; Minimum Eady growth rate for the GEOMETRIC thickness</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -930,10 +930,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A floor for Brunt-Vasaila frequency in the Ferrari et al., 2010, streamfunction formulation [s-2]. </p>
+<p>A floor for Brunt-Vasaila frequency in the Ferrari et al., 2010, streamfunction formulation [T-2 ~&gt; s-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00052">52</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">  real</span>    :: N2_floor<span class="comment">            !&lt; A floor for Brunt-Vasaila frequency in the Ferrari et al., 2010,</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00054">54</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">  real</span>    :: N2_floor<span class="comment">            !&lt; A floor for Brunt-Vasaila frequency in the Ferrari et al., 2010,</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -951,8 +951,8 @@ Public variables and constants</h2></td></tr>
 
 <p>number of layers within mixed layer </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00060">60</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">integer</span> :: nkml<span class="comment">                !&lt; number of layers within mixed layer</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00062">62</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">integer</span> :: nkml<span class="comment">                !&lt; number of layers within mixed layer</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -970,8 +970,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Slopes steeper than slope_max are limited in some way [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00041">41</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">  real</span>    :: slope_max<span class="comment">           !&lt; Slopes steeper than slope_max are limited in some way [nondim].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00043">43</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">  real</span>    :: slope_max<span class="comment">           !&lt; Slopes steeper than slope_max are limited in some way [nondim].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -989,8 +989,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, interfaces heights are diffused. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00044">44</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">logical</span> :: thickness_diffuse<span class="comment">   !&lt; If true, interfaces heights are diffused.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00046">46</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">logical</span> :: thickness_diffuse<span class="comment">   !&lt; If true, interfaces heights are diffused.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1008,8 +1008,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the streamfunction formulation of Ferrari et al., 2010, which effectively emphasizes graver vertical modes by smoothing in the vertical. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00045">45</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">logical</span> :: use_FGNV_streamfn<span class="comment">   !&lt; If true, use the streamfunction formulation of</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00047">47</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">logical</span> :: use_FGNV_streamfn<span class="comment">   !&lt; If true, use the streamfunction formulation of</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1027,8 +1027,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, passes GM coefficients to MOM_hor_visc for use with GME closure. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00062">62</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">logical</span> :: use_GME_thickness_diffuse<span class="comment"> !&lt; If true, passes GM coefficients to MOM_hor_visc for use</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00064">64</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">logical</span> :: use_GME_thickness_diffuse<span class="comment"> !&lt; If true, passes GM coefficients to MOM_hor_visc for use</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1046,8 +1046,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, uses the thickness diffusivity calculated here to diffuse MEKE. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00070">70</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">logical</span> :: Use_KH_in_MEKE<span class="comment">      !&lt; If true, uses the thickness diffusivity calculated here to diffuse MEKE.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__thickness__diffuse_8F90_source.html#l00072">72</a> of file <a class="el" href="MOM__thickness__diffuse_8F90_source.html">MOM_thickness_diffuse.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">logical</span> :: Use_KH_in_MEKE<span class="comment">      !&lt; If true, uses the thickness diffusivity calculated here to diffuse MEKE.</span></div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -23,9 +23,9 @@ digraph "mom_restart::open_restart_units"
   Node8 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node9 [label="mom_surface_forcing\l_mct::surface_forcing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing__mct.html#a9b444c1127c12220af99c66f7d38460d",tooltip="Initialize the surface forcing, including setting parameters and allocating permanent memory."];
+  Node9 [label="mom_surface_forcing\l_nuopc::surface_forcing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing__nuopc.html#a06657bd6f01be304accc1f2e964fefa1",tooltip="Initialize the surface forcing, including setting parameters and allocating permanent memory."];
   Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node10 [label="mom_surface_forcing\l_nuopc::surface_forcing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing__nuopc.html#a06657bd6f01be304accc1f2e964fefa1",tooltip="Initialize the surface forcing, including setting parameters and allocating permanent memory."];
+  Node10 [label="mom_surface_forcing\l_mct::surface_forcing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing__mct.html#a9b444c1127c12220af99c66f7d38460d",tooltip="Initialize the surface forcing, including setting parameters and allocating permanent memory."];
   Node7 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node11 [label="mom_surface_forcing\l::surface_forcing_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__surface__forcing.html#a791cb2bd2daa4fd3f036b121995bfb6c",tooltip="Initialize the surface forcing module."];
   Node11 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

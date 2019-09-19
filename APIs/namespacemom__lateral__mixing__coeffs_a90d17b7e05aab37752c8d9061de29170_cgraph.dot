@@ -9,7 +9,7 @@ digraph "mom_lateral_mixing_coeffs::calc_slope_functions"
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="mom_isopycnal_slopes\l::calc_isoneutral_slopes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__isopycnal__slopes.html#a08dfdd6e2381a4865d94fb4a91f1d878",tooltip="Calculate isopycnal slopes, and optionally return N2 used in calculation."];
   Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="mom_isopycnal_slopes\l::vert_fill_ts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__isopycnal__slopes.html#a207a05c673e0501aa4f8265b76b4b3b8",tooltip="Returns tracer arrays (nominally T and S) with massless layers filled with sensible values,..."];
+  Node3 [label="mom_isopycnal_slopes\l::vert_fill_ts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__isopycnal__slopes.html#a34691482caaff356da3c5182657dba0d",tooltip="Returns tracer arrays (nominally T and S) with massless layers filled with sensible values,..."];
   Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="mom_lateral_mixing\l_coeffs::calc_slope\l_functions_using_just_e",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#a3f7e0a64d372dd88b62fdb13be319c39",tooltip="The original calc_slope_function() that calculated slopes using interface positions only,..."];
   Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -17,7 +17,7 @@ digraph "mom_lateral_mixing_coeffs::calc_slope_functions"
   Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node6 [label="mom_error_handler::\lis_root_pe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71",tooltip="This returns .true. if the current PE is the root PE."];
   Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node7 [label="mom_lateral_mixing\l_coeffs::calc_visbeck\l_coeffs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#ae7965329069235d5ae10f0700504ce20",tooltip="Calculates factors used when setting diffusivity coefficients similar to Visbeck et al."];
+  Node7 [label="mom_lateral_mixing\l_coeffs::calc_visbeck\l_coeffs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#ad2745021399a967976092a9ae4702d9b",tooltip="Calculates factors used when setting diffusivity coefficients similar to Visbeck et al."];
   Node7 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 [label="mom_diag_mediator::\lquery_averaging_enabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a0be5d1cbc6c6f8f63950ce7d9bc6455a",tooltip="Call this subroutine to determine whether the averaging is currently enabled. .true...."];

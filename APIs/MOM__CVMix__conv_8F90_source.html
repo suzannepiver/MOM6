@@ -139,8 +139,8 @@ $(document).ready(function(){initNavTree('MOM__CVMix__conv_8F90_source.html','')
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="comment">! Diagnostics arrays</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structmom__cvmix__conv_1_1cvmix__conv__cs.html#addf414654861d7374a52b64b73696b1f">   44</a></span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: n2<span class="comment">      !&lt; Squared Brunt-Vaisala frequency [s-2]</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structmom__cvmix__conv_1_1cvmix__conv__cs.html#a77c09b11a4c9d7773f5dd452c7d1d70b">   45</a></span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: kd_conv<span class="comment"> !&lt; Diffusivity added by convection [m2 s-1]</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structmom__cvmix__conv_1_1cvmix__conv__cs.html#afd95f5099fa29839d51ba7bb5d30d686">   46</a></span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: kv_conv<span class="comment"> !&lt; Viscosity added by convection [m2 s-1]</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structmom__cvmix__conv_1_1cvmix__conv__cs.html#a77c09b11a4c9d7773f5dd452c7d1d70b">   45</a></span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: kd_conv<span class="comment"> !&lt; Diffusivity added by convection [Z2 T-1 ~&gt; m2 s-1]</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structmom__cvmix__conv_1_1cvmix__conv__cs.html#afd95f5099fa29839d51ba7bb5d30d686">   46</a></span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: kv_conv<span class="comment"> !&lt; Viscosity added by convection [Z2 T-1 ~&gt; m2 s-1]</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">end type </span><a class="code" href="structmom__cvmix__conv_1_1cvmix__conv__cs.html">cvmix_conv_cs</a></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
@@ -231,9 +231,9 @@ $(document).ready(function(){initNavTree('MOM__CVMix__conv_8F90_source.html','')
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  cs%id_N2 = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;N2_conv&#39;</span>, diag%axesTi, time, &amp;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      <span class="stringliteral">&#39;Square of Brunt-Vaisala frequency used by MOM_CVMix_conv module&#39;</span>, <span class="stringliteral">&#39;1/s2&#39;</span>)</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  cs%id_kd_conv = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;kd_conv&#39;</span>, diag%axesTi, time, &amp;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="stringliteral">&#39;Additional diffusivity added by MOM_CVMix_conv module&#39;</span>, <span class="stringliteral">&#39;m2/s&#39;</span>, conversion=us%Z_to_m**2)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="stringliteral">&#39;Additional diffusivity added by MOM_CVMix_conv module&#39;</span>, <span class="stringliteral">&#39;m2/s&#39;</span>, conversion=us%Z2_T_to_m2_s)</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  cs%id_kv_conv = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;kv_conv&#39;</span>, diag%axesTi, time, &amp;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <span class="stringliteral">&#39;Additional viscosity added by MOM_CVMix_conv module&#39;</span>, <span class="stringliteral">&#39;m2/s&#39;</span>, conversion=us%Z_to_m**2)</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <span class="stringliteral">&#39;Additional viscosity added by MOM_CVMix_conv module&#39;</span>, <span class="stringliteral">&#39;m2/s&#39;</span>, conversion=us%Z2_T_to_m2_s)</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keyword">call </span>cvmix_init_conv(convect_diff=cs%kd_conv_const, &amp;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                       convect_visc=cs%kv_conv_const, &amp;</div>
@@ -265,123 +265,124 @@ $(document).ready(function(){initNavTree('MOM__CVMix__conv_8F90_source.html','')
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZK_(G)+1)</span> :: ifaceheight<span class="comment"> !&lt; Height of interfaces [m]</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZK_(G))</span>   :: cellheight<span class="comment">  !&lt; Height of cell centers [m]</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordtype">integer</span> :: kobl<span class="comment">                        !&lt; level of OBL extent</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keywordtype">  real</span> :: pref, g_o_rho0, rhok, rhokm1, dz, dh, hcorr</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  g_o_rho0 = (gv%g_Earth*us%m_to_Z) / gv%Rho0</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="comment">! initialize dummy variables</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  rho_lwr(:) = 0.0; rho_1d(:) = 0.0</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordflow">if</span> (.not. <span class="keyword">associated</span>(hbl)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keyword">allocate</span>(hbl(szi_(g), szj_(g)))</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    hbl(:,:) = 0.0</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordflow">do</span> j = g%jsc, g%jec</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">do</span> i = g%isc, g%iec</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="comment">! set N2 to zero at the top- and bottom-most interfaces</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      cs%N2(i,j,1) = 0.</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      cs%N2(i,j,g%ke+1) = 0.</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      <span class="comment">! skip calling at land points</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      <span class="comment">!if (G%mask2dT(i,j) == 0.) cycle</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      pref = 0.</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      <span class="comment">! Compute Brunt-Vaisala frequency (static stability) on interfaces</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keywordflow">do</span> k=2,g%ke</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="comment">! pRef is pressure at interface between k and km1.</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        pref = pref + gv%H_to_Pa * h(i,j,k)</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keyword">call </span><a class="code" href="interfacemom__eos_1_1calculate__density.html">calculate_density</a>(tv%t(i,j,k), tv%s(i,j,k), pref, rhok, tv%eqn_of_state)</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keyword">call </span><a class="code" href="interfacemom__eos_1_1calculate__density.html">calculate_density</a>(tv%t(i,j,k-1), tv%s(i,j,k-1), pref, rhokm1, tv%eqn_of_state)</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        dz = ((0.5*(h(i,j,k-1) + h(i,j,k))+gv%H_subroundoff)*gv%H_to_m)</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        cs%N2(i,j,k) = g_o_rho0 * (rhok - rhokm1) / dz <span class="comment">! Can be negative</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keywordflow">      enddo</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      ifaceheight(1) = 0.0 <span class="comment">! BBL is all relative to the surface</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      hcorr = 0.0</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      <span class="comment">! compute heights at cell center and interfaces</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      <span class="keywordflow">do</span> k=1,g%ke</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        dh = h(i,j,k) * gv%H_to_m <span class="comment">! Nominal thickness to use for increment</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        dh = dh + hcorr <span class="comment">! Take away the accumulated error (could temporarily make dh&lt;0)</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        hcorr = min( dh - cs%min_thickness, 0. ) <span class="comment">! If inflating then hcorr&lt;0</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        dh = max( dh, cs%min_thickness ) <span class="comment">! Limit increment dh&gt;=min_thickness</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        cellheight(k)    = ifaceheight(k) - 0.5 * dh</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        ifaceheight(k+1) = ifaceheight(k) - dh</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="keywordflow">      enddo</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      <span class="comment">! gets index of the level and interface above hbl</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      kobl = cvmix_kpp_compute_kobl_depth(ifaceheight, cellheight,hbl(i,j))</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;      kv_col(:) = 0.0 ; kd_col(:) = 0.0</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      <span class="keyword">call </span>cvmix_coeffs_conv(mdiff_out=kv_col(:), &amp;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                               tdiff_out=kd_col(:), &amp;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                               nsqr=cs%N2(i,j,:), &amp;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                               dens=rho_1d(:), &amp;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                               dens_lwr=rho_lwr(:), &amp;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                               nlev=g%ke,    &amp;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                               max_nlev=g%ke, &amp;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                               obl_ind=kobl)</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      <span class="keywordflow">do</span> k=1,g%ke+1</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        cs%kv_conv(i,j,k) = us%m_to_Z**2 * kv_col(k)</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        cs%kd_conv(i,j,k) = us%m_to_Z**2 * kd_col(k)</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keywordflow">      enddo</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="comment">! Do not apply mixing due to convection within the boundary layer</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <span class="keywordflow">do</span> k=1,kobl</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        cs%kv_conv(i,j,k) = 0.0</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        cs%kd_conv(i,j,k) = 0.0</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keywordflow">      enddo</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keywordflow">  enddo</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="keywordflow">if</span> (cs%debug) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keyword">call </span>hchksum(cs%N2, <span class="stringliteral">&quot;MOM_CVMix_conv: N2&quot;</span>,g%HI,haloshift=0)</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keyword">call </span>hchksum(cs%kd_conv, <span class="stringliteral">&quot;MOM_CVMix_conv: kd_conv&quot;</span>,g%HI,haloshift=0)</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">call </span>hchksum(cs%kv_conv, <span class="stringliteral">&quot;MOM_CVMix_conv: kv_conv&quot;</span>,g%HI,haloshift=0)</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="comment">! send diagnostics to post_data</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keywordflow">if</span> (cs%id_N2 &gt; 0) <span class="keyword">call </span><a class="code" href="interfacemom__diag__mediator_1_1post__data.html">post_data</a>(cs%id_N2, cs%N2, cs%diag)</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keywordflow">if</span> (cs%id_kd_conv &gt; 0) <span class="keyword">call </span><a class="code" href="interfacemom__diag__mediator_1_1post__data.html">post_data</a>(cs%id_kd_conv, cs%kd_conv, cs%diag)</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordflow">if</span> (cs%id_kv_conv &gt; 0) <span class="keyword">call </span><a class="code" href="interfacemom__diag__mediator_1_1post__data.html">post_data</a>(cs%id_kv_conv, cs%kv_conv, cs%diag)</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keyword">end subroutine </span><a class="code" href="namespacemom__cvmix__conv.html#a9fa2fba758d0df93a9d6219c21e5e06d">calculate_cvmix_conv</a></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment">!&gt; Reads the parameter &quot;USE_CVMix_CONVECTION&quot; and returns state.</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">!! This function allows other modules to know whether this parameterization will</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">!! be used without needing to duplicate the log entry.</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keyword">logical </span><span class="keyword">function </span><a class="code" href="namespacemom__cvmix__conv.html#a5e741c84ad14fae3e5801d00a9867bba">cvmix_conv_is_used</a>(param_file)</div>
-<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="namespacemom__cvmix__conv.html#a5e741c84ad14fae3e5801d00a9867bba">  263</a></span>&#160;  <span class="keywordtype">type</span>(<a class="code" href="structmom__file__parser_1_1param__file__type.html">param_file_type</a>), <span class="keywordtype">intent(in)</span> :: param_file<span class="comment"> !&lt; A structure to parse for run-time parameters</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keyword">call </span><a class="code" href="interfacemom__file__parser_1_1get__param.html">get_param</a>(param_file, <a class="code" href="namespacemom__cvmix__conv.html#a877a4beb2eff515d903a17b5779adbee">mdl</a>, <span class="stringliteral">&quot;USE_CVMix_CONVECTION&quot;</span>, <a class="code" href="namespacemom__cvmix__conv.html#a5e741c84ad14fae3e5801d00a9867bba">cvmix_conv_is_used</a>, &amp;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                 default=.false., do_not_log = .true.)</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="keyword">end function </span><a class="code" href="namespacemom__cvmix__conv.html#a5e741c84ad14fae3e5801d00a9867bba">cvmix_conv_is_used</a></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">!&gt; Clear pointers and dealocate memory</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="keyword">subroutine </span><a class="code" href="namespacemom__cvmix__conv.html#a4f35df3a407ded91cd67384a14da3a3c">cvmix_conv_end</a>(CS)</div>
-<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="namespacemom__cvmix__conv.html#a4f35df3a407ded91cd67384a14da3a3c">  271</a></span>&#160;  <span class="keywordtype">type</span>(<a class="code" href="structmom__cvmix__conv_1_1cvmix__conv__cs.html">cvmix_conv_cs</a>), <span class="keywordtype">pointer</span> :: cs<span class="comment"> !&lt; Control structure for this module that</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">                                     !! will be deallocated in this subroutine</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keywordflow">if</span> (.not. <span class="keyword">associated</span>(cs)) <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keyword">deallocate</span>(cs%N2)</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="keyword">deallocate</span>(cs%kd_conv)</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="keyword">deallocate</span>(cs%kv_conv)</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="keyword">deallocate</span>(cs)</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keyword">end subroutine </span><a class="code" href="namespacemom__cvmix__conv.html#a4f35df3a407ded91cd67384a14da3a3c">cvmix_conv_end</a></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keyword">end module </span><a class="code" href="namespacemom__cvmix__conv.html">mom_cvmix_conv</a></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keywordtype">  real</span> :: g_o_rho0  <span class="comment">! Gravitational acceleration divided by density in MKS units [m4 s-2]</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keywordtype">  real</span> :: pref, rhok, rhokm1, dz, dh, hcorr</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  g_o_rho0 = gv%mks_g_Earth / gv%Rho0</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="comment">! initialize dummy variables</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  rho_lwr(:) = 0.0; rho_1d(:) = 0.0</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordflow">if</span> (.not. <span class="keyword">associated</span>(hbl)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keyword">allocate</span>(hbl(szi_(g), szj_(g)))</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    hbl(:,:) = 0.0</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordflow">do</span> j = g%jsc, g%jec</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">do</span> i = g%isc, g%iec</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      <span class="comment">! set N2 to zero at the top- and bottom-most interfaces</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      cs%N2(i,j,1) = 0.</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      cs%N2(i,j,g%ke+1) = 0.</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      <span class="comment">! skip calling at land points</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      <span class="comment">!if (G%mask2dT(i,j) == 0.) cycle</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      pref = 0.</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="comment">! Compute Brunt-Vaisala frequency (static stability) on interfaces</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <span class="keywordflow">do</span> k=2,g%ke</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="comment">! pRef is pressure at interface between k and km1.</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        pref = pref + gv%H_to_Pa * h(i,j,k)</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keyword">call </span><a class="code" href="interfacemom__eos_1_1calculate__density.html">calculate_density</a>(tv%t(i,j,k), tv%s(i,j,k), pref, rhok, tv%eqn_of_state)</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keyword">call </span><a class="code" href="interfacemom__eos_1_1calculate__density.html">calculate_density</a>(tv%t(i,j,k-1), tv%s(i,j,k-1), pref, rhokm1, tv%eqn_of_state)</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        dz = ((0.5*(h(i,j,k-1) + h(i,j,k))+gv%H_subroundoff)*gv%H_to_m)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        cs%N2(i,j,k) = g_o_rho0 * (rhok - rhokm1) / dz <span class="comment">! Can be negative</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keywordflow">      enddo</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      ifaceheight(1) = 0.0 <span class="comment">! BBL is all relative to the surface</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      hcorr = 0.0</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      <span class="comment">! compute heights at cell center and interfaces</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      <span class="keywordflow">do</span> k=1,g%ke</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        dh = h(i,j,k) * gv%H_to_m <span class="comment">! Nominal thickness to use for increment</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        dh = dh + hcorr <span class="comment">! Take away the accumulated error (could temporarily make dh&lt;0)</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        hcorr = min( dh - cs%min_thickness, 0. ) <span class="comment">! If inflating then hcorr&lt;0</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        dh = max( dh, cs%min_thickness ) <span class="comment">! Limit increment dh&gt;=min_thickness</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        cellheight(k)    = ifaceheight(k) - 0.5 * dh</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        ifaceheight(k+1) = ifaceheight(k) - dh</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keywordflow">      enddo</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      <span class="comment">! gets index of the level and interface above hbl</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      kobl = cvmix_kpp_compute_kobl_depth(ifaceheight, cellheight,hbl(i,j))</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      kv_col(:) = 0.0 ; kd_col(:) = 0.0</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;      <span class="keyword">call </span>cvmix_coeffs_conv(mdiff_out=kv_col(:), &amp;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                               tdiff_out=kd_col(:), &amp;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                               nsqr=cs%N2(i,j,:), &amp;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                               dens=rho_1d(:), &amp;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                               dens_lwr=rho_lwr(:), &amp;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                               nlev=g%ke,    &amp;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                               max_nlev=g%ke, &amp;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                               obl_ind=kobl)</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      <span class="keywordflow">do</span> k=1,g%ke+1</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        cs%kv_conv(i,j,k) = us%m2_s_to_Z2_T * kv_col(k)</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        cs%Kd_conv(i,j,k) = us%m2_s_to_Z2_T * kd_col(k)</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keywordflow">      enddo</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <span class="comment">! Do not apply mixing due to convection within the boundary layer</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      <span class="keywordflow">do</span> k=1,kobl</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        cs%kv_conv(i,j,k) = 0.0</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        cs%kd_conv(i,j,k) = 0.0</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keywordflow">      enddo</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keywordflow">  enddo</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keywordflow">if</span> (cs%debug) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keyword">call </span>hchksum(cs%N2, <span class="stringliteral">&quot;MOM_CVMix_conv: N2&quot;</span>,g%HI,haloshift=0)</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">call </span>hchksum(cs%kd_conv, <span class="stringliteral">&quot;MOM_CVMix_conv: kd_conv&quot;</span>,g%HI,haloshift=0,scale=us%Z2_T_to_m2_s)</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keyword">call </span>hchksum(cs%kv_conv, <span class="stringliteral">&quot;MOM_CVMix_conv: kv_conv&quot;</span>,g%HI,haloshift=0,scale=us%m2_s_to_Z2_T)</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="comment">! send diagnostics to post_data</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keywordflow">if</span> (cs%id_N2 &gt; 0) <span class="keyword">call </span><a class="code" href="interfacemom__diag__mediator_1_1post__data.html">post_data</a>(cs%id_N2, cs%N2, cs%diag)</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordflow">if</span> (cs%id_kd_conv &gt; 0) <span class="keyword">call </span><a class="code" href="interfacemom__diag__mediator_1_1post__data.html">post_data</a>(cs%id_kd_conv, cs%kd_conv, cs%diag)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordflow">if</span> (cs%id_kv_conv &gt; 0) <span class="keyword">call </span><a class="code" href="interfacemom__diag__mediator_1_1post__data.html">post_data</a>(cs%id_kv_conv, cs%kv_conv, cs%diag)</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">end subroutine </span><a class="code" href="namespacemom__cvmix__conv.html#a9fa2fba758d0df93a9d6219c21e5e06d">calculate_cvmix_conv</a></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">!&gt; Reads the parameter &quot;USE_CVMix_CONVECTION&quot; and returns state.</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">!! This function allows other modules to know whether this parameterization will</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">!! be used without needing to duplicate the log entry.</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keyword">logical </span><span class="keyword">function </span><a class="code" href="namespacemom__cvmix__conv.html#a5e741c84ad14fae3e5801d00a9867bba">cvmix_conv_is_used</a>(param_file)</div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="namespacemom__cvmix__conv.html#a5e741c84ad14fae3e5801d00a9867bba">  264</a></span>&#160;  <span class="keywordtype">type</span>(<a class="code" href="structmom__file__parser_1_1param__file__type.html">param_file_type</a>), <span class="keywordtype">intent(in)</span> :: param_file<span class="comment"> !&lt; A structure to parse for run-time parameters</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keyword">call </span><a class="code" href="interfacemom__file__parser_1_1get__param.html">get_param</a>(param_file, <a class="code" href="namespacemom__cvmix__conv.html#a877a4beb2eff515d903a17b5779adbee">mdl</a>, <span class="stringliteral">&quot;USE_CVMix_CONVECTION&quot;</span>, <a class="code" href="namespacemom__cvmix__conv.html#a5e741c84ad14fae3e5801d00a9867bba">cvmix_conv_is_used</a>, &amp;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                 default=.false., do_not_log = .true.)</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword">end function </span><a class="code" href="namespacemom__cvmix__conv.html#a5e741c84ad14fae3e5801d00a9867bba">cvmix_conv_is_used</a></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">!&gt; Clear pointers and dealocate memory</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword">subroutine </span><a class="code" href="namespacemom__cvmix__conv.html#a4f35df3a407ded91cd67384a14da3a3c">cvmix_conv_end</a>(CS)</div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="namespacemom__cvmix__conv.html#a4f35df3a407ded91cd67384a14da3a3c">  272</a></span>&#160;  <span class="keywordtype">type</span>(<a class="code" href="structmom__cvmix__conv_1_1cvmix__conv__cs.html">cvmix_conv_cs</a>), <span class="keywordtype">pointer</span> :: cs<span class="comment"> !&lt; Control structure for this module that</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">                                     !! will be deallocated in this subroutine</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordflow">if</span> (.not. <span class="keyword">associated</span>(cs)) <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="keyword">deallocate</span>(cs%N2)</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="keyword">deallocate</span>(cs%kd_conv)</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="keyword">deallocate</span>(cs%kv_conv)</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keyword">deallocate</span>(cs)</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="keyword">end subroutine </span><a class="code" href="namespacemom__cvmix__conv.html#a4f35df3a407ded91cd67384a14da3a3c">cvmix_conv_end</a></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="keyword">end module </span><a class="code" href="namespacemom__cvmix__conv.html">mom_cvmix_conv</a></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacemom__verticalgrid_html"><div class="ttname"><a href="namespacemom__verticalgrid.html">mom_verticalgrid</a></div><div class="ttdoc">Provides a transparent vertical ocean grid type and supporting routines.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__verticalGrid_8F90_source.html#l00002">MOM_verticalGrid.F90:2</a></div></div>
-<div class="ttc" id="anamespacemom__cvmix__conv_html_a5e741c84ad14fae3e5801d00a9867bba"><div class="ttname"><a href="namespacemom__cvmix__conv.html#a5e741c84ad14fae3e5801d00a9867bba">mom_cvmix_conv::cvmix_conv_is_used</a></div><div class="ttdeci">logical function, public cvmix_conv_is_used(param_file)</div><div class="ttdoc">Reads the parameter &quot;USE_CVMix_CONVECTION&quot; and returns state. This function allows other modules to k...</div><div class="ttdef"><b>Definition:</b> <a href="MOM__CVMix__conv_8F90_source.html#l00263">MOM_CVMix_conv.F90:263</a></div></div>
+<div class="ttc" id="anamespacemom__cvmix__conv_html_a5e741c84ad14fae3e5801d00a9867bba"><div class="ttname"><a href="namespacemom__cvmix__conv.html#a5e741c84ad14fae3e5801d00a9867bba">mom_cvmix_conv::cvmix_conv_is_used</a></div><div class="ttdeci">logical function, public cvmix_conv_is_used(param_file)</div><div class="ttdoc">Reads the parameter &quot;USE_CVMix_CONVECTION&quot; and returns state. This function allows other modules to k...</div><div class="ttdef"><b>Definition:</b> <a href="MOM__CVMix__conv_8F90_source.html#l00264">MOM_CVMix_conv.F90:264</a></div></div>
 <div class="ttc" id="ainterfacemom__file__parser_1_1log__version_html"><div class="ttname"><a href="interfacemom__file__parser_1_1log__version.html">mom_file_parser::log_version</a></div><div class="ttdoc">An overloaded interface to log version information about modules.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__file__parser_8F90_source.html#l00109">MOM_file_parser.F90:109</a></div></div>
 <div class="ttc" id="anamespacemom__diag__mediator_html"><div class="ttname"><a href="namespacemom__diag__mediator.html">mom_diag_mediator</a></div><div class="ttdoc">The subroutines here provide convenient wrappers to the fms diag_manager interfaces with additional d...</div><div class="ttdef"><b>Definition:</b> <a href="MOM__diag__mediator_8F90_source.html#l00003">MOM_diag_mediator.F90:3</a></div></div>
 <div class="ttc" id="astructmom__variables_1_1thermo__var__ptrs_html"><div class="ttname"><a href="structmom__variables_1_1thermo__var__ptrs.html">mom_variables::thermo_var_ptrs</a></div><div class="ttdoc">Pointers to an assortment of thermodynamic fields that may be available, including potential temperat...</div><div class="ttdef"><b>Definition:</b> <a href="MOM__variables_8F90_source.html#l00082">MOM_variables.F90:82</a></div></div>
@@ -400,14 +401,14 @@ $(document).ready(function(){initNavTree('MOM__CVMix__conv_8F90_source.html','')
 <div class="ttc" id="anamespacemom__grid_html"><div class="ttname"><a href="namespacemom__grid.html">mom_grid</a></div><div class="ttdoc">Provides the ocean grid type.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__grid_8F90_source.html#l00002">MOM_grid.F90:2</a></div></div>
 <div class="ttc" id="anamespacemom__unit__scaling_html"><div class="ttname"><a href="namespacemom__unit__scaling.html">mom_unit_scaling</a></div><div class="ttdoc">Provides a transparent unit rescaling type to facilitate dimensional consistency testing.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__unit__scaling_8F90_source.html#l00002">MOM_unit_scaling.F90:2</a></div></div>
 <div class="ttc" id="anamespacemom__error__handler_html_ad5f00a53059c72fe2332d1436c80ca71"><div class="ttname"><a href="namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71">mom_error_handler::is_root_pe</a></div><div class="ttdeci">logical function, public is_root_pe()</div><div class="ttdoc">This returns .true. if the current PE is the root PE.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__error__handler_8F90_source.html#l00044">MOM_error_handler.F90:44</a></div></div>
-<div class="ttc" id="anamespacemom__file__parser_html_a363628fcd8540de780ebeacf24012229"><div class="ttname"><a href="namespacemom__file__parser.html#a363628fcd8540de780ebeacf24012229">mom_file_parser::openparameterblock</a></div><div class="ttdeci">subroutine, public openparameterblock(CS, blockName, desc)</div><div class="ttdoc">Tags blockName onto the end of the active parameter block name.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__file__parser_8F90_source.html#l02009">MOM_file_parser.F90:2009</a></div></div>
+<div class="ttc" id="anamespacemom__file__parser_html_a363628fcd8540de780ebeacf24012229"><div class="ttname"><a href="namespacemom__file__parser.html#a363628fcd8540de780ebeacf24012229">mom_file_parser::openparameterblock</a></div><div class="ttdeci">subroutine, public openparameterblock(CS, blockName, desc)</div><div class="ttdoc">Tags blockName onto the end of the active parameter block name.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__file__parser_8F90_source.html#l02015">MOM_file_parser.F90:2015</a></div></div>
 <div class="ttc" id="anamespacemom__debugging_html"><div class="ttname"><a href="namespacemom__debugging.html">mom_debugging</a></div><div class="ttdoc">Provides checksumming functions for debugging.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__debugging_8F90_source.html#l00007">MOM_debugging.F90:7</a></div></div>
 <div class="ttc" id="anamespacemom__error__handler_html_a460cfb79a06c29fc249952c2a3710d67"><div class="ttname"><a href="namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67">mom_error_handler::mom_error</a></div><div class="ttdeci">subroutine, public mom_error(level, message, all_print)</div><div class="ttdoc">This provides a convenient interface for writing an mpp_error message with run-time filter based on a...</div><div class="ttdef"><b>Definition:</b> <a href="MOM__error__handler_8F90_source.html#l00072">MOM_error_handler.F90:72</a></div></div>
-<div class="ttc" id="anamespacemom__cvmix__conv_html_a4f35df3a407ded91cd67384a14da3a3c"><div class="ttname"><a href="namespacemom__cvmix__conv.html#a4f35df3a407ded91cd67384a14da3a3c">mom_cvmix_conv::cvmix_conv_end</a></div><div class="ttdeci">subroutine, public cvmix_conv_end(CS)</div><div class="ttdoc">Clear pointers and dealocate memory.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__CVMix__conv_8F90_source.html#l00271">MOM_CVMix_conv.F90:271</a></div></div>
+<div class="ttc" id="anamespacemom__cvmix__conv_html_a4f35df3a407ded91cd67384a14da3a3c"><div class="ttname"><a href="namespacemom__cvmix__conv.html#a4f35df3a407ded91cd67384a14da3a3c">mom_cvmix_conv::cvmix_conv_end</a></div><div class="ttdeci">subroutine, public cvmix_conv_end(CS)</div><div class="ttdoc">Clear pointers and dealocate memory.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__CVMix__conv_8F90_source.html#l00272">MOM_CVMix_conv.F90:272</a></div></div>
 <div class="ttc" id="astructmom__cvmix__conv_1_1cvmix__conv__cs_html"><div class="ttname"><a href="structmom__cvmix__conv_1_1cvmix__conv__cs.html">mom_cvmix_conv::cvmix_conv_cs</a></div><div class="ttdoc">Control structure including parameters for CVMix convection.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__CVMix__conv_8F90_source.html#l00027">MOM_CVMix_conv.F90:27</a></div></div>
 <div class="ttc" id="anamespacemom__error__handler_html"><div class="ttname"><a href="namespacemom__error__handler.html">mom_error_handler</a></div><div class="ttdoc">Routines for error handling and I/O management.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__error__handler_8F90_source.html#l00002">MOM_error_handler.F90:2</a></div></div>
-<div class="ttc" id="astructmom__grid_1_1ocean__grid__type_html"><div class="ttname"><a href="structmom__grid_1_1ocean__grid__type.html">mom_grid::ocean_grid_type</a></div><div class="ttdoc">Ocean grid type. See mom_grid for details.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__grid_8F90_source.html#l00025">MOM_grid.F90:25</a></div></div>
-<div class="ttc" id="anamespacemom__file__parser_html_a0d01b9a66f5ac12b657c00f1295351bb"><div class="ttname"><a href="namespacemom__file__parser.html#a0d01b9a66f5ac12b657c00f1295351bb">mom_file_parser::closeparameterblock</a></div><div class="ttdeci">subroutine, public closeparameterblock(CS)</div><div class="ttdoc">Remove the lowest level of recursion from the active block name.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__file__parser_8F90_source.html#l02027">MOM_file_parser.F90:2027</a></div></div>
+<div class="ttc" id="astructmom__grid_1_1ocean__grid__type_html"><div class="ttname"><a href="structmom__grid_1_1ocean__grid__type.html">mom_grid::ocean_grid_type</a></div><div class="ttdoc">Ocean grid type. See mom_grid for details.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__grid_8F90_source.html#l00026">MOM_grid.F90:26</a></div></div>
+<div class="ttc" id="anamespacemom__file__parser_html_a0d01b9a66f5ac12b657c00f1295351bb"><div class="ttname"><a href="namespacemom__file__parser.html#a0d01b9a66f5ac12b657c00f1295351bb">mom_file_parser::closeparameterblock</a></div><div class="ttdeci">subroutine, public closeparameterblock(CS)</div><div class="ttdoc">Remove the lowest level of recursion from the active block name.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__file__parser_8F90_source.html#l02033">MOM_file_parser.F90:2033</a></div></div>
 <div class="ttc" id="astructmom__diag__mediator_1_1diag__ctrl_html"><div class="ttname"><a href="structmom__diag__mediator_1_1diag__ctrl.html">mom_diag_mediator::diag_ctrl</a></div><div class="ttdoc">The following data type a list of diagnostic fields an their variants, as well as variables that cont...</div><div class="ttdef"><b>Definition:</b> <a href="MOM__diag__mediator_8F90_source.html#l00239">MOM_diag_mediator.F90:239</a></div></div>
 <div class="ttc" id="anamespacemom__cvmix__conv_html"><div class="ttname"><a href="namespacemom__cvmix__conv.html">mom_cvmix_conv</a></div><div class="ttdoc">Interface to CVMix convection scheme.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__CVMix__conv_8F90_source.html#l00002">MOM_CVMix_conv.F90:2</a></div></div>
 <div class="ttc" id="ainterfacemom__eos_1_1calculate__density_html"><div class="ttname"><a href="interfacemom__eos_1_1calculate__density.html">mom_eos::calculate_density</a></div><div class="ttdoc">Calculates density of sea water from T, S and P.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__EOS_8F90_source.html#l00060">MOM_EOS.F90:60</a></div></div>

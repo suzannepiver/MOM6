@@ -133,9 +133,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a5dad6b3de8f05507324e79e397238abc"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ocean__model__mct.html#a5dad6b3de8f05507324e79e397238abc">initialize_ocean_public_type</a> (input_domain, Ocean_sfc, diag, maskmap, gas_fields_ocn)</td></tr>
 <tr class="memdesc:a5dad6b3de8f05507324e79e397238abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the public ocean type.  <a href="namespacemom__ocean__model__mct.html#a5dad6b3de8f05507324e79e397238abc">More...</a><br /></td></tr>
 <tr class="separator:a5dad6b3de8f05507324e79e397238abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cb497652e453db49e7324356ef938c0"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ocean__model__mct.html#a0cb497652e453db49e7324356ef938c0">convert_state_to_ocean_type</a> (sfc_state, Ocean_sfc, G, patm, press_to_z)</td></tr>
-<tr class="memdesc:a0cb497652e453db49e7324356ef938c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine translates the coupler's ocean_data_type into MOM's surface state variable. This may eventually be folded into the MOM code that calculates the surface state in the first place. Note the offset in the arrays because the ocean_data_type has no halo points in its arrays and always uses absolute indicies.  <a href="namespacemom__ocean__model__mct.html#a0cb497652e453db49e7324356ef938c0">More...</a><br /></td></tr>
-<tr class="separator:a0cb497652e453db49e7324356ef938c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb1d4da55ede89a37e651944c52b187"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ocean__model__mct.html#aafb1d4da55ede89a37e651944c52b187">convert_state_to_ocean_type</a> (sfc_state, Ocean_sfc, G, US, patm, press_to_z)</td></tr>
+<tr class="memdesc:aafb1d4da55ede89a37e651944c52b187"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine translates the coupler's ocean_data_type into MOM's surface state variable. This may eventually be folded into the MOM code that calculates the surface state in the first place. Note the offset in the arrays because the ocean_data_type has no halo points in its arrays and always uses absolute indicies.  <a href="namespacemom__ocean__model__mct.html#aafb1d4da55ede89a37e651944c52b187">More...</a><br /></td></tr>
+<tr class="separator:aafb1d4da55ede89a37e651944c52b187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9974d833c3841e52263348f33cb9bba1"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ocean__model__mct.html#a9974d833c3841e52263348f33cb9bba1">ocean_model_init_sfc</a> (OS, Ocean_sfc)</td></tr>
 <tr class="memdesc:a9974d833c3841e52263348f33cb9bba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine extracts the surface properties from the ocean's internal state and stores them in the ocean type returned to the calling ice model. It has to be separate from the ocean_initialization call because the coupler module allocates the space for some of these variables.  <a href="namespacemom__ocean__model__mct.html#a9974d833c3841e52263348f33cb9bba1">More...</a><br /></td></tr>
 <tr class="separator:a9974d833c3841e52263348f33cb9bba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,8 +158,8 @@ Functions/Subroutines</h2></td></tr>
 <tr class="separator:afdb908c5ba40ef3fc13b15dfca08aaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function/Subroutine Documentation</h2>
-<a id="a0cb497652e453db49e7324356ef938c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cb497652e453db49e7324356ef938c0">&#9670;&nbsp;</a></span>convert_state_to_ocean_type()</h2>
+<a id="aafb1d4da55ede89a37e651944c52b187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb1d4da55ede89a37e651944c52b187">&#9670;&nbsp;</a></span>convert_state_to_ocean_type()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,6 +181,12 @@ Functions/Subroutines</h2></td></tr>
           <td></td>
           <td class="paramtype">type(ocean_grid_type), intent(inout)&#160;</td>
           <td class="paramname"><em>G</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">type(unit_scale_type), intent(in)&#160;</td>
+          <td class="paramname"><em>US</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -208,6 +214,7 @@ Functions/Subroutines</h2></td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">sfc_state</td><td>A structure containing fields that describe the surface state of the ocean. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">ocean_sfc</td><td>A structure containing various publicly </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">g</td><td>The ocean's grid structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">patm</td><td>The pressure at the ocean surface, in Pa. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">press_to_z</td><td>A conversion factor between pressure and ocean depth in m, usually 1/(rho_0*g), in m Pa-1. </td></tr>
   </table>
@@ -222,121 +229,122 @@ Functions/Subroutines</h2></td></tr>
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;<span class="comment">                                               !! visible ocean surface fields, whose elements</span></div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;<span class="comment">                                               !! have their data set here.</span></div>
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type), <span class="keywordtype">intent(inout)</span> :: G<span class="comment">    !&lt; The ocean&#39;s grid structure</span></div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;<span class="keywordtype">  real</span>,        <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: patm(:,:)<span class="comment">  !&lt; The pressure at the ocean surface, in Pa.</span></div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;<span class="keywordtype">  real</span>,        <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: press_to_z<span class="comment"> !&lt; A conversion factor between pressure and</span></div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;<span class="comment">                                               !! ocean depth in m, usually 1/(rho_0*g), in m Pa-1.</span></div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160; </div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;  <span class="comment">! Local variables</span></div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;<span class="keywordtype">  real</span> :: IgR0</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;  <span class="keywordtype">character(len=48)</span>  :: val_str</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;  <span class="keywordtype">integer</span> :: isc_bnd, iec_bnd, jsc_bnd, jec_bnd</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;  <span class="keywordtype">integer</span> :: i, j, i0, j0, is, ie, js, je</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160; </div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;  <span class="keyword">call </span>pass_vector(sfc_state%u,sfc_state%v,g%Domain)</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160; </div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;  <span class="keyword">call </span>mpp_get_compute_domain(ocean_sfc%Domain, isc_bnd, iec_bnd, &amp;</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;                              jsc_bnd, jec_bnd)</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(patm)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;    <span class="comment">! Check that the inidicies in patm are (isc_bnd:iec_bnd,jsc_bnd:jec_bnd).</span></div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    <span class="keywordflow">if</span> (.not.<span class="keyword">present</span>(press_to_z)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;        <span class="stringliteral">&#39;convert_state_to_ocean_type: press_to_z must be present if patm is.&#39;</span>)</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160; </div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;  i0 = is - isc_bnd ; j0 = js - jsc_bnd</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;  <span class="keywordflow">if</span> (sfc_state%T_is_conT) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    <span class="comment">! Convert the surface T from conservative T to potential T.</span></div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;      ocean_sfc%t_surf(i,j) = gsw_pt_from_ct(sfc_state%SSS(i+i0,j+j0), &amp;</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;                               sfc_state%SST(i+i0,j+j0)) + celsius_kelvin_offset</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;      ocean_sfc%t_surf(i,j) = sfc_state%SST(i+i0,j+j0) + celsius_kelvin_offset</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;  <span class="keywordflow">if</span> (sfc_state%S_is_absS) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    <span class="comment">! Convert the surface S from absolute salinity to practical salinity.</span></div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;      ocean_sfc%s_surf(i,j) = gsw_sp_from_sr(sfc_state%SSS(i+i0,j+j0))</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;      ocean_sfc%s_surf(i,j) = sfc_state%SSS(i+i0,j+j0)</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160; </div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(patm)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;      ocean_sfc%sea_lev(i,j) = sfc_state%sea_lev(i+i0,j+j0) + patm(i,j) * press_to_z</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;      ocean_sfc%area(i,j) = g%areaT(i+i0,j+j0)</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;      ocean_sfc%sea_lev(i,j) = sfc_state%sea_lev(i+i0,j+j0)</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;      ocean_sfc%area(i,j) = g%areaT(i+i0,j+j0)</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160; </div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">associated</span>(sfc_state%frazil)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;      ocean_sfc%frazil(i,j) = sfc_state%frazil(i+i0,j+j0)</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160; </div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">allocated</span>(sfc_state%melt_potential)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;      ocean_sfc%melt_potential(i,j) = sfc_state%melt_potential(i+i0,j+j0)</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160; </div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">allocated</span>(sfc_state%Hml)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;      ocean_sfc%OBLD(i,j) = sfc_state%Hml(i+i0,j+j0)</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160; </div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;  <span class="keywordflow">if</span> (ocean_sfc%stagger == agrid) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;      ocean_sfc%u_surf(i,j) = g%mask2dT(i+i0,j+j0) * &amp;</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;                0.5*(sfc_state%u(i+i0,j+j0)+sfc_state%u(i-1+i0,j+j0))</div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;      ocean_sfc%v_surf(i,j) = g%mask2dT(i+i0,j+j0) * &amp;</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;                0.5*(sfc_state%v(i+i0,j+j0)+sfc_state%v(i+i0,j-1+j0))</div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;  <span class="keywordflow">elseif</span> (ocean_sfc%stagger == bgrid_ne) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;      ocean_sfc%u_surf(i,j) = g%mask2dBu(i+i0,j+j0) * &amp;</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;                0.5*(sfc_state%u(i+i0,j+j0)+sfc_state%u(i+i0,j+j0+1))</div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;      ocean_sfc%v_surf(i,j) = g%mask2dBu(i+i0,j+j0) * &amp;</div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;                0.5*(sfc_state%v(i+i0,j+j0)+sfc_state%v(i+i0+1,j+j0))</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;  <span class="keywordflow">elseif</span> (ocean_sfc%stagger == cgrid_ne) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;      ocean_sfc%u_surf(i,j) = g%mask2dCu(i+i0,j+j0)*sfc_state%u(i+i0,j+j0)</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;      ocean_sfc%v_surf(i,j) = g%mask2dCv(i+i0,j+j0)*sfc_state%v(i+i0,j+j0)</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    <span class="keyword">write</span>(val_str, <span class="stringliteral">&#39;(I8)&#39;</span>) ocean_sfc%stagger</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;    <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;convert_state_to_ocean_type: &quot;</span>//&amp;</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;      <span class="stringliteral">&quot;Ocean_sfc%stagger has the unrecognized value of &quot;</span>//trim(val_str))</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160; </div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;  <span class="keywordflow">if</span> (coupler_type_initialized(sfc_state%tr_fields)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    <span class="keywordflow">if</span> (.not.coupler_type_initialized(ocean_sfc%fields)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;      <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;convert_state_to_ocean_type: &quot;</span>//&amp;</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;               <span class="stringliteral">&quot;Ocean_sfc%fields has not been initialized.&quot;</span>)</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;<span class="keywordflow">    endif</span></div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;    <span class="keyword">call </span>coupler_type_copy_data(sfc_state%tr_fields, ocean_sfc%fields)</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160; </div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),   <span class="keywordtype">intent(in)</span>  :: US<span class="comment">   !&lt; A dimensional unit scaling type</span></div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;<span class="keywordtype">  real</span>,        <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: patm(:,:)<span class="comment">  !&lt; The pressure at the ocean surface, in Pa.</span></div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;<span class="keywordtype">  real</span>,        <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: press_to_z<span class="comment"> !&lt; A conversion factor between pressure and</span></div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;<span class="comment">                                               !! ocean depth in m, usually 1/(rho_0*g), in m Pa-1.</span></div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160; </div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;  <span class="comment">! Local variables</span></div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;<span class="keywordtype">  real</span> :: IgR0</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;  <span class="keywordtype">character(len=48)</span>  :: val_str</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;  <span class="keywordtype">integer</span> :: isc_bnd, iec_bnd, jsc_bnd, jec_bnd</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;  <span class="keywordtype">integer</span> :: i, j, i0, j0, is, ie, js, je</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160; </div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;  <span class="keyword">call </span>pass_vector(sfc_state%u,sfc_state%v,g%Domain)</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160; </div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;  <span class="keyword">call </span>mpp_get_compute_domain(ocean_sfc%Domain, isc_bnd, iec_bnd, &amp;</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;                              jsc_bnd, jec_bnd)</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(patm)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    <span class="comment">! Check that the inidicies in patm are (isc_bnd:iec_bnd,jsc_bnd:jec_bnd).</span></div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;    <span class="keywordflow">if</span> (.not.<span class="keyword">present</span>(press_to_z)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;        <span class="stringliteral">&#39;convert_state_to_ocean_type: press_to_z must be present if patm is.&#39;</span>)</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160; </div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;  i0 = is - isc_bnd ; j0 = js - jsc_bnd</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;  <span class="keywordflow">if</span> (sfc_state%T_is_conT) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    <span class="comment">! Convert the surface T from conservative T to potential T.</span></div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;      ocean_sfc%t_surf(i,j) = gsw_pt_from_ct(sfc_state%SSS(i+i0,j+j0), &amp;</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;                               sfc_state%SST(i+i0,j+j0)) + celsius_kelvin_offset</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;      ocean_sfc%t_surf(i,j) = sfc_state%SST(i+i0,j+j0) + celsius_kelvin_offset</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;  <span class="keywordflow">if</span> (sfc_state%S_is_absS) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    <span class="comment">! Convert the surface S from absolute salinity to practical salinity.</span></div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;      ocean_sfc%s_surf(i,j) = gsw_sp_from_sr(sfc_state%SSS(i+i0,j+j0))</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;      ocean_sfc%s_surf(i,j) = sfc_state%SSS(i+i0,j+j0)</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160; </div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(patm)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;      ocean_sfc%sea_lev(i,j) = sfc_state%sea_lev(i+i0,j+j0) + patm(i,j) * press_to_z</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;      ocean_sfc%area(i,j) = us%L_to_m**2*g%areaT(i+i0,j+j0)</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;      ocean_sfc%sea_lev(i,j) = sfc_state%sea_lev(i+i0,j+j0)</div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;      ocean_sfc%area(i,j) = us%L_to_m**2*g%areaT(i+i0,j+j0)</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160; </div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">associated</span>(sfc_state%frazil)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;      ocean_sfc%frazil(i,j) = sfc_state%frazil(i+i0,j+j0)</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160; </div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">allocated</span>(sfc_state%melt_potential)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;      ocean_sfc%melt_potential(i,j) = sfc_state%melt_potential(i+i0,j+j0)</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160; </div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">allocated</span>(sfc_state%Hml)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;      ocean_sfc%OBLD(i,j) = sfc_state%Hml(i+i0,j+j0)</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160; </div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;  <span class="keywordflow">if</span> (ocean_sfc%stagger == agrid) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;      ocean_sfc%u_surf(i,j) = g%mask2dT(i+i0,j+j0) * &amp;</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;                0.5*(sfc_state%u(i+i0,j+j0)+sfc_state%u(i-1+i0,j+j0))</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;      ocean_sfc%v_surf(i,j) = g%mask2dT(i+i0,j+j0) * &amp;</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;                0.5*(sfc_state%v(i+i0,j+j0)+sfc_state%v(i+i0,j-1+j0))</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;  <span class="keywordflow">elseif</span> (ocean_sfc%stagger == bgrid_ne) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;      ocean_sfc%u_surf(i,j) = g%mask2dBu(i+i0,j+j0) * &amp;</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;                0.5*(sfc_state%u(i+i0,j+j0)+sfc_state%u(i+i0,j+j0+1))</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;      ocean_sfc%v_surf(i,j) = g%mask2dBu(i+i0,j+j0) * &amp;</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;                0.5*(sfc_state%v(i+i0,j+j0)+sfc_state%v(i+i0+1,j+j0))</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;  <span class="keywordflow">elseif</span> (ocean_sfc%stagger == cgrid_ne) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;    <span class="keywordflow">do</span> j=jsc_bnd,jec_bnd ; <span class="keywordflow">do</span> i=isc_bnd,iec_bnd</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;      ocean_sfc%u_surf(i,j) = g%mask2dCu(i+i0,j+j0)*sfc_state%u(i+i0,j+j0)</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;      ocean_sfc%v_surf(i,j) = g%mask2dCv(i+i0,j+j0)*sfc_state%v(i+i0,j+j0)</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;    <span class="keyword">write</span>(val_str, <span class="stringliteral">&#39;(I8)&#39;</span>) ocean_sfc%stagger</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;    <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;convert_state_to_ocean_type: &quot;</span>//&amp;</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;      <span class="stringliteral">&quot;Ocean_sfc%stagger has the unrecognized value of &quot;</span>//trim(val_str))</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160; </div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;  <span class="keywordflow">if</span> (coupler_type_initialized(sfc_state%tr_fields)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;    <span class="keywordflow">if</span> (.not.coupler_type_initialized(ocean_sfc%fields)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;      <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;convert_state_to_ocean_type: &quot;</span>//&amp;</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;               <span class="stringliteral">&quot;Ocean_sfc%fields has not been initialized.&quot;</span>)</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;<span class="keywordflow">    endif</span></div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;    <span class="keyword">call </span>coupler_type_copy_data(sfc_state%tr_fields, ocean_sfc%fields)</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__constants_8F90_source.html#l00011">mom_constants::celsius_kelvin_offset</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mom__ocean__model__mct_8F90_source.html#l00232">ocean_model_init()</a>, <a class="el" href="ocn__comp__mct_8F90_source.html#l00741">ocn_comp_mct::ocean_model_init_sfc()</a>, <a class="el" href="mom__ocean__model__mct_8F90_source.html#l00982">ocean_model_init_sfc()</a>, and <a class="el" href="mom__ocean__model__mct_8F90_source.html#l00433">update_ocean_model()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mom__ocean__model__mct_8F90_source.html#l00232">ocean_model_init()</a>, <a class="el" href="ocn__comp__mct_8F90_source.html#l00741">ocn_comp_mct::ocean_model_init_sfc()</a>, <a class="el" href="mom__ocean__model__mct_8F90_source.html#l00983">ocean_model_init_sfc()</a>, and <a class="el" href="mom__ocean__model__mct_8F90_source.html#l00433">update_ocean_model()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__ocean__model__mct_a0cb497652e453db49e7324356ef938c0_icgraph.svg" width="100%" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__ocean__model__mct_aafb1d4da55ede89a37e651944c52b187_icgraph.svg" width="100%" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -368,13 +376,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__mct_8F90_source.html#l01181">1181</a> of file <a class="el" href="mom__ocean__model__mct_8F90_source.html">mom_ocean_model_mct.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;  <span class="comment">! Obtain the ocean grid.</span></div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;  <span class="keywordtype">type</span>(ocean_state_type) :: OS</div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type) , <span class="keywordtype">pointer</span> :: Gridp</div>
-<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160; </div>
-<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;  gridp =&gt; os%grid</div>
-<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;  <span class="keywordflow">return</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__mct_8F90_source.html#l01182">1182</a> of file <a class="el" href="mom__ocean__model__mct_8F90_source.html">mom_ocean_model_mct.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;  <span class="comment">! Obtain the ocean grid.</span></div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;  <span class="keywordtype">type</span>(ocean_state_type) :: OS</div>
+<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type) , <span class="keywordtype">pointer</span> :: Gridp</div>
+<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160; </div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;  gridp =&gt; os%grid</div>
+<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;  <span class="keywordflow">return</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -548,24 +556,24 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__mct_8F90_source.html#l01136">1136</a> of file <a class="el" href="mom__ocean__model__mct_8F90_source.html">mom_ocean_model_mct.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;  <span class="keywordtype">type</span>(ocean_state_type),     <span class="keywordtype">pointer</span>    :: OS<span class="comment">    !&lt; A pointer to the structure containing the</span></div>
-<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;<span class="comment">                                                  !! internal ocean state (intent in).</span></div>
-<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;  <span class="keywordtype">type</span>(ocean_public_type),    <span class="keywordtype">intent(in)</span> :: Ocean<span class="comment"> !&lt; A structure containing various publicly</span></div>
-<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;<span class="comment">                                                  !! visible ocean surface fields.</span></div>
-<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;  <span class="keywordtype">character(len=*)</span>          , <span class="keywordtype">intent(in)</span> :: name<span class="comment">  !&lt; The name of the field to extract</span></div>
-<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;<span class="keywordtype">  real</span>                      , <span class="keywordtype">intent(out)</span>:: <span class="keywordtype">value</span><span class="comment"> !&lt; The value of the named field</span></div>
-<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160; </div>
-<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(os)) <span class="keywordflow">return</span></div>
-<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;  <span class="keywordflow">if</span> (.not.os%is_ocean_pe) <span class="keywordflow">return</span></div>
-<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160; </div>
-<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;  <span class="keywordflow">select case</span>(name)</div>
-<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;c_p&#39;</span>)</div>
-<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;     <span class="keywordtype">value</span> = os%C_p</div>
-<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;<span class="keywordflow">  case default</span></div>
-<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;     <span class="keyword">call </span>mom_error(fatal,<span class="stringliteral">&#39;get_ocean_grid_data1D: unknown argument name=&#39;</span>//name)</div>
-<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;<span class="keywordflow">  end select</span></div>
-<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__mct_8F90_source.html#l01137">1137</a> of file <a class="el" href="mom__ocean__model__mct_8F90_source.html">mom_ocean_model_mct.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;  <span class="keywordtype">type</span>(ocean_state_type),     <span class="keywordtype">pointer</span>    :: OS<span class="comment">    !&lt; A pointer to the structure containing the</span></div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;<span class="comment">                                                  !! internal ocean state (intent in).</span></div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;  <span class="keywordtype">type</span>(ocean_public_type),    <span class="keywordtype">intent(in)</span> :: Ocean<span class="comment"> !&lt; A structure containing various publicly</span></div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;<span class="comment">                                                  !! visible ocean surface fields.</span></div>
+<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;  <span class="keywordtype">character(len=*)</span>          , <span class="keywordtype">intent(in)</span> :: name<span class="comment">  !&lt; The name of the field to extract</span></div>
+<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;<span class="keywordtype">  real</span>                      , <span class="keywordtype">intent(out)</span>:: <span class="keywordtype">value</span><span class="comment"> !&lt; The value of the named field</span></div>
+<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160; </div>
+<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(os)) <span class="keywordflow">return</span></div>
+<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;  <span class="keywordflow">if</span> (.not.os%is_ocean_pe) <span class="keywordflow">return</span></div>
+<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160; </div>
+<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;  <span class="keywordflow">select case</span>(name)</div>
+<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;c_p&#39;</span>)</div>
+<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;     <span class="keywordtype">value</span> = os%C_p</div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;<span class="keywordflow">  case default</span></div>
+<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;     <span class="keyword">call </span>mom_error(fatal,<span class="stringliteral">&#39;get_ocean_grid_data1D: unknown argument name=&#39;</span>//name)</div>
+<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;<span class="keywordflow">  end select</span></div>
+<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -632,74 +640,74 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__mct_8F90_source.html#l01065">1065</a> of file <a class="el" href="mom__ocean__model__mct_8F90_source.html">mom_ocean_model_mct.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;  <span class="keywordtype">use </span><a class="code" href="namespacemom__constants.html">mom_constants</a>, <span class="keywordtype">only</span> : <a class="code" href="namespacemom__constants.html#a8387a4d118a6e39dbb4f4894cbb2956b">celsius_kelvin_offset</a></div>
-<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;  <span class="keywordtype">type</span>(ocean_state_type),     <span class="keywordtype">pointer</span>    :: OS<span class="comment">    !&lt; A pointer to the structure containing the</span></div>
-<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;<span class="comment">                                                  !! internal ocean state (intent in).</span></div>
-<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;  <span class="keywordtype">type</span>(ocean_public_type),    <span class="keywordtype">intent(in)</span> :: Ocean<span class="comment"> !&lt; A structure containing various publicly</span></div>
-<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;<span class="comment">                                                  !! visible ocean surface fields.</span></div>
-<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;  <span class="keywordtype">character(len=*)</span>          , <span class="keywordtype">intent(in)</span> :: name<span class="comment">  !&lt; The name of the field to extract</span></div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(isc:,jsc:)</span>, <span class="keywordtype">intent(out)</span>:: array2D<span class="comment"> !&lt; The values of the named field, it must</span></div>
-<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;<span class="comment">                                                  !! cover only the computational domain</span></div>
-<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;  <span class="keywordtype">integer</span>                   , <span class="keywordtype">intent(in)</span> :: isc<span class="comment">   !&lt; The starting i-index of array2D</span></div>
-<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;  <span class="keywordtype">integer</span>                   , <span class="keywordtype">intent(in)</span> :: jsc<span class="comment">   !&lt; The starting j-index of array2D</span></div>
-<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160; </div>
-<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;  <span class="keywordtype">integer</span> :: g_isc, g_iec, g_jsc, g_jec,g_isd, g_ied, g_jsd, g_jed, i, j</div>
-<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160; </div>
-<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(os)) <span class="keywordflow">return</span></div>
-<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;  <span class="keywordflow">if</span> (.not.os%is_ocean_pe) <span class="keywordflow">return</span></div>
-<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160; </div>
-<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;<span class="comment">! The problem is %areaT is on MOM domain but Ice_Ocean_Boundary%... is on mpp domain.</span></div>
-<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;<span class="comment">! We want to return the MOM data on the mpp (compute) domain</span></div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;<span class="comment">! Get MOM domain extents</span></div>
-<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;  <span class="keyword">call </span>mpp_get_compute_domain(os%grid%Domain%mpp_domain, g_isc, g_iec, g_jsc, g_jec)</div>
-<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;  <span class="keyword">call </span>mpp_get_data_domain   (os%grid%Domain%mpp_domain, g_isd, g_ied, g_jsd, g_jed)</div>
-<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160; </div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;  g_isc = g_isc-g_isd+1 ; g_iec = g_iec-g_isd+1 ; g_jsc = g_jsc-g_jsd+1 ; g_jec = g_jec-g_jsd+1</div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__mct_8F90_source.html#l01066">1066</a> of file <a class="el" href="mom__ocean__model__mct_8F90_source.html">mom_ocean_model_mct.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;  <span class="keywordtype">use </span><a class="code" href="namespacemom__constants.html">mom_constants</a>, <span class="keywordtype">only</span> : <a class="code" href="namespacemom__constants.html#a8387a4d118a6e39dbb4f4894cbb2956b">celsius_kelvin_offset</a></div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;  <span class="keywordtype">type</span>(ocean_state_type),     <span class="keywordtype">pointer</span>    :: OS<span class="comment">    !&lt; A pointer to the structure containing the</span></div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;<span class="comment">                                                  !! internal ocean state (intent in).</span></div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;  <span class="keywordtype">type</span>(ocean_public_type),    <span class="keywordtype">intent(in)</span> :: Ocean<span class="comment"> !&lt; A structure containing various publicly</span></div>
+<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;<span class="comment">                                                  !! visible ocean surface fields.</span></div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;  <span class="keywordtype">character(len=*)</span>          , <span class="keywordtype">intent(in)</span> :: name<span class="comment">  !&lt; The name of the field to extract</span></div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(isc:,jsc:)</span>, <span class="keywordtype">intent(out)</span>:: array2D<span class="comment"> !&lt; The values of the named field, it must</span></div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;<span class="comment">                                                  !! cover only the computational domain</span></div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;  <span class="keywordtype">integer</span>                   , <span class="keywordtype">intent(in)</span> :: isc<span class="comment">   !&lt; The starting i-index of array2D</span></div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;  <span class="keywordtype">integer</span>                   , <span class="keywordtype">intent(in)</span> :: jsc<span class="comment">   !&lt; The starting j-index of array2D</span></div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160; </div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;  <span class="keywordtype">integer</span> :: g_isc, g_iec, g_jsc, g_jec,g_isd, g_ied, g_jsd, g_jed, i, j</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160; </div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(os)) <span class="keywordflow">return</span></div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;  <span class="keywordflow">if</span> (.not.os%is_ocean_pe) <span class="keywordflow">return</span></div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160; </div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;<span class="comment">! The problem is %areaT is on MOM domain but Ice_Ocean_Boundary%... is on mpp domain.</span></div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;<span class="comment">! We want to return the MOM data on the mpp (compute) domain</span></div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;<span class="comment">! Get MOM domain extents</span></div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;  <span class="keyword">call </span>mpp_get_compute_domain(os%grid%Domain%mpp_domain, g_isc, g_iec, g_jsc, g_jec)</div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;  <span class="keyword">call </span>mpp_get_data_domain   (os%grid%Domain%mpp_domain, g_isd, g_ied, g_jsd, g_jed)</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160; </div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;  g_isc = g_isc-g_isd+1 ; g_iec = g_iec-g_isd+1 ; g_jsc = g_jsc-g_jsd+1 ; g_jec = g_jec-g_jsd+1</div>
 <div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160; </div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;  <span class="keywordflow">select case</span>(name)</div>
-<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;area&#39;</span>)</div>
-<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;    array2d(isc:,jsc:) = os%grid%areaT(g_isc:g_iec,g_jsc:g_jec)</div>
-<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;mask&#39;</span>)</div>
-<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;    array2d(isc:,jsc:) = os%grid%mask2dT(g_isc:g_iec,g_jsc:g_jec)</div>
-<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;<span class="comment">!OR same result</span></div>
-<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;<span class="comment">!     do j=g_jsc,g_jec ; do i=g_isc,g_iec</span></div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;<span class="comment">!        array2D(isc+i-g_isc,jsc+j-g_jsc) = OS%grid%mask2dT(i,j)</span></div>
-<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;<span class="comment">!     enddo ; enddo</span></div>
-<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;t_surf&#39;</span>)</div>
-<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;    array2d(isc:,jsc:) = ocean%t_surf(isc:,jsc:)-<a class="code" href="namespacemom__constants.html#a8387a4d118a6e39dbb4f4894cbb2956b">celsius_kelvin_offset</a></div>
-<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;t_pme&#39;</span>)</div>
-<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;    array2d(isc:,jsc:) = ocean%t_surf(isc:,jsc:)-<a class="code" href="namespacemom__constants.html#a8387a4d118a6e39dbb4f4894cbb2956b">celsius_kelvin_offset</a></div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;t_runoff&#39;</span>)</div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;    array2d(isc:,jsc:) = ocean%t_surf(isc:,jsc:)-<a class="code" href="namespacemom__constants.html#a8387a4d118a6e39dbb4f4894cbb2956b">celsius_kelvin_offset</a></div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;t_calving&#39;</span>)</div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;    array2d(isc:,jsc:) = ocean%t_surf(isc:,jsc:)-<a class="code" href="namespacemom__constants.html#a8387a4d118a6e39dbb4f4894cbb2956b">celsius_kelvin_offset</a></div>
-<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;btfHeat&#39;</span>)</div>
-<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;    array2d(isc:,jsc:) = 0</div>
-<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;tlat&#39;</span>)</div>
-<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLatT(g_isc:g_iec,g_jsc:g_jec)</div>
-<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;tlon&#39;</span>)</div>
-<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLonT(g_isc:g_iec,g_jsc:g_jec)</div>
-<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;ulat&#39;</span>)</div>
-<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLatCu(g_isc:g_iec,g_jsc:g_jec)</div>
-<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;ulon&#39;</span>)</div>
-<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLonCu(g_isc:g_iec,g_jsc:g_jec)</div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;vlat&#39;</span>)</div>
-<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLatCv(g_isc:g_iec,g_jsc:g_jec)</div>
-<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;vlon&#39;</span>)</div>
-<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLonCv(g_isc:g_iec,g_jsc:g_jec)</div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;geoLatBu&#39;</span>)</div>
-<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLatBu(g_isc:g_iec,g_jsc:g_jec)</div>
-<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;geoLonBu&#39;</span>)</div>
-<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLonBu(g_isc:g_iec,g_jsc:g_jec)</div>
-<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;cos_rot&#39;</span>)</div>
-<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;    array2d(isc:,jsc:) = os%grid%cos_rot(g_isc:g_iec,g_jsc:g_jec) <span class="comment">! =1</span></div>
-<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;sin_rot&#39;</span>)</div>
-<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;    array2d(isc:,jsc:) = os%grid%sin_rot(g_isc:g_iec,g_jsc:g_jec) <span class="comment">! =0</span></div>
-<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;<span class="keywordflow">  case default</span></div>
-<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;    <span class="keyword">call </span>mom_error(fatal,<span class="stringliteral">&#39;get_ocean_grid_data2D: unknown argument name=&#39;</span>//name)</div>
-<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;<span class="keywordflow">  end select</span></div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160; </div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;  <span class="keywordflow">select case</span>(name)</div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;area&#39;</span>)</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;    array2d(isc:,jsc:) = os%US%L_to_m**2*os%grid%areaT(g_isc:g_iec,g_jsc:g_jec)</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;mask&#39;</span>)</div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;    array2d(isc:,jsc:) = os%grid%mask2dT(g_isc:g_iec,g_jsc:g_jec)</div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;<span class="comment">!OR same result</span></div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;<span class="comment">!     do j=g_jsc,g_jec ; do i=g_isc,g_iec</span></div>
+<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;<span class="comment">!        array2D(isc+i-g_isc,jsc+j-g_jsc) = OS%grid%mask2dT(i,j)</span></div>
+<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;<span class="comment">!     enddo ; enddo</span></div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;t_surf&#39;</span>)</div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;    array2d(isc:,jsc:) = ocean%t_surf(isc:,jsc:)-<a class="code" href="namespacemom__constants.html#a8387a4d118a6e39dbb4f4894cbb2956b">celsius_kelvin_offset</a></div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;t_pme&#39;</span>)</div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;    array2d(isc:,jsc:) = ocean%t_surf(isc:,jsc:)-<a class="code" href="namespacemom__constants.html#a8387a4d118a6e39dbb4f4894cbb2956b">celsius_kelvin_offset</a></div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;t_runoff&#39;</span>)</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;    array2d(isc:,jsc:) = ocean%t_surf(isc:,jsc:)-<a class="code" href="namespacemom__constants.html#a8387a4d118a6e39dbb4f4894cbb2956b">celsius_kelvin_offset</a></div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;t_calving&#39;</span>)</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;    array2d(isc:,jsc:) = ocean%t_surf(isc:,jsc:)-<a class="code" href="namespacemom__constants.html#a8387a4d118a6e39dbb4f4894cbb2956b">celsius_kelvin_offset</a></div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;btfHeat&#39;</span>)</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;    array2d(isc:,jsc:) = 0</div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;tlat&#39;</span>)</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLatT(g_isc:g_iec,g_jsc:g_jec)</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;tlon&#39;</span>)</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLonT(g_isc:g_iec,g_jsc:g_jec)</div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;ulat&#39;</span>)</div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLatCu(g_isc:g_iec,g_jsc:g_jec)</div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;ulon&#39;</span>)</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLonCu(g_isc:g_iec,g_jsc:g_jec)</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;vlat&#39;</span>)</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLatCv(g_isc:g_iec,g_jsc:g_jec)</div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;vlon&#39;</span>)</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLonCv(g_isc:g_iec,g_jsc:g_jec)</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;geoLatBu&#39;</span>)</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLatBu(g_isc:g_iec,g_jsc:g_jec)</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;geoLonBu&#39;</span>)</div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;    array2d(isc:,jsc:) = os%grid%geoLonBu(g_isc:g_iec,g_jsc:g_jec)</div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;cos_rot&#39;</span>)</div>
+<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;    array2d(isc:,jsc:) = os%grid%cos_rot(g_isc:g_iec,g_jsc:g_jec) <span class="comment">! =1</span></div>
+<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;  <span class="keywordflow">case</span>(<span class="stringliteral">&#39;sin_rot&#39;</span>)</div>
+<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;    array2d(isc:,jsc:) = os%grid%sin_rot(g_isc:g_iec,g_jsc:g_jec) <span class="comment">! =0</span></div>
+<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;<span class="keywordflow">  case default</span></div>
+<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;    <span class="keyword">call </span>mom_error(fatal,<span class="stringliteral">&#39;get_ocean_grid_data2D: unknown argument name=&#39;</span>//name)</div>
+<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;<span class="keywordflow">  end select</span></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__constants_8F90_source.html#l00011">mom_constants::celsius_kelvin_offset</a>.</p>
 
@@ -762,7 +770,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;  <span class="keyword">call </span>mom_end(ocean_state%MOM_CSp)</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;  <span class="keywordflow">if</span> (ocean_state%use_ice_shelf) <span class="keyword">call </span>ice_shelf_end(ocean_state%Ice_shelf_CSp)</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__diag__mediator_8F90_source.html#l03277">mom_diag_mediator::diag_mediator_end()</a>, <a class="el" href="MOM__ice__shelf_8F90_source.html#l01733">mom_ice_shelf::ice_shelf_end()</a>, and <a class="el" href="mom__ocean__model__mct_8F90_source.html#l00764">ocean_model_save_restart()</a>.</p>
+<p class="reference">References <a class="el" href="MOM__diag__mediator_8F90_source.html#l03277">mom_diag_mediator::diag_mediator_end()</a>, <a class="el" href="MOM__ice__shelf_8F90_source.html#l01736">mom_ice_shelf::ice_shelf_end()</a>, and <a class="el" href="mom__ocean__model__mct_8F90_source.html#l00764">ocean_model_save_restart()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -807,23 +815,23 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__mct_8F90_source.html#l01003">1003</a> of file <a class="el" href="mom__ocean__model__mct_8F90_source.html">mom_ocean_model_mct.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;  <span class="keywordtype">type</span>(ocean_state_type), <span class="keywordtype">optional</span>, <span class="keywordtype">pointer</span> :: OS<span class="comment">  !&lt; An optional pointer to the ocean state,</span></div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;<span class="comment">                                             !! used to figure out if this is an ocean PE that</span></div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;<span class="comment">                                             !! has already been initialized.</span></div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: verbosity<span class="comment"> !&lt; A 0-9 integer indicating a level of verbosity.</span></div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160; </div>
-<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;  <span class="keywordtype">logical</span> :: OS_is_set</div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;  <span class="keywordtype">integer</span> :: verbose</div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160; </div>
-<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;  os_is_set = .false. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(os)) os_is_set = <span class="keyword">associated</span>(os)</div>
-<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160; </div>
-<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;  <span class="comment">! Use this to control the verbosity of output; consider rethinking this logic later.</span></div>
-<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;  verbose = 5 ; <span class="keywordflow">if</span> (os_is_set) verbose = 3</div>
-<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(verbosity)) verbose = verbosity</div>
-<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160; </div>
-<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;  <span class="keyword">call </span>call_tracer_flux_init(verbosity=verbose)</div>
-<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__mct_8F90_source.html#l01004">1004</a> of file <a class="el" href="mom__ocean__model__mct_8F90_source.html">mom_ocean_model_mct.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;  <span class="keywordtype">type</span>(ocean_state_type), <span class="keywordtype">optional</span>, <span class="keywordtype">pointer</span> :: OS<span class="comment">  !&lt; An optional pointer to the ocean state,</span></div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;<span class="comment">                                             !! used to figure out if this is an ocean PE that</span></div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;<span class="comment">                                             !! has already been initialized.</span></div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: verbosity<span class="comment"> !&lt; A 0-9 integer indicating a level of verbosity.</span></div>
+<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160; </div>
+<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;  <span class="keywordtype">logical</span> :: OS_is_set</div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;  <span class="keywordtype">integer</span> :: verbose</div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160; </div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;  os_is_set = .false. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(os)) os_is_set = <span class="keyword">associated</span>(os)</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160; </div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;  <span class="comment">! Use this to control the verbosity of output; consider rethinking this logic later.</span></div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;  verbose = 5 ; <span class="keywordflow">if</span> (os_is_set) verbose = 3</div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(verbosity)) verbose = verbosity</div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160; </div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;  <span class="keyword">call </span>call_tracer_flux_init(verbosity=verbose)</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__tracer__flow__control_8F90_source.html#l00117">mom_tracer_flow_control::call_tracer_flux_init()</a>.</p>
 <div class="dynheader">
@@ -1080,7 +1088,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keyword">call </span>extract_surface_state(os%MOM_CSp, os%sfc_state)</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keyword">call </span>convert_state_to_ocean_type(os%sfc_state, ocean_sfc, os%grid)</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keyword">call </span>convert_state_to_ocean_type(os%sfc_state, ocean_sfc, os%grid, os%US)</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="keywordflow">  endif</span></div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160; </div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  <span class="keyword">call </span>close_param_file(param_file)</div>
@@ -1136,21 +1144,21 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__mct_8F90_source.html#l00982">982</a> of file <a class="el" href="mom__ocean__model__mct_8F90_source.html">mom_ocean_model_mct.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;  <span class="keywordtype">type</span>(ocean_state_type),  <span class="keywordtype">pointer</span>       :: OS<span class="comment">  !&lt; The structure with the complete ocean state</span></div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;  <span class="keywordtype">type</span>(ocean_public_type), <span class="keywordtype">intent(inout)</span> :: Ocean_sfc<span class="comment"> !&lt; A structure containing various publicly</span></div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;<span class="comment">                                !! visible ocean surface properties after initialization, whose</span></div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;<span class="comment">                                !! elements have their data set here.</span></div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;  <span class="keywordtype">integer</span> :: is, ie, js, je</div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160; </div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;  is = os%grid%isc ; ie = os%grid%iec ; js = os%grid%jsc ; je = os%grid%jec</div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;  <span class="keyword">call </span>coupler_type_spawn(ocean_sfc%fields, os%sfc_state%tr_fields, &amp;</div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;                          (/is,is,ie,ie/), (/js,js,je,je/), as_needed=.true.)</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160; </div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;  <span class="keyword">call </span>extract_surface_state(os%MOM_CSp, os%sfc_state)</div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160; </div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;  <span class="keyword">call </span>convert_state_to_ocean_type(os%sfc_state, ocean_sfc, os%grid)</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__mct_8F90_source.html#l00983">983</a> of file <a class="el" href="mom__ocean__model__mct_8F90_source.html">mom_ocean_model_mct.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;  <span class="keywordtype">type</span>(ocean_state_type),  <span class="keywordtype">pointer</span>       :: OS<span class="comment">  !&lt; The structure with the complete ocean state</span></div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;  <span class="keywordtype">type</span>(ocean_public_type), <span class="keywordtype">intent(inout)</span> :: Ocean_sfc<span class="comment"> !&lt; A structure containing various publicly</span></div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;<span class="comment">                                !! visible ocean surface properties after initialization, whose</span></div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;<span class="comment">                                !! elements have their data set here.</span></div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;  <span class="keywordtype">integer</span> :: is, ie, js, je</div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160; </div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;  is = os%grid%isc ; ie = os%grid%iec ; js = os%grid%jsc ; je = os%grid%jec</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;  <span class="keyword">call </span>coupler_type_spawn(ocean_sfc%fields, os%sfc_state%tr_fields, &amp;</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;                          (/is,is,ie,ie/), (/js,js,je,je/), as_needed=.true.)</div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160; </div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;  <span class="keyword">call </span>extract_surface_state(os%MOM_CSp, os%sfc_state)</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160; </div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;  <span class="keyword">call </span>convert_state_to_ocean_type(os%sfc_state, ocean_sfc, os%grid, os%US)</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="mom__ocean__model__mct_8F90_source.html#l00861">convert_state_to_ocean_type()</a>.</p>
 <div class="dynheader">
@@ -1252,7 +1260,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;<span class="keywordflow">  end if</span></div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mom__surface__forcing__mct_8F90_source.html#l00969">mom_surface_forcing_mct::forcing_save_restart()</a>, <a class="el" href="MOM__ice__shelf_8F90_source.html#l01710">mom_ice_shelf::ice_shelf_save_restart()</a>, and <a class="el" href="MOM__restart_8F90_source.html#l00781">mom_restart::save_restart()</a>.</p>
+<p class="reference">References <a class="el" href="mom__surface__forcing__mct_8F90_source.html#l00965">mom_surface_forcing_mct::forcing_save_restart()</a>, <a class="el" href="MOM__ice__shelf_8F90_source.html#l01713">mom_ice_shelf::ice_shelf_save_restart()</a>, and <a class="el" href="MOM__restart_8F90_source.html#l00781">mom_restart::save_restart()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1344,7 +1352,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;<span class="keywordflow">  endif</span></div>
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mom__surface__forcing__mct_8F90_source.html#l00969">mom_surface_forcing_mct::forcing_save_restart()</a>, <a class="el" href="MOM__ice__shelf_8F90_source.html#l01710">mom_ice_shelf::ice_shelf_save_restart()</a>, and <a class="el" href="MOM__restart_8F90_source.html#l00781">mom_restart::save_restart()</a>.</p>
+<p class="reference">References <a class="el" href="mom__surface__forcing__mct_8F90_source.html#l00965">mom_surface_forcing_mct::forcing_save_restart()</a>, <a class="el" href="MOM__ice__shelf_8F90_source.html#l01713">mom_ice_shelf::ice_shelf_save_restart()</a>, and <a class="el" href="MOM__restart_8F90_source.html#l00781">mom_restart::save_restart()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mom__ocean__model__mct_8F90_source.html#l00746">ocean_model_end()</a>.</p>
 <div class="dynheader">
@@ -1404,28 +1412,28 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__mct_8F90_source.html#l01157">1157</a> of file <a class="el" href="mom__ocean__model__mct_8F90_source.html">mom_ocean_model_mct.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160; </div>
-<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;  <span class="keywordtype">character(len=*)</span>,        <span class="keywordtype">intent(in)</span> :: id<span class="comment">  !&lt; An identifying string for this call</span></div>
-<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;  <span class="keywordtype">integer</span>,                 <span class="keywordtype">intent(in)</span> :: timestep<span class="comment"> !&lt; The number of elapsed timesteps</span></div>
-<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;  <span class="keywordtype">type</span>(ocean_public_type), <span class="keywordtype">intent(in)</span> :: ocn<span class="comment"> !&lt; A structure containing various publicly</span></div>
-<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;<span class="comment">                                             !! visible ocean surface fields.</span></div>
-<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;  <span class="keywordtype">integer</span> :: n, m, outunit</div>
-<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160; </div>
-<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;  outunit = stdout()</div>
-<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160; </div>
-<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;  <span class="keyword">write</span>(outunit,*) <span class="stringliteral">&quot;BEGIN CHECKSUM(ocean_type):: &quot;</span>, id, timestep</div>
-<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;  <span class="keyword">write</span>(outunit,100) <span class="stringliteral">&#39;ocean%t_surf   &#39;</span>,mpp_chksum(ocn%t_surf )</div>
-<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;  <span class="keyword">write</span>(outunit,100) <span class="stringliteral">&#39;ocean%s_surf   &#39;</span>,mpp_chksum(ocn%s_surf )</div>
-<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;  <span class="keyword">write</span>(outunit,100) <span class="stringliteral">&#39;ocean%u_surf   &#39;</span>,mpp_chksum(ocn%u_surf )</div>
-<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;  <span class="keyword">write</span>(outunit,100) <span class="stringliteral">&#39;ocean%v_surf   &#39;</span>,mpp_chksum(ocn%v_surf )</div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;  <span class="keyword">write</span>(outunit,100) <span class="stringliteral">&#39;ocean%sea_lev  &#39;</span>,mpp_chksum(ocn%sea_lev)</div>
-<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;  <span class="keyword">write</span>(outunit,100) <span class="stringliteral">&#39;ocean%frazil   &#39;</span>,mpp_chksum(ocn%frazil )</div>
-<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;  <span class="keyword">write</span>(outunit,100) <span class="stringliteral">&#39;ocean%melt_potential  &#39;</span>,mpp_chksum(ocn%melt_potential)</div>
-<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160; </div>
-<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;  <span class="keyword">call </span>coupler_type_write_chksums(ocn%fields, outunit, <span class="stringliteral">&#39;ocean%&#39;</span>)</div>
-<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;100 <span class="keyword">FORMAT</span>(<span class="stringliteral">&quot;   CHECKSUM::&quot;</span>,a20,<span class="stringliteral">&quot; = &quot;</span>,z20)</div>
-<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__mct_8F90_source.html#l01158">1158</a> of file <a class="el" href="mom__ocean__model__mct_8F90_source.html">mom_ocean_model_mct.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160; </div>
+<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;  <span class="keywordtype">character(len=*)</span>,        <span class="keywordtype">intent(in)</span> :: id<span class="comment">  !&lt; An identifying string for this call</span></div>
+<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;  <span class="keywordtype">integer</span>,                 <span class="keywordtype">intent(in)</span> :: timestep<span class="comment"> !&lt; The number of elapsed timesteps</span></div>
+<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;  <span class="keywordtype">type</span>(ocean_public_type), <span class="keywordtype">intent(in)</span> :: ocn<span class="comment"> !&lt; A structure containing various publicly</span></div>
+<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;<span class="comment">                                             !! visible ocean surface fields.</span></div>
+<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;  <span class="keywordtype">integer</span> :: n, m, outunit</div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160; </div>
+<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;  outunit = stdout()</div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160; </div>
+<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;  <span class="keyword">write</span>(outunit,*) <span class="stringliteral">&quot;BEGIN CHECKSUM(ocean_type):: &quot;</span>, id, timestep</div>
+<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;  <span class="keyword">write</span>(outunit,100) <span class="stringliteral">&#39;ocean%t_surf   &#39;</span>,mpp_chksum(ocn%t_surf )</div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;  <span class="keyword">write</span>(outunit,100) <span class="stringliteral">&#39;ocean%s_surf   &#39;</span>,mpp_chksum(ocn%s_surf )</div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;  <span class="keyword">write</span>(outunit,100) <span class="stringliteral">&#39;ocean%u_surf   &#39;</span>,mpp_chksum(ocn%u_surf )</div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;  <span class="keyword">write</span>(outunit,100) <span class="stringliteral">&#39;ocean%v_surf   &#39;</span>,mpp_chksum(ocn%v_surf )</div>
+<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;  <span class="keyword">write</span>(outunit,100) <span class="stringliteral">&#39;ocean%sea_lev  &#39;</span>,mpp_chksum(ocn%sea_lev)</div>
+<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;  <span class="keyword">write</span>(outunit,100) <span class="stringliteral">&#39;ocean%frazil   &#39;</span>,mpp_chksum(ocn%frazil )</div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;  <span class="keyword">write</span>(outunit,100) <span class="stringliteral">&#39;ocean%melt_potential  &#39;</span>,mpp_chksum(ocn%melt_potential)</div>
+<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160; </div>
+<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;  <span class="keyword">call </span>coupler_type_write_chksums(ocn%fields, outunit, <span class="stringliteral">&#39;ocean%&#39;</span>)</div>
+<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;100 <span class="keyword">FORMAT</span>(<span class="stringliteral">&quot;   CHECKSUM::&quot;</span>,a20,<span class="stringliteral">&quot; = &quot;</span>,z20)</div>
+<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1478,45 +1486,45 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__mct_8F90_source.html#l01025">1025</a> of file <a class="el" href="mom__ocean__model__mct_8F90_source.html">mom_ocean_model_mct.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;  <span class="keywordtype">use </span>stock_constants_mod, <span class="keywordtype">only</span> : istock_water, istock_heat,istock_salt</div>
-<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;  <span class="keywordtype">type</span>(ocean_state_type), <span class="keywordtype">pointer</span>     :: OS<span class="comment">         !&lt; A structure containing the internal ocean state.</span></div>
-<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;<span class="comment">                                                    !! The data in OS is intent in.</span></div>
-<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;  <span class="keywordtype">integer</span>,                <span class="keywordtype">intent(in)</span>  :: index<span class="comment">      !&lt; The stock index for the quantity of interest.</span></div>
-<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;<span class="keywordtype">  real</span>,                   <span class="keywordtype">intent(out)</span> :: <span class="keywordtype">value</span><span class="comment">      !&lt; Sum returned for the conservation quantity of interest.</span></div>
-<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;  <span class="keywordtype">integer</span>,      <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>  :: time_index<span class="comment"> !&lt; An unused optional argument, present only for</span></div>
-<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;<span class="comment">                                                    !! interfacial compatibility with other models.</span></div>
-<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;<span class="comment">! Arguments: OS - A structure containing the internal ocean state.</span></div>
-<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;<span class="comment">!  (in)      index - Index of conservation quantity of interest.</span></div>
-<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;<span class="comment">!  (in)      value -  Sum returned for the conservation quantity of interest.</span></div>
-<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;<span class="comment">!  (in,opt)  time_index - Index for time level to use if this is necessary.</span></div>
-<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160; </div>
-<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;<span class="keywordtype">  real</span> :: salt</div>
-<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160; </div>
-<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;  <span class="keywordtype">value</span> = 0.0</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(os)) <span class="keywordflow">return</span></div>
-<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;  <span class="keywordflow">if</span> (.not.os%is_ocean_pe) <span class="keywordflow">return</span></div>
-<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160; </div>
-<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;  <span class="keywordflow">select case</span> (index)</div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;    <span class="keywordflow">case</span> (istock_water)  <span class="comment">! Return the mass of fresh water in the ocean in kg.</span></div>
-<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;      <span class="keywordflow">if</span> (os%GV%Boussinesq) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;        <span class="keyword">call </span>get_ocean_stocks(os%MOM_CSp, mass=<span class="keywordtype">value</span>, on_pe_only=.true.)</div>
-<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;      <span class="keywordflow">else</span>  <span class="comment">! In non-Boussinesq mode, the mass of salt needs to be subtracted.</span></div>
-<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;        <span class="keyword">call </span>get_ocean_stocks(os%MOM_CSp, mass=<span class="keywordtype">value</span>, salt=salt, on_pe_only=.true.)</div>
-<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;        <span class="keywordtype">value</span> = <span class="keywordtype">value</span> - salt</div>
-<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;<span class="keywordflow">      endif</span></div>
-<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;    <span class="keywordflow">case</span> (istock_heat)  <span class="comment">! Return the heat content of the ocean in J.</span></div>
-<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;      <span class="keyword">call </span>get_ocean_stocks(os%MOM_CSp, heat=<span class="keywordtype">value</span>, on_pe_only=.true.)</div>
-<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;    <span class="keywordflow">case</span> (istock_salt)  <span class="comment">! Return the mass of the salt in the ocean in kg.</span></div>
-<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;       <span class="keyword">call </span>get_ocean_stocks(os%MOM_CSp, salt=<span class="keywordtype">value</span>, on_pe_only=.true.)</div>
-<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;<span class="keywordflow">    case default</span> ; <span class="keywordtype">value</span> = 0.0</div>
-<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;<span class="keywordflow">  end select</span></div>
-<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;  <span class="comment">! If the FMS coupler is changed so that Ocean_stock_PE is only called on</span></div>
-<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;  <span class="comment">! ocean PEs, uncomment the following and eliminate the on_PE_only flags above.</span></div>
-<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;  <span class="comment">!  if (.not.is_root_pe()) value = 0.0</span></div>
-<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__mct_8F90_source.html#l01026">1026</a> of file <a class="el" href="mom__ocean__model__mct_8F90_source.html">mom_ocean_model_mct.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;  <span class="keywordtype">use </span>stock_constants_mod, <span class="keywordtype">only</span> : istock_water, istock_heat,istock_salt</div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;  <span class="keywordtype">type</span>(ocean_state_type), <span class="keywordtype">pointer</span>     :: OS<span class="comment">         !&lt; A structure containing the internal ocean state.</span></div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;<span class="comment">                                                    !! The data in OS is intent in.</span></div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;  <span class="keywordtype">integer</span>,                <span class="keywordtype">intent(in)</span>  :: index<span class="comment">      !&lt; The stock index for the quantity of interest.</span></div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;<span class="keywordtype">  real</span>,                   <span class="keywordtype">intent(out)</span> :: <span class="keywordtype">value</span><span class="comment">      !&lt; Sum returned for the conservation quantity of interest.</span></div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;  <span class="keywordtype">integer</span>,      <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>  :: time_index<span class="comment"> !&lt; An unused optional argument, present only for</span></div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;<span class="comment">                                                    !! interfacial compatibility with other models.</span></div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;<span class="comment">! Arguments: OS - A structure containing the internal ocean state.</span></div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;<span class="comment">!  (in)      index - Index of conservation quantity of interest.</span></div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;<span class="comment">!  (in)      value -  Sum returned for the conservation quantity of interest.</span></div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;<span class="comment">!  (in,opt)  time_index - Index for time level to use if this is necessary.</span></div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160; </div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;<span class="keywordtype">  real</span> :: salt</div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160; </div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;  <span class="keywordtype">value</span> = 0.0</div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(os)) <span class="keywordflow">return</span></div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;  <span class="keywordflow">if</span> (.not.os%is_ocean_pe) <span class="keywordflow">return</span></div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160; </div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;  <span class="keywordflow">select case</span> (index)</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;    <span class="keywordflow">case</span> (istock_water)  <span class="comment">! Return the mass of fresh water in the ocean in kg.</span></div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;      <span class="keywordflow">if</span> (os%GV%Boussinesq) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;        <span class="keyword">call </span>get_ocean_stocks(os%MOM_CSp, mass=<span class="keywordtype">value</span>, on_pe_only=.true.)</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;      <span class="keywordflow">else</span>  <span class="comment">! In non-Boussinesq mode, the mass of salt needs to be subtracted.</span></div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;        <span class="keyword">call </span>get_ocean_stocks(os%MOM_CSp, mass=<span class="keywordtype">value</span>, salt=salt, on_pe_only=.true.)</div>
+<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;        <span class="keywordtype">value</span> = <span class="keywordtype">value</span> - salt</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;<span class="keywordflow">      endif</span></div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;    <span class="keywordflow">case</span> (istock_heat)  <span class="comment">! Return the heat content of the ocean in J.</span></div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;      <span class="keyword">call </span>get_ocean_stocks(os%MOM_CSp, heat=<span class="keywordtype">value</span>, on_pe_only=.true.)</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;    <span class="keywordflow">case</span> (istock_salt)  <span class="comment">! Return the mass of the salt in the ocean in kg.</span></div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;       <span class="keyword">call </span>get_ocean_stocks(os%MOM_CSp, salt=<span class="keywordtype">value</span>, on_pe_only=.true.)</div>
+<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;<span class="keywordflow">    case default</span> ; <span class="keywordtype">value</span> = 0.0</div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;<span class="keywordflow">  end select</span></div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;  <span class="comment">! If the FMS coupler is changed so that Ocean_stock_PE is only called on</span></div>
+<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;  <span class="comment">! ocean PEs, uncomment the following and eliminate the on_PE_only flags above.</span></div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;  <span class="comment">!  if (.not.is_root_pe()) value = 0.0</span></div>
+<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM_8F90_source.html#l03068">mom::get_ocean_stocks()</a>.</p>
+<p class="reference">References <a class="el" href="MOM_8F90_source.html#l03077">mom::get_ocean_stocks()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1698,7 +1706,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;      <span class="keywordflow">if</span> (do_thermo) &amp;</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        <span class="keyword">call </span>shelf_calc_flux(os%sfc_state, os%fluxes, os%Time, dt_coupling, os%Ice_shelf_CSp)</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;      <span class="keywordflow">if</span> (do_dyn) &amp;</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        <span class="keyword">call </span>add_shelf_forces(os%grid, os%Ice_shelf_CSp, os%forces)</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        <span class="keyword">call </span>add_shelf_forces(os%grid, os%US, os%Ice_shelf_CSp, os%forces)</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<span class="keywordflow">    endif</span></div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    <span class="keywordflow">if</span> (os%icebergs_alter_ocean)  <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;      <span class="keywordflow">if</span> (do_dyn) &amp;</div>
@@ -1733,7 +1741,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;      <span class="keywordflow">if</span> (do_thermo) &amp;</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        <span class="keyword">call </span>shelf_calc_flux(os%sfc_state, os%flux_tmp, os%Time, dt_coupling, os%Ice_shelf_CSp)</div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;      <span class="keywordflow">if</span> (do_dyn) &amp;</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        <span class="keyword">call </span>add_shelf_forces(os%grid, os%Ice_shelf_CSp, os%forces)</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        <span class="keyword">call </span>add_shelf_forces(os%grid, os%US, os%Ice_shelf_CSp, os%forces)</div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="keywordflow">    endif</span></div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    <span class="keywordflow">if</span> (os%icebergs_alter_ocean)  <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;      <span class="keywordflow">if</span> (do_dyn) &amp;</div>
@@ -1857,12 +1865,12 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;<span class="comment">! Translate state into Ocean.</span></div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;<span class="comment">!  call convert_state_to_ocean_type(OS%sfc_state, Ocean_sfc, OS%grid, &amp;</span></div>
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;<span class="comment">!                                   Ice_ocean_boundary%p, OS%press_to_z)</span></div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;  <span class="keyword">call </span>convert_state_to_ocean_type(os%sfc_state, ocean_sfc, os%grid)</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;  <span class="keyword">call </span>convert_state_to_ocean_type(os%sfc_state, ocean_sfc, os%grid, os%US)</div>
 <div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;  <span class="keyword">call </span>coupler_type_send_data(ocean_sfc%fields, os%Time)</div>
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160; </div>
 <div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;  <span class="keyword">call </span>calltree_leave(<span class="stringliteral">&quot;update_ocean_model()&quot;</span>)</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__ice__shelf_8F90_source.html#l00754">mom_ice_shelf::add_shelf_forces()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00130">mom_error_handler::calltree_enter()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00151">mom_error_handler::calltree_leave()</a>, <a class="el" href="mom__ocean__model__mct_8F90_source.html#l00861">convert_state_to_ocean_type()</a>, <a class="el" href="MOM__forcing__type_8F90_source.html#l02188">mom_forcing_type::forcing_diagnostics()</a>, <a class="el" href="MOM__marine__ice_8F90_source.html#l00107">mom_marine_ice::iceberg_fluxes()</a>, <a class="el" href="MOM__marine__ice_8F90_source.html#l00046">mom_marine_ice::iceberg_forces()</a>, <a class="el" href="MOM__forcing__type_8F90_source.html#l02154">mom_forcing_type::mech_forcing_diags()</a>, <a class="el" href="MOM_8F90_source.html#l01310">mom::step_offline()</a>, and <a class="el" href="MOM__wave__interface_8F90_source.html#l00437">mom_wave_interface::update_surface_waves()</a>.</p>
+<p class="reference">References <a class="el" href="MOM__ice__shelf_8F90_source.html#l00754">mom_ice_shelf::add_shelf_forces()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00130">mom_error_handler::calltree_enter()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00151">mom_error_handler::calltree_leave()</a>, <a class="el" href="mom__ocean__model__mct_8F90_source.html#l00861">convert_state_to_ocean_type()</a>, <a class="el" href="MOM__forcing__type_8F90_source.html#l02196">mom_forcing_type::forcing_diagnostics()</a>, <a class="el" href="MOM__marine__ice_8F90_source.html#l00107">mom_marine_ice::iceberg_fluxes()</a>, <a class="el" href="MOM__marine__ice_8F90_source.html#l00046">mom_marine_ice::iceberg_forces()</a>, <a class="el" href="MOM__forcing__type_8F90_source.html#l02162">mom_forcing_type::mech_forcing_diags()</a>, <a class="el" href="MOM_8F90_source.html#l01308">mom::step_offline()</a>, and <a class="el" href="MOM__wave__interface_8F90_source.html#l00437">mom_wave_interface::update_surface_waves()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

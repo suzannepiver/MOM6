@@ -326,7 +326,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">do</span> j=segment%HI%jsc,segment%HI%jec ; <span class="keywordflow">do</span> i=segment%HI%IscB,segment%HI%IecB</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">if</span> (obc%segnum_u(i,j) /= obc_none) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keywordflow">do</span> k=1,nz</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        my_area(1,j) = my_area(1,j) + h(i,j,k)*g%dyCu(i,j)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        my_area(1,j) = my_area(1,j) + h(i,j,k)*g%US%L_to_m*g%dyCu(i,j)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordflow">      enddo</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordflow">    endif</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
@@ -338,7 +338,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">if</span> (.not. segment%on_pe) cycle</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    segment%normal_vel_bt(:,:) = my_flux/total_area</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    segment%normal_vel_bt(:,:) = g%US%m_s_to_L_T*my_flux/total_area</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    segment%eta(:,:) = cff</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordflow">  enddo</span> <span class="comment">! end segment loop</span></div>

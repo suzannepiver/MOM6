@@ -456,9 +456,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      cos_wt = cos(ll*x - omega*time_sec)</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      sin_ky = sin(kk * y)</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      cos_ky = cos(kk * y)</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      segment%normal_vel_bt(i,j) = my_amp * exp(- alpha * y) * cos_wt * &amp;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      segment%normal_vel_bt(i,j) = g%US%m_s_to_L_T*my_amp * exp(- alpha * y) * cos_wt * &amp;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;           (alpha * sin_ky + kk * cos_ky)</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">!     segment%tangential_vel_bt(I,j) = my_amp * ll * exp(- alpha * y) * sin_wt * sin_ky</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">!     segment%tangential_vel_bt(I,j) = G%US%m_s_to_L_T*my_amp * ll * exp(- alpha * y) * sin_wt * sin_ky</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">!     segment%vorticity_bt(I,j) = my_amp * exp(- alpha * y) * cos_wt * sin_ky&amp;</span></div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">!           (ll*ll + kk*kk + alpha*alpha)</span></div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>

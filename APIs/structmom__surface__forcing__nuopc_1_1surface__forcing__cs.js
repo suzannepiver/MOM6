@@ -11,6 +11,7 @@ var structmom__surface__forcing__nuopc_1_1surface__forcing__cs =
     [ "density_sea_ice", "structmom__surface__forcing__nuopc_1_1surface__forcing__cs.html#afe8bcf2c723d0fc60c361a20e0aa6c2f", null ],
     [ "diag", "structmom__surface__forcing__nuopc_1_1surface__forcing__cs.html#a55af765ae3ec1c34c591b0d06d90e255", null ],
     [ "flux_const", "structmom__surface__forcing__nuopc_1_1surface__forcing__cs.html#a6947730412ec46a295fa7c7e099b9bbc", null ],
+    [ "g_earth", "structmom__surface__forcing__nuopc_1_1surface__forcing__cs.html#a2304223c3666b57744a1bb9d306d29a6", null ],
     [ "gust", "structmom__surface__forcing__nuopc_1_1surface__forcing__cs.html#afaa8a06b3f164d6a2539ffb80db7c0bd", null ],
     [ "gust_const", "structmom__surface__forcing__nuopc_1_1surface__forcing__cs.html#aae233e9ee302e068bfcbcce48f2c14e7", null ],
     [ "handles", "structmom__surface__forcing__nuopc_1_1surface__forcing__cs.html#a9275eda370afd90c06bceddd8b1c75f3", null ],

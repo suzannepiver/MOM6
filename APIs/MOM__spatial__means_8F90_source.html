@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('MOM__spatial__means_8F90_source.html',
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  tmpforsumming(:,:) = 0.</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is, ie</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    tmpforsumming(i,j) = ( var(i,j) * (g%areaT(i,j) * g%mask2dT(i,j)) )</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    tmpforsumming(i,j) = ( var(i,j) * (g%US%L_to_m**2*g%areaT(i,j) * g%mask2dT(i,j)) )</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="namespacemom__spatial__means.html#aa49abab62973a263d6f5a1c776f62a11">global_area_mean</a> = <a class="code" href="interfacemom__coms_1_1reproducing__sum.html">reproducing_sum</a>( tmpforsumming ) * g%IareaT_global</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('MOM__spatial__means_8F90_source.html',
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  tmpforsumming(:,:) = 0.</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is, ie</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    tmpforsumming(i,j) = ( var(i,j) * (g%areaT(i,j) * g%mask2dT(i,j)) )</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    tmpforsumming(i,j) = ( var(i,j) * (g%US%L_to_m**2*g%areaT(i,j) * g%mask2dT(i,j)) )</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="namespacemom__spatial__means.html#aee0e9ccdac32367f6ae1064f49e41771">global_area_integral</a> = <a class="code" href="interfacemom__coms_1_1reproducing__sum.html">reproducing_sum</a>( tmpforsumming )</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('MOM__spatial__means_8F90_source.html',
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  tmpforsumming(:,:,:) = 0. ; weight(:,:,:) = 0.</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    weight(i,j,k)  =  (gv%H_to_m * h(i,j,k)) * (g%areaT(i,j) * g%mask2dT(i,j))</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    weight(i,j,k)  =  (gv%H_to_m * h(i,j,k)) * (g%US%L_to_m**2*g%areaT(i,j) * g%mask2dT(i,j))</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    tmpforsumming(i,j,k) =  var(i,j,k) * weight(i,j,k)</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('MOM__spatial__means_8F90_source.html',
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  tmpforsumming(:,:) = 0. ; sum_weight(:,:) = 0.</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    weight_here  =  (gv%H_to_m * h(i,j,k)) * (g%areaT(i,j) * g%mask2dT(i,j))</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    weight_here  =  (gv%H_to_m * h(i,j,k)) * (g%US%L_to_m**2*g%areaT(i,j) * g%mask2dT(i,j))</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    tmpforsumming(i,j) = tmpforsumming(i,j) + var(i,j,k) * weight_here</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    sum_weight(i,j) = sum_weight(i,j) + weight_here</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
@@ -238,12 +238,12 @@ $(document).ready(function(){initNavTree('MOM__spatial__means_8F90_source.html',
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(var)) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      tmpforsumming(i,j) = tmpforsumming(i,j) + var(i,j,k) * &amp;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                ((gv%H_to_kg_m2 * h(i,j,k)) * (g%areaT(i,j) * g%mask2dT(i,j)))</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                ((gv%H_to_kg_m2 * h(i,j,k)) * (g%US%L_to_m**2*g%areaT(i,j) * g%mask2dT(i,j)))</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      tmpforsumming(i,j) = tmpforsumming(i,j) + &amp;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                ((gv%H_to_kg_m2 * h(i,j,k)) * (g%areaT(i,j) * g%mask2dT(i,j)))</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                ((gv%H_to_kg_m2 * h(i,j,k)) * (g%US%L_to_m**2*g%areaT(i,j) * g%mask2dT(i,j)))</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keywordflow">  endif</span></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  global_sum = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(on_pe_only)) global_sum = .not.on_pe_only</div>
@@ -422,9 +422,9 @@ $(document).ready(function(){initNavTree('MOM__spatial__means_8F90_source.html',
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keywordflow">do</span> j=g%jsc,g%jec ; <span class="keywordflow">do</span> i=g%isc,g%iec</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    posvals(i,j) = max(0., array(i,j))</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    areaxposvals(i,j) = g%areaT(i,j) * posvals(i,j)</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    areaxposvals(i,j) = g%US%L_to_m**2*g%areaT(i,j) * posvals(i,j)</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    negvals(i,j) = min(0., array(i,j))</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    areaxnegvals(i,j) = g%areaT(i,j) * negvals(i,j)</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    areaxnegvals(i,j) = g%US%L_to_m**2*g%areaT(i,j) * negvals(i,j)</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  areaintposvals = <a class="code" href="interfacemom__coms_1_1reproducing__sum.html">reproducing_sum</a>( areaxposvals )</div>
@@ -476,7 +476,7 @@ $(document).ready(function(){initNavTree('MOM__spatial__means_8F90_source.html',
 <div class="ttc" id="anamespacemom__spatial__means_html_a02cafdc5a7ca5146c9051b94b42ef82d"><div class="ttname"><a href="namespacemom__spatial__means.html#a02cafdc5a7ca5146c9051b94b42ef82d">mom_spatial_means::global_layer_mean</a></div><div class="ttdeci">real function, dimension(gv %ke), public global_layer_mean(var, h, G, GV)</div><div class="ttdoc">Return the layerwise global thickness-weighted mean of a variable. This uses reproducing sums.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__spatial__means_8F90_source.html#l00065">MOM_spatial_means.F90:65</a></div></div>
 <div class="ttc" id="anamespacemom__coms_html_a9a44466e43db89b2525996feedd11b7a"><div class="ttname"><a href="namespacemom__coms.html#a9a44466e43db89b2525996feedd11b7a">mom_coms::reset_efp_overflow_error</a></div><div class="ttdeci">subroutine, public reset_efp_overflow_error()</div><div class="ttdoc">Reset the module's error flag to false.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__coms_8F90_source.html#l00609">MOM_coms.F90:609</a></div></div>
 <div class="ttc" id="anamespacemom__error__handler_html"><div class="ttname"><a href="namespacemom__error__handler.html">mom_error_handler</a></div><div class="ttdoc">Routines for error handling and I/O management.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__error__handler_8F90_source.html#l00002">MOM_error_handler.F90:2</a></div></div>
-<div class="ttc" id="astructmom__grid_1_1ocean__grid__type_html"><div class="ttname"><a href="structmom__grid_1_1ocean__grid__type.html">mom_grid::ocean_grid_type</a></div><div class="ttdoc">Ocean grid type. See mom_grid for details.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__grid_8F90_source.html#l00025">MOM_grid.F90:25</a></div></div>
+<div class="ttc" id="astructmom__grid_1_1ocean__grid__type_html"><div class="ttname"><a href="structmom__grid_1_1ocean__grid__type.html">mom_grid::ocean_grid_type</a></div><div class="ttdoc">Ocean grid type. See mom_grid for details.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__grid_8F90_source.html#l00026">MOM_grid.F90:26</a></div></div>
 <div class="ttc" id="anamespacemom__spatial__means_html_aee0e9ccdac32367f6ae1064f49e41771"><div class="ttname"><a href="namespacemom__spatial__means.html#aee0e9ccdac32367f6ae1064f49e41771">mom_spatial_means::global_area_integral</a></div><div class="ttdeci">real function, public global_area_integral(var, G)</div><div class="ttdoc">Return the global area integral of a variable. This uses reproducing sums.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__spatial__means_8F90_source.html#l00047">MOM_spatial_means.F90:47</a></div></div>
 <div class="ttc" id="anamespacemom__coms_html_a6cbcab29d87b134dcd5c4bdb922b4344"><div class="ttname"><a href="namespacemom__coms.html#a6cbcab29d87b134dcd5c4bdb922b4344">mom_coms::efp_list_sum_across_pes</a></div><div class="ttdeci">subroutine, public efp_list_sum_across_pes(EFPs, nval, errors)</div><div class="ttdoc">This subroutine does a sum across PEs of a list of EFP variables, returning the sums in place,...</div><div class="ttdef"><b>Definition:</b> <a href="MOM__coms_8F90_source.html#l00698">MOM_coms.F90:698</a></div></div>
 <!-- start footer part -->

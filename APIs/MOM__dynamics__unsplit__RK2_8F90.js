@@ -2,7 +2,7 @@ var MOM__dynamics__unsplit__RK2_8F90 =
 [
     [ "mom_dyn_unsplit_rk2_cs", "structmom__dynamics__unsplit__rk2_1_1mom__dyn__unsplit__rk2__cs.html", "structmom__dynamics__unsplit__rk2_1_1mom__dyn__unsplit__rk2__cs" ],
     [ "end_dyn_unsplit_rk2", "MOM__dynamics__unsplit__RK2_8F90.html#af9ef63649616487c19908fab5978a314", null ],
-    [ "initialize_dyn_unsplit_rk2", "MOM__dynamics__unsplit__RK2_8F90.html#a7703d91136bb80cdba5bae91d6f86239", null ],
+    [ "initialize_dyn_unsplit_rk2", "MOM__dynamics__unsplit__RK2_8F90.html#a1e1bea48a35b64c87b5b9d0965378592", null ],
     [ "register_restarts_dyn_unsplit_rk2", "MOM__dynamics__unsplit__RK2_8F90.html#a6e670b5eaefad5b2f16b3e00c2788dfb", null ],
     [ "step_mom_dyn_unsplit_rk2", "MOM__dynamics__unsplit__RK2_8F90.html#a25424d65cc3339442e528c0a92b173a3", null ],
     [ "id_clock_continuity", "MOM__dynamics__unsplit__RK2_8F90.html#a9d72cd363e8c5410c95a01e8e084edd0", null ],

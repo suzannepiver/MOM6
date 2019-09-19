@@ -1,0 +1,18 @@
+digraph "mom_barotropic::find_face_areas"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_barotropic::find\l_face_areas",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine determines the open face areas of cells for calculating the barotropic transport."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_barotropic::barotropic_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#a59244968890766632554a6d271ec4499",tooltip="barotropic_init initializes a number of time-invariant fields used in the barotropic calculation and ..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_barotropic::btstep",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#a1468df372a5d1dcb95e0b35d782895de",tooltip="This subroutine time steps the barotropic equations explicitly. For gravity waves,..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_barotropic::set_dtbt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#a486257b675aa4e81c2d1634b5288a67f",tooltip="This subroutine automatically determines an optimal value for dtbt based on some state of the ocean."];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_dynamics_split\l_rk2::step_mom_dyn_split_rk2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__dynamics__split__rk2.html#a976e700971f232fc11bc69b31d611c32",tooltip="RK2 splitting for time stepping MOM adiabatic dynamics."];
+}

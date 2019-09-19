@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('structmom__continuity__ppm_1_1continui
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Control structure for <a class="el" href="namespacemom__continuity__ppm.html" title="Solve the layer continuity equation using the PPM method for layer fluxes.">mom_continuity_ppm</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00027">27</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00028">28</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_continuity_ppm::continuity_ppm_cs:</div>
 <div class="dyncontent">
@@ -127,7 +127,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:ab57754ec3775fa331a36ccddf520151b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tolerance for free-surface height discrepancies between the barotropic solution and the sum of the layer thicknesses [H ~&gt; m or kg m-2].  <a href="structmom__continuity__ppm_1_1continuity__ppm__cs.html#ab57754ec3775fa331a36ccddf520151b">More...</a><br /></td></tr>
 <tr class="separator:ab57754ec3775fa331a36ccddf520151b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e602d24b0b68a0606231287e8eaf1d"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__continuity__ppm_1_1continuity__ppm__cs.html#a52e602d24b0b68a0606231287e8eaf1d">tol_vel</a></td></tr>
-<tr class="memdesc:a52e602d24b0b68a0606231287e8eaf1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tolerance for barotropic velocity discrepancies between the barotropic solution and the sum of the layer thicknesses [m s-1].  <a href="structmom__continuity__ppm_1_1continuity__ppm__cs.html#a52e602d24b0b68a0606231287e8eaf1d">More...</a><br /></td></tr>
+<tr class="memdesc:a52e602d24b0b68a0606231287e8eaf1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tolerance for barotropic velocity discrepancies between the barotropic solution and the sum of the layer thicknesses [L T-1 ~&gt; m s-1].  <a href="structmom__continuity__ppm_1_1continuity__ppm__cs.html#a52e602d24b0b68a0606231287e8eaf1d">More...</a><br /></td></tr>
 <tr class="separator:a52e602d24b0b68a0606231287e8eaf1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab76d38d53b0ae9c68c0e4be1db69e99b"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__continuity__ppm_1_1continuity__ppm__cs.html#ab76d38d53b0ae9c68c0e4be1db69e99b">tol_eta_aux</a></td></tr>
 <tr class="memdesc:ab76d38d53b0ae9c68c0e4be1db69e99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tolerance for free-surface height discrepancies between the barotropic solution and the sum of the layer thicknesses when calculating the auxiliary corrected velocities [H ~&gt; m or kg m-2].  <a href="structmom__continuity__ppm_1_1continuity__ppm__cs.html#ab76d38d53b0ae9c68c0e4be1db69e99b">More...</a><br /></td></tr>
@@ -166,8 +166,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, allow the adjusted velocities to have a relative CFL change up to 0.5. False by default. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00047">47</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">logical</span> :: aggress_adjust<span class="comment">  !&lt; If true, allow the adjusted velocities to have a</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00048">48</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">logical</span> :: aggress_adjust<span class="comment">  !&lt; If true, allow the adjusted velocities to have a</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -185,8 +185,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, stop corrective iterations using a velocity-based criterion and only stop if the iteration is better than all predecessors. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00053">53</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">logical</span> :: better_iter<span class="comment">     !&lt; If true, stop corrective iterations using a</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00054">54</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">logical</span> :: better_iter<span class="comment">     !&lt; If true, stop corrective iterations using a</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -204,8 +204,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The maximum CFL of the adjusted velocities [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00046">46</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">  real</span> :: CFL_limit_adjust<span class="comment">   !&lt; The maximum CFL of the adjusted velocities [nondim]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00047">47</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">  real</span> :: CFL_limit_adjust<span class="comment">   !&lt; The maximum CFL of the adjusted velocities [nondim]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -223,8 +223,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostics control structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00028">28</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag<span class="comment"> !&lt; Diagnostics control structure.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00029">29</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag<span class="comment"> !&lt; Diagnostics control structure.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -242,8 +242,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the marginal face areas from the continuity solver for use as the weights in the barotropic solver. Otherwise use the transport averaged areas. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00058">58</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">logical</span> :: marginal_faces<span class="comment">  !&lt; If true, use the marginal face areas from the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00059">59</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">logical</span> :: marginal_faces<span class="comment">  !&lt; If true, use the marginal face areas from the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -261,8 +261,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the Colella &amp; Woodward monotonic limiter; otherwise use a simple positive definite limiter. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00030">30</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">logical</span> :: monotonic<span class="comment">       !&lt; If true, use the Colella &amp; Woodward monotonic</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00031">31</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">logical</span> :: monotonic<span class="comment">       !&lt; If true, use the Colella &amp; Woodward monotonic</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -280,8 +280,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use a simple second order (arithmetic mean) interpolation of the edge values instead of the higher order interpolation. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00033">33</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">logical</span> :: simple_2nd<span class="comment">      !&lt; If true, use a simple second order (arithmetic</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00034">34</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">logical</span> :: simple_2nd<span class="comment">      !&lt; If true, use a simple second order (arithmetic</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -299,8 +299,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The tolerance for free-surface height discrepancies between the barotropic solution and the sum of the layer thicknesses [H ~&gt; m or kg m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00036">36</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">  real</span> :: tol_eta<span class="comment">            !&lt; The tolerance for free-surface height</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00037">37</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">  real</span> :: tol_eta<span class="comment">            !&lt; The tolerance for free-surface height</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -318,8 +318,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The tolerance for free-surface height discrepancies between the barotropic solution and the sum of the layer thicknesses when calculating the auxiliary corrected velocities [H ~&gt; m or kg m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00042">42</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">  real</span> :: tol_eta_aux<span class="comment">        !&lt; The tolerance for free-surface height</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00043">43</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">  real</span> :: tol_eta_aux<span class="comment">        !&lt; The tolerance for free-surface height</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -335,10 +335,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The tolerance for barotropic velocity discrepancies between the barotropic solution and the sum of the layer thicknesses [m s-1]. </p>
+<p>The tolerance for barotropic velocity discrepancies between the barotropic solution and the sum of the layer thicknesses [L T-1 ~&gt; m s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00039">39</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">  real</span> :: tol_vel<span class="comment">            !&lt; The tolerance for barotropic velocity</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00040">40</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">  real</span> :: tol_vel<span class="comment">            !&lt; The tolerance for barotropic velocity</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -356,8 +356,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use a first-order upwind scheme. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00029">29</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">logical</span> :: upwind_1st<span class="comment">      !&lt; If true, use a first-order upwind scheme.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00030">30</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">logical</span> :: upwind_1st<span class="comment">      !&lt; If true, use a first-order upwind scheme.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -375,8 +375,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use more appropriate limiting bounds for corrections in strongly viscous columns. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00056">56</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">logical</span> :: use_visc_rem_max<span class="comment"> !&lt; If true, use more appropriate limiting bounds</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00057">57</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">logical</span> :: use_visc_rem_max<span class="comment"> !&lt; If true, use more appropriate limiting bounds</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -394,8 +394,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the ratio of the open face lengths to the tracer cell areas when estimating CFL numbers. Without aggress_adjust, the default is false; it is always true with. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00049">49</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">logical</span> :: vol_CFL<span class="comment">         !&lt; If true, use the ratio of the open face lengths</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__continuity__PPM_8F90_source.html#l00050">50</a> of file <a class="el" href="MOM__continuity__PPM_8F90_source.html">MOM_continuity_PPM.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">logical</span> :: vol_CFL<span class="comment">         !&lt; If true, use the ratio of the open face lengths</span></div>
 </div><!-- fragment -->
 </div>
 </div>

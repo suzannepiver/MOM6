@@ -291,7 +291,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="BFB__initialization_8F90_source.html#l00030">first_call</a>, <a class="el" href="MOM__sponge_8F90_source.html#l00089">mom_sponge::initialize_sponge()</a>, and <a class="el" href="BFB__initialization_8F90_source.html#l00174">write_bfb_log()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__state__initialization_8F90_source.html#l00124">mom_state_initialization::mom_initialize_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__state__initialization_8F90_source.html#l00125">mom_state_initialization::mom_initialize_state()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -355,7 +355,7 @@ Here is the caller graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">rlay</td><td>Layer potential density. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">g_prime</td><td>The reduced gravity at each interface [m2 Z-1 s-2 ~&gt; m s-2]. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">g_prime</td><td>The reduced gravity at each interface [L2 Z-1 T-2 ~&gt; m s-2]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">gv</td><td>The ocean's vertical grid structure </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">param_file</td><td>A structure to parse for run-time parameters </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">eqn_of_state</td><td>Integer that selects the equation of state. </td></tr>
@@ -366,7 +366,7 @@ Here is the caller graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="BFB__initialization_8F90_source.html#l00039">39</a> of file <a class="el" href="BFB__initialization_8F90_source.html">BFB_initialization.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(NKMEM_)</span>, <span class="keywordtype">intent(out)</span> :: Rlay<span class="comment"> !&lt; Layer potential density.</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(NKMEM_)</span>, <span class="keywordtype">intent(out)</span> :: g_prime<span class="comment"> !&lt; The reduced gravity at</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">                                                  !! each interface [m2 Z-1 s-2 ~&gt; m s-2].</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">                                                  !! each interface [L2 Z-1 T-2 ~&gt; m s-2].</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">intent(in)</span>  :: GV<span class="comment">   !&lt; The ocean&#39;s vertical grid structure</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">type</span>(param_file_type),   <span class="keywordtype">intent(in)</span>  :: param_file<span class="comment"> !&lt; A structure to parse for run-time parameters</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">type</span>(EOS_type),          <span class="keywordtype">pointer</span>     :: eqn_of_state<span class="comment"> !&lt; Integer that selects the</span></div>

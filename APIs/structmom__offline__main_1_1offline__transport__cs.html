@@ -144,9 +144,15 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:ab1364a351012d5f08b77a262dc19b56a"><td class="memItemLeft" align="right" valign="top">type(verticalgrid_type), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__offline__main_1_1offline__transport__cs.html#ab1364a351012d5f08b77a262dc19b56a">gv</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:ab1364a351012d5f08b77a262dc19b56a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to structure containing information about the vertical grid.  <a href="structmom__offline__main_1_1offline__transport__cs.html#ab1364a351012d5f08b77a262dc19b56a">More...</a><br /></td></tr>
 <tr class="separator:ab1364a351012d5f08b77a262dc19b56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59819960282235d9bf3b04c9a54ba207"><td class="memItemLeft" align="right" valign="top">type(unit_scale_type), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__offline__main_1_1offline__transport__cs.html#a59819960282235d9bf3b04c9a54ba207">us</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:a59819960282235d9bf3b04c9a54ba207"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure containing various unit conversion factors  <a href="structmom__offline__main_1_1offline__transport__cs.html#a59819960282235d9bf3b04c9a54ba207">More...</a><br /></td></tr>
+<tr class="separator:a59819960282235d9bf3b04c9a54ba207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a441ecc81bd4f3f6a7c4832ff221b703d"><td class="memItemLeft" align="right" valign="top">type(optics_type), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__offline__main_1_1offline__transport__cs.html#a441ecc81bd4f3f6a7c4832ff221b703d">optics</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a441ecc81bd4f3f6a7c4832ff221b703d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the optical properties type.  <a href="structmom__offline__main_1_1offline__transport__cs.html#a441ecc81bd4f3f6a7c4832ff221b703d">More...</a><br /></td></tr>
 <tr class="separator:a441ecc81bd4f3f6a7c4832ff221b703d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a94003618fd733ce72d48ac2752347"><td class="memItemLeft" align="right" valign="top">type(diabatic_aux_cs), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__offline__main_1_1offline__transport__cs.html#ad0a94003618fd733ce72d48ac2752347">diabatic_aux_csp</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:ad0a94003618fd733ce72d48ac2752347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the diabatic_aux control structure.  <a href="structmom__offline__main_1_1offline__transport__cs.html#ad0a94003618fd733ce72d48ac2752347">More...</a><br /></td></tr>
+<tr class="separator:ad0a94003618fd733ce72d48ac2752347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97508a89bc857f3786de5e45e899cb28"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__offline__main_1_1offline__transport__cs.html#a97508a89bc857f3786de5e45e899cb28">start_index</a></td></tr>
 <tr class="memdesc:a97508a89bc857f3786de5e45e899cb28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variables related to reading in fields from online run.  <a href="structmom__offline__main_1_1offline__transport__cs.html#a97508a89bc857f3786de5e45e899cb28">More...</a><br /></td></tr>
 <tr class="separator:a97508a89bc857f3786de5e45e899cb28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,8 +383,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Length of time accumulated in the current offline interval. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">integer</span> :: accumulated_time<span class="comment"> !&lt; Length of time accumulated in the current offline interval</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00082">82</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">integer</span> :: accumulated_time<span class="comment"> !&lt; Length of time accumulated in the current offline interval</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -415,8 +421,27 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, write verbose debugging messages. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">             !&lt; If true, write verbose debugging messages</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00107">107</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">             !&lt; If true, write verbose debugging messages</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad0a94003618fd733ce72d48ac2752347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0a94003618fd733ce72d48ac2752347">&#9670;&nbsp;</a></span>diabatic_aux_csp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">type(diabatic_aux_cs), pointer mom_offline_main::offline_transport_cs::diabatic_aux_csp =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to the diabatic_aux control structure. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">type</span>(diabatic_aux_CS),         <span class="keywordtype">pointer</span> :: diabatic_aux_CSp =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -472,8 +497,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Adds a synthetic diurnal cycle on shortwave radiation. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">logical</span> :: diurnal_sw<span class="comment">        !&lt; Adds a synthetic diurnal cycle on shortwave radiation</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00106">106</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">logical</span> :: diurnal_sw<span class="comment">        !&lt; Adds a synthetic diurnal cycle on shortwave radiation</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -491,8 +516,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Timestep used for offline tracers [s]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">  real</span> :: dt_offline<span class="comment">        !&lt; Timestep used for offline tracers [s]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">  real</span> :: dt_offline<span class="comment">        !&lt; Timestep used for offline tracers [s]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -510,8 +535,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Timestep used for calls to tracer vertical physics [s]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00116">116</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">  real</span> :: dt_offline_vertical<span class="comment"> !&lt; Timestep used for calls to tracer vertical physics [s]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">  real</span> :: dt_offline_vertical<span class="comment"> !&lt; Timestep used for calls to tracer vertical physics [s]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -529,8 +554,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Amount of fluid entrained from the layer above within one time step [H ~&gt; m or kg m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00159">159</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: eatr</div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00163">163</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: eatr</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -548,8 +573,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Amount of fluid entrained from the layer below within one time step [H ~&gt; m or kg m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00162">162</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: ebtr</div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: ebtr</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -567,8 +592,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Copied from diabatic_CS controlling how tracers follow freshwater fluxes. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00117">117</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">  real</span> :: evap_CFL_limit<span class="comment">    !&lt; Copied from diabatic_CS controlling how tracers follow freshwater fluxes</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keywordtype">  real</span> :: evap_CFL_limit<span class="comment">    !&lt; Copied from diabatic_CS controlling how tracers follow freshwater fluxes</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -586,8 +611,8 @@ Public variables and constants</h2></td></tr>
 
 <p>True if the time-averaged fields and snapshot fields are offset by one time level. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00095">95</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">logical</span> :: fields_are_offset<span class="comment"> !&lt; True if the time-averaged fields and snapshot fields are</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00099">99</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">logical</span> :: fields_are_offset<span class="comment"> !&lt; True if the time-averaged fields and snapshot fields are</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -643,8 +668,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Thicknesses at the end of offline timestep. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00167">167</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: h_end<span class="comment">  !&lt; Thicknesses at the end of offline timestep</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00171">171</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: h_end<span class="comment">  !&lt; Thicknesses at the end of offline timestep</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -662,8 +687,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Entire field of layer thicknesses. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00176">176</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:)</span> :: hend_all<span class="comment"> !&lt; Entire field of layer thicknesses</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00180">180</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:)</span> :: hend_all<span class="comment"> !&lt; Entire field of layer thicknesses</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -681,8 +706,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A CPU time clock. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00150">150</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordtype">integer</span> :: id_clock_offline_adv  = -1<span class="comment">  !&lt; A CPU time clock</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00154">154</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordtype">integer</span> :: id_clock_offline_adv  = -1<span class="comment">  !&lt; A CPU time clock</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -700,8 +725,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A CPU time clock. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00149">149</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">integer</span> :: id_clock_offline_diabatic = -1<span class="comment">  !&lt; A CPU time clock</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00153">153</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordtype">integer</span> :: id_clock_offline_diabatic = -1<span class="comment">  !&lt; A CPU time clock</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -719,8 +744,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A CPU time clock. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00148">148</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordtype">integer</span> :: id_clock_read_fields = -1<span class="comment">   !&lt; A CPU time clock</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00152">152</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">integer</span> :: id_clock_read_fields = -1<span class="comment">   !&lt; A CPU time clock</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -738,8 +763,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A CPU time clock. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00151">151</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">integer</span> :: id_clock_redistribute = -1<span class="comment">  !&lt; A CPU time clock</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00155">155</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordtype">integer</span> :: id_clock_redistribute = -1<span class="comment">  !&lt; A CPU time clock</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -757,7 +782,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -775,7 +800,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -793,7 +818,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -811,7 +836,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -829,7 +854,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -847,7 +872,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -865,7 +890,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00139">139</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00143">143</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -883,7 +908,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -901,7 +926,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -919,7 +944,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00139">139</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00143">143</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -937,7 +962,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00139">139</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00143">143</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -955,22 +980,22 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">integer</span> :: &amp;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    id_uhr = -1, &amp;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    id_vhr = -1, &amp;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    id_ear = -1, &amp;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    id_ebr = -1, &amp;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    id_hr = -1,  &amp;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    id_hdiff = -1, &amp;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    id_uhr_redist = -1, &amp;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    id_vhr_redist = -1, &amp;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    id_uhr_end = -1, &amp;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    id_vhr_end = -1, &amp;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    id_eta_pre_distribute  = -1, &amp;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    id_eta_post_distribute = -1, &amp;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    id_h_redist = -1, &amp;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    id_eta_diff_end = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">integer</span> :: &amp;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    id_uhr = -1, &amp;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    id_vhr = -1, &amp;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    id_ear = -1, &amp;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    id_ebr = -1, &amp;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    id_hr = -1,  &amp;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    id_hdiff = -1, &amp;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    id_uhr_redist = -1, &amp;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    id_vhr_redist = -1, &amp;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    id_uhr_end = -1, &amp;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    id_vhr_end = -1, &amp;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    id_eta_pre_distribute  = -1, &amp;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    id_eta_post_distribute = -1, &amp;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    id_h_redist = -1, &amp;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    id_eta_diff_end = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -988,7 +1013,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -1006,7 +1031,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -1024,13 +1049,13 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00139">139</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">integer</span> :: &amp;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    id_uhtr_regrid = -1, &amp;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    id_vhtr_regrid = -1, &amp;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    id_temp_regrid = -1, &amp;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    id_salt_regrid = -1, &amp;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    id_h_regrid = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00143">143</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">integer</span> :: &amp;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    id_uhtr_regrid = -1, &amp;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    id_vhtr_regrid = -1, &amp;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    id_temp_regrid = -1, &amp;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    id_salt_regrid = -1, &amp;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    id_h_regrid = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1048,7 +1073,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -1066,7 +1091,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -1084,7 +1109,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -1102,7 +1127,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic manager IDs for some fields that may be of interest when doing offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00139">139</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00143">143</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -1120,8 +1145,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Timelevel to start. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">integer</span> :: iter_no<span class="comment">      !&lt; Timelevel to start</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00080">80</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">integer</span> :: iter_no<span class="comment">      !&lt; Timelevel to start</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1139,8 +1164,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Vertical diffusivity. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: Kd<span class="comment">     !&lt; Vertical diffusivity</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00170">170</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: Kd<span class="comment">     !&lt; Vertical diffusivity</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1158,8 +1183,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Runtime parameter specifying the maximum value of vertical diffusivity. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">  real</span> :: Kd_max<span class="comment">        !&lt; Runtime parameter specifying the maximum value of vertical diffusivity</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">  real</span> :: Kd_max<span class="comment">        !&lt; Runtime parameter specifying the maximum value of vertical diffusivity</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1177,7 +1202,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Fields averaged over time. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00089">89</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -1195,8 +1220,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The minimum amount of total mass flux before exiting the main advection routine. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">  real</span> :: min_residual<span class="comment">  !&lt; The minimum amount of total mass flux before exiting the main advection routine</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">  real</span> :: min_residual<span class="comment">  !&lt; The minimum amount of total mass flux before exiting the main advection routine</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1214,8 +1239,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Copied from diabatic_CS controlling how tracers follow freshwater fluxes. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00118">118</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">  real</span> :: minimum_forcing_depth<span class="comment"> !&lt; Copied from diabatic_CS controlling how tracers follow freshwater fluxes</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">  real</span> :: minimum_forcing_depth<span class="comment"> !&lt; Copied from diabatic_CS controlling how tracers follow freshwater fluxes</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1233,8 +1258,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Mixed layer depths at thickness points [H ~&gt; m or kg m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00171">171</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: mld<span class="comment">        !&lt; Mixed layer depths at thickness points [H ~&gt; m or kg m-2].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00175">175</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: mld<span class="comment">        !&lt; Mixed layer depths at thickness points [H ~&gt; m or kg m-2].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1252,8 +1277,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Name of the mixed layer depth variable to use. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">character(len=20)</span> :: mld_var_name<span class="comment"> !&lt; Name of the mixed layer depth variable to use</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00098">98</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">character(len=20)</span> :: mld_var_name<span class="comment"> !&lt; Name of the mixed layer depth variable to use</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1271,8 +1296,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Freshwater fluxes into the ocean. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00169">169</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: netMassIn<span class="comment">  !&lt; Freshwater fluxes into the ocean</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00173">173</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: netMassIn<span class="comment">  !&lt; Freshwater fluxes into the ocean</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1290,8 +1315,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Freshwater fluxes out of the ocean. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00170">170</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: netMassOut<span class="comment"> !&lt; Freshwater fluxes out of the ocean</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00174">174</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: netMassOut<span class="comment"> !&lt; Freshwater fluxes out of the ocean</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1309,8 +1334,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Number of input levels in the input fields. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00083">83</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">integer</span> :: nk_input<span class="comment">     !&lt; Number of input levels in the input fields</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">integer</span> :: nk_input<span class="comment">     !&lt; Number of input levels in the input fields</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1328,8 +1353,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Number of advection iterations per offline step. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">integer</span> :: num_off_iter<span class="comment">   !&lt; Number of advection iterations per offline step</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00116">116</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">integer</span> :: num_off_iter<span class="comment">   !&lt; Number of advection iterations per offline step</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1347,8 +1372,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Number of vertical iterations per offline step. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">integer</span> :: num_vert_iter<span class="comment">  !&lt; Number of vertical iterations per offline step</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00117">117</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">integer</span> :: num_vert_iter<span class="comment">  !&lt; Number of vertical iterations per offline step</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1366,8 +1391,8 @@ Public variables and constants</h2></td></tr>
 
 <p>How many timelevels in the input fields. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00077">77</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">integer</span> :: numtime<span class="comment">      !&lt; How many timelevels in the input fields</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00081">81</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">integer</span> :: numtime<span class="comment">      !&lt; How many timelevels in the input fields</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1404,8 +1429,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Sets how frequently the ALE step is done during the advection. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">integer</span> :: off_ale_mod<span class="comment">    !&lt; Sets how frequently the ALE step is done during the advection</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00118">118</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">integer</span> :: off_ale_mod<span class="comment">    !&lt; Sets how frequently the ALE step is done during the advection</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1423,8 +1448,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Directory where offline fields are stored. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00084">84</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">character(len=200)</span> :: offlinedir<span class="comment">  !&lt; Directory where offline fields are stored</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">character(len=200)</span> :: offlinedir<span class="comment">  !&lt; Directory where offline fields are stored</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1461,8 +1486,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Pointer to the optical properties type. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">type</span>(optics_type),             <span class="keywordtype">pointer</span> :: optics          =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00073">73</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">type</span>(optics_type),             <span class="keywordtype">pointer</span> :: optics          =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1480,8 +1505,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Prints out some updates each advection sub interation. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00098">98</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">logical</span> :: print_adv_offline<span class="comment"> !&lt; Prints out some updates each advection sub interation</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">logical</span> :: print_adv_offline<span class="comment"> !&lt; Prints out some updates each advection sub interation</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1499,8 +1524,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, then all timelevels of temperature, salinity, mass transports, and Layer thicknesses are read during initialization Variables controlling some of the numerical considerations of offline transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">logical</span> :: read_all_ts_uvh<span class="comment">  !&lt; If true, then all timelevels of temperature, salinity, mass transports, and</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">logical</span> :: read_all_ts_uvh<span class="comment">  !&lt; If true, then all timelevels of temperature, salinity, mass transports, and</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1518,8 +1543,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Check to see whether mixed layer depths should be read in. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00101">101</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">logical</span> :: read_mld<span class="comment">          !&lt; Check to see whether mixed layer depths should be read in</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00105">105</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">logical</span> :: read_mld<span class="comment">          !&lt; Check to see whether mixed layer depths should be read in</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1537,8 +1562,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Read in averaged values for shortwave radiation. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00100">100</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">logical</span> :: read_sw<span class="comment">           !&lt; Read in averaged values for shortwave radiation</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00104">104</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">logical</span> :: read_sw<span class="comment">           !&lt; Read in averaged values for shortwave radiation</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1556,8 +1581,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Redistributes column-summed residual transports throughout a column weighted by thickness. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00104">104</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">logical</span> :: redistribute_barotropic<span class="comment"> !&lt; Redistributes column-summed residual transports throughout</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00108">108</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">logical</span> :: redistribute_barotropic<span class="comment"> !&lt; Redistributes column-summed residual transports throughout</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1575,8 +1600,8 @@ Public variables and constants</h2></td></tr>
 
 <p>'barotropic' if evenly distributing extra flow throughout entire watercolumn, 'upwards', if trying to do it just in the layers above 'both' if both methods are used </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">character(len=20)</span>  :: redistribute_method<span class="comment"> !&lt; &#39;barotropic&#39; if evenly distributing extra flow</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">character(len=20)</span>  :: redistribute_method<span class="comment"> !&lt; &#39;barotropic&#39; if evenly distributing extra flow</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1594,8 +1619,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Redistributes remaining fluxes only in layers above the current one based as the max allowable transport in that cell. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00106">106</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">logical</span> :: redistribute_upwards<span class="comment">    !&lt; Redistributes remaining fluxes only in layers above</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00110">110</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">logical</span> :: redistribute_upwards<span class="comment">    !&lt; Redistributes remaining fluxes only in layers above</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1613,8 +1638,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Read index offset of the snapshot variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00082">82</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">integer</span> :: ridx_snap = -1<span class="comment"> !&lt; Read index offset of the snapshot variables</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">integer</span> :: ridx_snap = -1<span class="comment"> !&lt; Read index offset of the snapshot variables</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1632,8 +1657,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Read index offset of the summed variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00081">81</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">integer</span> :: ridx_sum = -1<span class="comment"> !&lt; Read index offset of the summed variables</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">integer</span> :: ridx_sum = -1<span class="comment"> !&lt; Read index offset of the summed variables</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1651,8 +1676,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Entire field of salinities. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00178">178</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:)</span> :: salt_all<span class="comment"> !&lt; Entire field of salinities</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00182">182</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:)</span> :: salt_all<span class="comment"> !&lt; Entire field of salinities</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1670,8 +1695,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Skips horizontal diffusion of tracers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00099">99</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">logical</span> :: skip_diffusion<span class="comment">    !&lt; Skips horizontal diffusion of tracers</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">logical</span> :: skip_diffusion<span class="comment">    !&lt; Skips horizontal diffusion of tracers</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1689,7 +1714,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Snapshotted fields (layer thicknesses) </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00089">89</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -1708,8 +1733,8 @@ Public variables and constants</h2></td></tr>
 <p>Variables related to reading in fields from online run. </p>
 <p>Timelevel to start </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">integer</span> :: start_index<span class="comment">  !&lt; Timelevel to start</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00079">79</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">integer</span> :: start_index<span class="comment">  !&lt; Timelevel to start</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1727,7 +1752,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Fields which are accumulated over time. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00089">89</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
 
 </div>
 </div>
@@ -1745,12 +1770,12 @@ Public variables and constants</h2></td></tr>
 
 <p>Contains surface fields (2d arrays) </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">character(len=200)</span> :: &amp; <span class="comment">! Names of input files</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    surf_file,  &amp;         !&lt; Contains surface fields (2d arrays)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    snap_file,  &amp;         !&lt; Snapshotted fields (layer thicknesses)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    sum_file,   &amp;         !&lt; Fields which are accumulated over time</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    mean_file<span class="comment">             !&lt; Fields averaged over time</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00089">89</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">character(len=200)</span> :: &amp; <span class="comment">! Names of input files</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    surf_file,  &amp;         !&lt; Contains surface fields (2d arrays)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    snap_file,  &amp;         !&lt; Snapshotted fields (layer thicknesses)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    sum_file,   &amp;         !&lt; Fields which are accumulated over time</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    mean_file<span class="comment">             !&lt; Fields averaged over time</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1768,8 +1793,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Entire field of temperatures. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00177">177</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:)</span> :: temp_all<span class="comment"> !&lt; Entire field of temperatures</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00181">181</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:)</span> :: temp_all<span class="comment"> !&lt; Entire field of temperatures</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1863,8 +1888,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Zonal transport that may need to be stored between calls to step_MOM. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00154">154</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: uhtr</div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: uhtr</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1882,8 +1907,27 @@ Public variables and constants</h2></td></tr>
 
 <p>Entire field of zonal transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00174">174</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:)</span> :: uhtr_all<span class="comment"> !&lt; Entire field of zonal transport</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00178">178</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:)</span> :: uhtr_all<span class="comment"> !&lt; Entire field of zonal transport</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a59819960282235d9bf3b04c9a54ba207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59819960282235d9bf3b04c9a54ba207">&#9670;&nbsp;</a></span>us</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">type(unit_scale_type), pointer mom_offline_main::offline_transport_cs::us =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>structure containing various unit conversion factors </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),         <span class="keywordtype">pointer</span> :: US              =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1901,8 +1945,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Meridional transport that may need to be stored between calls to step_MOM. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00156">156</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: vhtr</div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00160">160</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: vhtr</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1920,8 +1964,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Entire field of mericional transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00175">175</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:)</span> :: vhtr_all<span class="comment"> !&lt; Entire field of mericional transport</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00179">179</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:)</span> :: vhtr_all<span class="comment"> !&lt; Entire field of mericional transport</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1939,8 +1983,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Which horizontal direction is advected first. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00097">97</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">logical</span> :: x_before_y<span class="comment">        !&lt; Which horizontal direction is advected first</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__offline__main_8F90_source.html#l00101">101</a> of file <a class="el" href="MOM__offline__main_8F90_source.html">MOM_offline_main.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">logical</span> :: x_before_y<span class="comment">        !&lt; Which horizontal direction is advected first</span></div>
 </div><!-- fragment -->
 </div>
 </div>

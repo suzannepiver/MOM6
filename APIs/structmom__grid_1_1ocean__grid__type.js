@@ -99,6 +99,7 @@ var structmom__grid_1_1ocean__grid__type =
     [ "sin_rot", "structmom__grid_1_1ocean__grid__type.html#a679e54a3804fe0ba19cdaf8dab66d583", null ],
     [ "south_lat", "structmom__grid_1_1ocean__grid__type.html#a3d37906c027aa7fb9e91539b8a3f56f9", null ],
     [ "symmetric", "structmom__grid_1_1ocean__grid__type.html#a77ec8595bdeb158fa0e0af19bb709136", null ],
+    [ "us", "structmom__grid_1_1ocean__grid__type.html#a6194fca3b31fe35443dbe7bece3c071a", null ],
     [ "west_lon", "structmom__grid_1_1ocean__grid__type.html#ad0e2b7292e91be6cc446b0fe2e93fae3", null ],
     [ "x_axis_units", "structmom__grid_1_1ocean__grid__type.html#a0b64e04b2c21398f4fc02e3de10b5f40", null ],
     [ "y_axis_units", "structmom__grid_1_1ocean__grid__type.html#af024947d18dbe090f1479e4b1f58c3d8", null ]

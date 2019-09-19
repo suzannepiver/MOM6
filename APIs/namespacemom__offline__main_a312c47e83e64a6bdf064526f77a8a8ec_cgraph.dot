@@ -7,11 +7,11 @@ digraph "mom_offline_main::offline_redistribute_residual"
   rankdir="LR";
   Node1 [label="mom_offline_main::offline\l_redistribute_residual",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="In the case where the main advection routine did not converge, something needs to be done with the re..."];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="mom_tracer_advect::\ladvect_tracer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__advect.html#a4c97e84c1a3c433d0c2e84b57926bc08",tooltip="This routine time steps the tracer concentration using a monotonic, conservative, weakly diffusive sc..."];
+  Node2 [label="mom_tracer_advect::\ladvect_tracer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__advect.html#a28a6e28170a8d4f34337a1a202e0d902",tooltip="This routine time steps the tracer concentration using a monotonic, conservative, weakly diffusive sc..."];
   Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="mom_tracer_advect::\ladvect_x",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__advect.html#a642efcd418e9c8abfeff1f3c9fb79122",tooltip="This subroutine does 1-d flux-form advection in the zonal direction using a monotonic piecewise linea..."];
+  Node3 [label="mom_tracer_advect::\ladvect_x",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__advect.html#a07f6e664b3346db7f9ddbcd4b4d6c8f4",tooltip="This subroutine does 1-d flux-form advection in the zonal direction using a monotonic piecewise linea..."];
   Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="mom_tracer_advect::\ladvect_y",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__advect.html#a6ad4bd56b70992ba99f6dce298ff15fa",tooltip="This subroutine does 1-d flux-form advection using a monotonic piecewise linear scheme."];
+  Node4 [label="mom_tracer_advect::\ladvect_y",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__advect.html#a20a82831fad6aa07cb946aeadbbfdda9",tooltip="This subroutine does 1-d flux-form advection using a monotonic piecewise linear scheme."];
   Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 [label="mom_domains::do_group_pass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__domains.html#aac3bc012a8c214cbd73bb00668ff165e",tooltip="do_group_pass carries out a group halo update."];
   Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

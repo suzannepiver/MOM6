@@ -11,13 +11,15 @@ digraph "mom_wave_interface::ust_2_u10_coare3p5"
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="mom_wave_interface\l::get_langmuir_number",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__wave__interface.html#aa07c73f561840851981d6a013423dd6e",tooltip="Interface to get Langmuir number based on options stored in wave structure."];
   Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="mom_energetic_pbl::\lenergetic_pbl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__energetic__pbl.html#a397c319268a901e2e4bf3c5a3e7730f4",tooltip="This subroutine determines the diffusivities from the integrated energetics mixed layer model...."];
-  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="mom_cvmix_kpp::kpp\l_compute_bld",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__cvmix__kpp.html#a118674d1bd14d2429b7f7d939b749f3c",tooltip="Compute OBL depth."];
+  Node4 [label="mom_energetic_pbl::\lepbl_column",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__energetic__pbl.html#a01291f3e97cfdcf58866a1e9b0bcfc26",tooltip="This subroutine determines the diffusivities from the integrated energetics mixed layer model for a s..."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_energetic_pbl::\lenergetic_pbl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__energetic__pbl.html#a39d18925dcbd4477d63188edeae399f0",tooltip="This subroutine determines the diffusivities from the integrated energetics mixed layer model...."];
   Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="mom_wave_interface\l::update_stokes_drift",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__wave__interface.html#a42b769030d04a1c087e168de36ce7285",tooltip="Constructs the Stokes Drift profile on the model grid based on desired coupling options."];
-  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node7 [label="mom::step_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a972730596703580d4646320f2c9085a5",tooltip="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to..."];
+  Node6 [label="mom_cvmix_kpp::kpp\l_compute_bld",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__cvmix__kpp.html#a118674d1bd14d2429b7f7d939b749f3c",tooltip="Compute OBL depth."];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_wave_interface\l::update_stokes_drift",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__wave__interface.html#a42b769030d04a1c087e168de36ce7285",tooltip="Constructs the Stokes Drift profile on the model grid based on desired coupling options."];
   Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node8 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+  Node8 [label="mom::step_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a972730596703580d4646320f2c9085a5",tooltip="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to..."];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
 }

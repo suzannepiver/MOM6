@@ -243,7 +243,7 @@ Functions/Subroutines</h2></td></tr>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keywordflow">      endif</span></div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      <span class="comment">! Calculate and check that column integrated transports match the original to</span></div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      <span class="comment">! within the tolerance limit</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      uh_neglect = gv%Angstrom_H*min(g%areaT(i,j),g%areaT(i+1,j))</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      uh_neglect = gv%Angstrom_H*min(g%US%L_to_m**2*g%areaT(i,j),g%US%L_to_m**2*g%areaT(i+1,j))</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      <span class="keywordflow">if</span> ( abs(sum(uh2d(i,:))-uh2d_sum(i)) &gt; uh_neglect) &amp;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keyword">call </span>mom_error(warning,<span class="stringliteral">&quot;Column integral of uh does not match after &quot;</span>//&amp;</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="stringliteral">&quot;barotropic redistribution&quot;</span>)</div>
@@ -342,7 +342,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> i=is-1,ie+1</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      <span class="comment">! Subtract just a little bit of thickness to avoid roundoff errors</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      h2d(i,k) = hvol(i,j,k)-min_h*g%areaT(i,j)</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      h2d(i,k) = hvol(i,j,k)-min_h*g%US%L_to_m**2*g%areaT(i,j)</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordflow">do</span> i=is-1,ie</div>
@@ -393,7 +393,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160; </div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;      <span class="comment">! Calculate and check that column integrated transports match the original to</span></div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;      <span class="comment">! within the tolerance limit</span></div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;      uh_neglect = gv%Angstrom_H*min(g%areaT(i,j),g%areaT(i+1,j))</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;      uh_neglect = gv%Angstrom_H*min(g%US%L_to_m**2*g%areaT(i,j),g%US%L_to_m**2*g%areaT(i+1,j))</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;      <span class="keywordflow">if</span> (abs(uh_col - sum(uh2d(i,:)))&gt;uh_neglect) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        <span class="keyword">call </span>mom_error(warning,<span class="stringliteral">&quot;Column integral of uh does not match after &quot;</span>//&amp;</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        <span class="stringliteral">&quot;upwards redistribution&quot;</span>)</div>
@@ -409,7 +409,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__offline__main_8F90_source.html#l00413">mom_offline_main::offline_redistribute_residual()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__offline__main_8F90_source.html#l00417">mom_offline_main::offline_redistribute_residual()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -530,7 +530,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="keywordflow">      endif</span></div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      <span class="comment">! Calculate and check that column integrated transports match the original to</span></div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      <span class="comment">! within the tolerance limit</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      vh_neglect = gv%Angstrom_H*min(g%areaT(i,j),g%areaT(i,j+1))</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      vh_neglect = gv%Angstrom_H*min(g%US%L_to_m**2*g%areaT(i,j),g%US%L_to_m**2*g%areaT(i,j+1))</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      <span class="keywordflow">if</span> ( abs(sum(vh2d(j,:))-vh2d_sum(j)) &gt; vh_neglect) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;          <span class="keyword">call </span>mom_error(warning,<span class="stringliteral">&quot;Column integral of vh does not match after &quot;</span>//&amp;</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;          <span class="stringliteral">&quot;barotropic redistribution&quot;</span>)</div>
@@ -632,7 +632,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;      vh2d(j,k) = vh(i,j,k)</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> j=js-1,je+1</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;      h2d(j,k) = hvol(i,j,k)-min_h*g%areaT(i,j)</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;      h2d(j,k) = hvol(i,j,k)-min_h*g%US%L_to_m**2*g%areaT(i,j)</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160; </div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keywordflow">do</span> j=js-1,je</div>
@@ -684,7 +684,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160; </div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;      <span class="comment">! Calculate and check that column integrated transports match the original to</span></div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;      <span class="comment">! within the tolerance limit</span></div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;      vh_neglect = gv%Angstrom_H*min(g%areaT(i,j),g%areaT(i,j+1))</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;      vh_neglect = gv%Angstrom_H*min(g%US%L_to_m**2*g%areaT(i,j),g%US%L_to_m**2*g%areaT(i,j+1))</div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;      <span class="keywordflow">if</span> ( abs(vh_col-sum(vh2d(j,:))) &gt; vh_neglect) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;        <span class="keyword">call </span>mom_error(warning,<span class="stringliteral">&quot;Column integral of vh does not match after &quot;</span>//&amp;</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                               <span class="stringliteral">&quot;upwards redistribution&quot;</span>)</div>
@@ -699,7 +699,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__offline__main_8F90_source.html#l00413">mom_offline_main::offline_redistribute_residual()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__offline__main_8F90_source.html#l00417">mom_offline_main::offline_redistribute_residual()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -840,10 +840,10 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="comment">! in a given cell and scale it back if it would deplete a layer</span></div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordflow">do</span> k = 1, nz ; <span class="keywordflow">do</span> j=js-1,je+1 ; <span class="keywordflow">do</span> i=is-1,ie+1</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    hvol = h_pre(i,j,k)*g%areaT(i,j)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    hvol = h_pre(i,j,k)*g%US%L_to_m**2*g%areaT(i,j)</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    pos_flux  = max(0.0,-uh(i-1,j,k)) + max(0.0, -vh(i,j-1,k)) + &amp;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      max(0.0, uh(i,j,k)) + max(0.0, vh(i,j,k)) + &amp;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      max(0.0, top_flux(i,j,k)*g%areaT(i,j)) + max(0.0, bottom_flux(i,j,k)*g%areaT(i,j))</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      max(0.0, top_flux(i,j,k)*g%US%L_to_m**2*g%areaT(i,j)) + max(0.0, bottom_flux(i,j,k)*g%US%L_to_m**2*g%areaT(i,j))</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">if</span> (pos_flux&gt;hvol .and. pos_flux&gt;0.0) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      scale_factor = ( hvol )/pos_flux*max_off_cfl</div>
@@ -1116,17 +1116,17 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">do</span> k = 1, nz</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">do</span> i=is-1,ie+1 ; <span class="keywordflow">do</span> j=js-1,je+1</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      h_new(i,j,k) = max(0.0, g%areaT(i,j)*h_pre(i,j,k) + &amp;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      h_new(i,j,k) = max(0.0, g%US%L_to_m**2*g%areaT(i,j)*h_pre(i,j,k) + &amp;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        ((uhtr(i-1,j,k) - uhtr(i,j,k)) + (vhtr(i,j-1,k) - vhtr(i,j,k))))</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="comment">! In the case that the layer is now dramatically thinner than it was previously,</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="comment">! add a bit of mass to avoid truncation errors.  This will lead to</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="comment">! non-conservation of tracers</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      h_new(i,j,k) = h_new(i,j,k) + &amp;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        max(gv%Angstrom_H, 1.0e-13*h_new(i,j,k) - g%areaT(i,j)*h_pre(i,j,k))</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        max(gv%Angstrom_H, 1.0e-13*h_new(i,j,k) - g%US%L_to_m**2*g%areaT(i,j)*h_pre(i,j,k))</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="comment">! Convert back to thickness</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      h_new(i,j,k) = h_new(i,j,k)/g%areaT(i,j)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      h_new(i,j,k) = h_new(i,j,k) / (g%US%L_to_m**2*g%areaT(i,j))</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordflow">  enddo</span></div>

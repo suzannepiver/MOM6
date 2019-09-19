@@ -23,7 +23,7 @@ digraph "mom_dynamics_split_rk2::step_mom_dyn_split_rk2"
   Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 [label="mom_coriolisadv::coradcalc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coriolisadv.html#ac677e9d644c881b7e8ce6413aa5450cd",tooltip="Calculates the Coriolis and momentum advection contributions to the acceleration."];
   Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node9 [label="mom_coriolisadv::gradke",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coriolisadv.html#a8d9732ffd7debb051047934fe1551f97",tooltip="Calculates the acceleration due to the gradient of kinetic energy."];
+  Node9 [label="mom_coriolisadv::gradke",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coriolisadv.html#a87e4a437552052fa238260442af19868",tooltip="Calculates the acceleration due to the gradient of kinetic energy."];
   Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node10 [label="mom_error_handler::\lmom_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67",tooltip="This provides a convenient interface for writing an mpp_error message with run-time filter based on a..."];
   Node10 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -33,14 +33,14 @@ digraph "mom_dynamics_split_rk2::step_mom_dyn_split_rk2"
   Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node12 [label="mom_hor_visc::horizontal\l_viscosity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__hor__visc.html#a0c594d881fa7f6be08c7ae63da94f5ed",tooltip="Calculates the acceleration due to the horizontal viscosity."];
   Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node13 [label="mom_barotropic::barotropic\l_get_tav",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#afb1b115964dc0b7cde81792afd29f308",tooltip="Copies ubtav and vbtav from private type into arrays."];
+  Node13 [label="mom_barotropic::barotropic\l_get_tav",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#aa059fdf7e6002b13d942f96ef17a5db6",tooltip="Copies ubtav and vbtav from private type into arrays."];
   Node12 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node14 [label="mom_lateral_mixing\l_coeffs::calc_qg_leith\l_viscosity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#a68333e077c821c0d49f826b5121e52e6",tooltip="Calculates the Leith Laplacian and bi-harmonic viscosity coefficients."];
+  Node14 [label="mom_lateral_mixing\l_coeffs::calc_qg_leith\l_viscosity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#a212e9e850d4db8f321e0398f4090fee0",tooltip="Calculates the Leith Laplacian and bi-harmonic viscosity coefficients."];
   Node12 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node12 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node15 [label="mom_hor_visc::smooth_gme",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__hor__visc.html#a686fed1d7dd5311ab016b6f637aa7304",tooltip="Apply a 1-1-4-1-1 Laplacian filter one time on GME diffusive flux to reduce any horizontal two-grid-p..."];
   Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node16 [label="mom_checksum_packages\l::mom_accel_chksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksum__packages.html#ad209641ecdd8dac3eae4b04e64e209ed",tooltip="Write out chksums for the model's accelerations."];
+  Node16 [label="mom_checksum_packages\l::mom_accel_chksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksum__packages.html#ab65c45c111975e2804be7a008e3c17c7",tooltip="Write out chksums for the model's accelerations."];
   Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node17 [label="mom_open_boundary::\lopen_boundary_test_extern_h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__open__boundary.html#ad733fd1dae4a6dfc14ad9c814e16a122",tooltip="Set thicknesses outside of open boundaries to silly values (used for checking the interior state is i..."];
   Node1 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -48,9 +48,9 @@ digraph "mom_dynamics_split_rk2::step_mom_dyn_split_rk2"
   Node1 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node19 [label="mom_barotropic::set_dtbt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#a486257b675aa4e81c2d1634b5288a67f",tooltip="This subroutine automatically determines an optimal value for dtbt based on some state of the ocean."];
   Node19 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node20 [label="mom_barotropic::bt\l_cont_to_face_areas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#a69af48d24759b679d0431f09dc9da503",tooltip="This subroutine uses the BTCL types to find typical or maximum face areas, which can then be used for..."];
+  Node20 [label="mom_barotropic::bt\l_cont_to_face_areas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#ac7100cec548b4bf6d69d4a52e074a04f",tooltip="This subroutine uses the BTCL types to find typical or maximum face areas, which can then be used for..."];
   Node19 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node21 [label="mom_barotropic::find\l_face_areas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#a75ff2563aedd553f2799c1cfc320129e",tooltip="This subroutine determines the open face areas of cells for calculating the barotropic transport."];
+  Node21 [label="mom_barotropic::find\l_face_areas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#aba29d11dc2530622be997c069fb932ae",tooltip="This subroutine determines the open face areas of cells for calculating the barotropic transport."];
   Node19 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node19 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node22 [label="mom_tidal_forcing::\ltidal_forcing_sensitivity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tidal__forcing.html#a0a1564c68489a35802c626a07f4629d7",tooltip="This subroutine calculates returns the partial derivative of the local geopotential height with the i..."];

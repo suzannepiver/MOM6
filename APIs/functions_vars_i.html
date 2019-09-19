@@ -339,7 +339,7 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 : <a class="el" href="structmom__diapyc__energy__req_1_1diapyc__energy__req__cs.html#a627b5ee44ff40155a6de2da526569b96">mom_diapyc_energy_req::diapyc_energy_req_cs</a>
 </li>
 <li>id_chl
-: <a class="el" href="structmom__opacity_1_1opacity__cs.html#a434411e91419ae2575055fc76314fd3e">mom_opacity::opacity_cs</a>
+: <a class="el" href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#a6a7050a33e841f35083879fcf8a63ab4">mom_diabatic_aux::diabatic_aux_cs</a>
 </li>
 <li>id_clock_forcing
 : <a class="el" href="structmom__forcing__type_1_1forcing__diags.html#a29628738b87a07028c81c99d6c9b09ac">mom_forcing_type::forcing_diags</a>
@@ -577,9 +577,6 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 <li>id_ebr
 : <a class="el" href="structmom__offline__main_1_1offline__transport__cs.html#aa93d323cfd826cb6c6b87f47c80584bf">mom_offline_main::offline_transport_cs</a>
 </li>
-<li>id_ekman_obukhov
-: <a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a048763c92f4cc5977e31bf11f862583c">mom_energetic_pbl::energetic_pbl_cs</a>
-</li>
 <li>id_en_ang_mode
 : <a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a972da12b7850f5a673fe65f61213c2c2">mom_internal_tides::int_tide_cs</a>
 </li>
@@ -691,17 +688,11 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 <li>id_frictwork
 : <a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#aa0add7592a1f5b1dc5477e3c3d3f4e61">mom_hor_visc::hor_visc_cs</a>
 </li>
-<li>id_frictwork_diss
-: <a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#a91b85118c31bd9f635c6e67ef678de03">mom_hor_visc::hor_visc_cs</a>
-</li>
 <li>id_frictwork_gme
 : <a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#af03733edb779441de594e9248d2cb6b3">mom_hor_visc::hor_visc_cs</a>
 </li>
 <li>id_frictworkintz
 : <a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#a458f439666a2405927d3a2d9dc71855e">mom_hor_visc::hor_visc_cs</a>
-</li>
-<li>id_frictworkmax
-: <a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#a09ecd914bfb35be68ee04c9c708fb90d">mom_hor_visc::hor_visc_cs</a>
 </li>
 <li>id_frunoff
 : <a class="el" href="structmom__forcing__type_1_1forcing__diags.html#a21f557914a86d09002a0fd596119ded8">mom_forcing_type::forcing_diags</a>
@@ -851,7 +842,6 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 </li>
 <li>id_hsfc_used
 : <a class="el" href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a0254fd669a007de42e17fb731a4fe8fc">mom_bulk_mixed_layer::bulkmixedlayer_cs</a>
-, <a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a4aaf40808c3de6b047ca4938be1f239e">mom_energetic_pbl::energetic_pbl_cs</a>
 </li>
 <li>id_htracer_remap_tendency
 : <a class="el" href="structmom__ale_1_1ale__cs.html#ac2e23c2af8033aa8300e14e7560599f2">mom_ale::ale_cs</a>
@@ -864,6 +854,15 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 </li>
 <li>id_intern_heat
 : <a class="el" href="structmom__diagnostics_1_1surface__diag__ids.html#a1bc5d256ddf959f522058539a73f90b3">mom_diagnostics::surface_diag_ids</a>
+</li>
+<li>id_internal_heat_h_tendency
+: <a class="el" href="structmom__geothermal_1_1geothermal__cs.html#ac1d15c987e2b31357a9d5a3fc745373f">mom_geothermal::geothermal_cs</a>
+</li>
+<li>id_internal_heat_heat_tendency
+: <a class="el" href="structmom__geothermal_1_1geothermal__cs.html#a20d4cc08ad3c99c33ee4a461405c94bc">mom_geothermal::geothermal_cs</a>
+</li>
+<li>id_internal_heat_temp_tendency
+: <a class="el" href="structmom__geothermal_1_1geothermal__cs.html#aaabfab1c7fb5408e05610241f1a3eda7">mom_geothermal::geothermal_cs</a>
 </li>
 <li>id_itidal_loss_ang_mode
 : <a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a365681c62b4421f2583e71f338df994c">mom_internal_tides::int_tide_cs</a>
@@ -1106,9 +1105,6 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 <li>id_lrunoff
 : <a class="el" href="structmom__forcing__type_1_1forcing__diags.html#a0c47548d55bf4c712d6e18a3fe1a2c44">mom_forcing_type::forcing_diags</a>
 </li>
-<li>id_lt_enhancement
-: <a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a5eedb5e2c3e208429527e65f2895330b">mom_energetic_pbl::energetic_pbl_cs</a>
-</li>
 <li>id_lw
 : <a class="el" href="structmom__forcing__type_1_1forcing__diags.html#a780b0a25056c6865a8ee8b97afb856d0">mom_forcing_type::forcing_diags</a>
 </li>
@@ -1166,12 +1162,6 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 </li>
 <li>id_mld_0125
 : <a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#af6569e4b1a77022994021c2895968000">mom_diabatic_driver::diabatic_cs</a>
-</li>
-<li>id_mld_ekman
-: <a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#ad8c93be9d0f5b53ca7680e9adf1f5844">mom_energetic_pbl::energetic_pbl_cs</a>
-</li>
-<li>id_mld_obukhov
-: <a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#ab8c2f3e66c513c2bdb43e8b79a18d2ea">mom_energetic_pbl::energetic_pbl_cs</a>
 </li>
 <li>id_mld_user
 : <a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#ae790de5dd93a0be66904db175673f51f">mom_diabatic_driver::diabatic_cs</a>
@@ -1288,9 +1278,6 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 </li>
 <li>id_opacity
 : <a class="el" href="structmom__opacity_1_1opacity__cs.html#a49372b49f2a305418dc1cee833687c67">mom_opacity::opacity_cs</a>
-</li>
-<li>id_osbl
-: <a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a4f5ea8a7c1b7e09377c655180a1659ab">mom_energetic_pbl::energetic_pbl_cs</a>
 </li>
 <li>id_p_ebt
 : <a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#ae920704db2f9e3e05f458789a3868093">mom_diagnostics::diagnostics_cs</a>
@@ -2429,14 +2416,14 @@ $(document).ready(function(){initNavTree('functions_vars_i.html','');});
 : <a class="el" href="structmom__tidal__mixing_1_1tidal__mixing__cs.html#a23e9eed4cf884a671d6a1a6782754e3f">mom_tidal_mixing::tidal_mixing_cs</a>
 </li>
 <li>int_tide_source_test
-: <a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a8aec306e365824099258045eebaee4cd">mom_diabatic_driver::diabatic_cs</a>
+: <a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#ab183bab838338e7ad6c319e3d176e1e3">mom_int_tide_input::int_tide_input_cs</a>
 </li>
 <li>int_tide_source_x
-: <a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a04827c5a980a1a0e055fce69f12844b6">mom_diabatic_driver::diabatic_cs</a>
+: <a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#a3774cc3e253645ca23ba4a9bd36ed584">mom_int_tide_input::int_tide_input_cs</a>
 , <a class="el" href="structmom__wave__structure_1_1wave__structure__cs.html#a9e5361c7f15fb3e04d313f371ed818f0">mom_wave_structure::wave_structure_cs</a>
 </li>
 <li>int_tide_source_y
-: <a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a2117f9a4f89c0c747cd86ae7008243ae">mom_diabatic_driver::diabatic_cs</a>
+: <a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#a98dfe9402e5384d132f091b6451a9e66">mom_int_tide_input::int_tide_input_cs</a>
 , <a class="el" href="structmom__wave__structure_1_1wave__structure__cs.html#a88f82d00652223bcf51d496b659019f8">mom_wave_structure::wave_structure_cs</a>
 </li>
 <li>integrate_downward_for_e

@@ -20,7 +20,6 @@ var dir_0e62f7dd21907d06efceeca1eea9505e =
     [ "MOM_regularize_layers.F90", "MOM__regularize__layers_8F90.html", "MOM__regularize__layers_8F90" ],
     [ "MOM_set_diffusivity.F90", "MOM__set__diffusivity_8F90.html", "MOM__set__diffusivity_8F90" ],
     [ "MOM_set_viscosity.F90", "MOM__set__viscosity_8F90.html", "MOM__set__viscosity_8F90" ],
-    [ "MOM_shortwave_abs.F90", "MOM__shortwave__abs_8F90.html", "MOM__shortwave__abs_8F90" ],
     [ "MOM_sponge.F90", "MOM__sponge_8F90.html", "MOM__sponge_8F90" ],
     [ "MOM_tidal_mixing.F90", "MOM__tidal__mixing_8F90.html", "MOM__tidal__mixing_8F90" ],
     [ "MOM_vert_friction.F90", "MOM__vert__friction_8F90.html", "MOM__vert__friction_8F90" ]

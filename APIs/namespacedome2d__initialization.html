@@ -311,7 +311,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;      z = -g%bathyT(i,j)</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;      <span class="keywordflow">do</span> k = nz,1,-1</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        z = z + 0.5 * gv%H_to_Z * h(i,j,k) <span class="comment">! Position of the center of layer k</span></div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        s(i,j,k) = 34.0 - 1.0 * (z/g%max_depth)</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        s(i,j,k) = 34.0 - 1.0 * (z / (g%max_depth))</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        <span class="keywordflow">if</span> ( ( g%geoLonT(i,j) - g%west_lon ) / g%len_lon &lt; dome2d_west_sponge_width ) &amp;</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;          s(i,j,k) = s_ref + s_range</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        z = z + 0.5 *  gv%H_to_Z * h(i,j,k) <span class="comment">! Position of the interface k</span></div>
@@ -358,7 +358,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__sponge_8F90_source.html#l00089">mom_sponge::initialize_sponge()</a>, <a class="el" href="DOME2d__initialization_8F90_source.html#l00036">mdl</a>, and <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__state__initialization_8F90_source.html#l00124">mom_state_initialization::mom_initialize_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__state__initialization_8F90_source.html#l00125">mom_state_initialization::mom_initialize_state()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

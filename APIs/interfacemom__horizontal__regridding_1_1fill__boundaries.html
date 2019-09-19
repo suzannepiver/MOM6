@@ -163,21 +163,21 @@ Private functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__horizontal__regridding_8F90_source.html#l00895">895</a> of file <a class="el" href="MOM__horizontal__regridding_8F90_source.html">MOM_horizontal_regridding.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">intent(in)</span>             :: m<span class="comment"> !&lt; input array (ND)</span></div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;  <span class="keywordtype">logical</span>,                 <span class="keywordtype">intent(in)</span>             :: cyclic_x<span class="comment"> !&lt; True if domain is zonally re-entrant</span></div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;  <span class="keywordtype">logical</span>,                 <span class="keywordtype">intent(in)</span>             :: tripolar_n<span class="comment"> !&lt; True if domain has an Arctic fold</span></div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(0:size(m,1)+1,0:size(m,2)+1)</span> :: mp</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160; </div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;<span class="keywordtype">  real</span>,    <span class="keywordtype">dimension(size(m,1),size(m,2))</span>         :: m_real</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;<span class="keywordtype">  real</span>,    <span class="keywordtype">dimension(0:size(m,1)+1,0:size(m,2)+1)</span> :: mp_real</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160; </div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;  m_real = real(m)</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160; </div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;  mp_real = fill_boundaries_real(m_real,cyclic_x,tripolar_n)</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160; </div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;  mp = int(mp_real)</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="MOM__horizontal__regridding_8F90_source.html#l00903">903</a> of file <a class="el" href="MOM__horizontal__regridding_8F90_source.html">MOM_horizontal_regridding.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">intent(in)</span>             :: m<span class="comment"> !&lt; input array (ND)</span></div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;  <span class="keywordtype">logical</span>,                 <span class="keywordtype">intent(in)</span>             :: cyclic_x<span class="comment"> !&lt; True if domain is zonally re-entrant</span></div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;  <span class="keywordtype">logical</span>,                 <span class="keywordtype">intent(in)</span>             :: tripolar_n<span class="comment"> !&lt; True if domain has an Arctic fold</span></div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(0:size(m,1)+1,0:size(m,2)+1)</span> :: mp</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160; </div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;<span class="keywordtype">  real</span>,    <span class="keywordtype">dimension(size(m,1),size(m,2))</span>         :: m_real</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;<span class="keywordtype">  real</span>,    <span class="keywordtype">dimension(0:size(m,1)+1,0:size(m,2)+1)</span> :: mp_real</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160; </div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;  m_real = real(m)</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160; </div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;  mp_real = fill_boundaries_real(m_real,cyclic_x,tripolar_n)</div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160; </div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;  mp = int(mp_real)</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -231,35 +231,35 @@ Private functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__horizontal__regridding_8F90_source.html#l00913">913</a> of file <a class="el" href="MOM__horizontal__regridding_8F90_source.html">MOM_horizontal_regridding.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">intent(in)</span>             :: m<span class="comment"> !&lt; input array (ND)</span></div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;  <span class="keywordtype">logical</span>,              <span class="keywordtype">intent(in)</span>             :: cyclic_x<span class="comment"> !&lt; True if domain is zonally re-entrant</span></div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;  <span class="keywordtype">logical</span>,              <span class="keywordtype">intent(in)</span>             :: tripolar_n<span class="comment"> !&lt; True if domain has an Arctic fold</span></div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(0:size(m,1)+1,0:size(m,2)+1)</span> :: mp</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160; </div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;  <span class="keywordtype">integer</span> :: ni,nj,i,j</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160; </div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;  ni=<span class="keyword">size</span>(m,1); nj=<span class="keyword">size</span>(m,2)</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160; </div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;  mp(1:ni,1:nj)=m(:,:)</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160; </div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;  <span class="keywordflow">if</span> (cyclic_x) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    mp(0,1:nj)=m(ni,1:nj)</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;    mp(ni+1,1:nj)=m(1,1:nj)</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;    mp(0,1:nj)=m(1,1:nj)</div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;    mp(ni+1,1:nj)=m(ni,1:nj)</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;<span class="keywordflow">  endif</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__horizontal__regridding_8F90_source.html#l00921">921</a> of file <a class="el" href="MOM__horizontal__regridding_8F90_source.html">MOM_horizontal_regridding.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">intent(in)</span>             :: m<span class="comment"> !&lt; input array (ND)</span></div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;  <span class="keywordtype">logical</span>,              <span class="keywordtype">intent(in)</span>             :: cyclic_x<span class="comment"> !&lt; True if domain is zonally re-entrant</span></div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;  <span class="keywordtype">logical</span>,              <span class="keywordtype">intent(in)</span>             :: tripolar_n<span class="comment"> !&lt; True if domain has an Arctic fold</span></div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(0:size(m,1)+1,0:size(m,2)+1)</span> :: mp</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160; </div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;  <span class="keywordtype">integer</span> :: ni,nj,i,j</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160; </div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;  ni=<span class="keyword">size</span>(m,1); nj=<span class="keyword">size</span>(m,2)</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160; </div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;  mp(1:ni,1:nj)=m(:,:)</div>
 <div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160; </div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;  mp(1:ni,0)=m(1:ni,1)</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;  <span class="keywordflow">if</span> (tripolar_n) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;    <span class="keywordflow">do</span> i=1,ni</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;      mp(i,nj+1)=m(ni-i+1,nj)</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    mp(1:ni,nj+1)=m(1:ni,nj)</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160; </div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;  <span class="keywordflow">if</span> (cyclic_x) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;    mp(0,1:nj)=m(ni,1:nj)</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;    mp(ni+1,1:nj)=m(1,1:nj)</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    mp(0,1:nj)=m(1,1:nj)</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    mp(ni+1,1:nj)=m(ni,1:nj)</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160; </div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;  mp(1:ni,0)=m(1:ni,1)</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;  <span class="keywordflow">if</span> (tripolar_n) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    <span class="keywordflow">do</span> i=1,ni</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;      mp(i,nj+1)=m(ni-i+1,nj)</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;    mp(1:ni,nj+1)=m(1:ni,nj)</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -7,7 +7,7 @@ digraph "mom_entrain_diffusive::find_maxf_kb"
   rankdir="RL";
   Node1 [label="mom_entrain_diffusive\l::find_maxf_kb",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Maximize F = ent*ds_kb*I_dSkbp1 in the range min_ent < ent < max_ent."];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="mom_entrain_diffusive\l::entrainment_diffusive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__entrain__diffusive.html#a6cf7391c9958b4ac00c1cd4f89bfd868",tooltip="This subroutine calculates ea and eb, the rates at which a layer entrains from the layers above and b..."];
+  Node2 [label="mom_entrain_diffusive\l::entrainment_diffusive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__entrain__diffusive.html#ae68ab2fa707778de2f92ce179729f2ff",tooltip="This subroutine calculates ea and eb, the rates at which a layer entrains from the layers above and b..."];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="mom_entrain_diffusive\l::f_kb_to_ea_kb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__entrain__diffusive.html#adce1b1ba57f5245f1eda57e7a254d4df",tooltip="Given an entrainment from below for layer kb, determine a consistent entrainment from above,..."];
   Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

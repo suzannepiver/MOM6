@@ -1,5 +1,6 @@
 var structmom__tidal__mixing_1_1tidal__mixing__cs =
 [
+    [ "answers_2018", "structmom__tidal__mixing_1_1tidal__mixing__cs.html#a1cc1e89302a59ffc126cf9618d1d47a1", null ],
     [ "cvmix_glb_params", "structmom__tidal__mixing_1_1tidal__mixing__cs.html#a8becc3f6b8e26e4bed5c0560065fcec9", null ],
     [ "cvmix_tidal_params", "structmom__tidal__mixing_1_1tidal__mixing__cs.html#ad69a9ac663325c5f14b7f27e84111612", null ],
     [ "cvmix_tidal_scheme", "structmom__tidal__mixing_1_1tidal__mixing__cs.html#ada788ed58092f9439726e4b4753bb47b", null ],

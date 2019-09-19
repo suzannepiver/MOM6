@@ -9,7 +9,7 @@ digraph "mom_diagnostics::calculate_diagnostic_fields"
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="mom_diagnostics::calculate\l_derivs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diagnostics.html#ad69737c75e3f4a36546c8437fb39b099",tooltip="This subroutine calculates all registered time derivatives."];
   Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="mom_diagnostics::calculate\l_energy_diagnostics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diagnostics.html#ae5389a5f229483c703ca2fb1b20a1855",tooltip="This subroutine calculates terms in the mechanical energy budget."];
+  Node3 [label="mom_diagnostics::calculate\l_energy_diagnostics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diagnostics.html#ad8679de99516ebb0ec2a973c441f2fec",tooltip="This subroutine calculates terms in the mechanical energy budget."];
   Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="mom_diagnostics::calculate\l_vertical_integrals",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diagnostics.html#a3dc7691c006b2abc1c355adc8e4d1a34",tooltip="This subroutine calculates vertical integrals of several tracers, along with the mass-weight of these..."];
   Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('structmom__open__boundary_1_1obc__segm
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Open boundary segment data from files (mostly). </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00069">69</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00070">70</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_open_boundary::obc_segment_data_type:</div>
 <div class="dyncontent">
@@ -154,8 +154,8 @@ Public variables and constants</h2></td></tr>
 
 <p>barotropic velocity [m s-1] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span>   :: bt_vel=&gt;null()     <span class="comment">!&lt; barotropic velocity [m s-1]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00079">79</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span>   :: bt_vel=&gt;null()     <span class="comment">!&lt; barotropic velocity [m s-1]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -173,8 +173,8 @@ Public variables and constants</h2></td></tr>
 
 <p>buffer src data remapped to the target vertical grid </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00077">77</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: buffer_dst=&gt;null() <span class="comment">!&lt; buffer src data remapped to the target vertical grid</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: buffer_dst=&gt;null() <span class="comment">!&lt; buffer src data remapped to the target vertical grid</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -192,8 +192,8 @@ Public variables and constants</h2></td></tr>
 
 <p>buffer for segment data located at cell faces and on the original vertical grid </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00073">73</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: buffer_src=&gt;null() <span class="comment">!&lt; buffer for segment data located at cell faces</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00074">74</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: buffer_src=&gt;null() <span class="comment">!&lt; buffer for segment data located at cell faces</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -211,8 +211,8 @@ Public variables and constants</h2></td></tr>
 
 <p>vertical grid cell spacing of the incoming segment data [m] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: dz_src=&gt;null()     <span class="comment">!&lt; vertical grid cell spacing of the incoming segment data [m]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00077">77</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: dz_src=&gt;null()     <span class="comment">!&lt; vertical grid cell spacing of the incoming segment data [m]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -230,8 +230,8 @@ Public variables and constants</h2></td></tr>
 
 <p>handle from FMS associated with segment data on disk </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00070">70</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">integer</span> :: fid<span class="comment">                                !&lt; handle from FMS associated with segment data on disk</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">integer</span> :: fid<span class="comment">                                !&lt; handle from FMS associated with segment data on disk</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -249,8 +249,8 @@ Public variables and constants</h2></td></tr>
 
 <p>handle from FMS associated with segment thicknesses on disk </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">integer</span> :: fid_dz<span class="comment">                             !&lt; handle from FMS associated with segment thicknesses on disk</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00072">72</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">integer</span> :: fid_dz<span class="comment">                             !&lt; handle from FMS associated with segment thicknesses on disk</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -268,8 +268,8 @@ Public variables and constants</h2></td></tr>
 
 <p>a name identifier for the segment data </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00072">72</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">character(len=8)</span>                :: name<span class="comment">       !&lt; a name identifier for the segment data</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00073">73</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">character(len=8)</span>                :: name<span class="comment">       !&lt; a name identifier for the segment data</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -287,8 +287,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Number of vertical levels in the source data. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">integer</span>                         :: nk_src<span class="comment">     !&lt; Number of vertical levels in the source data</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">integer</span>                         :: nk_src<span class="comment">     !&lt; Number of vertical levels in the source data</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -306,8 +306,8 @@ Public variables and constants</h2></td></tr>
 
 <p>constant value if fid is equal to -1 </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00079">79</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">  real</span>                            :: <span class="keywordtype">value</span><span class="comment">              !&lt; constant value if fid is equal to -1</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00080">80</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">  real</span>                            :: <span class="keywordtype">value</span><span class="comment">              !&lt; constant value if fid is equal to -1</span></div>
 </div><!-- fragment -->
 </div>
 </div>

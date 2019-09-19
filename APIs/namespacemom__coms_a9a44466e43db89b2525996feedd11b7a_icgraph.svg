@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1018;
+var viewWidth = 769;
 var viewHeight = 88;
 var sectionId = 'dynsection-17';
 </script>
@@ -54,14 +54,14 @@ var sectionId = 'dynsection-17';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_coms::reset_efp_overflow_error</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-84 1014,-84 1014,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-84 765,-84 765,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Reset the module&#39;s error flag to false.">
-<polygon fill="#bfbfbf" stroke="#000000" points="891,-24.5 891,-54.5 1010,-54.5 1010,-24.5 891,-24.5"/>
-<text text-anchor="start" x="899" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_coms::reset_efp</text>
-<text text-anchor="middle" x="950.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_overflow_error</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="642,-24.5 642,-54.5 761,-54.5 761,-24.5 642,-24.5"/>
+<text text-anchor="start" x="650" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_coms::reset_efp</text>
+<text text-anchor="middle" x="701.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_overflow_error</text>
 </a>
 </g>
 </g>
@@ -69,109 +69,80 @@ var sectionId = 'dynsection-17';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__spatial__means.html#a1268ed073db7e190a1d06fa72bd7a8de" target="_top" xlink:title="Determine the global mean of a field along rows of constant i, returning it in a 1&#45;d array using the ...">
-<polygon fill="#ffffff" stroke="#000000" points="737,-49.5 737,-79.5 855,-79.5 855,-49.5 737,-49.5"/>
-<text text-anchor="start" x="745" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_spatial_means::</text>
-<text text-anchor="middle" x="796" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">global_i_mean</text>
+<polygon fill="#ffffff" stroke="#000000" points="488,-49.5 488,-79.5 606,-79.5 606,-49.5 488,-49.5"/>
+<text text-anchor="start" x="496" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_spatial_means::</text>
+<text text-anchor="middle" x="547" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">global_i_mean</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M880.7701,-50.7832C872.1839,-52.1725 863.4726,-53.5821 855.066,-54.9424"/>
-<polygon fill="#191970" stroke="#191970" points="881.4538,-54.2181 890.7663,-49.1657 880.3356,-47.308 881.4538,-54.2181"/>
+<path fill="none" stroke="#191970" d="M631.7701,-50.7832C623.1839,-52.1725 614.4726,-53.5821 606.066,-54.9424"/>
+<polygon fill="#191970" stroke="#191970" points="632.4538,-54.2181 641.7663,-49.1657 631.3356,-47.308 632.4538,-54.2181"/>
 </g>
-<!-- Node8 -->
-<g id="node8" class="node">
-<title>Node8</title>
-<g id="a_node8"><a xlink:href="namespacemom__spatial__means.html#a0862005dff883cfbd1b9ffc1ef15cdbf" target="_top" xlink:title="Determine the global mean of a field along rows of constant j, returning it in a 1&#45;d array using the ...">
-<polygon fill="#ffffff" stroke="#000000" points="737,-.5 737,-30.5 855,-30.5 855,-.5 737,-.5"/>
-<text text-anchor="start" x="745" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_spatial_means::</text>
-<text text-anchor="middle" x="796" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">global_j_mean</text>
+<!-- Node6 -->
+<g id="node6" class="node">
+<title>Node6</title>
+<g id="a_node6"><a xlink:href="namespacemom__spatial__means.html#a0862005dff883cfbd1b9ffc1ef15cdbf" target="_top" xlink:title="Determine the global mean of a field along rows of constant j, returning it in a 1&#45;d array using the ...">
+<polygon fill="#ffffff" stroke="#000000" points="488,-.5 488,-30.5 606,-30.5 606,-.5 488,-.5"/>
+<text text-anchor="start" x="496" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_spatial_means::</text>
+<text text-anchor="middle" x="547" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">global_j_mean</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node8 -->
-<g id="edge7" class="edge">
-<title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M880.7701,-28.6682C872.1839,-27.3344 863.4726,-25.9812 855.066,-24.6753"/>
-<polygon fill="#191970" stroke="#191970" points="880.3475,-32.1444 890.7663,-30.221 881.4221,-25.2274 880.3475,-32.1444"/>
+<!-- Node1&#45;&gt;Node6 -->
+<g id="edge5" class="edge">
+<title>Node1&#45;&gt;Node6</title>
+<path fill="none" stroke="#191970" d="M631.7701,-28.6682C623.1839,-27.3344 614.4726,-25.9812 606.066,-24.6753"/>
+<polygon fill="#191970" stroke="#191970" points="631.3475,-32.1444 641.7663,-30.221 632.4221,-25.2274 631.3475,-32.1444"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__sponge.html#afc5fe4db356e9e93696c909cd2c4d7ba" target="_top" xlink:title="This subroutine applies damping to the layers thicknesses, mixed layer buoyancy, and a variety of tra...">
-<polygon fill="#ffffff" stroke="#000000" points="549,-55 549,-74 701,-74 701,-55 549,-55"/>
-<text text-anchor="middle" x="625" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_sponge::apply_sponge</text>
+<polygon fill="#ffffff" stroke="#000000" points="300,-55 300,-74 452,-74 452,-55 300,-55"/>
+<text text-anchor="middle" x="376" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_sponge::apply_sponge</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M726.5661,-64.5C718.175,-64.5 709.5697,-64.5 701.0894,-64.5"/>
-<polygon fill="#191970" stroke="#191970" points="726.6724,-68.0001 736.6724,-64.5 726.6724,-61.0001 726.6724,-68.0001"/>
+<path fill="none" stroke="#191970" d="M477.5661,-64.5C469.175,-64.5 460.5697,-64.5 452.0894,-64.5"/>
+<polygon fill="#191970" stroke="#191970" points="477.6724,-68.0001 487.6724,-64.5 477.6724,-61.0001 477.6724,-68.0001"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="namespacemom__diabatic__driver.html#a9cdc6d13fb212778da2d58f286528fde" target="_top" xlink:title="Imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentum and tracers us...">
-<polygon fill="#ffffff" stroke="#000000" points="399,-49.5 399,-79.5 513,-79.5 513,-49.5 399,-49.5"/>
-<text text-anchor="start" x="407" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diabatic_driver</text>
-<text text-anchor="middle" x="456" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::legacy_diabatic</text>
+<g id="a_node4"><a xlink:href="namespacemom__diabatic__driver.html#a71d8d849db16be4b87c2650b49f01c82" target="_top" xlink:title="Imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentum and tracers us...">
+<polygon fill="#ffffff" stroke="#000000" points="150,-49.5 150,-79.5 264,-79.5 264,-49.5 150,-49.5"/>
+<text text-anchor="start" x="158" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diabatic_driver</text>
+<text text-anchor="middle" x="207" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::layered_diabatic</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M538.7449,-64.5C530.0814,-64.5 521.4425,-64.5 513.1927,-64.5"/>
-<polygon fill="#191970" stroke="#191970" points="538.9047,-68.0001 548.9046,-64.5 538.9046,-61.0001 538.9047,-68.0001"/>
+<path fill="none" stroke="#191970" d="M289.7449,-64.5C281.0814,-64.5 272.4425,-64.5 264.1927,-64.5"/>
+<polygon fill="#191970" stroke="#191970" points="289.9047,-68.0001 299.9046,-64.5 289.9046,-61.0001 289.9047,-68.0001"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="namespacemom.html#a1a81ea749a309f10f5c3c7a17efa3606" target="_top" xlink:title="MOM_step_thermo orchestrates the thermodynamic time stepping and vertical remapping,...">
-<polygon fill="#ffffff" stroke="#000000" points="232,-55 232,-74 363,-74 363,-55 232,-55"/>
-<text text-anchor="middle" x="297.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom::step_mom_thermo</text>
+<g id="a_node5"><a xlink:href="namespacemom__diabatic__driver.html#a9005de9f3ad26b32de53e3cd9826b9b9" target="_top" xlink:title="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu...">
+<polygon fill="#ffffff" stroke="#000000" points="0,-49.5 0,-79.5 114,-79.5 114,-49.5 0,-49.5"/>
+<text text-anchor="start" x="8" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diabatic_driver</text>
+<text text-anchor="middle" x="57" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::diabatic</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M388.6383,-64.5C380.2299,-64.5 371.6388,-64.5 363.2554,-64.5"/>
-<polygon fill="#191970" stroke="#191970" points="388.7779,-68.0001 398.7779,-64.5 388.7778,-61.0001 388.7779,-68.0001"/>
-</g>
-<!-- Node6 -->
-<g id="node6" class="node">
-<title>Node6</title>
-<g id="a_node6"><a xlink:href="namespacemom.html#a972730596703580d4646320f2c9085a5" target="_top" xlink:title="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to...">
-<polygon fill="#ffffff" stroke="#000000" points="104,-55 104,-74 196,-74 196,-55 104,-55"/>
-<text text-anchor="middle" x="150" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom::step_mom</text>
-</a>
-</g>
-</g>
-<!-- Node5&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
-<title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M221.7772,-64.5C213.1053,-64.5 204.4697,-64.5 196.3505,-64.5"/>
-<polygon fill="#191970" stroke="#191970" points="221.9454,-68.0001 231.9454,-64.5 221.9453,-61.0001 221.9454,-68.0001"/>
-</g>
-<!-- Node7 -->
-<g id="node7" class="node">
-<title>Node7</title>
-<g id="a_node7"><a xlink:href="MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="0,-55 0,-74 68,-74 68,-55 0,-55"/>
-<text text-anchor="middle" x="34" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_main</text>
-</a>
-</g>
-</g>
-<!-- Node6&#45;&gt;Node7 -->
-<g id="edge6" class="edge">
-<title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M93.6813,-64.5C84.9846,-64.5 76.2375,-64.5 68.2229,-64.5"/>
-<polygon fill="#191970" stroke="#191970" points="93.8205,-68.0001 103.8204,-64.5 93.8204,-61.0001 93.8205,-68.0001"/>
+<path fill="none" stroke="#191970" d="M139.6894,-64.5C131.2716,-64.5 122.7232,-64.5 114.4745,-64.5"/>
+<polygon fill="#191970" stroke="#191970" points="139.8636,-68.0001 149.8635,-64.5 139.8635,-61.0001 139.8636,-68.0001"/>
 </g>
 </g>
 </svg>

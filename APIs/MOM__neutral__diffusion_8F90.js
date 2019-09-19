@@ -11,7 +11,7 @@ var MOM__neutral__diffusion_8F90 =
     [ "interface_scalar", "MOM__neutral__diffusion_8F90.html#aec9b89b6a5ddc81f102309b964a0b969", null ],
     [ "ndiff_unit_tests_continuous", "MOM__neutral__diffusion_8F90.html#a9aaf0988f76c9992d8f1db48ce23bf34", null ],
     [ "ndiff_unit_tests_discontinuous", "MOM__neutral__diffusion_8F90.html#aa44f980bb24df5dc71913b32892b2f71", null ],
-    [ "neutral_diffusion", "MOM__neutral__diffusion_8F90.html#ad048cb54d8df3953db6c565a6fcebfb1", null ],
+    [ "neutral_diffusion", "MOM__neutral__diffusion_8F90.html#a5469b7be43f8c428f092b58dd5ca41c8", null ],
     [ "neutral_diffusion_calc_coeffs", "MOM__neutral__diffusion_8F90.html#a912fd9a78666e8ad1001ee0a06e03d9a", null ],
     [ "neutral_diffusion_end", "MOM__neutral__diffusion_8F90.html#ae8a313d25818dfa8c3bc056210fac76b", null ],
     [ "neutral_diffusion_init", "MOM__neutral__diffusion_8F90.html#abb62a238df5010ba38925f7d8bbef494", null ],

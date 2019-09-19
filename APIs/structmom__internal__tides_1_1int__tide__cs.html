@@ -157,7 +157,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a10480d3d59b653c4e23b3b5da502ef7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">identifies reflection cells where double reflection is possible (i.e. ridge cells)  <a href="structmom__internal__tides_1_1int__tide__cs.html#a10480d3d59b653c4e23b3b5da502ef7b">More...</a><br /></td></tr>
 <tr class="separator:a10480d3d59b653c4e23b3b5da502ef7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6acdcb169859b29b3cb1a329655a80b"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#af6acdcb169859b29b3cb1a329655a80b">cp</a></td></tr>
-<tr class="memdesc:af6acdcb169859b29b3cb1a329655a80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">horizontal phase speed [m s-1]  <a href="structmom__internal__tides_1_1int__tide__cs.html#af6acdcb169859b29b3cb1a329655a80b">More...</a><br /></td></tr>
+<tr class="memdesc:af6acdcb169859b29b3cb1a329655a80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">horizontal phase speed [L T-1 ~&gt; m s-1]  <a href="structmom__internal__tides_1_1int__tide__cs.html#af6acdcb169859b29b3cb1a329655a80b">More...</a><br /></td></tr>
 <tr class="separator:af6acdcb169859b29b3cb1a329655a80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ee894ff4e65aea4115a0bb797337311"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:,:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a1ee894ff4e65aea4115a0bb797337311">tke_leak_loss</a></td></tr>
 <tr class="memdesc:a1ee894ff4e65aea4115a0bb797337311"><td class="mdescLeft">&#160;</td><td class="mdescRight">energy lost due to misc background processes [W m-2]  <a href="structmom__internal__tides_1_1int__tide__cs.html#a1ee894ff4e65aea4115a0bb797337311">More...</a><br /></td></tr>
@@ -169,7 +169,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a446921d2311d100d8ffd3822cb9bf383"><td class="mdescLeft">&#160;</td><td class="mdescRight">energy lost due to wave breaking [W m-2]  <a href="structmom__internal__tides_1_1int__tide__cs.html#a446921d2311d100d8ffd3822cb9bf383">More...</a><br /></td></tr>
 <tr class="separator:a446921d2311d100d8ffd3822cb9bf383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30a4183c81f6b7fccee72b79f23e44a1"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a30a4183c81f6b7fccee72b79f23e44a1">tke_itidal_loss_fixed</a></td></tr>
-<tr class="memdesc:a30a4183c81f6b7fccee72b79f23e44a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">fixed part of the energy lost due to small-scale drag [kg Z-2 ~&gt; kg m-2] here; will be multiplied by N and En to get into [W m-2]  <a href="structmom__internal__tides_1_1int__tide__cs.html#a30a4183c81f6b7fccee72b79f23e44a1">More...</a><br /></td></tr>
+<tr class="memdesc:a30a4183c81f6b7fccee72b79f23e44a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">fixed part of the energy lost due to small-scale drag [kg m L-2 Z-1 ~&gt; kg m-2] here; will be multiplied by N and En to get into [W m-2]  <a href="structmom__internal__tides_1_1int__tide__cs.html#a30a4183c81f6b7fccee72b79f23e44a1">More...</a><br /></td></tr>
 <tr class="separator:a30a4183c81f6b7fccee72b79f23e44a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90039a03fa824c7572b83283be21e433"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:,:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a90039a03fa824c7572b83283be21e433">tke_itidal_loss</a></td></tr>
 <tr class="memdesc:a90039a03fa824c7572b83283be21e433"><td class="mdescLeft">&#160;</td><td class="mdescRight">energy lost due to small-scale wave drag [W m-2]  <a href="structmom__internal__tides_1_1int__tide__cs.html#a90039a03fa824c7572b83283be21e433">More...</a><br /></td></tr>
@@ -226,7 +226,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a06616e25ee68d1ace351154c49892948"><td class="mdescLeft">&#160;</td><td class="mdescRight">The internal wave energy density as a function of (i,j,angle); temporary for restart.  <a href="structmom__internal__tides_1_1int__tide__cs.html#a06616e25ee68d1ace351154c49892948">More...</a><br /></td></tr>
 <tr class="separator:a06616e25ee68d1ace351154c49892948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07fa083566ba17fe7128c8924f5b9ece"><td class="memItemLeft" align="right" valign="top">real, dimension(:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a07fa083566ba17fe7128c8924f5b9ece">frequency</a></td></tr>
-<tr class="memdesc:a07fa083566ba17fe7128c8924f5b9ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">The frequency of each band [s-1].  <a href="structmom__internal__tides_1_1int__tide__cs.html#a07fa083566ba17fe7128c8924f5b9ece">More...</a><br /></td></tr>
+<tr class="memdesc:a07fa083566ba17fe7128c8924f5b9ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">The frequency of each band [T-1 ~&gt; s-1].  <a href="structmom__internal__tides_1_1int__tide__cs.html#a07fa083566ba17fe7128c8924f5b9ece">More...</a><br /></td></tr>
 <tr class="separator:a07fa083566ba17fe7128c8924f5b9ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b4746b03860f3bcf7a591e2e4e08e38"><td class="memItemLeft" align="right" valign="top">type(diag_ctrl), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a5b4746b03860f3bcf7a591e2e4e08e38">diag</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a5b4746b03860f3bcf7a591e2e4e08e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that is used to regulate the timing of diagnostic output.  <a href="structmom__internal__tides_1_1int__tide__cs.html#a5b4746b03860f3bcf7a591e2e4e08e38">More...</a><br /></td></tr>
@@ -423,7 +423,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>horizontal phase speed [m s-1] </p>
+<p>horizontal phase speed [L T-1 ~&gt; m s-1] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00067">67</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:)</span> :: cp</div>
@@ -575,10 +575,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The frequency of each band [s-1]. </p>
+<p>The frequency of each band [T-1 ~&gt; s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:)</span> :: frequency<span class="comment">  !&lt; The frequency of each band [s-1].</span></div>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:)</span> :: frequency<span class="comment">  !&lt; The frequency of each band [T-1 ~&gt; s-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1234,7 +1234,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>fixed part of the energy lost due to small-scale drag [kg Z-2 ~&gt; kg m-2] here; will be multiplied by N and En to get into [W m-2] </p>
+<p>fixed part of the energy lost due to small-scale drag [kg m L-2 Z-1 ~&gt; kg m-2] here; will be multiplied by N and En to get into [W m-2] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: TKE_itidal_loss_fixed</div>

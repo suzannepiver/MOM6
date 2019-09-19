@@ -14,23 +14,23 @@ digraph "mom_grid_initialize::set_grid_metrics"
   Node4 [label="mom_error_handler::\lcalltree_leave",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a88ea67781e2ed9b73ab7eac8ea5e8578",tooltip="Writes a message about leaving a subroutine if call tree reporting is active."];
   Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="mom_grid_initialize\l::grid_metrics_chksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#aaa2e124bccd43d4f8735c4ef8e07f287",tooltip="grid_metrics_chksum performs a set of checksums on metrics on the grid for debugging."];
+  Node5 [label="mom_grid_initialize\l::grid_metrics_chksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#acdb2092abe8112d381c54c2aec398c6d",tooltip="grid_metrics_chksum performs a set of checksums on metrics on the grid for debugging."];
   Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="mom_dyn_horgrid::set\l_derived_dyn_horgrid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__dyn__horgrid.html#aefa448039e24b26fe06f9251848b6aac",tooltip="set_derived_dyn_horgrid calculates metric terms that are derived from other metrics."];
+  Node6 [label="mom_dyn_horgrid::set\l_derived_dyn_horgrid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__dyn__horgrid.html#a26c1389a380922c7c5d946cff3a9b11a",tooltip="set_derived_dyn_horgrid calculates metric terms that are derived from other metrics."];
   Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 [label="mom_dyn_horgrid::adcroft\l_reciprocal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__dyn__horgrid.html#aa6579f50769698067defbc3c676e0191",tooltip="Adcroft_reciprocal(x) = 1/x for |x|>0 or 0 for x=0."];
   Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node8 [label="mom_grid_initialize\l::set_grid_metrics_cartesian",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a4f9a9f748316e1edd893da9c44cb940e",tooltip="Calculate the values of the metric terms for a Cartesian grid that might be used and save them in arr..."];
+  Node8 [label="mom_grid_initialize\l::set_grid_metrics_cartesian",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a0b05a77813a4ca80172f3855e688d19f",tooltip="Calculate the values of the metric terms for a Cartesian grid that might be used and save them in arr..."];
   Node8 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node9 [label="mom_grid_initialize\l::set_grid_metrics_from\l_mosaic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a59e71c4235b01cf3ad4fb6252ef74248",tooltip="Sets the grid metrics from a mosaic file."];
+  Node9 [label="mom_grid_initialize\l::set_grid_metrics_from\l_mosaic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a93edcd084a84a50c6aef6053a2cc64f3",tooltip="Sets the grid metrics from a mosaic file."];
   Node9 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node9 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node10 [label="mom_grid_initialize\l::extrapolate_metric",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#ac78daa312636b0ef9a93694901b5c705",tooltip="Extrapolates missing metric data into all the halo regions."];
   Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node11 [label="mom_grid_initialize\l::set_grid_metrics_mercator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#ac37d98379b33a9e95d0bbffc1d7a730f",tooltip="Calculate the values of the metric terms that might be used and save them in arrays."];
+  Node11 [label="mom_grid_initialize\l::set_grid_metrics_mercator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a3cc0b92a8624fbd5246576b4e5cf6f6f",tooltip="Calculate the values of the metric terms that might be used and save them in arrays."];
   Node11 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node11 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -52,7 +52,7 @@ digraph "mom_grid_initialize::set_grid_metrics"
   Node11 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node19 [label="mom_grid_initialize\l::int_dj_dy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a8ed056787130f21f4b9c1bc81bd60c50",tooltip="This subroutine calculates and returns the integral of the inverse of dy/dj to the point y,..."];
   Node1 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node20 [label="mom_grid_initialize\l::set_grid_metrics_spherical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a3ede1d607f09115204c0ea0fbde5e9f8",tooltip="Calculate the values of the metric terms that might be used and save them in arrays."];
+  Node20 [label="mom_grid_initialize\l::set_grid_metrics_spherical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a7c37b75811701cbca250a34359e44a4a",tooltip="Calculate the values of the metric terms that might be used and save them in arrays."];
   Node20 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node20 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

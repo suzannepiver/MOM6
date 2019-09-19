@@ -22,7 +22,7 @@ digraph "mom_diag_mediator::query_averaging_enabled"
   Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 [label="mom_lateral_mixing\l_coeffs::calc_slope\l_functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#a90d17b7e05aab37752c8d9061de29170",tooltip="Calculates and stores functions of isopycnal slopes, e.g. Sx, Sy, S*N, mostly used in the Visbeck et ..."];
   Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node9 [label="mom_lateral_mixing\l_coeffs::calc_visbeck\l_coeffs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#ae7965329069235d5ae10f0700504ce20",tooltip="Calculates factors used when setting diffusivity coefficients similar to Visbeck et al."];
+  Node9 [label="mom_lateral_mixing\l_coeffs::calc_visbeck\l_coeffs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#ad2745021399a967976092a9ae4702d9b",tooltip="Calculates factors used when setting diffusivity coefficients similar to Visbeck et al."];
   Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node10 [label="mom_forcing_type::forcing\l_diagnostics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__forcing__type.html#a44a9dacaf67968ab9a0e625c4d890680",tooltip="Offer buoyancy forcing fields for diagnostics for those fields registered as part of register_forcing..."];
@@ -35,14 +35,5 @@ digraph "mom_diag_mediator::query_averaging_enabled"
   Node11 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node11 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node12 [label="mom_opacity::set_opacity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__opacity.html#aefadc7465f74c0cab731cf1adf5f3a57",tooltip="This sets the opacity of sea water based based on one of several different schemes."];
-  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node13 [label="mom_diabatic_driver\l::diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a9005de9f3ad26b32de53e3cd9826b9b9",tooltip="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu..."];
-  Node12 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node14 [label="mom_diabatic_driver\l::legacy_diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a9cdc6d13fb212778da2d58f286528fde",tooltip="Imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentum and tracers us..."];
-  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node15 [label="mom::step_mom_thermo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a1a81ea749a309f10f5c3c7a17efa3606",tooltip="MOM_step_thermo orchestrates the thermodynamic time stepping and vertical remapping,..."];
-  Node15 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node12 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node16 [label="mom_offline_main::offline\l_diabatic_ale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__offline__main.html#aaef35c02f93931567c41ae8bc0544bdd",tooltip="The vertical/diabatic driver for offline tracers. First the eatr/ebtr associated with the interpolate..."];
+  Node12 [label="mom_opacity::set_opacity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__opacity.html#a675243222a55e7091e5e597f9c0a9b24",tooltip="This sets the opacity of sea water based based on one of several different schemes."];
 }

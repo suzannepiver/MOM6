@@ -9,7 +9,7 @@ var MOM__wave__interface_8F90 =
     [ "get_stokessl_lifoxkemper", "MOM__wave__interface_8F90.html#a42ca9104192ff12c44c28b705d137eb9", null ],
     [ "mom_wave_interface_init", "MOM__wave__interface_8F90.html#a3003dfe4e2167905ae8760bb1115b3cb", null ],
     [ "mom_wave_interface_init_lite", "MOM__wave__interface_8F90.html#ad2bad416c49ca81a4e5822b70d2e14b9", null ],
-    [ "stokesmixing", "MOM__wave__interface_8F90.html#a034d132b5c30e568b9996bef8c7042b7", null ],
+    [ "stokesmixing", "MOM__wave__interface_8F90.html#a86d1b417862d641edb7996ff136c4b93", null ],
     [ "surface_bands_by_data_override", "MOM__wave__interface_8F90.html#a01dd0c089dab89934450a7a699255658", null ],
     [ "update_stokes_drift", "MOM__wave__interface_8F90.html#a42b769030d04a1c087e168de36ce7285", null ],
     [ "update_surface_waves", "MOM__wave__interface_8F90.html#ad7c744e81248040ad319e0b608c52284", null ],

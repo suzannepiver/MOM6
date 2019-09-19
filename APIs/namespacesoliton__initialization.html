@@ -109,9 +109,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:aafb0cddd1b46af87cc7dcb5e08c58fa3"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesoliton__initialization.html#aafb0cddd1b46af87cc7dcb5e08c58fa3">soliton_initialize_thickness</a> (h, G, GV, US)</td></tr>
 <tr class="memdesc:aafb0cddd1b46af87cc7dcb5e08c58fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization of thicknesses in Equatorial Rossby soliton test.  <a href="namespacesoliton__initialization.html#aafb0cddd1b46af87cc7dcb5e08c58fa3">More...</a><br /></td></tr>
 <tr class="separator:aafb0cddd1b46af87cc7dcb5e08c58fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13c12aaed46d807f0d906218f8b1e00b"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesoliton__initialization.html#a13c12aaed46d807f0d906218f8b1e00b">soliton_initialize_velocity</a> (u, v, h, G)</td></tr>
-<tr class="memdesc:a13c12aaed46d807f0d906218f8b1e00b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization of u and v in the equatorial Rossby soliton test.  <a href="namespacesoliton__initialization.html#a13c12aaed46d807f0d906218f8b1e00b">More...</a><br /></td></tr>
-<tr class="separator:a13c12aaed46d807f0d906218f8b1e00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0baf019ffa8cbb6754cd197af8a377b8"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesoliton__initialization.html#a0baf019ffa8cbb6754cd197af8a377b8">soliton_initialize_velocity</a> (u, v, h, G, US)</td></tr>
+<tr class="memdesc:a0baf019ffa8cbb6754cd197af8a377b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization of u and v in the equatorial Rossby soliton test.  <a href="namespacesoliton__initialization.html#a0baf019ffa8cbb6754cd197af8a377b8">More...</a><br /></td></tr>
+<tr class="separator:a0baf019ffa8cbb6754cd197af8a377b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -203,7 +203,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00053">mom_error_handler::mom_mesg()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__state__initialization_8F90_source.html#l00124">mom_state_initialization::mom_initialize_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__state__initialization_8F90_source.html#l00125">mom_state_initialization::mom_initialize_state()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -219,8 +219,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a13c12aaed46d807f0d906218f8b1e00b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13c12aaed46d807f0d906218f8b1e00b">&#9670;&nbsp;</a></span>soliton_initialize_velocity()</h2>
+<a id="a0baf019ffa8cbb6754cd197af8a377b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0baf019ffa8cbb6754cd197af8a377b8">&#9670;&nbsp;</a></span>soliton_initialize_velocity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,7 +247,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">type(ocean_grid_type), intent(in)&#160;</td>
-          <td class="paramname"><em>G</em>&#160;</td>
+          <td class="paramname"><em>G</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">type(unit_scale_type), intent(in)&#160;</td>
+          <td class="paramname"><em>US</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -261,52 +267,59 @@ Here is the caller graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">g</td><td>Grid structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">u</td><td>i-component of velocity [m s-1] </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">v</td><td>j-component of velocity [m s-1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">u</td><td>i-component of velocity [L T-1 ~&gt; m s-1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">v</td><td>j-component of velocity [L T-1 ~&gt; m s-1] </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Thickness [H ~&gt; m or kg m-2] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="soliton__initialization_8F90_source.html#l00067">67</a> of file <a class="el" href="soliton__initialization_8F90_source.html">soliton_initialization.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type),                  <span class="keywordtype">intent(in)</span>     :: G<span class="comment">  !&lt; Grid structure</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZIB_(G),SZJ_(G),SZK_(G))</span>, <span class="keywordtype">intent(out)</span> :: u<span class="comment">  !&lt; i-component of velocity [m s-1]</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJB_(G),SZK_(G))</span>, <span class="keywordtype">intent(out)</span> :: v<span class="comment">  !&lt; j-component of velocity [m s-1]</span></div>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type),                     <span class="keywordtype">intent(in)</span>  :: G<span class="comment">  !&lt; Grid structure</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZIB_(G),SZJ_(G),SZK_(G))</span>, <span class="keywordtype">intent(out)</span> :: u<span class="comment">  !&lt; i-component of velocity [L T-1 ~&gt; m s-1]</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJB_(G),SZK_(G))</span>, <span class="keywordtype">intent(out)</span> :: v<span class="comment">  !&lt; j-component of velocity [L T-1 ~&gt; m s-1]</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G), SZK_(G))</span>, <span class="keywordtype">intent(in)</span>  :: h<span class="comment">  !&lt; Thickness [H ~&gt; m or kg m-2]</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">  real</span>    :: x, y, x0, y0</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">  real</span>    :: val1, val2, val3, val4</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, is, ie, js, je, nz</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec ; nz = g%ke</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  x0 = 2.0*g%len_lon/3.0</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  y0 = 0.0</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  val1 = 0.395</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  val2 = 0.771*(val1*val1)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  v(:,:,:) = 0.0</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  u(:,:,:) = 0.0</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">do</span> j = g%jsc,g%jec ; <span class="keywordflow">do</span> i = g%isc-1,g%iec+1</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">do</span> k = 1, nz</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      x = 0.5*(g%geoLonT(i+1,j)+g%geoLonT(i,j))-x0</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      y = 0.5*(g%geoLatT(i+1,j)+g%geoLatT(i,j))-y0</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      val3 = exp(-val1*x)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      val4 = val2*((2.0*val3/(1.0+(val3*val3)))**2)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      u(i,j,k) = 0.25*val4*(6.0*y*y-9.0) * exp(-0.5*y*y)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">do</span> j = g%jsc-1,g%jec+1 ; <span class="keywordflow">do</span> i = g%isc,g%iec</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">do</span> k = 1, nz</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      x = 0.5*(g%geoLonT(i,j+1)+g%geoLonT(i,j))-x0</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      y = 0.5*(g%geoLatT(i,j+1)+g%geoLatT(i,j))-y0</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      val3 = exp(-val1*x)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      val4 = val2*((2.0*val3/(1.0+(val3*val3)))**2)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      v(i,j,k) = 2.0*val4*y*(-2.0*val1*tanh(val1*x)) * exp(-0.5*y*y)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),                     <span class="keywordtype">intent(in)</span>  :: US<span class="comment"> !&lt; A dimensional unit scaling type</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">! Local variables</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">  real</span>    :: x, x0 <span class="comment">! Positions in the same units as geoLonT.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">  real</span>    :: y, y0 <span class="comment">! Positions in the same units as geoLatT.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">  real</span>    :: val1  <span class="comment">! A zonal decay scale in the inverse of the units of geoLonT.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">  real</span>    :: val2  <span class="comment">! An overall velocity amplitude [L T-1 ~&gt; m s-1]</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">  real</span>    :: val3  <span class="comment">! A decay factor [nondim]</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">  real</span>    :: val4  <span class="comment">! The local velocity amplitude [L T-1 ~&gt; m s-1]</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, is, ie, js, je, nz</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec ; nz = g%ke</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  x0 = 2.0*g%len_lon/3.0</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  y0 = 0.0</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  val1 = 0.395</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  val2 = us%m_s_to_L_T * 0.771*(val1*val1)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  v(:,:,:) = 0.0</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  u(:,:,:) = 0.0</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">do</span> j = g%jsc,g%jec ; <span class="keywordflow">do</span> i = g%isc-1,g%iec+1</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">do</span> k = 1, nz</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      x = 0.5*(g%geoLonT(i+1,j)+g%geoLonT(i,j))-x0</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      y = 0.5*(g%geoLatT(i+1,j)+g%geoLatT(i,j))-y0</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      val3 = exp(-val1*x)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      val4 = val2*((2.0*val3/(1.0+(val3*val3)))**2)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      u(i,j,k) = 0.25*val4*(6.0*y*y-9.0) * exp(-0.5*y*y)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">do</span> j = g%jsc-1,g%jec+1 ; <span class="keywordflow">do</span> i = g%isc,g%iec</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">do</span> k = 1, nz</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      x = 0.5*(g%geoLonT(i,j+1)+g%geoLonT(i,j))-x0</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      y = 0.5*(g%geoLatT(i,j+1)+g%geoLatT(i,j))-y0</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      val3 = exp(-val1*x)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      val4 = val2*((2.0*val3/(1.0+(val3*val3)))**2)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      v(i,j,k) = 2.0*val4*y*(-2.0*val1*tanh(val1*x)) * exp(-0.5*y*y)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>

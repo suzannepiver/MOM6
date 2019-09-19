@@ -7,7 +7,7 @@ digraph "mom_grid_initialize::extrapolate_metric"
   rankdir="RL";
   Node1 [label="mom_grid_initialize\l::extrapolate_metric",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Extrapolates missing metric data into all the halo regions."];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="mom_grid_initialize\l::set_grid_metrics_from\l_mosaic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a59e71c4235b01cf3ad4fb6252ef74248",tooltip="Sets the grid metrics from a mosaic file."];
+  Node2 [label="mom_grid_initialize\l::set_grid_metrics_from\l_mosaic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a93edcd084a84a50c6aef6053a2cc64f3",tooltip="Sets the grid metrics from a mosaic file."];
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="mom_grid_initialize\l::set_grid_metrics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a80ff9ab4bfca58b9858abc4ce95b06e9",tooltip="set_grid_metrics is used to set the primary values in the model's horizontal grid...."];
   Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

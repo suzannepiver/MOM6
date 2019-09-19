@@ -7,7 +7,7 @@ digraph "mom_mixed_layer_restrat::mixedlayer_restrat"
   rankdir="LR";
   Node1 [label="mom_mixed_layer_restrat\l::mixedlayer_restrat",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Driver for the mixed-layer restratification parameterization. The code branches between two different..."];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="mom_mixed_layer_restrat\l::mixedlayer_restrat_bml",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__mixed__layer__restrat.html#ac01281bf39b6fa7e469919c30c26aedb",tooltip="Calculates a restratifying flow assuming a 2-layer bulk mixed layer."];
+  Node2 [label="mom_mixed_layer_restrat\l::mixedlayer_restrat_bml",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__mixed__layer__restrat.html#a49ac9987ca060155ef91a48bf7c0e212",tooltip="Calculates a restratifying flow assuming a 2-layer bulk mixed layer."];
   Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="mom_diag_mediator::\ldiag_update_remap_grids",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a2e9db121a293f242f5a42e9d16d0d2e4",tooltip="Build/update vertical grids for diagnostic remapping."];
   Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -16,7 +16,7 @@ digraph "mom_mixed_layer_restrat::mixedlayer_restrat"
   Node5 [label="mom_error_handler::\lis_root_pe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71",tooltip="This returns .true. if the current PE is the root PE."];
   Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="mom_mixed_layer_restrat\l::mixedlayer_restrat_general",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__mixed__layer__restrat.html#a9c6bee98536870b0b6c2bd317c00c684",tooltip="Calculates a restratifying flow in the mixed layer."];
+  Node6 [label="mom_mixed_layer_restrat\l::mixedlayer_restrat_general",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__mixed__layer__restrat.html#ae8943343fe1a6f75f81034a26b39be83",tooltip="Calculates a restratifying flow in the mixed layer."];
   Node6 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node6 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

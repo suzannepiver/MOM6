@@ -136,7 +136,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a5d79081622228cced91b7dc350e1f5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boussinesq reference density [kg m-3].  <a href="structmom__surface__forcing_1_1surface__forcing__cs.html#a5d79081622228cced91b7dc350e1f5f8">More...</a><br /></td></tr>
 <tr class="separator:a5d79081622228cced91b7dc350e1f5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ffa21666d26d2fd6387e43a59fa76e4"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__surface__forcing_1_1surface__forcing__cs.html#a2ffa21666d26d2fd6387e43a59fa76e4">g_earth</a></td></tr>
-<tr class="memdesc:a2ffa21666d26d2fd6387e43a59fa76e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">gravitational acceleration [m s-2]  <a href="structmom__surface__forcing_1_1surface__forcing__cs.html#a2ffa21666d26d2fd6387e43a59fa76e4">More...</a><br /></td></tr>
+<tr class="memdesc:a2ffa21666d26d2fd6387e43a59fa76e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">gravitational acceleration [L2 Z-1 T-2 ~&gt; m s-2]  <a href="structmom__surface__forcing_1_1surface__forcing__cs.html#a2ffa21666d26d2fd6387e43a59fa76e4">More...</a><br /></td></tr>
 <tr class="separator:a2ffa21666d26d2fd6387e43a59fa76e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6a5db6b9c8edf1c6e63076626df318e"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__surface__forcing_1_1surface__forcing__cs.html#aa6a5db6b9c8edf1c6e63076626df318e">flux_const</a></td></tr>
 <tr class="memdesc:aa6a5db6b9c8edf1c6e63076626df318e"><td class="mdescLeft">&#160;</td><td class="mdescRight">piston velocity for surface restoring [m s-1]  <a href="structmom__surface__forcing_1_1surface__forcing__cs.html#aa6a5db6b9c8edf1c6e63076626df318e">More...</a><br /></td></tr>
@@ -192,6 +192,9 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a5f3449f1385c1039976f3c5d525be0f0"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__surface__forcing_1_1surface__forcing__cs.html#a5f3449f1385c1039976f3c5d525be0f0">gyres_taux_n_pis</a></td></tr>
 <tr class="memdesc:a5f3449f1385c1039976f3c5d525be0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of sine lobes in the basin if if WIND_CONFIG=='gyres'.  <a href="structmom__surface__forcing_1_1surface__forcing__cs.html#a5f3449f1385c1039976f3c5d525be0f0">More...</a><br /></td></tr>
 <tr class="separator:a5f3449f1385c1039976f3c5d525be0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9c15b464c6985c8d7cb5d6b5d17f02"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__surface__forcing_1_1surface__forcing__cs.html#afa9c15b464c6985c8d7cb5d6b5d17f02">answers_2018</a></td></tr>
+<tr class="memdesc:afa9c15b464c6985c8d7cb5d6b5d17f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, use the order of arithmetic and expressions that recover the answers from the end of 2018. Otherwise, use a form of the gyre wind stresses that are rotationally invariant and more likely to be the same between compilers.  <a href="structmom__surface__forcing_1_1surface__forcing__cs.html#afa9c15b464c6985c8d7cb5d6b5d17f02">More...</a><br /></td></tr>
+<tr class="separator:afa9c15b464c6985c8d7cb5d6b5d17f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07fc9966f67b4b6359ac6a25af666a64"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__surface__forcing_1_1surface__forcing__cs.html#a07fc9966f67b4b6359ac6a25af666a64">t_north</a></td></tr>
 <tr class="memdesc:a07fc9966f67b4b6359ac6a25af666a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">target temperatures at north used in buoyancy_forcing_linear  <a href="structmom__surface__forcing_1_1surface__forcing__cs.html#a07fc9966f67b4b6359ac6a25af666a64">More...</a><br /></td></tr>
 <tr class="separator:a07fc9966f67b4b6359ac6a25af666a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -430,6 +433,25 @@ Public variables and constants</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="afa9c15b464c6985c8d7cb5d6b5d17f02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9c15b464c6985c8d7cb5d6b5d17f02">&#9670;&nbsp;</a></span>answers_2018</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">logical mom_surface_forcing::surface_forcing_cs::answers_2018</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, use the order of arithmetic and expressions that recover the answers from the end of 2018. Otherwise, use a form of the gyre wind stresses that are rotationally invariant and more likely to be the same between compilers. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00108">108</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">logical</span> :: answers_2018<span class="comment">    !&lt; If true, use the order of arithmetic and expressions that recover</span></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a9139f7f8a6295fd863fba0a25f8520ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9139f7f8a6295fd863fba0a25f8520ff">&#9670;&nbsp;</a></span>archaic_omip_file</h2>
 
@@ -444,8 +466,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true use the variable names and data fields from a very old version of the OMIP forcing. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00116">116</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">logical</span> :: archaic_OMIP_file = .true. <span class="comment">!&lt; If true use the variable names and data fields from</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">logical</span> :: archaic_OMIP_file = .true. <span class="comment">!&lt; If true use the variable names and data fields from</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -463,8 +485,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structures for named forcing packages. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00199">199</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">type</span>(BFB_surface_forcing_CS), <span class="keywordtype">pointer</span> :: BFB_forcing_CSp =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00202">202</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordtype">type</span>(BFB_surface_forcing_CS), <span class="keywordtype">pointer</span> :: BFB_forcing_CSp =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -482,8 +504,8 @@ Public variables and constants</h2></td></tr>
 
 <p>indicator for buoyancy forcing type </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00135">135</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">character(len=200)</span> :: buoy_config<span class="comment"> !&lt; indicator for buoyancy forcing type</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00138">138</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordtype">character(len=200)</span> :: buoy_config<span class="comment"> !&lt; indicator for buoyancy forcing type</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -520,8 +542,8 @@ Public variables and constants</h2></td></tr>
 
 <p>value used for sensible heat flux when buoy_config="const" </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keywordtype">  real</span> :: constantHeatForcing<span class="comment"> !&lt; value used for sensible heat flux when buoy_config=&quot;const&quot;</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">  real</span> :: constantHeatForcing<span class="comment"> !&lt; value used for sensible heat flux when buoy_config=&quot;const&quot;</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -539,8 +561,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, data override has been initialized. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00118">118</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">logical</span> :: dataOverrideIsInitialized = .false. <span class="comment">!&lt; If true, data override has been initialized</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">logical</span> :: dataOverrideIsInitialized = .false. <span class="comment">!&lt; If true, data override has been initialized</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -577,8 +599,8 @@ Public variables and constants</h2></td></tr>
 
 <p>structure used to regulate timing of diagnostic output </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00130">130</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag<span class="comment"> !&lt; structure used to regulate timing of diagnostic output</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00133">133</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag<span class="comment"> !&lt; structure used to regulate timing of diagnostic output</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -596,8 +618,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structures for named forcing packages. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00200">200</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">type</span>(dumbbell_surface_forcing_CS), <span class="keywordtype">pointer</span> :: dumbbell_forcing_CSp =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00203">203</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordtype">type</span>(dumbbell_surface_forcing_CS), <span class="keywordtype">pointer</span> :: dumbbell_forcing_CSp =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -615,8 +637,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The last time level read of evaporation. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00188">188</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordtype">integer</span> :: evap_last_lev = -1<span class="comment">   !&lt; The last time level read of evaporation</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00191">191</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordtype">integer</span> :: evap_last_lev = -1<span class="comment">   !&lt; The last time level read of evaporation</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -634,8 +656,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of time levels in the file of evaporation. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00176">176</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordtype">integer</span> :: evap_nlev = -1<span class="comment">   !&lt; The number of time levels in the file of evaporation</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00179">179</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordtype">integer</span> :: evap_nlev = -1<span class="comment">   !&lt; The number of time levels in the file of evaporation</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -653,8 +675,8 @@ Public variables and constants</h2></td></tr>
 
 <p>evaporation variable name in the input file </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00162">162</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: evap_var      = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; evaporation variable name in the input file</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00165">165</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: evap_var      = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; evaporation variable name in the input file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -672,8 +694,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The file from which the evaporation is read. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00139">139</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">character(len=200)</span> :: evaporation_file  = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the evaporation is read</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00142">142</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordtype">character(len=200)</span> :: evaporation_file  = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the evaporation is read</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -691,8 +713,8 @@ Public variables and constants</h2></td></tr>
 
 <p>True until after the first call to set_forcing. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">logical</span> :: first_call_set_forcing = .true. <span class="comment">!&lt; True until after the first call to set_forcing</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00118">118</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">logical</span> :: first_call_set_forcing = .true. <span class="comment">!&lt; True until after the first call to set_forcing</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -767,8 +789,8 @@ Public variables and constants</h2></td></tr>
 
 <p>frozen runoff variable name in the input file </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: frunoff_var   = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; frozen runoff variable name in the input file</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00169">169</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: frunoff_var   = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; frozen runoff variable name in the input file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -784,10 +806,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>gravitational acceleration [m s-2] </p>
+<p>gravitational acceleration [L2 Z-1 T-2 ~&gt; m s-2] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00082">82</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">  real</span> :: G_Earth<span class="comment">               !&lt; gravitational acceleration [m s-2]</span></div>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">  real</span> :: G_Earth<span class="comment">               !&lt; gravitational acceleration [L2 Z-1 T-2 ~&gt; m s-2]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -919,8 +941,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure with diagnostics handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00194">194</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordtype">type</span>(forcing_diags), <span class="keywordtype">public</span> :: handles<span class="comment"> !&lt; A structure with diagnostics handles</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00197">197</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">type</span>(forcing_diags), <span class="keywordtype">public</span> :: handles<span class="comment"> !&lt; A structure with diagnostics handles</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -938,8 +960,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structures for named forcing packages. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00203">203</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordtype">type</span>(idealized_hurricane_CS), <span class="keywordtype">pointer</span> :: idealized_hurricane_CSp =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00206">206</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordtype">type</span>(idealized_hurricane_CS), <span class="keywordtype">pointer</span> :: idealized_hurricane_CSp =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -957,8 +979,8 @@ Public variables and constants</h2></td></tr>
 
 <p>directory where NetCDF input files are. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00132">132</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">character(len=200)</span> :: inputdir<span class="comment">    !&lt; directory where NetCDF input files are.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00135">135</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">character(len=200)</span> :: inputdir<span class="comment">    !&lt; directory where NetCDF input files are.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1014,8 +1036,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The last time level read of latent heat flux. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00186">186</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordtype">integer</span> :: latent_last_lev = -1<span class="comment"> !&lt; The last time level read of latent heat flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00189">189</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordtype">integer</span> :: latent_last_lev = -1<span class="comment"> !&lt; The last time level read of latent heat flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1033,8 +1055,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of time levels in the file of latent heat flux. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00174">174</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordtype">integer</span> :: latent_nlev = -1<span class="comment"> !&lt; The number of time levels in the file of latent heat flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00177">177</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">integer</span> :: latent_nlev = -1<span class="comment"> !&lt; The number of time levels in the file of latent heat flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1052,8 +1074,8 @@ Public variables and constants</h2></td></tr>
 
 <p>latent heat flux variable name in the input file </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00160">160</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: latent_var    = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; latent heat flux variable name in the input file</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00163">163</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: latent_var    = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; latent heat flux variable name in the input file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1071,8 +1093,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The file from which the latent heat flux is read. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00141">141</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">character(len=200)</span> :: latentheat_file   = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the latent heat flux is read</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00144">144</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">character(len=200)</span> :: latentheat_file   = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the latent heat flux is read</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1109,8 +1131,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The file from which the longwave heat flux is read. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00137">137</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">character(len=200)</span> :: longwave_file     = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the longwave heat flux is read</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00140">140</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordtype">character(len=200)</span> :: longwave_file     = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the longwave heat flux is read</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1128,8 +1150,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The file from which the upward longwave heat flux is read. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00147">147</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">character(len=200)</span> :: longwaveup_file  = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the upward longwave heat flux is read</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00150">150</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordtype">character(len=200)</span> :: longwaveup_file  = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the upward longwave heat flux is read</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1147,8 +1169,8 @@ Public variables and constants</h2></td></tr>
 
 <p>liquid runoff variable name in the input file </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00165">165</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: lrunoff_var   = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; liquid runoff variable name in the input file</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00168">168</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: lrunoff_var   = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; liquid runoff variable name in the input file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1166,8 +1188,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The last time level read of longwave heat flux. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00185">185</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordtype">integer</span> :: LW_last_lev = -1<span class="comment">     !&lt; The last time level read of longwave heat flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00188">188</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordtype">integer</span> :: LW_last_lev = -1<span class="comment">     !&lt; The last time level read of longwave heat flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1185,8 +1207,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of time levels in the file of longwave heat flux. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00173">173</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordtype">integer</span> :: LW_nlev = -1<span class="comment">     !&lt; The number of time levels in the file of longwave heat flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00176">176</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordtype">integer</span> :: LW_nlev = -1<span class="comment">     !&lt; The number of time levels in the file of longwave heat flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1204,8 +1226,8 @@ Public variables and constants</h2></td></tr>
 
 <p>lonngwave heat flux variable name in the input file </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: LW_var        = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; lonngwave heat flux variable name in the input file</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00161">161</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: LW_var        = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; lonngwave heat flux variable name in the input file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1223,8 +1245,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structures for named forcing packages. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00201">201</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordtype">type</span>(MESO_surface_forcing_CS), <span class="keywordtype">pointer</span> :: MESO_forcing_CSp =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00204">204</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordtype">type</span>(MESO_surface_forcing_CS), <span class="keywordtype">pointer</span> :: MESO_forcing_CSp =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1242,8 +1264,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structures for named forcing packages. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00202">202</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordtype">type</span>(Neverland_surface_forcing_CS), <span class="keywordtype">pointer</span> :: Neverland_forcing_CSp =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00205">205</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordtype">type</span>(Neverland_surface_forcing_CS), <span class="keywordtype">pointer</span> :: Neverland_forcing_CSp =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1261,8 +1283,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The last time level read of precipitation. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00189">189</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordtype">integer</span> :: precip_last_lev = -1<span class="comment"> !&lt; The last time level read of precipitation</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00192">192</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordtype">integer</span> :: precip_last_lev = -1<span class="comment"> !&lt; The last time level read of precipitation</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1280,8 +1302,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of time levels in the file of precipitation. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00177">177</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">integer</span> :: precip_nlev = -1<span class="comment"> !&lt; The number of time levels in the file of precipitation</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00180">180</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordtype">integer</span> :: precip_nlev = -1<span class="comment"> !&lt; The number of time levels in the file of precipitation</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1299,8 +1321,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The file from which the rainfall is read. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00143">143</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">character(len=200)</span> :: rain_file   = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the rainfall is read</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00146">146</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordtype">character(len=200)</span> :: rain_file   = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the rainfall is read</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1318,8 +1340,8 @@ Public variables and constants</h2></td></tr>
 
 <p>rainfall variable name in the input file </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00163">163</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: rain_var      = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; rainfall variable name in the input file</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: rain_var      = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; rainfall variable name in the input file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1356,8 +1378,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the restart control structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00128">128</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">type</span>(MOM_restart_CS), <span class="keywordtype">pointer</span> :: restart_CSp =&gt; null() <span class="comment">!&lt; A pointer to the restart control structure</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">type</span>(MOM_restart_CS), <span class="keywordtype">pointer</span> :: restart_CSp =&gt; null() <span class="comment">!&lt; A pointer to the restart control structure</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1413,8 +1435,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The file from which the runoff is read. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00145">145</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordtype">character(len=200)</span> :: runoff_file = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the runoff is read</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00148">148</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordtype">character(len=200)</span> :: runoff_file = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the runoff is read</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1432,8 +1454,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The last time level read of runoff. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00190">190</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">integer</span> :: runoff_last_lev = -1<span class="comment"> !&lt; The last time level read of runoff</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00193">193</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keywordtype">integer</span> :: runoff_last_lev = -1<span class="comment"> !&lt; The last time level read of runoff</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1451,8 +1473,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of time levels in the file of runoff. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00178">178</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordtype">integer</span> :: runoff_nlev = -1<span class="comment"> !&lt; The number of time levels in the file of runoff</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00181">181</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordtype">integer</span> :: runoff_nlev = -1<span class="comment"> !&lt; The number of time levels in the file of runoff</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1470,8 +1492,8 @@ Public variables and constants</h2></td></tr>
 
 <p>target salinity at north used in buoyancy_forcing_linear </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">  real</span> :: S_north<span class="comment">   !&lt; target salinity at north used in buoyancy_forcing_linear</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">  real</span> :: S_north<span class="comment">   !&lt; target salinity at north used in buoyancy_forcing_linear</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1508,8 +1530,8 @@ Public variables and constants</h2></td></tr>
 
 <p>target salinity at south used in buoyancy_forcing_linear </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">  real</span> :: S_south<span class="comment">   !&lt; target salinity at south used in buoyancy_forcing_linear</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00116">116</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">  real</span> :: S_south<span class="comment">   !&lt; target salinity at south used in buoyancy_forcing_linear</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1527,8 +1549,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The file from which to read the sea surface salinity to restore toward. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00152">152</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">character(len=200)</span> :: salinityrestore_file = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which to read the sea surface</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00155">155</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordtype">character(len=200)</span> :: salinityrestore_file = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which to read the sea surface</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1546,8 +1568,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structures for named forcing packages. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00204">204</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordtype">type</span>(SCM_CVmix_tests_CS),      <span class="keywordtype">pointer</span> :: SCM_CVmix_tests_CSp =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00207">207</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keywordtype">type</span>(SCM_CVmix_tests_CS),      <span class="keywordtype">pointer</span> :: SCM_CVmix_tests_CSp =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1565,8 +1587,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The last time level read of sensible heat flux. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00187">187</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordtype">integer</span> :: sens_last_lev = -1<span class="comment">   !&lt; The last time level read of sensible heat flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00190">190</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">integer</span> :: sens_last_lev = -1<span class="comment">   !&lt; The last time level read of sensible heat flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1584,8 +1606,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of time levels in the file of sensible heat flux. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00175">175</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordtype">integer</span> :: sens_nlev = -1<span class="comment">   !&lt; The number of time levels in the file of sensible heat flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00178">178</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordtype">integer</span> :: sens_nlev = -1<span class="comment">   !&lt; The number of time levels in the file of sensible heat flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1603,8 +1625,8 @@ Public variables and constants</h2></td></tr>
 
 <p>sensible heat flux variable name in the input file </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00161">161</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: sens_var      = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; sensible heat flux variable name in the input file</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00164">164</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: sens_var      = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; sensible heat flux variable name in the input file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1622,8 +1644,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The file from which the sensible heat flux is read. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00140">140</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordtype">character(len=200)</span> :: sensibleheat_file = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the sensible heat flux is read</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00143">143</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">character(len=200)</span> :: sensibleheat_file = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the sensible heat flux is read</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1641,8 +1663,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The file from which the shortwave heat flux is read. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00138">138</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordtype">character(len=200)</span> :: shortwave_file    = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the shortwave heat flux is read</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00141">141</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">character(len=200)</span> :: shortwave_file    = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the shortwave heat flux is read</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1660,8 +1682,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The file from which the upward shorwave heat flux is read. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00148">148</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordtype">character(len=200)</span> :: shortwaveup_file = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the upward shorwave heat flux is read</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00151">151</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">character(len=200)</span> :: shortwaveup_file = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the upward shorwave heat flux is read</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1679,8 +1701,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The file from which the snowfall is read. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00144">144</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">character(len=200)</span> :: snow_file   = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the snowfall is read</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00147">147</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">character(len=200)</span> :: snow_file   = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which the snowfall is read</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1698,8 +1720,8 @@ Public variables and constants</h2></td></tr>
 
 <p>snowfall variable name in the input file </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00164">164</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: snow_var      = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; snowfall variable name in the input file</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00167">167</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: snow_var      = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; snowfall variable name in the input file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1736,8 +1758,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The last time level read of target SSS. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00192">192</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordtype">integer</span> :: SSS_last_lev = -1<span class="comment">    !&lt; The last time level read of target SSS</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00195">195</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">integer</span> :: SSS_last_lev = -1<span class="comment">    !&lt; The last time level read of target SSS</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1755,8 +1777,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of time levels in the file of target SSS. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00180">180</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordtype">integer</span> :: SSS_nlev = -1<span class="comment">    !&lt; The number of time levels in the file of target SSS</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00183">183</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">integer</span> :: SSS_nlev = -1<span class="comment">    !&lt; The number of time levels in the file of target SSS</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1774,8 +1796,8 @@ Public variables and constants</h2></td></tr>
 
 <p>target sea surface salinity variable name in the input file </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00168">168</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: SSS_restore_var = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; target sea surface salinity variable name in the input file</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00171">171</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: SSS_restore_var = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; target sea surface salinity variable name in the input file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1793,8 +1815,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The last time level read of target SST. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00191">191</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordtype">integer</span> :: SST_last_lev  = -1<span class="comment">   !&lt; The last time level read of target SST</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00194">194</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordtype">integer</span> :: SST_last_lev  = -1<span class="comment">   !&lt; The last time level read of target SST</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1812,8 +1834,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of time levels in the file of target SST. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00179">179</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordtype">integer</span> :: SST_nlev  = -1<span class="comment">   !&lt; The number of time levels in the file of target SST</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00182">182</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordtype">integer</span> :: SST_nlev  = -1<span class="comment">   !&lt; The number of time levels in the file of target SST</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1831,8 +1853,8 @@ Public variables and constants</h2></td></tr>
 
 <p>target sea surface temeperature variable name in the input file </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00167">167</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: SST_restore_var = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; target sea surface temeperature variable name in the input file</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00170">170</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: SST_restore_var = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; target sea surface temeperature variable name in the input file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1850,8 +1872,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The file from which to read the sea surface temperature to restore toward. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00150">150</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordtype">character(len=200)</span> :: SSTrestore_file      = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which to read the sea surface</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00153">153</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordtype">character(len=200)</span> :: SSTrestore_file      = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; The file from which to read the sea surface</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1869,8 +1891,8 @@ Public variables and constants</h2></td></tr>
 
 <p>X-windstress variable name in the input file. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00155">155</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: stress_x_var  = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; X-windstress variable name in the input file</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: stress_x_var  = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; X-windstress variable name in the input file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1888,8 +1910,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Y-windstress variable name in the input file. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00156">156</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: stress_y_var  = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; Y-windstress variable name in the input file</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00159">159</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: stress_y_var  = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; Y-windstress variable name in the input file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1907,8 +1929,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The last time level read of shortwave heat flux. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00184">184</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordtype">integer</span> :: SW_last_lev   = -1<span class="comment">   !&lt; The last time level read of shortwave heat flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00187">187</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordtype">integer</span> :: SW_last_lev   = -1<span class="comment">   !&lt; The last time level read of shortwave heat flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1926,8 +1948,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of time levels in the file of shortwave heat flux. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00172">172</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordtype">integer</span> :: SW_nlev   = -1<span class="comment">   !&lt; The number of time levels in the file of shortwave heat flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00175">175</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordtype">integer</span> :: SW_nlev   = -1<span class="comment">   !&lt; The number of time levels in the file of shortwave heat flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1945,8 +1967,8 @@ Public variables and constants</h2></td></tr>
 
 <p>shortwave heat flux variable name in the input file </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00159">159</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: SW_var        = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; shortwave heat flux variable name in the input file</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00162">162</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: SW_var        = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; shortwave heat flux variable name in the input file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1964,8 +1986,8 @@ Public variables and constants</h2></td></tr>
 
 <p>target temperatures at north used in buoyancy_forcing_linear </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00110">110</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">  real</span> :: T_north<span class="comment">   !&lt; target temperatures at north used in buoyancy_forcing_linear</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">  real</span> :: T_north<span class="comment">   !&lt; target temperatures at north used in buoyancy_forcing_linear</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2002,8 +2024,8 @@ Public variables and constants</h2></td></tr>
 
 <p>target temperatures at south used in buoyancy_forcing_linear </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">  real</span> :: T_south<span class="comment">   !&lt; target temperatures at south used in buoyancy_forcing_linear</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">  real</span> :: T_south<span class="comment">   !&lt; target temperatures at south used in buoyancy_forcing_linear</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2059,8 +2081,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the structure that is used to orchestrate the calling of tracer packages. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">type</span>(tracer_flow_control_CS), <span class="keywordtype">pointer</span> :: tracer_flow_CSp =&gt; null() <span class="comment">!&lt; A pointer to the structure</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00128">128</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">type</span>(tracer_flow_control_CS), <span class="keywordtype">pointer</span> :: tracer_flow_CSp =&gt; null() <span class="comment">!&lt; A pointer to the structure</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2078,8 +2100,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structures for named forcing packages. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00197">197</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">type</span>(user_revise_forcing_CS),  <span class="keywordtype">pointer</span> :: urf_CS =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00200">200</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">type</span>(user_revise_forcing_CS),  <span class="keywordtype">pointer</span> :: urf_CS =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2116,8 +2138,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structures for named forcing packages. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00198">198</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">type</span>(user_surface_forcing_CS), <span class="keywordtype">pointer</span> :: user_forcing_CSp =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00201">201</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordtype">type</span>(user_surface_forcing_CS), <span class="keywordtype">pointer</span> :: user_forcing_CSp =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2135,8 +2157,8 @@ Public variables and constants</h2></td></tr>
 
 <p>ustar variable name in the input file </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00157">157</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: ustar_var     = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; ustar variable name in the input file</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00160">160</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">character(len=80)</span>  :: ustar_var     = <span class="stringliteral">&#39;&#39;</span><span class="comment"> !&lt; ustar variable name in the input file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2192,8 +2214,8 @@ Public variables and constants</h2></td></tr>
 
 <p>indicator for wind forcing type (2gyre, USER, FILE..) </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00133">133</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">character(len=200)</span> :: wind_config<span class="comment"> !&lt; indicator for wind forcing type (2gyre, USER, FILE..)</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00136">136</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">character(len=200)</span> :: wind_config<span class="comment"> !&lt; indicator for wind forcing type (2gyre, USER, FILE..)</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2211,8 +2233,8 @@ Public variables and constants</h2></td></tr>
 
 <p>if wind_config is "file", file to use </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00134">134</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordtype">character(len=200)</span> :: wind_file<span class="comment">   !&lt; if wind_config is &quot;file&quot;, file to use</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00137">137</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">character(len=200)</span> :: wind_file<span class="comment">   !&lt; if wind_config is &quot;file&quot;, file to use</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2230,8 +2252,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The last time level read of wind stress. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00183">183</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">integer</span> :: wind_last_lev = -1<span class="comment">   !&lt; The last time level read of wind stress</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00186">186</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordtype">integer</span> :: wind_last_lev = -1<span class="comment">   !&lt; The last time level read of wind stress</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2249,8 +2271,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of time levels in the file of wind stress. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00171">171</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordtype">integer</span> :: wind_nlev = -1<span class="comment">   !&lt; The number of time levels in the file of wind stress</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00174">174</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordtype">integer</span> :: wind_nlev = -1<span class="comment">   !&lt; The number of time levels in the file of wind stress</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2268,8 +2290,8 @@ Public variables and constants</h2></td></tr>
 
 <p>value by which wind-stresses are scaled, ND. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">  real</span> :: wind_scale<span class="comment">          !&lt; value by which wind-stresses are scaled, ND.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">  real</span> :: wind_scale<span class="comment">          !&lt; value by which wind-stresses are scaled, ND.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2287,8 +2309,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A character indicating how the wind stress components are staggered in WIND_FILE. Valid values are A or C for now. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">character(len=8)</span>   :: wind_stagger<span class="comment"> !&lt; A character indicating how the wind stress components</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__surface__forcing_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__surface__forcing_8F90_source.html">MOM_surface_forcing.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">character(len=8)</span>   :: wind_stagger<span class="comment"> !&lt; A character indicating how the wind stress components</span></div>
 </div><!-- fragment -->
 </div>
 </div>

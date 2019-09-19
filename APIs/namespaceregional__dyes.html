@@ -244,7 +244,7 @@ Functions/Subroutines</h2></td></tr>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    stocks(m) = 0.0</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;      stocks(m) = stocks(m) + cs%tr(i,j,k,m) * &amp;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                             (g%mask2dT(i,j) * g%areaT(i,j) * h(i,j,k))</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                             (g%mask2dT(i,j) * g%US%L_to_m**2*g%areaT(i,j) * h(i,j,k))</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    stocks(m) = gv%H_to_kg_m2 * stocks(m)</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="keywordflow">  enddo</span></div>

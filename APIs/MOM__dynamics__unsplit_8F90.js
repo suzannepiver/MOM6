@@ -2,7 +2,7 @@ var MOM__dynamics__unsplit_8F90 =
 [
     [ "mom_dyn_unsplit_cs", "structmom__dynamics__unsplit_1_1mom__dyn__unsplit__cs.html", "structmom__dynamics__unsplit_1_1mom__dyn__unsplit__cs" ],
     [ "end_dyn_unsplit", "MOM__dynamics__unsplit_8F90.html#a8f8e05fcc926eb5c1d41517f6b8cf1cb", null ],
-    [ "initialize_dyn_unsplit", "MOM__dynamics__unsplit_8F90.html#a190363f34b9f08eb7965356876dbddc4", null ],
+    [ "initialize_dyn_unsplit", "MOM__dynamics__unsplit_8F90.html#a60f13a45463d31749046a7908a5a589e", null ],
     [ "register_restarts_dyn_unsplit", "MOM__dynamics__unsplit_8F90.html#a5a650785f745fd9cf42e1e014dd2d89a", null ],
     [ "step_mom_dyn_unsplit", "MOM__dynamics__unsplit_8F90.html#ab72d911d187f9247b6cc72d87e815370", null ],
     [ "id_clock_continuity", "MOM__dynamics__unsplit_8F90.html#acef00db07a4b4452681805a38d32cd42", null ],

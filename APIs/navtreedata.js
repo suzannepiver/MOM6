@@ -59,6 +59,26 @@ var NAVTREE =
       [ "Flux advection", "Advection.html#Flux_advection", null ],
       [ "Tracer reconstruction", "Advection.html#Tracer_reconstruction", null ]
     ] ],
+    [ "NUOPC Cap", "nuopc_cap.html", [
+      [ "Overview", "nuopc_cap.html#Overview", [
+        [ "Cap Subroutines", "nuopc_cap.html#CapSubroutines", null ]
+      ] ],
+      [ "Underlying Model Interfaces", "nuopc_cap.html#UnderlyingModelInterfaces", [
+        [ "Domain Creation", "nuopc_cap.html#DomainCreation", null ],
+        [ "Initialization", "nuopc_cap.html#Initialization", null ],
+        [ "Run", "nuopc_cap.html#Run", [
+          [ "Vector Rotations", "nuopc_cap.html#VectorRotations", null ]
+        ] ],
+        [ "Finalization", "nuopc_cap.html#Finalization", null ]
+      ] ],
+      [ "Model Fields", "nuopc_cap.html#ModelFields", [
+        [ "Import Fields", "nuopc_cap.html#ImportFields", null ],
+        [ "Export Fields", "nuopc_cap.html#ExportField", null ],
+        [ "Memory Management", "nuopc_cap.html#MemoryManagement", null ],
+        [ "I/O", "nuopc_cap.html#IO", null ]
+      ] ],
+      [ "Runtime Configuration", "nuopc_cap.html#RuntimeConfiguration", null ]
+    ] ],
     [ "Todo List", "todo.html", null ],
     [ "F90 modules", "annotated.html", [
       [ "F90 module list", "annotated.html", "annotated_dup" ],
@@ -85,34 +105,34 @@ var NAVTREEINDEX =
 "MOM__EOS_8F90.html#a5d8b3af2f7c594c5219d75228ac50dd9",
 "MOM__EOS__Wright_8F90.html#a576d1ff13c93f4a3ffbd483d43a78ab7",
 "MOM__coms_8F90.html#a7af397491bbb8f8e6e9a268492bebc33",
-"MOM__diagnostics_8F90.html",
-"MOM__forcing__type_8F90.html#a44ade8a584921047fcf960f4cdb9914c",
-"MOM__memory__macros_8h.html#aaa460a40dc3a031a51f91dd370a6cd9b",
-"MOM__remapping_8F90.html#a40ab417b859bc139c78739f29291641f",
-"MOM__tidal__mixing_8F90.html#aa77238da241cd9c94f24a9bd8d3b2fe1",
-"Runtime_parameter_system.html",
-"interfacemidas__vertmap_1_1fill__boundaries.html#a7576f278e5bb61728717184d907d94b9",
-"interfacemom__io_1_1file__exists.html#a5df813867c2eaf194bef25dd16c0fe7b",
-"namespacemom__controlled__forcing.html",
-"soliton__initialization_8F90.html",
-"structmom_1_1mom__control__struct.html#a4ff33f6bd282d38f932ee28d3f304d38",
-"structmom__barotropic_1_1barotropic__cs.html#ab9b69a111c34ac5ac4b24fba46654ddb",
-"structmom__controlled__forcing_1_1ctrl__forcing__cs.html#abd92452fa904e717a2add1d178ca8598",
-"structmom__diabatic__driver_1_1diabatic__cs.html#a96331d361bc5f775b9428d4acccdb6f3",
-"structmom__diagnostics_1_1diagnostics__cs.html#a23e4f5f4fb48652807b7fffd80bdeebf",
-"structmom__dyn__horgrid_1_1dyn__horgrid__type.html#ae27be0e53812a8f1bd1c8be17dbbd95e",
-"structmom__entrain__diffusive_1_1entrain__diffusive__cs.html#a52e16663b95ee82411a1e7e784a3d229",
-"structmom__grid_1_1ocean__grid__type.html#a0345ea2917d3ca5b5ebf4a42d0e89a8d",
-"structmom__ice__shelf_1_1ice__shelf__cs.html#a5892a9b94b525d7317d9b498d0cece1f",
-"structmom__lateral__mixing__coeffs_1_1varmix__cs.html#a387e24e508fa938f35cc50155e32cc0a",
-"structmom__ocean__model__mct_1_1ocean__state__type.html#a9e9321673221d77d72d79b706a4e30a0",
-"structmom__open__boundary_1_1file__obc__cs.html#a2deb9d7581c47efd279c7c4fece04c08",
-"structmom__restart_1_1mom__restart__cs.html#a087150e928b37ef92c84e989e1d952fc",
-"structmom__surface__forcing_1_1surface__forcing__cs.html#a5900d5ef6a3298655ac2915656b36c62",
-"structmom__thickness__diffuse_1_1thickness__diffuse__cs.html#a87a42d89b1d2b361f6e82b4bf679cba8",
-"structmom__unit__scaling_1_1unit__scale__type.html#a1a734d24b7a23915805fee4745c56302",
-"structmom__wave__speed_1_1wave__speed__cs.html#a2c93a316aed8fe0dc700e109ac974a8d",
-"time__utils_8F90.html#a9d670caa90ff003951050efb6ccddc99"
+"MOM__diag__vkernels_8F90.html#a89369e4bf4b7795f6e384762d11f0d23",
+"MOM__file__parser_8F90.html#ae0b982cc161173a401291757a6677373",
+"MOM__memory__macros_8h.html#a2c9d3957c5b3b5e1b650ae0bc4250531",
+"MOM__regridding_8F90.html#ad693fbb3424bb0ba9d0ad8878828e604",
+"MOM__thickness__diffuse_8F90.html#ab518d28fc8ec27b184b06b25a601e1dd",
+"RGC__initialization_8F90.html#a70f26304c4d268537f9fa9bacc291f51",
+"functions_vars_y.html",
+"interfacemom__file__parser_1_1log__version.html#a2fa8868a3a55aeb60c111b76af123006",
+"namespacedyed__channel__initialization.html",
+"regrid__interp_8F90.html#a9ed8b5720d74090e95ca0074240a0d8a",
+"structmeso__surface__forcing_1_1meso__surface__forcing__cs.html#ad3cde45c6a6754cfa119534e80013f5f",
+"structmom__barotropic_1_1barotropic__cs.html#a70d146338c18588806a82577dd72c12c",
+"structmom__checksum__packages_1_1stats.html#ae9c053ef7c7dbe08996d004773ea9bfc",
+"structmom__diabatic__driver_1_1diabatic__cs.html#a26b40e63944ec686e3316186432938e7",
+"structmom__diag__mediator_1_1diagcs__dsamp.html#ab6444a030b7420d7a31ac20af958eaf9",
+"structmom__dyn__horgrid_1_1dyn__horgrid__type.html#a74e88a84b2fd44528ddbc78f268c959e",
+"structmom__energetic__pbl_1_1energetic__pbl__cs.html#acd89d56e63cfcdf402cfe7b412a88836",
+"structmom__forcing__type_1_1mech__forcing.html#a67edd3866cae1e3d624b4d30f9981a93",
+"structmom__hor__visc_1_1hor__visc__cs.html#af6e089f2309b30a3b20b95b72c38f2a1",
+"structmom__kappa__shear_1_1kappa__shear__cs.html#a0e1484cd57989de6303cc1c24edb69a2",
+"structmom__ocean__model__mct_1_1ocean__public__type.html#a53b984f5bd2f7ef917b56dbb85215810",
+"structmom__offline__main_1_1offline__transport__cs.html#ae5210e4b6c1674a0c0d9e80777455976",
+"structmom__regularize__layers_1_1regularize__layers__cs.html#a06665faf1d339e5f762431c7df36cd9a",
+"structmom__sum__output_1_1sum__output__cs.html#ae49c98c2868366d127738cb0e2e7dcd3",
+"structmom__surface__forcing__nuopc_1_1surface__forcing__cs.html#a971a5e32e796de922073226bda071c64",
+"structmom__tracer__registry_1_1tracer__type.html#a48e5e98f50533e55c46a66b85dd54d2a",
+"structmom__verticalgrid_1_1verticalgrid__type.html#a7bef3c3eb4d2654708a7cf20f0f74e6b",
+"structuser__change__diffusivity_1_1user__change__diff__cs.html#aeda69da5d3c88e1825e04d3c4a0b3559"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

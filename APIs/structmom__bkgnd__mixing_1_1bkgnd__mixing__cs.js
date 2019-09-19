@@ -1,7 +1,7 @@
 var structmom__bkgnd__mixing_1_1bkgnd__mixing__cs =
 [
     [ "bckgrnd_vdc1", "structmom__bkgnd__mixing_1_1bkgnd__mixing__cs.html#a9c886ccfd44d9df64345cb536565cccf", null ],
-    [ "bckgrnd_vdc_ban", "structmom__bkgnd__mixing_1_1bkgnd__mixing__cs.html#a592261aba7ec0e92db212da69314eb27", null ],
+    [ "bckgrnd_vdc_banda", "structmom__bkgnd__mixing_1_1bkgnd__mixing__cs.html#a52cdcf60a7a64969ade76ce16b29b687", null ],
     [ "bckgrnd_vdc_eq", "structmom__bkgnd__mixing_1_1bkgnd__mixing__cs.html#a51adfbbfdbc48c4ced4dedcd02e7d329", null ],
     [ "bckgrnd_vdc_psim", "structmom__bkgnd__mixing_1_1bkgnd__mixing__cs.html#a01e002dda2a6292d8cc2a9dd341bd34c", null ],
     [ "bkgnd_scheme_str", "structmom__bkgnd__mixing_1_1bkgnd__mixing__cs.html#a50d3cc749f0833cc12715f6cec3a16b9", null ],
@@ -28,5 +28,6 @@ var structmom__bkgnd__mixing_1_1bkgnd__mixing__cs =
     [ "kdml", "structmom__bkgnd__mixing_1_1bkgnd__mixing__cs.html#af3e76df1c8ae29abaf58681b1d61ac31", null ],
     [ "kv_bkgnd", "structmom__bkgnd__mixing_1_1bkgnd__mixing__cs.html#aa0978850343111e6a2b3119d157c58d8", null ],
     [ "n0_2omega", "structmom__bkgnd__mixing_1_1bkgnd__mixing__cs.html#a51bc5a6d31ec5ae2cac496e24df675eb", null ],
+    [ "omega", "structmom__bkgnd__mixing_1_1bkgnd__mixing__cs.html#a7d8e742ba2e49ff8433950e09cc6161d", null ],
     [ "prandtl_bkgnd", "structmom__bkgnd__mixing_1_1bkgnd__mixing__cs.html#ab0a66ba4bf7a6b3172e2bbe5d46b2c19", null ]
 ];

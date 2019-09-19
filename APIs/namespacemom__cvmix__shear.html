@@ -202,12 +202,12 @@ Data Types</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">g</td><td>Grid structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">gv</td><td>Vertical grid structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">u_h</td><td>Initial zonal velocity on T points [m s-1]. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">v_h</td><td>Initial meridional velocity on T points [m s-1]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">u_h</td><td>Initial zonal velocity on T points [L T-1 ~&gt; m s-1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v_h</td><td>Initial meridional velocity on T points [L T-1 ~&gt; m s-1] </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Layer thickness [H ~&gt; m or kg m-2]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tv</td><td>Thermodynamics structure. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">kd</td><td>The vertical diffusivity at each interface (not layer!) [Z2 s-1 ~&gt; m2 s-1]. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">kv</td><td>The vertical viscosity at each interface (not layer!) [Z2 s-1 ~&gt; m2 s-1]. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">kd</td><td>The vertical diffusivity at each interface (not layer!) [Z2 T-1 ~&gt; m2 s-1]. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">kv</td><td>The vertical viscosity at each interface (not layer!) [Z2 T-1 ~&gt; m2 s-1]. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">cs</td><td>The control structure returned by a previous call to CVMix_shear_init. </td></tr>
   </table>
   </dd>
@@ -216,128 +216,129 @@ Data Types</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00060">60</a> of file <a class="el" href="MOM__CVMix__shear_8F90_source.html">MOM_CVMix_shear.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type),                      <span class="keywordtype">intent(in)</span>  :: G<span class="comment">   !&lt; Grid structure.</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type),                    <span class="keywordtype">intent(in)</span>  :: GV<span class="comment">  !&lt; Vertical grid structure.</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),                      <span class="keywordtype">intent(in)</span>  :: US<span class="comment">     !&lt; A dimensional unit scaling type</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G))</span>,   <span class="keywordtype">intent(in)</span>  :: u_H<span class="comment"> !&lt; Initial zonal velocity on T points [m s-1].</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G))</span>,   <span class="keywordtype">intent(in)</span>  :: v_H<span class="comment"> !&lt; Initial meridional velocity on T points [m s-1].</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G))</span>,   <span class="keywordtype">intent(in)</span>  :: h<span class="comment">   !&lt; Layer thickness [H ~&gt; m or kg m-2].</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">type</span>(thermo_var_ptrs),                      <span class="keywordtype">intent(in)</span>  :: tv<span class="comment">  !&lt; Thermodynamics structure.</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G)+1)</span>, <span class="keywordtype">intent(out)</span> :: kd<span class="comment">  !&lt; The vertical diffusivity at each interface</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">                                                                 !! (not layer!) [Z2 s-1 ~&gt; m2 s-1].</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G)+1)</span>, <span class="keywordtype">intent(out)</span> :: kv<span class="comment">  !&lt; The vertical viscosity at each interface</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">                                                                 !! (not layer!) [Z2 s-1 ~&gt; m2 s-1].</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">type</span>(CVMix_shear_cs),                       <span class="keywordtype">pointer</span>     :: CS<span class="comment">  !&lt; The control structure returned by a previous call to</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">                                                                 !! CVMix_shear_init.</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">! Local variables</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, kk, km1</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">  real</span> :: GoRho</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">  real</span> :: pref, DU, DV, DRHO, DZ, N2, S2, dummy</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(2*(G%ke))</span> :: pres_1d, temp_1d, salt_1d, rho_1d</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(G%ke+1)</span> :: Ri_Grad<span class="comment"> !&lt; Gradient Richardson number</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(G%ke+1)</span> :: Kvisc<span class="comment">   !&lt; Vertical viscosity at interfaces [m2 s-1]</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(G%ke+1)</span> :: Kdiff<span class="comment">   !&lt; Diapycnal diffusivity at interfaces [m2 s-1]</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">parameter</span>         :: epsln = 1.e-10 <span class="comment">!&lt; Threshold to identify vanished layers</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">! some constants</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  gorho = (gv%g_Earth*us%m_to_Z) / gv%Rho0</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">do</span> j = g%jsc, g%jec</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">do</span> i = g%isc, g%iec</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="comment">! skip calling for land points</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordflow">if</span> (g%mask2dT(i,j)==0.) cycle</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="comment">! Richardson number computed for each cell in a column.</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      pref = 0.</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      ri_grad(:)=1.e8 <span class="comment">!Initialize w/ large Richardson value</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">do</span> k=1,g%ke</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">! pressure, temp, and saln for EOS</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="comment">! kk+1 = k fields</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">! kk+2 = km1 fields</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        km1  = max(1, k-1)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        kk   = 2*(k-1)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        pres_1d(kk+1) = pref</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        pres_1d(kk+2) = pref</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        temp_1d(kk+1) = tv%T(i,j,k)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        temp_1d(kk+2) = tv%T(i,j,km1)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        salt_1d(kk+1) = tv%S(i,j,k)</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        salt_1d(kk+2) = tv%S(i,j,km1)</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment">! pRef is pressure at interface between k and km1.</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="comment">! iterate pRef for next pass through k-loop.</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        pref = pref + gv%H_to_Pa * h(i,j,k)</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordflow">      enddo</span> <span class="comment">! k-loop finishes</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="comment">! compute in-situ density</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keyword">call </span>calculate_density(temp_1d, salt_1d, pres_1d, rho_1d, 1, 2*g%ke, tv%EQN_OF_STATE)</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="comment">! N2 (can be negative) on interface</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keywordflow">do</span> k = 1, g%ke</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        km1 = max(1, k-1)</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        kk = 2*(k-1)</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        du = (u_h(i,j,k))-(u_h(i,j,km1))</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        dv = (v_h(i,j,k))-(v_h(i,j,km1))</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        drho = (gorho * (rho_1d(kk+1) - rho_1d(kk+2)) )</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        dz = ((0.5*(h(i,j,km1) + h(i,j,k))+gv%H_subroundoff)*gv%H_to_m)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        n2 = drho/dz</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        s2 = (du*du+dv*dv)/(dz*dz)</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        ri_grad(k) = max(0.,n2)/max(s2,1.e-10)</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="comment">! fill 3d arrays, if user asks for diagsnostics</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">if</span> (cs%id_N2 &gt; 0) cs%N2(i,j,k) = n2</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">if</span> (cs%id_S2 &gt; 0) cs%S2(i,j,k) = s2</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keywordflow">      enddo</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      ri_grad(g%ke+1) = ri_grad(g%ke)</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordflow">if</span> (cs%id_ri_grad &gt; 0) cs%ri_grad(i,j,:) = ri_grad(:)</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <span class="keywordflow">if</span> (cs%smooth_ri) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="comment">! 1) fill Ri_grad in vanished layers with adjacent value</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordflow">do</span> k = 2, g%ke</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;          <span class="keywordflow">if</span> (h(i,j,k) .le. epsln) ri_grad(k) = ri_grad(k-1)</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keywordflow">        enddo</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        ri_grad(g%ke+1) = ri_grad(g%ke)</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="comment">! 2) vertically smooth Ri with 1-2-1 filter</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        dummy =  0.25 * ri_grad(2)</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        ri_grad(g%ke+1) = ri_grad(g%ke)</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">do</span> k = 3, g%ke</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;          ri_grad(k) = dummy + 0.5 * ri_grad(k) + 0.25 * ri_grad(k+1)</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;          dummy = 0.25 * ri_grad(k)</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keywordflow">        enddo</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">if</span> (cs%id_ri_grad_smooth &gt; 0) cs%ri_grad_smooth(i,j,:) = ri_grad(:)</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keywordflow">      endif</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <span class="keywordflow">do</span> k=1,g%ke+1</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        kvisc(k) = us%Z_to_m**2 * kv(i,j,k)</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        kdiff(k) = us%Z_to_m**2 * kd(i,j,k)</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keywordflow">      enddo</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      <span class="comment">! Call to CVMix wrapper for computing interior mixing coefficients.</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <span class="keyword">call  </span>cvmix_coeffs_shear(mdiff_out=kvisc(:), &amp;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                                   tdiff_out=kdiff(:), &amp;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                                   rich=ri_grad(:), &amp;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                                   nlev=g%ke,    &amp;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                   max_nlev=g%ke)</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="keywordflow">do</span> k=1,g%ke+1</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        kv(i,j,k) = us%m_to_Z**2 * kvisc(k)</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        kd(i,j,k) = us%m_to_Z**2 * kdiff(k)</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keywordflow">      enddo</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keywordflow">  enddo</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="comment">! write diagnostics</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordflow">if</span> (cs%id_kd &gt; 0) <span class="keyword">call </span>post_data(cs%id_kd, kd, cs%diag)</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordflow">if</span> (cs%id_kv &gt; 0) <span class="keyword">call </span>post_data(cs%id_kv, kv, cs%diag)</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordflow">if</span> (cs%id_N2 &gt; 0) <span class="keyword">call </span>post_data(cs%id_N2, cs%N2, cs%diag)</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordflow">if</span> (cs%id_S2 &gt; 0) <span class="keyword">call </span>post_data(cs%id_S2, cs%S2, cs%diag)</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordflow">if</span> (cs%id_ri_grad &gt; 0) <span class="keyword">call </span>post_data(cs%id_ri_grad, cs%ri_grad, cs%diag)</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordflow">if</span> (cs%id_ri_grad_smooth &gt; 0) <span class="keyword">call </span>post_data(cs%id_ri_grad_smooth ,cs%ri_grad_smooth, cs%diag)</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),                      <span class="keywordtype">intent(in)</span>  :: US<span class="comment">  !&lt; A dimensional unit scaling type</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G))</span>,   <span class="keywordtype">intent(in)</span>  :: u_H<span class="comment"> !&lt; Initial zonal velocity on T points [L T-1 ~&gt; m s-1]</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G))</span>,   <span class="keywordtype">intent(in)</span>  :: v_H<span class="comment"> !&lt; Initial meridional velocity on T</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">                                                                 !! points [L T-1 ~&gt; m s-1]</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G))</span>,   <span class="keywordtype">intent(in)</span>  :: h<span class="comment">   !&lt; Layer thickness [H ~&gt; m or kg m-2].</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">type</span>(thermo_var_ptrs),                      <span class="keywordtype">intent(in)</span>  :: tv<span class="comment">  !&lt; Thermodynamics structure.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G)+1)</span>, <span class="keywordtype">intent(out)</span> :: kd<span class="comment">  !&lt; The vertical diffusivity at each interface</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">                                                                 !! (not layer!) [Z2 T-1 ~&gt; m2 s-1].</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G)+1)</span>, <span class="keywordtype">intent(out)</span> :: kv<span class="comment">  !&lt; The vertical viscosity at each interface</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">                                                                 !! (not layer!) [Z2 T-1 ~&gt; m2 s-1].</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">type</span>(CVMix_shear_cs),                       <span class="keywordtype">pointer</span>     :: CS<span class="comment">  !&lt; The control structure returned by a previous</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">                                                                 !! call to CVMix_shear_init.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">! Local variables</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, kk, km1</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">  real</span> :: GoRho  <span class="comment">! Gravitational acceleration divided by density in MKS units [m4 s-2]</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">  real</span> :: pref, DU, DV, dRho, DZ, N2, S2, dummy</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(2*(G%ke))</span> :: pres_1d, temp_1d, salt_1d, rho_1d</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(G%ke+1)</span> :: Ri_Grad<span class="comment"> !&lt; Gradient Richardson number</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(G%ke+1)</span> :: Kvisc<span class="comment">   !&lt; Vertical viscosity at interfaces [m2 s-1]</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(G%ke+1)</span> :: Kdiff<span class="comment">   !&lt; Diapycnal diffusivity at interfaces [m2 s-1]</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">parameter</span>         :: epsln = 1.e-10 <span class="comment">!&lt; Threshold to identify vanished layers</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">! some constants</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  gorho = gv%mks_g_Earth / gv%Rho0</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">do</span> j = g%jsc, g%jec</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">do</span> i = g%isc, g%iec</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="comment">! skip calling for land points</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keywordflow">if</span> (g%mask2dT(i,j)==0.) cycle</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="comment">! Richardson number computed for each cell in a column.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      pref = 0.</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      ri_grad(:)=1.e8 <span class="comment">!Initialize w/ large Richardson value</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keywordflow">do</span> k=1,g%ke</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="comment">! pressure, temp, and saln for EOS</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">! kk+1 = k fields</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="comment">! kk+2 = km1 fields</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        km1  = max(1, k-1)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        kk   = 2*(k-1)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        pres_1d(kk+1) = pref</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        pres_1d(kk+2) = pref</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        temp_1d(kk+1) = tv%T(i,j,k)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        temp_1d(kk+2) = tv%T(i,j,km1)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        salt_1d(kk+1) = tv%S(i,j,k)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        salt_1d(kk+2) = tv%S(i,j,km1)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="comment">! pRef is pressure at interface between k and km1.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="comment">! iterate pRef for next pass through k-loop.</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        pref = pref + gv%H_to_Pa * h(i,j,k)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordflow">      enddo</span> <span class="comment">! k-loop finishes</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="comment">! compute in-situ density</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keyword">call </span>calculate_density(temp_1d, salt_1d, pres_1d, rho_1d, 1, 2*g%ke, tv%EQN_OF_STATE)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="comment">! N2 (can be negative) on interface</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <span class="keywordflow">do</span> k = 1, g%ke</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        km1 = max(1, k-1)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        kk = 2*(k-1)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        du = us%L_T_to_m_s*(u_h(i,j,k) - u_h(i,j,km1))</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        dv = us%L_T_to_m_s*(v_h(i,j,k) - v_h(i,j,km1))</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        drho = (gorho * (rho_1d(kk+1) - rho_1d(kk+2)) )</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        dz = ((0.5*(h(i,j,km1) + h(i,j,k))+gv%H_subroundoff)*gv%H_to_m)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        n2 = drho/dz</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        s2 = (du*du+dv*dv)/(dz*dz)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        ri_grad(k) = max(0.,n2)/max(s2,1.e-10)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="comment">! fill 3d arrays, if user asks for diagsnostics</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">if</span> (cs%id_N2 &gt; 0) cs%N2(i,j,k) = n2</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">if</span> (cs%id_S2 &gt; 0) cs%S2(i,j,k) = s2</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keywordflow">      enddo</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      ri_grad(g%ke+1) = ri_grad(g%ke)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      <span class="keywordflow">if</span> (cs%id_ri_grad &gt; 0) cs%ri_grad(i,j,:) = ri_grad(:)</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      <span class="keywordflow">if</span> (cs%smooth_ri) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="comment">! 1) fill Ri_grad in vanished layers with adjacent value</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">do</span> k = 2, g%ke</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;          <span class="keywordflow">if</span> (h(i,j,k) .le. epsln) ri_grad(k) = ri_grad(k-1)</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keywordflow">        enddo</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        ri_grad(g%ke+1) = ri_grad(g%ke)</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="comment">! 2) vertically smooth Ri with 1-2-1 filter</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        dummy =  0.25 * ri_grad(2)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        ri_grad(g%ke+1) = ri_grad(g%ke)</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">do</span> k = 3, g%ke</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;          ri_grad(k) = dummy + 0.5 * ri_grad(k) + 0.25 * ri_grad(k+1)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;          dummy = 0.25 * ri_grad(k)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keywordflow">        enddo</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">if</span> (cs%id_ri_grad_smooth &gt; 0) cs%ri_grad_smooth(i,j,:) = ri_grad(:)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keywordflow">      endif</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordflow">do</span> k=1,g%ke+1</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        kvisc(k) = us%Z2_T_to_m2_s * kv(i,j,k)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        kdiff(k) = us%Z2_T_to_m2_s * kd(i,j,k)</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keywordflow">      enddo</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <span class="comment">! Call to CVMix wrapper for computing interior mixing coefficients.</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keyword">call  </span>cvmix_coeffs_shear(mdiff_out=kvisc(:), &amp;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                                   tdiff_out=kdiff(:), &amp;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                                   rich=ri_grad(:), &amp;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                   nlev=g%ke,    &amp;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                                   max_nlev=g%ke)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <span class="keywordflow">do</span> k=1,g%ke+1</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        kv(i,j,k) = us%m2_s_to_Z2_T * kvisc(k)</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        kd(i,j,k) = us%m2_s_to_Z2_T * kdiff(k)</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keywordflow">      enddo</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keywordflow">  enddo</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="comment">! write diagnostics</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordflow">if</span> (cs%id_kd &gt; 0) <span class="keyword">call </span>post_data(cs%id_kd, kd, cs%diag)</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordflow">if</span> (cs%id_kv &gt; 0) <span class="keyword">call </span>post_data(cs%id_kv, kv, cs%diag)</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordflow">if</span> (cs%id_N2 &gt; 0) <span class="keyword">call </span>post_data(cs%id_N2, cs%N2, cs%diag)</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordflow">if</span> (cs%id_S2 &gt; 0) <span class="keyword">call </span>post_data(cs%id_S2, cs%S2, cs%diag)</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordflow">if</span> (cs%id_ri_grad &gt; 0) <span class="keyword">call </span>post_data(cs%id_ri_grad, cs%ri_grad, cs%diag)</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordflow">if</span> (cs%id_ri_grad_smooth &gt; 0) <span class="keyword">call </span>post_data(cs%id_ri_grad_smooth ,cs%ri_grad_smooth, cs%diag)</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -365,19 +366,19 @@ Data Types</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00314">314</a> of file <a class="el" href="MOM__CVMix__shear_8F90_source.html">MOM_CVMix_shear.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  <span class="keywordtype">type</span>(CVMix_shear_cs), <span class="keywordtype">pointer</span> :: CS<span class="comment"> !&lt; Control structure for this module that</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">                                      !! will be deallocated in this subroutine</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="keywordflow">if</span> (.not. <span class="keyword">associated</span>(cs)) <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="keywordflow">if</span> (cs%id_N2 &gt; 0) <span class="keyword">deallocate</span>(cs%N2)</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="keywordflow">if</span> (cs%id_S2 &gt; 0) <span class="keyword">deallocate</span>(cs%S2)</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="keywordflow">if</span> (cs%id_ri_grad &gt; 0) <span class="keyword">deallocate</span>(cs%ri_grad)</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  <span class="keyword">deallocate</span>(cs)</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00315">315</a> of file <a class="el" href="MOM__CVMix__shear_8F90_source.html">MOM_CVMix_shear.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  <span class="keywordtype">type</span>(CVMix_shear_cs), <span class="keywordtype">pointer</span> :: CS<span class="comment"> !&lt; Control structure for this module that</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">                                      !! will be deallocated in this subroutine</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  <span class="keywordflow">if</span> (.not. <span class="keyword">associated</span>(cs)) <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="keywordflow">if</span> (cs%id_N2 &gt; 0) <span class="keyword">deallocate</span>(cs%N2)</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="keywordflow">if</span> (cs%id_S2 &gt; 0) <span class="keyword">deallocate</span>(cs%S2)</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  <span class="keywordflow">if</span> (cs%id_ri_grad &gt; 0) <span class="keyword">deallocate</span>(cs%ri_grad)</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <span class="keyword">deallocate</span>(cs)</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="MOM__set__diffusivity_8F90_source.html#l02198">mom_set_diffusivity::set_diffusivity_end()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__set__diffusivity_8F90_source.html#l02211">mom_set_diffusivity::set_diffusivity_end()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -458,113 +459,113 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00192">192</a> of file <a class="el" href="MOM__CVMix__shear_8F90_source.html">MOM_CVMix_shear.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordtype">type</span>(time_type),         <span class="keywordtype">intent(in)</span>    :: Time<span class="comment"> !&lt; The current time.</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type),   <span class="keywordtype">intent(in)</span>    :: G<span class="comment">  !&lt; Grid structure.</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">intent(in)</span>    :: GV<span class="comment"> !&lt; Vertical grid structure.</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),   <span class="keywordtype">intent(in)</span>    :: US<span class="comment"> !&lt; A dimensional unit scaling type</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordtype">type</span>(param_file_type),   <span class="keywordtype">intent(in)</span>    :: param_file<span class="comment"> !&lt; Run-time parameter file handle</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">target</span>, <span class="keywordtype">intent(inout)</span> :: diag<span class="comment"> !&lt; Diagnostics control structure.</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">type</span>(CVMix_shear_cs),    <span class="keywordtype">pointer</span>       :: CS<span class="comment"> !&lt; This module&#39;s control structure.</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="comment">! Local variables</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">integer</span> :: NumberTrue=0</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordtype">logical</span> :: use_JHL</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">! This include declares and sets the variable &quot;version&quot;.</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#include &quot;version_variable.h&quot;</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor"></span> </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">associated</span>(cs)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keyword">call </span>mom_error(warning, <span class="stringliteral">&quot;CVMix_shear_init called with an associated &quot;</span>// &amp;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                            <span class="stringliteral">&quot;control structure.&quot;</span>)</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keyword">allocate</span>(cs)</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">! Set default, read and log parameters</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keyword">call </span>log_version(param_file, mdl, version, &amp;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="stringliteral">&quot;Parameterization of shear-driven turbulence via CVMix (various options)&quot;</span>)</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;USE_LMD94&quot;</span>, cs%use_LMD94, &amp;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                 <span class="stringliteral">&quot;If true, use the Large-McWilliams-Doney (JGR 1994) &quot;</span>//&amp;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                 <span class="stringliteral">&quot;shear mixing parameterization.&quot;</span>, default=.false.)</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordflow">if</span> (cs%use_LMD94) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;     numbertrue=numbertrue + 1</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;     cs%Mix_Scheme=<span class="stringliteral">&#39;KPP&#39;</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;USE_PP81&quot;</span>, cs%use_PP81, &amp;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                 <span class="stringliteral">&quot;If true, use the Pacanowski and Philander (JPO 1981) &quot;</span>//&amp;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                 <span class="stringliteral">&quot;shear mixing parameterization.&quot;</span>, default=.false.)</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordflow">if</span> (cs%use_PP81) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;     numbertrue = numbertrue + 1</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;     cs%Mix_Scheme=<span class="stringliteral">&#39;PP&#39;</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  use_jhl=kappa_shear_is_used(param_file)</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordflow">if</span> (use_jhl) numbertrue = numbertrue + 1</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="comment">! After testing for interior schemes, make sure only 0 or 1 are enabled.</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="comment">! Otherwise, warn user and kill job.</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordflow">if</span> ((numbertrue) &gt; 1) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;     <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&#39;MOM_CVMix_shear_init: &#39;</span>// &amp;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;           <span class="stringliteral">&#39;Multiple shear driven internal mixing schemes selected,&#39;</span>//&amp;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;           <span class="stringliteral">&#39; please disable all but one scheme to proceed.&#39;</span>)</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  cvmix_shear_init=(cs%use_PP81.or.cs%use_LMD94)</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment">! Forego remainder of initialization if not using this scheme</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordflow">if</span> (.not. cvmix_shear_init) <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;NU_ZERO&quot;</span>, cs%Nu_Zero, &amp;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                 <span class="stringliteral">&quot;Leading coefficient in KPP shear mixing.&quot;</span>, &amp;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                 units=<span class="stringliteral">&quot;nondim&quot;</span>, default=5.e-3)</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;RI_ZERO&quot;</span>, cs%Ri_Zero, &amp;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                 <span class="stringliteral">&quot;Critical Richardson for KPP shear mixing, &quot;</span>// &amp;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                 <span class="stringliteral">&quot;NOTE this the internal mixing and this is &quot;</span>// &amp;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                 <span class="stringliteral">&quot;not for setting the boundary layer depth.&quot;</span> &amp;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                 ,units=<span class="stringliteral">&quot;nondim&quot;</span>, default=0.8)</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;KPP_EXP&quot;</span>, cs%KPP_exp, &amp;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                 <span class="stringliteral">&quot;Exponent of unitless factor of diffusivities, &quot;</span>// &amp;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                 <span class="stringliteral">&quot;for KPP internal shear mixing scheme.&quot;</span> &amp;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                 ,units=<span class="stringliteral">&quot;nondim&quot;</span>, default=3.0)</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;SMOOTH_RI&quot;</span>, cs%smooth_ri, &amp;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                 <span class="stringliteral">&quot;If true, vertically smooth the Richardson &quot;</span>// &amp;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                 <span class="stringliteral">&quot;number by applying a 1-2-1 filter once.&quot;</span>, &amp;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                 default = .false.)</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keyword">call </span>cvmix_init_shear(mix_scheme=cs%Mix_Scheme, &amp;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                        kpp_nu_zero=cs%Nu_Zero,   &amp;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                        kpp_ri_zero=cs%Ri_zero,   &amp;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                        kpp_exp=cs%KPP_exp)</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="comment">! Register diagnostics; allocation and initialization</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  cs%diag =&gt; diag</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  cs%id_N2 = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;N2_shear&#39;</span>, diag%axesTi, time, &amp;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      <span class="stringliteral">&#39;Square of Brunt-Vaisala frequency used by MOM_CVMix_shear module&#39;</span>, <span class="stringliteral">&#39;1/s2&#39;</span>)</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="keywordflow">if</span> (cs%id_N2 &gt; 0) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">allocate</span>( cs%N2( szi_(g), szj_(g), szk_(g)+1 ) ) ; cs%N2(:,:,:) = 0.</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  cs%id_S2 = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;S2_shear&#39;</span>, diag%axesTi, time, &amp;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="stringliteral">&#39;Square of vertical shear used by MOM_CVMix_shear module&#39;</span>,<span class="stringliteral">&#39;1/s2&#39;</span>)</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keywordflow">if</span> (cs%id_S2 &gt; 0) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keyword">allocate</span>( cs%S2( szi_(g), szj_(g), szk_(g)+1 ) ) ; cs%S2(:,:,:) = 0.</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  cs%id_ri_grad = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;ri_grad_shear&#39;</span>, diag%axesTi, time, &amp;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      <span class="stringliteral">&#39;Gradient Richarson number used by MOM_CVMix_shear module&#39;</span>,<span class="stringliteral">&#39;nondim&#39;</span>)</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keywordflow">if</span> (cs%id_ri_grad &gt; 0) <span class="keywordflow">then</span> <span class="comment">!Initialize w/ large Richardson value</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keyword">allocate</span>( cs%ri_grad( szi_(g), szj_(g), szk_(g)+1 )) ; cs%ri_grad(:,:,:) = 1.e8</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  cs%id_ri_grad_smooth = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;ri_grad_shear_smooth&#39;</span>, &amp;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;       diag%axesTi, time, &amp;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      <span class="stringliteral">&#39;Smoothed gradient Richarson number used by MOM_CVMix_shear module&#39;</span>,<span class="stringliteral">&#39;nondim&#39;</span>)</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keywordflow">if</span> (cs%id_ri_grad_smooth &gt; 0) <span class="keywordflow">then</span> <span class="comment">!Initialize w/ large Richardson value</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keyword">allocate</span>( cs%ri_grad_smooth( szi_(g), szj_(g), szk_(g)+1 )) ; cs%ri_grad_smooth(:,:,:) = 1.e8</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  cs%id_kd = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;kd_shear_CVMix&#39;</span>, diag%axesTi, time, &amp;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      <span class="stringliteral">&#39;Vertical diffusivity added by MOM_CVMix_shear module&#39;</span>, <span class="stringliteral">&#39;m2/s&#39;</span>, conversion=us%Z_to_m**2)</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  cs%id_kv = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;kv_shear_CVMix&#39;</span>, diag%axesTi, time, &amp;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      <span class="stringliteral">&#39;Vertical viscosity added by MOM_CVMix_shear module&#39;</span>, <span class="stringliteral">&#39;m2/s&#39;</span>, conversion=us%Z_to_m**2)</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00193">193</a> of file <a class="el" href="MOM__CVMix__shear_8F90_source.html">MOM_CVMix_shear.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keywordtype">type</span>(time_type),         <span class="keywordtype">intent(in)</span>    :: Time<span class="comment"> !&lt; The current time.</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type),   <span class="keywordtype">intent(in)</span>    :: G<span class="comment">  !&lt; Grid structure.</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">intent(in)</span>    :: GV<span class="comment"> !&lt; Vertical grid structure.</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),   <span class="keywordtype">intent(in)</span>    :: US<span class="comment"> !&lt; A dimensional unit scaling type</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">type</span>(param_file_type),   <span class="keywordtype">intent(in)</span>    :: param_file<span class="comment"> !&lt; Run-time parameter file handle</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">target</span>, <span class="keywordtype">intent(inout)</span> :: diag<span class="comment"> !&lt; Diagnostics control structure.</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">type</span>(CVMix_shear_cs),    <span class="keywordtype">pointer</span>       :: CS<span class="comment"> !&lt; This module&#39;s control structure.</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="comment">! Local variables</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordtype">integer</span> :: NumberTrue=0</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordtype">logical</span> :: use_JHL</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">! This include declares and sets the variable &quot;version&quot;.</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#include &quot;version_variable.h&quot;</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">associated</span>(cs)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keyword">call </span>mom_error(warning, <span class="stringliteral">&quot;CVMix_shear_init called with an associated &quot;</span>// &amp;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                            <span class="stringliteral">&quot;control structure.&quot;</span>)</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keyword">allocate</span>(cs)</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment">! Set default, read and log parameters</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keyword">call </span>log_version(param_file, mdl, version, &amp;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="stringliteral">&quot;Parameterization of shear-driven turbulence via CVMix (various options)&quot;</span>)</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;USE_LMD94&quot;</span>, cs%use_LMD94, &amp;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                 <span class="stringliteral">&quot;If true, use the Large-McWilliams-Doney (JGR 1994) &quot;</span>//&amp;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                 <span class="stringliteral">&quot;shear mixing parameterization.&quot;</span>, default=.false.)</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordflow">if</span> (cs%use_LMD94) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;     numbertrue=numbertrue + 1</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;     cs%Mix_Scheme=<span class="stringliteral">&#39;KPP&#39;</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;USE_PP81&quot;</span>, cs%use_PP81, &amp;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                 <span class="stringliteral">&quot;If true, use the Pacanowski and Philander (JPO 1981) &quot;</span>//&amp;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                 <span class="stringliteral">&quot;shear mixing parameterization.&quot;</span>, default=.false.)</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordflow">if</span> (cs%use_PP81) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;     numbertrue = numbertrue + 1</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;     cs%Mix_Scheme=<span class="stringliteral">&#39;PP&#39;</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  use_jhl=kappa_shear_is_used(param_file)</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keywordflow">if</span> (use_jhl) numbertrue = numbertrue + 1</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="comment">! After testing for interior schemes, make sure only 0 or 1 are enabled.</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="comment">! Otherwise, warn user and kill job.</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="keywordflow">if</span> ((numbertrue) &gt; 1) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;     <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&#39;MOM_CVMix_shear_init: &#39;</span>// &amp;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;           <span class="stringliteral">&#39;Multiple shear driven internal mixing schemes selected,&#39;</span>//&amp;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;           <span class="stringliteral">&#39; please disable all but one scheme to proceed.&#39;</span>)</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  cvmix_shear_init=(cs%use_PP81.or.cs%use_LMD94)</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment">! Forego remainder of initialization if not using this scheme</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keywordflow">if</span> (.not. cvmix_shear_init) <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;NU_ZERO&quot;</span>, cs%Nu_Zero, &amp;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                 <span class="stringliteral">&quot;Leading coefficient in KPP shear mixing.&quot;</span>, &amp;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                 units=<span class="stringliteral">&quot;nondim&quot;</span>, default=5.e-3)</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;RI_ZERO&quot;</span>, cs%Ri_Zero, &amp;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                 <span class="stringliteral">&quot;Critical Richardson for KPP shear mixing, &quot;</span>// &amp;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                 <span class="stringliteral">&quot;NOTE this the internal mixing and this is &quot;</span>// &amp;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                 <span class="stringliteral">&quot;not for setting the boundary layer depth.&quot;</span> &amp;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                 ,units=<span class="stringliteral">&quot;nondim&quot;</span>, default=0.8)</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;KPP_EXP&quot;</span>, cs%KPP_exp, &amp;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                 <span class="stringliteral">&quot;Exponent of unitless factor of diffusivities, &quot;</span>// &amp;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                 <span class="stringliteral">&quot;for KPP internal shear mixing scheme.&quot;</span> &amp;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                 ,units=<span class="stringliteral">&quot;nondim&quot;</span>, default=3.0)</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;SMOOTH_RI&quot;</span>, cs%smooth_ri, &amp;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                 <span class="stringliteral">&quot;If true, vertically smooth the Richardson &quot;</span>// &amp;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                 <span class="stringliteral">&quot;number by applying a 1-2-1 filter once.&quot;</span>, &amp;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                 default = .false.)</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="keyword">call </span>cvmix_init_shear(mix_scheme=cs%Mix_Scheme, &amp;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                        kpp_nu_zero=cs%Nu_Zero,   &amp;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                        kpp_ri_zero=cs%Ri_zero,   &amp;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                        kpp_exp=cs%KPP_exp)</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="comment">! Register diagnostics; allocation and initialization</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  cs%diag =&gt; diag</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  cs%id_N2 = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;N2_shear&#39;</span>, diag%axesTi, time, &amp;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      <span class="stringliteral">&#39;Square of Brunt-Vaisala frequency used by MOM_CVMix_shear module&#39;</span>, <span class="stringliteral">&#39;1/s2&#39;</span>)</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keywordflow">if</span> (cs%id_N2 &gt; 0) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keyword">allocate</span>( cs%N2( szi_(g), szj_(g), szk_(g)+1 ) ) ; cs%N2(:,:,:) = 0.</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  cs%id_S2 = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;S2_shear&#39;</span>, diag%axesTi, time, &amp;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      <span class="stringliteral">&#39;Square of vertical shear used by MOM_CVMix_shear module&#39;</span>,<span class="stringliteral">&#39;1/s2&#39;</span>)</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordflow">if</span> (cs%id_S2 &gt; 0) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keyword">allocate</span>( cs%S2( szi_(g), szj_(g), szk_(g)+1 ) ) ; cs%S2(:,:,:) = 0.</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  cs%id_ri_grad = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;ri_grad_shear&#39;</span>, diag%axesTi, time, &amp;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      <span class="stringliteral">&#39;Gradient Richarson number used by MOM_CVMix_shear module&#39;</span>,<span class="stringliteral">&#39;nondim&#39;</span>)</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <span class="keywordflow">if</span> (cs%id_ri_grad &gt; 0) <span class="keywordflow">then</span> <span class="comment">!Initialize w/ large Richardson value</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keyword">allocate</span>( cs%ri_grad( szi_(g), szj_(g), szk_(g)+1 )) ; cs%ri_grad(:,:,:) = 1.e8</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  cs%id_ri_grad_smooth = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;ri_grad_shear_smooth&#39;</span>, &amp;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;       diag%axesTi, time, &amp;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      <span class="stringliteral">&#39;Smoothed gradient Richarson number used by MOM_CVMix_shear module&#39;</span>,<span class="stringliteral">&#39;nondim&#39;</span>)</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keywordflow">if</span> (cs%id_ri_grad_smooth &gt; 0) <span class="keywordflow">then</span> <span class="comment">!Initialize w/ large Richardson value</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keyword">allocate</span>( cs%ri_grad_smooth( szi_(g), szj_(g), szk_(g)+1 )) ; cs%ri_grad_smooth(:,:,:) = 1.e8</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  cs%id_kd = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;kd_shear_CVMix&#39;</span>, diag%axesTi, time, &amp;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      <span class="stringliteral">&#39;Vertical diffusivity added by MOM_CVMix_shear module&#39;</span>, <span class="stringliteral">&#39;m2/s&#39;</span>, conversion=us%Z2_T_to_m2_s)</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  cs%id_kv = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;kv_shear_CVMix&#39;</span>, diag%axesTi, time, &amp;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      <span class="stringliteral">&#39;Vertical viscosity added by MOM_CVMix_shear module&#39;</span>, <span class="stringliteral">&#39;m2/s&#39;</span>, conversion=us%Z2_T_to_m2_s)</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__kappa__shear_8F90_source.html#l02141">mom_kappa_shear::kappa_shear_is_used()</a>, <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00054">mdl</a>, and <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
+<p class="reference">References <a class="el" href="MOM__kappa__shear_8F90_source.html#l02098">mom_kappa_shear::kappa_shear_is_used()</a>, <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00054">mdl</a>, and <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -598,19 +599,19 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00302">302</a> of file <a class="el" href="MOM__CVMix__shear_8F90_source.html">MOM_CVMix_shear.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keywordtype">type</span>(param_file_type), <span class="keywordtype">intent(in)</span> :: param_file<span class="comment"> !&lt; Run-time parameter files handle.</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="comment">! Local variables</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="keywordtype">logical</span> :: LMD94, PP81</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;USE_LMD94&quot;</span>, lmd94, &amp;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;       default=.false., do_not_log = .true.)</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;Use_PP81&quot;</span>, pp81, &amp;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;       default=.false., do_not_log = .true.)</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  cvmix_shear_is_used = (lmd94 .or. pp81)</div>
+<p class="definition">Definition at line <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00303">303</a> of file <a class="el" href="MOM__CVMix__shear_8F90_source.html">MOM_CVMix_shear.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordtype">type</span>(param_file_type), <span class="keywordtype">intent(in)</span> :: param_file<span class="comment"> !&lt; Run-time parameter files handle.</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="comment">! Local variables</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordtype">logical</span> :: LMD94, PP81</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;USE_LMD94&quot;</span>, lmd94, &amp;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;       default=.false., do_not_log = .true.)</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;Use_PP81&quot;</span>, pp81, &amp;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;       default=.false., do_not_log = .true.)</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  cvmix_shear_is_used = (lmd94 .or. pp81)</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00054">mdl</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__diabatic__driver_8F90_source.html#l02709">mom_diabatic_driver::diabatic_driver_init()</a>, and <a class="el" href="MOM__set__viscosity_8F90_source.html#l01674">mom_set_visc::set_visc_register_restarts()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__diabatic__driver_8F90_source.html#l03187">mom_diabatic_driver::diabatic_driver_init()</a>, and <a class="el" href="MOM__set__viscosity_8F90_source.html#l01681">mom_set_visc::set_visc_register_restarts()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -638,7 +639,7 @@ Here is the caller graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00054">54</a> of file <a class="el" href="MOM__CVMix__shear_8F90_source.html">MOM_CVMix_shear.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">character(len=40)  :: mdl = &quot;MOM_CVMix_shear&quot;  !&lt; This module&#39;s name.</span></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00192">cvmix_shear_init()</a>, and <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00302">cvmix_shear_is_used()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00193">cvmix_shear_init()</a>, and <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00303">cvmix_shear_is_used()</a>.</p>
 
 </div>
 </div>

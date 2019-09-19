@@ -17,7 +17,7 @@ digraph "mom_ocean_model_mct::ocean_model_init"
   Node5 [label="mom_file_parser::close\l_param_file",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__file__parser.html#a5b47aa31f8cffc5bf495f8d3f2e9c001",tooltip="Close any open input files and deallocate memory associated with this param_file_type...."];
   Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="mom_ocean_model_mct\l::convert_state_to_ocean_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__mct.html#a0cb497652e453db49e7324356ef938c0",tooltip="This subroutine translates the coupler's ocean_data_type into MOM's surface state variable...."];
+  Node6 [label="mom_ocean_model_mct\l::convert_state_to_ocean_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__mct.html#aafb1d4da55ede89a37e651944c52b187",tooltip="This subroutine translates the coupler's ocean_data_type into MOM's surface state variable...."];
   Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 [label="mom_diag_mediator::\ldiag_mediator_close\l_registration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#ab6b7493efa5caee06547dafdba29361b",tooltip=" "];
   Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

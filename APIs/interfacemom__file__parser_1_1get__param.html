@@ -126,9 +126,9 @@ Private functions</h2></td></tr>
 <tr class="memitem:a29796bb5f29f7a02fcb7ec956f90a129"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacemom__file__parser_1_1get__param.html#a29796bb5f29f7a02fcb7ec956f90a129">get_param_int_array</a> (CS, modulename, varname, value, desc, units, default, fail_if_missing, do_not_read, do_not_log, static_value, layoutParam, debuggingParam)</td></tr>
 <tr class="memdesc:a29796bb5f29f7a02fcb7ec956f90a129"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine reads the values of an array of integer model parameters from a parameter file and logs them in documentation files.  <a href="interfacemom__file__parser_1_1get__param.html#a29796bb5f29f7a02fcb7ec956f90a129">More...</a><br /></td></tr>
 <tr class="separator:a29796bb5f29f7a02fcb7ec956f90a129"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6c14e7c89ed7c2de4b1e78113c90bb8"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacemom__file__parser_1_1get__param.html#ab6c14e7c89ed7c2de4b1e78113c90bb8">get_param_real_array</a> (CS, modulename, varname, value, desc, units, default, fail_if_missing, do_not_read, do_not_log, static_value, scale, unscaled)</td></tr>
-<tr class="memdesc:ab6c14e7c89ed7c2de4b1e78113c90bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine reads the values of an array of real model parameters from a parameter file and logs them in documentation files.  <a href="interfacemom__file__parser_1_1get__param.html#ab6c14e7c89ed7c2de4b1e78113c90bb8">More...</a><br /></td></tr>
-<tr class="separator:ab6c14e7c89ed7c2de4b1e78113c90bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d34e9640391f0d919bb6534b104b270"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacemom__file__parser_1_1get__param.html#a3d34e9640391f0d919bb6534b104b270">get_param_real_array</a> (CS, modulename, varname, value, desc, units, default, fail_if_missing, do_not_read, do_not_log, debuggingParam, static_value, scale, unscaled)</td></tr>
+<tr class="memdesc:a3d34e9640391f0d919bb6534b104b270"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine reads the values of an array of real model parameters from a parameter file and logs them in documentation files.  <a href="interfacemom__file__parser_1_1get__param.html#a3d34e9640391f0d919bb6534b104b270">More...</a><br /></td></tr>
+<tr class="separator:a3d34e9640391f0d919bb6534b104b270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Functions and subroutines</h2>
 <a id="af0f92cf72c64900999842b73cbf4b879"></a>
@@ -251,47 +251,47 @@ Private functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01793">1793</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
-<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
-<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
-<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
-<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be</span></div>
-<div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;<span class="comment">                                         !! read from the parameter file and logged</span></div>
-<div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
-<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
-<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
-<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
-<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
-<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
-<div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
-<div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
-<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
-<div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
-<div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
-<div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
-<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
-<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: layoutParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
-<div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;<span class="comment">                                         !! logged in the layout parameter file</span></div>
-<div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: debuggingParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
-<div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;<span class="comment">                                         !! logged in the debugging parameter file</span></div>
-<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160; </div>
-<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log</div>
-<div class="line"><a name="l01818"></a><span class="lineno"> 1818</span>&#160; </div>
-<div class="line"><a name="l01819"></a><span class="lineno"> 1819</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
-<div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
-<div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160; </div>
-<div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordtype">value</span> = default</div>
-<div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordtype">value</span> = static_value</div>
-<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;    <span class="keyword">call </span>read_param_char(cs, varname, <span class="keywordtype">value</span>, fail_if_missing)</div>
-<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;<span class="keywordflow">  endif</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01799">1799</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
+<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
+<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
+<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
+<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be</span></div>
+<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;<span class="comment">                                         !! read from the parameter file and logged</span></div>
+<div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
+<div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
+<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
+<div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
+<div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
+<div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
+<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
+<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
+<div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
+<div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
+<div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
+<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
+<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
+<div class="line"><a name="l01818"></a><span class="lineno"> 1818</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: layoutParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
+<div class="line"><a name="l01819"></a><span class="lineno"> 1819</span>&#160;<span class="comment">                                         !! logged in the layout parameter file</span></div>
+<div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: debuggingParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
+<div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160;<span class="comment">                                         !! logged in the debugging parameter file</span></div>
+<div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160; </div>
+<div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log</div>
+<div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160; </div>
+<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
+<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
 <div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160; </div>
-<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;    <span class="keyword">call </span>log_param_char(cs, modulename, varname, <span class="keywordtype">value</span>, desc, units, &amp;</div>
-<div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;                        default, layoutparam, debuggingparam)</div>
-<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160; </div>
+<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordtype">value</span> = default</div>
+<div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordtype">value</span> = static_value</div>
+<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;    <span class="keyword">call </span>read_param_char(cs, varname, <span class="keywordtype">value</span>, fail_if_missing)</div>
+<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160; </div>
+<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;    <span class="keyword">call </span>log_param_char(cs, modulename, varname, <span class="keywordtype">value</span>, desc, units, &amp;</div>
+<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160;                        default, layoutparam, debuggingparam)</div>
+<div class="line"><a name="l01837"></a><span class="lineno"> 1837</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -401,54 +401,54 @@ Private functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01839">1839</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
-<div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
-<div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
-<div class="line"><a name="l01842"></a><span class="lineno"> 1842</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
-<div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be</span></div>
-<div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;<span class="comment">                                         !! read from the parameter file and logged</span></div>
-<div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
-<div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
-<div class="line"><a name="l01847"></a><span class="lineno"> 1847</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
-<div class="line"><a name="l01848"></a><span class="lineno"> 1848</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
-<div class="line"><a name="l01849"></a><span class="lineno"> 1849</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
-<div class="line"><a name="l01850"></a><span class="lineno"> 1850</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
-<div class="line"><a name="l01851"></a><span class="lineno"> 1851</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
-<div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
-<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
-<div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
-<div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
-<div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
-<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
-<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160; </div>
-<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;  <span class="comment">! Local variables</span></div>
-<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log</div>
-<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;  <span class="keywordtype">integer</span> :: i, len_tot, len_val</div>
-<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;  <span class="keywordtype">character(len=240)</span> :: cat_val</div>
-<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160; </div>
-<div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
-<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
-<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160; </div>
-<div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordflow">then</span> ; value(:) = default ;<span class="keywordflow"> endif</span></div>
-<div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordflow">then</span> ; value(:) = static_value ;<span class="keywordflow"> endif</span></div>
-<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;    <span class="keyword">call </span>read_param_char_array(cs, varname, <span class="keywordtype">value</span>, fail_if_missing)</div>
-<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;<span class="keywordflow">  endif</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01845">1845</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
+<div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
+<div class="line"><a name="l01847"></a><span class="lineno"> 1847</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
+<div class="line"><a name="l01848"></a><span class="lineno"> 1848</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
+<div class="line"><a name="l01849"></a><span class="lineno"> 1849</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be</span></div>
+<div class="line"><a name="l01850"></a><span class="lineno"> 1850</span>&#160;<span class="comment">                                         !! read from the parameter file and logged</span></div>
+<div class="line"><a name="l01851"></a><span class="lineno"> 1851</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
+<div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
+<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
+<div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
+<div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
+<div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
+<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
+<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
+<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
+<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
+<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
+<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
+<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
+<div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160; </div>
+<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;  <span class="comment">! Local variables</span></div>
+<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log</div>
+<div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;  <span class="keywordtype">integer</span> :: i, len_tot, len_val</div>
+<div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;  <span class="keywordtype">character(len=240)</span> :: cat_val</div>
+<div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160; </div>
+<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
+<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
 <div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160; </div>
-<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;    cat_val = trim(value(1)); len_tot = len_trim(value(1))</div>
-<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;    <span class="keywordflow">do</span> i=2,<span class="keyword">size</span>(<span class="keywordtype">value</span>)</div>
-<div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;      len_val = len_trim(value(i))</div>
-<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;      <span class="keywordflow">if</span> ((len_val &gt; 0) .and. (len_tot + len_val + 2 &lt; 240)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;        cat_val = trim(cat_val)//achar(34)// <span class="stringliteral">&quot;, &quot;</span>//achar(34)//trim(value(i))</div>
-<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;        len_tot = len_tot + len_val</div>
-<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;<span class="keywordflow">      endif</span></div>
-<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;    <span class="keyword">call </span>log_param_char(cs, modulename, varname, cat_val, desc, &amp;</div>
-<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;                        units, default)</div>
-<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160; </div>
+<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordflow">then</span> ; value(:) = default ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordflow">then</span> ; value(:) = static_value ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;    <span class="keyword">call </span>read_param_char_array(cs, varname, <span class="keywordtype">value</span>, fail_if_missing)</div>
+<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160; </div>
+<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;    cat_val = trim(value(1)); len_tot = len_trim(value(1))</div>
+<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;    <span class="keywordflow">do</span> i=2,<span class="keyword">size</span>(<span class="keywordtype">value</span>)</div>
+<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;      len_val = len_trim(value(i))</div>
+<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;      <span class="keywordflow">if</span> ((len_val &gt; 0) .and. (len_tot + len_val + 2 &lt; 240)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;        cat_val = trim(cat_val)//achar(34)// <span class="stringliteral">&quot;, &quot;</span>//achar(34)//trim(value(i))</div>
+<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;        len_tot = len_tot + len_val</div>
+<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;<span class="keywordflow">      endif</span></div>
+<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;    <span class="keyword">call </span>log_param_char(cs, modulename, varname, cat_val, desc, &amp;</div>
+<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;                        units, default)</div>
+<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -572,47 +572,47 @@ Private functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01598">1598</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
-<div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
-<div class="line"><a name="l01600"></a><span class="lineno"> 1600</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
-<div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
-<div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160;  <span class="keywordtype">integer</span>,                    <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be</span></div>
-<div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160;<span class="comment">                                         !! read from the parameter file and logged</span></div>
-<div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
-<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
-<div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
-<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;  <span class="keywordtype">integer</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
-<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;  <span class="keywordtype">integer</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
-<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
-<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
-<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
-<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
-<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
-<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
-<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
-<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
-<div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: layoutParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
-<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;<span class="comment">                                         !! logged in the layout parameter file</span></div>
-<div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: debuggingParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
-<div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;<span class="comment">                                         !! logged in the debugging parameter file</span></div>
-<div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160; </div>
-<div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log</div>
-<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160; </div>
-<div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
-<div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
+<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01601">1601</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
+<div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
+<div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
+<div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
+<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;  <span class="keywordtype">integer</span>,                    <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be</span></div>
+<div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;<span class="comment">                                         !! read from the parameter file and logged</span></div>
+<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
+<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
+<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
+<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;  <span class="keywordtype">integer</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
+<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;  <span class="keywordtype">integer</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
+<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
+<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
+<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
+<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
+<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
+<div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
+<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
+<div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
+<div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: layoutParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
+<div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;<span class="comment">                                         !! logged in the layout parameter file</span></div>
+<div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: debuggingParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
+<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;<span class="comment">                                         !! logged in the debugging parameter file</span></div>
+<div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160; </div>
+<div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log</div>
 <div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160; </div>
-<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordtype">value</span> = default</div>
-<div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordtype">value</span> = static_value</div>
-<div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;    <span class="keyword">call </span>read_param_int(cs, varname, <span class="keywordtype">value</span>, fail_if_missing)</div>
-<div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160; </div>
-<div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;    <span class="keyword">call </span>log_param_int(cs, modulename, varname, <span class="keywordtype">value</span>, desc, units, &amp;</div>
-<div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160;                       default, layoutparam, debuggingparam)</div>
-<div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160; </div>
+<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
+<div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
+<div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160; </div>
+<div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordtype">value</span> = default</div>
+<div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordtype">value</span> = static_value</div>
+<div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;    <span class="keyword">call </span>read_param_int(cs, varname, <span class="keywordtype">value</span>, fail_if_missing)</div>
+<div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160; </div>
+<div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160;    <span class="keyword">call </span>log_param_int(cs, modulename, varname, <span class="keywordtype">value</span>, desc, units, &amp;</div>
+<div class="line"><a name="l01638"></a><span class="lineno"> 1638</span>&#160;                       default, layoutparam, debuggingparam)</div>
+<div class="line"><a name="l01639"></a><span class="lineno"> 1639</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -736,47 +736,47 @@ Private functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01645">1645</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01645"></a><span class="lineno"> 1645</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
-<div class="line"><a name="l01646"></a><span class="lineno"> 1646</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
-<div class="line"><a name="l01647"></a><span class="lineno"> 1647</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
-<div class="line"><a name="l01648"></a><span class="lineno"> 1648</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
-<div class="line"><a name="l01649"></a><span class="lineno"> 1649</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(:)</span>,      <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be reset</span></div>
-<div class="line"><a name="l01650"></a><span class="lineno"> 1650</span>&#160;<span class="comment">                                         !! from the parameter file</span></div>
-<div class="line"><a name="l01651"></a><span class="lineno"> 1651</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
-<div class="line"><a name="l01652"></a><span class="lineno"> 1652</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
-<div class="line"><a name="l01653"></a><span class="lineno"> 1653</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
-<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;  <span class="keywordtype">integer</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
-<div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160;  <span class="keywordtype">integer</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
-<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
-<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
-<div class="line"><a name="l01658"></a><span class="lineno"> 1658</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
-<div class="line"><a name="l01659"></a><span class="lineno"> 1659</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
-<div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
-<div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
-<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
-<div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
-<div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: layoutParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
-<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;<span class="comment">                                         !! logged in the layout parameter file</span></div>
-<div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: debuggingParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
-<div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;<span class="comment">                                         !! logged in the debugging parameter file</span></div>
-<div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160; </div>
-<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log</div>
-<div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160; </div>
-<div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
-<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
+<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01648">1648</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01648"></a><span class="lineno"> 1648</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
+<div class="line"><a name="l01649"></a><span class="lineno"> 1649</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
+<div class="line"><a name="l01650"></a><span class="lineno"> 1650</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
+<div class="line"><a name="l01651"></a><span class="lineno"> 1651</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
+<div class="line"><a name="l01652"></a><span class="lineno"> 1652</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(:)</span>,      <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be reset</span></div>
+<div class="line"><a name="l01653"></a><span class="lineno"> 1653</span>&#160;<span class="comment">                                         !! from the parameter file</span></div>
+<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
+<div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
+<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
+<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;  <span class="keywordtype">integer</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
+<div class="line"><a name="l01658"></a><span class="lineno"> 1658</span>&#160;  <span class="keywordtype">integer</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
+<div class="line"><a name="l01659"></a><span class="lineno"> 1659</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
+<div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
+<div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
+<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
+<div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
+<div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
+<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
+<div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
+<div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: layoutParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
+<div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;<span class="comment">                                         !! logged in the layout parameter file</span></div>
+<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: debuggingParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
+<div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;<span class="comment">                                         !! logged in the debugging parameter file</span></div>
+<div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160; </div>
+<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log</div>
 <div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160; </div>
-<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordflow">then</span> ; value(:) = default ;<span class="keywordflow"> endif</span></div>
-<div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordflow">then</span> ; value(:) = static_value ;<span class="keywordflow"> endif</span></div>
-<div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160;    <span class="keyword">call </span>read_param_int_array(cs, varname, <span class="keywordtype">value</span>, fail_if_missing)</div>
-<div class="line"><a name="l01678"></a><span class="lineno"> 1678</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160; </div>
-<div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;    <span class="keyword">call </span>log_param_int_array(cs, modulename, varname, <span class="keywordtype">value</span>, desc, &amp;</div>
-<div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;                             units, default, layoutparam, debuggingparam)</div>
-<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160; </div>
+<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
+<div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
+<div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160; </div>
+<div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01678"></a><span class="lineno"> 1678</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordflow">then</span> ; value(:) = default ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordflow">then</span> ; value(:) = static_value ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;    <span class="keyword">call </span>read_param_int_array(cs, varname, <span class="keywordtype">value</span>, fail_if_missing)</div>
+<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160; </div>
+<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;    <span class="keyword">call </span>log_param_int_array(cs, modulename, varname, <span class="keywordtype">value</span>, desc, &amp;</div>
+<div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160;                             units, default, layoutparam, debuggingparam)</div>
+<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01687"></a><span class="lineno"> 1687</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -900,47 +900,47 @@ Private functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01893">1893</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
-<div class="line"><a name="l01894"></a><span class="lineno"> 1894</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
-<div class="line"><a name="l01895"></a><span class="lineno"> 1895</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
-<div class="line"><a name="l01896"></a><span class="lineno"> 1896</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
-<div class="line"><a name="l01897"></a><span class="lineno"> 1897</span>&#160;  <span class="keywordtype">logical</span>,                    <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be</span></div>
-<div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;<span class="comment">                                         !! read from the parameter file and logged</span></div>
-<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
-<div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
-<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
-<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
-<div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
-<div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
-<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
-<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
-<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
-<div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
-<div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
-<div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
-<div class="line"><a name="l01911"></a><span class="lineno"> 1911</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
-<div class="line"><a name="l01912"></a><span class="lineno"> 1912</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: layoutParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
-<div class="line"><a name="l01913"></a><span class="lineno"> 1913</span>&#160;<span class="comment">                                         !! logged in the layout parameter file</span></div>
-<div class="line"><a name="l01914"></a><span class="lineno"> 1914</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: debuggingParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
-<div class="line"><a name="l01915"></a><span class="lineno"> 1915</span>&#160;<span class="comment">                                         !! logged in the debugging parameter file</span></div>
-<div class="line"><a name="l01916"></a><span class="lineno"> 1916</span>&#160; </div>
-<div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log</div>
-<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160; </div>
-<div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
-<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
-<div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160; </div>
-<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordtype">value</span> = default</div>
-<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordtype">value</span> = static_value</div>
-<div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;    <span class="keyword">call </span>read_param_logical(cs, varname, <span class="keywordtype">value</span>, fail_if_missing)</div>
-<div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;<span class="keywordflow">  endif</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01899">1899</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
+<div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
+<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
+<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
+<div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;  <span class="keywordtype">logical</span>,                    <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be</span></div>
+<div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;<span class="comment">                                         !! read from the parameter file and logged</span></div>
+<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
+<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
+<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
+<div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
+<div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
+<div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
+<div class="line"><a name="l01911"></a><span class="lineno"> 1911</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
+<div class="line"><a name="l01912"></a><span class="lineno"> 1912</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
+<div class="line"><a name="l01913"></a><span class="lineno"> 1913</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
+<div class="line"><a name="l01914"></a><span class="lineno"> 1914</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
+<div class="line"><a name="l01915"></a><span class="lineno"> 1915</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
+<div class="line"><a name="l01916"></a><span class="lineno"> 1916</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
+<div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
+<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: layoutParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
+<div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;<span class="comment">                                         !! logged in the layout parameter file</span></div>
+<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: debuggingParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
+<div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;<span class="comment">                                         !! logged in the debugging parameter file</span></div>
+<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160; </div>
+<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log</div>
+<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160; </div>
+<div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
+<div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
 <div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160; </div>
-<div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;    <span class="keyword">call </span>log_param_logical(cs, modulename, varname, <span class="keywordtype">value</span>, desc, &amp;</div>
-<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;                           units, default, layoutparam, debuggingparam)</div>
-<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160; </div>
+<div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordtype">value</span> = default</div>
+<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordtype">value</span> = static_value</div>
+<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;    <span class="keyword">call </span>read_param_logical(cs, varname, <span class="keywordtype">value</span>, fail_if_missing)</div>
+<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160; </div>
+<div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;    <span class="keyword">call </span>log_param_logical(cs, modulename, varname, <span class="keywordtype">value</span>, desc, &amp;</div>
+<div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;                           units, default, layoutparam, debuggingparam)</div>
+<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1071,57 +1071,57 @@ Private functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01692">1692</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
-<div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
-<div class="line"><a name="l01694"></a><span class="lineno"> 1694</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
-<div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
-<div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;<span class="keywordtype">  real</span>,                       <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be</span></div>
-<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;<span class="comment">                                         !! read from the parameter file and logged</span></div>
-<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
-<div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
-<div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
-<div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
-<div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
-<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
-<div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
-<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
-<div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
-<div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
-<div class="line"><a name="l01708"></a><span class="lineno"> 1708</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
-<div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
-<div class="line"><a name="l01710"></a><span class="lineno"> 1710</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
-<div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: debuggingParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
-<div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160;<span class="comment">                                         !! logged in the debugging parameter file</span></div>
-<div class="line"><a name="l01713"></a><span class="lineno"> 1713</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: scale<span class="comment">   !&lt; A scaling factor that the parameter is</span></div>
-<div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160;<span class="comment">                                         !! multiplied by before it is returned.</span></div>
-<div class="line"><a name="l01715"></a><span class="lineno"> 1715</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(out)</span>   :: unscaled<span class="comment"> !&lt; The value of the parameter that would be</span></div>
-<div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;<span class="comment">                                         !! returned without any multiplication by a scaling factor.</span></div>
-<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160; </div>
-<div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log</div>
-<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160; </div>
-<div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
-<div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
+<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01695">1695</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
+<div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
+<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
+<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
+<div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160;<span class="keywordtype">  real</span>,                       <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be</span></div>
+<div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;<span class="comment">                                         !! read from the parameter file and logged</span></div>
+<div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
+<div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
+<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
+<div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
+<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
+<div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
+<div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
+<div class="line"><a name="l01708"></a><span class="lineno"> 1708</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
+<div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
+<div class="line"><a name="l01710"></a><span class="lineno"> 1710</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
+<div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
+<div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
+<div class="line"><a name="l01713"></a><span class="lineno"> 1713</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
+<div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: debuggingParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
+<div class="line"><a name="l01715"></a><span class="lineno"> 1715</span>&#160;<span class="comment">                                         !! logged in the debugging parameter file</span></div>
+<div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: scale<span class="comment">   !&lt; A scaling factor that the parameter is</span></div>
+<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;<span class="comment">                                         !! multiplied by before it is returned.</span></div>
+<div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(out)</span>   :: unscaled<span class="comment"> !&lt; The value of the parameter that would be</span></div>
+<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;<span class="comment">                                         !! returned without any multiplication by a scaling factor.</span></div>
+<div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160; </div>
+<div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log</div>
 <div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160; </div>
-<div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordtype">value</span> = default</div>
-<div class="line"><a name="l01725"></a><span class="lineno"> 1725</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordtype">value</span> = static_value</div>
-<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;    <span class="keyword">call </span>read_param_real(cs, varname, <span class="keywordtype">value</span>, fail_if_missing)</div>
-<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160; </div>
-<div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;    <span class="keyword">call </span>log_param_real(cs, modulename, varname, <span class="keywordtype">value</span>, desc, units, &amp;</div>
-<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;                        default, debuggingparam)</div>
-<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160; </div>
-<div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(unscaled)) unscaled = <span class="keywordtype">value</span></div>
-<div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(scale)) <span class="keywordtype">value</span> = scale*<span class="keywordtype">value</span></div>
+<div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
+<div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
+<div class="line"><a name="l01725"></a><span class="lineno"> 1725</span>&#160; </div>
+<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordtype">value</span> = default</div>
+<div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordtype">value</span> = static_value</div>
+<div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;    <span class="keyword">call </span>read_param_real(cs, varname, <span class="keywordtype">value</span>, fail_if_missing)</div>
+<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160; </div>
+<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;    <span class="keyword">call </span>log_param_real(cs, modulename, varname, <span class="keywordtype">value</span>, desc, units, &amp;</div>
+<div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;                        default, debuggingparam)</div>
+<div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;<span class="keywordflow">  endif</span></div>
 <div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160; </div>
+<div class="line"><a name="l01737"></a><span class="lineno"> 1737</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(unscaled)) unscaled = <span class="keywordtype">value</span></div>
+<div class="line"><a name="l01738"></a><span class="lineno"> 1738</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(scale)) <span class="keywordtype">value</span> = scale*<span class="keywordtype">value</span></div>
+<div class="line"><a name="l01739"></a><span class="lineno"> 1739</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ab6c14e7c89ed7c2de4b1e78113c90bb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6c14e7c89ed7c2de4b1e78113c90bb8">&#9670;&nbsp;</a></span>get_param_real_array()</h2>
+<a id="a3d34e9640391f0d919bb6534b104b270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d34e9640391f0d919bb6534b104b270">&#9670;&nbsp;</a></span>get_param_real_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1192,6 +1192,12 @@ Private functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">logical, intent(in), optional&#160;</td>
+          <td class="paramname"><em>debuggingParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">real, intent(in), optional&#160;</td>
           <td class="paramname"><em>static_value</em>, </td>
         </tr>
@@ -1234,56 +1240,59 @@ Private functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fail_if_missing</td><td>If present and true, a fatal error occurs if this variable is not found in the parameter file </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">do_not_read</td><td>If present and true, do not read a value for this parameter, although it might be logged. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">do_not_log</td><td>If present and true, do not log this parameter to the documentation files </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">debuggingparam</td><td>If present and true, this parameter is logged in the debugging parameter file </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scale</td><td>A scaling factor that the parameter is multiplied by before it is returned. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">unscaled</td><td>The value of the parameter that would be returned without any multiplication by a scaling factor. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01743">1743</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01743"></a><span class="lineno"> 1743</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
-<div class="line"><a name="l01744"></a><span class="lineno"> 1744</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
-<div class="line"><a name="l01745"></a><span class="lineno"> 1745</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
-<div class="line"><a name="l01746"></a><span class="lineno"> 1746</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
-<div class="line"><a name="l01747"></a><span class="lineno"> 1747</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>,         <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be</span></div>
-<div class="line"><a name="l01748"></a><span class="lineno"> 1748</span>&#160;<span class="comment">                                         !! read from the parameter file and logged</span></div>
-<div class="line"><a name="l01749"></a><span class="lineno"> 1749</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
-<div class="line"><a name="l01750"></a><span class="lineno"> 1750</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
-<div class="line"><a name="l01751"></a><span class="lineno"> 1751</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
-<div class="line"><a name="l01752"></a><span class="lineno"> 1752</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
-<div class="line"><a name="l01753"></a><span class="lineno"> 1753</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
-<div class="line"><a name="l01754"></a><span class="lineno"> 1754</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
-<div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
-<div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
-<div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
-<div class="line"><a name="l01758"></a><span class="lineno"> 1758</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
-<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
-<div class="line"><a name="l01760"></a><span class="lineno"> 1760</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
-<div class="line"><a name="l01761"></a><span class="lineno"> 1761</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
-<div class="line"><a name="l01762"></a><span class="lineno"> 1762</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: scale<span class="comment">   !&lt; A scaling factor that the parameter is</span></div>
-<div class="line"><a name="l01763"></a><span class="lineno"> 1763</span>&#160;<span class="comment">                                         !! multiplied by before it is returned.</span></div>
-<div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(out)</span> :: unscaled<span class="comment"> !&lt; The value of the parameter that would be</span></div>
-<div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;<span class="comment">                                         !! returned without any multiplication by a scaling factor.</span></div>
-<div class="line"><a name="l01766"></a><span class="lineno"> 1766</span>&#160; </div>
-<div class="line"><a name="l01767"></a><span class="lineno"> 1767</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log</div>
-<div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160; </div>
-<div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
-<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
-<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160; </div>
-<div class="line"><a name="l01772"></a><span class="lineno"> 1772</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01773"></a><span class="lineno"> 1773</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordflow">then</span> ; value(:) = default ;<span class="keywordflow"> endif</span></div>
-<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordflow">then</span> ; value(:) = static_value ;<span class="keywordflow"> endif</span></div>
-<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;    <span class="keyword">call </span>read_param_real_array(cs, varname, <span class="keywordtype">value</span>, fail_if_missing)</div>
-<div class="line"><a name="l01776"></a><span class="lineno"> 1776</span>&#160;<span class="keywordflow">  endif</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01747">1747</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01747"></a><span class="lineno"> 1747</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
+<div class="line"><a name="l01748"></a><span class="lineno"> 1748</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
+<div class="line"><a name="l01749"></a><span class="lineno"> 1749</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
+<div class="line"><a name="l01750"></a><span class="lineno"> 1750</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
+<div class="line"><a name="l01751"></a><span class="lineno"> 1751</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>,         <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be</span></div>
+<div class="line"><a name="l01752"></a><span class="lineno"> 1752</span>&#160;<span class="comment">                                         !! read from the parameter file and logged</span></div>
+<div class="line"><a name="l01753"></a><span class="lineno"> 1753</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
+<div class="line"><a name="l01754"></a><span class="lineno"> 1754</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
+<div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
+<div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
+<div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
+<div class="line"><a name="l01758"></a><span class="lineno"> 1758</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
+<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
+<div class="line"><a name="l01760"></a><span class="lineno"> 1760</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
+<div class="line"><a name="l01761"></a><span class="lineno"> 1761</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
+<div class="line"><a name="l01762"></a><span class="lineno"> 1762</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
+<div class="line"><a name="l01763"></a><span class="lineno"> 1763</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
+<div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
+<div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
+<div class="line"><a name="l01766"></a><span class="lineno"> 1766</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: debuggingParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
+<div class="line"><a name="l01767"></a><span class="lineno"> 1767</span>&#160;<span class="comment">                                         !! logged in the debugging parameter file</span></div>
+<div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: scale<span class="comment">   !&lt; A scaling factor that the parameter is</span></div>
+<div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160;<span class="comment">                                         !! multiplied by before it is returned.</span></div>
+<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(out)</span> :: unscaled<span class="comment"> !&lt; The value of the parameter that would be</span></div>
+<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;<span class="comment">                                         !! returned without any multiplication by a scaling factor.</span></div>
+<div class="line"><a name="l01772"></a><span class="lineno"> 1772</span>&#160; </div>
+<div class="line"><a name="l01773"></a><span class="lineno"> 1773</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log</div>
+<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160; </div>
+<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
+<div class="line"><a name="l01776"></a><span class="lineno"> 1776</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
 <div class="line"><a name="l01777"></a><span class="lineno"> 1777</span>&#160; </div>
-<div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160;    <span class="keyword">call </span>log_param_real_array(cs, modulename, varname, <span class="keywordtype">value</span>, desc, &amp;</div>
-<div class="line"><a name="l01780"></a><span class="lineno"> 1780</span>&#160;                              units, default)</div>
-<div class="line"><a name="l01781"></a><span class="lineno"> 1781</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160; </div>
-<div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(unscaled)) unscaled(:) = value(:)</div>
-<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(scale)) value(:) = scale*value(:)</div>
-<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160; </div>
+<div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordflow">then</span> ; value(:) = default ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l01780"></a><span class="lineno"> 1780</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordflow">then</span> ; value(:) = static_value ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l01781"></a><span class="lineno"> 1781</span>&#160;    <span class="keyword">call </span>read_param_real_array(cs, varname, <span class="keywordtype">value</span>, fail_if_missing)</div>
+<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160; </div>
+<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;    <span class="keyword">call </span>log_param_real_array(cs, modulename, varname, <span class="keywordtype">value</span>, desc, &amp;</div>
+<div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;                              units, default, debuggingparam)</div>
+<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160; </div>
+<div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(unscaled)) unscaled(:) = value(:)</div>
+<div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(scale)) value(:) = scale*value(:)</div>
+<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1421,54 +1430,54 @@ Private functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01941">1941</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
-<div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
-<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
-<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
-<div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;  <span class="keywordtype">type</span>(time_type),            <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be</span></div>
-<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;<span class="comment">                                         !! read from the parameter file and logged</span></div>
-<div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
-<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
-<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
-<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;  <span class="keywordtype">type</span>(time_type),  <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
-<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;  <span class="keywordtype">type</span>(time_type),  <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
-<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
-<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
-<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
-<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
-<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
-<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
-<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
-<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
-<div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: timeunit<span class="comment"> !&lt; The number of seconds in a time unit for</span></div>
-<div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;<span class="comment">                                         !! real-number input to be translated to a time.</span></div>
-<div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: layoutParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
-<div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;<span class="comment">                                         !! logged in the layout parameter file</span></div>
-<div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: debuggingParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
-<div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;<span class="comment">                                         !! logged in the debugging parameter file</span></div>
-<div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: log_as_date<span class="comment">  !&lt; If true, log the time_type in date</span></div>
-<div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;<span class="comment">                                         !! format. The default is false.</span></div>
-<div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160; </div>
-<div class="line"><a name="l01969"></a><span class="lineno"> 1969</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log, date_format, log_date</div>
-<div class="line"><a name="l01970"></a><span class="lineno"> 1970</span>&#160; </div>
-<div class="line"><a name="l01971"></a><span class="lineno"> 1971</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
-<div class="line"><a name="l01972"></a><span class="lineno"> 1972</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
-<div class="line"><a name="l01973"></a><span class="lineno"> 1973</span>&#160;  log_date = .false.</div>
+<p class="definition">Definition at line <a class="el" href="MOM__file__parser_8F90_source.html#l01947">1947</a> of file <a class="el" href="MOM__file__parser_8F90_source.html">MOM_file_parser.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;  <span class="keywordtype">type</span>(param_file_type),      <span class="keywordtype">intent(in)</span>    :: CS<span class="comment">      !&lt; The control structure for the file_parser module,</span></div>
+<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;<span class="comment">                                         !! it is also a structure to parse for run-time parameters</span></div>
+<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: modulename<span class="comment"> !&lt; The name of the calling module</span></div>
+<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;  <span class="keywordtype">character(len=*)</span>,           <span class="keywordtype">intent(in)</span>    :: varname<span class="comment"> !&lt; The case-sensitive name of the parameter to read</span></div>
+<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;  <span class="keywordtype">type</span>(time_type),            <span class="keywordtype">intent(inout)</span> :: <span class="keywordtype">value</span><span class="comment">   !&lt; The value of the parameter that may be</span></div>
+<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;<span class="comment">                                         !! read from the parameter file and logged</span></div>
+<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: desc<span class="comment">    !&lt; A description of this variable; if not</span></div>
+<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;<span class="comment">                                         !! present, this parameter is not written to a doc file</span></div>
+<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: units<span class="comment">   !&lt; The units of this parameter</span></div>
+<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;  <span class="keywordtype">type</span>(time_type),  <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: default<span class="comment"> !&lt; The default value of the parameter</span></div>
+<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;  <span class="keywordtype">type</span>(time_type),  <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: static_value<span class="comment"> !&lt; If this parameter is static, it takes</span></div>
+<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;<span class="comment">                                         !! this value, which can be compared for consistency with</span></div>
+<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;<span class="comment">                                         !! what is in the parameter file.</span></div>
+<div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: fail_if_missing<span class="comment"> !&lt; If present and true, a fatal error occurs</span></div>
+<div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;<span class="comment">                                         !! if this variable is not found in the parameter file</span></div>
+<div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_read<span class="comment">  !&lt; If present and true, do not read a</span></div>
+<div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;<span class="comment">                                         !! value for this parameter, although it might be logged.</span></div>
+<div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: do_not_log<span class="comment"> !&lt; If present and true, do not log this</span></div>
+<div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;<span class="comment">                                         !! parameter to the documentation files</span></div>
+<div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: timeunit<span class="comment"> !&lt; The number of seconds in a time unit for</span></div>
+<div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;<span class="comment">                                         !! real-number input to be translated to a time.</span></div>
+<div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: layoutParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
+<div class="line"><a name="l01969"></a><span class="lineno"> 1969</span>&#160;<span class="comment">                                         !! logged in the layout parameter file</span></div>
+<div class="line"><a name="l01970"></a><span class="lineno"> 1970</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: debuggingParam<span class="comment"> !&lt; If present and true, this parameter is</span></div>
+<div class="line"><a name="l01971"></a><span class="lineno"> 1971</span>&#160;<span class="comment">                                         !! logged in the debugging parameter file</span></div>
+<div class="line"><a name="l01972"></a><span class="lineno"> 1972</span>&#160;  <span class="keywordtype">logical</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: log_as_date<span class="comment">  !&lt; If true, log the time_type in date</span></div>
+<div class="line"><a name="l01973"></a><span class="lineno"> 1973</span>&#160;<span class="comment">                                         !! format. The default is false.</span></div>
 <div class="line"><a name="l01974"></a><span class="lineno"> 1974</span>&#160; </div>
-<div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordtype">value</span> = default</div>
-<div class="line"><a name="l01977"></a><span class="lineno"> 1977</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordtype">value</span> = static_value</div>
-<div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;    <span class="keyword">call </span>read_param_time(cs, varname, <span class="keywordtype">value</span>, timeunit, fail_if_missing, date_format=log_date)</div>
-<div class="line"><a name="l01979"></a><span class="lineno"> 1979</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;  <span class="keywordtype">logical</span> :: do_read, do_log, date_format, log_date</div>
+<div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160; </div>
+<div class="line"><a name="l01977"></a><span class="lineno"> 1977</span>&#160;  do_read = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_read)) do_read = .not.do_not_read</div>
+<div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;  do_log  = .true. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(do_not_log))  do_log  = .not.do_not_log</div>
+<div class="line"><a name="l01979"></a><span class="lineno"> 1979</span>&#160;  log_date = .false.</div>
 <div class="line"><a name="l01980"></a><span class="lineno"> 1980</span>&#160; </div>
-<div class="line"><a name="l01981"></a><span class="lineno"> 1981</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01982"></a><span class="lineno"> 1982</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(log_as_date)) log_date = log_as_date</div>
-<div class="line"><a name="l01983"></a><span class="lineno"> 1983</span>&#160;    <span class="keyword">call </span>log_param_time(cs, modulename, varname, <span class="keywordtype">value</span>, desc, units, default, &amp;</div>
-<div class="line"><a name="l01984"></a><span class="lineno"> 1984</span>&#160;                        timeunit, layoutparam=layoutparam, &amp;</div>
-<div class="line"><a name="l01985"></a><span class="lineno"> 1985</span>&#160;                        debuggingparam=debuggingparam, log_date=log_date)</div>
-<div class="line"><a name="l01986"></a><span class="lineno"> 1986</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l01987"></a><span class="lineno"> 1987</span>&#160; </div>
+<div class="line"><a name="l01981"></a><span class="lineno"> 1981</span>&#160;  <span class="keywordflow">if</span> (do_read) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01982"></a><span class="lineno"> 1982</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(default)) <span class="keywordtype">value</span> = default</div>
+<div class="line"><a name="l01983"></a><span class="lineno"> 1983</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(static_value)) <span class="keywordtype">value</span> = static_value</div>
+<div class="line"><a name="l01984"></a><span class="lineno"> 1984</span>&#160;    <span class="keyword">call </span>read_param_time(cs, varname, <span class="keywordtype">value</span>, timeunit, fail_if_missing, date_format=log_date)</div>
+<div class="line"><a name="l01985"></a><span class="lineno"> 1985</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01986"></a><span class="lineno"> 1986</span>&#160; </div>
+<div class="line"><a name="l01987"></a><span class="lineno"> 1987</span>&#160;  <span class="keywordflow">if</span> (do_log) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01988"></a><span class="lineno"> 1988</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(log_as_date)) log_date = log_as_date</div>
+<div class="line"><a name="l01989"></a><span class="lineno"> 1989</span>&#160;    <span class="keyword">call </span>log_param_time(cs, modulename, varname, <span class="keywordtype">value</span>, desc, units, default, &amp;</div>
+<div class="line"><a name="l01990"></a><span class="lineno"> 1990</span>&#160;                        timeunit, layoutparam=layoutparam, &amp;</div>
+<div class="line"><a name="l01991"></a><span class="lineno"> 1991</span>&#160;                        debuggingparam=debuggingparam, log_date=log_date)</div>
+<div class="line"><a name="l01992"></a><span class="lineno"> 1992</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l01993"></a><span class="lineno"> 1993</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>

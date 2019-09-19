@@ -130,10 +130,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a132a967fa5a0b636e88b30b752383ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that is used to regulate the timing of diagnostic output.  <a href="structmom__pressureforce__mont_1_1pressureforce__mont__cs.html#a132a967fa5a0b636e88b30b752383ae2">More...</a><br /></td></tr>
 <tr class="separator:a132a967fa5a0b636e88b30b752383ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb050c4dc3be0d501658357208f71093"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__pressureforce__mont_1_1pressureforce__mont__cs.html#abb050c4dc3be0d501658357208f71093">pfu_bc</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:abb050c4dc3be0d501658357208f71093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accelerations due to pressure.  <a href="structmom__pressureforce__mont_1_1pressureforce__mont__cs.html#abb050c4dc3be0d501658357208f71093">More...</a><br /></td></tr>
+<tr class="memdesc:abb050c4dc3be0d501658357208f71093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zonal accelerations due to pressure gradients deriving from density gradients within layers [L T-2 ~&gt; m s-2].  <a href="structmom__pressureforce__mont_1_1pressureforce__mont__cs.html#abb050c4dc3be0d501658357208f71093">More...</a><br /></td></tr>
 <tr class="separator:abb050c4dc3be0d501658357208f71093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b3c0a8b29c69030de0ef3ea7d05a113"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__pressureforce__mont_1_1pressureforce__mont__cs.html#a7b3c0a8b29c69030de0ef3ea7d05a113">pfv_bc</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a7b3c0a8b29c69030de0ef3ea7d05a113"><td class="mdescLeft">&#160;</td><td class="mdescRight">gradients deriving from density gradients within layers [m s-2].  <a href="structmom__pressureforce__mont_1_1pressureforce__mont__cs.html#a7b3c0a8b29c69030de0ef3ea7d05a113">More...</a><br /></td></tr>
+<tr class="memdesc:a7b3c0a8b29c69030de0ef3ea7d05a113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Meridional accelerations due to pressure gradients deriving from density gradients within layers [L T-2 ~&gt; m s-2].  <a href="structmom__pressureforce__mont_1_1pressureforce__mont__cs.html#a7b3c0a8b29c69030de0ef3ea7d05a113">More...</a><br /></td></tr>
 <tr class="separator:a7b3c0a8b29c69030de0ef3ea7d05a113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:ab8fd7a0efbde90ca212f31e47b68f8b2"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__pressureforce__mont_1_1pressureforce__mont__cs.html#ab8fd7a0efbde90ca212f31e47b68f8b2">id_pfu_bc</a> = -1</td></tr>
@@ -202,7 +202,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html#l00047">47</a> of file <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html">MOM_PressureForce_Montgomery.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html#l00048">48</a> of file <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html">MOM_PressureForce_Montgomery.F90</a>.</p>
 
 </div>
 </div>
@@ -220,8 +220,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html#l00047">47</a> of file <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html">MOM_PressureForce_Montgomery.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">integer</span> :: id_PFu_bc = -1, id_pfv_bc = -1, id_e_tidal = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html#l00048">48</a> of file <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html">MOM_PressureForce_Montgomery.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">integer</span> :: id_PFu_bc = -1, id_pfv_bc = -1, id_e_tidal = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -239,7 +239,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html#l00047">47</a> of file <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html">MOM_PressureForce_Montgomery.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html#l00048">48</a> of file <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html">MOM_PressureForce_Montgomery.F90</a>.</p>
 
 </div>
 </div>
@@ -255,10 +255,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Accelerations due to pressure. </p>
+<p>Zonal accelerations due to pressure gradients deriving from density gradients within layers [L T-2 ~&gt; m s-2]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html#l00043">43</a> of file <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html">MOM_PressureForce_Montgomery.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: PFu_bc(:,:,:) =&gt; null()   <span class="comment">!&lt; Accelerations due to pressure</span></div>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: PFu_bc(:,:,:) =&gt; null() <span class="comment">!&lt; Zonal accelerations due to pressure gradients</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -274,10 +274,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>gradients deriving from density gradients within layers [m s-2]. </p>
+<p>Meridional accelerations due to pressure gradients deriving from density gradients within layers [L T-2 ~&gt; m s-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html#l00044">44</a> of file <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html">MOM_PressureForce_Montgomery.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: PFv_bc(:,:,:) =&gt; null()   <span class="comment">!&lt; gradients deriving from density</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html#l00045">45</a> of file <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html">MOM_PressureForce_Montgomery.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: PFv_bc(:,:,:) =&gt; null() <span class="comment">!&lt; Meridional accelerations due to pressure gradients</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -352,8 +352,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The tidal forcing control structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html#l00049">49</a> of file <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html">MOM_PressureForce_Montgomery.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">type</span>(tidal_forcing_CS), <span class="keywordtype">pointer</span> :: tides_CSp =&gt; null() <span class="comment">!&lt; The tidal forcing control structure</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html#l00050">50</a> of file <a class="el" href="MOM__PressureForce__Montgomery_8F90_source.html">MOM_PressureForce_Montgomery.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">type</span>(tidal_forcing_CS), <span class="keywordtype">pointer</span> :: tides_CSp =&gt; null() <span class="comment">!&lt; The tidal forcing control structure</span></div>
 </div><!-- fragment -->
 </div>
 </div>

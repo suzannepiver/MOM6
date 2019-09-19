@@ -224,8 +224,8 @@ Functions/Subroutines</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h_in</td><td>Layer thickness before entrainment, [H ~&gt; m or kg m-2]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">t_in</td><td>The layer temperatures [degC]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">s_in</td><td>The layer salinities [ppt]. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">kd</td><td>The interfaces diapycnal diffusivities [Z2 s-1 ~&gt; m2 s-1]. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>The amount of time covered by this call [s]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kd</td><td>The interfaces diapycnal diffusivities [Z2 T-1 ~&gt; m2 s-1]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>The amount of time covered by this call [T ~&gt; s]. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">energy_kd</td><td>The column-integrated rate of energy consumption by diapycnal diffusion [W m-2]. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">tv</td><td>A structure containing pointers to any available thermodynamic fields. Absent fields have NULL ptrs. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">may_print</td><td>If present and true, write out diagnostics of energy use. </td></tr>
@@ -243,8 +243,8 @@ Functions/Subroutines</h2></td></tr>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(GV%ke)</span>,   <span class="keywordtype">intent(in)</span>    :: T_in<span class="comment"> !&lt; The layer temperatures [degC].</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(GV%ke)</span>,   <span class="keywordtype">intent(in)</span>    :: S_in<span class="comment"> !&lt; The layer salinities [ppt].</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(GV%ke+1)</span>, <span class="keywordtype">intent(in)</span>    :: Kd<span class="comment">   !&lt; The interfaces diapycnal diffusivities</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">                                                  !! [Z2 s-1 ~&gt; m2 s-1].</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">  real</span>,                     <span class="keywordtype">intent(in)</span>    :: dt<span class="comment">   !&lt; The amount of time covered by this call [s].</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">                                                  !! [Z2 T-1 ~&gt; m2 s-1].</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">  real</span>,                     <span class="keywordtype">intent(in)</span>    :: dt<span class="comment">   !&lt; The amount of time covered by this call [T ~&gt; s].</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keywordtype">  real</span>,                     <span class="keywordtype">intent(out)</span>   :: energy_Kd<span class="comment"> !&lt; The column-integrated rate of energy</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">                                                  !! consumption by diapycnal diffusion [W m-2].</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordtype">type</span>(thermo_var_ptrs),    <span class="keywordtype">intent(inout)</span> :: tv<span class="comment">   !&lt; A structure containing pointers to any</span></div>
@@ -315,7 +315,7 @@ Functions/Subroutines</h2></td></tr>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    pres_Z, &amp;   <span class="comment">! Interface pressures with a rescaling factor to convert interface height</span></div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                <span class="comment">! movements into changes in column potential energy [J m-2 Z-1 ~&gt; J m-3].</span></div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    z_int, &amp;    <span class="comment">! Interface heights relative to the surface [H ~&gt; m or kg m-2].</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    n2, &amp;       <span class="comment">! An estimate of the buoyancy frequency [s-2].</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    n2, &amp;       <span class="comment">! An estimate of the buoyancy frequency [T-2 ~&gt; s-2].</span></div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    kddt_h, &amp;   <span class="comment">! The diapycnal diffusivity times a timestep divided by the</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                <span class="comment">! average thicknesses around a layer [H ~&gt; m or kg m-2].</span></div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    kddt_h_a, &amp; <span class="comment">! The value of Kddt_h for layers above the central point in the</span></div>
@@ -1057,7 +1057,7 @@ Functions/Subroutines</h2></td></tr>
 <div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;      <span class="keywordflow">do</span> k=2,nz</div>
 <div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;        <span class="keyword">call </span>calculate_density(0.5*(t0(k-1) + t0(k)), 0.5*(s0(k-1) + s0(k)), &amp;</div>
 <div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;                               pres(k), rho_here, tv%eqn_of_state)</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;        n2(k) = ((gv%g_Earth*us%m_to_Z**2) * rho_here / (0.5*gv%H_to_Z*(h_tr(k-1) + h_tr(k)))) * &amp;</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;        n2(k) = ((us%L_to_Z**2*gv%g_Earth) * rho_here / (0.5*gv%H_to_Z*(h_tr(k-1) + h_tr(k)))) * &amp;</div>
 <div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;                ( 0.5*(dsv_dt(k-1) + dsv_dt(k)) * (t0(k-1) - t0(k)) + &amp;</div>
 <div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;                  0.5*(dsv_ds(k-1) + dsv_ds(k)) * (s0(k-1) - s0(k)) )</div>
 <div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;<span class="keywordflow">      enddo</span></div>
@@ -1068,7 +1068,7 @@ Functions/Subroutines</h2></td></tr>
 <div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;      <span class="keywordflow">do</span> k=2,nz</div>
 <div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;        <span class="keyword">call </span>calculate_density(0.5*(tf(k-1) + tf(k)), 0.5*(sf(k-1) + sf(k)), &amp;</div>
 <div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;                               pres(k), rho_here, tv%eqn_of_state)</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;        n2(k) = ((gv%g_Earth*us%m_to_Z**2) * rho_here / (0.5*gv%H_to_Z*(h_tr(k-1) + h_tr(k)))) * &amp;</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;        n2(k) = ((us%L_to_Z**2*gv%g_Earth) * rho_here / (0.5*gv%H_to_Z*(h_tr(k-1) + h_tr(k)))) * &amp;</div>
 <div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;                ( 0.5*(dsv_dt(k-1) + dsv_dt(k)) * (tf(k-1) - tf(k)) + &amp;</div>
 <div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;                  0.5*(dsv_ds(k-1) + dsv_ds(k)) * (sf(k-1) - sf(k)) )</div>
 <div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;<span class="keywordflow">      enddo</span></div>
@@ -1089,7 +1089,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__diapyc__energy__req_aca27fbd2a716b8565b0b754a417479d5_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__diapyc__energy__req_aca27fbd2a716b8565b0b754a417479d5_icgraph.svg" width="624" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1263,9 +1263,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;  cs%id_Sf = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;EnReqTest_Sf&#39;</span>, diag%axesZL, time, &amp;</div>
 <div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;                 <span class="stringliteral">&quot;Salinity after mixing&quot;</span>, <span class="stringliteral">&quot;g kg-1&quot;</span>)</div>
 <div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;  cs%id_N2_0 = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;EnReqTest_N2_0&#39;</span>, diag%axesZi, time, &amp;</div>
-<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;                 <span class="stringliteral">&quot;Squared buoyancy frequency before mixing&quot;</span>, <span class="stringliteral">&quot;second-2&quot;</span>)</div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;                 <span class="stringliteral">&quot;Squared buoyancy frequency before mixing&quot;</span>, <span class="stringliteral">&quot;second-2&quot;</span>, conversion=us%s_to_T**2)</div>
 <div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;  cs%id_N2_f = register_diag_field(<span class="stringliteral">&#39;ocean_model&#39;</span>, <span class="stringliteral">&#39;EnReqTest_N2_f&#39;</span>, diag%axesZi, time, &amp;</div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;                 <span class="stringliteral">&quot;Squared buoyancy frequency after mixing&quot;</span>, <span class="stringliteral">&quot;second-2&quot;</span>)</div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;                 <span class="stringliteral">&quot;Squared buoyancy frequency after mixing&quot;</span>, <span class="stringliteral">&quot;second-2&quot;</span>, conversion=us%s_to_T**2)</div>
 <div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__diag__mediator_8F90_source.html#l01858">mom_diag_mediator::register_diag_field()</a>.</p>
@@ -1348,9 +1348,9 @@ Here is the call graph for this function:</div>
     <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h_3d</td><td>Layer thickness before entrainment [H ~&gt; m or kg m-2]. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">tv</td><td>A structure containing pointers to any available thermodynamic fields. Absent fields have NULL ptrs. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>The amount of time covered by this call [s]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>The amount of time covered by this call [T ~&gt; s]. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">cs</td><td>This module's control structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">kd_int</td><td>Interface diffusivities [Z2 s-1 ~&gt; m2 s-1]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kd_int</td><td>Interface diffusivities [Z2 T-1 ~&gt; m2 s-1]. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1364,17 +1364,17 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">type</span>(thermo_var_ptrs),          <span class="keywordtype">intent(inout)</span> :: tv<span class="comment">   !&lt; A structure containing pointers to any</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">                                                        !! available thermodynamic fields.</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">                                                        !! Absent fields have NULL ptrs.</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">  real</span>,                           <span class="keywordtype">intent(in)</span>    :: dt<span class="comment">   !&lt; The amount of time covered by this call [s].</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">  real</span>,                           <span class="keywordtype">intent(in)</span>    :: dt<span class="comment">   !&lt; The amount of time covered by this call [T ~&gt; s].</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">type</span>(diapyc_energy_req_CS),     <span class="keywordtype">pointer</span>       :: CS<span class="comment">   !&lt; This module&#39;s control structure.</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(G%isd:G%ied,G%jsd:G%jed,GV%ke+1)</span>, &amp;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                        <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: Kd_int<span class="comment"> !&lt; Interface diffusivities [Z2 s-1 ~&gt; m2 s-1].</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                        <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>    :: Kd_int<span class="comment"> !&lt; Interface diffusivities [Z2 T-1 ~&gt; m2 s-1].</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="comment">! Local variables</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(GV%ke)</span> :: &amp;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    T0, S0, &amp;   <span class="comment">! T0 &amp; S0 are columns of initial temperatures and salinities [degC] and g/kg.</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    h_col       <span class="comment">! h_col is a column of thicknesses h at tracer points [H ~&gt; m or kg m-2].</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(GV%ke+1)</span> :: &amp;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    Kd, &amp;       <span class="comment">! A column of diapycnal diffusivities at interfaces [Z2 s-1 ~&gt; m2 s-1].</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    Kd, &amp;       <span class="comment">! A column of diapycnal diffusivities at interfaces [Z2 T-1 ~&gt; m2 s-1].</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    h_top, h_bot <span class="comment">! Distances from the top or bottom [H ~&gt; m or kg m-2].</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">  real</span> :: ustar, absf, htot</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">  real</span> :: energy_Kd <span class="comment">! The energy used by diapycnal mixing [W m-2].</span></div>
@@ -1403,8 +1403,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        h_bot(k) = h_bot(k+1) + h_col(k)</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordflow">      enddo</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      ustar = 0.01*us%m_to_Z <span class="comment">! Change this to being an input parameter?</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      absf = 0.25*us%s_to_T*((abs(g%CoriolisBu(i-1,j-1)) + abs(g%CoriolisBu(i,j))) + &amp;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      ustar = 0.01*us%m_to_Z*us%T_to_s <span class="comment">! Change this to being an input parameter?</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      absf = 0.25*((abs(g%CoriolisBu(i-1,j-1)) + abs(g%CoriolisBu(i,j))) + &amp;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                             (abs(g%CoriolisBu(i-1,j-1)) + abs(g%CoriolisBu(i,j))))</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      kd(1) = 0.0 ; kd(nz+1) = 0.0</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">do</span> k=2,nz</div>
@@ -1421,7 +1421,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__diapyc__energy__req_8F90_source.html#l00122">diapyc_energy_req_calc()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, and <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00268">mom_diabatic_driver::diabatic()</a>, and <a class="el" href="MOM__diabatic__driver_8F90_source.html#l01127">mom_diabatic_driver::legacy_diabatic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00259">mom_diabatic_driver::diabatic()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1431,7 +1431,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__diapyc__energy__req_a0bf0dd1f3ae4f7f66fb000322f18064e_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__diapyc__energy__req_a0bf0dd1f3ae4f7f66fb000322f18064e_icgraph.svg" width="394" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1765,7 +1765,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__diapyc__energy__req_a2bed511a4b1df9de0e2230c24389bc82_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__diapyc__energy__req_a2bed511a4b1df9de0e2230c24389bc82_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -2092,7 +2092,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__diapyc__energy__req_afb1736a09e8f04ae84f561924e157691_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__diapyc__energy__req_afb1736a09e8f04ae84f561924e157691_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 

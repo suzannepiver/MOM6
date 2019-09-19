@@ -164,6 +164,7 @@ $(document).ready(function(){initNavTree('functions_vars_d.html','');});
 , <a class="el" href="structmom__dynamics__split__rk2_1_1mom__dyn__split__rk2__cs.html#a87bb1beec45b58ab676e5c308f8ed5c1">mom_dynamics_split_rk2::mom_dyn_split_rk2_cs</a>
 , <a class="el" href="structmom__dynamics__unsplit_1_1mom__dyn__unsplit__cs.html#ae4d77898f19c4ba273aba6d166852d05">mom_dynamics_unsplit::mom_dyn_unsplit_cs</a>
 , <a class="el" href="structmom__dynamics__unsplit__rk2_1_1mom__dyn__unsplit__rk2__cs.html#a37e82202527a2fe1b0c4400c48c70e55">mom_dynamics_unsplit_rk2::mom_dyn_unsplit_rk2_cs</a>
+, <a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#a59aac9946036f689e5f7b9aa2019001e">mom_hor_visc::hor_visc_cs</a>
 , <a class="el" href="structmom__ice__shelf_1_1ice__shelf__cs.html#a012f5cbd1f6596306c28fea4540172fd">mom_ice_shelf::ice_shelf_cs</a>
 , <a class="el" href="structmom__ice__shelf__dynamics_1_1ice__shelf__dyn__cs.html#ac683aa977f5c38c588b1780e606ba0c6">mom_ice_shelf_dynamics::ice_shelf_dyn_cs</a>
 , <a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#a8e879bfbd01730acc30de0c23094704f">mom_int_tide_input::int_tide_input_cs</a>
@@ -227,9 +228,6 @@ $(document).ready(function(){initNavTree('functions_vars_d.html','');});
 </li>
 <li>degree
 : <a class="el" href="structmom__remapping_1_1remapping__cs.html#a525a9a1e3e9fef82272fde2bf06dcc7b">mom_remapping::remapping_cs</a>
-</li>
-<li>del2meke
-: <a class="el" href="structmom__meke_1_1meke__cs.html#a7f4208b279dbd78e82049cf810edb55b">mom_meke::meke_cs</a>
 </li>
 <li>dens_restore
 : <a class="el" href="structmom__surface__forcing_1_1surface__forcing__cs.html#ab367b16a88b952dfebc2b5384671e0b0">mom_surface_forcing::surface_forcing_cs</a>
@@ -301,6 +299,7 @@ $(document).ready(function(){initNavTree('functions_vars_d.html','');});
 </li>
 <li>diabatic_aux_csp
 : <a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a75cd2a8487694baa42f71532320f5c49">mom_diabatic_driver::diabatic_cs</a>
+, <a class="el" href="structmom__offline__main_1_1offline__transport__cs.html#ad0a94003618fd733ce72d48ac2752347">mom_offline_main::offline_transport_cs</a>
 </li>
 <li>diabatic_csp
 : <a class="el" href="structmom_1_1mom__control__struct.html#abe48a9cf3ef6e92d4ee2088ea680a165">mom::mom_control_struct</a>
@@ -652,6 +651,9 @@ $(document).ready(function(){initNavTree('functions_vars_d.html','');});
 <li>drho_tol
 : <a class="el" href="structmom__neutral__diffusion__aux_1_1ndiff__aux__cs__type.html#a35cafd8d0fdf5ce15cdd127fe7e56c01">mom_neutral_diffusion_aux::ndiff_aux_cs_type</a>
 </li>
+<li>ds_expect
+: <a class="el" href="structmom__energetic__pbl_1_1epbl__column__diags.html#a49f62199569ac4655941b0930418ca12">mom_energetic_pbl::epbl_column_diags</a>
+</li>
 <li>dsamp
 : <a class="el" href="structmom__diag__mediator_1_1axes__grp.html#a4de4a57d9759e8333ee445d9cd011c98">mom_diag_mediator::axes_grp</a>
 , <a class="el" href="structmom__diag__mediator_1_1diag__ctrl.html#a94337ddec121e586a4f0d7acda403b4f">mom_diag_mediator::diag_ctrl</a>
@@ -672,6 +674,9 @@ $(document).ready(function(){initNavTree('functions_vars_d.html','');});
 </li>
 <li>dt_ds_wt
 : <a class="el" href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#ab16b8306070cc4b3e6b2e5833f16b64a">mom_bulk_mixed_layer::bulkmixedlayer_cs</a>
+</li>
+<li>dt_expect
+: <a class="el" href="structmom__energetic__pbl_1_1epbl__column__diags.html#ad8572cabf15226d88f110509d0ca484b">mom_energetic_pbl::epbl_column_diags</a>
 </li>
 <li>dt_force_accum
 : <a class="el" href="structmom__forcing__type_1_1mech__forcing.html#a1ba269a9d1f37415222ad0fb27fac8b3">mom_forcing_type::mech_forcing</a>
@@ -710,6 +715,27 @@ $(document).ready(function(){initNavTree('functions_vars_d.html','');});
 </li>
 <li>dtfr_ds
 : <a class="el" href="structmom__eos_1_1eos__type.html#a055fedf91c8e6b636ce755cf149d00e5">mom_eos::eos_type</a>
+</li>
+<li>dtke_conv
+: <a class="el" href="structmom__energetic__pbl_1_1epbl__column__diags.html#a05381b9b035cd5b68e0d07f04f4446ac">mom_energetic_pbl::epbl_column_diags</a>
+</li>
+<li>dtke_conv_decay
+: <a class="el" href="structmom__energetic__pbl_1_1epbl__column__diags.html#ab0f8013a0661107f5ce734c86312c7df">mom_energetic_pbl::epbl_column_diags</a>
+</li>
+<li>dtke_forcing
+: <a class="el" href="structmom__energetic__pbl_1_1epbl__column__diags.html#a1bda1719c5b92e88f53a9f835b38a931">mom_energetic_pbl::epbl_column_diags</a>
+</li>
+<li>dtke_mech_decay
+: <a class="el" href="structmom__energetic__pbl_1_1epbl__column__diags.html#a98dea091538576a5d4b0e6bbf22b8df6">mom_energetic_pbl::epbl_column_diags</a>
+</li>
+<li>dtke_mixing
+: <a class="el" href="structmom__energetic__pbl_1_1epbl__column__diags.html#ac33240672848773b7d05ec3885b392e8">mom_energetic_pbl::epbl_column_diags</a>
+</li>
+<li>dtke_mke
+: <a class="el" href="structmom__energetic__pbl_1_1epbl__column__diags.html#ad1b875ce7017e59ab4c11acae287f942">mom_energetic_pbl::epbl_column_diags</a>
+</li>
+<li>dtke_wind
+: <a class="el" href="structmom__energetic__pbl_1_1epbl__column__diags.html#a037ba67e855ded265d77cdd0a6696455">mom_energetic_pbl::epbl_column_diags</a>
 </li>
 <li>du_dt
 : <a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#aed2f081c50f1f23e03b9a47781cca473">mom_diagnostics::diagnostics_cs</a>

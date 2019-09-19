@@ -335,41 +335,41 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__wave__speed_8F90_source.html#l00957">957</a> of file <a class="el" href="MOM__wave__speed_8F90_source.html">MOM_wave_speed.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(in)</span> :: a<span class="comment"> !&lt; Lower diagonal of matrix (first entry = 0)</span></div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(in)</span> :: b<span class="comment"> !&lt; Leading diagonal of matrix (excluding lam)</span></div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(in)</span> :: c<span class="comment"> !&lt; Upper diagonal of matrix (last entry = 0)</span></div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;  <span class="keywordtype">integer</span>,            <span class="keywordtype">intent(in)</span> :: nrows<span class="comment"> !&lt; Size of matrix</span></div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;<span class="keywordtype">  real</span>,               <span class="keywordtype">intent(in)</span> :: lam<span class="comment"> !&lt; Value subtracted from b</span></div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;<span class="keywordtype">  real</span>,               <span class="keywordtype">intent(out)</span>:: det_out<span class="comment"> !&lt; Determinant</span></div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;<span class="keywordtype">  real</span>,               <span class="keywordtype">intent(out)</span>:: ddet_out<span class="comment"> !&lt; Derivative of determinant w.r.t. lam</span></div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;  <span class="comment">! Local variables</span></div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(nrows)</span> :: det <span class="comment">! value of recursion function</span></div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(nrows)</span> :: ddet <span class="comment">! value of recursion function for derivative</span></div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">parameter</span>:: rescale = 1024.0**4 <span class="comment">! max value of determinant allowed before rescaling</span></div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;<span class="keywordtype">  real</span> :: I_rescale <span class="comment">! inverse of rescale</span></div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;  <span class="keywordtype">integer</span> :: n      <span class="comment">! row (layer interface) index</span></div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160; </div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">size</span>(b) /= nrows) <span class="keyword">call </span>mom_error(warning, <span class="stringliteral">&quot;Diagonal b must be same length as nrows.&quot;</span>)</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">size</span>(a) /= nrows) <span class="keyword">call </span>mom_error(warning, <span class="stringliteral">&quot;Diagonal a must be same length as nrows.&quot;</span>)</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">size</span>(c) /= nrows) <span class="keyword">call </span>mom_error(warning, <span class="stringliteral">&quot;Diagonal c must be same length as nrows.&quot;</span>)</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160; </div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;  i_rescale = 1.0/rescale</div>
+<p class="definition">Definition at line <a class="el" href="MOM__wave__speed_8F90_source.html#l00959">959</a> of file <a class="el" href="MOM__wave__speed_8F90_source.html">MOM_wave_speed.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(in)</span> :: a<span class="comment"> !&lt; Lower diagonal of matrix (first entry = 0)</span></div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(in)</span> :: b<span class="comment"> !&lt; Leading diagonal of matrix (excluding lam)</span></div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(in)</span> :: c<span class="comment"> !&lt; Upper diagonal of matrix (last entry = 0)</span></div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;  <span class="keywordtype">integer</span>,            <span class="keywordtype">intent(in)</span> :: nrows<span class="comment"> !&lt; Size of matrix</span></div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;<span class="keywordtype">  real</span>,               <span class="keywordtype">intent(in)</span> :: lam<span class="comment"> !&lt; Value subtracted from b</span></div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;<span class="keywordtype">  real</span>,               <span class="keywordtype">intent(out)</span>:: det_out<span class="comment"> !&lt; Determinant</span></div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;<span class="keywordtype">  real</span>,               <span class="keywordtype">intent(out)</span>:: ddet_out<span class="comment"> !&lt; Derivative of determinant w.r.t. lam</span></div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;  <span class="comment">! Local variables</span></div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(nrows)</span> :: det <span class="comment">! value of recursion function</span></div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(nrows)</span> :: ddet <span class="comment">! value of recursion function for derivative</span></div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">parameter</span>:: rescale = 1024.0**4 <span class="comment">! max value of determinant allowed before rescaling</span></div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;<span class="keywordtype">  real</span> :: I_rescale <span class="comment">! inverse of rescale</span></div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;  <span class="keywordtype">integer</span> :: n      <span class="comment">! row (layer interface) index</span></div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160; </div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">size</span>(b) /= nrows) <span class="keyword">call </span>mom_error(warning, <span class="stringliteral">&quot;Diagonal b must be same length as nrows.&quot;</span>)</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">size</span>(a) /= nrows) <span class="keyword">call </span>mom_error(warning, <span class="stringliteral">&quot;Diagonal a must be same length as nrows.&quot;</span>)</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">size</span>(c) /= nrows) <span class="keyword">call </span>mom_error(warning, <span class="stringliteral">&quot;Diagonal c must be same length as nrows.&quot;</span>)</div>
 <div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160; </div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;  det(1) = 1.0      ; ddet(1) = 0.0</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;  det(2) = b(2)-lam ; ddet(2) = -1.0</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;  <span class="keywordflow">do</span> n=3,nrows</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;    det(n)  = (b(n)-lam)*det(n-1)  - (a(n)*c(n-1))*det(n-2)</div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;    ddet(n) = (b(n)-lam)*ddet(n-1) - (a(n)*c(n-1))*ddet(n-2) - det(n-1)</div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;    <span class="comment">! Rescale det &amp; ddet if det is getting too large.</span></div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;    <span class="keywordflow">if</span> (abs(det(n)) &gt; rescale) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;      det(n)  = i_rescale*det(n)  ; det(n-1)  = i_rescale*det(n-1)</div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;      ddet(n) = i_rescale*ddet(n) ; ddet(n-1) = i_rescale*ddet(n-1)</div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;<span class="keywordflow">    endif</span></div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;<span class="keywordflow">  enddo</span></div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;  det_out = det(nrows)</div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;  ddet_out = ddet(nrows)</div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160; </div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;  i_rescale = 1.0/rescale</div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160; </div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;  det(1) = 1.0      ; ddet(1) = 0.0</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;  det(2) = b(2)-lam ; ddet(2) = -1.0</div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;  <span class="keywordflow">do</span> n=3,nrows</div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;    det(n)  = (b(n)-lam)*det(n-1)  - (a(n)*c(n-1))*det(n-2)</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;    ddet(n) = (b(n)-lam)*ddet(n-1) - (a(n)*c(n-1))*ddet(n-2) - det(n-1)</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;    <span class="comment">! Rescale det &amp; ddet if det is getting too large.</span></div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;    <span class="keywordflow">if</span> (abs(det(n)) &gt; rescale) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;      det(n)  = i_rescale*det(n)  ; det(n-1)  = i_rescale*det(n-1)</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;      ddet(n) = i_rescale*ddet(n) ; ddet(n-1) = i_rescale*ddet(n-1)</div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;<span class="keywordflow">    endif</span></div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;<span class="keywordflow">  enddo</span></div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;  det_out = det(nrows)</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;  ddet_out = ddet(nrows)</div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 
@@ -383,7 +383,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__wave__speed_a1d633de4db3e5c4e4a7d313c428c7a56_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__wave__speed_a1d633de4db3e5c4e4a7d313c428c7a56_icgraph.svg" width="651" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -579,8 +579,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keywordflow">  endif</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  s =&gt; tv%S ; t =&gt; tv%T</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  g_rho0 = gv%g_Earth / gv%Rho0</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  z_to_pa = gv%g_Earth * gv%Rho0</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  g_rho0 = us%L_T_to_m_s**2 * gv%g_Earth / gv%Rho0</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  z_to_pa = gv%Z_to_H * gv%H_to_Pa</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  use_eos = <span class="keyword">associated</span>(tv%eqn_of_state)</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  rescale = 1024.0**4 ; i_rescale = 1.0/rescale</div>
@@ -920,7 +920,7 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>, <a class="el" href="MOM__remapping_8F90_source.html#l00182">mom_remapping::remapping_core_h()</a>, and <a class="el" href="MOM__wave__speed_8F90_source.html#l00478">tdma6()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__lateral__mixing__coeffs_8F90_source.html#l00153">mom_lateral_mixing_coeffs::calc_resoln_function()</a>, and <a class="el" href="MOM__diagnostics_8F90_source.html#l00187">mom_diagnostics::calculate_diagnostic_fields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__lateral__mixing__coeffs_8F90_source.html#l00149">mom_lateral_mixing_coeffs::calc_resoln_function()</a>, and <a class="el" href="MOM__diagnostics_8F90_source.html#l00187">mom_diagnostics::calculate_diagnostic_fields()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -985,37 +985,37 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__wave__speed_8F90_source.html#l00995">995</a> of file <a class="el" href="MOM__wave__speed_8F90_source.html">MOM_wave_speed.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;  <span class="keywordtype">type</span>(wave_speed_CS), <span class="keywordtype">pointer</span> :: CS<span class="comment"> !&lt; Control structure for MOM_wave_speed</span></div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: use_ebt_mode<span class="comment">  !&lt; If true, use the equivalent</span></div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;<span class="comment">                                     !! barotropic mode instead of the first baroclinic mode.</span></div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;<span class="keywordtype">  real</span>,    <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: mono_N2_column_fraction<span class="comment"> !&lt; The lower fraction of water column over</span></div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;<span class="comment">                                     !! which N2 is limited as monotonic for the purposes of</span></div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;<span class="comment">                                     !! calculating the vertical modal structure.</span></div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;<span class="keywordtype">  real</span>,    <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: mono_N2_depth<span class="comment"> !&lt; The depth below which N2 is limited</span></div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;<span class="comment">                                     !! as monotonic for the purposes of calculating the</span></div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;<span class="comment">                                     !! vertical modal structure.</span></div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;<span class="comment">! This include declares and sets the variable &quot;version&quot;.</span></div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;<span class="preprocessor">#include &quot;version_variable.h&quot;</span></div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;<span class="preprocessor"></span>  <span class="keywordtype">character(len=40)</span>  :: mdl = <span class="stringliteral">&quot;MOM_wave_speed&quot;</span>  <span class="comment">! This module&#39;s name.</span></div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160; </div>
-<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">associated</span>(cs)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;    <span class="keyword">call </span>mom_error(warning, <span class="stringliteral">&quot;wave_speed_init called with an &quot;</span>// &amp;</div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;                            <span class="stringliteral">&quot;associated control structure.&quot;</span>)</div>
-<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;    <span class="keywordflow">return</span></div>
-<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;  <span class="keywordflow">else</span> ; <span class="keyword">allocate</span>(cs) ;<span class="keywordflow"> endif</span></div>
-<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160; </div>
-<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;  <span class="comment">! Write all relevant parameters to the model log.</span></div>
-<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;  <span class="keyword">call </span>log_version(mdl, version)</div>
-<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160; </div>
-<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;  <span class="keyword">call </span>wave_speed_set_param(cs, use_ebt_mode=use_ebt_mode, mono_n2_column_fraction=mono_n2_column_fraction)</div>
+<p class="definition">Definition at line <a class="el" href="MOM__wave__speed_8F90_source.html#l00997">997</a> of file <a class="el" href="MOM__wave__speed_8F90_source.html">MOM_wave_speed.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;  <span class="keywordtype">type</span>(wave_speed_CS), <span class="keywordtype">pointer</span> :: CS<span class="comment"> !&lt; Control structure for MOM_wave_speed</span></div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: use_ebt_mode<span class="comment">  !&lt; If true, use the equivalent</span></div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;<span class="comment">                                     !! barotropic mode instead of the first baroclinic mode.</span></div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;<span class="keywordtype">  real</span>,    <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: mono_N2_column_fraction<span class="comment"> !&lt; The lower fraction of water column over</span></div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;<span class="comment">                                     !! which N2 is limited as monotonic for the purposes of</span></div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;<span class="comment">                                     !! calculating the vertical modal structure.</span></div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;<span class="keywordtype">  real</span>,    <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: mono_N2_depth<span class="comment"> !&lt; The depth below which N2 is limited</span></div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;<span class="comment">                                     !! as monotonic for the purposes of calculating the</span></div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;<span class="comment">                                     !! vertical modal structure.</span></div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;<span class="comment">! This include declares and sets the variable &quot;version&quot;.</span></div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;<span class="preprocessor">#include &quot;version_variable.h&quot;</span></div>
+<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;<span class="preprocessor"></span>  <span class="keywordtype">character(len=40)</span>  :: mdl = <span class="stringliteral">&quot;MOM_wave_speed&quot;</span>  <span class="comment">! This module&#39;s name.</span></div>
+<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160; </div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">associated</span>(cs)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;    <span class="keyword">call </span>mom_error(warning, <span class="stringliteral">&quot;wave_speed_init called with an &quot;</span>// &amp;</div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;                            <span class="stringliteral">&quot;associated control structure.&quot;</span>)</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;    <span class="keywordflow">return</span></div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;  <span class="keywordflow">else</span> ; <span class="keyword">allocate</span>(cs) ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160; </div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;  <span class="comment">! Write all relevant parameters to the model log.</span></div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;  <span class="keyword">call </span>log_version(mdl, version)</div>
 <div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160; </div>
-<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;  <span class="keyword">call </span>initialize_remapping(cs%remapping_CS, <span class="stringliteral">&#39;PLM&#39;</span>, boundary_extrapolation=.false.)</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;  <span class="keyword">call </span>wave_speed_set_param(cs, use_ebt_mode=use_ebt_mode, mono_n2_column_fraction=mono_n2_column_fraction)</div>
 <div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160; </div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;  <span class="keyword">call </span>initialize_remapping(cs%remapping_CS, <span class="stringliteral">&#39;PLM&#39;</span>, boundary_extrapolation=.false.)</div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__remapping_8F90_source.html#l01541">mom_remapping::initialize_remapping()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>, and <a class="el" href="MOM__wave__speed_8F90_source.html#l01025">wave_speed_set_param()</a>.</p>
+<p class="reference">References <a class="el" href="MOM__remapping_8F90_source.html#l01541">mom_remapping::initialize_remapping()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>, and <a class="el" href="MOM__wave__speed_8F90_source.html#l01027">wave_speed_set_param()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__diagnostics_8F90_source.html#l01417">mom_diagnostics::mom_diagnostics_init()</a>, and <a class="el" href="MOM__lateral__mixing__coeffs_8F90_source.html#l00888">mom_lateral_mixing_coeffs::varmix_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__diagnostics_8F90_source.html#l01425">mom_diagnostics::mom_diagnostics_init()</a>, and <a class="el" href="MOM__lateral__mixing__coeffs_8F90_source.html#l00876">mom_lateral_mixing_coeffs::varmix_init()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1080,28 +1080,28 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__wave__speed_8F90_source.html#l01025">1025</a> of file <a class="el" href="MOM__wave__speed_8F90_source.html">MOM_wave_speed.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;  <span class="keywordtype">type</span>(wave_speed_CS), <span class="keywordtype">pointer</span>  :: CS<span class="comment"> !&lt; Control structure for MOM_wave_speed</span></div>
-<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: use_ebt_mode<span class="comment">  !&lt; If true, use the equivalent</span></div>
-<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;<span class="comment">                                      !! barotropic mode instead of the first baroclinic mode.</span></div>
-<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;<span class="keywordtype">  real</span>,    <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: mono_N2_column_fraction<span class="comment"> !&lt; The lower fraction of water column over</span></div>
-<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;<span class="comment">                                      !! which N2 is limited as monotonic for the purposes of</span></div>
-<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;<span class="comment">                                      !! calculating the vertical modal structure.</span></div>
-<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;<span class="keywordtype">  real</span>,    <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: mono_N2_depth<span class="comment"> !&lt; The depth below which N2 is limited</span></div>
-<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;<span class="comment">                                      !! as monotonic for the purposes of calculating the</span></div>
-<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;<span class="comment">                                      !! vertical modal structure.</span></div>
-<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160; </div>
-<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(cs)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
-<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;     <span class="stringliteral">&quot;wave_speed_set_param called with an associated control structure.&quot;</span>)</div>
-<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160; </div>
-<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(use_ebt_mode)) cs%use_ebt_mode = use_ebt_mode</div>
-<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(mono_n2_column_fraction)) cs%mono_N2_column_fraction = mono_n2_column_fraction</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(mono_n2_depth)) cs%mono_N2_depth = mono_n2_depth</div>
-<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="MOM__wave__speed_8F90_source.html#l01027">1027</a> of file <a class="el" href="MOM__wave__speed_8F90_source.html">MOM_wave_speed.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;  <span class="keywordtype">type</span>(wave_speed_CS), <span class="keywordtype">pointer</span>  :: CS<span class="comment"> !&lt; Control structure for MOM_wave_speed</span></div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: use_ebt_mode<span class="comment">  !&lt; If true, use the equivalent</span></div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;<span class="comment">                                      !! barotropic mode instead of the first baroclinic mode.</span></div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;<span class="keywordtype">  real</span>,    <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: mono_N2_column_fraction<span class="comment"> !&lt; The lower fraction of water column over</span></div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;<span class="comment">                                      !! which N2 is limited as monotonic for the purposes of</span></div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;<span class="comment">                                      !! calculating the vertical modal structure.</span></div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;<span class="keywordtype">  real</span>,    <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: mono_N2_depth<span class="comment"> !&lt; The depth below which N2 is limited</span></div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;<span class="comment">                                      !! as monotonic for the purposes of calculating the</span></div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;<span class="comment">                                      !! vertical modal structure.</span></div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160; </div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(cs)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;     <span class="stringliteral">&quot;wave_speed_set_param called with an associated control structure.&quot;</span>)</div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160; </div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(use_ebt_mode)) cs%use_ebt_mode = use_ebt_mode</div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(mono_n2_column_fraction)) cs%mono_N2_column_fraction = mono_n2_column_fraction</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(mono_n2_depth)) cs%mono_N2_depth = mono_n2_depth</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__wave__speed_8F90_source.html#l00995">wave_speed_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__wave__speed_8F90_source.html#l00997">wave_speed_init()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1194,7 +1194,7 @@ Here is the caller graph for this function:</div>
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Layer thickness [H ~&gt; m or kg m-2] </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tv</td><td>Thermodynamic variables </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nmodes</td><td>Number of modes </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">cn</td><td>Waves speeds [m s-1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">cn</td><td>Waves speeds [L T-1 ~&gt; m s-1] </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">cs</td><td>Control structure for MOM_wave_speed </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">full_halos</td><td>If true, do the calculation over the entire computational domain. </td></tr>
   </table>
@@ -1208,7 +1208,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G))</span>, <span class="keywordtype">intent(in)</span>  :: h<span class="comment"> !&lt; Layer thickness [H ~&gt; m or kg m-2]</span></div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;  <span class="keywordtype">type</span>(thermo_var_ptrs),                    <span class="keywordtype">intent(in)</span>  :: tv<span class="comment"> !&lt; Thermodynamic variables</span></div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;  <span class="keywordtype">integer</span>,                                  <span class="keywordtype">intent(in)</span>  :: nmodes<span class="comment"> !&lt; Number of modes</span></div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(G%isd:G%ied,G%jsd:G%jed,nmodes)</span>, <span class="keywordtype">intent(out)</span> :: cn<span class="comment"> !&lt; Waves speeds [m s-1]</span></div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(G%isd:G%ied,G%jsd:G%jed,nmodes)</span>, <span class="keywordtype">intent(out)</span> :: cn<span class="comment"> !&lt; Waves speeds [L T-1 ~&gt; m s-1]</span></div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  <span class="keywordtype">type</span>(wave_speed_CS), <span class="keywordtype">optional</span>,            <span class="keywordtype">pointer</span>     :: CS<span class="comment"> !&lt; Control structure for MOM_wave_speed</span></div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  <span class="keywordtype">logical</span>,             <span class="keywordtype">optional</span>,            <span class="keywordtype">intent(in)</span>  :: full_halos<span class="comment"> !&lt; If true, do the calculation</span></div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<span class="comment">                                                                      !! over the entire computational domain.</span></div>
@@ -1263,383 +1263,385 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;  <span class="keywordtype">integer</span> :: kf(SZI_(G))</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: max_itt = 10</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;  <span class="keywordtype">logical</span> :: use_EOS    <span class="comment">! If true, density is calculated from T &amp; S using the equation of state.</span></div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZK_(G)+1)</span> :: z_int, N2</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;  <span class="keywordtype">integer</span> :: nsub       <span class="comment">! number of subintervals used for root finding</span></div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: sub_it_max = 4</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;                        <span class="comment">! maximum number of times to subdivide interval</span></div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;                        <span class="comment">! for root finding (# intervals = 2**sub_it_max)</span></div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;  <span class="keywordtype">logical</span> :: sub_rootfound <span class="comment">! if true, subdivision has located root</span></div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;  <span class="keywordtype">integer</span> :: kc, nrows</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;  <span class="keywordtype">integer</span> :: sub, sub_it</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, k2, itt, is, ie, js, je, nz, row, iint, m, ig, jg</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160; </div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec ; nz = g%ke</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160; </div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(cs)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    <span class="keywordflow">if</span> (.not. <span class="keyword">associated</span>(cs)) <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;MOM_wave_speed: &quot;</span>// &amp;</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;           <span class="stringliteral">&quot;Module must be initialized before it is used.&quot;</span>)</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160; </div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(full_halos)) <span class="keywordflow">then</span> ; <span class="keywordflow">if</span> (full_halos) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    is = g%isd ; ie = g%ied ; js = g%jsd ; je = g%jed</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="keywordflow">  endif</span> ;<span class="keywordflow"> endif</span></div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160; </div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;  s =&gt; tv%S ; t =&gt; tv%T</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;  g_rho0 = gv%g_Earth / gv%Rho0</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;  use_eos = <span class="keyword">associated</span>(tv%eqn_of_state)</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;  z_to_pa = gv%g_Earth * gv%Rho0</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160; </div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;  min_h_frac = tol1 / real(nz)</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;  <span class="comment">!$OMP parallel do default(private) shared(is,ie,js,je,nz,h,G,GV,US,min_h_frac,use_EOS,T,S, &amp;</span></div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;  <span class="comment">!$OMP                                     Z_to_Pa,tv,cn,g_Rho0,nmodes)</span></div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;  <span class="keywordflow">do</span> j=js,je</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    <span class="comment">!   First merge very thin layers with the one above (or below if they are</span></div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    <span class="comment">! at the top).  This also transposes the row order so that columns can</span></div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    <span class="comment">! be worked upon one at a time.</span></div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    <span class="keywordflow">do</span> i=is,ie ; htot(i) = 0.0 ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> i=is,ie ; htot(i) = htot(i) + h(i,j,k)*gv%H_to_Z ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160; </div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    <span class="keywordflow">do</span> i=is,ie</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;      hmin(i) = htot(i)*min_h_frac ; kf(i) = 1 ; h_here(i) = 0.0</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;      hxt_here(i) = 0.0 ; hxs_here(i) = 0.0 ; hxr_here(i) = 0.0</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <span class="keywordflow">if</span> (use_eos) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;      <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> i=is,ie</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;        <span class="keywordflow">if</span> ((h_here(i) &gt; hmin(i)) .and. (h(i,j,k)*gv%H_to_Z &gt; hmin(i))) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;          hf(kf(i),i) = h_here(i)</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;          tf(kf(i),i) = hxt_here(i) / h_here(i)</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;          sf(kf(i),i) = hxs_here(i) / h_here(i)</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;          kf(i) = kf(i) + 1</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160; </div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;          <span class="comment">! Start a new layer</span></div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;          h_here(i) = h(i,j,k)*gv%H_to_Z</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;          hxt_here(i) = (h(i,j,k)*gv%H_to_Z)*t(i,j,k)</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;          hxs_here(i) = (h(i,j,k)*gv%H_to_Z)*s(i,j,k)</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;          h_here(i) = h_here(i) + h(i,j,k)*gv%H_to_Z</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;          hxt_here(i) = hxt_here(i) + (h(i,j,k)*gv%H_to_Z)*t(i,j,k)</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;          hxs_here(i) = hxs_here(i) + (h(i,j,k)*gv%H_to_Z)*s(i,j,k)</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;<span class="keywordflow">        endif</span></div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;<span class="keywordflow">      enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;      <span class="keywordflow">do</span> i=is,ie ; <span class="keywordflow">if</span> (h_here(i) &gt; 0.0) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        hf(kf(i),i) = h_here(i)</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;        tf(kf(i),i) = hxt_here(i) / h_here(i)</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        sf(kf(i),i) = hxs_here(i) / h_here(i)</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;<span class="keywordflow">      endif</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;      <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> i=is,ie</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;        <span class="keywordflow">if</span> ((h_here(i) &gt; hmin(i)) .and. (h(i,j,k)*gv%H_to_Z &gt; hmin(i))) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;          hf(kf(i),i) = h_here(i) ; rf(kf(i),i) = hxr_here(i) / h_here(i)</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;          kf(i) = kf(i) + 1</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160; </div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;          <span class="comment">! Start a new layer</span></div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;          h_here(i) = h(i,j,k)*gv%H_to_Z</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;          hxr_here(i) = (h(i,j,k)*gv%H_to_Z)*gv%Rlay(k)</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;          h_here(i) = h_here(i) + h(i,j,k)*gv%H_to_Z</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;          hxr_here(i) = hxr_here(i) + (h(i,j,k)*gv%H_to_Z)*gv%Rlay(k)</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;<span class="keywordflow">        endif</span></div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;<span class="keywordflow">      enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;      <span class="keywordflow">do</span> i=is,ie ; <span class="keywordflow">if</span> (h_here(i) &gt; 0.0) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        hf(kf(i),i) = h_here(i) ; rf(kf(i),i) = hxr_here(i) / h_here(i)</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;<span class="keywordflow">      endif</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="keywordflow">    endif</span></div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160; </div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    <span class="comment">! From this point, we can work on individual columns without causing memory</span></div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    <span class="comment">! to have page faults.</span></div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    <span class="keywordflow">do</span> i=is,ie</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;      <span class="keywordflow">if</span> (g%mask2dT(i,j) &gt; 0.5) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        <span class="keywordflow">if</span> (use_eos) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;          pres(1) = 0.0</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;          <span class="keywordflow">do</span> k=2,kf(i)</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;            pres(k) = pres(k-1) + z_to_pa*hf(k-1,i)</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;            t_int(k) = 0.5*(tf(k,i)+tf(k-1,i))</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;            s_int(k) = 0.5*(sf(k,i)+sf(k-1,i))</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;<span class="keywordflow">          enddo</span></div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;          <span class="keyword">call </span>calculate_density_derivs(t_int, s_int, pres, drho_dt, drho_ds, 2, &amp;</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;                                        kf(i)-1, tv%eqn_of_state)</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160; </div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;          <span class="comment">! Sum the reduced gravities to find out how small a density difference</span></div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;          <span class="comment">! is negligibly small.</span></div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;          drxh_sum = 0.0</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;          <span class="keywordflow">do</span> k=2,kf(i)</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;            drxh_sum = drxh_sum + 0.5*(hf(k-1,i)+hf(k,i)) * &amp;</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;                max(0.0,drho_dt(k)*(tf(k,i)-tf(k-1,i)) + &amp;</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;                        drho_ds(k)*(sf(k,i)-sf(k-1,i)))</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;<span class="keywordflow">          enddo</span></div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;          drxh_sum = 0.0</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;          <span class="keywordflow">do</span> k=2,kf(i)</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;            drxh_sum = drxh_sum + 0.5*(hf(k-1,i)+hf(k,i)) * &amp;</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;                              max(0.0,rf(k,i)-rf(k-1,i))</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;<span class="keywordflow">          enddo</span></div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;<span class="keywordflow">        endif</span></div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    <span class="comment">!   Find gprime across each internal interface, taking care of convective</span></div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    <span class="comment">! instabilities by merging layers.</span></div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        <span class="keywordflow">if</span> (drxh_sum &lt;= 0.0) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;          cn(i,j,:) = 0.0</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;          <span class="comment">! Merge layers to eliminate convective instabilities or exceedingly</span></div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;          <span class="comment">! small reduced gravities.</span></div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;          <span class="keywordflow">if</span> (use_eos) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;            kc = 1</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;            hc(1) = hf(1,i) ; tc(1) = tf(1,i) ; sc(1) = sf(1,i)</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;            <span class="keywordflow">do</span> k=2,kf(i)</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;              <span class="keywordflow">if</span> ((drho_dt(k)*(tf(k,i)-tc(kc)) + drho_ds(k)*(sf(k,i)-sc(kc))) * &amp;</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;                  (hc(kc) + hf(k,i)) &lt; 2.0 * tol2*drxh_sum) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;                <span class="comment">! Merge this layer with the one above and backtrack.</span></div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;                i_hnew = 1.0 / (hc(kc) + hf(k,i))</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;                tc(kc) = (hc(kc)*tc(kc) + hf(k,i)*tf(k,i)) * i_hnew</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;                sc(kc) = (hc(kc)*sc(kc) + hf(k,i)*sf(k,i)) * i_hnew</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;                hc(kc) = (hc(kc) + hf(k,i))</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;                <span class="comment">! Backtrack to remove any convective instabilities above...  Note</span></div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;                <span class="comment">! that the tolerance is a factor of two larger, to avoid limit how</span></div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;                <span class="comment">! far back we go.</span></div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                <span class="keywordflow">do</span> k2=kc,2,-1</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;                  <span class="keywordflow">if</span> ((drho_dt(k2)*(tc(k2)-tc(k2-1)) + drho_ds(k2)*(sc(k2)-sc(k2-1))) * &amp;</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;                      (hc(k2) + hc(k2-1)) &lt; tol2*drxh_sum) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;                    <span class="comment">! Merge the two bottommost layers.  At this point kc = k2.</span></div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;                    i_hnew = 1.0 / (hc(kc) + hc(kc-1))</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;                    tc(kc-1) = (hc(kc)*tc(kc) + hc(kc-1)*tc(kc-1)) * i_hnew</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;                    sc(kc-1) = (hc(kc)*sc(kc) + hc(kc-1)*sc(kc-1)) * i_hnew</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;                    hc(kc-1) = (hc(kc) + hc(kc-1))</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;                    kc = kc - 1</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;                  <span class="keywordflow">else</span> ; <span class="keywordflow">exit</span> ;<span class="keywordflow"> endif</span></div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="keywordflow">                enddo</span></div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;              <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;                <span class="comment">! Add a new layer to the column.</span></div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;                kc = kc + 1</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;                drho_ds(kc) = drho_ds(k) ; drho_dt(kc) = drho_dt(k)</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;                tc(kc) = tf(k,i) ; sc(kc) = sf(k,i) ; hc(kc) = hf(k,i)</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;<span class="keywordflow">              endif</span></div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;<span class="keywordflow">            enddo</span></div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;            <span class="comment">! At this point there are kc layers and the gprimes should be positive.</span></div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;            <span class="keywordflow">do</span> k=2,kc <span class="comment">! Revisit this if non-Boussinesq.</span></div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;              gprime(k) = g_rho0 * (drho_dt(k)*(tc(k)-tc(k-1)) + &amp;</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                                    drho_ds(k)*(sc(k)-sc(k-1)))</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;<span class="keywordflow">            enddo</span></div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;          <span class="keywordflow">else</span>  <span class="comment">! .not.use_EOS</span></div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;            <span class="comment">! Do the same with density directly...</span></div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;            kc = 1</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;            hc(1) = hf(1,i) ; rc(1) = rf(1,i)</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;            <span class="keywordflow">do</span> k=2,kf(i)</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;              <span class="keywordflow">if</span> ((rf(k,i) - rc(kc)) * (hc(kc) + hf(k,i)) &lt; 2.0*tol2*drxh_sum) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;                <span class="comment">! Merge this layer with the one above and backtrack.</span></div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;                rc(kc) = (hc(kc)*rc(kc) + hf(k,i)*rf(k,i)) / (hc(kc) + hf(k,i))</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                hc(kc) = (hc(kc) + hf(k,i))</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                <span class="comment">! Backtrack to remove any convective instabilities above...  Note</span></div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                <span class="comment">! that the tolerance is a factor of two larger, to avoid limit how</span></div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                <span class="comment">! far back we go.</span></div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;                <span class="keywordflow">do</span> k2=kc,2,-1</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;                  <span class="keywordflow">if</span> ((rc(k2)-rc(k2-1)) * (hc(k2)+hc(k2-1)) &lt; tol2*drxh_sum) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;                    <span class="comment">! Merge the two bottommost layers.  At this point kc = k2.</span></div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;                    rc(kc-1) = (hc(kc)*rc(kc) + hc(kc-1)*rc(kc-1)) / (hc(kc) + hc(kc-1))</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                    hc(kc-1) = (hc(kc) + hc(kc-1))</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;                    kc = kc - 1</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;                  <span class="keywordflow">else</span> ; <span class="keywordflow">exit</span> ;<span class="keywordflow"> endif</span></div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;<span class="keywordflow">                enddo</span></div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;              <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;                <span class="comment">! Add a new layer to the column.</span></div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;                kc = kc + 1</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                rc(kc) = rf(k,i) ; hc(kc) = hf(k,i)</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;<span class="keywordflow">              endif</span></div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;<span class="keywordflow">            enddo</span></div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;            <span class="comment">! At this point there are kc layers and the gprimes should be positive.</span></div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;            <span class="keywordflow">do</span> k=2,kc <span class="comment">! Revisit this if non-Boussinesq.</span></div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;              gprime(k) = g_rho0 * (rc(k)-rc(k-1))</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;<span class="keywordflow">            enddo</span></div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;<span class="keywordflow">          endif</span>  <span class="comment">! use_EOS</span></div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160; </div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;          <span class="comment">!-----------------NOW FIND WAVE SPEEDS---------------------------------------</span></div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;          ig = i + g%idg_offset ; jg = j + g%jdg_offset</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;          <span class="comment">!   Sum the contributions from all of the interfaces to give an over-estimate</span></div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;          <span class="comment">! of the first-mode wave speed.</span></div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;          <span class="keywordflow">if</span> (kc &gt;= 2) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;            <span class="comment">! Set depth at surface</span></div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;            z_int(1) = 0.0</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;            <span class="comment">! initialize speed2_tot</span></div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;            speed2_tot = 0.0</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;            <span class="comment">! Calculate Igu, Igl, depth, and N2 at each interior interface</span></div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;            <span class="comment">! [excludes surface (K=1) and bottom (K=kc+1)]</span></div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;            <span class="keywordflow">do</span> k=2,kc</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;              igl(k) = 1.0/(gprime(k)*hc(k)) ; igu(k) = 1.0/(gprime(k)*hc(k-1))</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;              z_int(k) = z_int(k-1) + hc(k-1)</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;              n2(k) = us%m_to_Z**2*gprime(k)/(0.5*(hc(k)+hc(k-1)))</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;              speed2_tot = speed2_tot + gprime(k)*(hc(k-1)+hc(k))</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;<span class="keywordflow">            enddo</span></div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;            <span class="comment">! Set stratification for surface and bottom (setting equal to nearest interface for now)</span></div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;            n2(1) = n2(2) ; n2(kc+1) = n2(kc)</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;            <span class="comment">! Calcualte depth at bottom</span></div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;            z_int(kc+1) = z_int(kc)+hc(kc)</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;            <span class="comment">! check that thicknesses sum to total depth</span></div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;            <span class="keywordflow">if</span> (abs(z_int(kc+1)-htot(i)) &gt; 1.e-12*htot(i)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;              <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;wave_structure: mismatch in total depths&quot;</span>)</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;<span class="keywordflow">            endif</span></div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160; </div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;            <span class="comment">! Define the diagonals of the tridiagonal matrix</span></div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;            <span class="comment">! First, populate interior rows</span></div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;            <span class="keywordflow">do</span> k=3,kc-1</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;              row = k-1 <span class="comment">! indexing for TD matrix rows</span></div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;              a_diag(row) = (-igu(k))</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;              b_diag(row) = (igu(k)+igl(k))</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;              c_diag(row) = (-igl(k))</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;<span class="keywordflow">            enddo</span></div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;            <span class="comment">! Populate top row of tridiagonal matrix</span></div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;            k=2 ; row = k-1</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;            a_diag(row) = 0.0</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;            b_diag(row) = (igu(k)+igl(k))</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;            c_diag(row) = (-igl(k))</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;            <span class="comment">! Populate bottom row of tridiagonal matrix</span></div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;            k=kc ; row = k-1</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;            a_diag(row) = (-igu(k))</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;            b_diag(row) = (igu(k)+igl(k))</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;            c_diag(row) = 0.0</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;            <span class="comment">! Total number of rows in the matrix = number of interior interfaces</span></div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            nrows = kc-1</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160; </div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;            <span class="comment">! Under estimate the first eigen value to start with.</span></div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;            lam_1 = 1.0 / speed2_tot</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160; </div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;            <span class="comment">! Find the first eigen value</span></div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;            <span class="keywordflow">do</span> itt=1,max_itt</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;              <span class="comment">! calculate the determinant of (A-lam_1*I)</span></div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;              <span class="keyword">call </span>tridiag_det(a_diag(1:nrows),b_diag(1:nrows),c_diag(1:nrows), &amp;</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;                                      nrows,lam_1,det,ddet)</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;              <span class="comment">! Use Newton&#39;s method iteration to find a new estimate of lam_1</span></div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;              <span class="comment">!det = det_it(itt) ; ddet = ddet_it(itt)</span></div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;              <span class="keywordflow">if</span> ((ddet &gt;= 0.0) .or. (-det &gt; -0.5*lam_1*ddet)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;                <span class="comment">! lam_1 was not an under-estimate, as intended, so Newton&#39;s method</span></div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;                <span class="comment">! may not be reliable; lam_1 must be reduced, but not by more</span></div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;                <span class="comment">! than half.</span></div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;                lam_1 = 0.5 * lam_1</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;              <span class="keywordflow">else</span>  <span class="comment">! Newton&#39;s method is OK.</span></div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;                dlam = - det / ddet</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;                lam_1 = lam_1 + dlam</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;                <span class="keywordflow">if</span> (abs(dlam) &lt; tol2*lam_1) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;                  <span class="comment">! calculate 1st mode speed</span></div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;                  <span class="keywordflow">if</span> (lam_1 &gt; 0.0) cn(i,j,1) = 1.0 / sqrt(lam_1)</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                  <span class="keywordflow">exit</span></div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;<span class="keywordflow">                endif</span></div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;<span class="keywordflow">              endif</span></div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;<span class="keywordflow">            enddo</span></div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160; </div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;            <span class="comment">! Find other eigen values if c1 is of significant magnitude, &gt; cn_thresh</span></div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;            nrootsfound = 0    <span class="comment">! number of extra roots found (not including 1st root)</span></div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;            <span class="keywordflow">if</span> (nmodes&gt;1 .and. kc&gt;=nmodes+1 .and. cn(i,j,1)&gt;c1_thresh) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;              <span class="comment">! Set the the range to look for the other desired eigen values</span></div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;              <span class="comment">! set min value just greater than the 1st root (found above)</span></div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;              lammin = lam_1*(1.0 + tol2)</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;              <span class="comment">! set max value based on a low guess at wavespeed for highest mode</span></div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;              speed2_min = (reduct_factor*cn(i,j,1)/real(nmodes))**2</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;              lammax = 1.0 / speed2_min</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;              <span class="comment">! set width of interval (not sure about this - BDM)</span></div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;              laminc = 0.5*lam_1</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;              <span class="comment">! set number of intervals within search range</span></div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;              numint = nint((lammax - lammin)/laminc)</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160; </div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;              <span class="comment">!   Find intervals containing zero-crossings (roots) of the determinant</span></div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;              <span class="comment">! that are beyond the first root</span></div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160; </div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;              <span class="comment">! find det_l of first interval (det at left endpoint)</span></div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;              <span class="keyword">call </span>tridiag_det(a_diag(1:nrows),b_diag(1:nrows),c_diag(1:nrows), &amp;</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;                               nrows,lammin,det_l,ddet_l)</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;              <span class="comment">! move interval window looking for zero-crossings************************</span></div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;              <span class="keywordflow">do</span> iint=1,numint</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;                xr = lammin + laminc * iint</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;                xl = xr - laminc</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;                <span class="keyword">call </span>tridiag_det(a_diag(1:nrows),b_diag(1:nrows),c_diag(1:nrows), &amp;</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;                                 nrows,xr,det_r,ddet_r)</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;                <span class="keywordflow">if</span> (det_l*det_r &lt; 0.0) <span class="keywordflow">then</span>  <span class="comment">! if function changes sign</span></div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;                  <span class="keywordflow">if</span> (det_l*ddet_l &lt; 0.0) <span class="keywordflow">then</span> <span class="comment">! if function at left is headed to zero</span></div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;                    nrootsfound = nrootsfound + 1</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;                    xbl(nrootsfound) = xl</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;                    xbr(nrootsfound) = xr</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;                  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;                    <span class="comment">!   function changes sign but has a local max/min in interval,</span></div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;                    <span class="comment">! try subdividing interval as many times as necessary (or sub_it_max).</span></div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;                    <span class="comment">! loop that increases number of subintervals:</span></div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;                    <span class="comment">!call MOM_error(WARNING, &quot;determinant changes sign&quot;// &amp;</span></div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;                    <span class="comment">!            &quot;but has a local max/min in interval;&quot;//&amp;</span></div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;                    <span class="comment">!            &quot; reduce increment in lam.&quot;)</span></div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;                    <span class="comment">! begin subdivision loop -------------------------------------------</span></div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;                    sub_rootfound = .false. <span class="comment">! initialize</span></div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;                    <span class="keywordflow">do</span> sub_it=1,sub_it_max</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;                      nsub = 2**sub_it <span class="comment">! number of subintervals; nsub=2,4,8,...</span></div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;                      <span class="comment">! loop over each subinterval:</span></div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;                      <span class="keywordflow">do</span> sub=1,nsub-1,2 <span class="comment">! only check odds; sub = 1; 1,3; 1,3,5,7;...</span></div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;                        xl_sub = xl + laminc/(nsub)*sub</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;                        <span class="keyword">call </span>tridiag_det(a_diag(1:nrows),b_diag(1:nrows),c_diag(1:nrows), &amp;</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;                                 nrows,xl_sub,det_sub,ddet_sub)</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                        <span class="keywordflow">if</span> (det_sub*det_r &lt; 0.0) <span class="keywordflow">then</span>  <span class="comment">! if function changes sign</span></div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;                          <span class="keywordflow">if</span> (det_sub*ddet_sub &lt; 0.0) <span class="keywordflow">then</span> <span class="comment">! if function at left is headed to zero</span></div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;                            sub_rootfound = .true.</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;                            nrootsfound = nrootsfound + 1</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;                            xbl(nrootsfound) = xl_sub</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;                            xbr(nrootsfound) = xr</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;                            <span class="keywordflow">exit</span> <span class="comment">! exit sub loop</span></div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;<span class="keywordflow">                          endif</span> <span class="comment">! headed toward zero</span></div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;<span class="keywordflow">                        endif</span> <span class="comment">! sign change</span></div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;<span class="keywordflow">                      enddo</span> <span class="comment">! sub-loop</span></div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;                      <span class="keywordflow">if</span> (sub_rootfound) <span class="keywordflow">exit</span> <span class="comment">! root has been found, exit sub_it loop</span></div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;                      <span class="comment">!   Otherwise, function changes sign but has a local max/min in one of the</span></div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;                      <span class="comment">! sub intervals, try subdividing again unless sub_it_max has been reached.</span></div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;                      <span class="keywordflow">if</span> (sub_it == sub_it_max) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;                        <span class="keyword">call </span>mom_error(warning, <span class="stringliteral">&quot;wave_speed: root not found &quot;</span>// &amp;</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;                                       <span class="stringliteral">&quot; after sub_it_max subdivisions of original&quot;</span>// &amp;</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;                                       <span class="stringliteral">&quot; interval.&quot;</span>)</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;<span class="keywordflow">                      endif</span> <span class="comment">! sub_it == sub_it_max</span></div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;<span class="keywordflow">                    enddo</span> <span class="comment">! sub_it-loop-------------------------------------------------</span></div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;<span class="keywordflow">                  endif</span> <span class="comment">! det_l*ddet_l &lt; 0.0</span></div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;<span class="keywordflow">                endif</span> <span class="comment">! det_l*det_r &lt; 0.0</span></div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;                <span class="comment">! exit iint-loop if all desired roots have been found</span></div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;                <span class="keywordflow">if</span> (nrootsfound &gt;= nmodes-1) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;                  <span class="comment">! exit if all additional roots found</span></div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;                  <span class="keywordflow">exit</span></div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;                <span class="keywordflow">elseif</span> (iint == numint) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;                  <span class="comment">! oops, lamMax not large enough - could add code to increase (BDM)</span></div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;                  <span class="comment">! set unfound modes to zero for now (BDM)</span></div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;                  cn(i,j,nrootsfound+2:nmodes) = 0.0</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;                  <span class="comment">! else shift interval and keep looking until nmodes or numint is reached</span></div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;                  det_l = det_r</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;                  ddet_l = ddet_r</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;<span class="keywordflow">                endif</span></div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;<span class="keywordflow">              enddo</span> <span class="comment">! iint-loop</span></div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160; </div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;              <span class="comment">! Use Newton&#39;s method to find the roots within the identified windows</span></div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;              <span class="keywordflow">do</span> m=1,nrootsfound <span class="comment">! loop over the root-containing widows (excluding 1st mode)</span></div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;                lam_n = xbl(m) <span class="comment">! first guess is left edge of window</span></div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;                <span class="keywordflow">do</span> itt=1,max_itt</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;                  <span class="comment">! calculate the determinant of (A-lam_n*I)</span></div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;                  <span class="keyword">call </span>tridiag_det(a_diag(1:nrows),b_diag(1:nrows),c_diag(1:nrows), &amp;</div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;                                   nrows,lam_n,det,ddet)</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;                  <span class="comment">! Use Newton&#39;s method to find a new estimate of lam_n</span></div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;                  dlam = - det / ddet</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;                  lam_n = lam_n + dlam</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;                  <span class="keywordflow">if</span> (abs(dlam) &lt; tol2*lam_1) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;                    <span class="comment">! calculate nth mode speed</span></div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;                    <span class="keywordflow">if</span> (lam_n &gt; 0.0) cn(i,j,m+1) = 1.0 / sqrt(lam_n)</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;                    <span class="keywordflow">exit</span></div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;<span class="keywordflow">                  endif</span> <span class="comment">! within tol</span></div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;<span class="keywordflow">                enddo</span> <span class="comment">! itt-loop</span></div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;<span class="keywordflow">              enddo</span> <span class="comment">! n-loop</span></div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;              cn(i,j,2:nmodes) = 0.0 <span class="comment">! else too small to worry about</span></div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;<span class="keywordflow">            endif</span> <span class="comment">! if nmodes&gt;1 .and. kc&gt;nmodes .and. c1&gt;c1_thresh</span></div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;          <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;            cn(i,j,:) = 0.0</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;<span class="keywordflow">          endif</span> <span class="comment">! if more than 2 layers</span></div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;<span class="keywordflow">        endif</span> <span class="comment">! if drxh_sum &lt; 0</span></div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;        cn(i,j,:) = 0.0 <span class="comment">! This is a land point.</span></div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;<span class="keywordflow">      endif</span> <span class="comment">! if not land</span></div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;<span class="keywordflow">    enddo</span> <span class="comment">! i-loop</span></div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;<span class="keywordflow">  enddo</span> <span class="comment">! j-loop</span></div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160; </div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZK_(G)+1)</span> :: z_int</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;  <span class="comment">! real, dimension(SZK_(G)+1) :: N2</span></div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;  <span class="keywordtype">integer</span> :: nsub       <span class="comment">! number of subintervals used for root finding</span></div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: sub_it_max = 4</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;                        <span class="comment">! maximum number of times to subdivide interval</span></div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;                        <span class="comment">! for root finding (# intervals = 2**sub_it_max)</span></div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;  <span class="keywordtype">logical</span> :: sub_rootfound <span class="comment">! if true, subdivision has located root</span></div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;  <span class="keywordtype">integer</span> :: kc, nrows</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;  <span class="keywordtype">integer</span> :: sub, sub_it</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, k2, itt, is, ie, js, je, nz, row, iint, m, ig, jg</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160; </div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec ; nz = g%ke</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160; </div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(cs)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <span class="keywordflow">if</span> (.not. <span class="keyword">associated</span>(cs)) <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;MOM_wave_speed: &quot;</span>// &amp;</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;           <span class="stringliteral">&quot;Module must be initialized before it is used.&quot;</span>)</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160; </div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(full_halos)) <span class="keywordflow">then</span> ; <span class="keywordflow">if</span> (full_halos) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    is = g%isd ; ie = g%ied ; js = g%jsd ; je = g%jed</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;<span class="keywordflow">  endif</span> ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160; </div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;  s =&gt; tv%S ; t =&gt; tv%T</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;  g_rho0 = us%L_T_to_m_s**2 * gv%g_Earth / gv%Rho0</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;  use_eos = <span class="keyword">associated</span>(tv%eqn_of_state)</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;  z_to_pa = gv%Z_to_H * gv%H_to_Pa</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160; </div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;  min_h_frac = tol1 / real(nz)</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;  <span class="comment">!$OMP parallel do default(private) shared(is,ie,js,je,nz,h,G,GV,US,min_h_frac,use_EOS,T,S, &amp;</span></div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;  <span class="comment">!$OMP                                     Z_to_Pa,tv,cn,g_Rho0,nmodes)</span></div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;  <span class="keywordflow">do</span> j=js,je</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    <span class="comment">!   First merge very thin layers with the one above (or below if they are</span></div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    <span class="comment">! at the top).  This also transposes the row order so that columns can</span></div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    <span class="comment">! be worked upon one at a time.</span></div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    <span class="keywordflow">do</span> i=is,ie ; htot(i) = 0.0 ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> i=is,ie ; htot(i) = htot(i) + h(i,j,k)*gv%H_to_Z ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160; </div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    <span class="keywordflow">do</span> i=is,ie</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;      hmin(i) = htot(i)*min_h_frac ; kf(i) = 1 ; h_here(i) = 0.0</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;      hxt_here(i) = 0.0 ; hxs_here(i) = 0.0 ; hxr_here(i) = 0.0</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    <span class="keywordflow">if</span> (use_eos) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;      <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> i=is,ie</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        <span class="keywordflow">if</span> ((h_here(i) &gt; hmin(i)) .and. (h(i,j,k)*gv%H_to_Z &gt; hmin(i))) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;          hf(kf(i),i) = h_here(i)</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;          tf(kf(i),i) = hxt_here(i) / h_here(i)</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;          sf(kf(i),i) = hxs_here(i) / h_here(i)</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;          kf(i) = kf(i) + 1</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160; </div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;          <span class="comment">! Start a new layer</span></div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;          h_here(i) = h(i,j,k)*gv%H_to_Z</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;          hxt_here(i) = (h(i,j,k)*gv%H_to_Z)*t(i,j,k)</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;          hxs_here(i) = (h(i,j,k)*gv%H_to_Z)*s(i,j,k)</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;          h_here(i) = h_here(i) + h(i,j,k)*gv%H_to_Z</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;          hxt_here(i) = hxt_here(i) + (h(i,j,k)*gv%H_to_Z)*t(i,j,k)</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;          hxs_here(i) = hxs_here(i) + (h(i,j,k)*gv%H_to_Z)*s(i,j,k)</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;<span class="keywordflow">        endif</span></div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;<span class="keywordflow">      enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;      <span class="keywordflow">do</span> i=is,ie ; <span class="keywordflow">if</span> (h_here(i) &gt; 0.0) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;        hf(kf(i),i) = h_here(i)</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        tf(kf(i),i) = hxt_here(i) / h_here(i)</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;        sf(kf(i),i) = hxs_here(i) / h_here(i)</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;<span class="keywordflow">      endif</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;      <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> i=is,ie</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        <span class="keywordflow">if</span> ((h_here(i) &gt; hmin(i)) .and. (h(i,j,k)*gv%H_to_Z &gt; hmin(i))) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;          hf(kf(i),i) = h_here(i) ; rf(kf(i),i) = hxr_here(i) / h_here(i)</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;          kf(i) = kf(i) + 1</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160; </div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;          <span class="comment">! Start a new layer</span></div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;          h_here(i) = h(i,j,k)*gv%H_to_Z</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;          hxr_here(i) = (h(i,j,k)*gv%H_to_Z)*gv%Rlay(k)</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;          h_here(i) = h_here(i) + h(i,j,k)*gv%H_to_Z</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;          hxr_here(i) = hxr_here(i) + (h(i,j,k)*gv%H_to_Z)*gv%Rlay(k)</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;<span class="keywordflow">        endif</span></div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="keywordflow">      enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;      <span class="keywordflow">do</span> i=is,ie ; <span class="keywordflow">if</span> (h_here(i) &gt; 0.0) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;        hf(kf(i),i) = h_here(i) ; rf(kf(i),i) = hxr_here(i) / h_here(i)</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="keywordflow">      endif</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;<span class="keywordflow">    endif</span></div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160; </div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    <span class="comment">! From this point, we can work on individual columns without causing memory</span></div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    <span class="comment">! to have page faults.</span></div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    <span class="keywordflow">do</span> i=is,ie</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;      <span class="keywordflow">if</span> (g%mask2dT(i,j) &gt; 0.5) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        <span class="keywordflow">if</span> (use_eos) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;          pres(1) = 0.0</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;          <span class="keywordflow">do</span> k=2,kf(i)</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;            pres(k) = pres(k-1) + z_to_pa*hf(k-1,i)</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;            t_int(k) = 0.5*(tf(k,i)+tf(k-1,i))</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;            s_int(k) = 0.5*(sf(k,i)+sf(k-1,i))</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;<span class="keywordflow">          enddo</span></div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;          <span class="keyword">call </span>calculate_density_derivs(t_int, s_int, pres, drho_dt, drho_ds, 2, &amp;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;                                        kf(i)-1, tv%eqn_of_state)</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160; </div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;          <span class="comment">! Sum the reduced gravities to find out how small a density difference</span></div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;          <span class="comment">! is negligibly small.</span></div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;          drxh_sum = 0.0</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;          <span class="keywordflow">do</span> k=2,kf(i)</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;            drxh_sum = drxh_sum + 0.5*(hf(k-1,i)+hf(k,i)) * &amp;</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;                max(0.0,drho_dt(k)*(tf(k,i)-tf(k-1,i)) + &amp;</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;                        drho_ds(k)*(sf(k,i)-sf(k-1,i)))</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;<span class="keywordflow">          enddo</span></div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;          drxh_sum = 0.0</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;          <span class="keywordflow">do</span> k=2,kf(i)</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;            drxh_sum = drxh_sum + 0.5*(hf(k-1,i)+hf(k,i)) * &amp;</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;                              max(0.0,rf(k,i)-rf(k-1,i))</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;<span class="keywordflow">          enddo</span></div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;<span class="keywordflow">        endif</span></div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    <span class="comment">!   Find gprime across each internal interface, taking care of convective</span></div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <span class="comment">! instabilities by merging layers.</span></div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <span class="keywordflow">if</span> (drxh_sum &lt;= 0.0) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;          cn(i,j,:) = 0.0</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;          <span class="comment">! Merge layers to eliminate convective instabilities or exceedingly</span></div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;          <span class="comment">! small reduced gravities.</span></div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;          <span class="keywordflow">if</span> (use_eos) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;            kc = 1</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;            hc(1) = hf(1,i) ; tc(1) = tf(1,i) ; sc(1) = sf(1,i)</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;            <span class="keywordflow">do</span> k=2,kf(i)</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;              <span class="keywordflow">if</span> ((drho_dt(k)*(tf(k,i)-tc(kc)) + drho_ds(k)*(sf(k,i)-sc(kc))) * &amp;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;                  (hc(kc) + hf(k,i)) &lt; 2.0 * tol2*drxh_sum) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;                <span class="comment">! Merge this layer with the one above and backtrack.</span></div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;                i_hnew = 1.0 / (hc(kc) + hf(k,i))</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;                tc(kc) = (hc(kc)*tc(kc) + hf(k,i)*tf(k,i)) * i_hnew</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;                sc(kc) = (hc(kc)*sc(kc) + hf(k,i)*sf(k,i)) * i_hnew</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;                hc(kc) = (hc(kc) + hf(k,i))</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;                <span class="comment">! Backtrack to remove any convective instabilities above...  Note</span></div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;                <span class="comment">! that the tolerance is a factor of two larger, to avoid limit how</span></div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                <span class="comment">! far back we go.</span></div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;                <span class="keywordflow">do</span> k2=kc,2,-1</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;                  <span class="keywordflow">if</span> ((drho_dt(k2)*(tc(k2)-tc(k2-1)) + drho_ds(k2)*(sc(k2)-sc(k2-1))) * &amp;</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;                      (hc(k2) + hc(k2-1)) &lt; tol2*drxh_sum) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;                    <span class="comment">! Merge the two bottommost layers.  At this point kc = k2.</span></div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;                    i_hnew = 1.0 / (hc(kc) + hc(kc-1))</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;                    tc(kc-1) = (hc(kc)*tc(kc) + hc(kc-1)*tc(kc-1)) * i_hnew</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;                    sc(kc-1) = (hc(kc)*sc(kc) + hc(kc-1)*sc(kc-1)) * i_hnew</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;                    hc(kc-1) = (hc(kc) + hc(kc-1))</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;                    kc = kc - 1</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;                  <span class="keywordflow">else</span> ; <span class="keywordflow">exit</span> ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;<span class="keywordflow">                enddo</span></div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;              <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;                <span class="comment">! Add a new layer to the column.</span></div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;                kc = kc + 1</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;                drho_ds(kc) = drho_ds(k) ; drho_dt(kc) = drho_dt(k)</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;                tc(kc) = tf(k,i) ; sc(kc) = sf(k,i) ; hc(kc) = hf(k,i)</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;<span class="keywordflow">              endif</span></div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="keywordflow">            enddo</span></div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;            <span class="comment">! At this point there are kc layers and the gprimes should be positive.</span></div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;            <span class="keywordflow">do</span> k=2,kc <span class="comment">! Revisit this if non-Boussinesq.</span></div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;              gprime(k) = g_rho0 * (drho_dt(k)*(tc(k)-tc(k-1)) + &amp;</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;                                    drho_ds(k)*(sc(k)-sc(k-1)))</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;<span class="keywordflow">            enddo</span></div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;          <span class="keywordflow">else</span>  <span class="comment">! .not.use_EOS</span></div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;            <span class="comment">! Do the same with density directly...</span></div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;            kc = 1</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;            hc(1) = hf(1,i) ; rc(1) = rf(1,i)</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;            <span class="keywordflow">do</span> k=2,kf(i)</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;              <span class="keywordflow">if</span> ((rf(k,i) - rc(kc)) * (hc(kc) + hf(k,i)) &lt; 2.0*tol2*drxh_sum) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;                <span class="comment">! Merge this layer with the one above and backtrack.</span></div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                rc(kc) = (hc(kc)*rc(kc) + hf(k,i)*rf(k,i)) / (hc(kc) + hf(k,i))</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                hc(kc) = (hc(kc) + hf(k,i))</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                <span class="comment">! Backtrack to remove any convective instabilities above...  Note</span></div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                <span class="comment">! that the tolerance is a factor of two larger, to avoid limit how</span></div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;                <span class="comment">! far back we go.</span></div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;                <span class="keywordflow">do</span> k2=kc,2,-1</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;                  <span class="keywordflow">if</span> ((rc(k2)-rc(k2-1)) * (hc(k2)+hc(k2-1)) &lt; tol2*drxh_sum) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;                    <span class="comment">! Merge the two bottommost layers.  At this point kc = k2.</span></div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                    rc(kc-1) = (hc(kc)*rc(kc) + hc(kc-1)*rc(kc-1)) / (hc(kc) + hc(kc-1))</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;                    hc(kc-1) = (hc(kc) + hc(kc-1))</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;                    kc = kc - 1</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;                  <span class="keywordflow">else</span> ; <span class="keywordflow">exit</span> ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;<span class="keywordflow">                enddo</span></div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;              <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;                <span class="comment">! Add a new layer to the column.</span></div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                kc = kc + 1</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                rc(kc) = rf(k,i) ; hc(kc) = hf(k,i)</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;<span class="keywordflow">              endif</span></div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;<span class="keywordflow">            enddo</span></div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;            <span class="comment">! At this point there are kc layers and the gprimes should be positive.</span></div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;            <span class="keywordflow">do</span> k=2,kc <span class="comment">! Revisit this if non-Boussinesq.</span></div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;              gprime(k) = g_rho0 * (rc(k)-rc(k-1))</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;<span class="keywordflow">            enddo</span></div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;<span class="keywordflow">          endif</span>  <span class="comment">! use_EOS</span></div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160; </div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;          <span class="comment">!-----------------NOW FIND WAVE SPEEDS---------------------------------------</span></div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;          ig = i + g%idg_offset ; jg = j + g%jdg_offset</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;          <span class="comment">!   Sum the contributions from all of the interfaces to give an over-estimate</span></div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;          <span class="comment">! of the first-mode wave speed.</span></div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;          <span class="keywordflow">if</span> (kc &gt;= 2) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;            <span class="comment">! Set depth at surface</span></div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;            z_int(1) = 0.0</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;            <span class="comment">! initialize speed2_tot</span></div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;            speed2_tot = 0.0</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;            <span class="comment">! Calculate Igu, Igl, depth, and N2 at each interior interface</span></div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;            <span class="comment">! [excludes surface (K=1) and bottom (K=kc+1)]</span></div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;            <span class="keywordflow">do</span> k=2,kc</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;              igl(k) = 1.0/(gprime(k)*hc(k)) ; igu(k) = 1.0/(gprime(k)*hc(k-1))</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;              z_int(k) = z_int(k-1) + hc(k-1)</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;              <span class="comment">! N2(K) = US%m_to_Z**2*gprime(K)/(0.5*(Hc(k)+Hc(k-1)))</span></div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;              speed2_tot = speed2_tot + gprime(k)*(hc(k-1)+hc(k))</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;<span class="keywordflow">            enddo</span></div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;            <span class="comment">! Set stratification for surface and bottom (setting equal to nearest interface for now)</span></div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;            <span class="comment">! N2(1) = N2(2) ; N2(kc+1) = N2(kc)</span></div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;            <span class="comment">! Calculate depth at bottom</span></div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;            z_int(kc+1) = z_int(kc)+hc(kc)</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;            <span class="comment">! check that thicknesses sum to total depth</span></div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;            <span class="keywordflow">if</span> (abs(z_int(kc+1)-htot(i)) &gt; 1.e-12*htot(i)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;              <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;wave_structure: mismatch in total depths&quot;</span>)</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;<span class="keywordflow">            endif</span></div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160; </div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;            <span class="comment">! Define the diagonals of the tridiagonal matrix</span></div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;            <span class="comment">! First, populate interior rows</span></div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;            <span class="keywordflow">do</span> k=3,kc-1</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;              row = k-1 <span class="comment">! indexing for TD matrix rows</span></div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;              a_diag(row) = (-igu(k))</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;              b_diag(row) = (igu(k)+igl(k))</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;              c_diag(row) = (-igl(k))</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="keywordflow">            enddo</span></div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;            <span class="comment">! Populate top row of tridiagonal matrix</span></div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;            k=2 ; row = k-1</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;            a_diag(row) = 0.0</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;            b_diag(row) = (igu(k)+igl(k))</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;            c_diag(row) = (-igl(k))</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;            <span class="comment">! Populate bottom row of tridiagonal matrix</span></div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;            k=kc ; row = k-1</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;            a_diag(row) = (-igu(k))</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;            b_diag(row) = (igu(k)+igl(k))</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;            c_diag(row) = 0.0</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            <span class="comment">! Total number of rows in the matrix = number of interior interfaces</span></div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;            nrows = kc-1</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160; </div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;            <span class="comment">! Under estimate the first eigen value to start with.</span></div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;            lam_1 = 1.0 / speed2_tot</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160; </div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;            <span class="comment">! Find the first eigen value</span></div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;            <span class="keywordflow">do</span> itt=1,max_itt</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;              <span class="comment">! calculate the determinant of (A-lam_1*I)</span></div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;              <span class="keyword">call </span>tridiag_det(a_diag(1:nrows),b_diag(1:nrows),c_diag(1:nrows), &amp;</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;                                      nrows,lam_1,det,ddet)</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;              <span class="comment">! Use Newton&#39;s method iteration to find a new estimate of lam_1</span></div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;              <span class="comment">!det = det_it(itt) ; ddet = ddet_it(itt)</span></div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;              <span class="keywordflow">if</span> ((ddet &gt;= 0.0) .or. (-det &gt; -0.5*lam_1*ddet)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;                <span class="comment">! lam_1 was not an under-estimate, as intended, so Newton&#39;s method</span></div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;                <span class="comment">! may not be reliable; lam_1 must be reduced, but not by more</span></div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;                <span class="comment">! than half.</span></div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;                lam_1 = 0.5 * lam_1</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;              <span class="keywordflow">else</span>  <span class="comment">! Newton&#39;s method is OK.</span></div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;                dlam = - det / ddet</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;                lam_1 = lam_1 + dlam</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;                <span class="keywordflow">if</span> (abs(dlam) &lt; tol2*lam_1) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;                  <span class="comment">! calculate 1st mode speed</span></div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                  <span class="keywordflow">if</span> (lam_1 &gt; 0.0) cn(i,j,1) = 1.0 / sqrt(lam_1)</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;                  <span class="keywordflow">exit</span></div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;<span class="keywordflow">                endif</span></div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;<span class="keywordflow">              endif</span></div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;<span class="keywordflow">            enddo</span></div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160; </div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;            <span class="comment">! Find other eigen values if c1 is of significant magnitude, &gt; cn_thresh</span></div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;            nrootsfound = 0    <span class="comment">! number of extra roots found (not including 1st root)</span></div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;            <span class="keywordflow">if</span> (nmodes&gt;1 .and. kc&gt;=nmodes+1 .and. cn(i,j,1)&gt;c1_thresh) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;              <span class="comment">! Set the the range to look for the other desired eigen values</span></div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;              <span class="comment">! set min value just greater than the 1st root (found above)</span></div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;              lammin = lam_1*(1.0 + tol2)</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;              <span class="comment">! set max value based on a low guess at wavespeed for highest mode</span></div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;              speed2_min = (reduct_factor*cn(i,j,1)/real(nmodes))**2</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;              lammax = 1.0 / speed2_min</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;              <span class="comment">! set width of interval (not sure about this - BDM)</span></div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;              laminc = 0.5*lam_1</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;              <span class="comment">! set number of intervals within search range</span></div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;              numint = nint((lammax - lammin)/laminc)</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160; </div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;              <span class="comment">!   Find intervals containing zero-crossings (roots) of the determinant</span></div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;              <span class="comment">! that are beyond the first root</span></div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160; </div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;              <span class="comment">! find det_l of first interval (det at left endpoint)</span></div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;              <span class="keyword">call </span>tridiag_det(a_diag(1:nrows),b_diag(1:nrows),c_diag(1:nrows), &amp;</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;                               nrows,lammin,det_l,ddet_l)</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;              <span class="comment">! move interval window looking for zero-crossings************************</span></div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;              <span class="keywordflow">do</span> iint=1,numint</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;                xr = lammin + laminc * iint</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;                xl = xr - laminc</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;                <span class="keyword">call </span>tridiag_det(a_diag(1:nrows),b_diag(1:nrows),c_diag(1:nrows), &amp;</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;                                 nrows,xr,det_r,ddet_r)</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;                <span class="keywordflow">if</span> (det_l*det_r &lt; 0.0) <span class="keywordflow">then</span>  <span class="comment">! if function changes sign</span></div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;                  <span class="keywordflow">if</span> (det_l*ddet_l &lt; 0.0) <span class="keywordflow">then</span> <span class="comment">! if function at left is headed to zero</span></div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;                    nrootsfound = nrootsfound + 1</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;                    xbl(nrootsfound) = xl</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;                    xbr(nrootsfound) = xr</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;                  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;                    <span class="comment">!   function changes sign but has a local max/min in interval,</span></div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;                    <span class="comment">! try subdividing interval as many times as necessary (or sub_it_max).</span></div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;                    <span class="comment">! loop that increases number of subintervals:</span></div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;                    <span class="comment">!call MOM_error(WARNING, &quot;determinant changes sign&quot;// &amp;</span></div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;                    <span class="comment">!            &quot;but has a local max/min in interval;&quot;//&amp;</span></div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;                    <span class="comment">!            &quot; reduce increment in lam.&quot;)</span></div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;                    <span class="comment">! begin subdivision loop -------------------------------------------</span></div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;                    sub_rootfound = .false. <span class="comment">! initialize</span></div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;                    <span class="keywordflow">do</span> sub_it=1,sub_it_max</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;                      nsub = 2**sub_it <span class="comment">! number of subintervals; nsub=2,4,8,...</span></div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;                      <span class="comment">! loop over each subinterval:</span></div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;                      <span class="keywordflow">do</span> sub=1,nsub-1,2 <span class="comment">! only check odds; sub = 1; 1,3; 1,3,5,7;...</span></div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;                        xl_sub = xl + laminc/(nsub)*sub</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;                        <span class="keyword">call </span>tridiag_det(a_diag(1:nrows),b_diag(1:nrows),c_diag(1:nrows), &amp;</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                                 nrows,xl_sub,det_sub,ddet_sub)</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;                        <span class="keywordflow">if</span> (det_sub*det_r &lt; 0.0) <span class="keywordflow">then</span>  <span class="comment">! if function changes sign</span></div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;                          <span class="keywordflow">if</span> (det_sub*ddet_sub &lt; 0.0) <span class="keywordflow">then</span> <span class="comment">! if function at left is headed to zero</span></div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;                            sub_rootfound = .true.</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;                            nrootsfound = nrootsfound + 1</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;                            xbl(nrootsfound) = xl_sub</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;                            xbr(nrootsfound) = xr</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;                            <span class="keywordflow">exit</span> <span class="comment">! exit sub loop</span></div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;<span class="keywordflow">                          endif</span> <span class="comment">! headed toward zero</span></div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;<span class="keywordflow">                        endif</span> <span class="comment">! sign change</span></div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;<span class="keywordflow">                      enddo</span> <span class="comment">! sub-loop</span></div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;                      <span class="keywordflow">if</span> (sub_rootfound) <span class="keywordflow">exit</span> <span class="comment">! root has been found, exit sub_it loop</span></div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;                      <span class="comment">!   Otherwise, function changes sign but has a local max/min in one of the</span></div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;                      <span class="comment">! sub intervals, try subdividing again unless sub_it_max has been reached.</span></div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;                      <span class="keywordflow">if</span> (sub_it == sub_it_max) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;                        <span class="keyword">call </span>mom_error(warning, <span class="stringliteral">&quot;wave_speed: root not found &quot;</span>// &amp;</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;                                       <span class="stringliteral">&quot; after sub_it_max subdivisions of original&quot;</span>// &amp;</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;                                       <span class="stringliteral">&quot; interval.&quot;</span>)</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;<span class="keywordflow">                      endif</span> <span class="comment">! sub_it == sub_it_max</span></div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;<span class="keywordflow">                    enddo</span> <span class="comment">! sub_it-loop-------------------------------------------------</span></div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;<span class="keywordflow">                  endif</span> <span class="comment">! det_l*ddet_l &lt; 0.0</span></div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;<span class="keywordflow">                endif</span> <span class="comment">! det_l*det_r &lt; 0.0</span></div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;                <span class="comment">! exit iint-loop if all desired roots have been found</span></div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;                <span class="keywordflow">if</span> (nrootsfound &gt;= nmodes-1) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;                  <span class="comment">! exit if all additional roots found</span></div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;                  <span class="keywordflow">exit</span></div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;                <span class="keywordflow">elseif</span> (iint == numint) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;                  <span class="comment">! oops, lamMax not large enough - could add code to increase (BDM)</span></div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;                  <span class="comment">! set unfound modes to zero for now (BDM)</span></div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;                  cn(i,j,nrootsfound+2:nmodes) = 0.0</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;                  <span class="comment">! else shift interval and keep looking until nmodes or numint is reached</span></div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;                  det_l = det_r</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;                  ddet_l = ddet_r</div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;<span class="keywordflow">                endif</span></div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;<span class="keywordflow">              enddo</span> <span class="comment">! iint-loop</span></div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160; </div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;              <span class="comment">! Use Newton&#39;s method to find the roots within the identified windows</span></div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;              <span class="keywordflow">do</span> m=1,nrootsfound <span class="comment">! loop over the root-containing widows (excluding 1st mode)</span></div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;                lam_n = xbl(m) <span class="comment">! first guess is left edge of window</span></div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;                <span class="keywordflow">do</span> itt=1,max_itt</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;                  <span class="comment">! calculate the determinant of (A-lam_n*I)</span></div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;                  <span class="keyword">call </span>tridiag_det(a_diag(1:nrows),b_diag(1:nrows),c_diag(1:nrows), &amp;</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;                                   nrows,lam_n,det,ddet)</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;                  <span class="comment">! Use Newton&#39;s method to find a new estimate of lam_n</span></div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;                  dlam = - det / ddet</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;                  lam_n = lam_n + dlam</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;                  <span class="keywordflow">if</span> (abs(dlam) &lt; tol2*lam_1) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;                    <span class="comment">! calculate nth mode speed</span></div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;                    <span class="keywordflow">if</span> (lam_n &gt; 0.0) cn(i,j,m+1) = 1.0 / sqrt(lam_n)</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;                    <span class="keywordflow">exit</span></div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;<span class="keywordflow">                  endif</span> <span class="comment">! within tol</span></div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;<span class="keywordflow">                enddo</span> <span class="comment">! itt-loop</span></div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;<span class="keywordflow">              enddo</span> <span class="comment">! n-loop</span></div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;              cn(i,j,2:nmodes) = 0.0 <span class="comment">! else too small to worry about</span></div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;<span class="keywordflow">            endif</span> <span class="comment">! if nmodes&gt;1 .and. kc&gt;nmodes .and. c1&gt;c1_thresh</span></div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;            <span class="keywordflow">do</span> m=1,nmodes ; cn(i,j,m) = us%m_s_to_L_T*cn(i,j,m) ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;          <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;            cn(i,j,:) = 0.0</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;<span class="keywordflow">          endif</span> <span class="comment">! if more than 2 layers</span></div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;<span class="keywordflow">        endif</span> <span class="comment">! if drxh_sum &lt; 0</span></div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;        cn(i,j,:) = 0.0 <span class="comment">! This is a land point.</span></div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;<span class="keywordflow">      endif</span> <span class="comment">! if not land</span></div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;<span class="keywordflow">    enddo</span> <span class="comment">! i-loop</span></div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;<span class="keywordflow">  enddo</span> <span class="comment">! j-loop</span></div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>, and <a class="el" href="MOM__wave__speed_8F90_source.html#l00957">tridiag_det()</a>.</p>
+<p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>, and <a class="el" href="MOM__wave__speed_8F90_source.html#l00959">tridiag_det()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00268">mom_diabatic_driver::diabatic()</a>, and <a class="el" href="MOM__diabatic__driver_8F90_source.html#l01127">mom_diabatic_driver::legacy_diabatic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00259">mom_diabatic_driver::diabatic()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1649,7 +1651,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__wave__speed_aaeee30fd118f8b7396f5bdd68c5a10e4_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__wave__speed_aaeee30fd118f8b7396f5bdd68c5a10e4_icgraph.svg" width="390" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

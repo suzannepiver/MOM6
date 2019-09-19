@@ -28,7 +28,7 @@ digraph "user_initialization::write_user_log"
   Node11 [label="mom_fixed_initialization\l::mom_initialize_fixed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__fixed__initialization.html#a79fad1bd49f85eaa0579def2d9d4ae53",tooltip="MOM_initialize_fixed sets up time-invariant quantities related to MOM6's horizontal grid,..."];
   Node11 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node12 [label="user_initialization\l::user_initialize_velocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__initialization.html#a45e373a6e0147bb93d41bf9ba2618c77",tooltip="initialize velocities."];
+  Node12 [label="user_initialization\l::user_initialize_velocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__initialization.html#a757c666f3e23714d9ec76912c4aba048",tooltip="initialize velocities."];
   Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node13 [label="user_initialization\l::user_set_coord",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__initialization.html#a541d25539cbb198ae0ed7c1356f267cf",tooltip="Set vertical coordinates."];
   Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

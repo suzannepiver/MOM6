@@ -112,46 +112,46 @@ Collaboration diagram for mom_barotropic::barotropic_cs:</div>
 Public variables and constants</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a32dd916fcd410aa41a4edfd479b7ad95"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a32dd916fcd410aa41a4edfd479b7ad95">frhatu</a></td></tr>
-<tr class="memdesc:a32dd916fcd410aa41a4edfd479b7ad95"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a32dd916fcd410aa41a4edfd479b7ad95">More...</a><br /></td></tr>
+<tr class="memdesc:a32dd916fcd410aa41a4edfd479b7ad95"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a32dd916fcd410aa41a4edfd479b7ad95">More...</a><br /></td></tr>
 <tr class="separator:a32dd916fcd410aa41a4edfd479b7ad95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bffaff6d7dbfb88481c70b944213ecc"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a1bffaff6d7dbfb88481c70b944213ecc">frhatv</a></td></tr>
-<tr class="memdesc:a1bffaff6d7dbfb88481c70b944213ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to v grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a1bffaff6d7dbfb88481c70b944213ecc">More...</a><br /></td></tr>
+<tr class="memdesc:a1bffaff6d7dbfb88481c70b944213ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to v grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a1bffaff6d7dbfb88481c70b944213ecc">More...</a><br /></td></tr>
 <tr class="separator:a1bffaff6d7dbfb88481c70b944213ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d2636d54761052723f887318b070f82"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a0d2636d54761052723f887318b070f82">idatu</a></td></tr>
 <tr class="memdesc:a0d2636d54761052723f887318b070f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse of the basin depth at u grid points [Z-1 ~&gt; m-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a0d2636d54761052723f887318b070f82">More...</a><br /></td></tr>
 <tr class="separator:a0d2636d54761052723f887318b070f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25b6fc594b6f3dc45d7655289cedd399"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a25b6fc594b6f3dc45d7655289cedd399">lin_drag_u</a></td></tr>
-<tr class="memdesc:a25b6fc594b6f3dc45d7655289cedd399"><td class="mdescLeft">&#160;</td><td class="mdescRight">A spatially varying linear drag coefficient acting on the zonal barotropic flow [H s-1 ~&gt; m s-1 or kg m-2 s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a25b6fc594b6f3dc45d7655289cedd399">More...</a><br /></td></tr>
+<tr class="memdesc:a25b6fc594b6f3dc45d7655289cedd399"><td class="mdescLeft">&#160;</td><td class="mdescRight">A spatially varying linear drag coefficient acting on the zonal barotropic flow [H T-1 ~&gt; m s-1 or kg m-2 s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a25b6fc594b6f3dc45d7655289cedd399">More...</a><br /></td></tr>
 <tr class="separator:a25b6fc594b6f3dc45d7655289cedd399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c654f007b5a7f293446bccc21e10e7e"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a4c654f007b5a7f293446bccc21e10e7e">uhbt_ic</a></td></tr>
-<tr class="memdesc:a4c654f007b5a7f293446bccc21e10e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barotropic solvers estimate of the zonal transport as the initial condition for the next call to btstep [H m2 s-1 ~&gt; m3 s-1 or kg s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a4c654f007b5a7f293446bccc21e10e7e">More...</a><br /></td></tr>
+<tr class="memdesc:a4c654f007b5a7f293446bccc21e10e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barotropic solvers estimate of the zonal transport as the initial condition for the next call to btstep [H L2 T-1 ~&gt; m3 s-1 or kg s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a4c654f007b5a7f293446bccc21e10e7e">More...</a><br /></td></tr>
 <tr class="separator:a4c654f007b5a7f293446bccc21e10e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e85c27cbc30485ef3c0fd0fd3e4ee69"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a8e85c27cbc30485ef3c0fd0fd3e4ee69">ubt_ic</a></td></tr>
-<tr class="memdesc:a8e85c27cbc30485ef3c0fd0fd3e4ee69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barotropic solvers estimate of the zonal velocity that will be the initial condition for the next call to btstep [m s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a8e85c27cbc30485ef3c0fd0fd3e4ee69">More...</a><br /></td></tr>
+<tr class="memdesc:a8e85c27cbc30485ef3c0fd0fd3e4ee69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barotropic solvers estimate of the zonal velocity that will be the initial condition for the next call to btstep [L T-1 ~&gt; m s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a8e85c27cbc30485ef3c0fd0fd3e4ee69">More...</a><br /></td></tr>
 <tr class="separator:a8e85c27cbc30485ef3c0fd0fd3e4ee69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bf92bb49e050d20ae78356e06198ae8"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a1bf92bb49e050d20ae78356e06198ae8">ubtav</a></td></tr>
-<tr class="memdesc:a1bf92bb49e050d20ae78356e06198ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barotropic zonal velocity averaged over the baroclinic time step [m s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a1bf92bb49e050d20ae78356e06198ae8">More...</a><br /></td></tr>
+<tr class="memdesc:a1bf92bb49e050d20ae78356e06198ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barotropic zonal velocity averaged over the baroclinic time step [L T-1 ~&gt; m s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a1bf92bb49e050d20ae78356e06198ae8">More...</a><br /></td></tr>
 <tr class="separator:a1bf92bb49e050d20ae78356e06198ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c0a6295fe98f20cf4cbbfb792e2a341"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a9c0a6295fe98f20cf4cbbfb792e2a341">idatv</a></td></tr>
 <tr class="memdesc:a9c0a6295fe98f20cf4cbbfb792e2a341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse of the basin depth at v grid points [Z-1 ~&gt; m-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a9c0a6295fe98f20cf4cbbfb792e2a341">More...</a><br /></td></tr>
 <tr class="separator:a9c0a6295fe98f20cf4cbbfb792e2a341"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b3346244755b815088953768969f0e4"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a6b3346244755b815088953768969f0e4">lin_drag_v</a></td></tr>
-<tr class="memdesc:a6b3346244755b815088953768969f0e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A spatially varying linear drag coefficient acting on the zonal barotropic flow [H s-1 ~&gt; m s-1 or kg m-2 s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a6b3346244755b815088953768969f0e4">More...</a><br /></td></tr>
+<tr class="memdesc:a6b3346244755b815088953768969f0e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A spatially varying linear drag coefficient acting on the zonal barotropic flow [H T-1 ~&gt; m s-1 or kg m-2 s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a6b3346244755b815088953768969f0e4">More...</a><br /></td></tr>
 <tr class="separator:a6b3346244755b815088953768969f0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71feb977b17b478819830f7dc429565b"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a71feb977b17b478819830f7dc429565b">vhbt_ic</a></td></tr>
-<tr class="memdesc:a71feb977b17b478819830f7dc429565b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barotropic solvers estimate of the zonal transport as the initial condition for the next call to btstep [H m2 s-1 ~&gt; m3 s-1 or kg s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a71feb977b17b478819830f7dc429565b">More...</a><br /></td></tr>
+<tr class="memdesc:a71feb977b17b478819830f7dc429565b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barotropic solvers estimate of the zonal transport as the initial condition for the next call to btstep [H L2 T-1 ~&gt; m3 s-1 or kg s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a71feb977b17b478819830f7dc429565b">More...</a><br /></td></tr>
 <tr class="separator:a71feb977b17b478819830f7dc429565b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac15961cb62d643b041118cf4c5ec5015"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ac15961cb62d643b041118cf4c5ec5015">vbt_ic</a></td></tr>
-<tr class="memdesc:ac15961cb62d643b041118cf4c5ec5015"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barotropic solvers estimate of the zonal velocity that will be the initial condition for the next call to btstep [m s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#ac15961cb62d643b041118cf4c5ec5015">More...</a><br /></td></tr>
+<tr class="memdesc:ac15961cb62d643b041118cf4c5ec5015"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barotropic solvers estimate of the zonal velocity that will be the initial condition for the next call to btstep [L T-1 ~&gt; m s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#ac15961cb62d643b041118cf4c5ec5015">More...</a><br /></td></tr>
 <tr class="separator:ac15961cb62d643b041118cf4c5ec5015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07f0349c9e08ee6784cd7b58bc8f22d0"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a07f0349c9e08ee6784cd7b58bc8f22d0">vbtav</a></td></tr>
-<tr class="memdesc:a07f0349c9e08ee6784cd7b58bc8f22d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barotropic meridional velocity averaged over the baroclinic time step [m s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a07f0349c9e08ee6784cd7b58bc8f22d0">More...</a><br /></td></tr>
+<tr class="memdesc:a07f0349c9e08ee6784cd7b58bc8f22d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barotropic meridional velocity averaged over the baroclinic time step [L T-1 ~&gt; m s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a07f0349c9e08ee6784cd7b58bc8f22d0">More...</a><br /></td></tr>
 <tr class="separator:a07f0349c9e08ee6784cd7b58bc8f22d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2c9daf323c6c5fca213ffdf3ad28352"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#aa2c9daf323c6c5fca213ffdf3ad28352">eta_cor</a></td></tr>
 <tr class="memdesc:aa2c9daf323c6c5fca213ffdf3ad28352"><td class="mdescLeft">&#160;</td><td class="mdescRight">The difference between the free surface height from the barotropic calculation and the sum of the layer thicknesses. This difference is imposed as a forcing term in the barotropic calculation over a baroclinic timestep [H ~&gt; m or kg m-2].  <a href="structmom__barotropic_1_1barotropic__cs.html#aa2c9daf323c6c5fca213ffdf3ad28352">More...</a><br /></td></tr>
 <tr class="separator:aa2c9daf323c6c5fca213ffdf3ad28352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa1699f52b708aa34f50f24c270540ff"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#afa1699f52b708aa34f50f24c270540ff">eta_cor_bound</a></td></tr>
-<tr class="memdesc:afa1699f52b708aa34f50f24c270540ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">A limit on the rate at which eta_cor can be applied while avoiding instability [H s-1 ~&gt; m s-1 or kg m-2 s-1]. This is only used if CSbound_BT_corr is true.  <a href="structmom__barotropic_1_1barotropic__cs.html#afa1699f52b708aa34f50f24c270540ff">More...</a><br /></td></tr>
+<tr class="memdesc:afa1699f52b708aa34f50f24c270540ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">A limit on the rate at which eta_cor can be applied while avoiding instability [H T-1 ~&gt; m s-1 or kg m-2 s-1]. This is only used if CSbound_BT_corr is true.  <a href="structmom__barotropic_1_1barotropic__cs.html#afa1699f52b708aa34f50f24c270540ff">More...</a><br /></td></tr>
 <tr class="separator:afa1699f52b708aa34f50f24c270540ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add16265674f085dcb818cc35e6797b61"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#add16265674f085dcb818cc35e6797b61">ua_polarity</a></td></tr>
 <tr class="memdesc:add16265674f085dcb818cc35e6797b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test vector components for checking grid polarity.  <a href="structmom__barotropic_1_1barotropic__cs.html#add16265674f085dcb818cc35e6797b61">More...</a><br /></td></tr>
@@ -163,28 +163,28 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a8f9db23514c86d6eeceb6732363be5d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A copy of bathyT (ocean bottom depth) with wide halos [Z ~&gt; m].  <a href="structmom__barotropic_1_1barotropic__cs.html#a8f9db23514c86d6eeceb6732363be5d3">More...</a><br /></td></tr>
 <tr class="separator:a8f9db23514c86d6eeceb6732363be5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f86ab2156a7ee1c57b1377c8787490e"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a0f86ab2156a7ee1c57b1377c8787490e">iareat</a></td></tr>
-<tr class="memdesc:a0f86ab2156a7ee1c57b1377c8787490e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a copy of GIareaT with wide halos, but will still utilize the macro IareaT when referenced, m-2.  <a href="structmom__barotropic_1_1barotropic__cs.html#a0f86ab2156a7ee1c57b1377c8787490e">More...</a><br /></td></tr>
+<tr class="memdesc:a0f86ab2156a7ee1c57b1377c8787490e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a copy of GIareaT with wide halos, but will still utilize the macro IareaT when referenced, [L-2 ~&gt; m-2].  <a href="structmom__barotropic_1_1barotropic__cs.html#a0f86ab2156a7ee1c57b1377c8787490e">More...</a><br /></td></tr>
 <tr class="separator:a0f86ab2156a7ee1c57b1377c8787490e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0ed32327ae14283b4232c8e09574004"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ad0ed32327ae14283b4232c8e09574004">d_u_cor</a></td></tr>
 <tr class="memdesc:ad0ed32327ae14283b4232c8e09574004"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simply averaged depth at u points [Z ~&gt; m].  <a href="structmom__barotropic_1_1barotropic__cs.html#ad0ed32327ae14283b4232c8e09574004">More...</a><br /></td></tr>
 <tr class="separator:ad0ed32327ae14283b4232c8e09574004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d1e88bd7f74387b3237cf9b2afaaf42"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a6d1e88bd7f74387b3237cf9b2afaaf42">dy_cu</a></td></tr>
-<tr class="memdesc:a6d1e88bd7f74387b3237cf9b2afaaf42"><td class="mdescLeft">&#160;</td><td class="mdescRight">A copy of Gdy_Cu with wide halos [m].  <a href="structmom__barotropic_1_1barotropic__cs.html#a6d1e88bd7f74387b3237cf9b2afaaf42">More...</a><br /></td></tr>
+<tr class="memdesc:a6d1e88bd7f74387b3237cf9b2afaaf42"><td class="mdescLeft">&#160;</td><td class="mdescRight">A copy of Gdy_Cu with wide halos [L ~&gt; m].  <a href="structmom__barotropic_1_1barotropic__cs.html#a6d1e88bd7f74387b3237cf9b2afaaf42">More...</a><br /></td></tr>
 <tr class="separator:a6d1e88bd7f74387b3237cf9b2afaaf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f86bcf5410d118ca867c33f24ff95a2"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a8f86bcf5410d118ca867c33f24ff95a2">idxcu</a></td></tr>
-<tr class="memdesc:a8f86bcf5410d118ca867c33f24ff95a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A copy of GIdxCu with wide halos [m-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a8f86bcf5410d118ca867c33f24ff95a2">More...</a><br /></td></tr>
+<tr class="memdesc:a8f86bcf5410d118ca867c33f24ff95a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A copy of GIdxCu with wide halos [L-1 ~&gt; m-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a8f86bcf5410d118ca867c33f24ff95a2">More...</a><br /></td></tr>
 <tr class="separator:a8f86bcf5410d118ca867c33f24ff95a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69dd6b207ea07b6236b733a3b884136f"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a69dd6b207ea07b6236b733a3b884136f">d_v_cor</a></td></tr>
 <tr class="memdesc:a69dd6b207ea07b6236b733a3b884136f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simply averaged depth at v points [Z ~&gt; m].  <a href="structmom__barotropic_1_1barotropic__cs.html#a69dd6b207ea07b6236b733a3b884136f">More...</a><br /></td></tr>
 <tr class="separator:a69dd6b207ea07b6236b733a3b884136f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a693b763198b0b22b1246697687522f62"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a693b763198b0b22b1246697687522f62">dx_cv</a></td></tr>
-<tr class="memdesc:a693b763198b0b22b1246697687522f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">A copy of Gdx_Cv with wide halos [m].  <a href="structmom__barotropic_1_1barotropic__cs.html#a693b763198b0b22b1246697687522f62">More...</a><br /></td></tr>
+<tr class="memdesc:a693b763198b0b22b1246697687522f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">A copy of Gdx_Cv with wide halos [L ~&gt; m].  <a href="structmom__barotropic_1_1barotropic__cs.html#a693b763198b0b22b1246697687522f62">More...</a><br /></td></tr>
 <tr class="separator:a693b763198b0b22b1246697687522f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a096269e1e68a6096732f149d1873ea7b"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a096269e1e68a6096732f149d1873ea7b">idycv</a></td></tr>
-<tr class="memdesc:a096269e1e68a6096732f149d1873ea7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A copy of GIdyCv with wide halos [m-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a096269e1e68a6096732f149d1873ea7b">More...</a><br /></td></tr>
+<tr class="memdesc:a096269e1e68a6096732f149d1873ea7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A copy of GIdyCv with wide halos [L-1 ~&gt; m-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a096269e1e68a6096732f149d1873ea7b">More...</a><br /></td></tr>
 <tr class="separator:a096269e1e68a6096732f149d1873ea7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1a9ba5ebb828c8c35e2d62b72ea7728"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ae1a9ba5ebb828c8c35e2d62b72ea7728">q_d</a></td></tr>
-<tr class="memdesc:ae1a9ba5ebb828c8c35e2d62b72ea7728"><td class="mdescLeft">&#160;</td><td class="mdescRight">f / D at PV points [Z-1 s-1 ~&gt; m-1 s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#ae1a9ba5ebb828c8c35e2d62b72ea7728">More...</a><br /></td></tr>
+<tr class="memdesc:ae1a9ba5ebb828c8c35e2d62b72ea7728"><td class="mdescLeft">&#160;</td><td class="mdescRight">f / D at PV points [Z-1 T-1 ~&gt; m-1 s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#ae1a9ba5ebb828c8c35e2d62b72ea7728">More...</a><br /></td></tr>
 <tr class="separator:ae1a9ba5ebb828c8c35e2d62b72ea7728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af59f22954f01cc420e19572fbe4b2a7c"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#af59f22954f01cc420e19572fbe4b2a7c">frhatu1</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:af59f22954f01cc420e19572fbe4b2a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predictor step values of frhatu stored for diagnostics.  <a href="structmom__barotropic_1_1barotropic__cs.html#af59f22954f01cc420e19572fbe4b2a7c">More...</a><br /></td></tr>
@@ -208,7 +208,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a013d178ae91d00b8ec8d8a0951636529"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum stable barotropic time step [s].  <a href="structmom__barotropic_1_1barotropic__cs.html#a013d178ae91d00b8ec8d8a0951636529">More...</a><br /></td></tr>
 <tr class="separator:a013d178ae91d00b8ec8d8a0951636529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a643a1984936263d1164c678b37f4d0a5"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a643a1984936263d1164c678b37f4d0a5">dt_bt_filter</a></td></tr>
-<tr class="memdesc:a643a1984936263d1164c678b37f4d0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time-scale over which the barotropic mode solutions are filtered [s]. This can never be taken to be longer than 2*dt. The default, 0, applies no filtering.  <a href="structmom__barotropic_1_1barotropic__cs.html#a643a1984936263d1164c678b37f4d0a5">More...</a><br /></td></tr>
+<tr class="memdesc:a643a1984936263d1164c678b37f4d0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time-scale over which the barotropic mode solutions are filtered [T ~&gt; s] if positive, or as a fraction of DT if negative [nondim]. This can never be taken to be longer than 2*dt. Set this to 0 to apply no filtering.  <a href="structmom__barotropic_1_1barotropic__cs.html#a643a1984936263d1164c678b37f4d0a5">More...</a><br /></td></tr>
 <tr class="separator:a643a1984936263d1164c678b37f4d0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a523b9098af5601dad4af2c6c9e6a7315"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a523b9098af5601dad4af2c6c9e6a7315">nstep_last</a> = 0</td></tr>
 <tr class="memdesc:a523b9098af5601dad4af2c6c9e6a7315"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of barotropic timesteps per baroclinic time step the last time btstep was called.  <a href="structmom__barotropic_1_1barotropic__cs.html#a523b9098af5601dad4af2c6c9e6a7315">More...</a><br /></td></tr>
@@ -241,13 +241,13 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a75b7e0b005c56b85464f961157f8ae37"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, add a dynamic pressure due to a viscous ice shelf, for instance.  <a href="structmom__barotropic_1_1barotropic__cs.html#a75b7e0b005c56b85464f961157f8ae37">More...</a><br /></td></tr>
 <tr class="separator:a75b7e0b005c56b85464f961157f8ae37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b7e59b14b70d99ff1beb1f86b167c30"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a3b7e59b14b70d99ff1beb1f86b167c30">dmin_dyn_psurf</a></td></tr>
-<tr class="memdesc:a3b7e59b14b70d99ff1beb1f86b167c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum depth to use in limiting the size of the dynamic surface pressure for stability [m].  <a href="structmom__barotropic_1_1barotropic__cs.html#a3b7e59b14b70d99ff1beb1f86b167c30">More...</a><br /></td></tr>
+<tr class="memdesc:a3b7e59b14b70d99ff1beb1f86b167c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum depth to use in limiting the size of the dynamic surface pressure for stability [Z ~&gt; m].  <a href="structmom__barotropic_1_1barotropic__cs.html#a3b7e59b14b70d99ff1beb1f86b167c30">More...</a><br /></td></tr>
 <tr class="separator:a3b7e59b14b70d99ff1beb1f86b167c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19d7273407d08f830970b36ab55af103"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a19d7273407d08f830970b36ab55af103">ice_strength_length</a></td></tr>
-<tr class="memdesc:a19d7273407d08f830970b36ab55af103"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length scale at which the damping rate due to the ice strength should be the same as if a Laplacian were applied [m].  <a href="structmom__barotropic_1_1barotropic__cs.html#a19d7273407d08f830970b36ab55af103">More...</a><br /></td></tr>
+<tr class="memdesc:a19d7273407d08f830970b36ab55af103"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length scale at which the damping rate due to the ice strength should be the same as if a Laplacian were applied [L ~&gt; m].  <a href="structmom__barotropic_1_1barotropic__cs.html#a19d7273407d08f830970b36ab55af103">More...</a><br /></td></tr>
 <tr class="separator:a19d7273407d08f830970b36ab55af103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2054dd31835ba02f9657703e415c62b4"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a2054dd31835ba02f9657703e415c62b4">const_dyn_psurf</a></td></tr>
-<tr class="memdesc:a2054dd31835ba02f9657703e415c62b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constant that scales the dynamic surface pressure, nondim. Stable values are &lt; ~1.0. The default is 0.9.  <a href="structmom__barotropic_1_1barotropic__cs.html#a2054dd31835ba02f9657703e415c62b4">More...</a><br /></td></tr>
+<tr class="memdesc:a2054dd31835ba02f9657703e415c62b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constant that scales the dynamic surface pressure [nondim]. Stable values are &lt; ~1.0. The default is 0.9.  <a href="structmom__barotropic_1_1barotropic__cs.html#a2054dd31835ba02f9657703e415c62b4">More...</a><br /></td></tr>
 <tr class="separator:a2054dd31835ba02f9657703e415c62b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f4743af16b86a1007d14111b1e15381"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a1f4743af16b86a1007d14111b1e15381">tides</a></td></tr>
 <tr class="memdesc:a1f4743af16b86a1007d14111b1e15381"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, apply tidal momentum forcing.  <a href="structmom__barotropic_1_1barotropic__cs.html#a1f4743af16b86a1007d14111b1e15381">More...</a><br /></td></tr>
@@ -280,10 +280,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:ab9990b15f306b67f801b3cce80697a95"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, write verbose checksums for debugging purposes.  <a href="structmom__barotropic_1_1barotropic__cs.html#ab9990b15f306b67f801b3cce80697a95">More...</a><br /></td></tr>
 <tr class="separator:ab9990b15f306b67f801b3cce80697a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf1de960890b3fbff1b7534fabd6c3bf"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#acf1de960890b3fbff1b7534fabd6c3bf">vel_underflow</a></td></tr>
-<tr class="memdesc:acf1de960890b3fbff1b7534fabd6c3bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocity components smaller than vel_underflow are set to 0 [m s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#acf1de960890b3fbff1b7534fabd6c3bf">More...</a><br /></td></tr>
+<tr class="memdesc:acf1de960890b3fbff1b7534fabd6c3bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocity components smaller than vel_underflow are set to 0 [L T-1 ~&gt; m s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#acf1de960890b3fbff1b7534fabd6c3bf">More...</a><br /></td></tr>
 <tr class="separator:acf1de960890b3fbff1b7534fabd6c3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95561739c29671dde8e002752a2108f9"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a95561739c29671dde8e002752a2108f9">maxvel</a></td></tr>
-<tr class="memdesc:a95561739c29671dde8e002752a2108f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocity components greater than maxvel are truncated to maxvel [m s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a95561739c29671dde8e002752a2108f9">More...</a><br /></td></tr>
+<tr class="memdesc:a95561739c29671dde8e002752a2108f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocity components greater than maxvel are truncated to maxvel [L T-1 ~&gt; m s-1].  <a href="structmom__barotropic_1_1barotropic__cs.html#a95561739c29671dde8e002752a2108f9">More...</a><br /></td></tr>
 <tr class="separator:a95561739c29671dde8e002752a2108f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9b69a111c34ac5ac4b24fba46654ddb"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ab9b69a111c34ac5ac4b24fba46654ddb">cfl_trunc</a></td></tr>
 <tr class="memdesc:ab9b69a111c34ac5ac4b24fba46654ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">If clip_velocity is true, velocity components will be truncated when they are large enough that the corresponding CFL number exceeds this value, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#ab9b69a111c34ac5ac4b24fba46654ddb">More...</a><br /></td></tr>
@@ -310,16 +310,16 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a1ebd666e7fb3aa5941aea1e520157eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that is used to regulate the timing of diagnostic output.  <a href="structmom__barotropic_1_1barotropic__cs.html#a1ebd666e7fb3aa5941aea1e520157eb5">More...</a><br /></td></tr>
 <tr class="separator:a1ebd666e7fb3aa5941aea1e520157eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae06339054ded1571d56a4614661ca2d"><td class="memItemLeft" align="right" valign="top">type(mom_domain_type), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#aae06339054ded1571d56a4614661ca2d">bt_domain</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:aae06339054ded1571d56a4614661ca2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#aae06339054ded1571d56a4614661ca2d">More...</a><br /></td></tr>
+<tr class="memdesc:aae06339054ded1571d56a4614661ca2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#aae06339054ded1571d56a4614661ca2d">More...</a><br /></td></tr>
 <tr class="separator:aae06339054ded1571d56a4614661ca2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74f3f8ec1238312f78233b7c3abc4d03"><td class="memItemLeft" align="right" valign="top">type(hor_index_type), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a74f3f8ec1238312f78233b7c3abc4d03">debug_bt_hi</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a74f3f8ec1238312f78233b7c3abc4d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">debugging copy of horizontal index_type  <a href="structmom__barotropic_1_1barotropic__cs.html#a74f3f8ec1238312f78233b7c3abc4d03">More...</a><br /></td></tr>
 <tr class="separator:a74f3f8ec1238312f78233b7c3abc4d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a926691be1b7259dc030c3fdc83d838ca"><td class="memItemLeft" align="right" valign="top">type(tidal_forcing_cs), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a926691be1b7259dc030c3fdc83d838ca">tides_csp</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a926691be1b7259dc030c3fdc83d838ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a926691be1b7259dc030c3fdc83d838ca">More...</a><br /></td></tr>
+<tr class="memdesc:a926691be1b7259dc030c3fdc83d838ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a926691be1b7259dc030c3fdc83d838ca">More...</a><br /></td></tr>
 <tr class="separator:a926691be1b7259dc030c3fdc83d838ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae668660b7077a737490aa16520567ede"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ae668660b7077a737490aa16520567ede">module_is_initialized</a> = .false.</td></tr>
-<tr class="memdesc:ae668660b7077a737490aa16520567ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#ae668660b7077a737490aa16520567ede">More...</a><br /></td></tr>
+<tr class="memdesc:ae668660b7077a737490aa16520567ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#ae668660b7077a737490aa16520567ede">More...</a><br /></td></tr>
 <tr class="separator:ae668660b7077a737490aa16520567ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34d42894f9bc8a7233b4d4746d87f5fe"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a34d42894f9bc8a7233b4d4746d87f5fe">isdw</a></td></tr>
 <tr class="memdesc:a34d42894f9bc8a7233b4d4746d87f5fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lower i-memory limit for the wide halo arrays.  <a href="structmom__barotropic_1_1barotropic__cs.html#a34d42894f9bc8a7233b4d4746d87f5fe">More...</a><br /></td></tr>
@@ -370,148 +370,148 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:aa57af0effa518a3c6fdcfb188585a1b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__barotropic_1_1barotropic__cs.html#aa57af0effa518a3c6fdcfb188585a1b8">More...</a><br /></td></tr>
 <tr class="separator:aa57af0effa518a3c6fdcfb188585a1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cb23e3c8597232f557c713d49f01608"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a8cb23e3c8597232f557c713d49f01608">id_pfv_bt</a> = -1</td></tr>
-<tr class="memdesc:a8cb23e3c8597232f557c713d49f01608"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a8cb23e3c8597232f557c713d49f01608">More...</a><br /></td></tr>
+<tr class="memdesc:a8cb23e3c8597232f557c713d49f01608"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a8cb23e3c8597232f557c713d49f01608">More...</a><br /></td></tr>
 <tr class="separator:a8cb23e3c8597232f557c713d49f01608"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18ae96d6c1387fd7714f677261455e41"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a18ae96d6c1387fd7714f677261455e41">id_coru_bt</a> = -1</td></tr>
-<tr class="memdesc:a18ae96d6c1387fd7714f677261455e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a18ae96d6c1387fd7714f677261455e41">More...</a><br /></td></tr>
+<tr class="memdesc:a18ae96d6c1387fd7714f677261455e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a18ae96d6c1387fd7714f677261455e41">More...</a><br /></td></tr>
 <tr class="separator:a18ae96d6c1387fd7714f677261455e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a0871aec3418048fd00b95ad5f3864c"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a7a0871aec3418048fd00b95ad5f3864c">id_corv_bt</a> = -1</td></tr>
-<tr class="memdesc:a7a0871aec3418048fd00b95ad5f3864c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a7a0871aec3418048fd00b95ad5f3864c">More...</a><br /></td></tr>
+<tr class="memdesc:a7a0871aec3418048fd00b95ad5f3864c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a7a0871aec3418048fd00b95ad5f3864c">More...</a><br /></td></tr>
 <tr class="separator:a7a0871aec3418048fd00b95ad5f3864c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8412b9b38b45ccb34c7687a0d0334d98"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a8412b9b38b45ccb34c7687a0d0334d98">id_ubtforce</a> = -1</td></tr>
-<tr class="memdesc:a8412b9b38b45ccb34c7687a0d0334d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a8412b9b38b45ccb34c7687a0d0334d98">More...</a><br /></td></tr>
+<tr class="memdesc:a8412b9b38b45ccb34c7687a0d0334d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a8412b9b38b45ccb34c7687a0d0334d98">More...</a><br /></td></tr>
 <tr class="separator:a8412b9b38b45ccb34c7687a0d0334d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e3daee41d9d3ce17d4217400dffbd8e"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a2e3daee41d9d3ce17d4217400dffbd8e">id_vbtforce</a> = -1</td></tr>
-<tr class="memdesc:a2e3daee41d9d3ce17d4217400dffbd8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a2e3daee41d9d3ce17d4217400dffbd8e">More...</a><br /></td></tr>
+<tr class="memdesc:a2e3daee41d9d3ce17d4217400dffbd8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a2e3daee41d9d3ce17d4217400dffbd8e">More...</a><br /></td></tr>
 <tr class="separator:a2e3daee41d9d3ce17d4217400dffbd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a041774e8179fc92e65f116089d57b924"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a041774e8179fc92e65f116089d57b924">id_uaccel</a> = -1</td></tr>
-<tr class="memdesc:a041774e8179fc92e65f116089d57b924"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a041774e8179fc92e65f116089d57b924">More...</a><br /></td></tr>
+<tr class="memdesc:a041774e8179fc92e65f116089d57b924"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a041774e8179fc92e65f116089d57b924">More...</a><br /></td></tr>
 <tr class="separator:a041774e8179fc92e65f116089d57b924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a012e90cf323fc66da142086cfafe732b"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a012e90cf323fc66da142086cfafe732b">id_vaccel</a> = -1</td></tr>
-<tr class="memdesc:a012e90cf323fc66da142086cfafe732b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a012e90cf323fc66da142086cfafe732b">More...</a><br /></td></tr>
+<tr class="memdesc:a012e90cf323fc66da142086cfafe732b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a012e90cf323fc66da142086cfafe732b">More...</a><br /></td></tr>
 <tr class="separator:a012e90cf323fc66da142086cfafe732b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f3e87ef839f9d3c7ac32ff39377bd9c"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a6f3e87ef839f9d3c7ac32ff39377bd9c">id_visc_rem_u</a> = -1</td></tr>
-<tr class="memdesc:a6f3e87ef839f9d3c7ac32ff39377bd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a6f3e87ef839f9d3c7ac32ff39377bd9c">More...</a><br /></td></tr>
+<tr class="memdesc:a6f3e87ef839f9d3c7ac32ff39377bd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a6f3e87ef839f9d3c7ac32ff39377bd9c">More...</a><br /></td></tr>
 <tr class="separator:a6f3e87ef839f9d3c7ac32ff39377bd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb07368c16108ecb1a91abd354d857d7"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#adb07368c16108ecb1a91abd354d857d7">id_visc_rem_v</a> = -1</td></tr>
-<tr class="memdesc:adb07368c16108ecb1a91abd354d857d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#adb07368c16108ecb1a91abd354d857d7">More...</a><br /></td></tr>
+<tr class="memdesc:adb07368c16108ecb1a91abd354d857d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#adb07368c16108ecb1a91abd354d857d7">More...</a><br /></td></tr>
 <tr class="separator:adb07368c16108ecb1a91abd354d857d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a575e486f04d6ed117850671322421585"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a575e486f04d6ed117850671322421585">id_eta_cor</a> = -1</td></tr>
-<tr class="memdesc:a575e486f04d6ed117850671322421585"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a575e486f04d6ed117850671322421585">More...</a><br /></td></tr>
+<tr class="memdesc:a575e486f04d6ed117850671322421585"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a575e486f04d6ed117850671322421585">More...</a><br /></td></tr>
 <tr class="separator:a575e486f04d6ed117850671322421585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae51e930a1436d77e6b0b37818036c324"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ae51e930a1436d77e6b0b37818036c324">id_ubt</a> = -1</td></tr>
-<tr class="memdesc:ae51e930a1436d77e6b0b37818036c324"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#ae51e930a1436d77e6b0b37818036c324">More...</a><br /></td></tr>
+<tr class="memdesc:ae51e930a1436d77e6b0b37818036c324"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#ae51e930a1436d77e6b0b37818036c324">More...</a><br /></td></tr>
 <tr class="separator:ae51e930a1436d77e6b0b37818036c324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dd89920720f1d7d80e6d0224a6a7dc6"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a7dd89920720f1d7d80e6d0224a6a7dc6">id_vbt</a> = -1</td></tr>
-<tr class="memdesc:a7dd89920720f1d7d80e6d0224a6a7dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a7dd89920720f1d7d80e6d0224a6a7dc6">More...</a><br /></td></tr>
+<tr class="memdesc:a7dd89920720f1d7d80e6d0224a6a7dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a7dd89920720f1d7d80e6d0224a6a7dc6">More...</a><br /></td></tr>
 <tr class="separator:a7dd89920720f1d7d80e6d0224a6a7dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad832e998ebd5a8bff99bc1ccdb76c249"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ad832e998ebd5a8bff99bc1ccdb76c249">id_eta_bt</a> = -1</td></tr>
-<tr class="memdesc:ad832e998ebd5a8bff99bc1ccdb76c249"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#ad832e998ebd5a8bff99bc1ccdb76c249">More...</a><br /></td></tr>
+<tr class="memdesc:ad832e998ebd5a8bff99bc1ccdb76c249"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#ad832e998ebd5a8bff99bc1ccdb76c249">More...</a><br /></td></tr>
 <tr class="separator:ad832e998ebd5a8bff99bc1ccdb76c249"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2790011df879b0ca951fae60f6c61cc"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ae2790011df879b0ca951fae60f6c61cc">id_ubtav</a> = -1</td></tr>
-<tr class="memdesc:ae2790011df879b0ca951fae60f6c61cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#ae2790011df879b0ca951fae60f6c61cc">More...</a><br /></td></tr>
+<tr class="memdesc:ae2790011df879b0ca951fae60f6c61cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#ae2790011df879b0ca951fae60f6c61cc">More...</a><br /></td></tr>
 <tr class="separator:ae2790011df879b0ca951fae60f6c61cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd63d541addc52eec3f0a9fd56870ec5"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#afd63d541addc52eec3f0a9fd56870ec5">id_vbtav</a> = -1</td></tr>
-<tr class="memdesc:afd63d541addc52eec3f0a9fd56870ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#afd63d541addc52eec3f0a9fd56870ec5">More...</a><br /></td></tr>
+<tr class="memdesc:afd63d541addc52eec3f0a9fd56870ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#afd63d541addc52eec3f0a9fd56870ec5">More...</a><br /></td></tr>
 <tr class="separator:afd63d541addc52eec3f0a9fd56870ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1f4de1a5f8d3527dfd2bf904699d2f1"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ad1f4de1a5f8d3527dfd2bf904699d2f1">id_ubt_st</a> = -1</td></tr>
-<tr class="memdesc:ad1f4de1a5f8d3527dfd2bf904699d2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#ad1f4de1a5f8d3527dfd2bf904699d2f1">More...</a><br /></td></tr>
+<tr class="memdesc:ad1f4de1a5f8d3527dfd2bf904699d2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#ad1f4de1a5f8d3527dfd2bf904699d2f1">More...</a><br /></td></tr>
 <tr class="separator:ad1f4de1a5f8d3527dfd2bf904699d2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9550506bdfb803088ef8f9482fe23d3c"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a9550506bdfb803088ef8f9482fe23d3c">id_vbt_st</a> = -1</td></tr>
-<tr class="memdesc:a9550506bdfb803088ef8f9482fe23d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a9550506bdfb803088ef8f9482fe23d3c">More...</a><br /></td></tr>
+<tr class="memdesc:a9550506bdfb803088ef8f9482fe23d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a9550506bdfb803088ef8f9482fe23d3c">More...</a><br /></td></tr>
 <tr class="separator:a9550506bdfb803088ef8f9482fe23d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4605a148819c71b94f5588720c729195"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a4605a148819c71b94f5588720c729195">id_eta_st</a> = -1</td></tr>
-<tr class="memdesc:a4605a148819c71b94f5588720c729195"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a4605a148819c71b94f5588720c729195">More...</a><br /></td></tr>
+<tr class="memdesc:a4605a148819c71b94f5588720c729195"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a4605a148819c71b94f5588720c729195">More...</a><br /></td></tr>
 <tr class="separator:a4605a148819c71b94f5588720c729195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fa8df60fa8dc5ccd2fd5db678ee1bb8"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a0fa8df60fa8dc5ccd2fd5db678ee1bb8">id_ubt_hifreq</a> = -1</td></tr>
-<tr class="memdesc:a0fa8df60fa8dc5ccd2fd5db678ee1bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a0fa8df60fa8dc5ccd2fd5db678ee1bb8">More...</a><br /></td></tr>
+<tr class="memdesc:a0fa8df60fa8dc5ccd2fd5db678ee1bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a0fa8df60fa8dc5ccd2fd5db678ee1bb8">More...</a><br /></td></tr>
 <tr class="separator:a0fa8df60fa8dc5ccd2fd5db678ee1bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25ab9f7770856d37781e23ba9a588313"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a25ab9f7770856d37781e23ba9a588313">id_vbt_hifreq</a> = -1</td></tr>
-<tr class="memdesc:a25ab9f7770856d37781e23ba9a588313"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a25ab9f7770856d37781e23ba9a588313">More...</a><br /></td></tr>
+<tr class="memdesc:a25ab9f7770856d37781e23ba9a588313"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a25ab9f7770856d37781e23ba9a588313">More...</a><br /></td></tr>
 <tr class="separator:a25ab9f7770856d37781e23ba9a588313"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af473cb566f32fb00daf411d35d5bf3bc"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#af473cb566f32fb00daf411d35d5bf3bc">id_eta_hifreq</a> = -1</td></tr>
-<tr class="memdesc:af473cb566f32fb00daf411d35d5bf3bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#af473cb566f32fb00daf411d35d5bf3bc">More...</a><br /></td></tr>
+<tr class="memdesc:af473cb566f32fb00daf411d35d5bf3bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#af473cb566f32fb00daf411d35d5bf3bc">More...</a><br /></td></tr>
 <tr class="separator:af473cb566f32fb00daf411d35d5bf3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9ec58032df8a7c6ebd01956ea41dddc"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#af9ec58032df8a7c6ebd01956ea41dddc">id_uhbt_hifreq</a> = -1</td></tr>
-<tr class="memdesc:af9ec58032df8a7c6ebd01956ea41dddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#af9ec58032df8a7c6ebd01956ea41dddc">More...</a><br /></td></tr>
+<tr class="memdesc:af9ec58032df8a7c6ebd01956ea41dddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#af9ec58032df8a7c6ebd01956ea41dddc">More...</a><br /></td></tr>
 <tr class="separator:af9ec58032df8a7c6ebd01956ea41dddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8c1e7cdc645acf161f09c9fbfc23646"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ae8c1e7cdc645acf161f09c9fbfc23646">id_vhbt_hifreq</a> = -1</td></tr>
-<tr class="memdesc:ae8c1e7cdc645acf161f09c9fbfc23646"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#ae8c1e7cdc645acf161f09c9fbfc23646">More...</a><br /></td></tr>
+<tr class="memdesc:ae8c1e7cdc645acf161f09c9fbfc23646"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#ae8c1e7cdc645acf161f09c9fbfc23646">More...</a><br /></td></tr>
 <tr class="separator:ae8c1e7cdc645acf161f09c9fbfc23646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8f9668bb2ac2a7dc4d6ea6d3a2cd2b6"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#aa8f9668bb2ac2a7dc4d6ea6d3a2cd2b6">id_eta_pred_hifreq</a> = -1</td></tr>
-<tr class="memdesc:aa8f9668bb2ac2a7dc4d6ea6d3a2cd2b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#aa8f9668bb2ac2a7dc4d6ea6d3a2cd2b6">More...</a><br /></td></tr>
+<tr class="memdesc:aa8f9668bb2ac2a7dc4d6ea6d3a2cd2b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#aa8f9668bb2ac2a7dc4d6ea6d3a2cd2b6">More...</a><br /></td></tr>
 <tr class="separator:aa8f9668bb2ac2a7dc4d6ea6d3a2cd2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cef46a523e00d06bc6d9e515a7853ab"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a7cef46a523e00d06bc6d9e515a7853ab">id_gtotn</a> = -1</td></tr>
-<tr class="memdesc:a7cef46a523e00d06bc6d9e515a7853ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a7cef46a523e00d06bc6d9e515a7853ab">More...</a><br /></td></tr>
+<tr class="memdesc:a7cef46a523e00d06bc6d9e515a7853ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a7cef46a523e00d06bc6d9e515a7853ab">More...</a><br /></td></tr>
 <tr class="separator:a7cef46a523e00d06bc6d9e515a7853ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a19641c0dcb902e3ff46388085d1b5a"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a7a19641c0dcb902e3ff46388085d1b5a">id_gtots</a> = -1</td></tr>
-<tr class="memdesc:a7a19641c0dcb902e3ff46388085d1b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a7a19641c0dcb902e3ff46388085d1b5a">More...</a><br /></td></tr>
+<tr class="memdesc:a7a19641c0dcb902e3ff46388085d1b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a7a19641c0dcb902e3ff46388085d1b5a">More...</a><br /></td></tr>
 <tr class="separator:a7a19641c0dcb902e3ff46388085d1b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd54fe5e1f14efdc9fc836a551e96516"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#abd54fe5e1f14efdc9fc836a551e96516">id_gtote</a> = -1</td></tr>
-<tr class="memdesc:abd54fe5e1f14efdc9fc836a551e96516"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#abd54fe5e1f14efdc9fc836a551e96516">More...</a><br /></td></tr>
+<tr class="memdesc:abd54fe5e1f14efdc9fc836a551e96516"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#abd54fe5e1f14efdc9fc836a551e96516">More...</a><br /></td></tr>
 <tr class="separator:abd54fe5e1f14efdc9fc836a551e96516"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2f0ce82d0fed83bcf29c48db06200c5"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ae2f0ce82d0fed83bcf29c48db06200c5">id_gtotw</a> = -1</td></tr>
-<tr class="memdesc:ae2f0ce82d0fed83bcf29c48db06200c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#ae2f0ce82d0fed83bcf29c48db06200c5">More...</a><br /></td></tr>
+<tr class="memdesc:ae2f0ce82d0fed83bcf29c48db06200c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#ae2f0ce82d0fed83bcf29c48db06200c5">More...</a><br /></td></tr>
 <tr class="separator:ae2f0ce82d0fed83bcf29c48db06200c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ccec465fc0b7969a41a0fed8a3e665c"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a0ccec465fc0b7969a41a0fed8a3e665c">id_uhbt</a> = -1</td></tr>
-<tr class="memdesc:a0ccec465fc0b7969a41a0fed8a3e665c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a0ccec465fc0b7969a41a0fed8a3e665c">More...</a><br /></td></tr>
+<tr class="memdesc:a0ccec465fc0b7969a41a0fed8a3e665c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a0ccec465fc0b7969a41a0fed8a3e665c">More...</a><br /></td></tr>
 <tr class="separator:a0ccec465fc0b7969a41a0fed8a3e665c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0b75a7d61919544c029b9f808aa1a8f"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ae0b75a7d61919544c029b9f808aa1a8f">id_frhatu</a> = -1</td></tr>
-<tr class="memdesc:ae0b75a7d61919544c029b9f808aa1a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#ae0b75a7d61919544c029b9f808aa1a8f">More...</a><br /></td></tr>
+<tr class="memdesc:ae0b75a7d61919544c029b9f808aa1a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#ae0b75a7d61919544c029b9f808aa1a8f">More...</a><br /></td></tr>
 <tr class="separator:ae0b75a7d61919544c029b9f808aa1a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab25fd2575c199efdc6abd04bbe703ce7"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ab25fd2575c199efdc6abd04bbe703ce7">id_vhbt</a> = -1</td></tr>
-<tr class="memdesc:ab25fd2575c199efdc6abd04bbe703ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#ab25fd2575c199efdc6abd04bbe703ce7">More...</a><br /></td></tr>
+<tr class="memdesc:ab25fd2575c199efdc6abd04bbe703ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#ab25fd2575c199efdc6abd04bbe703ce7">More...</a><br /></td></tr>
 <tr class="separator:ab25fd2575c199efdc6abd04bbe703ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3655444aaa5bc76df4c1a8ae0598277"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ae3655444aaa5bc76df4c1a8ae0598277">id_frhatv</a> = -1</td></tr>
-<tr class="memdesc:ae3655444aaa5bc76df4c1a8ae0598277"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#ae3655444aaa5bc76df4c1a8ae0598277">More...</a><br /></td></tr>
+<tr class="memdesc:ae3655444aaa5bc76df4c1a8ae0598277"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#ae3655444aaa5bc76df4c1a8ae0598277">More...</a><br /></td></tr>
 <tr class="separator:ae3655444aaa5bc76df4c1a8ae0598277"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80492cf7a652cf6240200aaf83fa9aae"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a80492cf7a652cf6240200aaf83fa9aae">id_frhatu1</a> = -1</td></tr>
-<tr class="memdesc:a80492cf7a652cf6240200aaf83fa9aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a80492cf7a652cf6240200aaf83fa9aae">More...</a><br /></td></tr>
+<tr class="memdesc:a80492cf7a652cf6240200aaf83fa9aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a80492cf7a652cf6240200aaf83fa9aae">More...</a><br /></td></tr>
 <tr class="separator:a80492cf7a652cf6240200aaf83fa9aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a622860bda41688f56039b04b9070b81b"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a622860bda41688f56039b04b9070b81b">id_frhatv1</a> = -1</td></tr>
-<tr class="memdesc:a622860bda41688f56039b04b9070b81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a622860bda41688f56039b04b9070b81b">More...</a><br /></td></tr>
+<tr class="memdesc:a622860bda41688f56039b04b9070b81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a622860bda41688f56039b04b9070b81b">More...</a><br /></td></tr>
 <tr class="separator:a622860bda41688f56039b04b9070b81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ea3f92b47069d4b4c932850b71023de"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a8ea3f92b47069d4b4c932850b71023de">id_btc_fa_u_ee</a> = -1</td></tr>
-<tr class="memdesc:a8ea3f92b47069d4b4c932850b71023de"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a8ea3f92b47069d4b4c932850b71023de">More...</a><br /></td></tr>
+<tr class="memdesc:a8ea3f92b47069d4b4c932850b71023de"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a8ea3f92b47069d4b4c932850b71023de">More...</a><br /></td></tr>
 <tr class="separator:a8ea3f92b47069d4b4c932850b71023de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a153d8dfec6a0c068807d3effb792c436"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a153d8dfec6a0c068807d3effb792c436">id_btc_fa_u_e0</a> = -1</td></tr>
-<tr class="memdesc:a153d8dfec6a0c068807d3effb792c436"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a153d8dfec6a0c068807d3effb792c436">More...</a><br /></td></tr>
+<tr class="memdesc:a153d8dfec6a0c068807d3effb792c436"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a153d8dfec6a0c068807d3effb792c436">More...</a><br /></td></tr>
 <tr class="separator:a153d8dfec6a0c068807d3effb792c436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e055881b7b182866c970510ada01116"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a1e055881b7b182866c970510ada01116">id_btc_fa_u_w0</a> = -1</td></tr>
-<tr class="memdesc:a1e055881b7b182866c970510ada01116"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a1e055881b7b182866c970510ada01116">More...</a><br /></td></tr>
+<tr class="memdesc:a1e055881b7b182866c970510ada01116"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a1e055881b7b182866c970510ada01116">More...</a><br /></td></tr>
 <tr class="separator:a1e055881b7b182866c970510ada01116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a687b25945d492438e38482b0f3d72292"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a687b25945d492438e38482b0f3d72292">id_btc_fa_u_ww</a> = -1</td></tr>
-<tr class="memdesc:a687b25945d492438e38482b0f3d72292"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a687b25945d492438e38482b0f3d72292">More...</a><br /></td></tr>
+<tr class="memdesc:a687b25945d492438e38482b0f3d72292"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a687b25945d492438e38482b0f3d72292">More...</a><br /></td></tr>
 <tr class="separator:a687b25945d492438e38482b0f3d72292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaf6d82820cc35657d43d58a7d70b136"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#abaf6d82820cc35657d43d58a7d70b136">id_btc_ubt_ee</a> = -1</td></tr>
-<tr class="memdesc:abaf6d82820cc35657d43d58a7d70b136"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#abaf6d82820cc35657d43d58a7d70b136">More...</a><br /></td></tr>
+<tr class="memdesc:abaf6d82820cc35657d43d58a7d70b136"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#abaf6d82820cc35657d43d58a7d70b136">More...</a><br /></td></tr>
 <tr class="separator:abaf6d82820cc35657d43d58a7d70b136"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dc49451acf003831de298d87fe1011c"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a8dc49451acf003831de298d87fe1011c">id_btc_ubt_ww</a> = -1</td></tr>
-<tr class="memdesc:a8dc49451acf003831de298d87fe1011c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a8dc49451acf003831de298d87fe1011c">More...</a><br /></td></tr>
+<tr class="memdesc:a8dc49451acf003831de298d87fe1011c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a8dc49451acf003831de298d87fe1011c">More...</a><br /></td></tr>
 <tr class="separator:a8dc49451acf003831de298d87fe1011c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab116d0340c403c708acc296808a75836"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ab116d0340c403c708acc296808a75836">id_btc_fa_v_nn</a> = -1</td></tr>
-<tr class="memdesc:ab116d0340c403c708acc296808a75836"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#ab116d0340c403c708acc296808a75836">More...</a><br /></td></tr>
+<tr class="memdesc:ab116d0340c403c708acc296808a75836"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#ab116d0340c403c708acc296808a75836">More...</a><br /></td></tr>
 <tr class="separator:ab116d0340c403c708acc296808a75836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a476903197cb9dc0de13f96a16930e6e2"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a476903197cb9dc0de13f96a16930e6e2">id_btc_fa_v_n0</a> = -1</td></tr>
-<tr class="memdesc:a476903197cb9dc0de13f96a16930e6e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a476903197cb9dc0de13f96a16930e6e2">More...</a><br /></td></tr>
+<tr class="memdesc:a476903197cb9dc0de13f96a16930e6e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a476903197cb9dc0de13f96a16930e6e2">More...</a><br /></td></tr>
 <tr class="separator:a476903197cb9dc0de13f96a16930e6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac464c7c5d1508153790cff47b50f032b"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#ac464c7c5d1508153790cff47b50f032b">id_btc_fa_v_s0</a> = -1</td></tr>
-<tr class="memdesc:ac464c7c5d1508153790cff47b50f032b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#ac464c7c5d1508153790cff47b50f032b">More...</a><br /></td></tr>
+<tr class="memdesc:ac464c7c5d1508153790cff47b50f032b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#ac464c7c5d1508153790cff47b50f032b">More...</a><br /></td></tr>
 <tr class="separator:ac464c7c5d1508153790cff47b50f032b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a494a7b7f1cec57d5e004d3a5a5b0081e"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a494a7b7f1cec57d5e004d3a5a5b0081e">id_btc_fa_v_ss</a> = -1</td></tr>
-<tr class="memdesc:a494a7b7f1cec57d5e004d3a5a5b0081e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a494a7b7f1cec57d5e004d3a5a5b0081e">More...</a><br /></td></tr>
+<tr class="memdesc:a494a7b7f1cec57d5e004d3a5a5b0081e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a494a7b7f1cec57d5e004d3a5a5b0081e">More...</a><br /></td></tr>
 <tr class="separator:a494a7b7f1cec57d5e004d3a5a5b0081e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45d615f9e6862aac206c9ed86a82f966"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a45d615f9e6862aac206c9ed86a82f966">id_btc_vbt_nn</a> = -1</td></tr>
-<tr class="memdesc:a45d615f9e6862aac206c9ed86a82f966"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a45d615f9e6862aac206c9ed86a82f966">More...</a><br /></td></tr>
+<tr class="memdesc:a45d615f9e6862aac206c9ed86a82f966"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a45d615f9e6862aac206c9ed86a82f966">More...</a><br /></td></tr>
 <tr class="separator:a45d615f9e6862aac206c9ed86a82f966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75a13d50bfa88bf46d1b7284d545893b"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a75a13d50bfa88bf46d1b7284d545893b">id_btc_vbt_ss</a> = -1</td></tr>
-<tr class="memdesc:a75a13d50bfa88bf46d1b7284d545893b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a75a13d50bfa88bf46d1b7284d545893b">More...</a><br /></td></tr>
+<tr class="memdesc:a75a13d50bfa88bf46d1b7284d545893b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a75a13d50bfa88bf46d1b7284d545893b">More...</a><br /></td></tr>
 <tr class="separator:a75a13d50bfa88bf46d1b7284d545893b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a992e71343366f13b91e0225f7b40d82d"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a992e71343366f13b91e0225f7b40d82d">id_uhbt0</a> = -1</td></tr>
-<tr class="memdesc:a992e71343366f13b91e0225f7b40d82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a992e71343366f13b91e0225f7b40d82d">More...</a><br /></td></tr>
+<tr class="memdesc:a992e71343366f13b91e0225f7b40d82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a992e71343366f13b91e0225f7b40d82d">More...</a><br /></td></tr>
 <tr class="separator:a992e71343366f13b91e0225f7b40d82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01f6d1fcf0cb361d6a8aea00beb186d3"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a01f6d1fcf0cb361d6a8aea00beb186d3">id_vhbt0</a> = -1</td></tr>
-<tr class="memdesc:a01f6d1fcf0cb361d6a8aea00beb186d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer, nondim.  <a href="structmom__barotropic_1_1barotropic__cs.html#a01f6d1fcf0cb361d6a8aea00beb186d3">More...</a><br /></td></tr>
+<tr class="memdesc:a01f6d1fcf0cb361d6a8aea00beb186d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the total column thickness interpolated to u grid points in each layer [nondim].  <a href="structmom__barotropic_1_1barotropic__cs.html#a01f6d1fcf0cb361d6a8aea00beb186d3">More...</a><br /></td></tr>
 <tr class="separator:a01f6d1fcf0cb361d6a8aea00beb186d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variables and constants</h2>
@@ -621,7 +621,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00269">269</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keywordtype">type</span>(MOM_domain_type), <span class="keywordtype">pointer</span> :: BT_Domain =&gt; null()</div>
@@ -716,7 +716,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The constant that scales the dynamic surface pressure, nondim. Stable values are &lt; ~1.0. The default is 0.9. </p>
+<p>The constant that scales the dynamic surface pressure [nondim]. Stable values are &lt; ~1.0. The default is 0.9. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00216">216</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="keywordtype">  real</span>    :: const_dyn_psurf<span class="comment"> !&lt; The constant that scales the dynamic surface</span></div>
@@ -740,8 +740,8 @@ Public variables and constants</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00145">145</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMBW_,NJMEMW_)</span> :: &amp;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    D_u_Cor, &amp;      !&lt;   A simply averaged depth at u points [Z ~&gt; m].</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    dy_Cu, &amp;        !&lt;   A copy of G%dy_Cu with wide halos [m].</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    IdxCu<span class="comment">           !&lt;   A copy of G%IdxCu with wide halos [m-1].</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    dy_Cu, &amp;        !&lt;   A copy of G%dy_Cu with wide halos [L ~&gt; m].</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    IdxCu<span class="comment">           !&lt;   A copy of G%IdxCu with wide halos [L-1 ~&gt; m-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -762,8 +762,8 @@ Public variables and constants</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00149">149</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMW_,NJMEMBW_)</span> :: &amp;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    D_v_Cor, &amp;      !&lt;   A simply averaged depth at v points [Z ~&gt; m].</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    dx_Cv, &amp;        !&lt;   A copy of G%dx_Cv with wide halos [m].</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    IdyCv<span class="comment">           !&lt;   A copy of G%IdyCv with wide halos [m-1].</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    dx_Cv, &amp;        !&lt;   A copy of G%dx_Cv with wide halos [L ~&gt; m].</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    IdyCv<span class="comment">           !&lt;   A copy of G%IdyCv with wide halos [L-1 ~&gt; m-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -855,7 +855,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The minimum depth to use in limiting the size of the dynamic surface pressure for stability [m]. </p>
+<p>The minimum depth to use in limiting the size of the dynamic surface pressure for stability [Z ~&gt; m]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00211">211</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keywordtype">  real</span>    :: Dmin_dyn_psurf<span class="comment">  !&lt; The minimum depth to use in limiting the size</span></div>
@@ -874,10 +874,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The time-scale over which the barotropic mode solutions are filtered [s]. This can never be taken to be longer than 2*dt. The default, 0, applies no filtering. </p>
+<p>The time-scale over which the barotropic mode solutions are filtered [T ~&gt; s] if positive, or as a fraction of DT if negative [nondim]. This can never be taken to be longer than 2*dt. Set this to 0 to apply no filtering. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00167">167</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keywordtype">  real</span>    :: dt_bt_filter<span class="comment">    !&lt;   The time-scale over which the barotropic mode</span></div>
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keywordtype">  real</span>    :: dt_bt_filter<span class="comment">    !&lt;   The time-scale over which the barotropic mode solutions are</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -950,7 +950,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A copy of Gdx_Cv with wide halos [m]. </p>
+<p>A copy of Gdx_Cv with wide halos [L ~&gt; m]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00149">149</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -968,7 +968,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A copy of Gdy_Cu with wide halos [m]. </p>
+<p>A copy of Gdy_Cu with wide halos [L ~&gt; m]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00145">145</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1024,7 +1024,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A limit on the rate at which eta_cor can be applied while avoiding instability [H s-1 ~&gt; m s-1 or kg m-2 s-1]. This is only used if CSbound_BT_corr is true. </p>
+<p>A limit on the rate at which eta_cor can be applied while avoiding instability [H T-1 ~&gt; m s-1 or kg m-2 s-1]. This is only used if CSbound_BT_corr is true. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00135">135</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: eta_cor_bound</div>
@@ -1043,7 +1043,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00101">101</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEM_,NKMEM_)</span> :: frhatu</div>
@@ -1081,7 +1081,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to v grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to v grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEMB_PTR_,NKMEM_)</span> :: frhatv</div>
@@ -1176,7 +1176,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This is a copy of GIareaT with wide halos, but will still utilize the macro IareaT when referenced, m-2. </p>
+<p>This is a copy of GIareaT with wide halos, but will still utilize the macro IareaT when referenced, [L-2 ~&gt; m-2]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00142">142</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMW_,NJMEMW_)</span> :: IareaT</div>
@@ -1195,7 +1195,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The length scale at which the damping rate due to the ice strength should be the same as if a Laplacian were applied [m]. </p>
+<p>The length scale at which the damping rate due to the ice strength should be the same as if a Laplacian were applied [L ~&gt; m]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00213">213</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="keywordtype">  real</span>    :: ice_strength_length<span class="comment">  !&lt; The length scale at which the damping rate</span></div>
@@ -1214,7 +1214,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00303">303</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1232,7 +1232,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00303">303</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordtype">integer</span> :: id_BTC_FA_u_EE = -1, id_btc_fa_u_e0 = -1, id_btc_fa_u_w0 = -1, id_btc_fa_u_ww = -1</div>
@@ -1251,7 +1251,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00303">303</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1269,7 +1269,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00303">303</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1287,7 +1287,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00305">305</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1305,7 +1305,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00305">305</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordtype">integer</span> :: id_BTC_FA_v_NN = -1, id_btc_fa_v_n0 = -1, id_btc_fa_v_s0 = -1, id_btc_fa_v_ss = -1</div>
@@ -1324,7 +1324,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00305">305</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1342,7 +1342,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00305">305</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1360,7 +1360,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00304">304</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="keywordtype">integer</span> :: id_BTC_ubt_EE = -1, id_btc_ubt_ww = -1</div>
@@ -1379,7 +1379,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00304">304</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1397,7 +1397,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00306">306</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <span class="keywordtype">integer</span> :: id_BTC_vbt_NN = -1, id_btc_vbt_ss = -1</div>
@@ -1416,7 +1416,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00306">306</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1434,7 +1434,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00292">292</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1452,7 +1452,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00292">292</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1470,7 +1470,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00295">295</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1488,7 +1488,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00294">294</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1506,7 +1506,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00297">297</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1524,7 +1524,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00298">298</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1542,7 +1542,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00296">296</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1560,7 +1560,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00300">300</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1578,7 +1578,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00301">301</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <span class="keywordtype">integer</span> :: id_frhatu1 = -1, id_frhatv1 = -1</div>
@@ -1597,7 +1597,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00300">300</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1615,7 +1615,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00301">301</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1633,7 +1633,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00299">299</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1651,7 +1651,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00299">299</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  <span class="keywordtype">integer</span> :: id_gtotn = -1, id_gtots = -1, id_gtote = -1, id_gtotw = -1</div>
@@ -1670,7 +1670,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00299">299</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1688,7 +1688,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00299">299</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1725,7 +1725,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00292">292</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1743,7 +1743,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00293">293</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1761,7 +1761,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00295">295</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <span class="keywordtype">integer</span> :: id_ubt = -1, id_vbt = -1, id_eta_bt = -1, id_ubtav = -1, id_vbtav = -1</div>
@@ -1780,7 +1780,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00297">297</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keywordtype">integer</span> :: id_ubt_hifreq = -1, id_vbt_hifreq = -1, id_eta_hifreq = -1</div>
@@ -1799,7 +1799,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00296">296</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="keywordtype">integer</span> :: id_ubt_st = -1, id_vbt_st = -1, id_eta_st = -1</div>
@@ -1818,7 +1818,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00295">295</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1836,7 +1836,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00293">293</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keywordtype">integer</span> :: id_ubtforce = -1, id_vbtforce = -1, id_uaccel = -1, id_vaccel = -1</div>
@@ -1855,7 +1855,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00300">300</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  <span class="keywordtype">integer</span> :: id_uhbt = -1, id_frhatu = -1, id_vhbt = -1, id_frhatv = -1</div>
@@ -1874,7 +1874,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00307">307</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keywordtype">integer</span> :: id_uhbt0 = -1, id_vhbt0 = -1</div>
@@ -1893,7 +1893,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00298">298</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keywordtype">integer</span> :: id_uhbt_hifreq = -1, id_vhbt_hifreq = -1, id_eta_pred_hifreq = -1</div>
@@ -1912,7 +1912,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00293">293</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1930,7 +1930,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00295">295</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1948,7 +1948,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00297">297</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1966,7 +1966,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00296">296</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -1984,7 +1984,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00295">295</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -2002,7 +2002,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00293">293</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -2020,7 +2020,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00300">300</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -2038,7 +2038,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00307">307</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -2056,7 +2056,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00298">298</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -2074,7 +2074,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00294">294</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <span class="keywordtype">integer</span> :: id_visc_rem_u = -1, id_visc_rem_v = -1, id_eta_cor = -1</div>
@@ -2093,7 +2093,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00294">294</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -2149,7 +2149,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A copy of GIdxCu with wide halos [m-1]. </p>
+<p>A copy of GIdxCu with wide halos [L-1 ~&gt; m-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00145">145</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -2167,7 +2167,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A copy of GIdyCv with wide halos [m-1]. </p>
+<p>A copy of GIdyCv with wide halos [L-1 ~&gt; m-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00149">149</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
@@ -2261,7 +2261,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A spatially varying linear drag coefficient acting on the zonal barotropic flow [H s-1 ~&gt; m s-1 or kg m-2 s-1]. </p>
+<p>A spatially varying linear drag coefficient acting on the zonal barotropic flow [H T-1 ~&gt; m s-1 or kg m-2 s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00107">107</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEM_)</span> :: lin_drag_u</div>
@@ -2280,7 +2280,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A spatially varying linear drag coefficient acting on the zonal barotropic flow [H s-1 ~&gt; m s-1 or kg m-2 s-1]. </p>
+<p>A spatially varying linear drag coefficient acting on the zonal barotropic flow [H T-1 ~&gt; m s-1 or kg m-2 s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEMB_PTR_)</span> :: lin_drag_v</div>
@@ -2356,7 +2356,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Velocity components greater than maxvel are truncated to maxvel [m s-1]. </p>
+<p>Velocity components greater than maxvel are truncated to maxvel [L T-1 ~&gt; m s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00243">243</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="keywordtype">  real</span>    :: maxvel<span class="comment">          !&lt; Velocity components greater than maxvel are</span></div>
@@ -2375,7 +2375,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00272">272</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keywordtype">logical</span> :: module_is_initialized = .false.</div>
@@ -2660,11 +2660,11 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>f / D at PV points [Z-1 s-1 ~&gt; m-1 s-1]. </p>
+<p>f / D at PV points [Z-1 T-1 ~&gt; m-1 s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00153">153</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMBW_,NJMEMBW_)</span> :: &amp;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    q_D<span class="comment">             !&lt; f / D at PV points [Z-1 s-1 ~&gt; m-1 s-1].</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    q_D<span class="comment">             !&lt; f / D at PV points [Z-1 T-1 ~&gt; m-1 s-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2775,7 +2775,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fraction of the total column thickness interpolated to u grid points in each layer, nondim. </p>
+<p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00271">271</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keywordtype">type</span>(tidal_forcing_CS), <span class="keywordtype">pointer</span> :: tides_CSp =&gt; null()</div>
@@ -2835,7 +2835,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The barotropic solvers estimate of the zonal velocity that will be the initial condition for the next call to btstep [m s-1]. </p>
+<p>The barotropic solvers estimate of the zonal velocity that will be the initial condition for the next call to btstep [L T-1 ~&gt; m s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEM_)</span> :: ubt_IC</div>
@@ -2854,7 +2854,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The barotropic zonal velocity averaged over the baroclinic time step [m s-1]. </p>
+<p>The barotropic zonal velocity averaged over the baroclinic time step [L T-1 ~&gt; m s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00116">116</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEM_)</span> :: ubtav</div>
@@ -2873,7 +2873,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The barotropic solvers estimate of the zonal transport as the initial condition for the next call to btstep [H m2 s-1 ~&gt; m3 s-1 or kg s-1]. </p>
+<p>The barotropic solvers estimate of the zonal transport as the initial condition for the next call to btstep [H L2 T-1 ~&gt; m3 s-1 or kg s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00110">110</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEM_)</span> :: uhbt_IC</div>
@@ -2948,7 +2948,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The barotropic solvers estimate of the zonal velocity that will be the initial condition for the next call to btstep [m s-1]. </p>
+<p>The barotropic solvers estimate of the zonal velocity that will be the initial condition for the next call to btstep [L T-1 ~&gt; m s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEMB_PTR_)</span> :: vbt_IC</div>
@@ -2967,7 +2967,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The barotropic meridional velocity averaged over the baroclinic time step [m s-1]. </p>
+<p>The barotropic meridional velocity averaged over the baroclinic time step [L T-1 ~&gt; m s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00129">129</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEMB_PTR_)</span> :: vbtav</div>
@@ -2986,7 +2986,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Velocity components smaller than vel_underflow are set to 0 [m s-1]. </p>
+<p>Velocity components smaller than vel_underflow are set to 0 [L T-1 ~&gt; m s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00241">241</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keywordtype">  real</span>    :: vel_underflow<span class="comment">   !&lt; Velocity components smaller than vel_underflow</span></div>
@@ -3005,7 +3005,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The barotropic solvers estimate of the zonal transport as the initial condition for the next call to btstep [H m2 s-1 ~&gt; m3 s-1 or kg s-1]. </p>
+<p>The barotropic solvers estimate of the zonal transport as the initial condition for the next call to btstep [H L2 T-1 ~&gt; m3 s-1 or kg s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEMB_PTR_)</span> :: vhbt_IC</div>

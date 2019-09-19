@@ -118,7 +118,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a55f1024f8f5369c0f4d0ccbfa1b594c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">meridional wind stress [Pa]  <a href="structmom__forcing__type_1_1mech__forcing.html#a55f1024f8f5369c0f4d0ccbfa1b594c8">More...</a><br /></td></tr>
 <tr class="separator:a55f1024f8f5369c0f4d0ccbfa1b594c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abede1bedd2a52da2bb1fa050062f0dbd"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__forcing__type_1_1mech__forcing.html#abede1bedd2a52da2bb1fa050062f0dbd">ustar</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:abede1bedd2a52da2bb1fa050062f0dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">surface friction velocity scale [Z s-1 ~&gt; m s-1].  <a href="structmom__forcing__type_1_1mech__forcing.html#abede1bedd2a52da2bb1fa050062f0dbd">More...</a><br /></td></tr>
+<tr class="memdesc:abede1bedd2a52da2bb1fa050062f0dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">surface friction velocity scale [Z T-1 ~&gt; m s-1].  <a href="structmom__forcing__type_1_1mech__forcing.html#abede1bedd2a52da2bb1fa050062f0dbd">More...</a><br /></td></tr>
 <tr class="separator:abede1bedd2a52da2bb1fa050062f0dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a8835daccc5d1b8061dbe1c82b84b4c"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__forcing__type_1_1mech__forcing.html#a8a8835daccc5d1b8061dbe1c82b84b4c">net_mass_src</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a8a8835daccc5d1b8061dbe1c82b84b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The net mass source to the ocean [kg m-2 s-1].  <a href="structmom__forcing__type_1_1mech__forcing.html#a8a8835daccc5d1b8061dbe1c82b84b4c">More...</a><br /></td></tr>
@@ -471,7 +471,7 @@ Public variables and constants</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    taux  =&gt; null(), &amp; <span class="comment">!&lt; zonal wind stress [Pa]</span></div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    tauy  =&gt; null(), &amp; <span class="comment">!&lt; meridional wind stress [Pa]</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    ustar =&gt; null(), &amp; <span class="comment">!&lt; surface friction velocity scale [Z s-1 ~&gt; m s-1].</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    ustar =&gt; null(), &amp; <span class="comment">!&lt; surface friction velocity scale [Z T-1 ~&gt; m s-1].</span></div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    net_mass_src =&gt; null() <span class="comment">!&lt; The net mass source to the ocean [kg m-2 s-1].</span></div>
 </div><!-- fragment -->
 </div>
@@ -506,7 +506,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>surface friction velocity scale [Z s-1 ~&gt; m s-1]. </p>
+<p>surface friction velocity scale [Z T-1 ~&gt; m s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__forcing__type_8F90_source.html#l00187">187</a> of file <a class="el" href="MOM__forcing__type_8F90_source.html">MOM_forcing_type.F90</a>.</p>
 

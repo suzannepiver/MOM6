@@ -1,12 +1,29 @@
 var MOM__energetic__PBL_8F90 =
 [
     [ "energetic_pbl_cs", "structmom__energetic__pbl_1_1energetic__pbl__cs.html", "structmom__energetic__pbl_1_1energetic__pbl__cs" ],
-    [ "energetic_pbl", "MOM__energetic__PBL_8F90.html#a397c319268a901e2e4bf3c5a3e7730f4", null ],
+    [ "epbl_column_diags", "structmom__energetic__pbl_1_1epbl__column__diags.html", "structmom__energetic__pbl_1_1epbl__column__diags" ],
+    [ "energetic_pbl", "MOM__energetic__PBL_8F90.html#a39d18925dcbd4477d63188edeae399f0", null ],
     [ "energetic_pbl_end", "MOM__energetic__PBL_8F90.html#a64860c8b0110ba516795a288acdefd1f", null ],
     [ "energetic_pbl_get_mld", "MOM__energetic__PBL_8F90.html#af3a7ca5357ed9a1383c9556b117116dc", null ],
     [ "energetic_pbl_init", "MOM__energetic__PBL_8F90.html#ad9fa0dc4ba4e126ec686b44a5829c2e8", null ],
+    [ "epbl_column", "MOM__energetic__PBL_8F90.html#a01291f3e97cfdcf58866a1e9b0bcfc26", null ],
+    [ "find_mstar", "MOM__energetic__PBL_8F90.html#a7686c6a30a476068859f7a2a30e652df", null ],
     [ "find_pe_chg", "MOM__energetic__PBL_8F90.html#ab0d988822a378f674d3b7e0ee2534c74", null ],
     [ "find_pe_chg_orig", "MOM__energetic__PBL_8F90.html#a3eb660658d0677c55c6187dcf4a180b5", null ],
-    [ "get_la_windsea", "MOM__energetic__PBL_8F90.html#a66dc4ecc7712c6f0307ca211c97fa5ef", null ],
-    [ "ust_2_u10_coare3p5", "MOM__energetic__PBL_8F90.html#aec70079fb3f2e322625532017cdd0cc6", null ]
+    [ "mstar_langmuir", "MOM__energetic__PBL_8F90.html#a6c4810c93427881cc393b255774735e0", null ],
+    [ "additive_string", "MOM__energetic__PBL_8F90.html#a54d8529555fee1f2ada7a7107f3c266c", null ],
+    [ "constant_string", "MOM__energetic__PBL_8F90.html#a1242b6400e7d01529a3d19b85e0d5b5b", null ],
+    [ "langmuir_add", "MOM__energetic__PBL_8F90.html#a502b7fb02ebdec866caed1508a103c1d", null ],
+    [ "langmuir_rescale", "MOM__energetic__PBL_8F90.html#af8dec1f8eeb76a7638d11acc279f9bbd", null ],
+    [ "mstar_from_ekman", "MOM__energetic__PBL_8F90.html#a2f6f5a6f3b88370f8956a16805ff8d93", null ],
+    [ "mstar_from_rh18", "MOM__energetic__PBL_8F90.html#a5504d7a4935753ac24c43f35a729052e", null ],
+    [ "no_langmuir", "MOM__energetic__PBL_8F90.html#a408fc314121efffe70ff08b56b920343", null ],
+    [ "none_string", "MOM__energetic__PBL_8F90.html#a4299f4ef5bbeabb5d0ca7e6016546ac4", null ],
+    [ "om4_string", "MOM__energetic__PBL_8F90.html#a193184bbe6bba5bfcb7b077d620cbfe7", null ],
+    [ "rescaled_string", "MOM__energetic__PBL_8F90.html#a6e1dc5a516a3ea979f425084c1291139", null ],
+    [ "rh18_string", "MOM__energetic__PBL_8F90.html#a6fc8bff404f05376f1f3b4c90cb169a0", null ],
+    [ "root_tke_string", "MOM__energetic__PBL_8F90.html#a6617f3587ab57c34581cd76bd80b9249", null ],
+    [ "use_fixed_mstar", "MOM__energetic__PBL_8F90.html#a62611ee2449d47b4ac347ecc5815c927", null ],
+    [ "wt_from_croot_tke", "MOM__energetic__PBL_8F90.html#a148db2e43fc3bb4cc1f266ec7391a7dd", null ],
+    [ "wt_from_rh18", "MOM__energetic__PBL_8F90.html#a0dc2252a2315d8d99000f9b003b24b00", null ]
 ];

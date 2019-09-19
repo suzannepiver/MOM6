@@ -13,6 +13,6 @@ digraph "mom_bkgnd_mixing::bkgnd_mixing_cs"
   Node4 [label="character(len=40)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" id_kd_bkgnd\nid_kv_bkgnd" ,fontname="Helvetica"];
   Node5 [label="integer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
-  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bckgrnd_vdc_ban\nbckgrnd_vdc_psim\nhmix\nbryan_lewis_c1\nkd_tanh_lat_scale\nbryan_lewis_c2\nbryan_lewis_c3\nkd_bkgnd\nbckgrnd_vdc1\nbryan_lewis_c4\n..." ,fontname="Helvetica"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bckgrnd_vdc_psim\nhmix\nbryan_lewis_c1\nkd_tanh_lat_scale\nbryan_lewis_c2\nbryan_lewis_c3\nkd_bkgnd\nbckgrnd_vdc_banda\nbckgrnd_vdc1\nbryan_lewis_c4\n..." ,fontname="Helvetica"];
   Node6 [label="real",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
 }

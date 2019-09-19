@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('structmom__geothermal_1_1geothermal__c
 </div><div class="dynheader">
 Collaboration diagram for mom_geothermal::geothermal_cs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__geothermal_1_1geothermal__cs__coll__graph.svg" width="443" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__geothermal_1_1geothermal__cs__coll__graph.svg" width="616" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -129,6 +129,15 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:ad32d8629e95ab20f3a7fdfff1b40418f"><td class="memItemLeft" align="right" valign="top">type(diag_ctrl), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__geothermal_1_1geothermal__cs.html#ad32d8629e95ab20f3a7fdfff1b40418f">diag</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:ad32d8629e95ab20f3a7fdfff1b40418f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that is used to regulate the timing of diagnostic output.  <a href="structmom__geothermal_1_1geothermal__cs.html#ad32d8629e95ab20f3a7fdfff1b40418f">More...</a><br /></td></tr>
 <tr class="separator:ad32d8629e95ab20f3a7fdfff1b40418f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d4cc08ad3c99c33ee4a461405c94bc"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__geothermal_1_1geothermal__cs.html#a20d4cc08ad3c99c33ee4a461405c94bc">id_internal_heat_heat_tendency</a> = -1</td></tr>
+<tr class="memdesc:a20d4cc08ad3c99c33ee4a461405c94bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID for diagnostic of heat tendency.  <a href="structmom__geothermal_1_1geothermal__cs.html#a20d4cc08ad3c99c33ee4a461405c94bc">More...</a><br /></td></tr>
+<tr class="separator:a20d4cc08ad3c99c33ee4a461405c94bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaabfab1c7fb5408e05610241f1a3eda7"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__geothermal_1_1geothermal__cs.html#aaabfab1c7fb5408e05610241f1a3eda7">id_internal_heat_temp_tendency</a> = -1</td></tr>
+<tr class="memdesc:aaabfab1c7fb5408e05610241f1a3eda7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID for diagnostic of temperature tendency.  <a href="structmom__geothermal_1_1geothermal__cs.html#aaabfab1c7fb5408e05610241f1a3eda7">More...</a><br /></td></tr>
+<tr class="separator:aaabfab1c7fb5408e05610241f1a3eda7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d15c987e2b31357a9d5a3fc745373f"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__geothermal_1_1geothermal__cs.html#ac1d15c987e2b31357a9d5a3fc745373f">id_internal_heat_h_tendency</a> = -1</td></tr>
+<tr class="memdesc:ac1d15c987e2b31357a9d5a3fc745373f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID for diagnostic of thickness tendency.  <a href="structmom__geothermal_1_1geothermal__cs.html#ac1d15c987e2b31357a9d5a3fc745373f">More...</a><br /></td></tr>
+<tr class="separator:ac1d15c987e2b31357a9d5a3fc745373f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variables and constants</h2>
 <a id="afdee8f544437c2b8a01cda5535a05dc8"></a>
@@ -223,6 +232,63 @@ Public variables and constants</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00029">29</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">  real</span>    :: geothermal_thick<span class="comment"> !&lt; The thickness over which geothermal heating is</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac1d15c987e2b31357a9d5a3fc745373f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1d15c987e2b31357a9d5a3fc745373f">&#9670;&nbsp;</a></span>id_internal_heat_h_tendency</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_geothermal::geothermal_cs::id_internal_heat_h_tendency = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ID for diagnostic of thickness tendency. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00040">40</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">integer</span> :: id_internal_heat_h_tendency = -1<span class="comment">      !&lt; ID for diagnostic of thickness tendency</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a20d4cc08ad3c99c33ee4a461405c94bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d4cc08ad3c99c33ee4a461405c94bc">&#9670;&nbsp;</a></span>id_internal_heat_heat_tendency</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_geothermal::geothermal_cs::id_internal_heat_heat_tendency = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ID for diagnostic of heat tendency. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00038">38</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">integer</span> :: id_internal_heat_heat_tendency = -1<span class="comment">   !&lt; ID for diagnostic of heat tendency</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaabfab1c7fb5408e05610241f1a3eda7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaabfab1c7fb5408e05610241f1a3eda7">&#9670;&nbsp;</a></span>id_internal_heat_temp_tendency</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_geothermal::geothermal_cs::id_internal_heat_temp_tendency = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ID for diagnostic of temperature tendency. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00039">39</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">integer</span> :: id_internal_heat_temp_tendency = -1<span class="comment">   !&lt; ID for diagnostic of temperature tendency</span></div>
 </div><!-- fragment -->
 </div>
 </div>

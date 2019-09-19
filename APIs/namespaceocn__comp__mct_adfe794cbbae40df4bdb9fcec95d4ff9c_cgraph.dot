@@ -50,7 +50,7 @@ digraph "ocn_comp_mct::ocn_init_mct"
   Node1 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node19 [label="ocn_comp_mct::ocean\l_model_init_sfc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceocn__comp__mct.html#a5f19e1874046a092e4773c541467593b",tooltip="It has to be separate from the ocean_initialization call because the coupler module allocates the spa..."];
   Node19 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node20 [label="mom_ocean_model_mct\l::convert_state_to_ocean_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__mct.html#a0cb497652e453db49e7324356ef938c0",tooltip="This subroutine translates the coupler's ocean_data_type into MOM's surface state variable...."];
+  Node20 [label="mom_ocean_model_mct\l::convert_state_to_ocean_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__mct.html#aafb1d4da55ede89a37e651944c52b187",tooltip="This subroutine translates the coupler's ocean_data_type into MOM's surface state variable...."];
   Node19 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node21 [label="mom::extract_surface\l_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a6ba3b54bd0edbba06730741653552d58",tooltip="Set the surface (return) properties of the ocean model by setting the appropriate fields in sfc_state..."];
   Node21 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

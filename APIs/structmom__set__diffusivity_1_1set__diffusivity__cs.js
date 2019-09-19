@@ -1,5 +1,6 @@
 var structmom__set__diffusivity_1_1set__diffusivity__cs =
 [
+    [ "answers_2018", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#afbca78b98fef608f7b73ff9dd7abc46f", null ],
     [ "bbl_effic", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a3230f42750256e6beeac372d60f9a9e0", null ],
     [ "bbl_mixing_as_max", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#aac3e841fb3ae101a240ef128b6babee0", null ],
     [ "bkgnd_mixing_csp", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#aaaf7cdd1adada8f993ca2dc3eccd0731", null ],
@@ -17,7 +18,6 @@ var structmom__set__diffusivity_1_1set__diffusivity__cs =
     [ "dissip_n2", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#affaf25dd04b0743e94729211ad720b91", null ],
     [ "double_diffusion", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#af2f0a5117361f85b17e45027d378c15e", null ],
     [ "fluxri_max", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a761417505e2768138e350cadd7c33e2e", null ],
-    [ "hmix", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#aa77889b052be3cd150039e419b6ec6c9", null ],
     [ "id_kd_bbl", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a71700d8205b4a70f396bb4abb7fc9644", null ],
     [ "id_kd_layer", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a4ff7ccc1ac81c715c5a863290508bde5", null ],
     [ "id_kd_user", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#afe9d4db42243c6a3d2ac640faef141da", null ],
@@ -35,7 +35,7 @@ var structmom__set__diffusivity_1_1set__diffusivity__cs =
     [ "kd_add", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a10e67e44e995a7a555b2ab01159a9f84", null ],
     [ "kd_max", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#acc22b62e4f48621223545550705f75fd", null ],
     [ "kd_min", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a3018a99f779d095519b2c48bf3795d51", null ],
-    [ "kdml", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a9e430c20c090e9024b43bfec0d1af485", null ],
+    [ "kd_smooth", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a8cb85457a51c21957ee88e6f6f734088", null ],
     [ "kv", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a1d2895218b2dcab2aca94e2b25a4e037", null ],
     [ "kv_molecular", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a426b76d7cd2892cc75dd608303a6fc35", null ],
     [ "limit_dissipation", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#ac531ad116cd57691bb59610389d9a610", null ],
@@ -43,6 +43,7 @@ var structmom__set__diffusivity_1_1set__diffusivity__cs =
     [ "max_rrho_salt_fingers", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a283f55a458a50ac7abce8d7b61fff0c0", null ],
     [ "max_salt_diff_salt_fingers", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a139fb1a1deae31abc831e7875095e1fa", null ],
     [ "ml_omega_frac", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a17d528a0911868200951c8df03b8a88c", null ],
+    [ "ml_rad_bug", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a8b9c07d13c51d5bac1fa01355d73237b", null ],
     [ "ml_rad_coeff", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a38666e9299b9e48e7d1c79e0e36ecf0a", null ],
     [ "ml_rad_efold_coeff", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#abd4df7fb0baf51838e1aca7bbad0a729", null ],
     [ "ml_rad_kd_max", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a2c7d9a5b4a9c305fc924650728f30580", null ],

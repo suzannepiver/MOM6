@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('MOM__interface__heights_8F90_source.ht
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  z_to_eta = 1.0 ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(eta_to_m)) z_to_eta = us%Z_to_m / eta_to_m</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  h_to_eta = gv%H_to_Z * z_to_eta</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  h_to_rho_eta =  gv%H_to_kg_m2 * (us%m_to_Z * z_to_eta)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  i_gearth = z_to_eta / gv%g_Earth</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  i_gearth = z_to_eta /  (us%Z_to_m * gv%mks_g_Earth)</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">!$OMP parallel default(shared) private(dilate,htot)</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">!$OMP do</span></div>
@@ -271,7 +271,7 @@ $(document).ready(function(){initNavTree('MOM__interface__heights_8F90_source.ht
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  z_to_eta = 1.0 ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(eta_to_m)) z_to_eta = us%Z_to_m / eta_to_m</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  h_to_eta = gv%H_to_Z * z_to_eta</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  h_to_rho_eta =  gv%H_to_kg_m2 * (us%m_to_Z * z_to_eta)</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  i_gearth = z_to_eta / gv%g_Earth</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  i_gearth = z_to_eta / (us%Z_to_m * gv%mks_g_Earth)</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">!$OMP parallel default(shared) private(htot)</span></div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">!$OMP do</span></div>
@@ -352,7 +352,7 @@ $(document).ready(function(){initNavTree('MOM__interface__heights_8F90_source.ht
 <div class="ttc" id="anamespacemom__error__handler_html_a460cfb79a06c29fc249952c2a3710d67"><div class="ttname"><a href="namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67">mom_error_handler::mom_error</a></div><div class="ttdeci">subroutine, public mom_error(level, message, all_print)</div><div class="ttdoc">This provides a convenient interface for writing an mpp_error message with run-time filter based on a...</div><div class="ttdef"><b>Definition:</b> <a href="MOM__error__handler_8F90_source.html#l00072">MOM_error_handler.F90:72</a></div></div>
 <div class="ttc" id="anamespacemom__error__handler_html"><div class="ttname"><a href="namespacemom__error__handler.html">mom_error_handler</a></div><div class="ttdoc">Routines for error handling and I/O management.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__error__handler_8F90_source.html#l00002">MOM_error_handler.F90:2</a></div></div>
 <div class="ttc" id="anamespacemom__interface__heights_html"><div class="ttname"><a href="namespacemom__interface__heights.html">mom_interface_heights</a></div><div class="ttdoc">Functions for calculating interface heights, including free surface height.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__interface__heights_8F90_source.html#l00002">MOM_interface_heights.F90:2</a></div></div>
-<div class="ttc" id="astructmom__grid_1_1ocean__grid__type_html"><div class="ttname"><a href="structmom__grid_1_1ocean__grid__type.html">mom_grid::ocean_grid_type</a></div><div class="ttdoc">Ocean grid type. See mom_grid for details.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__grid_8F90_source.html#l00025">MOM_grid.F90:25</a></div></div>
+<div class="ttc" id="astructmom__grid_1_1ocean__grid__type_html"><div class="ttname"><a href="structmom__grid_1_1ocean__grid__type.html">mom_grid::ocean_grid_type</a></div><div class="ttdoc">Ocean grid type. See mom_grid for details.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__grid_8F90_source.html#l00026">MOM_grid.F90:26</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

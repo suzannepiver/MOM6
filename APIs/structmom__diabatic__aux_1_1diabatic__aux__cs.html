@@ -101,11 +101,11 @@ $(document).ready(function(){initNavTree('structmom__diabatic__aux_1_1diabatic__
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Control structure for diabatic_aux. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00037">37</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00042">42</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_diabatic_aux::diabatic_aux_cs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__diabatic__aux_1_1diabatic__aux__cs__coll__graph.svg" width="546" height="274"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__diabatic__aux_1_1diabatic__aux__cs__coll__graph.svg" width="632" height="303"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -132,6 +132,18 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:ad62d1e1307e281fcbff6bbf49751b7d2"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#ad62d1e1307e281fcbff6bbf49751b7d2">use_calving_heat_content</a></td></tr>
 <tr class="memdesc:ad62d1e1307e281fcbff6bbf49751b7d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, assumes that ice-ocean boundary has provided a calving heat content. Otherwise, calving is added with a temperature of the local SST.  <a href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#ad62d1e1307e281fcbff6bbf49751b7d2">More...</a><br /></td></tr>
 <tr class="separator:ad62d1e1307e281fcbff6bbf49751b7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb3daf05e605ede46a5b957c44bd3236"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#afb3daf05e605ede46a5b957c44bd3236">var_pen_sw</a></td></tr>
+<tr class="memdesc:afb3daf05e605ede46a5b957c44bd3236"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, use one of the CHL_A schemes to determine the e-folding depth of incoming shortwave radiation.  <a href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#afb3daf05e605ede46a5b957c44bd3236">More...</a><br /></td></tr>
+<tr class="separator:afb3daf05e605ede46a5b957c44bd3236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d77d4396672a9a91abe3aa7c9937e2c"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#a0d77d4396672a9a91abe3aa7c9937e2c">sbc_chl</a></td></tr>
+<tr class="memdesc:a0d77d4396672a9a91abe3aa7c9937e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer handle used in time interpolation of chlorophyll read from a file.  <a href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#a0d77d4396672a9a91abe3aa7c9937e2c">More...</a><br /></td></tr>
+<tr class="separator:a0d77d4396672a9a91abe3aa7c9937e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82df9a13326fbde6dc42c6ccb827d771"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#a82df9a13326fbde6dc42c6ccb827d771">chl_from_file</a></td></tr>
+<tr class="memdesc:a82df9a13326fbde6dc42c6ccb827d771"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, chl_a is read from a file.  <a href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#a82df9a13326fbde6dc42c6ccb827d771">More...</a><br /></td></tr>
+<tr class="separator:a82df9a13326fbde6dc42c6ccb827d771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c76a88cefbbc106397f0a5f63046113"><td class="memItemLeft" align="right" valign="top">type(time_type), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#a8c76a88cefbbc106397f0a5f63046113">time</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:a8c76a88cefbbc106397f0a5f63046113"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the ocean model's clock.  <a href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#a8c76a88cefbbc106397f0a5f63046113">More...</a><br /></td></tr>
+<tr class="separator:a8c76a88cefbbc106397f0a5f63046113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ebe0c90ae859971f783c525d8696b92"><td class="memItemLeft" align="right" valign="top">type(diag_ctrl), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#a8ebe0c90ae859971f783c525d8696b92">diag</a></td></tr>
 <tr class="memdesc:a8ebe0c90ae859971f783c525d8696b92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure used to regulate timing of diagnostic output.  <a href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#a8ebe0c90ae859971f783c525d8696b92">More...</a><br /></td></tr>
 <tr class="separator:a8ebe0c90ae859971f783c525d8696b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,6 +162,9 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a81786fc176c0a22e0d858d50802b1a18"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#a81786fc176c0a22e0d858d50802b1a18">id_nonpensw_diag</a> = -1</td></tr>
 <tr class="memdesc:a81786fc176c0a22e0d858d50802b1a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic ID of Non-penetrative shortwave heating.  <a href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#a81786fc176c0a22e0d858d50802b1a18">More...</a><br /></td></tr>
 <tr class="separator:a81786fc176c0a22e0d858d50802b1a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a7050a33e841f35083879fcf8a63ab4"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#a6a7050a33e841f35083879fcf8a63ab4">id_chl</a> = -1</td></tr>
+<tr class="memdesc:a6a7050a33e841f35083879fcf8a63ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic ID of chlorophyll-A handles for opacity.  <a href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#a6a7050a33e841f35083879fcf8a63ab4">More...</a><br /></td></tr>
+<tr class="separator:a6a7050a33e841f35083879fcf8a63ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32703e90b12f0866bc7eac4753e2cb4b"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#a32703e90b12f0866bc7eac4753e2cb4b">createdh</a></td></tr>
 <tr class="memdesc:a32703e90b12f0866bc7eac4753e2cb4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of volume added in order to avoid grounding [m s-1].  <a href="structmom__diabatic__aux_1_1diabatic__aux__cs.html#a32703e90b12f0866bc7eac4753e2cb4b">More...</a><br /></td></tr>
 <tr class="separator:a32703e90b12f0866bc7eac4753e2cb4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +179,25 @@ Public variables and constants</h2></td></tr>
 <tr class="separator:aa58996e8c75cae20efa12ff8de2b1e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variables and constants</h2>
+<a id="a82df9a13326fbde6dc42c6ccb827d771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82df9a13326fbde6dc42c6ccb827d771">&#9670;&nbsp;</a></span>chl_from_file</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">logical mom_diabatic_aux::diabatic_aux_cs::chl_from_file</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, chl_a is read from a file. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00067">67</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">logical</span> ::  chl_from_file<span class="comment">  !&lt; If true, chl_a is read from a file.</span></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a32703e90b12f0866bc7eac4753e2cb4b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a32703e90b12f0866bc7eac4753e2cb4b">&#9670;&nbsp;</a></span>createdh</h2>
 
@@ -178,8 +212,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The amount of volume added in order to avoid grounding [m s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00069">69</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span>   :: createdH<span class="comment">       !&lt; The amount of volume added in order to</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00081">81</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span>   :: createdH<span class="comment">       !&lt; The amount of volume added in order to</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -197,8 +231,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Structure used to regulate timing of diagnostic output. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00059">59</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag<span class="comment"> !&lt; Structure used to regulate timing of diagnostic output</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00070">70</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag<span class="comment"> !&lt; Structure used to regulate timing of diagnostic output</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -216,8 +250,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Provide additional TKE to mix river runoff at the river mouths to a depth of "rivermix_depth". </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00038">38</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">logical</span> :: do_rivermix = .false. <span class="comment">!&lt; Provide additional TKE to mix river runoff at the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00043">43</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">logical</span> :: do_rivermix = .false. <span class="comment">!&lt; Provide additional TKE to mix river runoff at the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -235,8 +269,27 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic ID of which layer receives the brine. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00063">63</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">integer</span> :: id_brine_lay      = -1<span class="comment"> !&lt; Diagnostic ID of which layer receives the brine</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00074">74</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">integer</span> :: id_brine_lay      = -1<span class="comment"> !&lt; Diagnostic ID of which layer receives the brine</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6a7050a33e841f35083879fcf8a63ab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7050a33e841f35083879fcf8a63ab4">&#9670;&nbsp;</a></span>id_chl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_diabatic_aux::diabatic_aux_cs::id_chl = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diagnostic ID of chlorophyll-A handles for opacity. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">integer</span> :: id_Chl            = -1<span class="comment"> !&lt; Diagnostic ID of chlorophyll-A handles for opacity</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -254,8 +307,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic ID of mass added to avoid grounding. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00062">62</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">integer</span> :: id_createdH       = -1<span class="comment"> !&lt; Diagnostic ID of mass added to avoid grounding</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00073">73</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">integer</span> :: id_createdH       = -1<span class="comment"> !&lt; Diagnostic ID of mass added to avoid grounding</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -273,8 +326,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic ID of Non-penetrative shortwave heating. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00066">66</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">integer</span> :: id_nonpenSW_diag  = -1<span class="comment"> !&lt; Diagnostic ID of Non-penetrative shortwave heating</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00077">77</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">integer</span> :: id_nonpenSW_diag  = -1<span class="comment"> !&lt; Diagnostic ID of Non-penetrative shortwave heating</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -292,8 +345,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic ID of Penetrative shortwave heating (flux convergence) </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00064">64</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">integer</span> :: id_penSW_diag     = -1<span class="comment"> !&lt; Diagnostic ID of Penetrative shortwave heating (flux convergence)</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">integer</span> :: id_penSW_diag     = -1<span class="comment"> !&lt; Diagnostic ID of Penetrative shortwave heating (flux convergence)</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -311,8 +364,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic ID of Penetrative shortwave flux. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00065">65</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">integer</span> :: id_penSWflux_diag = -1<span class="comment"> !&lt; Diagnostic ID of Penetrative shortwave flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">integer</span> :: id_penSWflux_diag = -1<span class="comment"> !&lt; Diagnostic ID of Penetrative shortwave flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -330,8 +383,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the model does not check if fluxes are applied over land points. This flag must be used when the ocean is coupled with sea ice and ice shelves and use_ePBL = true. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00048">48</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">logical</span> :: ignore_fluxes_over_land<span class="comment">    !&lt; If true, the model does not check</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00053">53</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">logical</span> :: ignore_fluxes_over_land<span class="comment">    !&lt; If true, the model does not check</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -349,8 +402,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Non-downwelling SW radiation at ocean surface [W m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span>   :: nonpenSW_diag<span class="comment">  !&lt; Non-downwelling SW radiation at ocean</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span>   :: nonpenSW_diag<span class="comment">  !&lt; Non-downwelling SW radiation at ocean</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -368,8 +421,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Heating in a layer from convergence of penetrative SW [W m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: penSW_diag<span class="comment">     !&lt; Heating in a layer from convergence of</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00083">83</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: penSW_diag<span class="comment">     !&lt; Heating in a layer from convergence of</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -387,8 +440,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Penetrative SW flux at base of grid layer [W m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00073">73</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: penSWflux_diag<span class="comment"> !&lt; Penetrative SW flux at base of grid</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: penSWflux_diag<span class="comment"> !&lt; Penetrative SW flux at base of grid</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -406,8 +459,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use a pressure dependent freezing temperature when making frazil. The default is false, which will be faster but is inappropriate with ice-shelf cavities. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00044">44</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">logical</span> :: pressure_dependent_frazil<span class="comment">  !&lt; If true, use a pressure dependent</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00049">49</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">logical</span> :: pressure_dependent_frazil<span class="comment">  !&lt; If true, use a pressure dependent</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -425,8 +478,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, try to use any frazil heat deficit to to cool the topmost layer down to the freezing point. The default is false. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00041">41</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">logical</span> :: reclaim_frazil<span class="comment">  !&lt;   If true, try to use any frazil heat deficit to</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00046">46</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">logical</span> :: reclaim_frazil<span class="comment">  !&lt;   If true, try to use any frazil heat deficit to</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -444,8 +497,46 @@ Public variables and constants</h2></td></tr>
 
 <p>The depth to which rivers are mixed if do_rivermix = T [Z ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00040">40</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">  real</span>    :: rivermix_depth = 0.0<span class="comment">  !&lt; The depth to which rivers are mixed if do_rivermix = T [Z ~&gt; m].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00045">45</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">  real</span>    :: rivermix_depth = 0.0<span class="comment">  !&lt; The depth to which rivers are mixed if do_rivermix = T [Z ~&gt; m].</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0d77d4396672a9a91abe3aa7c9937e2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d77d4396672a9a91abe3aa7c9937e2c">&#9670;&nbsp;</a></span>sbc_chl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_diabatic_aux::diabatic_aux_cs::sbc_chl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer handle used in time interpolation of chlorophyll read from a file. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00065">65</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">integer</span> :: sbc_chl<span class="comment">         !&lt; An integer handle used in time interpolation of</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8c76a88cefbbc106397f0a5f63046113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c76a88cefbbc106397f0a5f63046113">&#9670;&nbsp;</a></span>time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">type(time_type), pointer mom_diabatic_aux::diabatic_aux_cs::time =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A pointer to the ocean model's clock. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00069">69</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time =&gt; null() <span class="comment">!&lt; A pointer to the ocean model&#39;s clock.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -463,8 +554,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, assumes that ice-ocean boundary has provided a calving heat content. Otherwise, calving is added with a temperature of the local SST. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00055">55</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">logical</span> :: use_calving_heat_content<span class="comment"> !&lt; If true, assumes that ice-ocean boundary</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00060">60</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">logical</span> :: use_calving_heat_content<span class="comment"> !&lt; If true, assumes that ice-ocean boundary</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -482,8 +573,27 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, assumes that ice-ocean boundary has provided a river heat content. Otherwise, runoff is added with a temperature of the local SST. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00052">52</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">logical</span> :: use_river_heat_content<span class="comment"> !&lt; If true, assumes that ice-ocean boundary</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00057">57</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">logical</span> :: use_river_heat_content<span class="comment"> !&lt; If true, assumes that ice-ocean boundary</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afb3daf05e605ede46a5b957c44bd3236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb3daf05e605ede46a5b957c44bd3236">&#9670;&nbsp;</a></span>var_pen_sw</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">logical mom_diabatic_aux::diabatic_aux_cs::var_pen_sw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, use one of the CHL_A schemes to determine the e-folding depth of incoming shortwave radiation. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__diabatic__aux_8F90_source.html#l00063">63</a> of file <a class="el" href="MOM__diabatic__aux_8F90_source.html">MOM_diabatic_aux.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">logical</span> :: var_pen_sw<span class="comment">      !&lt;   If true, use one of the CHL_A schemes to determine the</span></div>
 </div><!-- fragment -->
 </div>
 </div>

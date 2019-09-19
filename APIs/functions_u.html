@@ -109,6 +109,9 @@ $(document).ready(function(){initNavTree('functions_u.html','');});
 , <a class="el" href="structmom__pointaccel_1_1pointaccel__cs.html#a2970ade010b540f92d5beadd1f3d5e9d">mom_pointaccel::pointaccel_cs</a>
 , <a class="el" href="structmom__variables_1_1ocean__internal__state.html#a0601b5fba369398669db41d5f597b26b">mom_variables::ocean_internal_state</a>
 </li>
+<li>u_av_scale
+: <a class="el" href="structmom__pointaccel_1_1pointaccel__cs.html#a016a1280792af43e81899b00ed4e7de3">mom_pointaccel::pointaccel_cs</a>
+</li>
 <li>u_bdry_val
 : <a class="el" href="structmom__ice__shelf__dynamics_1_1ice__shelf__dyn__cs.html#ab0be46cbb32570d85a0f072b295600e6">mom_ice_shelf_dynamics::ice_shelf_dyn_cs</a>
 </li>
@@ -146,6 +149,9 @@ $(document).ready(function(){initNavTree('functions_u.html','');});
 <li>u_trunc_file
 : <a class="el" href="structmom__pointaccel_1_1pointaccel__cs.html#adc370bba144c94116c1c46fa7c72b3bc">mom_pointaccel::pointaccel_cs</a>
 , <a class="el" href="structmom__vert__friction_1_1vertvisc__cs.html#abdb200e8e75d4a5fed36dfb9db579d41">mom_vert_friction::vertvisc_cs</a>
+</li>
+<li>u_values_needed
+: <a class="el" href="structmom__open__boundary_1_1obc__segment__type.html#a219ed5a039203eff8f427a7d9be378bc">mom_open_boundary::obc_segment_type</a>
 </li>
 <li>ua_polarity
 : <a class="el" href="structmom__barotropic_1_1barotropic__cs.html#add16265674f085dcb818cc35e6797b61">mom_barotropic::barotropic_cs</a>
@@ -222,8 +228,8 @@ $(document).ready(function(){initNavTree('functions_u.html','');});
 <li>umask
 : <a class="el" href="structmom__ice__shelf__dynamics_1_1ice__shelf__dyn__cs.html#ae66dec39506fe98942d26b729228c02d">mom_ice_shelf_dynamics::ice_shelf_dyn_cs</a>
 </li>
-<li>uniform_cg
-: <a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#ab6d994ebbbb4165e68c4b614a82b88c1">mom_diabatic_driver::diabatic_cs</a>
+<li>uniform_test_cg
+: <a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a60e6b202da9066d5da09a87ded3dc6c6">mom_diabatic_driver::diabatic_cs</a>
 </li>
 <li>unitall
 : <a class="el" href="structmom__document_1_1doc__type.html#a8cfc3c2aa6e24b9e1363df580c622440">mom_document::doc_type</a>
@@ -274,10 +280,12 @@ $(document).ready(function(){initNavTree('functions_u.html','');});
 <li>us
 : <a class="el" href="structmom_1_1mom__control__struct.html#a49d85380cefccee147f10996ac288b4c">mom::mom_control_struct</a>
 , <a class="el" href="structmom__diag__mediator_1_1diag__ctrl.html#a608b2d6d785d0bd50ade6060cd4f9baf">mom_diag_mediator::diag_ctrl</a>
+, <a class="el" href="structmom__grid_1_1ocean__grid__type.html#a6194fca3b31fe35443dbe7bece3c071a">mom_grid::ocean_grid_type</a>
 , <a class="el" href="structmom__ice__shelf_1_1ice__shelf__cs.html#a19955dea7c4f20d0eabddb8119d7f91f">mom_ice_shelf::ice_shelf_cs</a>
 , <a class="el" href="structmom__ocean__model__mct_1_1ocean__state__type.html#accf7423587afebf8dc5ea193a6356d3a">mom_ocean_model_mct::ocean_state_type</a>
 , <a class="el" href="structmom__ocean__model__nuopc_1_1ocean__state__type.html#ad7d18dffb0dfb9bfe0a8a86b9d370326">mom_ocean_model_nuopc::ocean_state_type</a>
 , <a class="el" href="structmom__oda__driver__mod_1_1oda__cs.html#a9308ffdbd3d9225927a0f23edfd1d638">mom_oda_driver_mod::oda_cs</a>
+, <a class="el" href="structmom__offline__main_1_1offline__transport__cs.html#a59819960282235d9bf3b04c9a54ba207">mom_offline_main::offline_transport_cs</a>
 </li>
 <li>us0_x
 : <a class="el" href="structmom__wave__interface_1_1wave__parameters__cs.html#aee9f62cc240ff56b410db95c90a2be41">mom_wave_interface::wave_parameters_cs</a>
@@ -389,8 +397,8 @@ $(document).ready(function(){initNavTree('functions_u.html','');});
 <li>use_land_mask
 : <a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#abd4b29b2d8c6c03816a2ff3458787d96">mom_hor_visc::hor_visc_cs</a>
 </li>
-<li>use_legacy_diabatic_driver
-: <a class="el" href="structmom_1_1mom__control__struct.html#ac2ffdf02306c77fde7f7d02e5d292702">mom::mom_control_struct</a>
+<li>use_legacy_diabatic
+: <a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a5bd2eff26a3a26043ea8f9646dbc9fbb">mom_diabatic_driver::diabatic_cs</a>
 </li>
 <li>use_limited_p_ssh
 : <a class="el" href="structmom__surface__forcing__mct_1_1surface__forcing__cs.html#a9684cedd44015f30b90378f298e508fa">mom_surface_forcing_mct::surface_forcing_cs</a>
@@ -513,9 +521,6 @@ $(document).ready(function(){initNavTree('functions_u.html','');});
 </li>
 <li>use_visbeck
 : <a class="el" href="structmom__lateral__mixing__coeffs_1_1varmix__cs.html#a89545cca8a4fb96aad51cf4ac1c5379e">mom_lateral_mixing_coeffs::varmix_cs</a>
-</li>
-<li>use_visbeck_slope_bug
-: <a class="el" href="structmom__lateral__mixing__coeffs_1_1varmix__cs.html#a6d4ecfb4f804c2ffb319ce1bb6b3d6c4">mom_lateral_mixing_coeffs::varmix_cs</a>
 </li>
 <li>use_visc_rem_max
 : <a class="el" href="structmom__continuity__ppm_1_1continuity__ppm__cs.html#a5fe924e4127bbe2d9c80a664d1854b0b">mom_continuity_ppm::continuity_ppm_cs</a>

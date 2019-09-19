@@ -11,13 +11,9 @@ digraph "mom_coms::reset_efp_overflow_error"
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="mom_sponge::apply_sponge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__sponge.html#afc5fe4db356e9e93696c909cd2c4d7ba",tooltip="This subroutine applies damping to the layers thicknesses, mixed layer buoyancy, and a variety of tra..."];
   Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="mom_diabatic_driver\l::legacy_diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a9cdc6d13fb212778da2d58f286528fde",tooltip="Imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentum and tracers us..."];
+  Node4 [label="mom_diabatic_driver\l::layered_diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a71d8d849db16be4b87c2650b49f01c82",tooltip="Imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentum and tracers us..."];
   Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="mom::step_mom_thermo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a1a81ea749a309f10f5c3c7a17efa3606",tooltip="MOM_step_thermo orchestrates the thermodynamic time stepping and vertical remapping,..."];
-  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="mom::step_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a972730596703580d4646320f2c9085a5",tooltip="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to..."];
-  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node7 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
-  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node8 [label="mom_spatial_means::\lglobal_j_mean",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__spatial__means.html#a0862005dff883cfbd1b9ffc1ef15cdbf",tooltip="Determine the global mean of a field along rows of constant j, returning it in a 1-d array using the ..."];
+  Node5 [label="mom_diabatic_driver\l::diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a9005de9f3ad26b32de53e3cd9826b9b9",tooltip="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu..."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_spatial_means::\lglobal_j_mean",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__spatial__means.html#a0862005dff883cfbd1b9ffc1ef15cdbf",tooltip="Determine the global mean of a field along rows of constant j, returning it in a 1-d array using the ..."];
 }

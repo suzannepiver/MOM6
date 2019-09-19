@@ -148,17 +148,29 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a05fae14738c3370954b8026fc3a74788"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the total ocean depth is less than this value [H ~&gt; m or kg m-2], scale away all surface forcing to avoid boiling the ocean.  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a05fae14738c3370954b8026fc3a74788">More...</a><br /></td></tr>
 <tr class="separator:a05fae14738c3370954b8026fc3a74788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c20b65b9b95fa4849497044ad60eb43"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a1c20b65b9b95fa4849497044ad60eb43">ustar_min</a></td></tr>
-<tr class="memdesc:a1c20b65b9b95fa4849497044ad60eb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">A minimum value of ustar to avoid numerical problems [Z s-1 ~&gt; m s-1]. If the value is small enough, this should not affect the solution.  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a1c20b65b9b95fa4849497044ad60eb43">More...</a><br /></td></tr>
+<tr class="memdesc:a1c20b65b9b95fa4849497044ad60eb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">A minimum value of ustar to avoid numerical problems [Z T-1 ~&gt; m s-1]. If the value is small enough, this should not affect the solution.  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a1c20b65b9b95fa4849497044ad60eb43">More...</a><br /></td></tr>
 <tr class="separator:a1c20b65b9b95fa4849497044ad60eb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768dc5ed9b1ad87f1e4802d108c3ef2c"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a768dc5ed9b1ad87f1e4802d108c3ef2c">omega</a></td></tr>
-<tr class="memdesc:a768dc5ed9b1ad87f1e4802d108c3ef2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Earth's rotation rate [s-1].  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a768dc5ed9b1ad87f1e4802d108c3ef2c">More...</a><br /></td></tr>
+<tr class="memdesc:a768dc5ed9b1ad87f1e4802d108c3ef2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Earth's rotation rate [T-1 ~&gt; s-1].  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a768dc5ed9b1ad87f1e4802d108c3ef2c">More...</a><br /></td></tr>
 <tr class="separator:a768dc5ed9b1ad87f1e4802d108c3ef2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab16b8306070cc4b3e6b2e5833f16b64a"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#ab16b8306070cc4b3e6b2e5833f16b64a">dt_ds_wt</a></td></tr>
 <tr class="memdesc:ab16b8306070cc4b3e6b2e5833f16b64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">When forced to extrapolate T &amp; S to match the layer densities, this factor (in degC / ppt) is combined with the derivatives of density with T &amp; S to determines what direction is orthogonal to density contours. It should be a typical value of (dR/dS) / (dR/dT) in oceanic profiles. 6 degC ppt-1 might be reasonable.  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#ab16b8306070cc4b3e6b2e5833f16b64a">More...</a><br /></td></tr>
 <tr class="separator:ab16b8306070cc4b3e6b2e5833f16b64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd1a41ea538d084faac5a6829110420"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#acdd1a41ea538d084faac5a6829110420">hbuffer_min</a></td></tr>
+<tr class="memdesc:acdd1a41ea538d084faac5a6829110420"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum buffer layer thickness when the mixed layer is very large [H ~&gt; m or kg m-2].  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#acdd1a41ea538d084faac5a6829110420">More...</a><br /></td></tr>
+<tr class="separator:acdd1a41ea538d084faac5a6829110420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5189699c5f084019195beeab0edeab41"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a5189699c5f084019195beeab0edeab41">hbuffer_rel_min</a></td></tr>
+<tr class="memdesc:a5189699c5f084019195beeab0edeab41"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum buffer layer thickness relative to the combined mixed and buffer layer thicknesses when they are thin [nondim].  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a5189699c5f084019195beeab0edeab41">More...</a><br /></td></tr>
+<tr class="separator:a5189699c5f084019195beeab0edeab41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4758c1743b73f8d50337db5dd02f42"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#aed4758c1743b73f8d50337db5dd02f42">bl_detrain_time</a></td></tr>
+<tr class="memdesc:aed4758c1743b73f8d50337db5dd02f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">A timescale that characterizes buffer layer detrainment events [T ~&gt; s].  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#aed4758c1743b73f8d50337db5dd02f42">More...</a><br /></td></tr>
+<tr class="separator:aed4758c1743b73f8d50337db5dd02f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af51ce936eac004b70d792bab5f49608b"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#af51ce936eac004b70d792bab5f49608b">bl_extrap_lim</a></td></tr>
-<tr class="memdesc:af51ce936eac004b70d792bab5f49608b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A limit on the density range over which extrapolation can occur when detraining from the buffer layers, relative to the density range within the mixed and buffer layers, when the detrainment is going into the lightest interior layer, nondimensional.  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#af51ce936eac004b70d792bab5f49608b">More...</a><br /></td></tr>
+<tr class="memdesc:af51ce936eac004b70d792bab5f49608b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A limit on the density range over which extrapolation can occur when detraining from the buffer layers, relative to the density range within the mixed and buffer layers, when the detrainment is going into the lightest interior layer [nondim].  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#af51ce936eac004b70d792bab5f49608b">More...</a><br /></td></tr>
 <tr class="separator:af51ce936eac004b70d792bab5f49608b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a46c591afa71e3d091154f4358feb8"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a78a46c591afa71e3d091154f4358feb8">bl_split_rho_tol</a></td></tr>
+<tr class="memdesc:a78a46c591afa71e3d091154f4358feb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fractional tolerance for matching layer target densities when splitting layers to deal with massive interior layers that are lighter than one of the mixed or buffer layers [nondim].  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a78a46c591afa71e3d091154f4358feb8">More...</a><br /></td></tr>
+<tr class="separator:a78a46c591afa71e3d091154f4358feb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a624f81281196c2c412da362db189dcbf"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a624f81281196c2c412da362db189dcbf">ml_resort</a></td></tr>
 <tr class="memdesc:a624f81281196c2c412da362db189dcbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, resort the layers by density, rather than doing convective adjustment.  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a624f81281196c2c412da362db189dcbf">More...</a><br /></td></tr>
 <tr class="separator:a624f81281196c2c412da362db189dcbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,10 +253,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:af5bf6c15c8cf153469026c1ddf63540a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The convective source of TKE due to to mixing in sigma2.  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#af5bf6c15c8cf153469026c1ddf63540a">More...</a><br /></td></tr>
 <tr class="separator:af5bf6c15c8cf153469026c1ddf63540a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7643004c6e3263cb6440c4cd7855bcb"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#ae7643004c6e3263cb6440c4cd7855bcb">diag_pe_detrain</a></td></tr>
-<tr class="memdesc:ae7643004c6e3263cb6440c4cd7855bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The spurious source of potential energy due to mixed layer detrainment, W Z m-3.  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#ae7643004c6e3263cb6440c4cd7855bcb">More...</a><br /></td></tr>
+<tr class="memdesc:ae7643004c6e3263cb6440c4cd7855bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The spurious source of potential energy due to mixed layer.  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#ae7643004c6e3263cb6440c4cd7855bcb">More...</a><br /></td></tr>
 <tr class="separator:ae7643004c6e3263cb6440c4cd7855bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a485749a9f60669249f1bab1b9a355389"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a485749a9f60669249f1bab1b9a355389">diag_pe_detrain2</a></td></tr>
-<tr class="memdesc:a485749a9f60669249f1bab1b9a355389"><td class="mdescLeft">&#160;</td><td class="mdescRight">The spurious source of potential energy due to mixed layer only detrainment, W Z m-3.  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a485749a9f60669249f1bab1b9a355389">More...</a><br /></td></tr>
+<tr class="memdesc:a485749a9f60669249f1bab1b9a355389"><td class="mdescLeft">&#160;</td><td class="mdescRight">The spurious source of potential energy due to mixed layer only.  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a485749a9f60669249f1bab1b9a355389">More...</a><br /></td></tr>
 <tr class="separator:a485749a9f60669249f1bab1b9a355389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f8d90e7a91650575e9f3984a43f4499"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a2f8d90e7a91650575e9f3984a43f4499">allow_clocks_in_omp_loops</a></td></tr>
 <tr class="memdesc:a2f8d90e7a91650575e9f3984a43f4499"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, clocks can be called from inside loops that can be threaded. To run with multiple threads, set to False.  <a href="structmom__bulk__mixed__layer_1_1bulkmixedlayer__cs.html#a2f8d90e7a91650575e9f3984a43f4499">More...</a><br /></td></tr>
@@ -333,8 +345,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, clocks can be called from inside loops that can be threaded. To run with multiple threads, set to False. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">logical</span> :: allow_clocks_in_omp_loops<span class="comment">  !&lt; If true, clocks can be called from inside loops that can</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00137">137</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">logical</span> :: allow_clocks_in_omp_loops<span class="comment">  !&lt; If true, clocks can be called from inside loops that can</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -352,8 +364,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The amount by which salinity is allowed to exceed previous values during detrainment, ppt. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00110">110</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">  real</span>    :: Allowed_S_chg<span class="comment">   !&lt; The amount by which salinity is allowed</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">  real</span>    :: Allowed_S_chg<span class="comment">   !&lt; The amount by which salinity is allowed</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -371,8 +383,27 @@ Public variables and constants</h2></td></tr>
 
 <p>The amount by which temperature is allowed to exceed previous values during detrainment, K. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00108">108</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">  real</span>    :: Allowed_T_chg<span class="comment">   !&lt; The amount by which temperature is allowed</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00117">117</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">  real</span>    :: Allowed_T_chg<span class="comment">   !&lt; The amount by which temperature is allowed</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aed4758c1743b73f8d50337db5dd02f42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed4758c1743b73f8d50337db5dd02f42">&#9670;&nbsp;</a></span>bl_detrain_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real mom_bulk_mixed_layer::bulkmixedlayer_cs::bl_detrain_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A timescale that characterizes buffer layer detrainment events [T ~&gt; s]. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00069">69</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">  real</span>    :: BL_detrain_time<span class="comment"> !&lt; A timescale that characterizes buffer layer detrainment</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -388,10 +419,29 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A limit on the density range over which extrapolation can occur when detraining from the buffer layers, relative to the density range within the mixed and buffer layers, when the detrainment is going into the lightest interior layer, nondimensional. </p>
+<p>A limit on the density range over which extrapolation can occur when detraining from the buffer layers, relative to the density range within the mixed and buffer layers, when the detrainment is going into the lightest interior layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00065">65</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">  real</span>    :: BL_extrap_lim<span class="comment">   !&lt; A limit on the density range over which</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">  real</span>    :: BL_extrap_lim<span class="comment">   !&lt; A limit on the density range over which</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a78a46c591afa71e3d091154f4358feb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a46c591afa71e3d091154f4358feb8">&#9670;&nbsp;</a></span>bl_split_rho_tol</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real mom_bulk_mixed_layer::bulkmixedlayer_cs::bl_split_rho_tol</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The fractional tolerance for matching layer target densities when splitting layers to deal with massive interior layers that are lighter than one of the mixed or buffer layers [nondim]. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00077">77</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">  real</span> :: BL_split_rho_tol<span class="comment">   !&lt; The fractional tolerance for matching layer target densities</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -447,8 +497,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the depth at which penetrating shortwave radiation is absorbed is corrected by moving some of the heating upward in the water column. The default is false. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00079">79</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">logical</span> :: correct_absorption<span class="comment"> !&lt; If true, the depth at which penetrating</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">logical</span> :: correct_absorption<span class="comment"> !&lt; If true, the depth at which penetrating</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -466,8 +516,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure that is used to regulate the timing of diagnostic output. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00106">106</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to regulate the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to regulate the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -483,9 +533,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The spurious source of potential energy due to mixed layer detrainment, W Z m-3. </p>
+<p>The spurious source of potential energy due to mixed layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -501,9 +551,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The spurious source of potential energy due to mixed layer only detrainment, W Z m-3. </p>
+<p>The spurious source of potential energy due to mixed layer only. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -521,7 +571,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The convective source of TKE. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -539,7 +589,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The decay of convective TKE. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -557,7 +607,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The convective source of TKE due to to mixing in sigma2. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -575,7 +625,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The decay of mechanical TKE. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -593,7 +643,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The work done by TKE to deepen the mixed layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -611,7 +661,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The TKE sink required to mix penetrating shortwave heating. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -629,7 +679,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The resolved KE source of TKE. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -647,7 +697,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The wind source of TKE. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -665,8 +715,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Provide additional TKE to mix river runoff at the river mouths to rivermix_depth. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">logical</span> :: do_rivermix = .false. <span class="comment">!&lt; Provide additional TKE to mix river runoff</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00097">97</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">logical</span> :: do_rivermix = .false. <span class="comment">!&lt; Provide additional TKE to mix river runoff</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -708,6 +758,44 @@ Public variables and constants</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="acdd1a41ea538d084faac5a6829110420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdd1a41ea538d084faac5a6829110420">&#9670;&nbsp;</a></span>hbuffer_min</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real mom_bulk_mixed_layer::bulkmixedlayer_cs::hbuffer_min</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The minimum buffer layer thickness when the mixed layer is very large [H ~&gt; m or kg m-2]. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00065">65</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">  real</span>    :: Hbuffer_min<span class="comment">     !&lt; The minimum buffer layer thickness when the mixed layer</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5189699c5f084019195beeab0edeab41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5189699c5f084019195beeab0edeab41">&#9670;&nbsp;</a></span>hbuffer_rel_min</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real mom_bulk_mixed_layer::bulkmixedlayer_cs::hbuffer_rel_min</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The minimum buffer layer thickness relative to the combined mixed and buffer layer thicknesses when they are thin [nondim]. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00067">67</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">  real</span>    :: Hbuffer_rel_min<span class="comment"> !&lt; The minimum buffer layer thickness relative to the combined</span></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a2be2e5f4c8e37e7b56501ebbae41eac3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2be2e5f4c8e37e7b56501ebbae41eac3">&#9670;&nbsp;</a></span>hmix_min</h2>
 
@@ -741,7 +829,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00134">134</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00145">145</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -759,7 +847,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00135">135</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00146">146</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -777,7 +865,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00135">135</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00146">146</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -795,8 +883,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00135">135</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">integer</span> :: id_Hsfc_used = -1, id_hsfc_max = -1, id_hsfc_min = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00146">146</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordtype">integer</span> :: id_Hsfc_used = -1, id_hsfc_max = -1, id_hsfc_min = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -814,8 +902,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">integer</span> :: id_ML_depth = -1, id_tke_wind = -1, id_tke_mixing = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00142">142</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordtype">integer</span> :: id_ML_depth = -1, id_tke_wind = -1, id_tke_mixing = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -833,8 +921,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00134">134</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordtype">integer</span> :: id_PE_detrain = -1, id_pe_detrain2 = -1, id_h_mismatch = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00145">145</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordtype">integer</span> :: id_PE_detrain = -1, id_pe_detrain2 = -1, id_h_mismatch = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -852,7 +940,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00134">134</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00145">145</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -870,7 +958,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00132">132</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00143">143</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -888,7 +976,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00133">133</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00144">144</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -906,7 +994,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00133">133</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00144">144</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -924,8 +1012,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00133">133</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">integer</span> :: id_TKE_mech_decay = -1, id_tke_conv_decay = -1, id_tke_conv_s2 = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00144">144</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">integer</span> :: id_TKE_mech_decay = -1, id_tke_conv_decay = -1, id_tke_conv_s2 = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -943,7 +1031,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00142">142</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -961,7 +1049,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00132">132</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00143">143</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -979,8 +1067,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00132">132</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">integer</span> :: id_TKE_RiBulk = -1, id_tke_conv = -1, id_tke_pen_sw = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00143">143</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">integer</span> :: id_TKE_RiBulk = -1, id_tke_conv = -1, id_tke_pen_sw = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -998,7 +1086,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00142">142</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
 
 </div>
 </div>
@@ -1016,8 +1104,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total depth by which the thickness of the surface region (mixed &amp; buffer layer) is allowed to change between grid points. Nondimensional, 0.2 by default. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00096">96</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">  real</span>    :: lim_det_dH_bathy<span class="comment"> !&lt; The fraction of the total depth by which the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00105">105</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">  real</span>    :: lim_det_dH_bathy<span class="comment"> !&lt; The fraction of the total depth by which the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1035,8 +1123,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fractional limit in the change between grid points of the surface region (mixed &amp; buffer layer) thickness [nondim]. 0.5 by default. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00093">93</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">  real</span>    :: lim_det_dH_sfc<span class="comment">  !&lt; The fractional limit in the change between grid</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">  real</span>    :: lim_det_dH_sfc<span class="comment">  !&lt; The fractional limit in the change between grid</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1054,8 +1142,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, limit the extent of buffer layer detrainment to be consistent with neighbors. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">logical</span> :: limit_det<span class="comment">       !&lt; If true, limit the extent of buffer layer</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00100">100</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">logical</span> :: limit_det<span class="comment">       !&lt; If true, limit the extent of buffer layer</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1073,19 +1161,20 @@ Public variables and constants</h2></td></tr>
 
 <p>The mixed layer depth [H ~&gt; m or kg m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    ML_depth, &amp;        !&lt; The mixed layer depth [H ~&gt; m or kg m-2].</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    diag_TKE_wind, &amp;   !&lt; The wind source of TKE.</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    diag_TKE_RiBulk, &amp; !&lt; The resolved KE source of TKE.</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    diag_TKE_conv, &amp;   !&lt; The convective source of TKE.</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    diag_TKE_pen_SW, &amp; !&lt; The TKE sink required to mix penetrating shortwave heating.</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    diag_TKE_mech_decay, &amp; !&lt; The decay of mechanical TKE.</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    diag_TKE_conv_decay, &amp; !&lt; The decay of convective TKE.</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    diag_TKE_mixing, &amp; !&lt; The work done by TKE to deepen  the mixed layer.</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    diag_TKE_conv_s2, &amp; !&lt; The convective source of TKE due to to mixing in sigma2.</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    diag_PE_detrain, &amp; !&lt; The spurious source of potential energy due to mixed layer detrainment, W Z m-3.</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    diag_PE_detrain2<span class="comment">   !&lt; The spurious source of potential energy due to mixed layer only detrainment, W Z m-3.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    ML_depth, &amp;        !&lt; The mixed layer depth [H ~&gt; m or kg m-2].</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    diag_TKE_wind, &amp;   !&lt; The wind source of TKE.</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    diag_TKE_RiBulk, &amp; !&lt; The resolved KE source of TKE.</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    diag_TKE_conv, &amp;   !&lt; The convective source of TKE.</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    diag_TKE_pen_SW, &amp; !&lt; The TKE sink required to mix penetrating shortwave heating.</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    diag_TKE_mech_decay, &amp; !&lt; The decay of mechanical TKE.</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    diag_TKE_conv_decay, &amp; !&lt; The decay of convective TKE.</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    diag_TKE_mixing, &amp; !&lt; The work done by TKE to deepen  the mixed layer.</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    diag_TKE_conv_s2, &amp; !&lt; The convective source of TKE due to to mixing in sigma2.</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    diag_PE_detrain, &amp; !&lt; The spurious source of potential energy due to mixed layer</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                       <span class="comment">!! detrainment [kg T-3 Z m-1 ~&gt; W m-2].</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    diag_pe_detrain2   <span class="comment">!&lt; The spurious source of potential energy due to mixed layer only</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1103,8 +1192,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If ML_resort is true, do convective adjustment on this many layers (starting from the top) before sorting the remaining layers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00073">73</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">integer</span> :: ML_presort_nz_conv_adj<span class="comment"> !&lt; If ML_resort is true, do convective</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00082">82</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">integer</span> :: ML_presort_nz_conv_adj<span class="comment"> !&lt; If ML_resort is true, do convective</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1122,8 +1211,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, resort the layers by density, rather than doing convective adjustment. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">logical</span> :: ML_resort<span class="comment">       !&lt;   If true, resort the layers by density, rather than</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00080">80</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">logical</span> :: ML_resort<span class="comment">       !&lt;   If true, resort the layers by density, rather than</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1253,10 +1342,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The Earth's rotation rate [s-1]. </p>
+<p>The Earth's rotation rate [T-1 ~&gt; s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00057">57</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">  real</span>    :: omega<span class="comment">           !&lt;   The Earth&#39;s rotation rate [s-1].</span></div>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">  real</span>    :: omega<span class="comment">           !&lt;   The Earth&#39;s rotation rate [T-1 ~&gt; s-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1274,8 +1363,8 @@ Public variables and constants</h2></td></tr>
 
 <p>When setting the decay scale for turbulence, use this fraction of the absolute rotation rate blended with the local value of f, as sqrt((1-of)*f^2 + of*4*omega^2). </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">  real</span>    :: omega_frac<span class="comment">      !&lt;   When setting the decay scale for turbulence, use</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">  real</span>    :: omega_frac<span class="comment">      !&lt;   When setting the decay scale for turbulence, use</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1293,8 +1382,8 @@ Public variables and constants</h2></td></tr>
 
 <p>For group halo pass. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00128">128</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_h_sum_hmbl_prev<span class="comment"> !&lt; For group halo pass</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00139">139</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_h_sum_hmbl_prev<span class="comment"> !&lt; For group halo pass</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1312,8 +1401,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the nkml layers in the mixed layer are chosen to optimally represent the impact of the Ekman transport on the mixed layer TKE budget. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00083">83</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">logical</span> :: Resolve_Ekman<span class="comment">   !&lt;   If true, the nkml layers in the mixed layer are</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00092">92</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">logical</span> :: Resolve_Ekman<span class="comment">   !&lt;   If true, the nkml layers in the mixed layer are</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1331,8 +1420,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The depth of mixing if do_rivermix is true [Z ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">  real</span>    :: rivermix_depth = 0.0<span class="comment">  !&lt; The depth of mixing if do_rivermix is true [Z ~&gt; m].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00099">99</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">  real</span>    :: rivermix_depth = 0.0<span class="comment">  !&lt; The depth of mixing if do_rivermix is true [Z ~&gt; m].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1350,8 +1439,8 @@ Public variables and constants</h2></td></tr>
 
 <p>It true, add salt below mixed layer (layer mode only) </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00104">104</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">logical</span> :: salt_reject_below_ML<span class="comment"> !&lt; It true, add salt below mixed layer (layer mode only)</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">logical</span> :: salt_reject_below_ML<span class="comment"> !&lt; It true, add salt below mixed layer (layer mode only)</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1369,8 +1458,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the ocean model's clock. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time =&gt; null() <span class="comment">!&lt; A pointer to the ocean model&#39;s clock.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00095">95</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time =&gt; null() <span class="comment">!&lt; A pointer to the ocean model&#39;s clock.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1407,8 +1496,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, calculate extensive diagnostics of the TKE budget. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">logical</span> :: TKE_diagnostics = .false. <span class="comment">!&lt; If true, calculate extensive diagnostics of the TKE budget</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00096">96</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">logical</span> :: TKE_diagnostics = .false. <span class="comment">!&lt; If true, calculate extensive diagnostics of the TKE budget</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1426,8 +1515,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Use SST for temperature of froz_runoff. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">logical</span> :: use_calving_heat_content<span class="comment"> !&lt; Use SST for temperature of froz_runoff</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">logical</span> :: use_calving_heat_content<span class="comment"> !&lt; Use SST for temperature of froz_runoff</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1445,8 +1534,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the fluxesrunoff_Hflx field to set the heat carried by runoff, instead of using SST for temperature of liq_runoff. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00100">100</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">logical</span> :: use_river_heat_content<span class="comment"> !&lt; If true, use the fluxes%runoff_Hflx field</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">logical</span> :: use_river_heat_content<span class="comment"> !&lt; If true, use the fluxes%runoff_Hflx field</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1462,10 +1551,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A minimum value of ustar to avoid numerical problems [Z s-1 ~&gt; m s-1]. If the value is small enough, this should not affect the solution. </p>
+<p>A minimum value of ustar to avoid numerical problems [Z T-1 ~&gt; m s-1]. If the value is small enough, this should not affect the solution. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html#l00055">55</a> of file <a class="el" href="MOM__bulk__mixed__layer_8F90_source.html">MOM_bulk_mixed_layer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">  real</span>    :: ustar_min<span class="comment">       !&lt; A minimum value of ustar to avoid numerical problems [Z s-1 ~&gt; m s-1].</span></div>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">  real</span>    :: ustar_min<span class="comment">       !&lt; A minimum value of ustar to avoid numerical problems [Z T-1 ~&gt; m s-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>

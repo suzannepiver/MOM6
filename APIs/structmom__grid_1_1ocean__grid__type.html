@@ -101,11 +101,11 @@ $(document).ready(function(){initNavTree('structmom__grid_1_1ocean__grid__type.h
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Ocean grid type. See <a class="el" href="namespacemom__grid.html" title="Provides the ocean grid type.">mom_grid</a> for details. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00025">25</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00026">26</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_grid::ocean_grid_type:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structmom__grid_1_1ocean__grid__type__coll__graph.svg" width="100%" height="516"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structmom__grid_1_1ocean__grid__type__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -220,7 +220,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a7c3d47ab17ebb1c6cdef754e7808b083"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer that indicates which direction is to be updated first in directionally split parts of the calculation. This can be altered during the course of the run via calls to set_first_direction.  <a href="structmom__grid_1_1ocean__grid__type.html#a7c3d47ab17ebb1c6cdef754e7808b083">More...</a><br /></td></tr>
 <tr class="separator:a7c3d47ab17ebb1c6cdef754e7808b083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78f77344a946b58e288d8db75d7a0b4d"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a78f77344a946b58e288d8db75d7a0b4d">mask2dt</a></td></tr>
-<tr class="memdesc:a78f77344a946b58e288d8db75d7a0b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 for land points and 1 for ocean points on the h-grid. Nd.  <a href="structmom__grid_1_1ocean__grid__type.html#a78f77344a946b58e288d8db75d7a0b4d">More...</a><br /></td></tr>
+<tr class="memdesc:a78f77344a946b58e288d8db75d7a0b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 for land points and 1 for ocean points on the h-grid [nondim].  <a href="structmom__grid_1_1ocean__grid__type.html#a78f77344a946b58e288d8db75d7a0b4d">More...</a><br /></td></tr>
 <tr class="separator:a78f77344a946b58e288d8db75d7a0b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af190b74760cf812210323a4599423d1d"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#af190b74760cf812210323a4599423d1d">geolatt</a></td></tr>
 <tr class="memdesc:af190b74760cf812210323a4599423d1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geographic latitude at q points in degrees of latitude or m.  <a href="structmom__grid_1_1ocean__grid__type.html#af190b74760cf812210323a4599423d1d">More...</a><br /></td></tr>
@@ -229,22 +229,22 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:ab444c43d63e51430eaa384aba6baadc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geographic longitude at q points in degrees of longitude or m.  <a href="structmom__grid_1_1ocean__grid__type.html#ab444c43d63e51430eaa384aba6baadc4">More...</a><br /></td></tr>
 <tr class="separator:ab444c43d63e51430eaa384aba6baadc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7507ac7a6ce19b6323e26023e22452b"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#aa7507ac7a6ce19b6323e26023e22452b">dxt</a></td></tr>
-<tr class="memdesc:aa7507ac7a6ce19b6323e26023e22452b"><td class="mdescLeft">&#160;</td><td class="mdescRight">dxT is delta x at h points [m].  <a href="structmom__grid_1_1ocean__grid__type.html#aa7507ac7a6ce19b6323e26023e22452b">More...</a><br /></td></tr>
+<tr class="memdesc:aa7507ac7a6ce19b6323e26023e22452b"><td class="mdescLeft">&#160;</td><td class="mdescRight">dxT is delta x at h points [L ~&gt; m].  <a href="structmom__grid_1_1ocean__grid__type.html#aa7507ac7a6ce19b6323e26023e22452b">More...</a><br /></td></tr>
 <tr class="separator:aa7507ac7a6ce19b6323e26023e22452b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62aedca269bf0d5fd9ac0228f597f5c9"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a62aedca269bf0d5fd9ac0228f597f5c9">idxt</a></td></tr>
-<tr class="memdesc:a62aedca269bf0d5fd9ac0228f597f5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/dxT [m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#a62aedca269bf0d5fd9ac0228f597f5c9">More...</a><br /></td></tr>
+<tr class="memdesc:a62aedca269bf0d5fd9ac0228f597f5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/dxT [L-1 ~&gt; m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#a62aedca269bf0d5fd9ac0228f597f5c9">More...</a><br /></td></tr>
 <tr class="separator:a62aedca269bf0d5fd9ac0228f597f5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb6d4b3fe0c05bef0b5b8ec5cc68ef8a"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#acb6d4b3fe0c05bef0b5b8ec5cc68ef8a">dyt</a></td></tr>
-<tr class="memdesc:acb6d4b3fe0c05bef0b5b8ec5cc68ef8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">dyT is delta y at h points [m].  <a href="structmom__grid_1_1ocean__grid__type.html#acb6d4b3fe0c05bef0b5b8ec5cc68ef8a">More...</a><br /></td></tr>
+<tr class="memdesc:acb6d4b3fe0c05bef0b5b8ec5cc68ef8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">dyT is delta y at h points [L ~&gt; m].  <a href="structmom__grid_1_1ocean__grid__type.html#acb6d4b3fe0c05bef0b5b8ec5cc68ef8a">More...</a><br /></td></tr>
 <tr class="separator:acb6d4b3fe0c05bef0b5b8ec5cc68ef8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bc56e15c22226289b8aa7956859bd21"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a5bc56e15c22226289b8aa7956859bd21">idyt</a></td></tr>
-<tr class="memdesc:a5bc56e15c22226289b8aa7956859bd21"><td class="mdescLeft">&#160;</td><td class="mdescRight">IdyT is 1/dyT [m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#a5bc56e15c22226289b8aa7956859bd21">More...</a><br /></td></tr>
+<tr class="memdesc:a5bc56e15c22226289b8aa7956859bd21"><td class="mdescLeft">&#160;</td><td class="mdescRight">IdyT is 1/dyT [L-1 ~&gt; m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#a5bc56e15c22226289b8aa7956859bd21">More...</a><br /></td></tr>
 <tr class="separator:a5bc56e15c22226289b8aa7956859bd21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71309f64662b978000e1d29f6362cd6b"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a71309f64662b978000e1d29f6362cd6b">areat</a></td></tr>
-<tr class="memdesc:a71309f64662b978000e1d29f6362cd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The area of an h-cell [m2].  <a href="structmom__grid_1_1ocean__grid__type.html#a71309f64662b978000e1d29f6362cd6b">More...</a><br /></td></tr>
+<tr class="memdesc:a71309f64662b978000e1d29f6362cd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The area of an h-cell [L2 ~&gt; m2].  <a href="structmom__grid_1_1ocean__grid__type.html#a71309f64662b978000e1d29f6362cd6b">More...</a><br /></td></tr>
 <tr class="separator:a71309f64662b978000e1d29f6362cd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca588de6b445dc21efc00d9f9a7c91a5"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#aca588de6b445dc21efc00d9f9a7c91a5">iareat</a></td></tr>
-<tr class="memdesc:aca588de6b445dc21efc00d9f9a7c91a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/areaT [m-2].  <a href="structmom__grid_1_1ocean__grid__type.html#aca588de6b445dc21efc00d9f9a7c91a5">More...</a><br /></td></tr>
+<tr class="memdesc:aca588de6b445dc21efc00d9f9a7c91a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/areaT [L-2 ~&gt; m-2].  <a href="structmom__grid_1_1ocean__grid__type.html#aca588de6b445dc21efc00d9f9a7c91a5">More...</a><br /></td></tr>
 <tr class="separator:aca588de6b445dc21efc00d9f9a7c91a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a679e54a3804fe0ba19cdaf8dab66d583"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a679e54a3804fe0ba19cdaf8dab66d583">sin_rot</a></td></tr>
 <tr class="memdesc:a679e54a3804fe0ba19cdaf8dab66d583"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sine of the angular rotation between the local model grid's northward.  <a href="structmom__grid_1_1ocean__grid__type.html#a679e54a3804fe0ba19cdaf8dab66d583">More...</a><br /></td></tr>
@@ -253,7 +253,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a187204791378a625e50bdf05aa512161"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cosine of the angular rotation between the local model grid's northward.  <a href="structmom__grid_1_1ocean__grid__type.html#a187204791378a625e50bdf05aa512161">More...</a><br /></td></tr>
 <tr class="separator:a187204791378a625e50bdf05aa512161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb849ce9f6c496e89ef86038d4724ad5"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#acb849ce9f6c496e89ef86038d4724ad5">mask2dcu</a></td></tr>
-<tr class="memdesc:acb849ce9f6c496e89ef86038d4724ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 for boundary points and 1 for ocean points on the u grid. Nondim.  <a href="structmom__grid_1_1ocean__grid__type.html#acb849ce9f6c496e89ef86038d4724ad5">More...</a><br /></td></tr>
+<tr class="memdesc:acb849ce9f6c496e89ef86038d4724ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 for boundary points and 1 for ocean points on the u grid [nondim].  <a href="structmom__grid_1_1ocean__grid__type.html#acb849ce9f6c496e89ef86038d4724ad5">More...</a><br /></td></tr>
 <tr class="separator:acb849ce9f6c496e89ef86038d4724ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8a314ba3defcb02c28da7d9dc38f489"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#aa8a314ba3defcb02c28da7d9dc38f489">geolatcu</a></td></tr>
 <tr class="memdesc:aa8a314ba3defcb02c28da7d9dc38f489"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geographic latitude at u points in degrees of latitude or m.  <a href="structmom__grid_1_1ocean__grid__type.html#aa8a314ba3defcb02c28da7d9dc38f489">More...</a><br /></td></tr>
@@ -262,28 +262,28 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a503a66c58acc5d4d81b4aba465a31d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geographic longitude at u points in degrees of longitude or m.  <a href="structmom__grid_1_1ocean__grid__type.html#a503a66c58acc5d4d81b4aba465a31d74">More...</a><br /></td></tr>
 <tr class="separator:a503a66c58acc5d4d81b4aba465a31d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fb0a18cbf4bb62a2950162d4334d8ca"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a3fb0a18cbf4bb62a2950162d4334d8ca">dxcu</a></td></tr>
-<tr class="memdesc:a3fb0a18cbf4bb62a2950162d4334d8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">dxCu is delta x at u points [m].  <a href="structmom__grid_1_1ocean__grid__type.html#a3fb0a18cbf4bb62a2950162d4334d8ca">More...</a><br /></td></tr>
+<tr class="memdesc:a3fb0a18cbf4bb62a2950162d4334d8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">dxCu is delta x at u points [L ~&gt; m].  <a href="structmom__grid_1_1ocean__grid__type.html#a3fb0a18cbf4bb62a2950162d4334d8ca">More...</a><br /></td></tr>
 <tr class="separator:a3fb0a18cbf4bb62a2950162d4334d8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3890260d7607d01c0e150c265281b3d7"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a3890260d7607d01c0e150c265281b3d7">idxcu</a></td></tr>
-<tr class="memdesc:a3890260d7607d01c0e150c265281b3d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/dxCu [m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#a3890260d7607d01c0e150c265281b3d7">More...</a><br /></td></tr>
+<tr class="memdesc:a3890260d7607d01c0e150c265281b3d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/dxCu [L-1 ~&gt; m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#a3890260d7607d01c0e150c265281b3d7">More...</a><br /></td></tr>
 <tr class="separator:a3890260d7607d01c0e150c265281b3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada57477c2ef68487862ed7b8cc7e991e"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#ada57477c2ef68487862ed7b8cc7e991e">dycu</a></td></tr>
-<tr class="memdesc:ada57477c2ef68487862ed7b8cc7e991e"><td class="mdescLeft">&#160;</td><td class="mdescRight">dyCu is delta y at u points [m].  <a href="structmom__grid_1_1ocean__grid__type.html#ada57477c2ef68487862ed7b8cc7e991e">More...</a><br /></td></tr>
+<tr class="memdesc:ada57477c2ef68487862ed7b8cc7e991e"><td class="mdescLeft">&#160;</td><td class="mdescRight">dyCu is delta y at u points [L ~&gt; m].  <a href="structmom__grid_1_1ocean__grid__type.html#ada57477c2ef68487862ed7b8cc7e991e">More...</a><br /></td></tr>
 <tr class="separator:ada57477c2ef68487862ed7b8cc7e991e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9de360df80180650ea2a043f0787700"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#ad9de360df80180650ea2a043f0787700">idycu</a></td></tr>
-<tr class="memdesc:ad9de360df80180650ea2a043f0787700"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/dyCu [m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#ad9de360df80180650ea2a043f0787700">More...</a><br /></td></tr>
+<tr class="memdesc:ad9de360df80180650ea2a043f0787700"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/dyCu [L-1 ~&gt; m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#ad9de360df80180650ea2a043f0787700">More...</a><br /></td></tr>
 <tr class="separator:ad9de360df80180650ea2a043f0787700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a933e2b9c6b7e5c0db2b518b91c541c1e"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a933e2b9c6b7e5c0db2b518b91c541c1e">dy_cu</a></td></tr>
-<tr class="memdesc:a933e2b9c6b7e5c0db2b518b91c541c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unblocked lengths of the u-faces of the h-cell [m].  <a href="structmom__grid_1_1ocean__grid__type.html#a933e2b9c6b7e5c0db2b518b91c541c1e">More...</a><br /></td></tr>
+<tr class="memdesc:a933e2b9c6b7e5c0db2b518b91c541c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unblocked lengths of the u-faces of the h-cell [L ~&gt; m].  <a href="structmom__grid_1_1ocean__grid__type.html#a933e2b9c6b7e5c0db2b518b91c541c1e">More...</a><br /></td></tr>
 <tr class="separator:a933e2b9c6b7e5c0db2b518b91c541c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3759495525df83248996719a3eac253"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#ad3759495525df83248996719a3eac253">iareacu</a></td></tr>
-<tr class="memdesc:ad3759495525df83248996719a3eac253"><td class="mdescLeft">&#160;</td><td class="mdescRight">The masked inverse areas of u-grid cells [m2].  <a href="structmom__grid_1_1ocean__grid__type.html#ad3759495525df83248996719a3eac253">More...</a><br /></td></tr>
+<tr class="memdesc:ad3759495525df83248996719a3eac253"><td class="mdescLeft">&#160;</td><td class="mdescRight">The masked inverse areas of u-grid cells [L-2 ~&gt; m-2].  <a href="structmom__grid_1_1ocean__grid__type.html#ad3759495525df83248996719a3eac253">More...</a><br /></td></tr>
 <tr class="separator:ad3759495525df83248996719a3eac253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae107b56843e8a214c14e7b4840caead3"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#ae107b56843e8a214c14e7b4840caead3">areacu</a></td></tr>
-<tr class="memdesc:ae107b56843e8a214c14e7b4840caead3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The areas of the u-grid cells [m2].  <a href="structmom__grid_1_1ocean__grid__type.html#ae107b56843e8a214c14e7b4840caead3">More...</a><br /></td></tr>
+<tr class="memdesc:ae107b56843e8a214c14e7b4840caead3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The areas of the u-grid cells [L2 ~&gt; m2].  <a href="structmom__grid_1_1ocean__grid__type.html#ae107b56843e8a214c14e7b4840caead3">More...</a><br /></td></tr>
 <tr class="separator:ae107b56843e8a214c14e7b4840caead3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c5d370c46a85ee97f638c6cbed33032"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a5c5d370c46a85ee97f638c6cbed33032">mask2dcv</a></td></tr>
-<tr class="memdesc:a5c5d370c46a85ee97f638c6cbed33032"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 for boundary points and 1 for ocean points on the v grid. Nondim.  <a href="structmom__grid_1_1ocean__grid__type.html#a5c5d370c46a85ee97f638c6cbed33032">More...</a><br /></td></tr>
+<tr class="memdesc:a5c5d370c46a85ee97f638c6cbed33032"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 for boundary points and 1 for ocean points on the v grid [nondim].  <a href="structmom__grid_1_1ocean__grid__type.html#a5c5d370c46a85ee97f638c6cbed33032">More...</a><br /></td></tr>
 <tr class="separator:a5c5d370c46a85ee97f638c6cbed33032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cce76cfa5869f2f044f018db104a06c"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a3cce76cfa5869f2f044f018db104a06c">geolatcv</a></td></tr>
 <tr class="memdesc:a3cce76cfa5869f2f044f018db104a06c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geographic latitude at v points in degrees of latitude or m.  <a href="structmom__grid_1_1ocean__grid__type.html#a3cce76cfa5869f2f044f018db104a06c">More...</a><br /></td></tr>
@@ -292,28 +292,28 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a9d563030efd98be34755ad01840dc175"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geographic longitude at v points in degrees of longitude or m.  <a href="structmom__grid_1_1ocean__grid__type.html#a9d563030efd98be34755ad01840dc175">More...</a><br /></td></tr>
 <tr class="separator:a9d563030efd98be34755ad01840dc175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0cf351c17c22dab73c16fc6e0a8b2b6"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#ac0cf351c17c22dab73c16fc6e0a8b2b6">dxcv</a></td></tr>
-<tr class="memdesc:ac0cf351c17c22dab73c16fc6e0a8b2b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">dxCv is delta x at v points [m].  <a href="structmom__grid_1_1ocean__grid__type.html#ac0cf351c17c22dab73c16fc6e0a8b2b6">More...</a><br /></td></tr>
+<tr class="memdesc:ac0cf351c17c22dab73c16fc6e0a8b2b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">dxCv is delta x at v points [L ~&gt; m].  <a href="structmom__grid_1_1ocean__grid__type.html#ac0cf351c17c22dab73c16fc6e0a8b2b6">More...</a><br /></td></tr>
 <tr class="separator:ac0cf351c17c22dab73c16fc6e0a8b2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a919523463658d9d457734dbb7ce6bafd"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a919523463658d9d457734dbb7ce6bafd">idxcv</a></td></tr>
-<tr class="memdesc:a919523463658d9d457734dbb7ce6bafd"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/dxCv [m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#a919523463658d9d457734dbb7ce6bafd">More...</a><br /></td></tr>
+<tr class="memdesc:a919523463658d9d457734dbb7ce6bafd"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/dxCv [L-1 ~&gt; m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#a919523463658d9d457734dbb7ce6bafd">More...</a><br /></td></tr>
 <tr class="separator:a919523463658d9d457734dbb7ce6bafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafb0925cb38aa884bd79e3a67c451550"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#aafb0925cb38aa884bd79e3a67c451550">dycv</a></td></tr>
-<tr class="memdesc:aafb0925cb38aa884bd79e3a67c451550"><td class="mdescLeft">&#160;</td><td class="mdescRight">dyCv is delta y at v points [m].  <a href="structmom__grid_1_1ocean__grid__type.html#aafb0925cb38aa884bd79e3a67c451550">More...</a><br /></td></tr>
+<tr class="memdesc:aafb0925cb38aa884bd79e3a67c451550"><td class="mdescLeft">&#160;</td><td class="mdescRight">dyCv is delta y at v points [L ~&gt; m].  <a href="structmom__grid_1_1ocean__grid__type.html#aafb0925cb38aa884bd79e3a67c451550">More...</a><br /></td></tr>
 <tr class="separator:aafb0925cb38aa884bd79e3a67c451550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa056a18513bdca8878a66e822bedca69"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#aa056a18513bdca8878a66e822bedca69">idycv</a></td></tr>
-<tr class="memdesc:aa056a18513bdca8878a66e822bedca69"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/dyCv [m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#aa056a18513bdca8878a66e822bedca69">More...</a><br /></td></tr>
+<tr class="memdesc:aa056a18513bdca8878a66e822bedca69"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/dyCv [L-1 ~&gt; m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#aa056a18513bdca8878a66e822bedca69">More...</a><br /></td></tr>
 <tr class="separator:aa056a18513bdca8878a66e822bedca69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abca088f8dab5edd9f626a82287e57a96"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#abca088f8dab5edd9f626a82287e57a96">dx_cv</a></td></tr>
-<tr class="memdesc:abca088f8dab5edd9f626a82287e57a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unblocked lengths of the v-faces of the h-cell [m].  <a href="structmom__grid_1_1ocean__grid__type.html#abca088f8dab5edd9f626a82287e57a96">More...</a><br /></td></tr>
+<tr class="memdesc:abca088f8dab5edd9f626a82287e57a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unblocked lengths of the v-faces of the h-cell [L ~&gt; m].  <a href="structmom__grid_1_1ocean__grid__type.html#abca088f8dab5edd9f626a82287e57a96">More...</a><br /></td></tr>
 <tr class="separator:abca088f8dab5edd9f626a82287e57a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedbdbe7b7f309012ea0071808580e565"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#aedbdbe7b7f309012ea0071808580e565">iareacv</a></td></tr>
-<tr class="memdesc:aedbdbe7b7f309012ea0071808580e565"><td class="mdescLeft">&#160;</td><td class="mdescRight">The masked inverse areas of v-grid cells [m2].  <a href="structmom__grid_1_1ocean__grid__type.html#aedbdbe7b7f309012ea0071808580e565">More...</a><br /></td></tr>
+<tr class="memdesc:aedbdbe7b7f309012ea0071808580e565"><td class="mdescLeft">&#160;</td><td class="mdescRight">The masked inverse areas of v-grid cells [L-2 ~&gt; m-2].  <a href="structmom__grid_1_1ocean__grid__type.html#aedbdbe7b7f309012ea0071808580e565">More...</a><br /></td></tr>
 <tr class="separator:aedbdbe7b7f309012ea0071808580e565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3f89640065fa0ce29746fbc7a3ee2c4"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#ac3f89640065fa0ce29746fbc7a3ee2c4">areacv</a></td></tr>
-<tr class="memdesc:ac3f89640065fa0ce29746fbc7a3ee2c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The areas of the v-grid cells [m2].  <a href="structmom__grid_1_1ocean__grid__type.html#ac3f89640065fa0ce29746fbc7a3ee2c4">More...</a><br /></td></tr>
+<tr class="memdesc:ac3f89640065fa0ce29746fbc7a3ee2c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The areas of the v-grid cells [L2 ~&gt; m2].  <a href="structmom__grid_1_1ocean__grid__type.html#ac3f89640065fa0ce29746fbc7a3ee2c4">More...</a><br /></td></tr>
 <tr class="separator:ac3f89640065fa0ce29746fbc7a3ee2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad634bcec6ed13f73efb21bb0636e379f"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#ad634bcec6ed13f73efb21bb0636e379f">mask2dbu</a></td></tr>
-<tr class="memdesc:ad634bcec6ed13f73efb21bb0636e379f"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 for boundary points and 1 for ocean points on the q grid. Nondim.  <a href="structmom__grid_1_1ocean__grid__type.html#ad634bcec6ed13f73efb21bb0636e379f">More...</a><br /></td></tr>
+<tr class="memdesc:ad634bcec6ed13f73efb21bb0636e379f"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 for boundary points and 1 for ocean points on the q grid [nondim].  <a href="structmom__grid_1_1ocean__grid__type.html#ad634bcec6ed13f73efb21bb0636e379f">More...</a><br /></td></tr>
 <tr class="separator:ad634bcec6ed13f73efb21bb0636e379f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f598c6f9aee0014b300f7c1f3b07131"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a9f598c6f9aee0014b300f7c1f3b07131">geolatbu</a></td></tr>
 <tr class="memdesc:a9f598c6f9aee0014b300f7c1f3b07131"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geographic latitude at q points in degrees of latitude or m.  <a href="structmom__grid_1_1ocean__grid__type.html#a9f598c6f9aee0014b300f7c1f3b07131">More...</a><br /></td></tr>
@@ -322,22 +322,22 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a399c82d3767bad557357350324cc5438"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geographic longitude at q points in degrees of longitude or m.  <a href="structmom__grid_1_1ocean__grid__type.html#a399c82d3767bad557357350324cc5438">More...</a><br /></td></tr>
 <tr class="separator:a399c82d3767bad557357350324cc5438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5981e2311cc00a93beae01173a64b722"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a5981e2311cc00a93beae01173a64b722">dxbu</a></td></tr>
-<tr class="memdesc:a5981e2311cc00a93beae01173a64b722"><td class="mdescLeft">&#160;</td><td class="mdescRight">dxBu is delta x at q points [m].  <a href="structmom__grid_1_1ocean__grid__type.html#a5981e2311cc00a93beae01173a64b722">More...</a><br /></td></tr>
+<tr class="memdesc:a5981e2311cc00a93beae01173a64b722"><td class="mdescLeft">&#160;</td><td class="mdescRight">dxBu is delta x at q points [L ~&gt; m].  <a href="structmom__grid_1_1ocean__grid__type.html#a5981e2311cc00a93beae01173a64b722">More...</a><br /></td></tr>
 <tr class="separator:a5981e2311cc00a93beae01173a64b722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a883bc8df147641aba27df1bfe99a41aa"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a883bc8df147641aba27df1bfe99a41aa">idxbu</a></td></tr>
-<tr class="memdesc:a883bc8df147641aba27df1bfe99a41aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/dxBu [m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#a883bc8df147641aba27df1bfe99a41aa">More...</a><br /></td></tr>
+<tr class="memdesc:a883bc8df147641aba27df1bfe99a41aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/dxBu [L-1 ~&gt; m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#a883bc8df147641aba27df1bfe99a41aa">More...</a><br /></td></tr>
 <tr class="separator:a883bc8df147641aba27df1bfe99a41aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48c1bd3517e62e89381288650acd33e1"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a48c1bd3517e62e89381288650acd33e1">dybu</a></td></tr>
-<tr class="memdesc:a48c1bd3517e62e89381288650acd33e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">dyBu is delta y at q points [m].  <a href="structmom__grid_1_1ocean__grid__type.html#a48c1bd3517e62e89381288650acd33e1">More...</a><br /></td></tr>
+<tr class="memdesc:a48c1bd3517e62e89381288650acd33e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">dyBu is delta y at q points [L ~&gt; m].  <a href="structmom__grid_1_1ocean__grid__type.html#a48c1bd3517e62e89381288650acd33e1">More...</a><br /></td></tr>
 <tr class="separator:a48c1bd3517e62e89381288650acd33e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0fca595ab1a3c4979cc3e6cc4ef7436"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#aa0fca595ab1a3c4979cc3e6cc4ef7436">idybu</a></td></tr>
-<tr class="memdesc:aa0fca595ab1a3c4979cc3e6cc4ef7436"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/dyBu [m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#aa0fca595ab1a3c4979cc3e6cc4ef7436">More...</a><br /></td></tr>
+<tr class="memdesc:aa0fca595ab1a3c4979cc3e6cc4ef7436"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/dyBu [L-1 ~&gt; m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#aa0fca595ab1a3c4979cc3e6cc4ef7436">More...</a><br /></td></tr>
 <tr class="separator:aa0fca595ab1a3c4979cc3e6cc4ef7436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25cf4cab6511a5b3ad44c49efa2fe5b2"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a25cf4cab6511a5b3ad44c49efa2fe5b2">areabu</a></td></tr>
-<tr class="memdesc:a25cf4cab6511a5b3ad44c49efa2fe5b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">areaBu is the area of a q-cell [m2]  <a href="structmom__grid_1_1ocean__grid__type.html#a25cf4cab6511a5b3ad44c49efa2fe5b2">More...</a><br /></td></tr>
+<tr class="memdesc:a25cf4cab6511a5b3ad44c49efa2fe5b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">areaBu is the area of a q-cell [L2 ~&gt; m2]  <a href="structmom__grid_1_1ocean__grid__type.html#a25cf4cab6511a5b3ad44c49efa2fe5b2">More...</a><br /></td></tr>
 <tr class="separator:a25cf4cab6511a5b3ad44c49efa2fe5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a408b725af652caef5b3def69ec8491f2"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a408b725af652caef5b3def69ec8491f2">iareabu</a></td></tr>
-<tr class="memdesc:a408b725af652caef5b3def69ec8491f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">IareaBu = 1/areaBu [m-2].  <a href="structmom__grid_1_1ocean__grid__type.html#a408b725af652caef5b3def69ec8491f2">More...</a><br /></td></tr>
+<tr class="memdesc:a408b725af652caef5b3def69ec8491f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">IareaBu = 1/areaBu [L-2 ~&gt; m-2].  <a href="structmom__grid_1_1ocean__grid__type.html#a408b725af652caef5b3def69ec8491f2">More...</a><br /></td></tr>
 <tr class="separator:a408b725af652caef5b3def69ec8491f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5412fe37dff52417d79b30cbb81602f"><td class="memItemLeft" align="right" valign="top">real, dimension(:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#aa5412fe37dff52417d79b30cbb81602f">gridlatt</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:aa5412fe37dff52417d79b30cbb81602f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The latitude of T points for the purpose of labeling the output axes.  <a href="structmom__grid_1_1ocean__grid__type.html#aa5412fe37dff52417d79b30cbb81602f">More...</a><br /></td></tr>
@@ -379,10 +379,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:ad624ecd803c6d9f531b3a2aa761d152a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Coriolis parameter at corner points [T-1 ~&gt; s-1].  <a href="structmom__grid_1_1ocean__grid__type.html#ad624ecd803c6d9f531b3a2aa761d152a">More...</a><br /></td></tr>
 <tr class="separator:ad624ecd803c6d9f531b3a2aa761d152a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6a97e535d05abfec7f403953079b9bb"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#ad6a97e535d05abfec7f403953079b9bb">df_dx</a></td></tr>
-<tr class="memdesc:ad6a97e535d05abfec7f403953079b9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivative d/dx f (Coriolis parameter) at h-points [T-1 m-1 ~&gt; s-1 m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#ad6a97e535d05abfec7f403953079b9bb">More...</a><br /></td></tr>
+<tr class="memdesc:ad6a97e535d05abfec7f403953079b9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivative d/dx f (Coriolis parameter) at h-points [T-1 L-1 ~&gt; s-1 m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#ad6a97e535d05abfec7f403953079b9bb">More...</a><br /></td></tr>
 <tr class="separator:ad6a97e535d05abfec7f403953079b9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3904df094eb48cdc11aa8d905294f8a1"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a3904df094eb48cdc11aa8d905294f8a1">df_dy</a></td></tr>
-<tr class="memdesc:a3904df094eb48cdc11aa8d905294f8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivative d/dy f (Coriolis parameter) at h-points [T-1 m-1 ~&gt; s-1 m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#a3904df094eb48cdc11aa8d905294f8a1">More...</a><br /></td></tr>
+<tr class="memdesc:a3904df094eb48cdc11aa8d905294f8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivative d/dy f (Coriolis parameter) at h-points [T-1 L-1 ~&gt; s-1 m-1].  <a href="structmom__grid_1_1ocean__grid__type.html#a3904df094eb48cdc11aa8d905294f8a1">More...</a><br /></td></tr>
 <tr class="separator:a3904df094eb48cdc11aa8d905294f8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d625003df4a2740b034f2bbc93c2aed"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a4d625003df4a2740b034f2bbc93c2aed">g_earth</a></td></tr>
 <tr class="memdesc:a4d625003df4a2740b034f2bbc93c2aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">The gravitational acceleration [m2 Z-1 s-2 ~&gt; m s-2].  <a href="structmom__grid_1_1ocean__grid__type.html#a4d625003df4a2740b034f2bbc93c2aed">More...</a><br /></td></tr>
@@ -391,8 +391,11 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a1f07d642066120ea42d95f070999d6aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global sum of h-cell area [m2].  <a href="structmom__grid_1_1ocean__grid__type.html#a1f07d642066120ea42d95f070999d6aa">More...</a><br /></td></tr>
 <tr class="separator:a1f07d642066120ea42d95f070999d6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad49fb2c0e30656689b2969a5188ecabf"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#ad49fb2c0e30656689b2969a5188ecabf">iareat_global</a></td></tr>
-<tr class="memdesc:ad49fb2c0e30656689b2969a5188ecabf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global sum of inverse h-cell area (1/areaT_global) [m2].  <a href="structmom__grid_1_1ocean__grid__type.html#ad49fb2c0e30656689b2969a5188ecabf">More...</a><br /></td></tr>
+<tr class="memdesc:ad49fb2c0e30656689b2969a5188ecabf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global sum of inverse h-cell area (1/areaT_global) [m-2].  <a href="structmom__grid_1_1ocean__grid__type.html#ad49fb2c0e30656689b2969a5188ecabf">More...</a><br /></td></tr>
 <tr class="separator:ad49fb2c0e30656689b2969a5188ecabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6194fca3b31fe35443dbe7bece3c071a"><td class="memItemLeft" align="right" valign="top">type(unit_scale_type), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a6194fca3b31fe35443dbe7bece3c071a">us</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:a6194fca3b31fe35443dbe7bece3c071a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dimensional unit scaling type.  <a href="structmom__grid_1_1ocean__grid__type.html#a6194fca3b31fe35443dbe7bece3c071a">More...</a><br /></td></tr>
+<tr class="separator:a6194fca3b31fe35443dbe7bece3c071a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ec33076d890cef3e5dcc9100c216d97"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__grid_1_1ocean__grid__type.html#a4ec33076d890cef3e5dcc9100c216d97">nblocks</a></td></tr>
 <tr class="memdesc:a4ec33076d890cef3e5dcc9100c216d97"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of sub-PE blocks on this PE.  <a href="structmom__grid_1_1ocean__grid__type.html#a4ec33076d890cef3e5dcc9100c216d97">More...</a><br /></td></tr>
 <tr class="separator:a4ec33076d890cef3e5dcc9100c216d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -431,9 +434,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>areaBu is the area of a q-cell [m2] </p>
+<p>areaBu is the area of a q-cell [L2 ~&gt; m2] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -449,9 +452,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The areas of the u-grid cells [m2]. </p>
+<p>The areas of the u-grid cells [L2 ~&gt; m2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -467,9 +470,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The areas of the v-grid cells [m2]. </p>
+<p>The areas of the v-grid cells [L2 ~&gt; m2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -485,9 +488,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The area of an h-cell [m2]. </p>
+<p>The area of an h-cell [L2 ~&gt; m2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -505,8 +508,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Global sum of h-cell area [m2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00159">159</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keywordtype">  real</span> :: areaT_global<span class="comment">  !&lt; Global sum of h-cell area [m2]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00160">160</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keywordtype">  real</span> :: areaT_global<span class="comment">  !&lt; Global sum of h-cell area [m2]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -524,8 +527,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, there are separate values for the basin depths at velocity points. Otherwise the effects of of topography are entirely determined from thickness points. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00142">142</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordtype">logical</span> :: bathymetry_at_vel<span class="comment">  !&lt; If true, there are separate values for the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00143">143</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">logical</span> :: bathymetry_at_vel<span class="comment">  !&lt; If true, there are separate values for the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -543,9 +546,9 @@ Public variables and constants</h2></td></tr>
 
 <p>Ocean bottom depth at tracer points, in depth units [Z ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00139">139</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: &amp;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    bathyT<span class="comment">        !&lt; Ocean bottom depth at tracer points, in depth units [Z ~&gt; m].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00140">140</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: &amp;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    bathyT<span class="comment">        !&lt; Ocean bottom depth at tracer points, in depth units [Z ~&gt; m].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -563,8 +566,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Index ranges for each block. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00164">164</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">type</span>(hor_index_type), <span class="keywordtype">pointer</span> :: Block(:) =&gt; null() <span class="comment">!&lt; Index ranges for each block</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00168">168</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">type</span>(hor_index_type), <span class="keywordtype">pointer</span> :: Block(:) =&gt; null() <span class="comment">!&lt; Index ranges for each block</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -582,9 +585,9 @@ Public variables and constants</h2></td></tr>
 
 <p>The Coriolis parameter at corner points [T-1 ~&gt; s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00151">151</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: &amp;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    CoriolisBu<span class="comment">    !&lt; The Coriolis parameter at corner points [T-1 ~&gt; s-1].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00152">152</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: &amp;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    CoriolisBu<span class="comment">    !&lt; The Coriolis parameter at corner points [T-1 ~&gt; s-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -602,7 +605,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The cosine of the angular rotation between the local model grid's northward. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -620,10 +623,10 @@ Public variables and constants</h2></td></tr>
 
 <p>Topographic depths at u-points at which the flow is blocked [Z ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00145">145</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEM_)</span> :: &amp;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    Dblock_u, &amp;   !&lt; Topographic depths at u-points at which the flow is blocked [Z ~&gt; m].</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    Dopen_u<span class="comment">       !&lt; Topographic depths at u-points at which the flow is open at width dy_Cu [Z ~&gt; m].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00146">146</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEM_)</span> :: &amp;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    Dblock_u, &amp;   !&lt; Topographic depths at u-points at which the flow is blocked [Z ~&gt; m].</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    Dopen_u<span class="comment">       !&lt; Topographic depths at u-points at which the flow is open at width dy_Cu [Z ~&gt; m].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -641,10 +644,10 @@ Public variables and constants</h2></td></tr>
 
 <p>Topographic depths at v-points at which the flow is blocked [Z ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00148">148</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEMB_PTR_)</span> :: &amp;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    Dblock_v, &amp;   !&lt; Topographic depths at v-points at which the flow is blocked [Z ~&gt; m].</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    Dopen_v<span class="comment">       !&lt; Topographic depths at v-points at which the flow is open at width dx_Cv [Z ~&gt; m].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00149">149</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEMB_PTR_)</span> :: &amp;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    Dblock_v, &amp;   !&lt; Topographic depths at v-points at which the flow is blocked [Z ~&gt; m].</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    Dopen_v<span class="comment">       !&lt; Topographic depths at v-points at which the flow is open at width dx_Cv [Z ~&gt; m].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -660,12 +663,12 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Derivative d/dx f (Coriolis parameter) at h-points [T-1 m-1 ~&gt; s-1 m-1]. </p>
+<p>Derivative d/dx f (Coriolis parameter) at h-points [T-1 L-1 ~&gt; s-1 m-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00153">153</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: &amp;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    df_dx, &amp;      !&lt; Derivative d/dx f (Coriolis parameter) at h-points [T-1 m-1 ~&gt; s-1 m-1].</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    df_dy<span class="comment">         !&lt; Derivative d/dy f (Coriolis parameter) at h-points [T-1 m-1 ~&gt; s-1 m-1].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00154">154</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: &amp;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    df_dx, &amp;      !&lt; Derivative d/dx f (Coriolis parameter) at h-points [T-1 L-1 ~&gt; s-1 m-1].</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    df_dy<span class="comment">         !&lt; Derivative d/dy f (Coriolis parameter) at h-points [T-1 L-1 ~&gt; s-1 m-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -681,9 +684,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Derivative d/dy f (Coriolis parameter) at h-points [T-1 m-1 ~&gt; s-1 m-1]. </p>
+<p>Derivative d/dy f (Coriolis parameter) at h-points [T-1 L-1 ~&gt; s-1 m-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00153">153</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00154">154</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -701,8 +704,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Ocean model domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00026">26</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">type</span>(MOM_domain_type), <span class="keywordtype">pointer</span> :: Domain =&gt; null() <span class="comment">!&lt; Ocean model domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00027">27</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">type</span>(MOM_domain_type), <span class="keywordtype">pointer</span> :: Domain =&gt; null() <span class="comment">!&lt; Ocean model domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -720,8 +723,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A non-symmetric auxiliary domain type. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00027">27</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">type</span>(MOM_domain_type), <span class="keywordtype">pointer</span> :: Domain_aux =&gt; null() <span class="comment">!&lt; A non-symmetric auxiliary domain type.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00028">28</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">type</span>(MOM_domain_type), <span class="keywordtype">pointer</span> :: Domain_aux =&gt; null() <span class="comment">!&lt; A non-symmetric auxiliary domain type.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -739,7 +742,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Topographic depths at u-points at which the flow is open at width dy_Cu [Z ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00145">145</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00146">146</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -757,7 +760,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Topographic depths at v-points at which the flow is open at width dx_Cv [Z ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00148">148</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00149">149</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -773,9 +776,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The unblocked lengths of the v-faces of the h-cell [m]. </p>
+<p>The unblocked lengths of the v-faces of the h-cell [L ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -791,9 +794,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>dxBu is delta x at q points [m]. </p>
+<p>dxBu is delta x at q points [L ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -809,9 +812,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>dxCu is delta x at u points [m]. </p>
+<p>dxCu is delta x at u points [L ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -827,9 +830,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>dxCv is delta x at v points [m]. </p>
+<p>dxCv is delta x at v points [L ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -845,9 +848,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>dxT is delta x at h points [m]. </p>
+<p>dxT is delta x at h points [L ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -863,9 +866,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The unblocked lengths of the u-faces of the h-cell [m]. </p>
+<p>The unblocked lengths of the u-faces of the h-cell [L ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -881,9 +884,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>dyBu is delta y at q points [m]. </p>
+<p>dyBu is delta y at q points [L ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -899,9 +902,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>dyCu is delta y at u points [m]. </p>
+<p>dyCu is delta y at u points [L ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -917,9 +920,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>dyCv is delta y at v points [m]. </p>
+<p>dyCv is delta y at v points [L ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -935,9 +938,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>dyT is delta y at h points [m]. </p>
+<p>dyT is delta y at h points [L ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -955,8 +958,8 @@ Public variables and constants</h2></td></tr>
 
 <p>An integer that indicates which direction is to be updated first in directionally split parts of the calculation. This can be altered during the course of the run via calls to set_first_direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00069">69</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">integer</span> :: first_direction<span class="comment"> !&lt; An integer that indicates which direction is</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00070">70</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">integer</span> :: first_direction<span class="comment"> !&lt; An integer that indicates which direction is</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -974,8 +977,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The gravitational acceleration [m2 Z-1 s-2 ~&gt; m s-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00156">156</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keywordtype">  real</span> :: g_Earth<span class="comment"> !&lt; The gravitational acceleration [m2 Z-1 s-2 ~&gt; m s-2].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00157">157</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keywordtype">  real</span> :: g_Earth<span class="comment"> !&lt; The gravitational acceleration [m2 Z-1 s-2 ~&gt; m s-2].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -993,7 +996,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The geographic latitude at q points in degrees of latitude or m. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1011,7 +1014,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The geographic latitude at u points in degrees of latitude or m. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +1032,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The geographic latitude at v points in degrees of latitude or m. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1047,7 +1050,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The geographic latitude at q points in degrees of latitude or m. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1065,7 +1068,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The geographic longitude at q points in degrees of longitude or m. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1083,7 +1086,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The geographic longitude at u points in degrees of longitude or m. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1101,7 +1104,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The geographic longitude at v points in degrees of longitude or m. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1119,7 +1122,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The geographic longitude at q points in degrees of longitude or m. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1137,7 +1140,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The latitude of B points for the purpose of labeling the output axes. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1155,11 +1158,11 @@ Public variables and constants</h2></td></tr>
 
 <p>The latitude of T points for the purpose of labeling the output axes. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:)</span> :: &amp;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    gridLatT =&gt; null(), &amp; <span class="comment">!&lt; The latitude of T points for the purpose of labeling the output axes.</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">                          !! On many grids this is the same as geoLatT.</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    gridlatb =&gt; null()    <span class="comment">!&lt; The latitude of B points for the purpose of labeling the output axes.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:)</span> :: &amp;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    gridLatT =&gt; null(), &amp; <span class="comment">!&lt; The latitude of T points for the purpose of labeling the output axes.</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">                          !! On many grids this is the same as geoLatT.</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    gridlatb =&gt; null()    <span class="comment">!&lt; The latitude of B points for the purpose of labeling the output axes.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1177,7 +1180,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The longitude of B points for the purpose of labeling the output axes. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00130">130</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1195,11 +1198,11 @@ Public variables and constants</h2></td></tr>
 
 <p>The longitude of T points for the purpose of labeling the output axes. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00130">130</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:)</span> :: &amp;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    gridLonT =&gt; null(), &amp; <span class="comment">!&lt; The longitude of T points for the purpose of labeling the output axes.</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">                          !! On many grids this is the same as geoLonT.</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    gridlonb =&gt; null()    <span class="comment">!&lt; The longitude of B points for the purpose of labeling the output axes.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:)</span> :: &amp;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    gridLonT =&gt; null(), &amp; <span class="comment">!&lt; The longitude of T points for the purpose of labeling the output axes.</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">                          !! On many grids this is the same as geoLonT.</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    gridlonb =&gt; null()    <span class="comment">!&lt; The longitude of B points for the purpose of labeling the output axes.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1217,8 +1220,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Horizontal index ranges. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00028">28</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">type</span>(hor_index_type) :: HI<span class="comment"> !&lt; Horizontal index ranges</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00029">29</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">type</span>(hor_index_type) :: HI<span class="comment"> !&lt; Horizontal index ranges</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1236,8 +1239,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Horizontal index ranges for level-2-downsampling. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00029">29</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">type</span>(hor_index_type) :: HId2<span class="comment"> !&lt; Horizontal index ranges for level-2-downsampling</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00030">30</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">type</span>(hor_index_type) :: HId2<span class="comment"> !&lt; Horizontal index ranges for level-2-downsampling</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1253,9 +1256,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>IareaBu = 1/areaBu [m-2]. </p>
+<p>IareaBu = 1/areaBu [L-2 ~&gt; m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1271,9 +1274,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The masked inverse areas of u-grid cells [m2]. </p>
+<p>The masked inverse areas of u-grid cells [L-2 ~&gt; m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1289,9 +1292,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The masked inverse areas of v-grid cells [m2]. </p>
+<p>The masked inverse areas of v-grid cells [L-2 ~&gt; m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1307,9 +1310,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>1/areaT [m-2]. </p>
+<p>1/areaT [L-2 ~&gt; m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1325,10 +1328,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Global sum of inverse h-cell area (1/areaT_global) [m2]. </p>
+<p>Global sum of inverse h-cell area (1/areaT_global) [m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00160">160</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keywordtype">  real</span> :: IareaT_global<span class="comment"> !&lt; Global sum of inverse h-cell area (1/areaT_global) [m2].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00161">161</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keywordtype">  real</span> :: IareaT_global<span class="comment"> !&lt; Global sum of inverse h-cell area (1/areaT_global) [m-2].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1346,8 +1349,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The offset between the corresponding global and local i-indices. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00063">63</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">integer</span> :: idg_offset<span class="comment"> !&lt; The offset between the corresponding global and local i-indices.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00064">64</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">integer</span> :: idg_offset<span class="comment"> !&lt; The offset between the corresponding global and local i-indices.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1363,9 +1366,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>1/dxBu [m-1]. </p>
+<p>1/dxBu [L-1 ~&gt; m-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1381,9 +1384,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>1/dxCu [m-1]. </p>
+<p>1/dxCu [L-1 ~&gt; m-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1399,9 +1402,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>1/dxCv [m-1]. </p>
+<p>1/dxCv [L-1 ~&gt; m-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1417,9 +1420,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>1/dxT [m-1]. </p>
+<p>1/dxT [L-1 ~&gt; m-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1435,9 +1438,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>1/dyBu [m-1]. </p>
+<p>1/dyBu [L-1 ~&gt; m-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1453,9 +1456,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>1/dyCu [m-1]. </p>
+<p>1/dyCu [L-1 ~&gt; m-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1471,9 +1474,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>1/dyCv [m-1]. </p>
+<p>1/dyCv [L-1 ~&gt; m-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1489,9 +1492,9 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>IdyT is 1/dyT [m-1]. </p>
+<p>IdyT is 1/dyT [L-1 ~&gt; m-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -1509,8 +1512,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The end i-index of cell centers within the computational domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00032">32</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">integer</span> :: iec<span class="comment"> !&lt; The end i-index of cell centers within the computational domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00033">33</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">integer</span> :: iec<span class="comment"> !&lt; The end i-index of cell centers within the computational domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1528,8 +1531,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The end i-index of cell vertices within the computational domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00047">47</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">integer</span> :: IecB<span class="comment"> !&lt; The end i-index of cell vertices within the computational domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00048">48</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">integer</span> :: IecB<span class="comment"> !&lt; The end i-index of cell vertices within the computational domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1547,8 +1550,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The end i-index of cell centers within the data domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00037">37</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">integer</span> :: ied<span class="comment"> !&lt; The end i-index of cell centers within the data domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00038">38</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">integer</span> :: ied<span class="comment"> !&lt; The end i-index of cell centers within the data domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1566,8 +1569,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The end i-index of cell vertices within the data domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00052">52</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">integer</span> :: IedB<span class="comment"> !&lt; The end i-index of cell vertices within the data domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00053">53</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">integer</span> :: IedB<span class="comment"> !&lt; The end i-index of cell vertices within the data domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1585,8 +1588,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The end i-index of cell centers within the global domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00042">42</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">integer</span> :: ieg<span class="comment"> !&lt; The end i-index of cell centers within the global domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00043">43</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">integer</span> :: ieg<span class="comment"> !&lt; The end i-index of cell centers within the global domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1604,8 +1607,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The end i-index of cell vertices within the global domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00057">57</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">integer</span> :: IegB<span class="comment"> !&lt; The end i-index of cell vertices within the global domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00058">58</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">integer</span> :: IegB<span class="comment"> !&lt; The end i-index of cell vertices within the global domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1623,8 +1626,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The start i-index of cell centers within the computational domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00031">31</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">integer</span> :: isc<span class="comment"> !&lt; The start i-index of cell centers within the computational domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00032">32</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">integer</span> :: isc<span class="comment"> !&lt; The start i-index of cell centers within the computational domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1642,8 +1645,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The start i-index of cell vertices within the computational domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00046">46</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">integer</span> :: IscB<span class="comment"> !&lt; The start i-index of cell vertices within the computational domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00047">47</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">integer</span> :: IscB<span class="comment"> !&lt; The start i-index of cell vertices within the computational domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1661,8 +1664,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The start i-index of cell centers within the data domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00036">36</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">integer</span> :: isd<span class="comment"> !&lt; The start i-index of cell centers within the data domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00037">37</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">integer</span> :: isd<span class="comment"> !&lt; The start i-index of cell centers within the data domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1680,8 +1683,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The value of isd in the global index space (decompoistion invariant). </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00061">61</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">integer</span> :: isd_global<span class="comment"> !&lt; The value of isd in the global index space (decompoistion invariant).</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00062">62</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">integer</span> :: isd_global<span class="comment"> !&lt; The value of isd in the global index space (decompoistion invariant).</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1699,8 +1702,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The start i-index of cell vertices within the data domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00051">51</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">integer</span> :: IsdB<span class="comment"> !&lt; The start i-index of cell vertices within the data domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00052">52</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">integer</span> :: IsdB<span class="comment"> !&lt; The start i-index of cell vertices within the data domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1718,8 +1721,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The start i-index of cell centers within the global domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00041">41</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">integer</span> :: isg<span class="comment"> !&lt; The start i-index of cell centers within the global domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00042">42</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">integer</span> :: isg<span class="comment"> !&lt; The start i-index of cell centers within the global domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1737,8 +1740,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The start i-index of cell vertices within the global domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00056">56</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">integer</span> :: IsgB<span class="comment"> !&lt; The start i-index of cell vertices within the global domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00057">57</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">integer</span> :: IsgB<span class="comment"> !&lt; The start i-index of cell vertices within the global domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1756,8 +1759,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The offset between the corresponding global and local j-indices. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00064">64</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">integer</span> :: jdg_offset<span class="comment"> !&lt; The offset between the corresponding global and local j-indices.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00065">65</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">integer</span> :: jdg_offset<span class="comment"> !&lt; The offset between the corresponding global and local j-indices.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1775,8 +1778,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The end j-index of cell centers within the computational domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00034">34</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">integer</span> :: jec<span class="comment"> !&lt; The end j-index of cell centers within the computational domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00035">35</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">integer</span> :: jec<span class="comment"> !&lt; The end j-index of cell centers within the computational domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1794,8 +1797,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The end j-index of cell vertices within the computational domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00049">49</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">integer</span> :: JecB<span class="comment"> !&lt; The end j-index of cell vertices within the computational domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00050">50</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">integer</span> :: JecB<span class="comment"> !&lt; The end j-index of cell vertices within the computational domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1813,8 +1816,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The end j-index of cell centers within the data domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00039">39</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">integer</span> :: jed<span class="comment"> !&lt; The end j-index of cell centers within the data domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00040">40</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">integer</span> :: jed<span class="comment"> !&lt; The end j-index of cell centers within the data domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1832,8 +1835,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The end j-index of cell vertices within the data domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00054">54</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">integer</span> :: JedB<span class="comment"> !&lt; The end j-index of cell vertices within the data domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00055">55</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">integer</span> :: JedB<span class="comment"> !&lt; The end j-index of cell vertices within the data domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1851,8 +1854,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The end j-index of cell centers within the global domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00044">44</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">integer</span> :: jeg<span class="comment"> !&lt; The end j-index of cell centers within the global domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00045">45</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">integer</span> :: jeg<span class="comment"> !&lt; The end j-index of cell centers within the global domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1870,8 +1873,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The end j-index of cell vertices within the global domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00059">59</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">integer</span> :: JegB<span class="comment"> !&lt; The end j-index of cell vertices within the global domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00060">60</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">integer</span> :: JegB<span class="comment"> !&lt; The end j-index of cell vertices within the global domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1889,8 +1892,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The start j-index of cell centers within the computational domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00033">33</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">integer</span> :: jsc<span class="comment"> !&lt; The start j-index of cell centers within the computational domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00034">34</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">integer</span> :: jsc<span class="comment"> !&lt; The start j-index of cell centers within the computational domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1908,8 +1911,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The start j-index of cell vertices within the computational domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00048">48</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">integer</span> :: JscB<span class="comment"> !&lt; The start j-index of cell vertices within the computational domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00049">49</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">integer</span> :: JscB<span class="comment"> !&lt; The start j-index of cell vertices within the computational domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1927,8 +1930,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The start j-index of cell centers within the data domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00038">38</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">integer</span> :: jsd<span class="comment"> !&lt; The start j-index of cell centers within the data domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00039">39</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">integer</span> :: jsd<span class="comment"> !&lt; The start j-index of cell centers within the data domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1946,8 +1949,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The value of isd in the global index space (decompoistion invariant). </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00062">62</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">integer</span> :: jsd_global<span class="comment"> !&lt; The value of isd in the global index space (decompoistion invariant).</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00063">63</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">integer</span> :: jsd_global<span class="comment"> !&lt; The value of isd in the global index space (decompoistion invariant).</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1965,8 +1968,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The start j-index of cell vertices within the data domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00053">53</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">integer</span> :: JsdB<span class="comment"> !&lt; The start j-index of cell vertices within the data domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00054">54</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">integer</span> :: JsdB<span class="comment"> !&lt; The start j-index of cell vertices within the data domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1984,8 +1987,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The start j-index of cell centers within the global domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00043">43</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">integer</span> :: jsg<span class="comment"> !&lt; The start j-index of cell centers within the global domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00044">44</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">integer</span> :: jsg<span class="comment"> !&lt; The start j-index of cell centers within the global domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2003,8 +2006,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The start j-index of cell vertices within the global domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00058">58</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">integer</span> :: JsgB<span class="comment"> !&lt; The start j-index of cell vertices within the global domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00059">59</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">integer</span> :: JsgB<span class="comment"> !&lt; The start j-index of cell vertices within the global domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2022,8 +2025,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of layers in the vertical. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00065">65</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">integer</span> :: ke<span class="comment">         !&lt; The number of layers in the vertical.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00066">66</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">integer</span> :: ke<span class="comment">         !&lt; The number of layers in the vertical.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2041,8 +2044,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The latitudinal (or y-coord) extent of physical domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00170">170</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keywordtype">  real</span> :: len_lat = 0.<span class="comment">  !&lt; The latitudinal (or y-coord) extent of physical domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00174">174</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keywordtype">  real</span> :: len_lat = 0.<span class="comment">  !&lt; The latitudinal (or y-coord) extent of physical domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2060,8 +2063,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The longitudinal (or x-coord) extent of physical domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00171">171</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keywordtype">  real</span> :: len_lon = 0.<span class="comment">  !&lt; The longitudinal (or x-coord) extent of physical domain</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00175">175</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keywordtype">  real</span> :: len_lon = 0.<span class="comment">  !&lt; The longitudinal (or x-coord) extent of physical domain</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2077,19 +2080,19 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>0 for boundary points and 1 for ocean points on the q grid. Nondim. </p>
+<p>0 for boundary points and 1 for ocean points on the q grid [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: &amp;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    mask2dBu, &amp;  !&lt; 0 for boundary points and 1 for ocean points on the q grid.  Nondim.</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    geoLatBu, &amp;  !&lt; The geographic latitude at q points in degrees of latitude or m.</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    geoLonBu, &amp;  !&lt; The geographic longitude at q points in degrees of longitude or m.</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    dxBu, &amp;      !&lt; dxBu is delta x at q points [m].</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    IdxBu, &amp;     !&lt; 1/dxBu [m-1].</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    dyBu, &amp;      !&lt; dyBu is delta y at q points [m].</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    IdyBu, &amp;     !&lt; 1/dyBu [m-1].</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    areaBu, &amp;    !&lt; areaBu is the area of a q-cell [m2]</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    IareaBu<span class="comment">      !&lt; IareaBu = 1/areaBu [m-2].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: &amp;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    mask2dBu, &amp;  !&lt; 0 for boundary points and 1 for ocean points on the q grid [nondim].</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    geoLatBu, &amp;  !&lt; The geographic latitude at q points in degrees of latitude or m.</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    geoLonBu, &amp;  !&lt; The geographic longitude at q points in degrees of longitude or m.</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    dxBu, &amp;      !&lt; dxBu is delta x at q points [L ~&gt; m].</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    IdxBu, &amp;     !&lt; 1/dxBu [L-1 ~&gt; m-1].</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    dyBu, &amp;      !&lt; dyBu is delta y at q points [L ~&gt; m].</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    IdyBu, &amp;     !&lt; 1/dyBu [L-1 ~&gt; m-1].</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    areaBu, &amp;    !&lt; areaBu is the area of a q-cell [L2 ~&gt; m2]</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    IareaBu<span class="comment">      !&lt; IareaBu = 1/areaBu [L-2 ~&gt; m-2].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2105,20 +2108,20 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>0 for boundary points and 1 for ocean points on the u grid. Nondim. </p>
+<p>0 for boundary points and 1 for ocean points on the u grid [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEM_)</span> :: &amp;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    mask2dCu, &amp;  !&lt; 0 for boundary points and 1 for ocean points on the u grid.  Nondim.</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    geoLatCu, &amp;  !&lt; The geographic latitude at u points in degrees of latitude or m.</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    geoLonCu, &amp;  !&lt; The geographic longitude at u points in degrees of longitude or m.</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    dxCu, &amp;      !&lt; dxCu is delta x at u points [m].</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    IdxCu, &amp;     !&lt; 1/dxCu [m-1].</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    dyCu, &amp;      !&lt; dyCu is delta y at u points [m].</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    IdyCu, &amp;     !&lt; 1/dyCu [m-1].</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    dy_Cu, &amp;     !&lt; The unblocked lengths of the u-faces of the h-cell [m].</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    IareaCu, &amp;   !&lt; The masked inverse areas of u-grid cells [m2].</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    areaCu<span class="comment">       !&lt; The areas of the u-grid cells [m2].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEM_)</span> :: &amp;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    mask2dCu, &amp;  !&lt; 0 for boundary points and 1 for ocean points on the u grid [nondim].</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    geoLatCu, &amp;  !&lt; The geographic latitude at u points in degrees of latitude or m.</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    geoLonCu, &amp;  !&lt; The geographic longitude at u points in degrees of longitude or m.</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    dxCu, &amp;      !&lt; dxCu is delta x at u points [L ~&gt; m].</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    IdxCu, &amp;     !&lt; 1/dxCu [L-1 ~&gt; m-1].</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    dyCu, &amp;      !&lt; dyCu is delta y at u points [L ~&gt; m].</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    IdyCu, &amp;     !&lt; 1/dyCu [L-1 ~&gt; m-1].</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    dy_Cu, &amp;     !&lt; The unblocked lengths of the u-faces of the h-cell [L ~&gt; m].</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    IareaCu, &amp;   !&lt; The masked inverse areas of u-grid cells [L-2 ~&gt; m-2].</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    areaCu<span class="comment">       !&lt; The areas of the u-grid cells [L2 ~&gt; m2].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2134,20 +2137,20 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>0 for boundary points and 1 for ocean points on the v grid. Nondim. </p>
+<p>0 for boundary points and 1 for ocean points on the v grid [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEMB_PTR_)</span> :: &amp;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    mask2dCv, &amp;  !&lt; 0 for boundary points and 1 for ocean points on the v grid.  Nondim.</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    geoLatCv, &amp;  !&lt; The geographic latitude at v points in degrees of latitude or m.</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    geoLonCv, &amp;  !&lt; The geographic longitude at v points in degrees of longitude or m.</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    dxCv, &amp;      !&lt; dxCv is delta x at v points [m].</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    IdxCv, &amp;     !&lt; 1/dxCv [m-1].</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    dyCv, &amp;      !&lt; dyCv is delta y at v points [m].</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    IdyCv, &amp;     !&lt; 1/dyCv [m-1].</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    dx_Cv, &amp;     !&lt; The unblocked lengths of the v-faces of the h-cell [m].</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    IareaCv, &amp;   !&lt; The masked inverse areas of v-grid cells [m2].</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    areaCv<span class="comment">       !&lt; The areas of the v-grid cells [m2].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEMB_PTR_)</span> :: &amp;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    mask2dCv, &amp;  !&lt; 0 for boundary points and 1 for ocean points on the v grid [nondim].</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    geoLatCv, &amp;  !&lt; The geographic latitude at v points in degrees of latitude or m.</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    geoLonCv, &amp;  !&lt; The geographic longitude at v points in degrees of longitude or m.</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    dxCv, &amp;      !&lt; dxCv is delta x at v points [L ~&gt; m].</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    IdxCv, &amp;     !&lt; 1/dxCv [L-1 ~&gt; m-1].</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    dyCv, &amp;      !&lt; dyCv is delta y at v points [L ~&gt; m].</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    IdyCv, &amp;     !&lt; 1/dyCv [L-1 ~&gt; m-1].</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    dx_Cv, &amp;     !&lt; The unblocked lengths of the v-faces of the h-cell [L ~&gt; m].</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    IareaCv, &amp;   !&lt; The masked inverse areas of v-grid cells [L-2 ~&gt; m-2].</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    areaCv<span class="comment">       !&lt; The areas of the v-grid cells [L2 ~&gt; m2].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2163,22 +2166,22 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>0 for land points and 1 for ocean points on the h-grid. Nd. </p>
+<p>0 for land points and 1 for ocean points on the h-grid [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: &amp;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    mask2dT, &amp;   !&lt; 0 for land points and 1 for ocean points on the h-grid. Nd.</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    geoLatT, &amp;   !&lt; The geographic latitude at q points in degrees of latitude or m.</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    geoLonT, &amp;   !&lt; The geographic longitude at q points in degrees of longitude or m.</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    dxT, &amp;       !&lt; dxT is delta x at h points [m].</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    IdxT, &amp;      !&lt; 1/dxT [m-1].</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    dyT, &amp;       !&lt; dyT is delta y at h points [m].</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    IdyT, &amp;      !&lt; IdyT is 1/dyT [m-1].</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    areaT, &amp;     !&lt; The area of an h-cell [m2].</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    IareaT, &amp;    !&lt; 1/areaT [m-2].</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    sin_rot, &amp;   !&lt; The sine of the angular rotation between the local model grid<span class="stringliteral">&#39;s northward</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="stringliteral"></span><span class="stringliteral">                 !! and the true northward directions.</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="stringliteral"></span><span class="stringliteral">    cos_rot      !&lt; The cosine of the angular rotation between the local model grid&#39;</span>s northward</div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: &amp;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    mask2dT, &amp;   !&lt; 0 for land points and 1 for ocean points on the h-grid [nondim].</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    geoLatT, &amp;   !&lt; The geographic latitude at q points in degrees of latitude or m.</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    geoLonT, &amp;   !&lt; The geographic longitude at q points in degrees of longitude or m.</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    dxT, &amp;       !&lt; dxT is delta x at h points [L ~&gt; m].</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    IdxT, &amp;      !&lt; 1/dxT [L-1 ~&gt; m-1].</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    dyT, &amp;       !&lt; dyT is delta y at h points [L ~&gt; m].</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    IdyT, &amp;      !&lt; IdyT is 1/dyT [L-1 ~&gt; m-1].</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    areaT, &amp;     !&lt; The area of an h-cell [L2 ~&gt; m2].</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    IareaT, &amp;    !&lt; 1/areaT [L-2 ~&gt; m-2].</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    sin_rot, &amp;   !&lt; The sine of the angular rotation between the local model grid<span class="stringliteral">&#39;s northward</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="stringliteral"></span><span class="stringliteral">                 !! and the true northward directions.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="stringliteral"></span><span class="stringliteral">    cos_rot      !&lt; The cosine of the angular rotation between the local model grid&#39;</span>s northward</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2196,8 +2199,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The maximum depth of the ocean in depth units [Z ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00173">173</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keywordtype">  real</span> :: max_depth<span class="comment">     !&lt; The maximum depth of the ocean in depth units [Z ~&gt; m].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00177">177</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keywordtype">  real</span> :: max_depth<span class="comment">     !&lt; The maximum depth of the ocean in depth units [Z ~&gt; m].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2215,8 +2218,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of sub-PE blocks on this PE. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00163">163</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordtype">integer</span> :: nblocks<span class="comment">  !&lt; The number of sub-PE blocks on this PE</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00167">167</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordtype">integer</span> :: nblocks<span class="comment">  !&lt; The number of sub-PE blocks on this PE</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2234,8 +2237,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, non-blocking halo updates are allowed. The default is .false. (for now). </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00067">67</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">logical</span> :: nonblocking_updates<span class="comment">  !&lt; If true, non-blocking halo updates are</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00068">68</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">logical</span> :: nonblocking_updates<span class="comment">  !&lt; If true, non-blocking halo updates are</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2253,8 +2256,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The radius of the planet [m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00172">172</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keywordtype">  real</span> :: Rad_Earth = 6.378e6 <span class="comment">!&lt; The radius of the planet [m].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00176">176</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keywordtype">  real</span> :: Rad_Earth = 6.378e6 <span class="comment">!&lt; The radius of the planet [m].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2272,7 +2275,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The sine of the angular rotation between the local model grid's northward. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>
@@ -2290,8 +2293,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The latitude (or y-coordinate) of the first v-line. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00168">168</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordtype">  real</span> :: south_lat<span class="comment">     !&lt; The latitude (or y-coordinate) of the first v-line</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00172">172</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keywordtype">  real</span> :: south_lat<span class="comment">     !&lt; The latitude (or y-coordinate) of the first v-line</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2309,8 +2312,27 @@ Public variables and constants</h2></td></tr>
 
 <p>True if symmetric memory is used. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00066">66</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">logical</span> :: symmetric<span class="comment">  !&lt; True if symmetric memory is used.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00067">67</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">logical</span> :: symmetric<span class="comment">  !&lt; True if symmetric memory is used.</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6194fca3b31fe35443dbe7bece3c071a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6194fca3b31fe35443dbe7bece3c071a">&#9670;&nbsp;</a></span>us</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">type(unit_scale_type), pointer mom_grid::ocean_grid_type::us =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A dimensional unit scaling type. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00163">163</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type), <span class="keywordtype">pointer</span> :: US =&gt; null() <span class="comment">!&lt; A dimensional unit scaling type</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2328,8 +2350,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The longitude (or x-coordinate) of the first u-line. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00169">169</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keywordtype">  real</span> :: west_lon<span class="comment">      !&lt; The longitude (or x-coordinate) of the first u-line</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00173">173</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keywordtype">  real</span> :: west_lon<span class="comment">      !&lt; The longitude (or x-coordinate) of the first u-line</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2347,10 +2369,10 @@ Public variables and constants</h2></td></tr>
 
 <p>The units that are used in labeling the x coordinate axes. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00135">135</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">character(len=40)</span> :: &amp;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    x_axis_units, &amp;     !&lt; The units that are used in labeling the x coordinate axes.</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    y_axis_units<span class="comment">        !&lt; The units that are used in labeling the y coordinate axes.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00136">136</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">character(len=40)</span> :: &amp;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    x_axis_units, &amp;     !&lt; The units that are used in labeling the x coordinate axes.</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    y_axis_units<span class="comment">        !&lt; The units that are used in labeling the y coordinate axes.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2368,7 +2390,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The units that are used in labeling the y coordinate axes. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00135">135</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__grid_8F90_source.html#l00136">136</a> of file <a class="el" href="MOM__grid_8F90_source.html">MOM_grid.F90</a>.</p>
 
 </div>
 </div>

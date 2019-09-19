@@ -16,7 +16,7 @@ digraph "mom_barotropic::barotropic_init"
   Node5 [label="mom_barotropic::btcalc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#aa60ee766449413de40cdbc19964a6556",tooltip="btcalc calculates the barotropic velocities from the full velocity and thickness fields,..."];
   Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="mom_barotropic::find\l_face_areas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#a75ff2563aedd553f2799c1cfc320129e",tooltip="This subroutine determines the open face areas of cells for calculating the barotropic transport."];
+  Node6 [label="mom_barotropic::find\l_face_areas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#aba29d11dc2530622be997c069fb932ae",tooltip="This subroutine determines the open face areas of cells for calculating the barotropic transport."];
   Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 [label="mom_error_handler::\lmom_mesg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a1c462df7b61f1296407b4af51dfeceab",tooltip="This provides a convenient interface for writing an informative comment."];
@@ -24,7 +24,7 @@ digraph "mom_barotropic::barotropic_init"
   Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 [label="mom_barotropic::set_dtbt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#a486257b675aa4e81c2d1634b5288a67f",tooltip="This subroutine automatically determines an optimal value for dtbt based on some state of the ocean."];
   Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node9 [label="mom_barotropic::bt\l_cont_to_face_areas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#a69af48d24759b679d0431f09dc9da503",tooltip="This subroutine uses the BTCL types to find typical or maximum face areas, which can then be used for..."];
+  Node9 [label="mom_barotropic::bt\l_cont_to_face_areas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#ac7100cec548b4bf6d69d4a52e074a04f",tooltip="This subroutine uses the BTCL types to find typical or maximum face areas, which can then be used for..."];
   Node8 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

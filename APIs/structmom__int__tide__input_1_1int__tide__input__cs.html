@@ -101,11 +101,11 @@ $(document).ready(function(){initNavTree('structmom__int__tide__input_1_1int__ti
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This control structure holds parameters that regulate internal tide energy inputs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00034">34</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00035">35</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_int_tide_input::int_tide_input_cs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__int__tide__input_1_1int__tide__input__cs__coll__graph.svg" width="579" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structmom__int__tide__input_1_1int__tide__input__cs__coll__graph.svg" width="100%" height="472"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -120,12 +120,27 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a9a4a11932f64632602253ac86eaa11e8"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#a9a4a11932f64632602253ac86eaa11e8">tke_itide_max</a></td></tr>
 <tr class="memdesc:a9a4a11932f64632602253ac86eaa11e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum Internal tide conversion available to mix above the BBL [W m-2].  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#a9a4a11932f64632602253ac86eaa11e8">More...</a><br /></td></tr>
 <tr class="separator:a9a4a11932f64632602253ac86eaa11e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1caf1ed7c4484db3cf595f61a891e5"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#a9f1caf1ed7c4484db3cf595f61a891e5">kappa_fill</a></td></tr>
+<tr class="memdesc:a9f1caf1ed7c4484db3cf595f61a891e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical diffusivity used to interpolate sensible values of T &amp; S into thin layers [Z2 T-1 ~&gt; m2 s-1].  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#a9f1caf1ed7c4484db3cf595f61a891e5">More...</a><br /></td></tr>
+<tr class="separator:a9f1caf1ed7c4484db3cf595f61a891e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1adfde4d4f6846eb9a912780d64c2a02"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#a1adfde4d4f6846eb9a912780d64c2a02">tke_itidal_coef</a></td></tr>
 <tr class="memdesc:a1adfde4d4f6846eb9a912780d64c2a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time-invariant field that enters the TKE_itidal input calculation [J m-2].  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#a1adfde4d4f6846eb9a912780d64c2a02">More...</a><br /></td></tr>
 <tr class="separator:a1adfde4d4f6846eb9a912780d64c2a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72cc47218418b1a2dea79766cf40c48f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="version__variable_8h.html#acda997fe1761de4c6bca0f27dc786964">character</a>(len=200)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#a72cc47218418b1a2dea79766cf40c48f">inputdir</a></td></tr>
 <tr class="memdesc:a72cc47218418b1a2dea79766cf40c48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The directory for input files.  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#a72cc47218418b1a2dea79766cf40c48f">More...</a><br /></td></tr>
 <tr class="separator:a72cc47218418b1a2dea79766cf40c48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab183bab838338e7ad6c319e3d176e1e3"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#ab183bab838338e7ad6c319e3d176e1e3">int_tide_source_test</a></td></tr>
+<tr class="memdesc:ab183bab838338e7ad6c319e3d176e1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, apply an arbitrary generation site for internal tide testing (BDM)  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#ab183bab838338e7ad6c319e3d176e1e3">More...</a><br /></td></tr>
+<tr class="separator:ab183bab838338e7ad6c319e3d176e1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf91a8aba79c0ad590e380002942b0f"><td class="memItemLeft" align="right" valign="top">type(time_type)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#abbf91a8aba79c0ad590e380002942b0f">time_max_source</a></td></tr>
+<tr class="memdesc:abbf91a8aba79c0ad590e380002942b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A time for use in testing internal tides.  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#abbf91a8aba79c0ad590e380002942b0f">More...</a><br /></td></tr>
+<tr class="separator:abbf91a8aba79c0ad590e380002942b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3774cc3e253645ca23ba4a9bd36ed584"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#a3774cc3e253645ca23ba4a9bd36ed584">int_tide_source_x</a></td></tr>
+<tr class="memdesc:a3774cc3e253645ca23ba4a9bd36ed584"><td class="mdescLeft">&#160;</td><td class="mdescRight">X Location of generation site for internal tide for testing (BDM)  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#a3774cc3e253645ca23ba4a9bd36ed584">More...</a><br /></td></tr>
+<tr class="separator:a3774cc3e253645ca23ba4a9bd36ed584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98dfe9402e5384d132f091b6451a9e66"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#a98dfe9402e5384d132f091b6451a9e66">int_tide_source_y</a></td></tr>
+<tr class="memdesc:a98dfe9402e5384d132f091b6451a9e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y Location of generation site for internal tide for testing (BDM)  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#a98dfe9402e5384d132f091b6451a9e66">More...</a><br /></td></tr>
+<tr class="separator:a98dfe9402e5384d132f091b6451a9e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a55b8f719ffe593ffba6fa44b4acd85a1"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#a55b8f719ffe593ffba6fa44b4acd85a1">id_tke_itidal</a> = -1</td></tr>
 <tr class="memdesc:a55b8f719ffe593ffba6fa44b4acd85a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#a55b8f719ffe593ffba6fa44b4acd85a1">More...</a><br /></td></tr>
@@ -152,8 +167,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, write verbose checksums for debugging. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00035">35</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">      !&lt; If true, write verbose checksums for debugging.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00036">36</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">      !&lt; If true, write verbose checksums for debugging.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -171,8 +186,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure that is used to regulate the timing of diagnostic output. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00036">36</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00037">37</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -190,7 +205,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00046">46</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00058">58</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
 
 </div>
 </div>
@@ -208,7 +223,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00046">46</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00058">58</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
 
 </div>
 </div>
@@ -226,8 +241,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00046">46</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">integer</span> :: id_TKE_itidal = -1, id_nb = -1, id_n2_bot = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00058">58</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">integer</span> :: id_TKE_itidal = -1, id_nb = -1, id_n2_bot = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -245,8 +260,103 @@ Public variables and constants</h2></td></tr>
 
 <p>The directory for input files. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00043">43</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">character(len=200)</span> :: inputdir<span class="comment"> !&lt; The directory for input files.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00046">46</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">character(len=200)</span> :: inputdir<span class="comment"> !&lt; The directory for input files.</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab183bab838338e7ad6c319e3d176e1e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab183bab838338e7ad6c319e3d176e1e3">&#9670;&nbsp;</a></span>int_tide_source_test</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">logical mom_int_tide_input::int_tide_input_cs::int_tide_source_test</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, apply an arbitrary generation site for internal tide testing (BDM) </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00048">48</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">logical</span> :: int_tide_source_test<span class="comment">    !&lt; If true, apply an arbitrary generation site</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3774cc3e253645ca23ba4a9bd36ed584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3774cc3e253645ca23ba4a9bd36ed584">&#9670;&nbsp;</a></span>int_tide_source_x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real mom_int_tide_input::int_tide_input_cs::int_tide_source_x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>X Location of generation site for internal tide for testing (BDM) </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00051">51</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">  real</span>    :: int_tide_source_x<span class="comment">       !&lt; X Location of generation site</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a98dfe9402e5384d132f091b6451a9e66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98dfe9402e5384d132f091b6451a9e66">&#9670;&nbsp;</a></span>int_tide_source_y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real mom_int_tide_input::int_tide_input_cs::int_tide_source_y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Y Location of generation site for internal tide for testing (BDM) </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00053">53</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">  real</span>    :: int_tide_source_y<span class="comment">       !&lt; Y Location of generation site</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9f1caf1ed7c4484db3cf595f61a891e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f1caf1ed7c4484db3cf595f61a891e5">&#9670;&nbsp;</a></span>kappa_fill</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real mom_int_tide_input::int_tide_input_cs::kappa_fill</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vertical diffusivity used to interpolate sensible values of T &amp; S into thin layers [Z2 T-1 ~&gt; m2 s-1]. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00041">41</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">  real</span> :: kappa_fill<span class="comment">    !&lt; Vertical diffusivity used to interpolate sensible values</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abbf91a8aba79c0ad590e380002942b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbf91a8aba79c0ad590e380002942b0f">&#9670;&nbsp;</a></span>time_max_source</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">type(time_type) mom_int_tide_input::int_tide_input_cs::time_max_source</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A time for use in testing internal tides. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00050">50</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">type</span>(time_type) :: time_max_source<span class="comment"> !&lt; A time for use in testing internal tides</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -264,8 +374,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The time-invariant field that enters the TKE_itidal input calculation [J m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00041">41</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: TKE_itidal_coef</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00044">44</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: TKE_itidal_coef</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -283,8 +393,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Maximum Internal tide conversion available to mix above the BBL [W m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00038">38</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">  real</span> :: TKE_itide_max<span class="comment"> !&lt; Maximum Internal tide conversion</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00039">39</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">  real</span> :: TKE_itide_max<span class="comment"> !&lt; Maximum Internal tide conversion</span></div>
 </div><!-- fragment -->
 </div>
 </div>

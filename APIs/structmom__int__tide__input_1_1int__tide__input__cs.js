@@ -6,6 +6,11 @@ var structmom__int__tide__input_1_1int__tide__input__cs =
     [ "id_nb", "structmom__int__tide__input_1_1int__tide__input__cs.html#a73221970b595731fec7dca7b9494941c", null ],
     [ "id_tke_itidal", "structmom__int__tide__input_1_1int__tide__input__cs.html#a55b8f719ffe593ffba6fa44b4acd85a1", null ],
     [ "inputdir", "structmom__int__tide__input_1_1int__tide__input__cs.html#a72cc47218418b1a2dea79766cf40c48f", null ],
+    [ "int_tide_source_test", "structmom__int__tide__input_1_1int__tide__input__cs.html#ab183bab838338e7ad6c319e3d176e1e3", null ],
+    [ "int_tide_source_x", "structmom__int__tide__input_1_1int__tide__input__cs.html#a3774cc3e253645ca23ba4a9bd36ed584", null ],
+    [ "int_tide_source_y", "structmom__int__tide__input_1_1int__tide__input__cs.html#a98dfe9402e5384d132f091b6451a9e66", null ],
+    [ "kappa_fill", "structmom__int__tide__input_1_1int__tide__input__cs.html#a9f1caf1ed7c4484db3cf595f61a891e5", null ],
+    [ "time_max_source", "structmom__int__tide__input_1_1int__tide__input__cs.html#abbf91a8aba79c0ad590e380002942b0f", null ],
     [ "tke_itidal_coef", "structmom__int__tide__input_1_1int__tide__input__cs.html#a1adfde4d4f6846eb9a912780d64c2a02", null ],
     [ "tke_itide_max", "structmom__int__tide__input_1_1int__tide__input__cs.html#a9a4a11932f64632602253ac86eaa11e8", null ]
 ];

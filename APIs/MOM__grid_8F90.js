@@ -6,8 +6,8 @@ var MOM__grid_8F90 =
     [ "get_global_grid_size", "MOM__grid_8F90.html#a1cee4daea572d4efd1565b24ca652a2d", null ],
     [ "ispointincell", "MOM__grid_8F90.html#a7d20103f37477e32f1a4a7b7570af144", null ],
     [ "mom_grid_end", "MOM__grid_8F90.html#a889221e5714c3935f276c28dffe5e460", null ],
-    [ "mom_grid_init", "MOM__grid_8F90.html#a06d585b4319f18d7d7fac2afceb08205", null ],
+    [ "mom_grid_init", "MOM__grid_8F90.html#a1de9705f83b687ad9a711630a95fe52c", null ],
     [ "rescale_grid_bathymetry", "MOM__grid_8F90.html#a2ef4227cc0bc03d2937270fcc14d7354", null ],
-    [ "set_derived_metrics", "MOM__grid_8F90.html#ad5c6da36363b3908694605da62811a4b", null ],
+    [ "set_derived_metrics", "MOM__grid_8F90.html#a1ed8ca50737525ff437bdb349c8d701f", null ],
     [ "set_first_direction", "MOM__grid_8F90.html#a9d2aac0ba53c9072f5f37d9bf97187b2", null ]
 ];

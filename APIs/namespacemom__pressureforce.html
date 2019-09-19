@@ -215,8 +215,8 @@ Functions/Subroutines</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Layer thicknesses [H ~&gt; m or kg m-2] </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tv</td><td>A structure pointing to various thermodynamic variables </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pfu</td><td>Zonal pressure force acceleration [m s-2] </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pfv</td><td>Meridional pressure force acceleration [m s-2] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pfu</td><td>Zonal pressure force acceleration [L T-2 ~&gt; m s-2] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pfv</td><td>Meridional pressure force acceleration [L T-2 ~&gt; m s-2] </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">cs</td><td>Pressure force control structure </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">ale_csp</td><td>ALE control structure </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">p_atm</td><td>The pressure at the ice-ocean or </td></tr>
@@ -234,9 +234,9 @@ Functions/Subroutines</h2></td></tr>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                           <span class="keywordtype">intent(in)</span>  :: h<span class="comment">    !&lt; Layer thicknesses [H ~&gt; m or kg m-2]</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">type</span>(thermo_var_ptrs),   <span class="keywordtype">intent(in)</span>  :: tv<span class="comment">   !&lt; A structure pointing to various thermodynamic variables</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZIB_(G),SZJ_(G),SZK_(G))</span>, &amp;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                           <span class="keywordtype">intent(out)</span> :: PFu<span class="comment">  !&lt; Zonal pressure force acceleration [m s-2]</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                           <span class="keywordtype">intent(out)</span> :: PFu<span class="comment">  !&lt; Zonal pressure force acceleration [L T-2 ~&gt; m s-2]</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJB_(G),SZK_(G))</span>, &amp;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                           <span class="keywordtype">intent(out)</span> :: PFv<span class="comment">  !&lt; Meridional pressure force acceleration [m s-2]</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                           <span class="keywordtype">intent(out)</span> :: PFv<span class="comment">  !&lt; Meridional pressure force acceleration [L T-2 ~&gt; m s-2]</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">type</span>(PressureForce_CS),  <span class="keywordtype">pointer</span>     :: CS<span class="comment">   !&lt; Pressure force control structure</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">type</span>(ALE_CS),            <span class="keywordtype">pointer</span>     :: ALE_CSp<span class="comment"> !&lt; ALE control structure</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, &amp;</div>
@@ -276,7 +276,7 @@ Functions/Subroutines</h2></td></tr>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordflow">  endif</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="MOM__dynamics__split__RK2_8F90_source.html#l00237">mom_dynamics_split_rk2::step_mom_dyn_split_rk2()</a>, <a class="el" href="MOM__dynamics__unsplit_8F90_source.html#l00187">mom_dynamics_unsplit::step_mom_dyn_unsplit()</a>, and <a class="el" href="MOM__dynamics__unsplit__RK2_8F90_source.html#l00190">mom_dynamics_unsplit_rk2::step_mom_dyn_unsplit_rk2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__dynamics__split__RK2_8F90_source.html#l00239">mom_dynamics_split_rk2::step_mom_dyn_split_rk2()</a>, <a class="el" href="MOM__dynamics__unsplit_8F90_source.html#l00189">mom_dynamics_unsplit::step_mom_dyn_unsplit()</a>, and <a class="el" href="MOM__dynamics__unsplit__RK2_8F90_source.html#l00192">mom_dynamics_unsplit_rk2::step_mom_dyn_unsplit_rk2()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -447,7 +447,7 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__dynamics__split__RK2_8F90_source.html#l00967">mom_dynamics_split_rk2::initialize_dyn_split_rk2()</a>, <a class="el" href="MOM__dynamics__unsplit_8F90_source.html#l00565">mom_dynamics_unsplit::initialize_dyn_unsplit()</a>, and <a class="el" href="MOM__dynamics__unsplit__RK2_8F90_source.html#l00511">mom_dynamics_unsplit_rk2::initialize_dyn_unsplit_rk2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__dynamics__split__RK2_8F90_source.html#l00963">mom_dynamics_split_rk2::initialize_dyn_split_rk2()</a>, <a class="el" href="MOM__dynamics__unsplit_8F90_source.html#l00568">mom_dynamics_unsplit::initialize_dyn_unsplit()</a>, and <a class="el" href="MOM__dynamics__unsplit__RK2_8F90_source.html#l00513">mom_dynamics_unsplit_rk2::initialize_dyn_unsplit_rk2()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

@@ -17,6 +17,7 @@ var structmom__verticalgrid_1_1verticalgrid__type =
     [ "m_to_h", "structmom__verticalgrid_1_1verticalgrid__type.html#ac83bda1cbcb6283a616d96455ec4df7d", null ],
     [ "m_to_h_restart", "structmom__verticalgrid_1_1verticalgrid__type.html#aeb509d9b7741c1f8790caba12aac26a8", null ],
     [ "max_depth", "structmom__verticalgrid_1_1verticalgrid__type.html#aa211d2a116266eaee4663babb30cee39", null ],
+    [ "mks_g_earth", "structmom__verticalgrid_1_1verticalgrid__type.html#a6212761331fce8c92016e2edbd6a612e", null ],
     [ "nk_rho_varies", "structmom__verticalgrid_1_1verticalgrid__type.html#ab0cee8d928dfcb4e9d821bd33d1478ac", null ],
     [ "nkml", "structmom__verticalgrid_1_1verticalgrid__type.html#a32ae3c2d49449dd46532f84c8958dbac", null ],
     [ "rho0", "structmom__verticalgrid_1_1verticalgrid__type.html#a4c5f96fda6a349bca3e011523d2588a0", null ],

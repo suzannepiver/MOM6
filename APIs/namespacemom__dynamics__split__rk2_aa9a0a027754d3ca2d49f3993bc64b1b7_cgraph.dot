@@ -7,7 +7,7 @@ digraph "mom_dynamics_split_rk2::initialize_dyn_split_rk2"
   rankdir="LR";
   Node1 [label="mom_dynamics_split\l_rk2::initialize_dyn\l_split_rk2",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine initializes all of the variables that are used by this dynamic core,..."];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="mom_coriolisadv::coriolisadv_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coriolisadv.html#ad3ce07f23ce7b484a5a9e0c0abe8b1cd",tooltip="Initializes the control structure for coriolisadv_cs."];
+  Node2 [label="mom_coriolisadv::coriolisadv_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coriolisadv.html#ae021ac8de3b3510ca4552314ec9e1a9a",tooltip="Initializes the control structure for coriolisadv_cs."];
   Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="mom_error_handler::\lmom_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67",tooltip="This provides a convenient interface for writing an mpp_error message with run-time filter based on a..."];
   Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -50,16 +50,16 @@ digraph "mom_dynamics_split_rk2::initialize_dyn_split_rk2"
   Node1 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node19 [label="mom_verticalgrid::get\l_flux_units",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__verticalgrid.html#af027c312e660a932b3f430f4c7a9675d",tooltip="Returns the model's thickness flux units, usually m^3/s or kg/s."];
   Node1 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node20 [label="mom_hor_visc::hor_visc_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__hor__visc.html#a0bd0635786b867a4b682ebec44d8ec4d",tooltip="Allocates space for and calculates static variables used by horizontal_viscosity()...."];
+  Node20 [label="mom_hor_visc::hor_visc_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__hor__visc.html#a583fa2a89243358b0294d1d95d11c1f2",tooltip="Allocates space for and calculates static variables used by horizontal_viscosity()...."];
   Node20 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node21 [label="mom_hor_visc::align\l_aniso_tensor_to_grid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__hor__visc.html#abbd712954c311516d28c7d6a46e6c381",tooltip="Calculates factors in the anisotropic orientation tensor to be align with the grid...."];
   Node20 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node22 [label="mom_hor_visc::horizontal\l_viscosity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__hor__visc.html#a0c594d881fa7f6be08c7ae63da94f5ed",tooltip="Calculates the acceleration due to the horizontal viscosity."];
   Node22 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node23 [label="mom_barotropic::barotropic\l_get_tav",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#afb1b115964dc0b7cde81792afd29f308",tooltip="Copies ubtav and vbtav from private type into arrays."];
+  Node23 [label="mom_barotropic::barotropic\l_get_tav",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#aa059fdf7e6002b13d942f96ef17a5db6",tooltip="Copies ubtav and vbtav from private type into arrays."];
   Node22 -> Node24 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node24 [label="mom_lateral_mixing\l_coeffs::calc_qg_leith\l_viscosity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#a68333e077c821c0d49f826b5121e52e6",tooltip="Calculates the Leith Laplacian and bi-harmonic viscosity coefficients."];
+  Node24 [label="mom_lateral_mixing\l_coeffs::calc_qg_leith\l_viscosity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#a212e9e850d4db8f321e0398f4090fee0",tooltip="Calculates the Leith Laplacian and bi-harmonic viscosity coefficients."];
   Node22 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node22 -> Node25 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node25 [label="mom_hor_visc::smooth_gme",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__hor__visc.html#a686fed1d7dd5311ab016b6f637aa7304",tooltip="Apply a 1-1-4-1-1 Laplacian filter one time on GME diffusive flux to reduce any horizontal two-grid-p..."];

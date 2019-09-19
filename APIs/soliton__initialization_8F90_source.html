@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('soliton__initialization_8F90_source.ht
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespacesoliton__initialization.html#abd5846899bb175c4e2c84986c6e4168b">   23</a></span>&#160;<span class="keywordtype">character(len=40)</span> :: <a class="code" href="namespacesoliton__initialization.html#abd5846899bb175c4e2c84986c6e4168b">mdl</a> = <span class="stringliteral">&quot;soliton_initialization&quot;</span><span class="comment"> !&lt; This module&#39;s name.</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">public</span> <a class="code" href="namespacesoliton__initialization.html#aafb0cddd1b46af87cc7dcb5e08c58fa3">soliton_initialize_thickness</a></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">public</span> <a class="code" href="namespacesoliton__initialization.html#a13c12aaed46d807f0d906218f8b1e00b">soliton_initialize_velocity</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">public</span> <a class="code" href="namespacesoliton__initialization.html#a0baf019ffa8cbb6754cd197af8a377b8">soliton_initialize_velocity</a></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">contains</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span> </div>
@@ -160,62 +160,67 @@ $(document).ready(function(){initNavTree('soliton__initialization_8F90_source.ht
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">!&gt; Initialization of u and v in the equatorial Rossby soliton test</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">subroutine </span><a class="code" href="namespacesoliton__initialization.html#a13c12aaed46d807f0d906218f8b1e00b">soliton_initialize_velocity</a>(u, v, h, G)</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="namespacesoliton__initialization.html#a13c12aaed46d807f0d906218f8b1e00b">   67</a></span>&#160;  <span class="keywordtype">type</span>(<a class="code" href="structmom__grid_1_1ocean__grid__type.html">ocean_grid_type</a>),                  <span class="keywordtype">intent(in)</span>     :: g<span class="comment">  !&lt; Grid structure</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZIB_(G),SZJ_(G),SZK_(G))</span>, <span class="keywordtype">intent(out)</span> :: u<span class="comment">  !&lt; i-component of velocity [m s-1]</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJB_(G),SZK_(G))</span>, <span class="keywordtype">intent(out)</span> :: v<span class="comment">  !&lt; j-component of velocity [m s-1]</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">subroutine </span><a class="code" href="namespacesoliton__initialization.html#a0baf019ffa8cbb6754cd197af8a377b8">soliton_initialize_velocity</a>(u, v, h, G, US)</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="namespacesoliton__initialization.html#a0baf019ffa8cbb6754cd197af8a377b8">   67</a></span>&#160;  <span class="keywordtype">type</span>(<a class="code" href="structmom__grid_1_1ocean__grid__type.html">ocean_grid_type</a>),                     <span class="keywordtype">intent(in)</span>  :: g<span class="comment">  !&lt; Grid structure</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZIB_(G),SZJ_(G),SZK_(G))</span>, <span class="keywordtype">intent(out)</span> :: u<span class="comment">  !&lt; i-component of velocity [L T-1 ~&gt; m s-1]</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJB_(G),SZK_(G))</span>, <span class="keywordtype">intent(out)</span> :: v<span class="comment">  !&lt; j-component of velocity [L T-1 ~&gt; m s-1]</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G), SZK_(G))</span>, <span class="keywordtype">intent(in)</span>  :: h<span class="comment">  !&lt; Thickness [H ~&gt; m or kg m-2]</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">  real</span>    :: x, y, x0, y0</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">  real</span>    :: val1, val2, val3, val4</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, is, ie, js, je, nz</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec ; nz = g%ke</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  x0 = 2.0*g%len_lon/3.0</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  y0 = 0.0</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  val1 = 0.395</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  val2 = 0.771*(val1*val1)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  v(:,:,:) = 0.0</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  u(:,:,:) = 0.0</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">do</span> j = g%jsc,g%jec ; <span class="keywordflow">do</span> i = g%isc-1,g%iec+1</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">do</span> k = 1, nz</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      x = 0.5*(g%geoLonT(i+1,j)+g%geoLonT(i,j))-x0</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      y = 0.5*(g%geoLatT(i+1,j)+g%geoLatT(i,j))-y0</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      val3 = exp(-val1*x)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      val4 = val2*((2.0*val3/(1.0+(val3*val3)))**2)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      u(i,j,k) = 0.25*val4*(6.0*y*y-9.0) * exp(-0.5*y*y)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">do</span> j = g%jsc-1,g%jec+1 ; <span class="keywordflow">do</span> i = g%isc,g%iec</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">do</span> k = 1, nz</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      x = 0.5*(g%geoLonT(i,j+1)+g%geoLonT(i,j))-x0</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      y = 0.5*(g%geoLatT(i,j+1)+g%geoLatT(i,j))-y0</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      val3 = exp(-val1*x)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      val4 = val2*((2.0*val3/(1.0+(val3*val3)))**2)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      v(i,j,k) = 2.0*val4*y*(-2.0*val1*tanh(val1*x)) * exp(-0.5*y*y)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">end subroutine </span><a class="code" href="namespacesoliton__initialization.html#a13c12aaed46d807f0d906218f8b1e00b">soliton_initialize_velocity</a></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">!&gt; \namespace soliton_initialization</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">!!</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">!! \section section_soliton Description of the equatorial Rossby soliton initial</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">!! conditions</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">!!</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">end module </span><a class="code" href="namespacesoliton__initialization.html">soliton_initialization</a></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">type</span>(<a class="code" href="structmom__unit__scaling_1_1unit__scale__type.html">unit_scale_type</a>),                     <span class="keywordtype">intent(in)</span>  :: us<span class="comment"> !&lt; A dimensional unit scaling type</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">! Local variables</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">  real</span>    :: x, x0 <span class="comment">! Positions in the same units as geoLonT.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">  real</span>    :: y, y0 <span class="comment">! Positions in the same units as geoLatT.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">  real</span>    :: val1  <span class="comment">! A zonal decay scale in the inverse of the units of geoLonT.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">  real</span>    :: val2  <span class="comment">! An overall velocity amplitude [L T-1 ~&gt; m s-1]</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">  real</span>    :: val3  <span class="comment">! A decay factor [nondim]</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">  real</span>    :: val4  <span class="comment">! The local velocity amplitude [L T-1 ~&gt; m s-1]</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, is, ie, js, je, nz</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec ; nz = g%ke</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  x0 = 2.0*g%len_lon/3.0</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  y0 = 0.0</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  val1 = 0.395</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  val2 = us%m_s_to_L_T * 0.771*(val1*val1)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  v(:,:,:) = 0.0</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  u(:,:,:) = 0.0</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">do</span> j = g%jsc,g%jec ; <span class="keywordflow">do</span> i = g%isc-1,g%iec+1</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">do</span> k = 1, nz</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      x = 0.5*(g%geoLonT(i+1,j)+g%geoLonT(i,j))-x0</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      y = 0.5*(g%geoLatT(i+1,j)+g%geoLatT(i,j))-y0</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      val3 = exp(-val1*x)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      val4 = val2*((2.0*val3/(1.0+(val3*val3)))**2)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      u(i,j,k) = 0.25*val4*(6.0*y*y-9.0) * exp(-0.5*y*y)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">do</span> j = g%jsc-1,g%jec+1 ; <span class="keywordflow">do</span> i = g%isc,g%iec</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">do</span> k = 1, nz</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      x = 0.5*(g%geoLonT(i,j+1)+g%geoLonT(i,j))-x0</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      y = 0.5*(g%geoLatT(i,j+1)+g%geoLatT(i,j))-y0</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      val3 = exp(-val1*x)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      val4 = val2*((2.0*val3/(1.0+(val3*val3)))**2)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      v(i,j,k) = 2.0*val4*y*(-2.0*val1*tanh(val1*x)) * exp(-0.5*y*y)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">end subroutine </span><a class="code" href="namespacesoliton__initialization.html#a0baf019ffa8cbb6754cd197af8a377b8">soliton_initialize_velocity</a></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">!&gt; \namespace soliton_initialization</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">!!</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">!! \section section_soliton Description of the equatorial Rossby soliton initial</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">!! conditions</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">!!</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">end module </span><a class="code" href="namespacesoliton__initialization.html">soliton_initialization</a></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacemom__verticalgrid_html"><div class="ttname"><a href="namespacemom__verticalgrid.html">mom_verticalgrid</a></div><div class="ttdoc">Provides a transparent vertical ocean grid type and supporting routines.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__verticalGrid_8F90_source.html#l00002">MOM_verticalGrid.F90:2</a></div></div>
 <div class="ttc" id="ainterfacemom__file__parser_1_1log__version_html"><div class="ttname"><a href="interfacemom__file__parser_1_1log__version.html">mom_file_parser::log_version</a></div><div class="ttdoc">An overloaded interface to log version information about modules.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__file__parser_8F90_source.html#l00109">MOM_file_parser.F90:109</a></div></div>
 <div class="ttc" id="astructmom__variables_1_1thermo__var__ptrs_html"><div class="ttname"><a href="structmom__variables_1_1thermo__var__ptrs.html">mom_variables::thermo_var_ptrs</a></div><div class="ttdoc">Pointers to an assortment of thermodynamic fields that may be available, including potential temperat...</div><div class="ttdef"><b>Definition:</b> <a href="MOM__variables_8F90_source.html#l00082">MOM_variables.F90:82</a></div></div>
 <div class="ttc" id="astructmom__get__input_1_1directories_html"><div class="ttname"><a href="structmom__get__input_1_1directories.html">mom_get_input::directories</a></div><div class="ttdoc">Container for paths and parameter file names.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__get__input_8F90_source.html#l00020">MOM_get_input.F90:20</a></div></div>
-<div class="ttc" id="anamespacesoliton__initialization_html_a13c12aaed46d807f0d906218f8b1e00b"><div class="ttname"><a href="namespacesoliton__initialization.html#a13c12aaed46d807f0d906218f8b1e00b">soliton_initialization::soliton_initialize_velocity</a></div><div class="ttdeci">subroutine, public soliton_initialize_velocity(u, v, h, G)</div><div class="ttdoc">Initialization of u and v in the equatorial Rossby soliton test.</div><div class="ttdef"><b>Definition:</b> <a href="soliton__initialization_8F90_source.html#l00067">soliton_initialization.F90:67</a></div></div>
 <div class="ttc" id="anamespacemom__error__handler_html_a1c462df7b61f1296407b4af51dfeceab"><div class="ttname"><a href="namespacemom__error__handler.html#a1c462df7b61f1296407b4af51dfeceab">mom_error_handler::mom_mesg</a></div><div class="ttdeci">subroutine, public mom_mesg(message, verb, all_print)</div><div class="ttdoc">This provides a convenient interface for writing an informative comment.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__error__handler_8F90_source.html#l00053">MOM_error_handler.F90:53</a></div></div>
 <div class="ttc" id="anamespacemom__eos_html"><div class="ttname"><a href="namespacemom__eos.html">mom_eos</a></div><div class="ttdoc">Provides subroutines for quantities specific to the equation of state.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__EOS_8F90_source.html#l00002">MOM_EOS.F90:2</a></div></div>
 <div class="ttc" id="astructmom__file__parser_1_1param__file__type_html"><div class="ttname"><a href="structmom__file__parser_1_1param__file__type.html">mom_file_parser::param_file_type</a></div><div class="ttdoc">A structure that can be parsed to read and document run-time parameters.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__file__parser_8F90_source.html#l00054">MOM_file_parser.F90:54</a></div></div>
@@ -228,6 +233,7 @@ $(document).ready(function(){initNavTree('soliton__initialization_8F90_source.ht
 <div class="ttc" id="astructmom__eos_1_1eos__type_html"><div class="ttname"><a href="structmom__eos_1_1eos__type.html">mom_eos::eos_type</a></div><div class="ttdoc">A control structure for the equation of state.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__EOS_8F90_source.html#l00086">MOM_EOS.F90:86</a></div></div>
 <div class="ttc" id="anamespaceregrid__consts_html_acaaaed0d987a75852f7ef3d371e74094"><div class="ttname"><a href="namespaceregrid__consts.html#acaaaed0d987a75852f7ef3d371e74094">regrid_consts::regridding_sigma</a></div><div class="ttdeci">integer, parameter regridding_sigma</div><div class="ttdoc">Sigma coordinates identifier.</div><div class="ttdef"><b>Definition:</b> <a href="regrid__consts_8F90_source.html#l00016">regrid_consts.F90:16</a></div></div>
 <div class="ttc" id="astructmom__verticalgrid_1_1verticalgrid__type_html"><div class="ttname"><a href="structmom__verticalgrid_1_1verticalgrid__type.html">mom_verticalgrid::verticalgrid_type</a></div><div class="ttdoc">Describes the vertical ocean grid, including unit conversion factors.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__verticalGrid_8F90_source.html#l00024">MOM_verticalGrid.F90:24</a></div></div>
+<div class="ttc" id="anamespacesoliton__initialization_html_a0baf019ffa8cbb6754cd197af8a377b8"><div class="ttname"><a href="namespacesoliton__initialization.html#a0baf019ffa8cbb6754cd197af8a377b8">soliton_initialization::soliton_initialize_velocity</a></div><div class="ttdeci">subroutine, public soliton_initialize_velocity(u, v, h, G, US)</div><div class="ttdoc">Initialization of u and v in the equatorial Rossby soliton test.</div><div class="ttdef"><b>Definition:</b> <a href="soliton__initialization_8F90_source.html#l00067">soliton_initialization.F90:67</a></div></div>
 <div class="ttc" id="anamespacesoliton__initialization_html_aafb0cddd1b46af87cc7dcb5e08c58fa3"><div class="ttname"><a href="namespacesoliton__initialization.html#aafb0cddd1b46af87cc7dcb5e08c58fa3">soliton_initialization::soliton_initialize_thickness</a></div><div class="ttdeci">subroutine, public soliton_initialize_thickness(h, G, GV, US)</div><div class="ttdoc">Initialization of thicknesses in Equatorial Rossby soliton test.</div><div class="ttdef"><b>Definition:</b> <a href="soliton__initialization_8F90_source.html#l00032">soliton_initialization.F90:32</a></div></div>
 <div class="ttc" id="anamespacemom__variables_html"><div class="ttname"><a href="namespacemom__variables.html">mom_variables</a></div><div class="ttdoc">Provides transparent structures with groups of MOM6 variables and supporting routines.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__variables_8F90_source.html#l00002">MOM_variables.F90:2</a></div></div>
 <div class="ttc" id="anamespacemom__file__parser_html"><div class="ttname"><a href="namespacemom__file__parser.html">mom_file_parser</a></div><div class="ttdoc">The MOM6 facility to parse input files for runtime parameters.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__file__parser_8F90_source.html#l00002">MOM_file_parser.F90:2</a></div></div>
@@ -242,7 +248,7 @@ $(document).ready(function(){initNavTree('soliton__initialization_8F90_source.ht
 <div class="ttc" id="anamespaceregrid__consts_html_aef4186522ded3d18e67d332fddde5ea4"><div class="ttname"><a href="namespaceregrid__consts.html#aef4186522ded3d18e67d332fddde5ea4">regrid_consts::regridding_rho</a></div><div class="ttdeci">integer, parameter regridding_rho</div><div class="ttdoc">Density coordinates identifier.</div><div class="ttdef"><b>Definition:</b> <a href="regrid__consts_8F90_source.html#l00015">regrid_consts.F90:15</a></div></div>
 <div class="ttc" id="anamespacemom__error__handler_html"><div class="ttname"><a href="namespacemom__error__handler.html">mom_error_handler</a></div><div class="ttdoc">Routines for error handling and I/O management.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__error__handler_8F90_source.html#l00002">MOM_error_handler.F90:2</a></div></div>
 <div class="ttc" id="anamespacesoliton__initialization_html_abd5846899bb175c4e2c84986c6e4168b"><div class="ttname"><a href="namespacesoliton__initialization.html#abd5846899bb175c4e2c84986c6e4168b">soliton_initialization::mdl</a></div><div class="ttdeci">character(len=40) mdl</div><div class="ttdoc">This module's name.</div><div class="ttdef"><b>Definition:</b> <a href="soliton__initialization_8F90_source.html#l00023">soliton_initialization.F90:23</a></div></div>
-<div class="ttc" id="astructmom__grid_1_1ocean__grid__type_html"><div class="ttname"><a href="structmom__grid_1_1ocean__grid__type.html">mom_grid::ocean_grid_type</a></div><div class="ttdoc">Ocean grid type. See mom_grid for details.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__grid_8F90_source.html#l00025">MOM_grid.F90:25</a></div></div>
+<div class="ttc" id="astructmom__grid_1_1ocean__grid__type_html"><div class="ttname"><a href="structmom__grid_1_1ocean__grid__type.html">mom_grid::ocean_grid_type</a></div><div class="ttdoc">Ocean grid type. See mom_grid for details.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__grid_8F90_source.html#l00026">MOM_grid.F90:26</a></div></div>
 <div class="ttc" id="ainterfacemom__eos_1_1calculate__density_html"><div class="ttname"><a href="interfacemom__eos_1_1calculate__density.html">mom_eos::calculate_density</a></div><div class="ttdoc">Calculates density of sea water from T, S and P.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__EOS_8F90_source.html#l00060">MOM_EOS.F90:60</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

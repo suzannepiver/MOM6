@@ -101,18 +101,18 @@ $(document).ready(function(){initNavTree('structmom__opacity_1_1opacity__cs.html
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The control structure with paramters for the MOM_opacity module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00026">26</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00050">50</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_opacity::opacity_cs:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structmom__opacity_1_1opacity__cs__coll__graph.svg" width="100%" height="461"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__opacity_1_1opacity__cs__coll__graph.svg" width="480" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public variables and constants</h2></td></tr>
 <tr class="memitem:a3bfd441a925b63940c9859b91238f47b"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__opacity_1_1opacity__cs.html#a3bfd441a925b63940c9859b91238f47b">var_pen_sw</a></td></tr>
-<tr class="memdesc:a3bfd441a925b63940c9859b91238f47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, use one of the CHL_A schemes (specified below) to determine the e-folding depth of incoming short wave radiation. The default is false.  <a href="structmom__opacity_1_1opacity__cs.html#a3bfd441a925b63940c9859b91238f47b">More...</a><br /></td></tr>
+<tr class="memdesc:a3bfd441a925b63940c9859b91238f47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, use one of the CHL_A schemes (specified by OPACITY_SCHEME) to determine the e-folding depth of incoming shortwave radiation.  <a href="structmom__opacity_1_1opacity__cs.html#a3bfd441a925b63940c9859b91238f47b">More...</a><br /></td></tr>
 <tr class="separator:a3bfd441a925b63940c9859b91238f47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa62c0db343a921c049fde7b1b7cea0f5"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__opacity_1_1opacity__cs.html#aa62c0db343a921c049fde7b1b7cea0f5">opacity_scheme</a></td></tr>
 <tr class="memdesc:aa62c0db343a921c049fde7b1b7cea0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer indicating which scheme should be used to translate water properties into the opacity (i.e., the e-folding depth) and (perhaps) the number of bands of penetrating shortwave radiation to use.  <a href="structmom__opacity_1_1opacity__cs.html#aa62c0db343a921c049fde7b1b7cea0f5">More...</a><br /></td></tr>
@@ -135,21 +135,9 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a1245cccef164eb653f364b75848feb57"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__opacity_1_1opacity__cs.html#a1245cccef164eb653f364b75848feb57">opacity_land_value</a></td></tr>
 <tr class="memdesc:a1245cccef164eb653f364b75848feb57"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value to use for opacity over land [m-1]. The default is 10 m-1 - a value for muddy water.  <a href="structmom__opacity_1_1opacity__cs.html#a1245cccef164eb653f364b75848feb57">More...</a><br /></td></tr>
 <tr class="separator:a1245cccef164eb653f364b75848feb57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d7354406dee2239ca90d4269ea54f56"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__opacity_1_1opacity__cs.html#a6d7354406dee2239ca90d4269ea54f56">sbc_chl</a></td></tr>
-<tr class="memdesc:a6d7354406dee2239ca90d4269ea54f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer handle used in time interpolation of chlorophyll read from a file.  <a href="structmom__opacity_1_1opacity__cs.html#a6d7354406dee2239ca90d4269ea54f56">More...</a><br /></td></tr>
-<tr class="separator:a6d7354406dee2239ca90d4269ea54f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63b8cc8ae45b8cc6840ef8f9106c6f0c"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__opacity_1_1opacity__cs.html#a63b8cc8ae45b8cc6840ef8f9106c6f0c">chl_from_file</a></td></tr>
-<tr class="memdesc:a63b8cc8ae45b8cc6840ef8f9106c6f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, chl_a is read from a file.  <a href="structmom__opacity_1_1opacity__cs.html#a63b8cc8ae45b8cc6840ef8f9106c6f0c">More...</a><br /></td></tr>
-<tr class="separator:a63b8cc8ae45b8cc6840ef8f9106c6f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd0ec99ee02d4da138e8560a546ad990"><td class="memItemLeft" align="right" valign="top">type(time_type), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__opacity_1_1opacity__cs.html#afd0ec99ee02d4da138e8560a546ad990">time</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:afd0ec99ee02d4da138e8560a546ad990"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the ocean model's clock.  <a href="structmom__opacity_1_1opacity__cs.html#afd0ec99ee02d4da138e8560a546ad990">More...</a><br /></td></tr>
-<tr class="separator:afd0ec99ee02d4da138e8560a546ad990"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac524ed639f10e329436628769a8e5bd9"><td class="memItemLeft" align="right" valign="top">type(diag_ctrl), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__opacity_1_1opacity__cs.html#ac524ed639f10e329436628769a8e5bd9">diag</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:ac524ed639f10e329436628769a8e5bd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that is used to regulate the timing of diagnostic output.  <a href="structmom__opacity_1_1opacity__cs.html#ac524ed639f10e329436628769a8e5bd9">More...</a><br /></td></tr>
 <tr class="separator:ac524ed639f10e329436628769a8e5bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88217945a29216118d4368731eebe225"><td class="memItemLeft" align="right" valign="top">type(tracer_flow_control_cs), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__opacity_1_1opacity__cs.html#a88217945a29216118d4368731eebe225">tracer_flow_csp</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a88217945a29216118d4368731eebe225"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the control structure of the tracer modules.  <a href="structmom__opacity_1_1opacity__cs.html#a88217945a29216118d4368731eebe225">More...</a><br /></td></tr>
-<tr class="separator:a88217945a29216118d4368731eebe225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a70f04c84bd6ffcb249814564cfe8c4a6"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__opacity_1_1opacity__cs.html#a70f04c84bd6ffcb249814564cfe8c4a6">id_sw_pen</a> = -1</td></tr>
 <tr class="memdesc:a70f04c84bd6ffcb249814564cfe8c4a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__opacity_1_1opacity__cs.html#a70f04c84bd6ffcb249814564cfe8c4a6">More...</a><br /></td></tr>
@@ -157,9 +145,6 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:af9f1ac4dee8d3607ec997ad1fce3b515"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__opacity_1_1opacity__cs.html#af9f1ac4dee8d3607ec997ad1fce3b515">id_sw_vis_pen</a> = -1</td></tr>
 <tr class="memdesc:af9f1ac4dee8d3607ec997ad1fce3b515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__opacity_1_1opacity__cs.html#af9f1ac4dee8d3607ec997ad1fce3b515">More...</a><br /></td></tr>
 <tr class="separator:af9f1ac4dee8d3607ec997ad1fce3b515"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a434411e91419ae2575055fc76314fd3e"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__opacity_1_1opacity__cs.html#a434411e91419ae2575055fc76314fd3e">id_chl</a> = -1</td></tr>
-<tr class="memdesc:a434411e91419ae2575055fc76314fd3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__opacity_1_1opacity__cs.html#a434411e91419ae2575055fc76314fd3e">More...</a><br /></td></tr>
-<tr class="separator:a434411e91419ae2575055fc76314fd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49372b49f2a305418dc1cee833687c67"><td class="memItemLeft" align="right" valign="top">integer, dimension(:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__opacity_1_1opacity__cs.html#a49372b49f2a305418dc1cee833687c67">id_opacity</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a49372b49f2a305418dc1cee833687c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__opacity_1_1opacity__cs.html#a49372b49f2a305418dc1cee833687c67">More...</a><br /></td></tr>
 <tr class="separator:a49372b49f2a305418dc1cee833687c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,27 +164,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the penetrating shortwave radiation that is in the blue band [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00040">40</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">  real</span> :: blue_frac<span class="comment">          !&lt;   The fraction of the penetrating shortwave</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a63b8cc8ae45b8cc6840ef8f9106c6f0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63b8cc8ae45b8cc6840ef8f9106c6f0c">&#9670;&nbsp;</a></span>chl_from_file</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">logical mom_opacity::opacity_cs::chl_from_file</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>If true, chl_a is read from a file. </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00046">46</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">logical</span> ::  chl_from_file<span class="comment">  !&lt; If true, chl_a is read from a file.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00063">63</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">  real</span> :: blue_frac<span class="comment">          !&lt;   The fraction of the penetrating shortwave</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -217,27 +183,9 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure that is used to regulate the timing of diagnostic output. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00048">48</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00067">67</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to</span></div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a434411e91419ae2575055fc76314fd3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a434411e91419ae2575055fc76314fd3e">&#9670;&nbsp;</a></span>id_chl</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">integer mom_opacity::opacity_cs::id_chl = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Diagnostic IDs. </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00054">54</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-
 </div>
 </div>
 <a id="a49372b49f2a305418dc1cee833687c67"></a>
@@ -254,8 +202,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00055">55</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">pointer</span> :: id_opacity(:) =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00072">72</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">pointer</span> :: id_opacity(:) =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -273,8 +221,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00054">54</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">integer</span> :: id_sw_pen = -1, id_sw_vis_pen = -1, id_chl = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">integer</span> :: id_sw_pen = -1, id_sw_vis_pen = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -292,7 +240,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00054">54</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
 
 </div>
 </div>
@@ -310,8 +258,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The value to use for opacity over land [m-1]. The default is 10 m-1 - a value for muddy water. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00042">42</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">  real</span> :: opacity_land_value<span class="comment"> !&lt; The value to use for opacity over land [m-1].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00065">65</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">  real</span> :: opacity_land_value<span class="comment"> !&lt; The value to use for opacity over land [m-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -329,8 +277,8 @@ Public variables and constants</h2></td></tr>
 
 <p>An integer indicating which scheme should be used to translate water properties into the opacity (i.e., the e-folding depth) and (perhaps) the number of bands of penetrating shortwave radiation to use. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00030">30</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">integer</span> :: opacity_scheme<span class="comment">  !&lt;   An integer indicating which scheme should be used to translate</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00053">53</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">integer</span> :: opacity_scheme<span class="comment">  !&lt;   An integer indicating which scheme should be used to translate</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -348,8 +296,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of shortwave radiation that is penetrating with a constant e-folding approach. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00038">38</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">  real</span> :: pen_sw_frac<span class="comment">        !&lt;   The fraction of shortwave radiation that is</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00061">61</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">  real</span> :: pen_sw_frac<span class="comment">        !&lt;   The fraction of shortwave radiation that is</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -367,8 +315,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The vertical absorption e-folding depth of the penetrating shortwave radiation [m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00033">33</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">  real</span> :: pen_sw_scale<span class="comment">       !&lt;   The vertical absorption e-folding depth of the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00056">56</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">  real</span> :: pen_sw_scale<span class="comment">       !&lt;   The vertical absorption e-folding depth of the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -386,27 +334,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The vertical absorption e-folding depth of the (2nd) penetrating shortwave radiation [m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00035">35</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">  real</span> :: pen_sw_scale_2nd<span class="comment">   !&lt;   The vertical absorption e-folding depth of the</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a6d7354406dee2239ca90d4269ea54f56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d7354406dee2239ca90d4269ea54f56">&#9670;&nbsp;</a></span>sbc_chl</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">integer mom_opacity::opacity_cs::sbc_chl</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An integer handle used in time interpolation of chlorophyll read from a file. </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00044">44</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">integer</span> :: sbc_chl<span class="comment">         !&lt; An integer handle used in time interpolation of</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00058">58</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">  real</span> :: pen_sw_scale_2nd<span class="comment">   !&lt;   The vertical absorption e-folding depth of the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -424,46 +353,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Ratio for 1st exp decay in Two Exp decay opacity. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00037">37</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">  real</span> :: SW_1ST_EXP_RATIO<span class="comment">   !&lt; Ratio for 1st exp decay in Two Exp decay opacity</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="afd0ec99ee02d4da138e8560a546ad990"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd0ec99ee02d4da138e8560a546ad990">&#9670;&nbsp;</a></span>time</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">type(time_type), pointer mom_opacity::opacity_cs::time =&gt; NULL()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A pointer to the ocean model's clock. </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00047">47</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time =&gt; null() <span class="comment">!&lt; A pointer to the ocean model&#39;s clock.</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a88217945a29216118d4368731eebe225"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88217945a29216118d4368731eebe225">&#9670;&nbsp;</a></span>tracer_flow_csp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">type(tracer_flow_control_cs), pointer mom_opacity::opacity_cs::tracer_flow_csp =&gt; NULL()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A pointer to the control structure of the tracer modules. </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00050">50</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">type</span>(tracer_flow_control_CS), <span class="keywordtype">pointer</span>  :: tracer_flow_CSp =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00060">60</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">  real</span> :: SW_1ST_EXP_RATIO<span class="comment">   !&lt; Ratio for 1st exp decay in Two Exp decay opacity</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -479,10 +370,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>If true, use one of the CHL_A schemes (specified below) to determine the e-folding depth of incoming short wave radiation. The default is false. </p>
+<p>If true, use one of the CHL_A schemes (specified by OPACITY_SCHEME) to determine the e-folding depth of incoming shortwave radiation. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00027">27</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">logical</span> :: var_pen_sw<span class="comment">      !&lt;   If true, use one of the CHL_A schemes (specified below) to</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__opacity_8F90_source.html#l00051">51</a> of file <a class="el" href="MOM__opacity_8F90_source.html">MOM_opacity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">logical</span> :: var_pen_sw<span class="comment">      !&lt;   If true, use one of the CHL_A schemes (specified by OPACITY_SCHEME) to</span></div>
 </div><!-- fragment -->
 </div>
 </div>

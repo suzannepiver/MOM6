@@ -9,7 +9,7 @@ digraph "mom_grid_initialize::dx_di"
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="mom_grid_initialize\l::ds_di",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a5a50815c6d1d0948dfbae076da654b94",tooltip="This function returns the grid spacing in the logical x direction."];
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="mom_grid_initialize\l::set_grid_metrics_mercator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#ac37d98379b33a9e95d0bbffc1d7a730f",tooltip="Calculate the values of the metric terms that might be used and save them in arrays."];
+  Node3 [label="mom_grid_initialize\l::set_grid_metrics_mercator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a3cc0b92a8624fbd5246576b4e5cf6f6f",tooltip="Calculate the values of the metric terms that might be used and save them in arrays."];
   Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="mom_grid_initialize\l::set_grid_metrics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__grid__initialize.html#a80ff9ab4bfca58b9858abc4ce95b06e9",tooltip="set_grid_metrics is used to set the primary values in the model's horizontal grid...."];
   Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

@@ -7,7 +7,7 @@ digraph "mom_dynamics_unsplit::step_mom_dyn_unsplit"
   rankdir="LR";
   Node1 [label="mom_dynamics_unsplit\l::step_mom_dyn_unsplit",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Step the MOM6 dynamics using an unsplit mixed 2nd order (for continuity) and 3rd order (for the invis..."];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="mom_continuity::continuity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__continuity.html#a483dba08c6a9574d7fe814cadccd870e",tooltip="Time steps the layer thicknesses, using a monotonically limited, directionally split PPM scheme,..."];
+  Node2 [label="mom_continuity::continuity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__continuity.html#af5199f6dd73755cc33c133723339a0ff",tooltip="Time steps the layer thicknesses, using a monotonically limited, directionally split PPM scheme,..."];
   Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="mom_error_handler::\lmom_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67",tooltip="This provides a convenient interface for writing an mpp_error message with run-time filter based on a..."];
   Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -15,7 +15,7 @@ digraph "mom_dynamics_unsplit::step_mom_dyn_unsplit"
   Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 [label="mom_coriolisadv::coradcalc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coriolisadv.html#ac677e9d644c881b7e8ce6413aa5450cd",tooltip="Calculates the Coriolis and momentum advection contributions to the acceleration."];
   Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="mom_coriolisadv::gradke",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coriolisadv.html#a8d9732ffd7debb051047934fe1551f97",tooltip="Calculates the acceleration due to the gradient of kinetic energy."];
+  Node6 [label="mom_coriolisadv::gradke",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coriolisadv.html#a87e4a437552052fa238260442af19868",tooltip="Calculates the acceleration due to the gradient of kinetic energy."];
   Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 [label="mom_diag_mediator::\ldiag_update_remap_grids",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a2e9db121a293f242f5a42e9d16d0d2e4",tooltip="Build/update vertical grids for diagnostic remapping."];
@@ -23,14 +23,14 @@ digraph "mom_dynamics_unsplit::step_mom_dyn_unsplit"
   Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 [label="mom_hor_visc::horizontal\l_viscosity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__hor__visc.html#a0c594d881fa7f6be08c7ae63da94f5ed",tooltip="Calculates the acceleration due to the horizontal viscosity."];
   Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node9 [label="mom_barotropic::barotropic\l_get_tav",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#afb1b115964dc0b7cde81792afd29f308",tooltip="Copies ubtav and vbtav from private type into arrays."];
+  Node9 [label="mom_barotropic::barotropic\l_get_tav",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__barotropic.html#aa059fdf7e6002b13d942f96ef17a5db6",tooltip="Copies ubtav and vbtav from private type into arrays."];
   Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node10 [label="mom_lateral_mixing\l_coeffs::calc_qg_leith\l_viscosity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#a68333e077c821c0d49f826b5121e52e6",tooltip="Calculates the Leith Laplacian and bi-harmonic viscosity coefficients."];
+  Node10 [label="mom_lateral_mixing\l_coeffs::calc_qg_leith\l_viscosity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__lateral__mixing__coeffs.html#a212e9e850d4db8f321e0398f4090fee0",tooltip="Calculates the Leith Laplacian and bi-harmonic viscosity coefficients."];
   Node8 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node11 [label="mom_hor_visc::smooth_gme",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__hor__visc.html#a686fed1d7dd5311ab016b6f637aa7304",tooltip="Apply a 1-1-4-1-1 Laplacian filter one time on GME diffusive flux to reduce any horizontal two-grid-p..."];
   Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node12 [label="mom_checksum_packages\l::mom_accel_chksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksum__packages.html#ad209641ecdd8dac3eae4b04e64e209ed",tooltip="Write out chksums for the model's accelerations."];
+  Node12 [label="mom_checksum_packages\l::mom_accel_chksum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__checksum__packages.html#ab65c45c111975e2804be7a008e3c17c7",tooltip="Write out chksums for the model's accelerations."];
   Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node13 [label="mom_open_boundary::\lopen_boundary_zero_normal_flow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__open__boundary.html#a9d48e6925d93fa98cbf5bb73903f94be",tooltip="Applies zero values to 3d u,v fields on OBC segments."];
   Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

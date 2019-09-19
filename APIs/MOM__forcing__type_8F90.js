@@ -5,7 +5,7 @@ var MOM__forcing__type_8F90 =
     [ "forcing_diags", "structmom__forcing__type_1_1forcing__diags.html", "structmom__forcing__type_1_1forcing__diags" ],
     [ "allocate_forcing_type", "MOM__forcing__type_8F90.html#ab1e6bd1f3ec34c98715f3c822325b03c", null ],
     [ "allocate_mech_forcing", "MOM__forcing__type_8F90.html#a7a9bb1457a8615a3e0b6e38f8d3e32bf", null ],
-    [ "calculatebuoyancyflux1d", "MOM__forcing__type_8F90.html#ad0077a3179748ec1ff1b81348f4aca92", null ],
+    [ "calculatebuoyancyflux1d", "MOM__forcing__type_8F90.html#a406a512f0d5b45c873fa91110ca7c387", null ],
     [ "calculatebuoyancyflux2d", "MOM__forcing__type_8F90.html#ae84373c4a259bd04330ec673af0fa536", null ],
     [ "copy_back_forcing_fields", "MOM__forcing__type_8F90.html#aa8ee4e3dace6d294ceb8bfe445dead1b", null ],
     [ "copy_common_forcing_fields", "MOM__forcing__type_8F90.html#a44ade8a584921047fcf960f4cdb9914c", null ],

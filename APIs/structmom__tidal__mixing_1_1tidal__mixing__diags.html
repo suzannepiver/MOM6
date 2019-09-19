@@ -112,13 +112,13 @@ Collaboration diagram for mom_tidal_mixing::tidal_mixing_diags:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public variables and constants</h2></td></tr>
 <tr class="memitem:a199e6d31a98b4a8d6f4520eb72435a93"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a199e6d31a98b4a8d6f4520eb72435a93">kd_itidal</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a199e6d31a98b4a8d6f4520eb72435a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal tide diffusivity at interfaces [Z2 s-1 ~&gt; m2 s-1].  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a199e6d31a98b4a8d6f4520eb72435a93">More...</a><br /></td></tr>
+<tr class="memdesc:a199e6d31a98b4a8d6f4520eb72435a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal tide diffusivity at interfaces [Z2 T-1 ~&gt; m2 s-1].  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a199e6d31a98b4a8d6f4520eb72435a93">More...</a><br /></td></tr>
 <tr class="separator:a199e6d31a98b4a8d6f4520eb72435a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49d7c9481c8c082aabf65e0681590a4b"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a49d7c9481c8c082aabf65e0681590a4b">fl_itidal</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a49d7c9481c8c082aabf65e0681590a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">vertical flux of tidal turbulent dissipation [Z3 T-3 ~&gt; m3 s-3]  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a49d7c9481c8c082aabf65e0681590a4b">More...</a><br /></td></tr>
 <tr class="separator:a49d7c9481c8c082aabf65e0681590a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7afe94c86c1826b42e6d7f10024ea3a"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#ae7afe94c86c1826b42e6d7f10024ea3a">kd_niku</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:ae7afe94c86c1826b42e6d7f10024ea3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">lee-wave diffusivity at interfaces [Z2 s-1 ~&gt; m2 s-1].  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#ae7afe94c86c1826b42e6d7f10024ea3a">More...</a><br /></td></tr>
+<tr class="memdesc:ae7afe94c86c1826b42e6d7f10024ea3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">lee-wave diffusivity at interfaces [Z2 T-1 ~&gt; m2 s-1].  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#ae7afe94c86c1826b42e6d7f10024ea3a">More...</a><br /></td></tr>
 <tr class="separator:ae7afe94c86c1826b42e6d7f10024ea3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d9e44f91a6346420855799ee8e44e78"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a2d9e44f91a6346420855799ee8e44e78">kd_niku_work</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a2d9e44f91a6346420855799ee8e44e78"><td class="mdescLeft">&#160;</td><td class="mdescRight">layer integrated work by lee-wave driven mixing [kg Z3 m-3 T-3 ~&gt; W m-2]  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a2d9e44f91a6346420855799ee8e44e78">More...</a><br /></td></tr>
@@ -142,7 +142,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a3fc0359717ff743cc67ab1122dea1b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input tidal energy dissipated locally, interpolated to model vertical coordinate [W m-3?].  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a3fc0359717ff743cc67ab1122dea1b85">More...</a><br /></td></tr>
 <tr class="separator:a3fc0359717ff743cc67ab1122dea1b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2deb13d0d5e2c7f37d6546d089c04e8"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#ae2deb13d0d5e2c7f37d6546d089c04e8">kd_lowmode</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:ae2deb13d0d5e2c7f37d6546d089c04e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal tide diffusivity at interfaces due to propagating low modes [Z2 s-1 ~&gt; m2 s-1].  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#ae2deb13d0d5e2c7f37d6546d089c04e8">More...</a><br /></td></tr>
+<tr class="memdesc:ae2deb13d0d5e2c7f37d6546d089c04e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal tide diffusivity at interfaces due to propagating low modes [Z2 T-1 ~&gt; m2 s-1].  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#ae2deb13d0d5e2c7f37d6546d089c04e8">More...</a><br /></td></tr>
 <tr class="separator:ae2deb13d0d5e2c7f37d6546d089c04e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17339f8caff39d5e90450b62071df8b5"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a17339f8caff39d5e90450b62071df8b5">fl_lowmode</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a17339f8caff39d5e90450b62071df8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">vertical flux of tidal turbulent dissipation due to propagating low modes [Z3 T-3 ~&gt; m3 s-3]  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a17339f8caff39d5e90450b62071df8b5">More...</a><br /></td></tr>
@@ -151,10 +151,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a5f6115fc44db31e84028f4c0453d8159"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal tide TKE input at ocean bottom [kg Z3 m-3 T-3 ~&gt; W m-2]  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a5f6115fc44db31e84028f4c0453d8159">More...</a><br /></td></tr>
 <tr class="separator:a5f6115fc44db31e84028f4c0453d8159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8268b4b0255d69d380523d93e43dde60"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a8268b4b0255d69d380523d93e43dde60">n2_bot</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a8268b4b0255d69d380523d93e43dde60"><td class="mdescLeft">&#160;</td><td class="mdescRight">bottom squared buoyancy frequency [s-2]  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a8268b4b0255d69d380523d93e43dde60">More...</a><br /></td></tr>
+<tr class="memdesc:a8268b4b0255d69d380523d93e43dde60"><td class="mdescLeft">&#160;</td><td class="mdescRight">bottom squared buoyancy frequency [T-2 ~&gt; s-2]  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a8268b4b0255d69d380523d93e43dde60">More...</a><br /></td></tr>
 <tr class="separator:a8268b4b0255d69d380523d93e43dde60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49320b3942ee8a73317b78da18398e13"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a49320b3942ee8a73317b78da18398e13">n2_meanz</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a49320b3942ee8a73317b78da18398e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">vertically averaged buoyancy frequency [s-2]  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a49320b3942ee8a73317b78da18398e13">More...</a><br /></td></tr>
+<tr class="memdesc:a49320b3942ee8a73317b78da18398e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">vertically averaged buoyancy frequency [T-2 ~&gt; s-2]  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a49320b3942ee8a73317b78da18398e13">More...</a><br /></td></tr>
 <tr class="separator:a49320b3942ee8a73317b78da18398e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c525b1309342b4ad234e258c0efd139"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a2c525b1309342b4ad234e258c0efd139">polzin_decay_scale_scaled</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a2c525b1309342b4ad234e258c0efd139"><td class="mdescLeft">&#160;</td><td class="mdescRight">vertical scale of decay for tidal dissipation  <a href="structmom__tidal__mixing_1_1tidal__mixing__diags.html#a2c525b1309342b4ad234e258c0efd139">More...</a><br /></td></tr>
@@ -216,13 +216,13 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>internal tide diffusivity at interfaces [Z2 s-1 ~&gt; m2 s-1]. </p>
+<p>internal tide diffusivity at interfaces [Z2 T-1 ~&gt; m2 s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__tidal__mixing_8F90_source.html#l00044">44</a> of file <a class="el" href="MOM__tidal__mixing_8F90_source.html">MOM_tidal_mixing.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Kd_itidal             =&gt; null(),&amp; <span class="comment">!&lt; internal tide diffusivity at interfaces [Z2 s-1 ~&gt; m2 s-1].</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Kd_itidal             =&gt; null(),&amp; <span class="comment">!&lt; internal tide diffusivity at interfaces [Z2 T-1 ~&gt; m2 s-1].</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    fl_itidal             =&gt; null(),&amp; <span class="comment">!&lt; vertical flux of tidal turbulent dissipation [Z3 T-3 ~&gt; m3 s-3]</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    kd_niku               =&gt; null(),&amp; <span class="comment">!&lt; lee-wave diffusivity at interfaces [Z2 s-1 ~&gt; m2 s-1].</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    kd_niku               =&gt; null(),&amp; <span class="comment">!&lt; lee-wave diffusivity at interfaces [Z2 T-1 ~&gt; m2 s-1].</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    kd_niku_work          =&gt; null(),&amp; <span class="comment">!&lt; layer integrated work by lee-wave driven mixing [kg Z3 m-3 T-3 ~&gt; W m-2]</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    kd_itidal_work        =&gt; null(),&amp; <span class="comment">!&lt; layer integrated work by int tide driven mixing [kg Z3 m-3 T-3 ~&gt; W m-2]</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    kd_lowmode_work       =&gt; null(),&amp; <span class="comment">!&lt; layer integrated work by low mode driven mixing [kg Z3 m-3 T-3 ~&gt; W m-2]</span></div>
@@ -262,7 +262,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>internal tide diffusivity at interfaces due to propagating low modes [Z2 s-1 ~&gt; m2 s-1]. </p>
+<p>internal tide diffusivity at interfaces due to propagating low modes [Z2 T-1 ~&gt; m2 s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__tidal__mixing_8F90_source.html#l00056">56</a> of file <a class="el" href="MOM__tidal__mixing_8F90_source.html">MOM_tidal_mixing.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: Kd_lowmode =&gt; null() <span class="comment">!&lt; internal tide diffusivity at interfaces</span></div>
@@ -299,7 +299,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>lee-wave diffusivity at interfaces [Z2 s-1 ~&gt; m2 s-1]. </p>
+<p>lee-wave diffusivity at interfaces [Z2 T-1 ~&gt; m2 s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__tidal__mixing_8F90_source.html#l00044">44</a> of file <a class="el" href="MOM__tidal__mixing_8F90_source.html">MOM_tidal_mixing.F90</a>.</p>
 
@@ -335,7 +335,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>bottom squared buoyancy frequency [s-2] </p>
+<p>bottom squared buoyancy frequency [T-2 ~&gt; s-2] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__tidal__mixing_8F90_source.html#l00060">60</a> of file <a class="el" href="MOM__tidal__mixing_8F90_source.html">MOM_tidal_mixing.F90</a>.</p>
 
@@ -371,7 +371,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>vertically averaged buoyancy frequency [s-2] </p>
+<p>vertically averaged buoyancy frequency [T-2 ~&gt; s-2] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__tidal__mixing_8F90_source.html#l00060">60</a> of file <a class="el" href="MOM__tidal__mixing_8F90_source.html">MOM_tidal_mixing.F90</a>.</p>
 
@@ -485,8 +485,8 @@ Public variables and constants</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="MOM__tidal__mixing_8F90_source.html#l00060">60</a> of file <a class="el" href="MOM__tidal__mixing_8F90_source.html">MOM_tidal_mixing.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    TKE_itidal_used           =&gt; null(),&amp; <span class="comment">!&lt; internal tide TKE input at ocean bottom [kg Z3 m-3 T-3 ~&gt; W m-2]</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    n2_bot                    =&gt; null(),&amp; <span class="comment">!&lt; bottom squared buoyancy frequency [s-2]</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    n2_meanz                  =&gt; null(),&amp; <span class="comment">!&lt; vertically averaged buoyancy frequency [s-2]</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    n2_bot                    =&gt; null(),&amp; <span class="comment">!&lt; bottom squared buoyancy frequency [T-2 ~&gt; s-2]</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    n2_meanz                  =&gt; null(),&amp; <span class="comment">!&lt; vertically averaged buoyancy frequency [T-2 ~&gt; s-2]</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    polzin_decay_scale_scaled =&gt; null(),&amp; <span class="comment">!&lt; vertical scale of decay for tidal dissipation</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    polzin_decay_scale        =&gt; null(),&amp; <span class="comment">!&lt; vertical decay scale for tidal diss with Polzin [m]</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    simmons_coeff_2d          =&gt; null()   <span class="comment">!&lt; The Simmons et al mixing coefficient</span></div>
