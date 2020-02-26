@@ -198,6 +198,9 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:af4b0cd53dc34f466ee590c42b90fc36b"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__vert__friction_1_1vertvisc__cs.html#af4b0cd53dc34f466ee590c42b90fc36b">dynamic_viscous_ml</a></td></tr>
 <tr class="memdesc:af4b0cd53dc34f466ee590c42b90fc36b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, use the results from a dynamic calculation, perhaps based on a bulk Richardson number criterion, to determine the mixed layer thickness for viscosity.  <a href="structmom__vert__friction_1_1vertvisc__cs.html#af4b0cd53dc34f466ee590c42b90fc36b">More...</a><br /></td></tr>
 <tr class="separator:af4b0cd53dc34f466ee590c42b90fc36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94bc4cfa7ce7db44bc49b4fb1b0ae6ca"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__vert__friction_1_1vertvisc__cs.html#a94bc4cfa7ce7db44bc49b4fb1b0ae6ca">answers_2018</a></td></tr>
+<tr class="memdesc:a94bc4cfa7ce7db44bc49b4fb1b0ae6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, use the order of arithmetic and expressions that recover the answers from the end of 2018. Otherwise, use expressions that do not use an arbitary and hard-coded maximum viscous coupling coefficient between layers.  <a href="structmom__vert__friction_1_1vertvisc__cs.html#a94bc4cfa7ce7db44bc49b4fb1b0ae6ca">More...</a><br /></td></tr>
+<tr class="separator:a94bc4cfa7ce7db44bc49b4fb1b0ae6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a436374293143a7233af4c3dc92eebcf4"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__vert__friction_1_1vertvisc__cs.html#a436374293143a7233af4c3dc92eebcf4">debug</a></td></tr>
 <tr class="memdesc:a436374293143a7233af4c3dc92eebcf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, write verbose checksums for debugging purposes.  <a href="structmom__vert__friction_1_1vertvisc__cs.html#a436374293143a7233af4c3dc92eebcf4">More...</a><br /></td></tr>
 <tr class="separator:a436374293143a7233af4c3dc92eebcf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -345,6 +348,25 @@ Public variables and constants</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEMB_PTR_,NK_INTERFACE_)</span> :: &amp;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    a_v<span class="comment">                !&lt; The v-drag coefficient across an interface [Z T-1 ~&gt; m s-1].</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a94bc4cfa7ce7db44bc49b4fb1b0ae6ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94bc4cfa7ce7db44bc49b4fb1b0ae6ca">&#9670;&nbsp;</a></span>answers_2018</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">logical mom_vert_friction::vertvisc_cs::answers_2018</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, use the order of arithmetic and expressions that recover the answers from the end of 2018. Otherwise, use expressions that do not use an arbitary and hard-coded maximum viscous coupling coefficient between layers. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">logical</span> :: answers_2018<span class="comment">   !&lt; If true, use the order of arithmetic and expressions that recover the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -514,8 +536,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, write verbose checksums for debugging purposes. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">          !&lt; If true, write verbose checksums for debugging purposes.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00107">107</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">          !&lt; If true, write verbose checksums for debugging purposes.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -533,8 +555,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure that is used to regulate the timing of diagnostic output. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag<span class="comment"> !&lt; A structure that is used to regulate the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag<span class="comment"> !&lt; A structure that is used to regulate the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -725,7 +747,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
 
 </div>
 </div>
@@ -743,7 +765,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
 
 </div>
 </div>
@@ -761,8 +783,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">integer</span> :: id_du_dt_visc = -1, id_dv_dt_visc = -1, id_au_vv = -1, id_av_vv = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">integer</span> :: id_du_dt_visc = -1, id_dv_dt_visc = -1, id_au_vv = -1, id_av_vv = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -780,7 +802,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
 
 </div>
 </div>
@@ -798,8 +820,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">integer</span> :: id_h_u = -1, id_h_v = -1, id_hml_u = -1 , id_hml_v = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">integer</span> :: id_h_u = -1, id_h_v = -1, id_hml_u = -1 , id_hml_v = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -817,7 +839,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
 
 </div>
 </div>
@@ -835,7 +857,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
 
 </div>
 </div>
@@ -853,7 +875,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
 
 </div>
 </div>
@@ -871,8 +893,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">integer</span> :: id_Kv_slow = -1, id_kv_u = -1, id_kv_v = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">integer</span> :: id_Kv_slow = -1, id_kv_u = -1, id_kv_v = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -890,7 +912,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
 
 </div>
 </div>
@@ -908,7 +930,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
 
 </div>
 </div>
@@ -926,8 +948,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">integer</span> :: id_Ray_u = -1, id_ray_v = -1, id_taux_bot = -1, id_tauy_bot = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">integer</span> :: id_Ray_u = -1, id_ray_v = -1, id_taux_bot = -1, id_tauy_bot = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -945,7 +967,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
 
 </div>
 </div>
@@ -963,7 +985,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
 
 </div>
 </div>
@@ -981,7 +1003,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic identifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
 
 </div>
 </div>
@@ -1075,8 +1097,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of layers in the mixed layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00104">104</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">integer</span> :: nkml<span class="comment">           !&lt; The number of layers in the mixed layer.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00108">108</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">integer</span> :: nkml<span class="comment">           !&lt; The number of layers in the mixed layer.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1094,8 +1116,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of times the velocity has been truncated since the last call to write_energy. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00105">105</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">pointer</span> :: ntrunc<span class="comment"> !&lt; The number of times the velocity has been</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">pointer</span> :: ntrunc<span class="comment"> !&lt; The number of times the velocity has been</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1113,8 +1135,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the control structure for recording accelerations leading to velocity truncations. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">type</span>(PointAccel_CS), <span class="keywordtype">pointer</span> :: PointAccel_CSp =&gt; null() <span class="comment">!&lt; A pointer to the control structure</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00129">129</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">type</span>(PointAccel_CS), <span class="keywordtype">pointer</span> :: PointAccel_CSp =&gt; null() <span class="comment">!&lt; A pointer to the control structure</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1170,8 +1192,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, do Stokes drift mixing via the Lagrangian current (Eulerian plus Stokes drift). False by default and set via STOKES_MIXING_COMBINED. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">logical</span> :: StokesMixing<span class="comment">   !&lt; If true, do Stokes drift mixing via the Lagrangian current</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">logical</span> :: StokesMixing<span class="comment">   !&lt; If true, do Stokes drift mixing via the Lagrangian current</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1208,8 +1230,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The complete path to a file in which a column of u-accelerations are written if velocity truncations occur. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00107">107</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">character(len=200)</span> :: u_trunc_file<span class="comment">  !&lt; The complete path to a file in which a column of</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">character(len=200)</span> :: u_trunc_file<span class="comment">  !&lt; The complete path to a file in which a column of</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1227,8 +1249,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The complete path to a file in which a column of v-accelerations are written if velocity truncations occur. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">character(len=200)</span> :: v_trunc_file<span class="comment"> !&lt; The complete path to a file in which a column of</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__vert__friction_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">character(len=200)</span> :: v_trunc_file<span class="comment"> !&lt; The complete path to a file in which a column of</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1252,7 +1274,7 @@ Public variables and constants</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__vert__friction_8F90_source.html">MOM_vert_friction.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -18,4 +18,6 @@ digraph "mom_file_parser::close_param_file"
   Node6 [label="mom_ocean_model_mct\l::ocean_model_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__mct.html#ab85c4a8f30fcf7782a514a3fc66165a2",tooltip="ocean_model_init initializes the ocean model, including registering fields for restarts and reading r..."];
   Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 [label="mom_ocean_model_nuopc\l::ocean_model_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ocean__model__nuopc.html#a7682efcc4c80e04e7e3d1f3ca9b123f7",tooltip="ocean_model_init initializes the ocean model, including registering fields for restarts and reading r..."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="ocn_comp_mct::ocn_init_mct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceocn__comp__mct.html#adfe794cbbae40df4bdb9fcec95d4ff9c",tooltip="This subroutine initializes MOM6."];
 }

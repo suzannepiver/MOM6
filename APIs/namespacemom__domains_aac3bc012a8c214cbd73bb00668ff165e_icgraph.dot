@@ -23,14 +23,14 @@ digraph "mom_domains::do_group_pass"
   Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node9 [label="mom_offline_main::offline\l_redistribute_residual",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__offline__main.html#a312c47e83e64a6bdf064526f77a8a8ec",tooltip="In the case where the main advection routine did not converge, something needs to be done with the re..."];
   Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node10 [label="mom_ale::ale_regrid\l_accelerated",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ale.html#aaa82975639f59d30c233567cd9ef19c7",tooltip="For a state-based coordinate, accelerate the process of regridding by repeatedly applying the grid ca..."];
+  Node10 [label="mom_ale::ale_regrid\l_accelerated",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ale.html#a93a3be63e89c22d40356a656790f821f",tooltip="For a state-based coordinate, accelerate the process of regridding by repeatedly applying the grid ca..."];
   Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node11 [label="mom_state_initialization\l::mom_initialize_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__state__initialization.html#a81503d4f1855cb185f122d6314e4f06c",tooltip="Initialize temporally evolving fields, either as initial conditions or by reading them from a restart..."];
   Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node12 [label="mom::initialize_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a96708b16215666edbfa5b46228f3a200",tooltip="Initialize MOM, including memory allocation, setting up parameters and diagnostics,..."];
   Node12 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node13 [label="mom_bulk_mixed_layer\l::bulkmixedlayer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__bulk__mixed__layer.html#a1ce079fe4ece14b087b1fbecbfe66907",tooltip="This subroutine partially steps the bulk mixed layer model. The following processes are executed,..."];
+  Node13 [label="mom_bulk_mixed_layer\l::bulkmixedlayer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__bulk__mixed__layer.html#ad6b69cad68bd88aa1deee0481fd3cc59",tooltip="This subroutine partially steps the bulk mixed layer model. The following processes are executed,..."];
   Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node14 [label="mom_diabatic_driver\l::layered_diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a71d8d849db16be4b87c2650b49f01c82",tooltip="Imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentum and tracers us..."];
   Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -47,6 +47,6 @@ digraph "mom_domains::do_group_pass"
   Node18 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node19 [label="mom::step_mom_dynamics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a42ee7e91ffcf1340679e29ab28d9b41d",tooltip="Time step the ocean dynamics, including the momentum and continuity equations."];
   Node19 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node20 [label="mom::step_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a972730596703580d4646320f2c9085a5",tooltip="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to..."];
+  Node20 [label="mom::step_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#ad55f786e26bcd3445a7224f2fad54f7e",tooltip="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to..."];
   Node20 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

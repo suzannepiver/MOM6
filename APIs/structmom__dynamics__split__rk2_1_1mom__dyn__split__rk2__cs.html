@@ -166,10 +166,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a5060810abba85cb46d3f93d477780e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">pbce times eta gives the baroclinic pressure anomaly in each layer due to free surface height anomalies [L2 H-1 T-2 ~&gt; m s-2 or m4 kg-1 s-2].  <a href="structmom__dynamics__split__rk2_1_1mom__dyn__split__rk2__cs.html#a5060810abba85cb46d3f93d477780e22">More...</a><br /></td></tr>
 <tr class="separator:a5060810abba85cb46d3f93d477780e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ac86eadee47a191ecbcf8425d06dce8"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__dynamics__split__rk2_1_1mom__dyn__split__rk2__cs.html#a5ac86eadee47a191ecbcf8425d06dce8">taux_bot</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a5ac86eadee47a191ecbcf8425d06dce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">frictional x-bottom stress from the ocean to the seafloor [kg L Z T-2 m-3 ~&gt; Pa]  <a href="structmom__dynamics__split__rk2_1_1mom__dyn__split__rk2__cs.html#a5ac86eadee47a191ecbcf8425d06dce8">More...</a><br /></td></tr>
+<tr class="memdesc:a5ac86eadee47a191ecbcf8425d06dce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">frictional x-bottom stress from the ocean to the seafloor [R L Z T-2 ~&gt; Pa]  <a href="structmom__dynamics__split__rk2_1_1mom__dyn__split__rk2__cs.html#a5ac86eadee47a191ecbcf8425d06dce8">More...</a><br /></td></tr>
 <tr class="separator:a5ac86eadee47a191ecbcf8425d06dce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44ed899a514dc15a9a3e94f5eed22ed9"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__dynamics__split__rk2_1_1mom__dyn__split__rk2__cs.html#a44ed899a514dc15a9a3e94f5eed22ed9">tauy_bot</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a44ed899a514dc15a9a3e94f5eed22ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">frictional y-bottom stress from the ocean to the seafloor [kg L Z T-2 m-3 ~&gt; Pa]  <a href="structmom__dynamics__split__rk2_1_1mom__dyn__split__rk2__cs.html#a44ed899a514dc15a9a3e94f5eed22ed9">More...</a><br /></td></tr>
+<tr class="memdesc:a44ed899a514dc15a9a3e94f5eed22ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">frictional y-bottom stress from the ocean to the seafloor [R L Z T-2 ~&gt; Pa]  <a href="structmom__dynamics__split__rk2_1_1mom__dyn__split__rk2__cs.html#a44ed899a514dc15a9a3e94f5eed22ed9">More...</a><br /></td></tr>
 <tr class="separator:a44ed899a514dc15a9a3e94f5eed22ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee42deccddab1e6b1779f02d6bbf82a7"><td class="memItemLeft" align="right" valign="top">type(bt_cont_type), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__dynamics__split__rk2_1_1mom__dyn__split__rk2__cs.html#aee42deccddab1e6b1779f02d6bbf82a7">bt_cont</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:aee42deccddab1e6b1779f02d6bbf82a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure with elements that describe the effective summed open face areas as a function of barotropic flow.  <a href="structmom__dynamics__split__rk2_1_1mom__dyn__split__rk2__cs.html#aee42deccddab1e6b1779f02d6bbf82a7">More...</a><br /></td></tr>
@@ -1285,7 +1285,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>frictional x-bottom stress from the ocean to the seafloor [kg L Z T-2 m-3 ~&gt; Pa] </p>
+<p>frictional x-bottom stress from the ocean to the seafloor [R L Z T-2 ~&gt; Pa] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__dynamics__split__RK2_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__dynamics__split__RK2_8F90_source.html">MOM_dynamics_split_RK2.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: taux_bot =&gt; null() <span class="comment">!&lt; frictional x-bottom stress from the ocean</span></div>
@@ -1304,7 +1304,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>frictional y-bottom stress from the ocean to the seafloor [kg L Z T-2 m-3 ~&gt; Pa] </p>
+<p>frictional y-bottom stress from the ocean to the seafloor [R L Z T-2 ~&gt; Pa] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__dynamics__split__RK2_8F90_source.html#l00128">128</a> of file <a class="el" href="MOM__dynamics__split__RK2_8F90_source.html">MOM_dynamics_split_RK2.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: tauy_bot =&gt; null() <span class="comment">!&lt; frictional y-bottom stress from the ocean</span></div>
@@ -1540,7 +1540,7 @@ Public variables and constants</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/core/<a class="el" href="MOM__dynamics__split__RK2_8F90_source.html">MOM_dynamics_split_RK2.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/core/<a class="el" href="MOM__dynamics__split__RK2_8F90_source.html">MOM_dynamics_split_RK2.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

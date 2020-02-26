@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/core/MOM.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/core/MOM.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('MOM_8F90.html','');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM_8F90__incl.svg" width="194" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM_8F90__incl.svg" width="222" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -137,6 +137,9 @@ Modules</h2></td></tr>
 <tr class="memitem:a50edf00aa5998073d2db0360949253ba"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom.html#a50edf00aa5998073d2db0360949253ba">mom::id_clock_diabatic</a></td></tr>
 <tr class="memdesc:a50edf00aa5998073d2db0360949253ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPU time clock IDs.  <a href="namespacemom.html#a50edf00aa5998073d2db0360949253ba">More...</a><br /></td></tr>
 <tr class="separator:a50edf00aa5998073d2db0360949253ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af865d838388a05163e8de8d266316d5f"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom.html#af865d838388a05163e8de8d266316d5f">mom::id_clock_adiabatic</a></td></tr>
+<tr class="memdesc:af865d838388a05163e8de8d266316d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPU time clock IDs.  <a href="namespacemom.html#af865d838388a05163e8de8d266316d5f">More...</a><br /></td></tr>
+<tr class="separator:af865d838388a05163e8de8d266316d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa512b2d8dd73b02634e772701be07a87"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom.html#aa512b2d8dd73b02634e772701be07a87">mom::id_clock_continuity</a></td></tr>
 <tr class="memdesc:aa512b2d8dd73b02634e772701be07a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPU time clock IDs.  <a href="namespacemom.html#aa512b2d8dd73b02634e772701be07a87">More...</a><br /></td></tr>
 <tr class="separator:aa512b2d8dd73b02634e772701be07a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,9 +179,9 @@ Modules</h2></td></tr>
 <tr class="memitem:a2ab767469f0d918b9e479d8e0fde44b0"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom.html#a2ab767469f0d918b9e479d8e0fde44b0">mom::id_clock_offline_tracer</a></td></tr>
 <tr class="memdesc:a2ab767469f0d918b9e479d8e0fde44b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPU time clock IDs.  <a href="namespacemom.html#a2ab767469f0d918b9e479d8e0fde44b0">More...</a><br /></td></tr>
 <tr class="separator:a2ab767469f0d918b9e479d8e0fde44b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a972730596703580d4646320f2c9085a5"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom.html#a972730596703580d4646320f2c9085a5">mom::step_mom</a> (forces, fluxes, sfc_state, Time_start, time_interval, CS, Waves, do_dynamics, do_thermodynamics, start_cycle, end_cycle, cycle_length, reset_therm)</td></tr>
-<tr class="memdesc:a972730596703580d4646320f2c9085a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to one of the step_MOM_dyn_...routines. The action of lateral processes on tracers occur in calls to advect_tracer and tracer_hordiff. Vertical mixing and possibly remapping occur inside of diabatic.  <a href="namespacemom.html#a972730596703580d4646320f2c9085a5">More...</a><br /></td></tr>
-<tr class="separator:a972730596703580d4646320f2c9085a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55f786e26bcd3445a7224f2fad54f7e"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom.html#ad55f786e26bcd3445a7224f2fad54f7e">mom::step_mom</a> (forces, fluxes, sfc_state, Time_start, time_int_in, CS, Waves, do_dynamics, do_thermodynamics, start_cycle, end_cycle, cycle_length, reset_therm)</td></tr>
+<tr class="memdesc:ad55f786e26bcd3445a7224f2fad54f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to one of the step_MOM_dyn_...routines. The action of lateral processes on tracers occur in calls to advect_tracer and tracer_hordiff. Vertical mixing and possibly remapping occur inside of diabatic.  <a href="namespacemom.html#ad55f786e26bcd3445a7224f2fad54f7e">More...</a><br /></td></tr>
+<tr class="separator:ad55f786e26bcd3445a7224f2fad54f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42ee7e91ffcf1340679e29ab28d9b41d"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom.html#a42ee7e91ffcf1340679e29ab28d9b41d">mom::step_mom_dynamics</a> (forces, p_surf_begin, p_surf_end, dt, dt_thermo, bbl_time_int, CS, Time_local, Waves)</td></tr>
 <tr class="memdesc:a42ee7e91ffcf1340679e29ab28d9b41d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time step the ocean dynamics, including the momentum and continuity equations.  <a href="namespacemom.html#a42ee7e91ffcf1340679e29ab28d9b41d">More...</a><br /></td></tr>
 <tr class="separator:a42ee7e91ffcf1340679e29ab28d9b41d"><td class="memSeparator" colspan="2">&#160;</td></tr>

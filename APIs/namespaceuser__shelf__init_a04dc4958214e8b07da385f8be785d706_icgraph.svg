@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 857;
+var viewWidth = 824;
 var viewHeight = 39;
 var sectionId = 'dynsection-5';
 </script>
@@ -54,14 +54,14 @@ var sectionId = 'dynsection-5';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>user_shelf_init::write_user_log</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-35 853,-35 853,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-35 820,-35 820,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="This subroutine writes out the user ice shelf code version number to the model log.">
-<polygon fill="#bfbfbf" stroke="#000000" points="737,-.5 737,-30.5 849,-30.5 849,-.5 737,-.5"/>
-<text text-anchor="start" x="745" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">user_shelf_init::write</text>
-<text text-anchor="middle" x="793" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_user_log</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="709,-.5 709,-30.5 816,-30.5 816,-.5 709,-.5"/>
+<text text-anchor="start" x="717" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">user_shelf_init::write</text>
+<text text-anchor="middle" x="762.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_user_log</text>
 </a>
 </g>
 </g>
@@ -69,80 +69,80 @@ var sectionId = 'dynsection-5';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespaceuser__shelf__init.html#abfa7467860df5279c0c9f95d79cb51cf" target="_top" xlink:title="This subroutine sets up the initial mass and area covered by the ice shelf, based on user&#45;provided co...">
-<polygon fill="#ffffff" stroke="#000000" points="582,-.5 582,-30.5 701,-30.5 701,-.5 582,-.5"/>
-<text text-anchor="start" x="590" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">user_shelf_init::user</text>
-<text text-anchor="middle" x="641.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_initialize_shelf_mass</text>
+<polygon fill="#ffffff" stroke="#000000" points="560,-.5 560,-30.5 673,-30.5 673,-.5 560,-.5"/>
+<text text-anchor="start" x="568" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">user_shelf_init::user</text>
+<text text-anchor="middle" x="616.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_initialize_shelf_mass</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M726.3853,-15.5C717.9355,-15.5 709.3318,-15.5 701.0031,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="726.587,-19.0001 736.587,-15.5 726.587,-12.0001 726.587,-19.0001"/>
+<path fill="none" stroke="#191970" d="M698.7973,-15.5C690.3688,-15.5 681.7721,-15.5 673.4668,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="698.9641,-19.0001 708.964,-15.5 698.964,-12.0001 698.9641,-19.0001"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespaceuser__shelf__init.html#a2e30414d0486dbf423978be7eea677bd" target="_top" xlink:title="This subroutine updates the ice shelf thickness, as specified by user&#45;provided code.">
-<polygon fill="#ffffff" stroke="#000000" points="436,-.5 436,-30.5 546,-30.5 546,-.5 436,-.5"/>
-<text text-anchor="start" x="444" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">user_shelf_init::user</text>
-<text text-anchor="middle" x="491" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_init_ice_thickness</text>
+<polygon fill="#ffffff" stroke="#000000" points="420,-.5 420,-30.5 524,-30.5 524,-.5 420,-.5"/>
+<text text-anchor="start" x="428" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">user_shelf_init::user</text>
+<text text-anchor="middle" x="472" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_init_ice_thickness</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M571.3922,-15.5C562.9768,-15.5 554.4752,-15.5 546.3111,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="571.586,-19.0001 581.586,-15.5 571.5859,-12.0001 571.586,-19.0001"/>
+<path fill="none" stroke="#191970" d="M549.545,-15.5C541.0685,-15.5 532.4942,-15.5 524.2923,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="549.8045,-19.0001 559.8045,-15.5 549.8045,-12.0001 549.8045,-19.0001"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__ice__shelf__initialize.html#a1a45ca83d02a01108e202584a95e7527" target="_top" xlink:title="Initialize ice shelf thickness.">
-<polygon fill="#ffffff" stroke="#000000" points="269,-.5 269,-30.5 400,-30.5 400,-.5 269,-.5"/>
-<text text-anchor="start" x="277" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_ice_shelf_initialize</text>
-<text text-anchor="middle" x="334.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::initialize_ice_thickness</text>
+<polygon fill="#ffffff" stroke="#000000" points="261,-.5 261,-30.5 384,-30.5 384,-.5 261,-.5"/>
+<text text-anchor="start" x="269" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_ice_shelf_initialize</text>
+<text text-anchor="middle" x="322.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::initialize_ice_thickness</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M425.6701,-15.5C417.2397,-15.5 408.6035,-15.5 400.1677,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="425.824,-19.0001 435.824,-15.5 425.8239,-12.0001 425.824,-19.0001"/>
+<path fill="none" stroke="#191970" d="M409.6167,-15.5C401.2292,-15.5 392.628,-15.5 384.2515,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="409.7122,-19.0001 419.7122,-15.5 409.7121,-12.0001 409.7122,-19.0001"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__ice__shelf.html#a5990f9918493ff4984245eac74e5f4d9" target="_top" xlink:title="Initializes shelf model data, parameters and diagnostics.">
-<polygon fill="#ffffff" stroke="#000000" points="104,-.5 104,-30.5 233,-30.5 233,-.5 104,-.5"/>
-<text text-anchor="start" x="112" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_ice_shelf::initialize</text>
-<text text-anchor="middle" x="168.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_ice_shelf</text>
+<polygon fill="#ffffff" stroke="#000000" points="101,-.5 101,-30.5 225,-30.5 225,-.5 101,-.5"/>
+<text text-anchor="start" x="109" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_ice_shelf::initialize</text>
+<text text-anchor="middle" x="163" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_ice_shelf</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M258.8583,-15.5C250.2499,-15.5 241.5352,-15.5 233.0884,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="258.8924,-19.0001 268.8924,-15.5 258.8924,-12.0001 258.8924,-19.0001"/>
+<path fill="none" stroke="#191970" d="M250.815,-15.5C242.2108,-15.5 233.4801,-15.5 225.029,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="250.8332,-19.0001 260.8331,-15.5 250.8331,-12.0001 250.8332,-19.0001"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="0,-6 0,-25 68,-25 68,-6 0,-6"/>
-<text text-anchor="middle" x="34" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_main</text>
+<polygon fill="#ffffff" stroke="#000000" points="0,-6 0,-25 65,-25 65,-6 0,-6"/>
+<text text-anchor="middle" x="32.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_main</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M93.5943,-15.5C84.7579,-15.5 76.1,-15.5 68.2418,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="93.6139,-19.0001 103.6138,-15.5 93.6138,-12.0001 93.6139,-19.0001"/>
+<path fill="none" stroke="#191970" d="M90.6869,-15.5C81.758,-15.5 73.0075,-15.5 65.115,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="90.8076,-19.0001 100.8076,-15.5 90.8076,-12.0001 90.8076,-19.0001"/>
 </g>
 </g>
 </svg>

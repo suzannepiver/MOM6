@@ -9,6 +9,6 @@ digraph "mom_surface_forcing_nuopc::ice_ocean_boundary_type"
   Node2 [label="coupler_2d_bc_type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" wind_stagger\nxtype" ,fontname="Helvetica"];
   Node3 [label="integer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
-  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fprec\nsalt_flux\ncalving_hflx\nv_flux\nrunoff_hflx\nrunoff\nseaice_melt\l_heat\nu_flux\nseaice_melt\nt_flux\n..." ,fontname="Helvetica"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fprec\nsalt_flux\nlrunoff\nv_flux\nseaice_melt\l_heat\nu_flux\nseaice_melt\nt_flux\nice_rigidity\narea_berg\n..." ,fontname="Helvetica"];
   Node4 [label="real",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
 }

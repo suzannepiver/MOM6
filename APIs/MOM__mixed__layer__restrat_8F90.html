@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/parameterizations/lateral/MOM_mixed_layer_restrat.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/lateral/MOM_mixed_layer_restrat.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('MOM__mixed__layer__restrat_8F90.html',
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_mixed_layer_restrat.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__mixed__layer__restrat_8F90__incl.svg" width="278" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__mixed__layer__restrat_8F90__incl.svg" width="255" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -127,12 +127,12 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a9dfb1879cd5a1ef890f3fc329f961ea0"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__mixed__layer__restrat.html#a9dfb1879cd5a1ef890f3fc329f961ea0">mom_mixed_layer_restrat::mixedlayer_restrat</a> (h, uhtr, vhtr, tv, forces, dt, MLD, VarMix, G, GV, US, CS)</td></tr>
 <tr class="memdesc:a9dfb1879cd5a1ef890f3fc329f961ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver for the mixed-layer restratification parameterization. The code branches between two different implementations depending on whether the bulk-mixed layer or a general coordinate are in use.  <a href="namespacemom__mixed__layer__restrat.html#a9dfb1879cd5a1ef890f3fc329f961ea0">More...</a><br /></td></tr>
 <tr class="separator:a9dfb1879cd5a1ef890f3fc329f961ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8943343fe1a6f75f81034a26b39be83"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__mixed__layer__restrat.html#ae8943343fe1a6f75f81034a26b39be83">mom_mixed_layer_restrat::mixedlayer_restrat_general</a> (h, uhtr, vhtr, tv, forces, dt_in_T, MLD_in, VarMix, G, GV, US, CS)</td></tr>
-<tr class="memdesc:ae8943343fe1a6f75f81034a26b39be83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a restratifying flow in the mixed layer.  <a href="namespacemom__mixed__layer__restrat.html#ae8943343fe1a6f75f81034a26b39be83">More...</a><br /></td></tr>
-<tr class="separator:ae8943343fe1a6f75f81034a26b39be83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49ac9987ca060155ef91a48bf7c0e212"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__mixed__layer__restrat.html#a49ac9987ca060155ef91a48bf7c0e212">mom_mixed_layer_restrat::mixedlayer_restrat_bml</a> (h, uhtr, vhtr, tv, forces, dt_in_T, G, GV, US, CS)</td></tr>
-<tr class="memdesc:a49ac9987ca060155ef91a48bf7c0e212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a restratifying flow assuming a 2-layer bulk mixed layer.  <a href="namespacemom__mixed__layer__restrat.html#a49ac9987ca060155ef91a48bf7c0e212">More...</a><br /></td></tr>
-<tr class="separator:a49ac9987ca060155ef91a48bf7c0e212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c6bee98536870b0b6c2bd317c00c684"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__mixed__layer__restrat.html#a9c6bee98536870b0b6c2bd317c00c684">mom_mixed_layer_restrat::mixedlayer_restrat_general</a> (h, uhtr, vhtr, tv, forces, dt, MLD_in, VarMix, G, GV, US, CS)</td></tr>
+<tr class="memdesc:a9c6bee98536870b0b6c2bd317c00c684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a restratifying flow in the mixed layer.  <a href="namespacemom__mixed__layer__restrat.html#a9c6bee98536870b0b6c2bd317c00c684">More...</a><br /></td></tr>
+<tr class="separator:a9c6bee98536870b0b6c2bd317c00c684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01281bf39b6fa7e469919c30c26aedb"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__mixed__layer__restrat.html#ac01281bf39b6fa7e469919c30c26aedb">mom_mixed_layer_restrat::mixedlayer_restrat_bml</a> (h, uhtr, vhtr, tv, forces, dt, G, GV, US, CS)</td></tr>
+<tr class="memdesc:ac01281bf39b6fa7e469919c30c26aedb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a restratifying flow assuming a 2-layer bulk mixed layer.  <a href="namespacemom__mixed__layer__restrat.html#ac01281bf39b6fa7e469919c30c26aedb">More...</a><br /></td></tr>
+<tr class="separator:ac01281bf39b6fa7e469919c30c26aedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89b89663722cc9047a3bb238a4bfa09a"><td class="memItemLeft" align="right" valign="top">logical function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__mixed__layer__restrat.html#a89b89663722cc9047a3bb238a4bfa09a">mom_mixed_layer_restrat::mixedlayer_restrat_init</a> (Time, G, GV, US, param_file, diag, CS, restart_CS)</td></tr>
 <tr class="memdesc:a89b89663722cc9047a3bb238a4bfa09a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the mixed layer restratification module.  <a href="namespacemom__mixed__layer__restrat.html#a89b89663722cc9047a3bb238a4bfa09a">More...</a><br /></td></tr>
 <tr class="separator:a89b89663722cc9047a3bb238a4bfa09a"><td class="memSeparator" colspan="2">&#160;</td></tr>

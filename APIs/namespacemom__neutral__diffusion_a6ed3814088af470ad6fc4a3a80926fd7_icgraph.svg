@@ -46,22 +46,22 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1372;
+var viewWidth = 1322;
 var viewHeight = 173;
-var sectionId = 'dynsection-9';
+var sectionId = 'dynsection-16';
 </script>
 <script xlink:href="svgpan.js"/>
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_neutral_diffusion::fvlsq_slope</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-168.5 1368,-168.5 1368,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-168.5 1318,-168.5 1318,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Returns the cell&#45;centered second&#45;order weighted least squares slope using three consecutive cell widt...">
-<polygon fill="#bfbfbf" stroke="#000000" points="1242,-101 1242,-131 1364,-131 1364,-101 1242,-101"/>
-<text text-anchor="start" x="1250" y="-119" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
-<text text-anchor="middle" x="1303" y="-108" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::fvlsq_slope</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="1199,-101 1199,-131 1314,-131 1314,-101 1199,-101"/>
+<text text-anchor="start" x="1207" y="-119" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
+<text text-anchor="middle" x="1256.5" y="-108" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::fvlsq_slope</text>
 </a>
 </g>
 </g>
@@ -69,210 +69,210 @@ var sectionId = 'dynsection-9';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__neutral__diffusion.html#ac211ae488cb6e3c6685df85d24ecd0dd" target="_top" xlink:title="Returns PLM slopes for a column where the slopes are the difference in value across each cell....">
-<polygon fill="#ffffff" stroke="#000000" points="1084,-79 1084,-109 1206,-109 1206,-79 1084,-79"/>
-<text text-anchor="start" x="1092" y="-97" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
-<text text-anchor="middle" x="1145" y="-86" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::plm_diff</text>
+<polygon fill="#ffffff" stroke="#000000" points="1048,-79 1048,-109 1163,-109 1163,-79 1048,-79"/>
+<text text-anchor="start" x="1056" y="-97" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
+<text text-anchor="middle" x="1105.5" y="-86" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::plm_diff</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M1231.9145,-106.102C1223.3268,-104.9063 1214.6132,-103.693 1206.185,-102.5194"/>
-<polygon fill="#191970" stroke="#191970" points="1231.5259,-109.5816 1241.9131,-107.4942 1232.4913,-102.6485 1231.5259,-109.5816"/>
+<path fill="none" stroke="#191970" d="M1188.9481,-106.158C1180.3221,-104.9012 1171.5562,-103.6241 1163.1075,-102.3931"/>
+<polygon fill="#191970" stroke="#191970" points="1188.5825,-109.6416 1198.9826,-107.62 1189.5917,-102.7147 1188.5825,-109.6416"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
 <g id="a_node13"><a xlink:href="namespacemom__neutral__diffusion.html#ad964ab49cd5901b79dc32f2367d24aed" target="_top" xlink:title="Returns true if a test of fvlsq_slope() fails, and conditionally writes results to stream.">
-<polygon fill="#ffffff" stroke="#000000" points="926,-134 926,-164 1048,-164 1048,-134 926,-134"/>
-<text text-anchor="start" x="934" y="-152" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
-<text text-anchor="middle" x="987" y="-141" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::test_fvlsq_slope</text>
+<polygon fill="#ffffff" stroke="#000000" points="897,-134 897,-164 1012,-164 1012,-134 897,-134"/>
+<text text-anchor="start" x="905" y="-152" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
+<text text-anchor="middle" x="954.5" y="-141" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::test_fvlsq_slope</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node13 -->
 <g id="edge14" class="edge">
 <title>Node1&#45;&gt;Node13</title>
-<path fill="none" stroke="#191970" d="M1231.6265,-123.4536C1176.3614,-129.2249 1100.6299,-137.1336 1048.1321,-142.616"/>
-<polygon fill="#191970" stroke="#191970" points="1232.115,-126.9217 1241.6973,-122.4019 1231.3879,-119.9595 1232.115,-126.9217"/>
+<path fill="none" stroke="#191970" d="M1188.966,-123.3795C1135.7883,-129.1904 1062.4733,-137.2016 1012.0572,-142.7106"/>
+<polygon fill="#191970" stroke="#191970" points="1189.4247,-126.8504 1198.9853,-122.2847 1188.6642,-119.8918 1189.4247,-126.8504"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__neutral__diffusion.html#aec9b89b6a5ddc81f102309b964a0b969" target="_top" xlink:title="Returns interface scalar, Si, for a column of layer values, S.">
-<polygon fill="#ffffff" stroke="#000000" points="926,-77 926,-107 1048,-107 1048,-77 926,-77"/>
-<text text-anchor="start" x="934" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
-<text text-anchor="middle" x="987" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::interface_scalar</text>
+<polygon fill="#ffffff" stroke="#000000" points="897,-77 897,-107 1012,-107 1012,-77 897,-77"/>
+<text text-anchor="start" x="905" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
+<text text-anchor="middle" x="954.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::interface_scalar</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M1073.6344,-93.0966C1065.1375,-92.9891 1056.5216,-92.88 1048.185,-92.7745"/>
-<polygon fill="#191970" stroke="#191970" points="1073.8695,-96.5998 1083.9131,-93.2267 1073.9582,-89.6004 1073.8695,-96.5998"/>
+<path fill="none" stroke="#191970" d="M1037.9481,-93.1053C1029.3221,-92.991 1020.5562,-92.8749 1012.1075,-92.763"/>
+<polygon fill="#191970" stroke="#191970" points="1037.9371,-96.6053 1047.9826,-93.2382 1038.0299,-89.606 1037.9371,-96.6053"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__neutral__diffusion.html#a9aaf0988f76c9992d8f1db48ce23bf34" target="_top" xlink:title="Returns true if unit tests of neutral_diffusion functions fail. Otherwise returns false.">
-<polygon fill="#ffffff" stroke="#000000" points="582,-105 582,-135 731,-135 731,-105 582,-105"/>
-<text text-anchor="start" x="590" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
-<text text-anchor="middle" x="656.5" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::ndiff_unit_tests_continuous</text>
+<polygon fill="#ffffff" stroke="#000000" points="566,-105 566,-135 708,-135 708,-105 566,-105"/>
+<text text-anchor="start" x="574" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
+<text text-anchor="middle" x="637" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::ndiff_unit_tests_continuous</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M915.7259,-98.0384C861.2367,-102.6547 786.3275,-109.001 731.0433,-113.6847"/>
-<polygon fill="#191970" stroke="#191970" points="916.3272,-101.5 925.9961,-97.1683 915.7363,-94.525 916.3272,-101.5"/>
+<path fill="none" stroke="#191970" d="M886.4022,-98.0055C833.8521,-102.6398 761.3687,-109.0321 708.0829,-113.7313"/>
+<polygon fill="#191970" stroke="#191970" points="886.9809,-101.4681 896.6348,-97.1031 886.366,-94.4952 886.9809,-101.4681"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="namespacemom__neutral__diffusion.html#a912fd9a78666e8ad1001ee0a06e03d9a" target="_top" xlink:title="Calculate remapping factors for u/v columns used to map adjoining columns to a shared coordinate spac...">
-<polygon fill="#ffffff" stroke="#000000" points="767,-.5 767,-41.5 890,-41.5 890,-.5 767,-.5"/>
-<text text-anchor="start" x="775" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
-<text text-anchor="start" x="775" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::neutral_diffusion_calc</text>
-<text text-anchor="middle" x="828.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_coeffs</text>
+<g id="a_node9"><a xlink:href="namespacemom__neutral__diffusion.html#a572a6c3f71eec3adb740a788b4ac21bd" target="_top" xlink:title="Calculate remapping factors for u/v columns used to map adjoining columns to a shared coordinate spac...">
+<polygon fill="#ffffff" stroke="#000000" points="744,-.5 744,-41.5 861,-41.5 861,-.5 744,-.5"/>
+<text text-anchor="start" x="752" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
+<text text-anchor="start" x="752" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::neutral_diffusion_calc</text>
+<text text-anchor="middle" x="802.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_coeffs</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node3&#45;&gt;Node9</title>
-<path fill="none" stroke="#191970" d="M944.1364,-72.7993C922.5563,-63.1325 896.3785,-51.4061 874.3913,-41.557"/>
-<polygon fill="#191970" stroke="#191970" points="942.8292,-76.0488 953.3862,-76.9427 945.6909,-69.6604 942.8292,-76.0488"/>
+<path fill="none" stroke="#191970" d="M913.1155,-72.6691C892.474,-63.0273 867.5003,-51.362 846.5093,-41.557"/>
+<polygon fill="#191970" stroke="#191970" points="911.7231,-75.8817 922.2647,-76.9427 914.6857,-69.5394 911.7231,-75.8817"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
 <g id="a_node11"><a xlink:href="namespacemom__neutral__diffusion.html#aa394289328ee392cdb17000fb6fa90e8" target="_top" xlink:title="Returns a single column of neutral diffusion fluxes of a tracer.">
-<polygon fill="#ffffff" stroke="#000000" points="767.5,-61 767.5,-91 889.5,-91 889.5,-61 767.5,-61"/>
-<text text-anchor="start" x="775.5" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
-<text text-anchor="middle" x="828.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::neutral_surface_flux</text>
+<polygon fill="#ffffff" stroke="#000000" points="745,-61 745,-91 860,-91 860,-61 745,-61"/>
+<text text-anchor="start" x="753" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
+<text text-anchor="middle" x="802.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::neutral_surface_flux</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node11 -->
 <g id="edge10" class="edge">
 <title>Node3&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M915.6146,-84.7939C906.9353,-83.9178 898.1288,-83.0288 889.6173,-82.1696"/>
-<polygon fill="#191970" stroke="#191970" points="915.4188,-88.2918 925.7198,-85.814 916.1219,-81.3272 915.4188,-88.2918"/>
+<path fill="none" stroke="#191970" d="M886.4285,-84.8346C877.683,-83.914 868.7959,-82.9785 860.2373,-82.0776"/>
+<polygon fill="#191970" stroke="#191970" points="886.2902,-88.3393 896.6017,-85.9054 887.0231,-81.3777 886.2902,-88.3393"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__neutral__diffusion.html#a6f91c93a6363fb39395796420f25fad2" target="_top" xlink:title="Returns true if unit tests of neutral_diffusion functions fail. Otherwise returns false.">
-<polygon fill="#ffffff" stroke="#000000" points="397,-105 397,-135 546,-135 546,-105 397,-105"/>
-<text text-anchor="start" x="405" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
-<text text-anchor="middle" x="471.5" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::neutral_diffusion_unit_tests</text>
+<polygon fill="#ffffff" stroke="#000000" points="388,-105 388,-135 530,-135 530,-105 388,-105"/>
+<text text-anchor="start" x="396" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
+<text text-anchor="middle" x="459" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::neutral_diffusion_unit_tests</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M571.5317,-120C563.0744,-120 554.5325,-120 546.1915,-120"/>
-<polygon fill="#191970" stroke="#191970" points="571.7867,-123.5001 581.7867,-120 571.7866,-116.5001 571.7867,-123.5001"/>
+<path fill="none" stroke="#191970" d="M555.8298,-120C547.2112,-120 538.494,-120 530.0047,-120"/>
+<polygon fill="#191970" stroke="#191970" points="555.8823,-123.5001 565.8823,-120 555.8823,-116.5001 555.8823,-123.5001"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="namespacemom__unit__tests.html#a57645db02bc734c32de50d028ef906ac" target="_top" xlink:title="Calls unit tests for other modules. Note that if a unit test returns true, a FATAL error is triggered...">
-<polygon fill="#ffffff" stroke="#000000" points="250,-105 250,-135 361,-135 361,-105 250,-105"/>
-<text text-anchor="start" x="258" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_unit_tests::unit</text>
-<text text-anchor="middle" x="305.5" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_tests</text>
+<polygon fill="#ffffff" stroke="#000000" points="244,-105 244,-135 352,-135 352,-105 244,-105"/>
+<text text-anchor="start" x="252" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_unit_tests::unit</text>
+<text text-anchor="middle" x="298" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_tests</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M386.7032,-120C378.1315,-120 369.5853,-120 361.4307,-120"/>
-<polygon fill="#191970" stroke="#191970" points="386.7555,-123.5001 396.7554,-120 386.7554,-116.5001 386.7555,-123.5001"/>
+<path fill="none" stroke="#191970" d="M377.7789,-120C369.1289,-120 360.49,-120 352.2618,-120"/>
+<polygon fill="#191970" stroke="#191970" points="377.9144,-123.5001 387.9144,-120 377.9144,-116.5001 377.9144,-123.5001"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="namespacemom.html#a96708b16215666edbfa5b46228f3a200" target="_top" xlink:title="Initialize MOM, including memory allocation, setting up parameters and diagnostics,...">
-<polygon fill="#ffffff" stroke="#000000" points="104,-110.5 104,-129.5 214,-129.5 214,-110.5 104,-110.5"/>
-<text text-anchor="middle" x="159" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom::initialize_mom</text>
+<polygon fill="#ffffff" stroke="#000000" points="101,-110.5 101,-129.5 208,-129.5 208,-110.5 101,-110.5"/>
+<text text-anchor="middle" x="154.5" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom::initialize_mom</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M239.4734,-120C231.0141,-120 222.4251,-120 214.1636,-120"/>
-<polygon fill="#191970" stroke="#191970" points="239.6967,-123.5001 249.6967,-120 239.6967,-116.5001 239.6967,-123.5001"/>
+<path fill="none" stroke="#191970" d="M233.5691,-120C225.1423,-120 216.5794,-120 208.3519,-120"/>
+<polygon fill="#191970" stroke="#191970" points="233.7488,-123.5001 243.7488,-120 233.7488,-116.5001 233.7488,-123.5001"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="0,-110.5 0,-129.5 68,-129.5 68,-110.5 0,-110.5"/>
-<text text-anchor="middle" x="34" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_main</text>
+<polygon fill="#ffffff" stroke="#000000" points="0,-110.5 0,-129.5 65,-129.5 65,-110.5 0,-110.5"/>
+<text text-anchor="middle" x="32.5" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_main</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M93.7848,-120C84.8995,-120 76.0876,-120 68.0691,-120"/>
-<polygon fill="#191970" stroke="#191970" points="93.8094,-123.5001 103.8093,-120 93.8093,-116.5001 93.8094,-123.5001"/>
+<path fill="none" stroke="#191970" d="M90.9603,-120C82.0691,-120 73.2499,-120 65.2602,-120"/>
+<polygon fill="#191970" stroke="#191970" points="90.9891,-123.5001 100.989,-120 90.989,-116.5001 90.9891,-123.5001"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
 <g id="a_node10"><a xlink:href="namespacemom__tracer__hor__diff.html#a098229e37012e7bd93d13036bfc864ac" target="_top" xlink:title="Compute along&#45;coordinate diffusion of all tracers using the diffusivity in CSKhTr,...">
-<polygon fill="#ffffff" stroke="#000000" points="414,-34 414,-64 529,-64 529,-34 414,-34"/>
-<text text-anchor="start" x="422" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_tracer_hor_diff</text>
-<text text-anchor="middle" x="471.5" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::tracer_hordiff</text>
+<polygon fill="#ffffff" stroke="#000000" points="406,-34 406,-64 512,-64 512,-34 406,-34"/>
+<text text-anchor="start" x="414" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_tracer_hor_diff</text>
+<text text-anchor="middle" x="459" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::tracer_hordiff</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node10 -->
 <g id="edge9" class="edge">
 <title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="#191970" d="M756.6762,-26.6332C689.7576,-31.8818 591.2471,-39.6081 529.2748,-44.4686"/>
-<polygon fill="#191970" stroke="#191970" points="757.0272,-30.1166 766.7229,-25.8453 756.4798,-23.138 757.0272,-30.1166"/>
+<path fill="none" stroke="#191970" d="M733.6391,-26.6131C668.3286,-31.9368 571.5815,-39.823 512.0581,-44.675"/>
+<polygon fill="#191970" stroke="#191970" points="734.158,-30.0825 743.8405,-25.7816 733.5892,-23.1057 734.158,-30.0825"/>
 </g>
 <!-- Node11&#45;&gt;Node4 -->
 <g id="edge11" class="edge">
 <title>Node11&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M759.7229,-93.5941C744.9892,-97.3632 729.5521,-101.3122 715.2388,-104.9738"/>
-<polygon fill="#191970" stroke="#191970" points="760.9678,-96.8885 769.7884,-91.0192 759.233,-90.1068 760.9678,-96.8885"/>
+<path fill="none" stroke="#191970" d="M736.3221,-93.5941C722.1451,-97.3632 707.2914,-101.3122 693.519,-104.9738"/>
+<polygon fill="#191970" stroke="#191970" points="737.2422,-96.9712 746.0072,-91.0192 735.4436,-90.2062 737.2422,-96.9712"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
 <g id="a_node12"><a xlink:href="namespacemom__neutral__diffusion.html#a5469b7be43f8c428f092b58dd5ca41c8" target="_top" xlink:title="Update tracer concentration due to neutral diffusion; layer thickness unchanged by this update.">
-<polygon fill="#ffffff" stroke="#000000" points="595.5,-55 595.5,-85 717.5,-85 717.5,-55 595.5,-55"/>
-<text text-anchor="start" x="603.5" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
-<text text-anchor="middle" x="656.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::neutral_diffusion</text>
+<polygon fill="#ffffff" stroke="#000000" points="579.5,-55 579.5,-85 694.5,-85 694.5,-55 579.5,-55"/>
+<text text-anchor="start" x="587.5" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_neutral_diffusion</text>
+<text text-anchor="middle" x="637" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::neutral_diffusion</text>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node12 -->
 <g id="edge12" class="edge">
 <title>Node11&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M757.0242,-73.5067C743.9649,-73.0511 730.4455,-72.5795 717.7178,-72.1355"/>
-<polygon fill="#191970" stroke="#191970" points="757.259,-77.0169 767.3749,-73.8677 757.5031,-70.0211 757.259,-77.0169"/>
+<path fill="none" stroke="#191970" d="M734.5824,-73.5377C721.2958,-73.056 707.4819,-72.5552 694.5717,-72.0872"/>
+<polygon fill="#191970" stroke="#191970" points="734.4959,-77.0368 744.6161,-73.9015 734.7495,-70.0414 734.4959,-77.0368"/>
 </g>
 <!-- Node12&#45;&gt;Node10 -->
 <g id="edge13" class="edge">
 <title>Node12&#45;&gt;Node10</title>
-<path fill="none" stroke="#191970" d="M585.2311,-61.91C566.646,-59.8004 546.8522,-57.5535 529.0754,-55.5356"/>
-<polygon fill="#191970" stroke="#191970" points="585.0804,-65.4153 595.4114,-63.0656 585.87,-58.46 585.0804,-65.4153"/>
+<path fill="none" stroke="#191970" d="M569.1999,-62.0011C550.3557,-59.7779 530.1652,-57.3959 512.2815,-55.286"/>
+<polygon fill="#191970" stroke="#191970" points="568.8673,-65.4861 579.2085,-63.1819 569.6875,-58.5343 568.8673,-65.4861"/>
 </g>
 <!-- Node13&#45;&gt;Node4 -->
 <g id="edge15" class="edge">
 <title>Node13&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M915.7259,-142.746C861.2367,-137.9648 786.3275,-131.3918 731.0433,-126.5409"/>
-<polygon fill="#191970" stroke="#191970" points="915.7284,-146.2596 925.9961,-143.6472 916.3403,-139.2864 915.7284,-146.2596"/>
+<path fill="none" stroke="#191970" d="M886.4022,-142.78C833.8521,-137.9802 761.3687,-131.3597 708.0829,-126.4926"/>
+<polygon fill="#191970" stroke="#191970" points="886.3579,-146.2905 896.6348,-143.7147 886.9946,-139.3195 886.3579,-146.2905"/>
 </g>
 </g>
 </svg>

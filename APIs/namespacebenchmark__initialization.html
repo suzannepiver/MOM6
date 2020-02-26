@@ -108,13 +108,13 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a9a10f959b541746637eadb04ccb50146"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebenchmark__initialization.html#a9a10f959b541746637eadb04ccb50146">benchmark_initialize_thickness</a> (h, G, GV, US, param_file, eqn_of_state, P_ref, just_read_params)</td></tr>
 <tr class="memdesc:a9a10f959b541746637eadb04ccb50146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes layer thicknesses for the benchmark test case, by finding the depths of interfaces in a specified latitude-dependent temperature profile with an exponentially decaying thermocline on top of a linear stratification.  <a href="namespacebenchmark__initialization.html#a9a10f959b541746637eadb04ccb50146">More...</a><br /></td></tr>
 <tr class="separator:a9a10f959b541746637eadb04ccb50146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a39d2e2cd61ba51e98a05369d7461fd"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebenchmark__initialization.html#a4a39d2e2cd61ba51e98a05369d7461fd">benchmark_init_temperature_salinity</a> (T, S, G, GV, param_file, eqn_of_state, P_Ref, just_read_params)</td></tr>
-<tr class="memdesc:a4a39d2e2cd61ba51e98a05369d7461fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes layer temperatures and salinities for benchmark.  <a href="namespacebenchmark__initialization.html#a4a39d2e2cd61ba51e98a05369d7461fd">More...</a><br /></td></tr>
-<tr class="separator:a4a39d2e2cd61ba51e98a05369d7461fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87453c99eb3531147878d61b774c91a8"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebenchmark__initialization.html#a87453c99eb3531147878d61b774c91a8">benchmark_init_temperature_salinity</a> (T, S, G, GV, US, param_file, eqn_of_state, P_Ref, just_read_params)</td></tr>
+<tr class="memdesc:a87453c99eb3531147878d61b774c91a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes layer temperatures and salinities for benchmark.  <a href="namespacebenchmark__initialization.html#a87453c99eb3531147878d61b774c91a8">More...</a><br /></td></tr>
+<tr class="separator:a87453c99eb3531147878d61b774c91a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function/Subroutine Documentation</h2>
-<a id="a4a39d2e2cd61ba51e98a05369d7461fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a39d2e2cd61ba51e98a05369d7461fd">&#9670;&nbsp;</a></span>benchmark_init_temperature_salinity()</h2>
+<a id="a87453c99eb3531147878d61b774c91a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87453c99eb3531147878d61b774c91a8">&#9670;&nbsp;</a></span>benchmark_init_temperature_salinity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -142,6 +142,12 @@ Functions/Subroutines</h2></td></tr>
           <td></td>
           <td class="paramtype">type(verticalgrid_type), intent(in)&#160;</td>
           <td class="paramname"><em>GV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">type(unit_scale_type), intent(in)&#160;</td>
+          <td class="paramname"><em>US</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -182,6 +188,7 @@ Functions/Subroutines</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">gv</td><td>The ocean's vertical grid structure. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">t</td><td>The potential temperature that is being initialized. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">s</td><td>The salinity that is being initialized. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">param_file</td><td>A structure indicating the open file to parse for model parameter values. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">eqn_of_state</td><td>integer that selects the equation of state. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p_ref</td><td>The coordinate-density reference pressure [Pa]. </td></tr>
@@ -190,84 +197,85 @@ Functions/Subroutines</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="benchmark__initialization_8F90_source.html#l00213">213</a> of file <a class="el" href="benchmark__initialization_8F90_source.html">benchmark_initialization.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type),               <span class="keywordtype">intent(in)</span>  :: G<span class="comment">            !&lt; The ocean&#39;s grid structure.</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type),             <span class="keywordtype">intent(in)</span>  :: GV<span class="comment">           !&lt; The ocean&#39;s vertical grid structure.</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G), SZK_(G))</span>, <span class="keywordtype">intent(out)</span> :: T<span class="comment">      !&lt; The potential temperature</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment">                                                                   !! that is being initialized.</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G), SZK_(G))</span>, <span class="keywordtype">intent(out)</span> :: S<span class="comment">      !&lt; The salinity that is being</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">                                                                   !! initialized.</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordtype">type</span>(param_file_type),               <span class="keywordtype">intent(in)</span>  :: param_file<span class="comment">   !&lt; A structure indicating the</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">                                                                   !! open file to parse for</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment">                                                                   !! model parameter values.</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keywordtype">type</span>(EOS_type),                      <span class="keywordtype">pointer</span>     :: eqn_of_state<span class="comment"> !&lt; integer that selects the</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment">                                                                   !! equation of state.</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keywordtype">  real</span>,                                <span class="keywordtype">intent(in)</span>  :: P_Ref<span class="comment">        !&lt; The coordinate-density</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment">                                                                   !! reference pressure [Pa].</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordtype">logical</span>,       <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>  :: just_read_params<span class="comment"> !&lt; If present and true, this call will</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment">                                                      !! only read parameters without changing h.</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="comment">! Local variables</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="keywordtype">  real</span> :: T0(SZK_(G)), S0(SZK_(G))</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="keywordtype">  real</span> :: pres(SZK_(G))      <span class="comment">! Reference pressure [kg m-3].</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="keywordtype">  real</span> :: drho_dT(SZK_(G))   <span class="comment">! Derivative of density with temperature [kg m-3 degC-1].</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keywordtype">  real</span> :: drho_dS(SZK_(G))   <span class="comment">! Derivative of density with salinity [kg m-3 ppt-1].</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="keywordtype">  real</span> :: rho_guess(SZK_(G)) <span class="comment">! Potential density at T0 &amp; S0 [kg m-3].</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="keywordtype">  real</span> :: PI        <span class="comment">! 3.1415926... calculated as 4*atan(1)</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keywordtype">  real</span> :: SST       <span class="comment">!  The initial sea surface temperature [degC].</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keywordtype">  real</span> :: lat</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordtype">logical</span> :: just_read    <span class="comment">! If true, just read parameters but set nothing.</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordtype">character(len=40)</span>  :: mdl = <span class="stringliteral">&quot;benchmark_init_temperature_salinity&quot;</span> <span class="comment">! This subroutine&#39;s name.</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, k1, is, ie, js, je, nz, itt</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec ; nz = g%ke</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  just_read = .false. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(just_read_params)) just_read = just_read_params</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keywordflow">if</span> (just_read) <span class="keywordflow">return</span> <span class="comment">! All run-time parameters have been read, so return.</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  k1 = gv%nk_rho_varies + 1</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keywordflow">do</span> k=1,nz</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    pres(k) = p_ref ; s0(k) = 35.0</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keywordflow">  enddo</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  t0(k1) = 29.0</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keyword">call </span>calculate_density(t0(k1),s0(k1),pres(k1),rho_guess(k1),eqn_of_state)</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keyword">call </span>calculate_density_derivs(t0,s0,pres,drho_dt,drho_ds,k1,1,eqn_of_state)</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">! A first guess of the layers&#39; temperatures.                         !</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keywordflow">do</span> k=1,nz</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    t0(k) = t0(k1) + (gv%Rlay(k) - rho_guess(k1)) / drho_dt(k1)</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keywordflow">  enddo</span></div>
+<p class="definition">Definition at line <a class="el" href="benchmark__initialization_8F90_source.html#l00217">217</a> of file <a class="el" href="benchmark__initialization_8F90_source.html">benchmark_initialization.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type),               <span class="keywordtype">intent(in)</span>  :: G<span class="comment">            !&lt; The ocean&#39;s grid structure.</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type),             <span class="keywordtype">intent(in)</span>  :: GV<span class="comment">           !&lt; The ocean&#39;s vertical grid structure.</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G), SZK_(G))</span>, <span class="keywordtype">intent(out)</span> :: T<span class="comment">      !&lt; The potential temperature</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">                                                                   !! that is being initialized.</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G), SZK_(G))</span>, <span class="keywordtype">intent(out)</span> :: S<span class="comment">      !&lt; The salinity that is being</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment">                                                                   !! initialized.</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),                     <span class="keywordtype">intent(in)</span>  :: US<span class="comment">     !&lt; A dimensional unit scaling type</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">type</span>(param_file_type),               <span class="keywordtype">intent(in)</span>  :: param_file<span class="comment">   !&lt; A structure indicating the</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment">                                                                   !! open file to parse for</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment">                                                                   !! model parameter values.</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordtype">type</span>(EOS_type),                      <span class="keywordtype">pointer</span>     :: eqn_of_state<span class="comment"> !&lt; integer that selects the</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">                                                                   !! equation of state.</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="keywordtype">  real</span>,                                <span class="keywordtype">intent(in)</span>  :: P_Ref<span class="comment">        !&lt; The coordinate-density</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">                                                                   !! reference pressure [Pa].</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keywordtype">logical</span>,       <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>  :: just_read_params<span class="comment"> !&lt; If present and true, this call will</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">                                                      !! only read parameters without changing h.</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="comment">! Local variables</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="keywordtype">  real</span> :: T0(SZK_(G)), S0(SZK_(G))</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keywordtype">  real</span> :: pres(SZK_(G))      <span class="comment">! Reference pressure [kg m-3].</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keywordtype">  real</span> :: drho_dT(SZK_(G))   <span class="comment">! Derivative of density with temperature [R degC-1 ~&gt; kg m-3 degC-1].</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keywordtype">  real</span> :: drho_dS(SZK_(G))   <span class="comment">! Derivative of density with salinity [R ppt-1 ~&gt; kg m-3 ppt-1].</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keywordtype">  real</span> :: rho_guess(SZK_(G)) <span class="comment">! Potential density at T0 &amp; S0 [R ~&gt; kg m-3].</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keywordtype">  real</span> :: PI        <span class="comment">! 3.1415926... calculated as 4*atan(1)</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keywordtype">  real</span> :: SST       <span class="comment">!  The initial sea surface temperature [degC].</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keywordtype">  real</span> :: lat</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keywordtype">logical</span> :: just_read    <span class="comment">! If true, just read parameters but set nothing.</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="keywordtype">character(len=40)</span>  :: mdl = <span class="stringliteral">&quot;benchmark_init_temperature_salinity&quot;</span> <span class="comment">! This subroutine&#39;s name.</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, k1, is, ie, js, je, nz, itt</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec ; nz = g%ke</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  just_read = .false. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(just_read_params)) just_read = just_read_params</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keywordflow">if</span> (just_read) <span class="keywordflow">return</span> <span class="comment">! All run-time parameters have been read, so return.</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  k1 = gv%nk_rho_varies + 1</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keywordflow">do</span> k=1,nz</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    pres(k) = p_ref ; s0(k) = 35.0</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keywordflow">  enddo</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  t0(k1) = 29.0</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="keyword">call </span>calculate_density(t0(k1),s0(k1),pres(k1),rho_guess(k1),eqn_of_state, scale=us%kg_m3_to_R)</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keyword">call </span>calculate_density_derivs(t0,s0,pres,drho_dt,drho_ds,k1,1,eqn_of_state, scale=us%kg_m3_to_R)</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">! Refine the guesses for each layer.                                 !</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">do</span> itt = 1,6</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keyword">call </span>calculate_density(t0,s0,pres,rho_guess,1,nz,eqn_of_state)</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keyword">call </span>calculate_density_derivs(t0,s0,pres,drho_dt,drho_ds,1,nz,eqn_of_state)</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">do</span> k=1,nz</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      t0(k) = t0(k) + (gv%Rlay(k) - rho_guess(k)) / drho_dt(k)</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keywordflow">  enddo</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> i=is,ie ; <span class="keywordflow">do</span> j=js,je</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    t(i,j,k) = t0(k)</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    s(i,j,k) = s0(k)</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  pi = 4.0*atan(1.0)</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keywordflow">do</span> i=is,ie ; <span class="keywordflow">do</span> j=js,je</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    sst = 0.5*(t0(k1)+t0(nz)) - 0.9*0.5*(t0(k1)-t0(nz)) * &amp;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                               cos(pi*(g%geoLatT(i,j)-g%south_lat)/(g%len_lat))</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">do</span> k=1,k1-1</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      t(i,j,k) = sst</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">! A first guess of the layers&#39; temperatures.                         !</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">do</span> k=1,nz</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    t0(k) = t0(k1) + (gv%Rlay(k) - rho_guess(k1)) / drho_dt(k1)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="keywordflow">  enddo</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">! Refine the guesses for each layer.                                 !</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="keywordflow">do</span> itt = 1,6</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">call </span>calculate_density(t0,s0,pres,rho_guess,1,nz,eqn_of_state, scale=us%kg_m3_to_R)</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keyword">call </span>calculate_density_derivs(t0,s0,pres,drho_dt,drho_ds,1,nz,eqn_of_state, scale=us%kg_m3_to_R)</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">do</span> k=1,nz</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      t0(k) = t0(k) + (gv%Rlay(k) - rho_guess(k)) / drho_dt(k)</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keywordflow">  enddo</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> i=is,ie ; <span class="keywordflow">do</span> j=js,je</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    t(i,j,k) = t0(k)</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    s(i,j,k) = s0(k)</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  pi = 4.0*atan(1.0)</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <span class="keywordflow">do</span> i=is,ie ; <span class="keywordflow">do</span> j=js,je</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    sst = 0.5*(t0(k1)+t0(nz)) - 0.9*0.5*(t0(k1)-t0(nz)) * &amp;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                               cos(pi*(g%geoLatT(i,j)-g%south_lat)/(g%len_lat))</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">do</span> k=1,k1-1</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      t(i,j,k) = sst</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="MOM__state__initialization_8F90_source.html#l00125">mom_state_initialization::mom_initialize_state()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacebenchmark__initialization_a4a39d2e2cd61ba51e98a05369d7461fd_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacebenchmark__initialization_a87453c99eb3531147878d61b774c91a8_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -375,109 +383,113 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">  real</span> :: T_int     <span class="comment">!  The initial temperature of an interface [degC].</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">  real</span> :: ML_depth  <span class="comment">!  The specified initial mixed layer depth, in depth units [Z ~&gt; m].</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">  real</span> :: thermocline_scale <span class="comment">! The e-folding scale of the thermocline, in depth units [Z ~&gt; m].</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZK_(GV))</span> :: T0, pres, S0, rho_guess, drho, drho_dT, drho_dS</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">  real</span> :: a_exp      <span class="comment">! The fraction of the overall stratification that is exponential.</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">  real</span> :: I_ts, I_md <span class="comment">! Inverse lengthscales [Z-1 ~&gt; m-1].</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">  real</span> :: T_frac     <span class="comment">! A ratio of the interface temperature to the range</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                     <span class="comment">! between SST and the bottom temperature.</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">  real</span> :: err, derr_dz  <span class="comment">! The error between the profile&#39;s temperature and the</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                     <span class="comment">! interface temperature for a given z and its derivative.</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">  real</span> :: pi, z</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">logical</span> :: just_read</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">! This include declares and sets the variable &quot;version&quot;.</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"># include &quot;version_variable.h&quot;</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor"></span>  <span class="keywordtype">character(len=40)</span>  :: mdl = <span class="stringliteral">&quot;benchmark_initialize_thickness&quot;</span> <span class="comment">! This subroutine&#39;s name.</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, k1, is, ie, js, je, nz, itt</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec ; nz = g%ke</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  just_read = .false. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(just_read_params)) just_read = just_read_params</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordflow">if</span> (.not.just_read) <span class="keyword">call </span>log_version(param_file, mdl, version, <span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;BENCHMARK_ML_DEPTH_IC&quot;</span>, ml_depth, &amp;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                 <span class="stringliteral">&quot;Initial mixed layer depth in the benchmark test case.&quot;</span>, &amp;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                 units=<span class="stringliteral">&#39;m&#39;</span>, default=50.0, scale=us%m_to_Z, do_not_log=just_read)</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;BENCHMARK_THERMOCLINE_SCALE&quot;</span>, thermocline_scale, &amp;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                 <span class="stringliteral">&quot;Initial thermocline depth scale in the benchmark test case.&quot;</span>, &amp;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                 default=500.0, units=<span class="stringliteral">&quot;m&quot;</span>, scale=us%m_to_Z, do_not_log=just_read)</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">if</span> (just_read) <span class="keywordflow">return</span> <span class="comment">! This subroutine has no run-time parameters.</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keyword">call </span>mom_mesg(<span class="stringliteral">&quot;  benchmark_initialization.F90, benchmark_initialize_thickness: setting thickness&quot;</span>, 5)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZK_(GV))</span> :: &amp;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    T0, pres, S0, &amp; <span class="comment">! drho</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    rho_guess, &amp;    <span class="comment">! Potential density at T0 &amp; S0 [R ~&gt; kg m-3].</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    drho_dT, &amp;      <span class="comment">! Derivative of density with temperature [R degC-1 ~&gt; kg m-3 degC-1].</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    drho_dS         <span class="comment">! Derivative of density with salinity [R ppt-1 ~&gt; kg m-3 ppt-1].</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">  real</span> :: a_exp     <span class="comment">! The fraction of the overall stratification that is exponential.</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">  real</span> :: I_ts, I_md <span class="comment">! Inverse lengthscales [Z-1 ~&gt; m-1].</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">  real</span> :: T_frac    <span class="comment">! A ratio of the interface temperature to the range</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                    <span class="comment">! between SST and the bottom temperature.</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">  real</span> :: err, derr_dz  <span class="comment">! The error between the profile&#39;s temperature and the</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                    <span class="comment">! interface temperature for a given z and its derivative.</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">  real</span> :: pi, z</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">logical</span> :: just_read</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="comment">! This include declares and sets the variable &quot;version&quot;.</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor"># include &quot;version_variable.h&quot;</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor"></span>  <span class="keywordtype">character(len=40)</span>  :: mdl = <span class="stringliteral">&quot;benchmark_initialize_thickness&quot;</span> <span class="comment">! This subroutine&#39;s name.</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, k1, is, ie, js, je, nz, itt</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec ; nz = g%ke</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  just_read = .false. ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(just_read_params)) just_read = just_read_params</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordflow">if</span> (.not.just_read) <span class="keyword">call </span>log_version(param_file, mdl, version, <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;BENCHMARK_ML_DEPTH_IC&quot;</span>, ml_depth, &amp;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                 <span class="stringliteral">&quot;Initial mixed layer depth in the benchmark test case.&quot;</span>, &amp;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                 units=<span class="stringliteral">&#39;m&#39;</span>, default=50.0, scale=us%m_to_Z, do_not_log=just_read)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;BENCHMARK_THERMOCLINE_SCALE&quot;</span>, thermocline_scale, &amp;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                 <span class="stringliteral">&quot;Initial thermocline depth scale in the benchmark test case.&quot;</span>, &amp;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                 default=500.0, units=<span class="stringliteral">&quot;m&quot;</span>, scale=us%m_to_Z, do_not_log=just_read)</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  k1 = gv%nk_rho_varies + 1</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordflow">if</span> (just_read) <span class="keywordflow">return</span> <span class="comment">! This subroutine has no run-time parameters.</span></div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  a_exp = 0.9</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keyword">call </span>mom_mesg(<span class="stringliteral">&quot;  benchmark_initialization.F90, benchmark_initialize_thickness: setting thickness&quot;</span>, 5)</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">! This block calculates T0(k) for the purpose of diagnosing where the</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">! interfaces will be found.</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordflow">do</span> k=1,nz</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    pres(k) = p_ref ; s0(k) = 35.0</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keywordflow">  enddo</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  t0(k1) = 29.0</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keyword">call </span>calculate_density(t0(k1), s0(k1), pres(k1), rho_guess(k1), eqn_of_state)</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keyword">call </span>calculate_density_derivs(t0, s0, pres, drho_dt, drho_ds, k1, 1, eqn_of_state)</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">! A first guess of the layers&#39; temperatures.</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordflow">do</span> k=1,nz</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    t0(k) = t0(k1) + (gv%Rlay(k) - rho_guess(k1)) / drho_dt(k1)</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keywordflow">  enddo</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">! Refine the guesses for each layer.</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordflow">do</span> itt=1,6</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keyword">call </span>calculate_density(t0, s0, pres, rho_guess, 1, nz, eqn_of_state)</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keyword">call </span>calculate_density_derivs(t0, s0, pres, drho_dt, drho_ds, 1, nz, eqn_of_state)</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">do</span> k=1,nz</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      t0(k) = t0(k) + (gv%Rlay(k) - rho_guess(k)) / drho_dt(k)</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keywordflow">  enddo</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  pi = 4.0*atan(1.0)</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  i_ts = 1.0 / thermocline_scale</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  i_md = 1.0 / g%max_depth</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    sst = 0.5*(t0(k1)+t0(nz)) - 0.9*0.5*(t0(k1)-t0(nz)) * &amp;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                               cos(pi*(g%geoLatT(i,j)-g%south_lat)/(g%len_lat))</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; e_pert(k) = 0.0 ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="comment">!   This sets the initial thickness (in [H ~&gt; m or kg m-2]) of the layers.  The thicknesses</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="comment">! are set to insure that: 1. each layer is at least  Gv%Angstrom_m thick, and</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="comment">! 2. the interfaces are where they should be based on the resting depths and interface</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">! height perturbations, as long at this doesn&#39;t interfere with 1.</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    eta1d(nz+1) = -g%bathyT(i,j)</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">do</span> k=nz,2,-1</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      t_int = 0.5*(t0(k) + t0(k-1))</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      t_frac = (t_int - t0(nz)) / (sst - t0(nz))</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      <span class="comment">! Find the z such that T_frac = a exp(z/thermocline_scale) + (1-a) (z+D)/D</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      z = 0.0</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="keywordflow">do</span> itt=1,6</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        err = a_exp * exp(z*i_ts) + (1.0 - a_exp) * (z*i_md + 1.0) - t_frac</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        derr_dz = a_exp * i_ts * exp(z*i_ts) + (1.0 - a_exp) * i_md</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        z = z - err / derr_dz</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="keywordflow">      enddo</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      e0(k) = z</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">!       e0(K) = -ML_depth + thermocline_scale * log((T_int - T0(nz)) / (SST - T0(nz)))</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      eta1d(k) = e0(k) + e_pert(k)</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <span class="keywordflow">if</span> (eta1d(k) &gt; -ml_depth) eta1d(k) = -ml_depth</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  k1 = gv%nk_rho_varies + 1</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  a_exp = 0.9</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">! This block calculates T0(k) for the purpose of diagnosing where the</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">! interfaces will be found.</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordflow">do</span> k=1,nz</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    pres(k) = p_ref ; s0(k) = 35.0</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keywordflow">  enddo</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  t0(k1) = 29.0</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keyword">call </span>calculate_density(t0(k1), s0(k1), pres(k1), rho_guess(k1), eqn_of_state, scale=us%kg_m3_to_R)</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keyword">call </span>calculate_density_derivs(t0, s0, pres, drho_dt, drho_ds, k1, 1, eqn_of_state, scale=us%kg_m3_to_R)</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">! A first guess of the layers&#39; temperatures.</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordflow">do</span> k=1,nz</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    t0(k) = t0(k1) + (gv%Rlay(k) - rho_guess(k1)) / drho_dt(k1)</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keywordflow">  enddo</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">! Refine the guesses for each layer.</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordflow">do</span> itt=1,6</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">call </span>calculate_density(t0, s0, pres, rho_guess, 1, nz, eqn_of_state, scale=us%kg_m3_to_R)</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keyword">call </span>calculate_density_derivs(t0, s0, pres, drho_dt, drho_ds, 1, nz, eqn_of_state, scale=us%kg_m3_to_R)</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">do</span> k=1,nz</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      t0(k) = t0(k) + (gv%Rlay(k) - rho_guess(k)) / drho_dt(k)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keywordflow">  enddo</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  pi = 4.0*atan(1.0)</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  i_ts = 1.0 / thermocline_scale</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  i_md = 1.0 / g%max_depth</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    sst = 0.5*(t0(k1)+t0(nz)) - 0.9*0.5*(t0(k1)-t0(nz)) * &amp;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                               cos(pi*(g%geoLatT(i,j)-g%south_lat)/(g%len_lat))</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; e_pert(k) = 0.0 ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">!   This sets the initial thickness (in [H ~&gt; m or kg m-2]) of the layers.  The thicknesses</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">! are set to insure that: 1. each layer is at least  Gv%Angstrom_m thick, and</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="comment">! 2. the interfaces are where they should be based on the resting depths and interface</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="comment">! height perturbations, as long at this doesn&#39;t interfere with 1.</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    eta1d(nz+1) = -g%bathyT(i,j)</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">do</span> k=nz,2,-1</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      t_int = 0.5*(t0(k) + t0(k-1))</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      t_frac = (t_int - t0(nz)) / (sst - t0(nz))</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="comment">! Find the z such that T_frac = a exp(z/thermocline_scale) + (1-a) (z+D)/D</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      z = 0.0</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      <span class="keywordflow">do</span> itt=1,6</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        err = a_exp * exp(z*i_ts) + (1.0 - a_exp) * (z*i_md + 1.0) - t_frac</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        derr_dz = a_exp * i_ts * exp(z*i_ts) + (1.0 - a_exp) * i_md</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        z = z - err / derr_dz</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="keywordflow">      enddo</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      e0(k) = z</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">!       e0(K) = -ML_depth + thermocline_scale * log((T_int - T0(nz)) / (SST - T0(nz)))</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      <span class="keywordflow">if</span> (eta1d(k) &lt; eta1d(k+1) + gv%Angstrom_Z) &amp;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        eta1d(k) = eta1d(k+1) + gv%Angstrom_Z</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      h(i,j,k) = max(gv%Z_to_H * (eta1d(k) - eta1d(k+1)), gv%Angstrom_H)</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    h(i,j,1) = max(gv%Z_to_H * (0.0 - eta1d(2)), gv%Angstrom_H)</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      eta1d(k) = e0(k) + e_pert(k)</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      <span class="keywordflow">if</span> (eta1d(k) &gt; -ml_depth) eta1d(k) = -ml_depth</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      <span class="keywordflow">if</span> (eta1d(k) &lt; eta1d(k+1) + gv%Angstrom_Z) &amp;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        eta1d(k) = eta1d(k+1) + gv%Angstrom_Z</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      h(i,j,k) = max(gv%Z_to_H * (eta1d(k) - eta1d(k+1)), gv%Angstrom_H)</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    h(i,j,1) = max(gv%Z_to_H * (0.0 - eta1d(2)), gv%Angstrom_H)</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00053">mom_error_handler::mom_mesg()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebenchmark__initialization_a9a10f959b541746637eadb04ccb50146_cgraph.svg" width="586" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebenchmark__initialization_a9a10f959b541746637eadb04ccb50146_cgraph.svg" width="551" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -591,7 +603,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebenchmark__initialization_aa9f5b306237bd4938a117fe871a93ed7_cgraph.svg" width="586" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebenchmark__initialization_aa9f5b306237bd4938a117fe871a93ed7_cgraph.svg" width="551" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">

@@ -7,7 +7,7 @@ digraph "mom_continuity_ppm::ppm_reconstruction_x"
   rankdir="RL";
   Node1 [label="mom_continuity_ppm\l::ppm_reconstruction_x",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Calculates left/right edge values for PPM reconstruction."];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="mom_continuity_ppm\l::zonal_mass_flux",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__continuity__ppm.html#ac9ae859f0fd4d6b13faab1065bf371b2",tooltip="Calculates the mass or volume fluxes through the zonal faces, and other related quantities."];
+  Node2 [label="mom_continuity_ppm\l::zonal_mass_flux",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__continuity__ppm.html#a5f5d6764ed315043d3b91b209db5c0a0",tooltip="Calculates the mass or volume fluxes through the zonal faces, and other related quantities."];
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="mom_continuity_ppm\l::continuity_ppm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__continuity__ppm.html#ad928a3c6f1cb3c01f944a89d4b13d08b",tooltip="Time steps the layer thicknesses, using a monotonically limit, directionally split PPM scheme,..."];
+  Node3 [label="mom_continuity_ppm\l::continuity_ppm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__continuity__ppm.html#a665851a49a4bde77b4ef5e25332947f6",tooltip="Time steps the layer thicknesses, using a monotonically limit, directionally split PPM scheme,..."];
 }

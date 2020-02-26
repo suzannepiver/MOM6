@@ -116,9 +116,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a4200969a80e51071559453d2ce03bebe"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceregional__dyes.html#a4200969a80e51071559453d2ce03bebe">initialize_dye_tracer</a> (restart, day, G, GV, h, diag, OBC, CS, sponge_CSp)</td></tr>
 <tr class="memdesc:a4200969a80e51071559453d2ce03bebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine initializes the CSntr tracer fields in tr(:,:,:,:) and it sets up the tracer output.  <a href="namespaceregional__dyes.html#a4200969a80e51071559453d2ce03bebe">More...</a><br /></td></tr>
 <tr class="separator:a4200969a80e51071559453d2ce03bebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a071a809a79a9ca752f395a35b4887ca1"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceregional__dyes.html#a071a809a79a9ca752f395a35b4887ca1">dye_tracer_column_physics</a> (h_old, h_new, ea, eb, fluxes, dt, G, GV, CS, evap_CFL_limit, minimum_forcing_depth)</td></tr>
-<tr class="memdesc:a071a809a79a9ca752f395a35b4887ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine applies diapycnal diffusion and any other column tracer physics or chemistry to the tracers from this file. This is a simple example of a set of advected passive tracers. The arguments to this subroutine are redundant in that h_new(k) = h_old(k) + ea(k) - eb(k-1) + eb(k) - ea(k+1)  <a href="namespaceregional__dyes.html#a071a809a79a9ca752f395a35b4887ca1">More...</a><br /></td></tr>
-<tr class="separator:a071a809a79a9ca752f395a35b4887ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a84fcf1505f825e711c1fc9bc86c70"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceregional__dyes.html#ae9a84fcf1505f825e711c1fc9bc86c70">dye_tracer_column_physics</a> (h_old, h_new, ea, eb, fluxes, dt, G, GV, US, CS, evap_CFL_limit, minimum_forcing_depth)</td></tr>
+<tr class="memdesc:ae9a84fcf1505f825e711c1fc9bc86c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine applies diapycnal diffusion and any other column tracer physics or chemistry to the tracers from this file. This is a simple example of a set of advected passive tracers. The arguments to this subroutine are redundant in that h_new(k) = h_old(k) + ea(k) - eb(k-1) + eb(k) - ea(k+1)  <a href="namespaceregional__dyes.html#ae9a84fcf1505f825e711c1fc9bc86c70">More...</a><br /></td></tr>
+<tr class="separator:ae9a84fcf1505f825e711c1fc9bc86c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0641ff9c663bcfacdd597a79f63d15e0"><td class="memItemLeft" align="right" valign="top">integer function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceregional__dyes.html#a0641ff9c663bcfacdd597a79f63d15e0">dye_stock</a> (h, stocks, G, GV, CS, names, units, stock_index)</td></tr>
 <tr class="memdesc:a0641ff9c663bcfacdd597a79f63d15e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calculates the mass-weighted integral of all tracer stocks, returning the number of stocks it has calculated. If the stock_index is present, only the stock corresponding to that coded index is returned.  <a href="namespaceregional__dyes.html#a0641ff9c663bcfacdd597a79f63d15e0">More...</a><br /></td></tr>
 <tr class="separator:a0641ff9c663bcfacdd597a79f63d15e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,52 +208,52 @@ Functions/Subroutines</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return value: the number of stocks calculated here. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="dye__example_8F90_source.html#l00328">328</a> of file <a class="el" href="dye__example_8F90_source.html">dye_example.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(NIMEM_,NJMEM_,NKMEM_)</span>, <span class="keywordtype">intent(in)</span> :: h<span class="comment">    !&lt; Layer thicknesses [H ~&gt; m or kg m-2]</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>,                 <span class="keywordtype">intent(out)</span>   :: stocks<span class="comment"> !&lt; the mass-weighted integrated amount of</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment">                                                            !! each tracer, in kg times concentration units [kg conc].</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type),              <span class="keywordtype">intent(in)</span>    :: G<span class="comment">    !&lt; The ocean&#39;s grid structure</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type),            <span class="keywordtype">intent(in)</span>    :: GV<span class="comment">   !&lt; The ocean&#39;s vertical grid structure</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordtype">type</span>(dye_tracer_CS),                <span class="keywordtype">pointer</span>       :: CS<span class="comment">   !&lt; The control structure returned by a</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment">                                                            !! previous call to register_dye_tracer.</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">dimension(:)</span>,     <span class="keywordtype">intent(out)</span>   :: names<span class="comment"> !&lt; the names of the stocks calculated.</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">dimension(:)</span>,     <span class="keywordtype">intent(out)</span>   :: units<span class="comment"> !&lt; the units of the stocks calculated.</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">optional</span>,                  <span class="keywordtype">intent(in)</span>    :: stock_index<span class="comment"> !&lt; the coded index of a specific stock</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">                                                                   !! being sought.</span></div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="keywordtype">integer</span>                                           :: dye_stock<span class="comment">   !&lt; Return value: the number of stocks</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment">                                                                   !! calculated here.</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="comment">! Local variables</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, is, ie, js, je, nz, m</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec ; nz = gv%ke</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  dye_stock = 0</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(cs)) <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordflow">if</span> (cs%ntr &lt; 1) <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(stock_index)) <span class="keywordflow">then</span> ; <span class="keywordflow">if</span> (stock_index &gt; 0) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="comment">! Check whether this stock is available from this routine.</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="comment">! No stocks from this routine are being checked yet.  Return 0.</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="keywordflow">  endif</span> ;<span class="keywordflow"> endif</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  <span class="keywordflow">do</span> m=1,cs%ntr</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keyword">call </span>query_vardesc(cs%tr_desc(m), name=names(m), units=units(m), caller=<span class="stringliteral">&quot;dye_stock&quot;</span>)</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    units(m) = trim(units(m))//<span class="stringliteral">&quot; kg&quot;</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    stocks(m) = 0.0</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;      stocks(m) = stocks(m) + cs%tr(i,j,k,m) * &amp;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                             (g%mask2dT(i,j) * g%US%L_to_m**2*g%areaT(i,j) * h(i,j,k))</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    stocks(m) = gv%H_to_kg_m2 * stocks(m)</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="keywordflow">  enddo</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  dye_stock = cs%ntr</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="dye__example_8F90_source.html#l00329">329</a> of file <a class="el" href="dye__example_8F90_source.html">dye_example.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(NIMEM_,NJMEM_,NKMEM_)</span>, <span class="keywordtype">intent(in)</span> :: h<span class="comment">    !&lt; Layer thicknesses [H ~&gt; m or kg m-2]</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>,                 <span class="keywordtype">intent(out)</span>   :: stocks<span class="comment"> !&lt; the mass-weighted integrated amount of</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="comment">                                                            !! each tracer, in kg times concentration units [kg conc].</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type),              <span class="keywordtype">intent(in)</span>    :: G<span class="comment">    !&lt; The ocean&#39;s grid structure</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type),            <span class="keywordtype">intent(in)</span>    :: GV<span class="comment">   !&lt; The ocean&#39;s vertical grid structure</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <span class="keywordtype">type</span>(dye_tracer_CS),                <span class="keywordtype">pointer</span>       :: CS<span class="comment">   !&lt; The control structure returned by a</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment">                                                            !! previous call to register_dye_tracer.</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">dimension(:)</span>,     <span class="keywordtype">intent(out)</span>   :: names<span class="comment"> !&lt; the names of the stocks calculated.</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">dimension(:)</span>,     <span class="keywordtype">intent(out)</span>   :: units<span class="comment"> !&lt; the units of the stocks calculated.</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">optional</span>,                  <span class="keywordtype">intent(in)</span>    :: stock_index<span class="comment"> !&lt; the coded index of a specific stock</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">                                                                   !! being sought.</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  <span class="keywordtype">integer</span>                                           :: dye_stock<span class="comment">   !&lt; Return value: the number of stocks</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment">                                                                   !! calculated here.</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="comment">! Local variables</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, is, ie, js, je, nz, m</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec ; nz = gv%ke</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  dye_stock = 0</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(cs)) <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  <span class="keywordflow">if</span> (cs%ntr &lt; 1) <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(stock_index)) <span class="keywordflow">then</span> ; <span class="keywordflow">if</span> (stock_index &gt; 0) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="comment">! Check whether this stock is available from this routine.</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="comment">! No stocks from this routine are being checked yet.  Return 0.</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keywordflow">  endif</span> ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <span class="keywordflow">do</span> m=1,cs%ntr</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keyword">call </span>query_vardesc(cs%tr_desc(m), name=names(m), units=units(m), caller=<span class="stringliteral">&quot;dye_stock&quot;</span>)</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    units(m) = trim(units(m))//<span class="stringliteral">&quot; kg&quot;</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    stocks(m) = 0.0</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      stocks(m) = stocks(m) + cs%tr(i,j,k,m) * &amp;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                             (g%mask2dT(i,j) * g%US%L_to_m**2*g%areaT(i,j) * h(i,j,k))</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    stocks(m) = gv%H_to_kg_m2 * stocks(m)</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="keywordflow">  enddo</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  dye_stock = cs%ntr</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__io_8F90_source.html#l00699">mom_io::query_vardesc()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__tracer__flow__control_8F90_source.html#l00574">mom_tracer_flow_control::call_tracer_stocks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__tracer__flow__control_8F90_source.html#l00568">mom_tracer_flow_control::call_tracer_stocks()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -263,14 +263,14 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceregional__dyes_a0641ff9c663bcfacdd597a79f63d15e0_icgraph.svg" width="595" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceregional__dyes_a0641ff9c663bcfacdd597a79f63d15e0_icgraph.svg" width="568" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a071a809a79a9ca752f395a35b4887ca1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a071a809a79a9ca752f395a35b4887ca1">&#9670;&nbsp;</a></span>dye_tracer_column_physics()</h2>
+<a id="ae9a84fcf1505f825e711c1fc9bc86c70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9a84fcf1505f825e711c1fc9bc86c70">&#9670;&nbsp;</a></span>dye_tracer_column_physics()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -326,6 +326,12 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">type(unit_scale_type), intent(in)&#160;</td>
+          <td class="paramname"><em>US</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">type(<a class="el" href="structregional__dyes_1_1dye__tracer__cs.html">dye_tracer_cs</a>), pointer&#160;</td>
           <td class="paramname"><em>CS</em>, </td>
         </tr>
@@ -359,10 +365,11 @@ Here is the caller graph for this function:</div>
     <tr><td class="paramdir">[in]</td><td class="paramname">ea</td><td>an array to which the amount of fluid entrained </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">eb</td><td>an array to which the amount of fluid entrained </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fluxes</td><td>A structure containing pointers to thermodynamic and tracer forcing fields. Unused fields have NULL ptrs. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>The amount of time covered by this call [s] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>The amount of time covered by this call [T ~&gt; s] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">cs</td><td>The control structure returned by a previous call to register_dye_tracer. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">evap_cfl_limit</td><td>Limit on the fraction of the water that can be fluxed out of the top layer in a timestep [nondim] </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">minimum_forcing_depth</td><td>The smallest depth over which fluxes can be applied [m] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minimum_forcing_depth</td><td>The smallest depth over which fluxes can be applied [H ~&gt; m or kg m-2] </td></tr>
   </table>
   </dd>
 </dl>
@@ -384,70 +391,71 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">                                              !! added [H ~&gt; m or kg m-2].</span></div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="keywordtype">type</span>(forcing),           <span class="keywordtype">intent(in)</span> :: fluxes<span class="comment"> !&lt; A structure containing pointers to thermodynamic</span></div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">                                              !! and tracer forcing fields.  Unused fields have NULL ptrs.</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keywordtype">  real</span>,                    <span class="keywordtype">intent(in)</span> :: dt<span class="comment">   !&lt; The amount of time covered by this call [s]</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keywordtype">type</span>(dye_tracer_CS),     <span class="keywordtype">pointer</span>    :: CS<span class="comment">   !&lt; The control structure returned by a previous</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">                                              !! call to register_dye_tracer.</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="keywordtype">  real</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: evap_CFL_limit<span class="comment"> !&lt; Limit on the fraction of the water that can</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">                                              !! be fluxed out of the top layer in a timestep [nondim]</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keywordtype">  real</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: minimum_forcing_depth<span class="comment"> !&lt; The smallest depth over which</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">                                              !! fluxes can be applied [m]</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">! Local variables</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G))</span> :: h_work <span class="comment">! Used so that h can be modified</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keywordtype">  real</span> :: sfc_val  <span class="comment">! The surface value for the tracers.</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keywordtype">  real</span> :: Isecs_per_year  <span class="comment">! The number of seconds in a year.</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="keywordtype">  real</span> :: year            <span class="comment">! The time in years.</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="keywordtype">integer</span> :: secs, days   <span class="comment">! Integer components of the time type.</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, is, ie, js, je, nz, m</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keywordtype">  real</span>    :: z_bot, z_center</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec ; nz = gv%ke</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(cs)) <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="keywordflow">if</span> (cs%ntr &lt; 1) <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(evap_cfl_limit) .and. <span class="keyword">present</span>(minimum_forcing_depth)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">do</span> m=1,cs%ntr</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      <span class="keywordflow">do</span> k=1,nz ;<span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        h_work(i,j,k) = h_old(i,j,k)</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keywordflow">      enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      <span class="keyword">call </span>applytracerboundaryfluxesinout(g, gv, cs%tr(:,:,:,m) , dt, fluxes, h_work, &amp;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;          evap_cfl_limit, minimum_forcing_depth)</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      <span class="keyword">call </span>tracer_vertdiff(h_work, ea, eb, dt, cs%tr(:,:,:,m), g, gv)</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">do</span> m=1,cs%ntr</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      <span class="keyword">call </span>tracer_vertdiff(h_old, ea, eb, dt, cs%tr(:,:,:,m), g, gv)</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <span class="keywordflow">do</span> m=1,cs%ntr</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">do</span> j=g%jsd,g%jed ; <span class="keywordflow">do</span> i=g%isd,g%ied</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      <span class="comment">! A dye is set dependent on the center of the cell being inside the rectangular box.</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      <span class="keywordflow">if</span> (cs%dye_source_minlon(m)&lt;g%geoLonT(i,j) .and. &amp;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;          cs%dye_source_maxlon(m)&gt;=g%geoLonT(i,j) .and. &amp;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;          cs%dye_source_minlat(m)&lt;g%geoLatT(i,j) .and. &amp;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;          cs%dye_source_maxlat(m)&gt;=g%geoLatT(i,j) .and. &amp;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;          g%mask2dT(i,j) &gt; 0.0 ) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        z_bot = -g%bathyT(i,j)</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">do</span> k=nz,1,-1</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;          z_center = z_bot + 0.5*h_new(i,j,k)*gv%H_to_Z</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;          <span class="keywordflow">if</span> ( z_center &gt; -cs%dye_source_maxdepth(m) .and. &amp;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;               z_center &lt; -cs%dye_source_mindepth(m) ) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            cs%tr(i,j,k,m) = 1.0</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="keywordflow">          endif</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;          z_bot = z_bot + h_new(i,j,k)*gv%H_to_Z</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="keywordflow">        enddo</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="keywordflow">      endif</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="keywordflow">  enddo</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keywordtype">  real</span>,                    <span class="keywordtype">intent(in)</span> :: dt<span class="comment">   !&lt; The amount of time covered by this call [T ~&gt; s]</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),   <span class="keywordtype">intent(in)</span> :: US<span class="comment">   !&lt; A dimensional unit scaling type</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keywordtype">type</span>(dye_tracer_CS),     <span class="keywordtype">pointer</span>    :: CS<span class="comment">   !&lt; The control structure returned by a previous</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">                                              !! call to register_dye_tracer.</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keywordtype">  real</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: evap_CFL_limit<span class="comment"> !&lt; Limit on the fraction of the water that can</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">                                              !! be fluxed out of the top layer in a timestep [nondim]</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="keywordtype">  real</span>,          <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: minimum_forcing_depth<span class="comment"> !&lt; The smallest depth over which</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">                                              !! fluxes can be applied [H ~&gt; m or kg m-2]</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">! Local variables</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G))</span> :: h_work <span class="comment">! Used so that h can be modified</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keywordtype">  real</span> :: sfc_val  <span class="comment">! The surface value for the tracers.</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="keywordtype">  real</span> :: Isecs_per_year  <span class="comment">! The number of seconds in a year.</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keywordtype">  real</span> :: year            <span class="comment">! The time in years.</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="keywordtype">integer</span> :: secs, days   <span class="comment">! Integer components of the time type.</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k, is, ie, js, je, nz, m</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="keywordtype">  real</span>    :: z_bot, z_center</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec ; nz = gv%ke</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(cs)) <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keywordflow">if</span> (cs%ntr &lt; 1) <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(evap_cfl_limit) .and. <span class="keyword">present</span>(minimum_forcing_depth)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">do</span> m=1,cs%ntr</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      <span class="keywordflow">do</span> k=1,nz ;<span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        h_work(i,j,k) = h_old(i,j,k)</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keywordflow">      enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      <span class="keyword">call </span>applytracerboundaryfluxesinout(g, gv, cs%tr(:,:,:,m), dt, fluxes, h_work, &amp;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                                          evap_cfl_limit, minimum_forcing_depth)</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      <span class="keyword">call </span>tracer_vertdiff(h_work, ea, eb, dt, cs%tr(:,:,:,m), g, gv)</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordflow">do</span> m=1,cs%ntr</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      <span class="keyword">call </span>tracer_vertdiff(h_old, ea, eb, dt, cs%tr(:,:,:,m), g, gv)</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keywordflow">do</span> m=1,cs%ntr</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">do</span> j=g%jsd,g%jed ; <span class="keywordflow">do</span> i=g%isd,g%ied</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      <span class="comment">! A dye is set dependent on the center of the cell being inside the rectangular box.</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <span class="keywordflow">if</span> (cs%dye_source_minlon(m)&lt;g%geoLonT(i,j) .and. &amp;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;          cs%dye_source_maxlon(m)&gt;=g%geoLonT(i,j) .and. &amp;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;          cs%dye_source_minlat(m)&lt;g%geoLatT(i,j) .and. &amp;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;          cs%dye_source_maxlat(m)&gt;=g%geoLatT(i,j) .and. &amp;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;          g%mask2dT(i,j) &gt; 0.0 ) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        z_bot = -g%bathyT(i,j)</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <span class="keywordflow">do</span> k=nz,1,-1</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;          z_center = z_bot + 0.5*h_new(i,j,k)*gv%H_to_Z</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;          <span class="keywordflow">if</span> ( z_center &gt; -cs%dye_source_maxdepth(m) .and. &amp;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;               z_center &lt; -cs%dye_source_mindepth(m) ) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            cs%tr(i,j,k,m) = 1.0</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="keywordflow">          endif</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;          z_bot = z_bot + h_new(i,j,k)*gv%H_to_Z</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="keywordflow">        enddo</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="keywordflow">      endif</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="keywordflow">  enddo</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__tracer__diabatic_8F90_source.html#l00225">mom_tracer_diabatic::applytracerboundaryfluxesinout()</a>, and <a class="el" href="MOM__tracer__diabatic_8F90_source.html#l00027">mom_tracer_diabatic::tracer_vertdiff()</a>.</p>
+<p class="reference">References <a class="el" href="MOM__tracer__diabatic_8F90_source.html#l00230">mom_tracer_diabatic::applytracerboundaryfluxesinout()</a>, and <a class="el" href="MOM__tracer__diabatic_8F90_source.html#l00027">mom_tracer_diabatic::tracer_vertdiff()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceregional__dyes_a071a809a79a9ca752f395a35b4887ca1_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceregional__dyes_ae9a84fcf1505f825e711c1fc9bc86c70_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -502,34 +510,34 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="dye__example_8F90_source.html#l00375">375</a> of file <a class="el" href="dye__example_8F90_source.html">dye_example.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type),  <span class="keywordtype">intent(in)</span>    :: G<span class="comment">  !&lt; The ocean&#39;s grid structure.</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <span class="keywordtype">type</span>(surface),          <span class="keywordtype">intent(inout)</span> :: state<span class="comment"> !&lt; A structure containing fields that</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment">                                              !! describe the surface state of the ocean.</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G))</span>, &amp;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                          <span class="keywordtype">intent(in)</span>    :: h<span class="comment">  !&lt; Layer thickness [H ~&gt; m or kg m-2].</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <span class="keywordtype">type</span>(dye_tracer_CS),    <span class="keywordtype">pointer</span>       :: CS<span class="comment"> !&lt; The control structure returned by a previous</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment">                                              !! call to register_dye_tracer.</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  <span class="comment">! This particular tracer package does not report anything back to the coupler.</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  <span class="comment">! The code that is here is just a rough guide for packages that would.</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  <span class="keywordtype">integer</span> :: m, is, ie, js, je, isd, ied, jsd, jed</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  isd = g%isd ; ied = g%ied ; jsd = g%jsd ; jed = g%jed</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(cs)) <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  <span class="keywordflow">if</span> (cs%coupled_tracers) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keywordflow">do</span> m=1,cs%ntr</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;      <span class="comment">!   This call loads the surface values into the appropriate array in the</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;      <span class="comment">! coupler-type structure.</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      <span class="keyword">call </span>coupler_type_set_data(cs%tr(:,:,1,m), cs%ind_tr(m), ind_csurf, &amp;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                   state%tr_fields, idim=(/isd, is, ie, ied/), &amp;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                   jdim=(/jsd, js, je, jed/) )</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="keywordflow">    enddo</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="dye__example_8F90_source.html#l00376">376</a> of file <a class="el" href="dye__example_8F90_source.html">dye_example.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type),  <span class="keywordtype">intent(in)</span>    :: G<span class="comment">  !&lt; The ocean&#39;s grid structure.</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <span class="keywordtype">type</span>(surface),          <span class="keywordtype">intent(inout)</span> :: state<span class="comment"> !&lt; A structure containing fields that</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment">                                              !! describe the surface state of the ocean.</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G))</span>, &amp;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                          <span class="keywordtype">intent(in)</span>    :: h<span class="comment">  !&lt; Layer thickness [H ~&gt; m or kg m-2].</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keywordtype">type</span>(dye_tracer_CS),    <span class="keywordtype">pointer</span>       :: CS<span class="comment"> !&lt; The control structure returned by a previous</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment">                                              !! call to register_dye_tracer.</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  <span class="comment">! This particular tracer package does not report anything back to the coupler.</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  <span class="comment">! The code that is here is just a rough guide for packages that would.</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  <span class="keywordtype">integer</span> :: m, is, ie, js, je, isd, ied, jsd, jed</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  isd = g%isd ; ied = g%ied ; jsd = g%jsd ; jed = g%jed</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(cs)) <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  <span class="keywordflow">if</span> (cs%coupled_tracers) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordflow">do</span> m=1,cs%ntr</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;      <span class="comment">!   This call loads the surface values into the appropriate array in the</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      <span class="comment">! coupler-type structure.</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      <span class="keyword">call </span>coupler_type_set_data(cs%tr(:,:,1,m), cs%ind_tr(m), ind_csurf, &amp;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                   state%tr_fields, idim=(/isd, is, ie, ied/), &amp;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                   jdim=(/jsd, js, je, jed/) )</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="keywordflow">    enddo</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -697,15 +705,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="dye__example_8F90_source.html#l00406">406</a> of file <a class="el" href="dye__example_8F90_source.html">dye_example.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  <span class="keywordtype">type</span>(dye_tracer_CS), <span class="keywordtype">pointer</span> :: CS<span class="comment"> !&lt; The control structure returned by a previous</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment">                                     !! call to register_dye_tracer.</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  <span class="keywordtype">integer</span> :: m</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">associated</span>(cs)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">associated</span>(cs%tr)) <span class="keyword">deallocate</span>(cs%tr)</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keyword">deallocate</span>(cs)</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="keywordflow">  endif</span></div>
+<p class="definition">Definition at line <a class="el" href="dye__example_8F90_source.html#l00407">407</a> of file <a class="el" href="dye__example_8F90_source.html">dye_example.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  <span class="keywordtype">type</span>(dye_tracer_CS), <span class="keywordtype">pointer</span> :: CS<span class="comment"> !&lt; The control structure returned by a previous</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">                                     !! call to register_dye_tracer.</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  <span class="keywordtype">integer</span> :: m</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">associated</span>(cs)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">associated</span>(cs%tr)) <span class="keyword">deallocate</span>(cs%tr)</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keyword">deallocate</span>(cs)</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="keywordflow">  endif</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -894,7 +902,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  cs%restart_CSp =&gt; restart_cs</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  register_dye_tracer = .true.</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="atmos__ocean__fluxes_8F90_source.html#l00018">atmos_ocean_fluxes_mod::aof_set_coupler_flux()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>, <a class="el" href="MOM__io_8F90_source.html#l00699">mom_io::query_vardesc()</a>, <a class="el" href="MOM__tracer__registry_8F90_source.html#l00142">mom_tracer_registry::register_tracer()</a>, and <a class="el" href="MOM__io_8F90_source.html#l00600">mom_io::var_desc()</a>.</p>
+<p class="reference">References <a class="el" href="atmos__ocean__fluxes_8F90_source.html#l00018">atmos_ocean_fluxes_mod::aof_set_coupler_flux()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>, <a class="el" href="MOM__io_8F90_source.html#l00699">mom_io::query_vardesc()</a>, <a class="el" href="MOM__tracer__registry_8F90_source.html#l00158">mom_tracer_registry::register_tracer()</a>, and <a class="el" href="MOM__io_8F90_source.html#l00600">mom_io::var_desc()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

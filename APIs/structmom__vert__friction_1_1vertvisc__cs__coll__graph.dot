@@ -6,7 +6,7 @@ digraph "mom_vert_friction::vertvisc_cs"
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
   Node1 [label="mom_vert_friction::\lvertvisc_cs",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The control structure with parameters and memory for the MOM_vert_friction module."];
-  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cfl_based_trunc\ndirect_stress\nsplit\nharmonic_visc\nstokesmixing\ndynamic_viscous\l_ml\nbottomdraglaw\nchannel_drag\ncflrampingisactivated\ndebug\n..." ,fontname="Helvetica"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cfl_based_trunc\nanswers_2018\ndirect_stress\nsplit\nharmonic_visc\nstokesmixing\ndynamic_viscous\l_ml\nbottomdraglaw\nchannel_drag\ncflrampingisactivated\n..." ,fontname="Helvetica"];
   Node2 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" rampstarttime" ,fontname="Helvetica"];
   Node3 [label="time_type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];

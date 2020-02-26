@@ -14,7 +14,7 @@ digraph "mom_offline_main::offline_transport_init"
   Node4 [label="mom_error_handler::\lcalltree_leave",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#a88ea67781e2ed9b73ab7eac8ea5e8578",tooltip="Writes a message about leaving a subroutine if call tree reporting is active."];
   Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="mom_diabatic_driver\l::extract_diabatic_member",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a89d71204e03c56940387511357dac3bd",tooltip="Returns pointers or values of members within the diabatic_CS type. For extensibility,..."];
+  Node5 [label="mom_diabatic_driver\l::extract_diabatic_member",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a5ad8cfe1e5f0bf6c89b44e6bbbf2a685",tooltip="Returns pointers or values of members within the diabatic_CS type. For extensibility,..."];
   Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node6 [label="mom_offline_main::read\l_all_input",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__offline__main.html#abc6fd7e877d8e70014cbad2d4e3f11c5",tooltip="Coordinates the allocation and reading in all time levels of uh, vh, hend, temp, and salt from files...."];
 }

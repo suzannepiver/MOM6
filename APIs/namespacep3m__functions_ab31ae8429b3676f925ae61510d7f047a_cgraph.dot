@@ -13,7 +13,7 @@ digraph "p3m_functions::p3m_limiter"
   Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="p3m_functions::build\l_cubic_interpolant",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacep3m__functions.html#af4668b1791bbeae193f0f301cf101f6b",tooltip="Build cubic interpolant in cell k."];
   Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="p3m_functions::is_cubic\l_monotonic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacep3m__functions.html#a2eaa8b32f092bbbb0e2cfcd78b0e700f",tooltip="Check whether the cubic reconstruction in cell k is monotonic."];
+  Node5 [label="p3m_functions::is_cubic\l_monotonic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacep3m__functions.html#a3c461688b7c3ae5b2b4a7cf3311b8a69",tooltip="Check whether the cubic reconstruction in cell k is monotonic."];
   Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node6 [label="p3m_functions::monotonize\l_cubic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacep3m__functions.html#adb96651fe725f11e90dec2b8509989b0",tooltip="Monotonize a cubic curve by modifying the edge slopes."];
 }

@@ -1,11 +1,11 @@
 var MOM__spatial__means_8F90 =
 [
-    [ "adjust_area_mean_to_zero", "MOM__spatial__means_8F90.html#a7d9711f9d5508ec92838893d260a0eef", null ],
-    [ "global_area_integral", "MOM__spatial__means_8F90.html#aee0e9ccdac32367f6ae1064f49e41771", null ],
-    [ "global_area_mean", "MOM__spatial__means_8F90.html#aa49abab62973a263d6f5a1c776f62a11", null ],
-    [ "global_i_mean", "MOM__spatial__means_8F90.html#a1268ed073db7e190a1d06fa72bd7a8de", null ],
-    [ "global_j_mean", "MOM__spatial__means_8F90.html#a0862005dff883cfbd1b9ffc1ef15cdbf", null ],
-    [ "global_layer_mean", "MOM__spatial__means_8F90.html#a02cafdc5a7ca5146c9051b94b42ef82d", null ],
-    [ "global_mass_integral", "MOM__spatial__means_8F90.html#a6888b20896f49dcf7db3d8d60c329abb", null ],
-    [ "global_volume_mean", "MOM__spatial__means_8F90.html#a3bc8ef486b8672d21fc91f2f59d4c301", null ]
+    [ "adjust_area_mean_to_zero", "MOM__spatial__means_8F90.html#ad9473cfc35e049c8cd062b94a5acfc7a", null ],
+    [ "global_area_integral", "MOM__spatial__means_8F90.html#a4d951fba81cfeb94f2d924f586fbda46", null ],
+    [ "global_area_mean", "MOM__spatial__means_8F90.html#a87cad4a44f65c4849de870d15cc3f2a6", null ],
+    [ "global_i_mean", "MOM__spatial__means_8F90.html#a257babe85df2c4435f119236b94eafe9", null ],
+    [ "global_j_mean", "MOM__spatial__means_8F90.html#a3c955830f3b9d150d657cb4c18c4b2d9", null ],
+    [ "global_layer_mean", "MOM__spatial__means_8F90.html#a91bb6f6bd366e02268c5bae2d2c2d79c", null ],
+    [ "global_mass_integral", "MOM__spatial__means_8F90.html#a4c637edc1baf0fbac110c0c6b98ee161", null ],
+    [ "global_volume_mean", "MOM__spatial__means_8F90.html#a54a974cd43b127c910090103890d0bef", null ]
 ];

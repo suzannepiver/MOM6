@@ -243,7 +243,7 @@ Functions/Subroutines</h2></td></tr>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keywordflow">      endif</span></div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      <span class="comment">! Calculate and check that column integrated transports match the original to</span></div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      <span class="comment">! within the tolerance limit</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      uh_neglect = gv%Angstrom_H*min(g%US%L_to_m**2*g%areaT(i,j),g%US%L_to_m**2*g%areaT(i+1,j))</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      uh_neglect = gv%Angstrom_H*g%US%L_to_m**2 * min(g%areaT(i,j), g%areaT(i+1,j))</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      <span class="keywordflow">if</span> ( abs(sum(uh2d(i,:))-uh2d_sum(i)) &gt; uh_neglect) &amp;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keyword">call </span>mom_error(warning,<span class="stringliteral">&quot;Column integral of uh does not match after &quot;</span>//&amp;</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="stringliteral">&quot;barotropic redistribution&quot;</span>)</div>
@@ -259,7 +259,7 @@ Functions/Subroutines</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__offline__aux_ab0ae4b0baa6a99a7c424f88cb308bff2_cgraph.svg" width="604" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__offline__aux_ab0ae4b0baa6a99a7c424f88cb308bff2_cgraph.svg" width="572" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -393,7 +393,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160; </div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;      <span class="comment">! Calculate and check that column integrated transports match the original to</span></div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;      <span class="comment">! within the tolerance limit</span></div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;      uh_neglect = gv%Angstrom_H*min(g%US%L_to_m**2*g%areaT(i,j),g%US%L_to_m**2*g%areaT(i+1,j))</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;      uh_neglect = gv%Angstrom_H*g%US%L_to_m**2 * min(g%areaT(i,j), g%areaT(i+1,j))</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;      <span class="keywordflow">if</span> (abs(uh_col - sum(uh2d(i,:)))&gt;uh_neglect) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        <span class="keyword">call </span>mom_error(warning,<span class="stringliteral">&quot;Column integral of uh does not match after &quot;</span>//&amp;</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        <span class="stringliteral">&quot;upwards redistribution&quot;</span>)</div>
@@ -409,17 +409,17 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__offline__main_8F90_source.html#l00417">mom_offline_main::offline_redistribute_residual()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__offline__main_8F90_source.html#l00423">mom_offline_main::offline_redistribute_residual()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__offline__aux_a926820f5e1a788c56f1f5f485f667a1f_cgraph.svg" width="604" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__offline__aux_a926820f5e1a788c56f1f5f485f667a1f_cgraph.svg" width="572" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__offline__aux_a926820f5e1a788c56f1f5f485f667a1f_icgraph.svg" width="430" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__offline__aux_a926820f5e1a788c56f1f5f485f667a1f_icgraph.svg" width="412" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -530,7 +530,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="keywordflow">      endif</span></div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      <span class="comment">! Calculate and check that column integrated transports match the original to</span></div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      <span class="comment">! within the tolerance limit</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      vh_neglect = gv%Angstrom_H*min(g%US%L_to_m**2*g%areaT(i,j),g%US%L_to_m**2*g%areaT(i,j+1))</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      vh_neglect = gv%Angstrom_H*g%US%L_to_m**2 * min(g%areaT(i,j), g%areaT(i,j+1))</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      <span class="keywordflow">if</span> ( abs(sum(vh2d(j,:))-vh2d_sum(j)) &gt; vh_neglect) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;          <span class="keyword">call </span>mom_error(warning,<span class="stringliteral">&quot;Column integral of vh does not match after &quot;</span>//&amp;</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;          <span class="stringliteral">&quot;barotropic redistribution&quot;</span>)</div>
@@ -548,7 +548,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__offline__aux_ad23ced9ed480b299332ca600e97d82bc_cgraph.svg" width="604" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__offline__aux_ad23ced9ed480b299332ca600e97d82bc_cgraph.svg" width="572" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -684,7 +684,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160; </div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;      <span class="comment">! Calculate and check that column integrated transports match the original to</span></div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;      <span class="comment">! within the tolerance limit</span></div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;      vh_neglect = gv%Angstrom_H*min(g%US%L_to_m**2*g%areaT(i,j),g%US%L_to_m**2*g%areaT(i,j+1))</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;      vh_neglect = gv%Angstrom_H*g%US%L_to_m**2 * min(g%areaT(i,j), g%areaT(i,j+1))</div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;      <span class="keywordflow">if</span> ( abs(vh_col-sum(vh2d(j,:))) &gt; vh_neglect) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;        <span class="keyword">call </span>mom_error(warning,<span class="stringliteral">&quot;Column integral of vh does not match after &quot;</span>//&amp;</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                               <span class="stringliteral">&quot;upwards redistribution&quot;</span>)</div>
@@ -699,17 +699,17 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__offline__main_8F90_source.html#l00417">mom_offline_main::offline_redistribute_residual()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__offline__main_8F90_source.html#l00423">mom_offline_main::offline_redistribute_residual()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__offline__aux_ae89d0bdb8c648bc137a188c4f7fa956d_cgraph.svg" width="604" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__offline__aux_ae89d0bdb8c648bc137a188c4f7fa956d_cgraph.svg" width="572" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__offline__aux_ae89d0bdb8c648bc137a188c4f7fa956d_icgraph.svg" width="430" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__offline__aux_ae89d0bdb8c648bc137a188c4f7fa956d_icgraph.svg" width="412" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1446,7 +1446,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__offline__aux_a6fc82d358eae9030a030182290a30858_cgraph.svg" width="591" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__offline__aux_a6fc82d358eae9030a030182290a30858_cgraph.svg" width="558" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

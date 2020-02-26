@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/config_src/nuopc_driver/mom_cap.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/config_src/nuopc_driver/mom_cap.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -184,6 +184,8 @@ Variables</h2></td></tr>
 <tr class="separator:ac0eecd812f3619a4648e2f9386b58fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87f074f197c71e76f3ceb5265c12ea42"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__cap__mod.html#a87f074f197c71e76f3ceb5265c12ea42">mom_cap_mod::write_diagnostics</a> = .false.</td></tr>
 <tr class="separator:a87f074f197c71e76f3ceb5265c12ea42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df1d28111df6b48514eb3fa8b8a0806"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__cap__mod.html#a6df1d28111df6b48514eb3fa8b8a0806">mom_cap_mod::overwrite_timeslice</a> = .false.</td></tr>
+<tr class="separator:a6df1d28111df6b48514eb3fa8b8a0806"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad56cefdfe78b6f64cfbf67b65eae6e7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="version__variable_8h.html#acda997fe1761de4c6bca0f27dc786964">character</a>(len=32)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__cap__mod.html#ad56cefdfe78b6f64cfbf67b65eae6e7e">mom_cap_mod::runtype</a></td></tr>
 <tr class="memdesc:ad56cefdfe78b6f64cfbf67b65eae6e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">run type  <a href="namespacemom__cap__mod.html#ad56cefdfe78b6f64cfbf67b65eae6e7e">More...</a><br /></td></tr>
 <tr class="separator:ad56cefdfe78b6f64cfbf67b65eae6e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,44 +246,44 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mom__cap_8F90_source.html#l02242">2242</a> of file <a class="el" href="mom__cap_8F90_source.html">mom_cap.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l02242"></a><span class="lineno"> 2242</span>&#160; </div>
-<div class="line"><a name="l02243"></a><span class="lineno"> 2243</span>&#160;    <span class="comment">! create a field with scalar data on the root pe</span></div>
-<div class="line"><a name="l02244"></a><span class="lineno"> 2244</span>&#160;    <span class="keywordtype">type</span>(ESMF_Field), <span class="keywordtype">intent(inout)</span>  :: field</div>
-<div class="line"><a name="l02245"></a><span class="lineno"> 2245</span>&#160;    <span class="keywordtype">integer</span>,          <span class="keywordtype">intent(inout)</span>  :: rc</div>
-<div class="line"><a name="l02246"></a><span class="lineno"> 2246</span>&#160; </div>
-<div class="line"><a name="l02247"></a><span class="lineno"> 2247</span>&#160;    <span class="comment">! local variables</span></div>
-<div class="line"><a name="l02248"></a><span class="lineno"> 2248</span>&#160;    <span class="keywordtype">type</span>(ESMF_Distgrid) :: distgrid</div>
-<div class="line"><a name="l02249"></a><span class="lineno"> 2249</span>&#160;    <span class="keywordtype">type</span>(ESMF_Grid)     :: grid</div>
-<div class="line"><a name="l02250"></a><span class="lineno"> 2250</span>&#160;    <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">parameter</span> :: subname=<span class="stringliteral">&#39;(MOM_cap:SetScalarField)&#39;</span></div>
-<div class="line"><a name="l02251"></a><span class="lineno"> 2251</span>&#160; </div>
-<div class="line"><a name="l02252"></a><span class="lineno"> 2252</span>&#160;    rc = esmf_success</div>
-<div class="line"><a name="l02253"></a><span class="lineno"> 2253</span>&#160; </div>
-<div class="line"><a name="l02254"></a><span class="lineno"> 2254</span>&#160;    <span class="comment">! create a DistGrid with a single index space element, which gets mapped onto DE 0.</span></div>
-<div class="line"><a name="l02255"></a><span class="lineno"> 2255</span>&#160;    distgrid = esmf_distgridcreate(minindex=(/1/), maxindex=(/1/), rc=rc)</div>
-<div class="line"><a name="l02256"></a><span class="lineno"> 2256</span>&#160;    <span class="keywordflow">if</span> (esmf_logfounderror(rctocheck=rc, msg=esmf_logerr_passthru, &amp;</div>
-<div class="line"><a name="l02257"></a><span class="lineno"> 2257</span>&#160;        line=__line__, &amp;</div>
-<div class="line"><a name="l02258"></a><span class="lineno"> 2258</span>&#160;        file=__file__)) &amp;</div>
-<div class="line"><a name="l02259"></a><span class="lineno"> 2259</span>&#160;        <span class="keywordflow">return</span>  <span class="comment">! bail out</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__cap_8F90_source.html#l02251">2251</a> of file <a class="el" href="mom__cap_8F90_source.html">mom_cap.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l02251"></a><span class="lineno"> 2251</span>&#160; </div>
+<div class="line"><a name="l02252"></a><span class="lineno"> 2252</span>&#160;    <span class="comment">! create a field with scalar data on the root pe</span></div>
+<div class="line"><a name="l02253"></a><span class="lineno"> 2253</span>&#160;    <span class="keywordtype">type</span>(ESMF_Field), <span class="keywordtype">intent(inout)</span>  :: field</div>
+<div class="line"><a name="l02254"></a><span class="lineno"> 2254</span>&#160;    <span class="keywordtype">integer</span>,          <span class="keywordtype">intent(inout)</span>  :: rc</div>
+<div class="line"><a name="l02255"></a><span class="lineno"> 2255</span>&#160; </div>
+<div class="line"><a name="l02256"></a><span class="lineno"> 2256</span>&#160;    <span class="comment">! local variables</span></div>
+<div class="line"><a name="l02257"></a><span class="lineno"> 2257</span>&#160;    <span class="keywordtype">type</span>(ESMF_Distgrid) :: distgrid</div>
+<div class="line"><a name="l02258"></a><span class="lineno"> 2258</span>&#160;    <span class="keywordtype">type</span>(ESMF_Grid)     :: grid</div>
+<div class="line"><a name="l02259"></a><span class="lineno"> 2259</span>&#160;    <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">parameter</span> :: subname=<span class="stringliteral">&#39;(MOM_cap:SetScalarField)&#39;</span></div>
 <div class="line"><a name="l02260"></a><span class="lineno"> 2260</span>&#160; </div>
-<div class="line"><a name="l02261"></a><span class="lineno"> 2261</span>&#160;    grid = esmf_gridcreate(distgrid, rc=rc)</div>
-<div class="line"><a name="l02262"></a><span class="lineno"> 2262</span>&#160;    <span class="keywordflow">if</span> (esmf_logfounderror(rctocheck=rc, msg=esmf_logerr_passthru, &amp;</div>
-<div class="line"><a name="l02263"></a><span class="lineno"> 2263</span>&#160;        line=__line__, &amp;</div>
-<div class="line"><a name="l02264"></a><span class="lineno"> 2264</span>&#160;        file=__file__)) &amp;</div>
-<div class="line"><a name="l02265"></a><span class="lineno"> 2265</span>&#160;        <span class="keywordflow">return</span>  <span class="comment">! bail out</span></div>
-<div class="line"><a name="l02266"></a><span class="lineno"> 2266</span>&#160; </div>
-<div class="line"><a name="l02267"></a><span class="lineno"> 2267</span>&#160;    <span class="comment">! num of scalar values</span></div>
-<div class="line"><a name="l02268"></a><span class="lineno"> 2268</span>&#160;    field = esmf_fieldcreate(name=trim(scalar_field_name), grid=grid, typekind=esmf_typekind_r8, &amp;</div>
-<div class="line"><a name="l02269"></a><span class="lineno"> 2269</span>&#160;         ungriddedlbound=(/1/), ungriddedubound=(/scalar_field_count/), gridtofieldmap=(/2/), rc=rc)</div>
-<div class="line"><a name="l02270"></a><span class="lineno"> 2270</span>&#160;    <span class="keywordflow">if</span> (esmf_logfounderror(rctocheck=rc, msg=esmf_logerr_passthru, &amp;</div>
-<div class="line"><a name="l02271"></a><span class="lineno"> 2271</span>&#160;        line=__line__, &amp;</div>
-<div class="line"><a name="l02272"></a><span class="lineno"> 2272</span>&#160;        file=__file__)) &amp;</div>
-<div class="line"><a name="l02273"></a><span class="lineno"> 2273</span>&#160;        <span class="keywordflow">return</span>  <span class="comment">! bail out</span></div>
-<div class="line"><a name="l02274"></a><span class="lineno"> 2274</span>&#160; </div>
+<div class="line"><a name="l02261"></a><span class="lineno"> 2261</span>&#160;    rc = esmf_success</div>
+<div class="line"><a name="l02262"></a><span class="lineno"> 2262</span>&#160; </div>
+<div class="line"><a name="l02263"></a><span class="lineno"> 2263</span>&#160;    <span class="comment">! create a DistGrid with a single index space element, which gets mapped onto DE 0.</span></div>
+<div class="line"><a name="l02264"></a><span class="lineno"> 2264</span>&#160;    distgrid = esmf_distgridcreate(minindex=(/1/), maxindex=(/1/), rc=rc)</div>
+<div class="line"><a name="l02265"></a><span class="lineno"> 2265</span>&#160;    <span class="keywordflow">if</span> (esmf_logfounderror(rctocheck=rc, msg=esmf_logerr_passthru, &amp;</div>
+<div class="line"><a name="l02266"></a><span class="lineno"> 2266</span>&#160;        line=__line__, &amp;</div>
+<div class="line"><a name="l02267"></a><span class="lineno"> 2267</span>&#160;        file=__file__)) &amp;</div>
+<div class="line"><a name="l02268"></a><span class="lineno"> 2268</span>&#160;        <span class="keywordflow">return</span>  <span class="comment">! bail out</span></div>
+<div class="line"><a name="l02269"></a><span class="lineno"> 2269</span>&#160; </div>
+<div class="line"><a name="l02270"></a><span class="lineno"> 2270</span>&#160;    grid = esmf_gridcreate(distgrid, rc=rc)</div>
+<div class="line"><a name="l02271"></a><span class="lineno"> 2271</span>&#160;    <span class="keywordflow">if</span> (esmf_logfounderror(rctocheck=rc, msg=esmf_logerr_passthru, &amp;</div>
+<div class="line"><a name="l02272"></a><span class="lineno"> 2272</span>&#160;        line=__line__, &amp;</div>
+<div class="line"><a name="l02273"></a><span class="lineno"> 2273</span>&#160;        file=__file__)) &amp;</div>
+<div class="line"><a name="l02274"></a><span class="lineno"> 2274</span>&#160;        <span class="keywordflow">return</span>  <span class="comment">! bail out</span></div>
+<div class="line"><a name="l02275"></a><span class="lineno"> 2275</span>&#160; </div>
+<div class="line"><a name="l02276"></a><span class="lineno"> 2276</span>&#160;    <span class="comment">! num of scalar values</span></div>
+<div class="line"><a name="l02277"></a><span class="lineno"> 2277</span>&#160;    field = esmf_fieldcreate(name=trim(scalar_field_name), grid=grid, typekind=esmf_typekind_r8, &amp;</div>
+<div class="line"><a name="l02278"></a><span class="lineno"> 2278</span>&#160;         ungriddedlbound=(/1/), ungriddedubound=(/scalar_field_count/), gridtofieldmap=(/2/), rc=rc)</div>
+<div class="line"><a name="l02279"></a><span class="lineno"> 2279</span>&#160;    <span class="keywordflow">if</span> (esmf_logfounderror(rctocheck=rc, msg=esmf_logerr_passthru, &amp;</div>
+<div class="line"><a name="l02280"></a><span class="lineno"> 2280</span>&#160;        line=__line__, &amp;</div>
+<div class="line"><a name="l02281"></a><span class="lineno"> 2281</span>&#160;        file=__file__)) &amp;</div>
+<div class="line"><a name="l02282"></a><span class="lineno"> 2282</span>&#160;        <span class="keywordflow">return</span>  <span class="comment">! bail out</span></div>
+<div class="line"><a name="l02283"></a><span class="lineno"> 2283</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mom__cap_8F90_source.html#l00131">mom_cap_mod::scalar_field_count</a>, and <a class="el" href="mom__cap_8F90_source.html#l00130">mom_cap_mod::scalar_field_name</a>.</p>
+<p class="reference">References <a class="el" href="mom__cap_8F90_source.html#l00132">mom_cap_mod::scalar_field_count</a>, and <a class="el" href="mom__cap_8F90_source.html#l00131">mom_cap_mod::scalar_field_name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mom__cap_8F90_source.html#l02130">mom_cap_mod::mom_realizefields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mom__cap_8F90_source.html#l02139">mom_cap_mod::mom_realizefields()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

@@ -1,0 +1,17 @@
+digraph "mom_forcing_type::forcing_diagnostics"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_forcing_type::forcing\l_diagnostics",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Offer buoyancy forcing fields for diagnostics for those fields registered as part of register_forcing..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_diag_mediator::\ldisable_averaging",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a1761df399ba39742e34ab989469da0f2",tooltip="Call this subroutine to avoid averaging any offered fields."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_diag_mediator::\lenable_averages",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#ada4d9d69fb0d79a0fe20a307eaf1ca9c",tooltip="Enable the accumulation of time averages over the specified time interval in time units."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_spatial_means::\lglobal_area_integral",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__spatial__means.html#a4d951fba81cfeb94f2d924f586fbda46",tooltip="Return the global area integral of a variable. This uses reproducing sums."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_spatial_means::\lglobal_area_mean",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__spatial__means.html#a87cad4a44f65c4849de870d15cc3f2a6",tooltip="Return the global area mean of a variable. This uses reproducing sums."];
+}

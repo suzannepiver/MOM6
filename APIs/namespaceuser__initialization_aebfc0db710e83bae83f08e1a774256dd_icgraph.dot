@@ -30,7 +30,7 @@ digraph "user_initialization::write_user_log"
   Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node12 [label="user_initialization\l::user_initialize_velocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__initialization.html#a757c666f3e23714d9ec76912c4aba048",tooltip="initialize velocities."];
   Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node13 [label="user_initialization\l::user_set_coord",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__initialization.html#a541d25539cbb198ae0ed7c1356f267cf",tooltip="Set vertical coordinates."];
+  Node13 [label="user_initialization\l::user_set_coord",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceuser__initialization.html#afb05f538d59bbae7856b965ae16f6000",tooltip="Set vertical coordinates."];
   Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node14 [label="mom_coord_initialization\l::mom_initialize_coord",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__coord__initialization.html#a08150041e51696069c49248793248c77",tooltip="MOM_initialize_coord sets up time-invariant quantities related to MOM6's vertical coordinate."];
   Node14 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

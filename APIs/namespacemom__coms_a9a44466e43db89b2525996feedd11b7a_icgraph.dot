@@ -7,13 +7,13 @@ digraph "mom_coms::reset_efp_overflow_error"
   rankdir="RL";
   Node1 [label="mom_coms::reset_efp\l_overflow_error",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Reset the module's error flag to false."];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="mom_spatial_means::\lglobal_i_mean",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__spatial__means.html#a1268ed073db7e190a1d06fa72bd7a8de",tooltip="Determine the global mean of a field along rows of constant i, returning it in a 1-d array using the ..."];
+  Node2 [label="mom_spatial_means::\lglobal_i_mean",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__spatial__means.html#a257babe85df2c4435f119236b94eafe9",tooltip="Determine the global mean of a field along rows of constant i, returning it in a 1-d array using the ..."];
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="mom_sponge::apply_sponge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__sponge.html#afc5fe4db356e9e93696c909cd2c4d7ba",tooltip="This subroutine applies damping to the layers thicknesses, mixed layer buoyancy, and a variety of tra..."];
+  Node3 [label="mom_sponge::apply_sponge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__sponge.html#a0b8b22a1b577bdcf336c8d22b85b45d7",tooltip="This subroutine applies damping to the layers thicknesses, mixed layer buoyancy, and a variety of tra..."];
   Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="mom_diabatic_driver\l::layered_diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a71d8d849db16be4b87c2650b49f01c82",tooltip="Imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentum and tracers us..."];
   Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 [label="mom_diabatic_driver\l::diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a9005de9f3ad26b32de53e3cd9826b9b9",tooltip="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu..."];
   Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="mom_spatial_means::\lglobal_j_mean",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__spatial__means.html#a0862005dff883cfbd1b9ffc1ef15cdbf",tooltip="Determine the global mean of a field along rows of constant j, returning it in a 1-d array using the ..."];
+  Node6 [label="mom_spatial_means::\lglobal_j_mean",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__spatial__means.html#a3c955830f3b9d150d657cb4c18c4b2d9",tooltip="Determine the global mean of a field along rows of constant j, returning it in a 1-d array using the ..."];
 }

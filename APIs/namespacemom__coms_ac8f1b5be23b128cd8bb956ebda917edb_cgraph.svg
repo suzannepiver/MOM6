@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 604;
+var viewWidth = 574;
 var viewHeight = 53;
 var sectionId = 'dynsection-11';
 </script>
@@ -54,13 +54,13 @@ var sectionId = 'dynsection-11';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_coms::real_to_efp</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-48.5 600,-48.5 600,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-48.5 570,-48.5 570,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Return the extended&#45;fixed&#45;point number that a real number corresponds with.">
-<polygon fill="#bfbfbf" stroke="#000000" points="0,-19.5 0,-38.5 128,-38.5 128,-19.5 0,-19.5"/>
-<text text-anchor="middle" x="64" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_coms::real_to_efp</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="0,-19.5 0,-38.5 122,-38.5 122,-19.5 0,-19.5"/>
+<text text-anchor="middle" x="61" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_coms::real_to_efp</text>
 </a>
 </g>
 </g>
@@ -68,54 +68,54 @@ var sectionId = 'dynsection-11';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="This provides a convenient interface for writing an mpp_error message with run&#45;time filter based on a...">
-<polygon fill="#ffffff" stroke="#000000" points="330,-14 330,-44 445,-44 445,-14 330,-14"/>
-<text text-anchor="start" x="338" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="387.5" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
+<polygon fill="#ffffff" stroke="#000000" points="318,-14 318,-44 424,-44 424,-14 318,-14"/>
+<text text-anchor="start" x="326" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="371" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M128.3,-29C183.6356,-29 263.2305,-29 319.5895,-29"/>
-<polygon fill="#191970" stroke="#191970" points="319.8315,-32.5001 329.8315,-29 319.8315,-25.5001 319.8315,-32.5001"/>
+<path fill="none" stroke="#191970" d="M122.246,-29C175.8721,-29 253.4808,-29 307.7064,-29"/>
+<polygon fill="#191970" stroke="#191970" points="307.8867,-32.5001 317.8867,-29 307.8867,-25.5001 307.8867,-32.5001"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__coms.html#a0cc261620495abf3313937726883b95e" target="_top" xlink:title="Convert a real number into the array of integers constitute its extended&#45;fixed&#45;point representation.">
-<polygon fill="#ffffff" stroke="#000000" points="164,-.5 164,-19.5 294,-19.5 294,-.5 164,-.5"/>
-<text text-anchor="middle" x="229" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_coms::real_to_ints</text>
+<polygon fill="#ffffff" stroke="#000000" points="158,-.5 158,-19.5 282,-19.5 282,-.5 158,-.5"/>
+<text text-anchor="middle" x="220" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_coms::real_to_ints</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M128.2658,-21.5997C136.6556,-20.6336 145.3103,-19.637 153.8587,-18.6526"/>
-<polygon fill="#191970" stroke="#191970" points="154.2889,-22.1263 163.8228,-17.5053 153.488,-15.1723 154.2889,-22.1263"/>
+<path fill="none" stroke="#191970" d="M122.0188,-21.7084C130.4535,-20.7005 139.1819,-19.6575 147.7952,-18.6282"/>
+<polygon fill="#191970" stroke="#191970" points="148.315,-22.0911 157.8291,-17.4292 147.4844,-15.1406 148.315,-22.0911"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="This returns .true. if the current PE is the root PE.">
-<polygon fill="#ffffff" stroke="#000000" points="481,-14 481,-44 596,-44 596,-14 481,-14"/>
-<text text-anchor="start" x="489" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="538.5" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
+<polygon fill="#ffffff" stroke="#000000" points="460,-14 460,-44 566,-44 566,-14 460,-14"/>
+<text text-anchor="start" x="468" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="513" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M445.0174,-29C453.4639,-29 462.2292,-29 470.8561,-29"/>
-<polygon fill="#191970" stroke="#191970" points="470.8926,-32.5001 480.8925,-29 470.8925,-25.5001 470.8926,-32.5001"/>
+<path fill="none" stroke="#191970" d="M424.2796,-29C432.56,-29 441.184,-29 449.6606,-29"/>
+<polygon fill="#191970" stroke="#191970" points="449.8941,-32.5001 459.8941,-29 449.8941,-25.5001 449.8941,-32.5001"/>
 </g>
 <!-- Node4&#45;&gt;Node2 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M294.3831,-17.8377C302.7493,-18.8406 311.3284,-19.869 319.7315,-20.8763"/>
-<polygon fill="#191970" stroke="#191970" points="319.5225,-24.3763 329.8681,-22.0914 320.3557,-17.426 319.5225,-24.3763"/>
+<path fill="none" stroke="#191970" d="M282.2893,-17.8377C290.7217,-18.8988 299.381,-19.9883 307.8287,-21.0513"/>
+<polygon fill="#191970" stroke="#191970" points="307.6398,-24.555 317.9986,-22.3309 308.5138,-17.6098 307.6398,-24.555"/>
 </g>
 </g>
 </svg>

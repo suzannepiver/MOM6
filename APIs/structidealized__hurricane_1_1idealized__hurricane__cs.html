@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('structidealized__hurricane_1_1idealize
 </div><div class="dynheader">
 Collaboration diagram for idealized_hurricane::idealized_hurricane_cs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structidealized__hurricane_1_1idealized__hurricane__cs__coll__graph.svg" width="278" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structidealized__hurricane_1_1idealized__hurricane__cs__coll__graph.svg" width="256" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -133,10 +133,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a2d8d8037d7a685ff3e7af1c402fc028d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hurricane translation speed [m s-1].  <a href="structidealized__hurricane_1_1idealized__hurricane__cs.html#a2d8d8037d7a685ff3e7af1c402fc028d">More...</a><br /></td></tr>
 <tr class="separator:a2d8d8037d7a685ff3e7af1c402fc028d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71af964b3cd885c70a8c15c08e2bbf0a"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structidealized__hurricane_1_1idealized__hurricane__cs.html#a71af964b3cd885c70a8c15c08e2bbf0a">gustiness</a></td></tr>
-<tr class="memdesc:a71af964b3cd885c70a8c15c08e2bbf0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gustiness (optional, used in u*) [m s-1].  <a href="structidealized__hurricane_1_1idealized__hurricane__cs.html#a71af964b3cd885c70a8c15c08e2bbf0a">More...</a><br /></td></tr>
+<tr class="memdesc:a71af964b3cd885c70a8c15c08e2bbf0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gustiness (optional, used in u*) [R L Z T-1 ~&gt; Pa].  <a href="structidealized__hurricane_1_1idealized__hurricane__cs.html#a71af964b3cd885c70a8c15c08e2bbf0a">More...</a><br /></td></tr>
 <tr class="separator:a71af964b3cd885c70a8c15c08e2bbf0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac220f4f3cd8c883461682d1663aeeb68"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structidealized__hurricane_1_1idealized__hurricane__cs.html#ac220f4f3cd8c883461682d1663aeeb68">rho0</a></td></tr>
-<tr class="memdesc:ac220f4f3cd8c883461682d1663aeeb68"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference ocean density [kg m-3].  <a href="structidealized__hurricane_1_1idealized__hurricane__cs.html#ac220f4f3cd8c883461682d1663aeeb68">More...</a><br /></td></tr>
+<tr class="memdesc:ac220f4f3cd8c883461682d1663aeeb68"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference ocean density [R ~&gt; kg m-3].  <a href="structidealized__hurricane_1_1idealized__hurricane__cs.html#ac220f4f3cd8c883461682d1663aeeb68">More...</a><br /></td></tr>
 <tr class="separator:ac220f4f3cd8c883461682d1663aeeb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4082ad2c075ee00c774265844c71d3f"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structidealized__hurricane_1_1idealized__hurricane__cs.html#ac4082ad2c075ee00c774265844c71d3f">hurr_cen_y0</a></td></tr>
 <tr class="memdesc:ac4082ad2c075ee00c774265844c71d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The initial y position of the hurricane This experiment is conducted in a Cartesian grid and this is assumed to be in meters [m].  <a href="structidealized__hurricane_1_1idealized__hurricane__cs.html#ac4082ad2c075ee00c774265844c71d3f">More...</a><br /></td></tr>
@@ -242,10 +242,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gustiness (optional, used in u*) [m s-1]. </p>
+<p>Gustiness (optional, used in u*) [R L Z T-1 ~&gt; Pa]. </p>
 
 <p class="definition">Definition at line <a class="el" href="Idealized__Hurricane_8F90_source.html#l00055">55</a> of file <a class="el" href="Idealized__Hurricane_8F90_source.html">Idealized_Hurricane.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">  real</span>    :: gustiness<span class="comment">            !&lt; Gustiness (optional, used in u*) [m s-1]</span></div>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">  real</span>    :: gustiness<span class="comment">            !&lt; Gustiness (optional, used in u*) [R L Z T-1 ~&gt; Pa]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -508,10 +508,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A reference ocean density [kg m-3]. </p>
+<p>A reference ocean density [R ~&gt; kg m-3]. </p>
 
 <p class="definition">Definition at line <a class="el" href="Idealized__Hurricane_8F90_source.html#l00056">56</a> of file <a class="el" href="Idealized__Hurricane_8F90_source.html">Idealized_Hurricane.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">  real</span>    :: Rho0<span class="comment">                 !&lt; A reference ocean density [kg m-3]</span></div>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">  real</span>    :: Rho0<span class="comment">                 !&lt; A reference ocean density [R ~&gt; kg m-3]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -554,7 +554,7 @@ Public variables and constants</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/user/<a class="el" href="Idealized__Hurricane_8F90_source.html">Idealized_Hurricane.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/user/<a class="el" href="Idealized__Hurricane_8F90_source.html">Idealized_Hurricane.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

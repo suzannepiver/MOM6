@@ -6,6 +6,7 @@ var structcoord__slight_1_1slight__cs =
     [ "halocline_filter_length", "structcoord__slight_1_1slight__cs.html#a156afa2576c63ba561e0bf351deca00d", null ],
     [ "halocline_strat_tol", "structcoord__slight_1_1slight__cs.html#afd335e33958ca09ec3ba89fcc00b1c0c", null ],
     [ "interp_cs", "structcoord__slight_1_1slight__cs.html#ac00461dcd4c5589c45ee014808a23049", null ],
+    [ "kg_m3_to_r", "structcoord__slight_1_1slight__cs.html#aa17f7b9c14f17fcba88394e7a781e298", null ],
     [ "max_interface_depths", "structcoord__slight_1_1slight__cs.html#ac9f125eded625ac8c10058dc31f0e42f", null ],
     [ "max_layer_thickness", "structcoord__slight_1_1slight__cs.html#a463472253906e2d3d7f89caba02f00f6", null ],
     [ "min_thickness", "structcoord__slight_1_1slight__cs.html#a59d61d9b3e098aa550e0af9d4db1a78f", null ],

@@ -195,17 +195,14 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:abf3ba6348cb2b39321e3ac46558615a9"><td class="memItemLeft" align="right" valign="top">type(<a class="el" href="structmom__barotropic_1_1bt__obc__type.html">bt_obc_type</a>)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#abf3ba6348cb2b39321e3ac46558615a9">bt_obc</a></td></tr>
 <tr class="memdesc:abf3ba6348cb2b39321e3ac46558615a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure with all of this modules fields for applying open boundary conditions.  <a href="structmom__barotropic_1_1barotropic__cs.html#abf3ba6348cb2b39321e3ac46558615a9">More...</a><br /></td></tr>
 <tr class="separator:abf3ba6348cb2b39321e3ac46558615a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a647aaa0098e63a445973bfcd70104070"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a647aaa0098e63a445973bfcd70104070">rho0</a></td></tr>
-<tr class="memdesc:a647aaa0098e63a445973bfcd70104070"><td class="mdescLeft">&#160;</td><td class="mdescRight">The density used in the Boussinesq approximation [kg m-3].  <a href="structmom__barotropic_1_1barotropic__cs.html#a647aaa0098e63a445973bfcd70104070">More...</a><br /></td></tr>
-<tr class="separator:a647aaa0098e63a445973bfcd70104070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29140f5ff823f586b4c169f9543159a5"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a29140f5ff823f586b4c169f9543159a5">dtbt</a></td></tr>
-<tr class="memdesc:a29140f5ff823f586b4c169f9543159a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barotropic time step [s].  <a href="structmom__barotropic_1_1barotropic__cs.html#a29140f5ff823f586b4c169f9543159a5">More...</a><br /></td></tr>
+<tr class="memdesc:a29140f5ff823f586b4c169f9543159a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The barotropic time step [T ~&gt; s].  <a href="structmom__barotropic_1_1barotropic__cs.html#a29140f5ff823f586b4c169f9543159a5">More...</a><br /></td></tr>
 <tr class="separator:a29140f5ff823f586b4c169f9543159a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9547048acc5184e0abb6e1793a692922"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a9547048acc5184e0abb6e1793a692922">dtbt_fraction</a></td></tr>
 <tr class="memdesc:a9547048acc5184e0abb6e1793a692922"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fraction of the maximum time-step that should used. The default is 0.98.  <a href="structmom__barotropic_1_1barotropic__cs.html#a9547048acc5184e0abb6e1793a692922">More...</a><br /></td></tr>
 <tr class="separator:a9547048acc5184e0abb6e1793a692922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a013d178ae91d00b8ec8d8a0951636529"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a013d178ae91d00b8ec8d8a0951636529">dtbt_max</a></td></tr>
-<tr class="memdesc:a013d178ae91d00b8ec8d8a0951636529"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum stable barotropic time step [s].  <a href="structmom__barotropic_1_1barotropic__cs.html#a013d178ae91d00b8ec8d8a0951636529">More...</a><br /></td></tr>
+<tr class="memdesc:a013d178ae91d00b8ec8d8a0951636529"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum stable barotropic time step [T ~&gt; s].  <a href="structmom__barotropic_1_1barotropic__cs.html#a013d178ae91d00b8ec8d8a0951636529">More...</a><br /></td></tr>
 <tr class="separator:a013d178ae91d00b8ec8d8a0951636529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a643a1984936263d1164c678b37f4d0a5"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__barotropic_1_1barotropic__cs.html#a643a1984936263d1164c678b37f4d0a5">dt_bt_filter</a></td></tr>
 <tr class="memdesc:a643a1984936263d1164c678b37f4d0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time-scale over which the barotropic mode solutions are filtered [T ~&gt; s] if positive, or as a fraction of DT if negative [nondim]. This can never be taken to be longer than 2*dt. Set this to 0 to apply no filtering.  <a href="structmom__barotropic_1_1barotropic__cs.html#a643a1984936263d1164c678b37f4d0a5">More...</a><br /></td></tr>
@@ -529,8 +526,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, adjust the curve fit to the BT_cont type that is used by the barotropic solver to match the transport about which the flow is being linearized. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00260">260</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keywordtype">logical</span> :: adjust_BT_cont<span class="comment">  !&lt; If true, adjust the curve fit to the BT_cont type</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00259">259</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="keywordtype">logical</span> :: adjust_BT_cont<span class="comment">  !&lt; If true, adjust the curve fit to the BT_cont type</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -566,8 +563,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A nondimensional number, from 0 to 1, that determines the gravity wave time stepping scheme. 0.0 gives a forward-backward scheme, while 1.0 give backward Euler. In practice, bebt should be of order 0.2 or greater. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00173">173</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keywordtype">  real</span>    :: bebt<span class="comment">            !&lt; A nondimensional number, from 0 to 1, that</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00172">172</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keywordtype">  real</span>    :: bebt<span class="comment">            !&lt; A nondimensional number, from 0 to 1, that</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -585,8 +582,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the magnitude of the fake mass source in the barotropic equation that drives the two estimates of the free surface height toward each other is bounded to avoid driving corrective velocities that exceed MAXCFL_BT_CONT. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00179">179</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordtype">logical</span> :: bound_BT_corr<span class="comment">   !&lt; If true, the magnitude of the fake mass source</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00178">178</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordtype">logical</span> :: bound_BT_corr<span class="comment">   !&lt; If true, the magnitude of the fake mass source</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -604,8 +601,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the BT_cont_type variables to set limits on the magnitude of the corrective mass fluxes. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00253">253</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keywordtype">logical</span> :: BT_cont_bounds<span class="comment">  !&lt; If true, use the BT_cont_type variables to set</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00252">252</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keywordtype">logical</span> :: BT_cont_bounds<span class="comment">  !&lt; If true, use the BT_cont_type variables to set</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -623,8 +620,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00269">269</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keywordtype">type</span>(MOM_domain_type), <span class="keywordtype">pointer</span> :: BT_Domain =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00268">268</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="keywordtype">type</span>(MOM_domain_type), <span class="keywordtype">pointer</span> :: BT_Domain =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -661,8 +658,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, step the barotropic velocity first and project out the velocity tendency by 1+BEBT when calculating the transport. The default (false) is to use a predictor continuity step to find the pressure field, and then do a corrector continuity step using a weighted average of the old and new velocities, with weights of (1-BEBT) and BEBT. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00201">201</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordtype">logical</span> :: BT_project_velocity<span class="comment"> !&lt; If true, step the barotropic velocity first</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00200">200</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">logical</span> :: BT_project_velocity<span class="comment"> !&lt; If true, step the barotropic velocity first</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -680,8 +677,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If clip_velocity is true, velocity components will be truncated when they are large enough that the corresponding CFL number exceeds this value, nondim. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00245">245</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keywordtype">  real</span>    :: CFL_trunc<span class="comment">       !&lt; If clip_velocity is true, velocity components will</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00244">244</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keywordtype">  real</span>    :: CFL_trunc<span class="comment">       !&lt; If clip_velocity is true, velocity components will</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -699,8 +696,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, limit any velocity components that are are large enough for a CFL number to exceed CFL_trunc. This should only be used as a desperate debugging measure. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00235">235</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordtype">logical</span> :: clip_velocity<span class="comment">   !&lt; If true, limit any velocity components that are</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00234">234</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="keywordtype">logical</span> :: clip_velocity<span class="comment">   !&lt; If true, limit any velocity components that are</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -718,8 +715,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The constant that scales the dynamic surface pressure [nondim]. Stable values are &lt; ~1.0. The default is 0.9. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00216">216</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="keywordtype">  real</span>    :: const_dyn_psurf<span class="comment"> !&lt; The constant that scales the dynamic surface</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00215">215</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="keywordtype">  real</span>    :: const_dyn_psurf<span class="comment"> !&lt; The constant that scales the dynamic surface</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -781,8 +778,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, write verbose checksums for debugging purposes. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00239">239</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">           !&lt; If true, write verbose checksums for debugging purposes.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00238">238</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">           !&lt; If true, write verbose checksums for debugging purposes.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -800,8 +797,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, write verbose checksums for debugging purposes. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00240">240</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordtype">logical</span> :: debug_bt<span class="comment">        !&lt; If true, write verbose checksums for debugging purposes.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00239">239</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="keywordtype">logical</span> :: debug_bt<span class="comment">        !&lt; If true, write verbose checksums for debugging purposes.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -819,8 +816,8 @@ Public variables and constants</h2></td></tr>
 
 <p>debugging copy of horizontal index_type </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00270">270</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="keywordtype">type</span>(hor_index_type), <span class="keywordtype">pointer</span> :: debug_BT_HI =&gt; null() <span class="comment">!&lt; debugging copy of horizontal index_type</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00269">269</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keywordtype">type</span>(hor_index_type), <span class="keywordtype">pointer</span> :: debug_BT_HI =&gt; null() <span class="comment">!&lt; debugging copy of horizontal index_type</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -838,8 +835,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure that is used to regulate the timing of diagnostic output. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00267">267</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null()  <span class="comment">!&lt; A structure that is used to regulate</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00266">266</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null()  <span class="comment">!&lt; A structure that is used to regulate</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -857,8 +854,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The minimum depth to use in limiting the size of the dynamic surface pressure for stability [Z ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00211">211</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keywordtype">  real</span>    :: Dmin_dyn_psurf<span class="comment">  !&lt; The minimum depth to use in limiting the size</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00210">210</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keywordtype">  real</span>    :: Dmin_dyn_psurf<span class="comment">  !&lt; The minimum depth to use in limiting the size</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -876,8 +873,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The time-scale over which the barotropic mode solutions are filtered [T ~&gt; s] if positive, or as a fraction of DT if negative [nondim]. This can never be taken to be longer than 2*dt. Set this to 0 to apply no filtering. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00167">167</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keywordtype">  real</span>    :: dt_bt_filter<span class="comment">    !&lt;   The time-scale over which the barotropic mode solutions are</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keywordtype">  real</span>    :: dt_bt_filter<span class="comment">    !&lt;   The time-scale over which the barotropic mode solutions are</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -893,10 +890,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The barotropic time step [s]. </p>
+<p>The barotropic time step [T ~&gt; s]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00163">163</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keywordtype">  real</span>    :: dtbt<span class="comment">            !&lt; The barotropic time step [s].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00162">162</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keywordtype">  real</span>    :: dtbt<span class="comment">            !&lt; The barotropic time step [T ~&gt; s].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -914,8 +911,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the maximum time-step that should used. The default is 0.98. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00164">164</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keywordtype">  real</span>    :: dtbt_fraction<span class="comment">   !&lt;   The fraction of the maximum time-step that</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00163">163</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keywordtype">  real</span>    :: dtbt_fraction<span class="comment">   !&lt;   The fraction of the maximum time-step that</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -931,10 +928,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The maximum stable barotropic time step [s]. </p>
+<p>The maximum stable barotropic time step [T ~&gt; s]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keywordtype">  real</span>    :: dtbt_max<span class="comment">        !&lt;   The maximum stable barotropic time step [s].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00165">165</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keywordtype">  real</span>    :: dtbt_max<span class="comment">        !&lt;   The maximum stable barotropic time step [T ~&gt; s].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -988,8 +985,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, add a dynamic pressure due to a viscous ice shelf, for instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00209">209</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keywordtype">logical</span> :: dynamic_psurf<span class="comment">   !&lt; If true, add a dynamic pressure due to a viscous</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00208">208</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keywordtype">logical</span> :: dynamic_psurf<span class="comment">   !&lt; If true, add a dynamic pressure due to a viscous</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1121,8 +1118,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A nondimensional factor by which gtot is enhanced. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00220">220</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="keywordtype">  real</span>    :: G_extra<span class="comment">         !&lt; A nondimensional factor by which gtot is enhanced.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00219">219</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keywordtype">  real</span>    :: G_extra<span class="comment">         !&lt; A nondimensional factor by which gtot is enhanced.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1140,8 +1137,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, adjust the initial conditions for the barotropic solver to the values from the layered solution over a whole timestep instead of instantly. This is a decent approximation to the inclusion of sum(u dh_dt) while also correcting for truncation errors. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00184">184</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordtype">logical</span> :: gradual_BT_ICs<span class="comment">  !&lt; If true, adjust the initial conditions for the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00183">183</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">logical</span> :: gradual_BT_ICs<span class="comment">  !&lt; If true, adjust the initial conditions for the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1159,8 +1156,8 @@ Public variables and constants</h2></td></tr>
 
 <p>An integer indicating how the thicknesses at velocity points are calculated. Valid values are given by the parameters defined below: HARMONIC, ARITHMETIC, HYBRID, and FROM_BT_CONT. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00221">221</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordtype">integer</span> :: hvel_scheme<span class="comment">     !&lt; An integer indicating how the thicknesses at</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00220">220</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordtype">integer</span> :: hvel_scheme<span class="comment">     !&lt; An integer indicating how the thicknesses at</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1197,8 +1194,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The length scale at which the damping rate due to the ice strength should be the same as if a Laplacian were applied [L ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00213">213</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="keywordtype">  real</span>    :: ice_strength_length<span class="comment">  !&lt; The length scale at which the damping rate</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00212">212</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keywordtype">  real</span>    :: ice_strength_length<span class="comment">  !&lt; The length scale at which the damping rate</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1216,7 +1213,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00303">303</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00302">302</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1234,8 +1231,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00303">303</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordtype">integer</span> :: id_BTC_FA_u_EE = -1, id_btc_fa_u_e0 = -1, id_btc_fa_u_w0 = -1, id_btc_fa_u_ww = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00302">302</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keywordtype">integer</span> :: id_BTC_FA_u_EE = -1, id_btc_fa_u_e0 = -1, id_btc_fa_u_w0 = -1, id_btc_fa_u_ww = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1253,7 +1250,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00303">303</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00302">302</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1271,7 +1268,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00303">303</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00302">302</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1289,7 +1286,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00305">305</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00304">304</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1307,8 +1304,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00305">305</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordtype">integer</span> :: id_BTC_FA_v_NN = -1, id_btc_fa_v_n0 = -1, id_btc_fa_v_s0 = -1, id_btc_fa_v_ss = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00304">304</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="keywordtype">integer</span> :: id_BTC_FA_v_NN = -1, id_btc_fa_v_n0 = -1, id_btc_fa_v_s0 = -1, id_btc_fa_v_ss = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1326,7 +1323,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00305">305</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00304">304</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1344,7 +1341,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00305">305</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00304">304</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1362,8 +1359,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00304">304</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="keywordtype">integer</span> :: id_BTC_ubt_EE = -1, id_btc_ubt_ww = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00303">303</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordtype">integer</span> :: id_BTC_ubt_EE = -1, id_btc_ubt_ww = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1381,7 +1378,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00304">304</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00303">303</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1399,8 +1396,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00306">306</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <span class="keywordtype">integer</span> :: id_BTC_vbt_NN = -1, id_btc_vbt_ss = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00305">305</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordtype">integer</span> :: id_BTC_vbt_NN = -1, id_btc_vbt_ss = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1418,7 +1415,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00306">306</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00305">305</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1436,7 +1433,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00292">292</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00291">291</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1454,7 +1451,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00292">292</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00291">291</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1472,7 +1469,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00295">295</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00294">294</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1490,7 +1487,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00294">294</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00293">293</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1508,7 +1505,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00297">297</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00296">296</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1526,7 +1523,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00298">298</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00297">297</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1544,7 +1541,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00296">296</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00295">295</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1562,7 +1559,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00300">300</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00299">299</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1580,8 +1577,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00301">301</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <span class="keywordtype">integer</span> :: id_frhatu1 = -1, id_frhatv1 = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00300">300</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  <span class="keywordtype">integer</span> :: id_frhatu1 = -1, id_frhatv1 = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1599,7 +1596,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00300">300</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00299">299</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1617,7 +1614,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00301">301</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00300">300</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1635,7 +1632,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00299">299</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00298">298</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1653,8 +1650,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00299">299</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  <span class="keywordtype">integer</span> :: id_gtotn = -1, id_gtots = -1, id_gtote = -1, id_gtotw = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00298">298</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keywordtype">integer</span> :: id_gtotn = -1, id_gtots = -1, id_gtote = -1, id_gtotw = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1672,7 +1669,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00299">299</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00298">298</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1690,7 +1687,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00299">299</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00298">298</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1708,8 +1705,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00292">292</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordtype">integer</span> :: id_PFu_bt = -1, id_pfv_bt = -1, id_coru_bt = -1, id_corv_bt = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00291">291</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keywordtype">integer</span> :: id_PFu_bt = -1, id_pfv_bt = -1, id_coru_bt = -1, id_corv_bt = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1727,7 +1724,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00292">292</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00291">291</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1745,7 +1742,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00293">293</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00292">292</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1763,8 +1760,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00295">295</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <span class="keywordtype">integer</span> :: id_ubt = -1, id_vbt = -1, id_eta_bt = -1, id_ubtav = -1, id_vbtav = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00294">294</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <span class="keywordtype">integer</span> :: id_ubt = -1, id_vbt = -1, id_eta_bt = -1, id_ubtav = -1, id_vbtav = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1782,8 +1779,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00297">297</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keywordtype">integer</span> :: id_ubt_hifreq = -1, id_vbt_hifreq = -1, id_eta_hifreq = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00296">296</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="keywordtype">integer</span> :: id_ubt_hifreq = -1, id_vbt_hifreq = -1, id_eta_hifreq = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1801,8 +1798,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00296">296</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="keywordtype">integer</span> :: id_ubt_st = -1, id_vbt_st = -1, id_eta_st = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00295">295</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <span class="keywordtype">integer</span> :: id_ubt_st = -1, id_vbt_st = -1, id_eta_st = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1820,7 +1817,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00295">295</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00294">294</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1838,8 +1835,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00293">293</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keywordtype">integer</span> :: id_ubtforce = -1, id_vbtforce = -1, id_uaccel = -1, id_vaccel = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00292">292</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordtype">integer</span> :: id_ubtforce = -1, id_vbtforce = -1, id_uaccel = -1, id_vaccel = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1857,8 +1854,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00300">300</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  <span class="keywordtype">integer</span> :: id_uhbt = -1, id_frhatu = -1, id_vhbt = -1, id_frhatv = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00299">299</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  <span class="keywordtype">integer</span> :: id_uhbt = -1, id_frhatu = -1, id_vhbt = -1, id_frhatv = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1876,8 +1873,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00307">307</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keywordtype">integer</span> :: id_uhbt0 = -1, id_vhbt0 = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00306">306</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <span class="keywordtype">integer</span> :: id_uhbt0 = -1, id_vhbt0 = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1895,8 +1892,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00298">298</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keywordtype">integer</span> :: id_uhbt_hifreq = -1, id_vhbt_hifreq = -1, id_eta_pred_hifreq = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00297">297</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keywordtype">integer</span> :: id_uhbt_hifreq = -1, id_vhbt_hifreq = -1, id_eta_pred_hifreq = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1914,7 +1911,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00293">293</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00292">292</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1932,7 +1929,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00295">295</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00294">294</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1950,7 +1947,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00297">297</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00296">296</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1968,7 +1965,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00296">296</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00295">295</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -1986,7 +1983,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00295">295</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00294">294</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -2004,7 +2001,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00293">293</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00292">292</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -2022,7 +2019,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00300">300</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00299">299</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -2040,7 +2037,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00307">307</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00306">306</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -2058,7 +2055,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00298">298</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00297">297</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -2076,8 +2073,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00294">294</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <span class="keywordtype">integer</span> :: id_visc_rem_u = -1, id_visc_rem_v = -1, id_eta_cor = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00293">293</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keywordtype">integer</span> :: id_visc_rem_u = -1, id_visc_rem_v = -1, id_eta_cor = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2095,7 +2092,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00294">294</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00293">293</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
 
 </div>
 </div>
@@ -2187,8 +2184,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The upper i-memory limit for the wide halo arrays. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00275">275</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordtype">integer</span> :: iedw<span class="comment"> !&lt; The upper i-memory limit for the wide halo arrays.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00274">274</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keywordtype">integer</span> :: iedw<span class="comment"> !&lt; The upper i-memory limit for the wide halo arrays.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2206,8 +2203,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The lower i-memory limit for the wide halo arrays. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00274">274</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keywordtype">integer</span> :: isdw<span class="comment"> !&lt; The lower i-memory limit for the wide halo arrays.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00273">273</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="keywordtype">integer</span> :: isdw<span class="comment"> !&lt; The lower i-memory limit for the wide halo arrays.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2225,8 +2222,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The upper j-memory limit for the wide halo arrays. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00277">277</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="keywordtype">integer</span> :: jedw<span class="comment"> !&lt; The upper j-memory limit for the wide halo arrays.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00276">276</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keywordtype">integer</span> :: jedw<span class="comment"> !&lt; The upper j-memory limit for the wide halo arrays.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2244,8 +2241,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The lower j-memory limit for the wide halo arrays. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00276">276</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keywordtype">integer</span> :: jsdw<span class="comment"> !&lt; The lower j-memory limit for the wide halo arrays.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00275">275</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordtype">integer</span> :: jsdw<span class="comment"> !&lt; The lower j-memory limit for the wide halo arrays.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2301,8 +2298,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, apply a linear drag to the barotropic velocities, using rates set by lin_drag_u &amp; _v divided by the depth of the ocean. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00227">227</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordtype">logical</span> :: linear_wave_drag<span class="comment">  !&lt; If true, apply a linear drag to the barotropic</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00226">226</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordtype">logical</span> :: linear_wave_drag<span class="comment">  !&lt; If true, apply a linear drag to the barotropic</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2320,8 +2317,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the PV and interface thicknesses used in the barotropic Coriolis calculation is time invariant and linearized. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00230">230</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordtype">logical</span> :: linearized_BT_PV<span class="comment">  !&lt; If true, the PV and interface thicknesses used</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00229">229</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordtype">logical</span> :: linearized_BT_PV<span class="comment">  !&lt; If true, the PV and interface thicknesses used</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2339,8 +2336,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The maximum permitted CFL number associated with the barotropic accelerations from the summed velocities times the time-derivatives of thicknesses. The default is 0.1, and there will probably be real problems if this were set close to 1. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00248">248</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="keywordtype">  real</span>    :: maxCFL_BT_cont<span class="comment">  !&lt; The maximum permitted CFL number associated with the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00247">247</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keywordtype">  real</span>    :: maxCFL_BT_cont<span class="comment">  !&lt; The maximum permitted CFL number associated with the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2358,8 +2355,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Velocity components greater than maxvel are truncated to maxvel [L T-1 ~&gt; m s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00243">243</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="keywordtype">  real</span>    :: maxvel<span class="comment">          !&lt; Velocity components greater than maxvel are</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00242">242</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keywordtype">  real</span>    :: maxvel<span class="comment">          !&lt; Velocity components greater than maxvel are</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2377,8 +2374,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00272">272</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keywordtype">logical</span> :: module_is_initialized = .false.</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00271">271</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keywordtype">logical</span> :: module_is_initialized = .false.</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2396,8 +2393,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of barotropic time steps between updates to the face area, or 0 only to update at the start of a call to btstep. The default is 1. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00197">197</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">integer</span> :: Nonlin_cont_update_period<span class="comment"> !&lt; The number of barotropic time steps</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00196">196</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordtype">integer</span> :: Nonlin_cont_update_period<span class="comment"> !&lt; The number of barotropic time steps</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2415,8 +2412,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the barotropic continuity equation uses the full ocean thickness for transport. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00195">195</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">logical</span> :: Nonlinear_continuity<span class="comment"> !&lt; If true, the barotropic continuity equation</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00194">194</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordtype">logical</span> :: Nonlinear_continuity<span class="comment"> !&lt; If true, the barotropic continuity equation</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2434,8 +2431,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of barotropic timesteps per baroclinic time step the last time btstep was called. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00171">171</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordtype">integer</span> :: nstep_last = 0<span class="comment">  !&lt; The number of barotropic timesteps per baroclinic</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00170">170</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordtype">integer</span> :: nstep_last = 0<span class="comment">  !&lt; The number of barotropic timesteps per baroclinic</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2453,8 +2450,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Handle for a group halo pass. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00284">284</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_Dat_uv<span class="comment"> !&lt; Handle for a group halo pass</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00283">283</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_Dat_uv<span class="comment"> !&lt; Handle for a group halo pass</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2472,8 +2469,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Handle for a group halo pass. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00289">289</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_e_anom<span class="comment"> !&lt; Handle for a group halo pass</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00288">288</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_e_anom<span class="comment"> !&lt; Handle for a group halo pass</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2491,8 +2488,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Handle for a group halo pass. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00282">282</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_eta_bt_rem<span class="comment"> !&lt; Handle for a group halo pass</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00281">281</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_eta_bt_rem<span class="comment"> !&lt; Handle for a group halo pass</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2510,8 +2507,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Handle for a group halo pass. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00285">285</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_eta_ubt<span class="comment"> !&lt; Handle for a group halo pass</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00284">284</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_eta_ubt<span class="comment"> !&lt; Handle for a group halo pass</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2529,8 +2526,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Handle for a group halo pass. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00286">286</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_etaav<span class="comment"> !&lt; Handle for a group halo pass</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00285">285</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_etaav<span class="comment"> !&lt; Handle for a group halo pass</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2548,8 +2545,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Handle for a group halo pass. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00283">283</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_force_hbt0_Cor_ref<span class="comment"> !&lt; Handle for a group halo pass</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00282">282</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_force_hbt0_Cor_ref<span class="comment"> !&lt; Handle for a group halo pass</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2567,8 +2564,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Handle for a group halo pass. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00280">280</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_gtot<span class="comment"> !&lt; Handle for a group halo pass</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00279">279</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_gtot<span class="comment"> !&lt; Handle for a group halo pass</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2586,8 +2583,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Handle for a group halo pass. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00279">279</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_q_DCor<span class="comment"> !&lt; Handle for a group halo pass</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00278">278</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_q_DCor<span class="comment"> !&lt; Handle for a group halo pass</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2605,8 +2602,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Handle for a group halo pass. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00281">281</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_tmp_uv<span class="comment"> !&lt; Handle for a group halo pass</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00280">280</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_tmp_uv<span class="comment"> !&lt; Handle for a group halo pass</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2624,8 +2621,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Handle for a group halo pass. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00287">287</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_ubt_Cor<span class="comment"> !&lt; Handle for a group halo pass</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00286">286</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_ubt_Cor<span class="comment"> !&lt; Handle for a group halo pass</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2643,8 +2640,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Handle for a group halo pass. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00288">288</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_ubta_uhbta<span class="comment"> !&lt; Handle for a group halo pass</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00287">287</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_ubta_uhbta<span class="comment"> !&lt; Handle for a group halo pass</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2668,25 +2665,6 @@ Public variables and constants</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a647aaa0098e63a445973bfcd70104070"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a647aaa0098e63a445973bfcd70104070">&#9670;&nbsp;</a></span>rho0</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">real mom_barotropic::barotropic_cs::rho0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The density used in the Boussinesq approximation [kg m-3]. </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00162">162</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keywordtype">  real</span>    :: Rho0<span class="comment">            !&lt; The density used in the Boussinesq approximation [kg m-3].</span></div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a224b0864de5a52a6b80f31f7ad57654c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a224b0864de5a52a6b80f31f7ad57654c">&#9670;&nbsp;</a></span>sadourny</h2>
 
@@ -2701,8 +2679,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the Coriolis terms are discretized with Sadourny's energy conserving scheme, otherwise the Arakawa &amp; Hsu scheme is used. If the deformation radius is not resolved Sadourny's scheme should probably be used. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00190">190</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">logical</span> :: Sadourny<span class="comment">        !&lt; If true, the Coriolis terms are discretized</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00189">189</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordtype">logical</span> :: Sadourny<span class="comment">        !&lt; If true, the Coriolis terms are discretized</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2720,8 +2698,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the split time stepping scheme. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00178">178</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordtype">logical</span> :: split<span class="comment">           !&lt; If true, use the split time stepping scheme.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00177">177</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">logical</span> :: split<span class="comment">           !&lt; If true, use the split time stepping scheme.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2739,8 +2717,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use a stronger estimate of the retarding effects of strong bottom drag. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00225">225</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordtype">logical</span> :: strong_drag<span class="comment">     !&lt; If true, use a stronger estimate of the retarding</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00224">224</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">logical</span> :: strong_drag<span class="comment">     !&lt; If true, use a stronger estimate of the retarding</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2758,8 +2736,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, apply tidal momentum forcing. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00219">219</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordtype">logical</span> :: tides<span class="comment">           !&lt; If true, apply tidal momentum forcing.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00218">218</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordtype">logical</span> :: tides<span class="comment">           !&lt; If true, apply tidal momentum forcing.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2777,8 +2755,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The fraction of the total column thickness interpolated to u grid points in each layer [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00271">271</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keywordtype">type</span>(tidal_forcing_CS), <span class="keywordtype">pointer</span> :: tides_CSp =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00270">270</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="keywordtype">type</span>(tidal_forcing_CS), <span class="keywordtype">pointer</span> :: tides_CSp =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2796,8 +2774,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the ocean models clock. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00266">266</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time  =&gt; null() <span class="comment">!&lt; A pointer to the ocean models clock.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00265">265</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time  =&gt; null() <span class="comment">!&lt; A pointer to the ocean models clock.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2894,8 +2872,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If True, use an order of operations that is not bitwise rotationally symmetric in the meridional Coriolis term of the barotropic solver. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00263">263</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordtype">logical</span> :: use_old_coriolis_bracket_bug<span class="comment"> !&lt; If True, use an order of operations</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00262">262</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="keywordtype">logical</span> :: use_old_coriolis_bracket_bug<span class="comment"> !&lt; If True, use an order of operations</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2913,8 +2891,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use wide halos and march in during the barotropic time stepping for efficiency. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00233">233</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordtype">logical</span> :: use_wide_halos<span class="comment">  !&lt; If true, use wide halos and march in during the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00232">232</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordtype">logical</span> :: use_wide_halos<span class="comment">  !&lt; If true, use wide halos and march in during the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2988,8 +2966,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Velocity components smaller than vel_underflow are set to 0 [L T-1 ~&gt; m s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00241">241</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keywordtype">  real</span>    :: vel_underflow<span class="comment">   !&lt; Velocity components smaller than vel_underflow</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00240">240</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keywordtype">  real</span>    :: vel_underflow<span class="comment">   !&lt; Velocity components smaller than vel_underflow</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3026,13 +3004,13 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the viscous remnants when estimating the barotropic velocities that were used to calculate uh0 and vh0. False is probably the better choice. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00256">256</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordtype">logical</span> :: visc_rem_u_uh0<span class="comment">  !&lt; If true, use the viscous remnants when estimating</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__barotropic_8F90_source.html#l00255">255</a> of file <a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordtype">logical</span> :: visc_rem_u_uh0<span class="comment">  !&lt; If true, use the viscous remnants when estimating</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/core/<a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/core/<a class="el" href="MOM__barotropic_8F90_source.html">MOM_barotropic.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

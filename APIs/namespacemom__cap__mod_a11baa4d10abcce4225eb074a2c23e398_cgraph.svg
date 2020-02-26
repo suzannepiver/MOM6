@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 558;
+var viewWidth = 532;
 var viewHeight = 372;
 var sectionId = 'dynsection-6';
 </script>
@@ -54,13 +54,13 @@ var sectionId = 'dynsection-6';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_cap_mod::initializerealize</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-368 554,-368 554,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-368 528,-368 528,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Called by NUOPC to realize import and export fields. &quot;Realizing&quot; a field means that its grid has been...">
-<polygon fill="#bfbfbf" stroke="#000000" points="0,-170 0,-189 162,-189 162,-170 0,-170"/>
-<text text-anchor="middle" x="81" y="-177" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_cap_mod::initializerealize</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="0,-170 0,-189 153,-189 153,-170 0,-170"/>
+<text text-anchor="middle" x="76.5" y="-177" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_cap_mod::initializerealize</text>
 </a>
 </g>
 </g>
@@ -68,175 +68,175 @@ var sectionId = 'dynsection-6';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__ocean__model__nuopc.html#a506114a665a8313804e320f8c76bc9fe" target="_top" xlink:title="Returns eps_omesh read from param file.">
-<polygon fill="#ffffff" stroke="#000000" points="215.5,-333.5 215.5,-363.5 358.5,-363.5 358.5,-333.5 215.5,-333.5"/>
-<text text-anchor="start" x="223.5" y="-351.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_ocean_model_nuopc</text>
-<text text-anchor="middle" x="287" y="-340.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_eps_omesh</text>
+<polygon fill="#ffffff" stroke="#000000" points="206.5,-333.5 206.5,-363.5 339.5,-363.5 339.5,-333.5 206.5,-333.5"/>
+<text text-anchor="start" x="214.5" y="-351.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_ocean_model_nuopc</text>
+<text text-anchor="middle" x="273" y="-340.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_eps_omesh</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M85.8526,-189.0066C99.6247,-215.0005 141.6347,-287.7618 198,-324.5 200.5976,-326.1931 203.3118,-327.7674 206.1101,-329.2311"/>
-<polygon fill="#191970" stroke="#191970" points="204.7533,-332.4606 215.293,-333.54 207.7268,-326.1235 204.7533,-332.4606"/>
+<path fill="none" stroke="#191970" d="M81.2822,-189.3424C94.5303,-215.5516 134.3663,-287.5527 189,-324.5 191.5559,-326.2285 194.2361,-327.8338 197.0046,-329.3247"/>
+<polygon fill="#191970" stroke="#191970" points="195.5748,-332.5208 206.1031,-333.707 198.6124,-326.2142 195.5748,-332.5208"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__grid.html#a1cee4daea572d4efd1565b24ca652a2d" target="_top" xlink:title="Return global shape of horizontal grid.">
-<polygon fill="#ffffff" stroke="#000000" points="229,-284.5 229,-314.5 345,-314.5 345,-284.5 229,-284.5"/>
-<text text-anchor="start" x="237" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_grid::get_global</text>
-<text text-anchor="middle" x="287" y="-291.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_grid_size</text>
+<polygon fill="#ffffff" stroke="#000000" points="218,-284.5 218,-314.5 328,-314.5 328,-284.5 218,-284.5"/>
+<text text-anchor="start" x="226" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_grid::get_global</text>
+<text text-anchor="middle" x="273" y="-291.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_grid_size</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M90.0032,-189.2611C108.4036,-208.6267 152.4421,-252.0558 198,-275.5 204.5546,-278.873 211.6318,-281.8092 218.8314,-284.3566"/>
-<polygon fill="#191970" stroke="#191970" points="218.0944,-287.7984 228.6873,-287.5937 220.2788,-281.1479 218.0944,-287.7984"/>
+<path fill="none" stroke="#191970" d="M85.1033,-189.2231C102.6995,-208.5203 144.8793,-251.8325 189,-275.5 195.0165,-278.7274 201.5144,-281.5619 208.1384,-284.0418"/>
+<polygon fill="#191970" stroke="#191970" points="207.2973,-287.4546 217.8921,-287.426 209.5919,-280.8414 207.2973,-287.4546"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__ocean__model__nuopc.html#a4e9dae76344260a24cb4375329635a6e" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="215.5,-235.5 215.5,-265.5 358.5,-265.5 358.5,-235.5 215.5,-235.5"/>
-<text text-anchor="start" x="223.5" y="-253.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_ocean_model_nuopc</text>
-<text text-anchor="middle" x="287" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_ocean_grid</text>
+<polygon fill="#ffffff" stroke="#000000" points="206.5,-235.5 206.5,-265.5 339.5,-265.5 339.5,-235.5 206.5,-235.5"/>
+<text text-anchor="start" x="214.5" y="-253.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_ocean_model_nuopc</text>
+<text text-anchor="middle" x="273" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_ocean_grid</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M102.7062,-189.1217C125.9806,-199.2246 164.1607,-215.185 198,-226.5 204.3223,-228.614 210.9436,-230.6755 217.5992,-232.6456"/>
-<polygon fill="#191970" stroke="#191970" points="216.7655,-236.0479 227.3441,-235.4621 218.7091,-229.3231 216.7655,-236.0479"/>
+<path fill="none" stroke="#191970" d="M97.3619,-189.0845C119.7332,-199.1563 156.4384,-215.0909 189,-226.5 194.8239,-228.5406 200.9184,-230.5388 207.0504,-232.4566"/>
+<polygon fill="#191970" stroke="#191970" points="206.0976,-235.8251 216.6838,-235.3984 208.1421,-229.1303 206.0976,-235.8251"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="This provides a convenient interface for writing an mpp_error message with run&#45;time filter based on a...">
-<polygon fill="#ffffff" stroke="#000000" points="229.5,-186.5 229.5,-216.5 344.5,-216.5 344.5,-186.5 229.5,-186.5"/>
-<text text-anchor="start" x="237.5" y="-204.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="287" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
+<polygon fill="#ffffff" stroke="#000000" points="220,-186.5 220,-216.5 326,-216.5 326,-186.5 220,-186.5"/>
+<text text-anchor="start" x="228" y="-204.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="273" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M162.1209,-188.1634C181.1207,-190.1925 201.1617,-192.3328 219.4937,-194.2906"/>
-<polygon fill="#191970" stroke="#191970" points="219.1697,-197.7758 229.4849,-195.3576 219.9131,-190.8154 219.1697,-197.7758"/>
+<path fill="none" stroke="#191970" d="M153.0347,-188.0688C171.7688,-190.1662 191.6117,-192.3878 209.6505,-194.4074"/>
+<polygon fill="#191970" stroke="#191970" points="209.4261,-197.9041 219.7534,-195.5386 210.205,-190.9476 209.4261,-197.9041"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="namespacemom__cap__mod.html#a57fa339b90f33aff03637f9dee5ffaf1" target="_top" xlink:title="Realize the import and export fields using either a grid or a mesh.">
-<polygon fill="#ffffff" stroke="#000000" points="198,-148 198,-167 376,-167 376,-148 198,-148"/>
-<text text-anchor="middle" x="287" y="-155" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_cap_mod::mom_realizefields</text>
+<polygon fill="#ffffff" stroke="#000000" points="189,-148 189,-167 357,-167 357,-148 189,-148"/>
+<text text-anchor="middle" x="273" y="-155" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_cap_mod::mom_realizefields</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M162.1209,-170.8366C170.5371,-169.9378 179.1576,-169.0171 187.7434,-168.1002"/>
-<polygon fill="#191970" stroke="#191970" points="188.2203,-171.5693 197.7921,-167.0271 187.4769,-164.6089 188.2203,-171.5693"/>
+<path fill="none" stroke="#191970" d="M153.0347,-170.9312C161.4771,-169.986 170.1448,-169.0156 178.771,-168.0498"/>
+<polygon fill="#191970" stroke="#191970" points="179.314,-171.511 188.8624,-166.92 178.5351,-164.5544 179.314,-171.511"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
 <g id="a_node10"><a xlink:href="namespacemom__cap__methods.html#a9a70c05fed708d66fb539759427a9c65" target="_top" xlink:title="Sets module variable geometry type.">
-<polygon fill="#ffffff" stroke="#000000" points="219,-98.5 219,-128.5 355,-128.5 355,-98.5 219,-98.5"/>
-<text text-anchor="start" x="227" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_cap_methods::mom</text>
-<text text-anchor="middle" x="287" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_set_geomtype</text>
+<polygon fill="#ffffff" stroke="#000000" points="208,-98.5 208,-128.5 338,-128.5 338,-98.5 208,-98.5"/>
+<text text-anchor="start" x="216" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_cap_methods::mom</text>
+<text text-anchor="middle" x="273" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_set_geomtype</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node10 -->
 <g id="edge9" class="edge">
 <title>Node1&#45;&gt;Node10</title>
-<path fill="none" stroke="#191970" d="M106.8655,-169.9074C130.4695,-161.2801 166.388,-148.4678 198,-138.5 205.6174,-136.0981 213.6365,-133.6853 221.6133,-131.3566"/>
-<polygon fill="#191970" stroke="#191970" points="222.6545,-134.6991 231.2924,-128.5642 220.714,-127.9734 222.6545,-134.6991"/>
+<path fill="none" stroke="#191970" d="M101.3715,-169.9473C124.0682,-161.3467 158.6055,-148.5514 189,-138.5 195.9522,-136.2009 203.259,-133.8828 210.5415,-131.6339"/>
+<polygon fill="#191970" stroke="#191970" points="211.8787,-134.8853 220.4215,-128.6186 209.8353,-128.1901 211.8787,-134.8853"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
 <g id="a_node11"><a xlink:href="namespacemom__cap__mod.html#a81c1c8d1c54d3a7d0cdf7d939a9d7b5a" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="223,-49.5 223,-79.5 351,-79.5 351,-49.5 223,-49.5"/>
-<text text-anchor="start" x="231" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_cap_mod::shr_file</text>
-<text text-anchor="middle" x="287" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_setlogunit</text>
+<polygon fill="#ffffff" stroke="#000000" points="212.5,-49.5 212.5,-79.5 333.5,-79.5 333.5,-49.5 212.5,-49.5"/>
+<text text-anchor="start" x="220.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_cap_mod::shr_file</text>
+<text text-anchor="middle" x="273" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_setlogunit</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node11 -->
 <g id="edge10" class="edge">
 <title>Node1&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M90.401,-169.99C109.1656,-151.5427 153.3164,-110.7622 198,-88.5 202.8344,-86.0914 207.9409,-83.9008 213.1639,-81.9125"/>
-<polygon fill="#191970" stroke="#191970" points="214.4004,-85.1877 222.6573,-78.5487 212.0625,-78.5896 214.4004,-85.1877"/>
+<path fill="none" stroke="#191970" d="M85.7698,-169.7407C103.8829,-151.225 145.9778,-110.8551 189,-88.5 193.3151,-86.2578 197.867,-84.2008 202.5286,-82.3177"/>
+<polygon fill="#191970" stroke="#191970" points="204.0724,-85.477 212.2106,-78.6932 201.6182,-78.9213 204.0724,-85.477"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
 <g id="a_node12"><a xlink:href="namespacemom__cap__mod.html#ad65735d76d137896b5b838aa9e776757" target="_top" xlink:title="Set scalar data from state for a particula name.">
-<polygon fill="#ffffff" stroke="#000000" points="229,-.5 229,-30.5 345,-30.5 345,-.5 229,-.5"/>
-<text text-anchor="start" x="237" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_cap_mod::state</text>
-<text text-anchor="middle" x="287" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_setscalar</text>
+<polygon fill="#ffffff" stroke="#000000" points="217.5,-.5 217.5,-30.5 328.5,-30.5 328.5,-.5 217.5,-.5"/>
+<text text-anchor="start" x="225.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_cap_mod::state</text>
+<text text-anchor="middle" x="273" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_setscalar</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node12 -->
 <g id="edge11" class="edge">
 <title>Node1&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M86.1474,-169.9592C100.3572,-144.5598 142.763,-74.8293 198,-39.5 204.5407,-35.3166 211.7988,-31.8569 219.2674,-28.9967"/>
-<polygon fill="#191970" stroke="#191970" points="220.504,-32.2724 228.8021,-25.6852 218.2073,-25.6599 220.504,-32.2724"/>
+<path fill="none" stroke="#191970" d="M81.3769,-169.9999C94.8602,-144.7016 135.2279,-75.1997 189,-39.5 194.688,-35.7237 200.973,-32.5333 207.4691,-29.8396"/>
+<polygon fill="#191970" stroke="#191970" points="208.9539,-33.0211 217.0927,-26.2381 206.5003,-26.4652 208.9539,-33.0211"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__domains.html#abc0b09896aa9f5b4c795f85c813aa59f" target="_top" xlink:title="Returns the global shape of h&#45;point arrays.">
-<polygon fill="#ffffff" stroke="#000000" points="412,-284.5 412,-314.5 550,-314.5 550,-284.5 412,-284.5"/>
-<text text-anchor="start" x="420" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_domains::get_global</text>
-<text text-anchor="middle" x="481" y="-291.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_shape</text>
+<polygon fill="#ffffff" stroke="#000000" points="393,-284.5 393,-314.5 524,-314.5 524,-284.5 393,-284.5"/>
+<text text-anchor="start" x="401" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_domains::get_global</text>
+<text text-anchor="middle" x="458.5" y="-291.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_shape</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M345.2064,-299.5C362.9924,-299.5 382.8617,-299.5 401.7945,-299.5"/>
-<polygon fill="#191970" stroke="#191970" points="401.8943,-303.0001 411.8943,-299.5 401.8942,-296.0001 401.8943,-303.0001"/>
+<path fill="none" stroke="#191970" d="M328.1539,-299.5C345.2749,-299.5 364.4532,-299.5 382.7221,-299.5"/>
+<polygon fill="#191970" stroke="#191970" points="382.759,-303.0001 392.759,-299.5 382.759,-296.0001 382.759,-303.0001"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="This returns .true. if the current PE is the root PE.">
-<polygon fill="#ffffff" stroke="#000000" points="423.5,-186.5 423.5,-216.5 538.5,-216.5 538.5,-186.5 423.5,-186.5"/>
-<text text-anchor="start" x="431.5" y="-204.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="481" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
+<polygon fill="#ffffff" stroke="#000000" points="405.5,-186.5 405.5,-216.5 511.5,-216.5 511.5,-186.5 405.5,-186.5"/>
+<text text-anchor="start" x="413.5" y="-204.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="458.5" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M344.6811,-201.5C366.1835,-201.5 390.7887,-201.5 413.1233,-201.5"/>
-<polygon fill="#191970" stroke="#191970" points="413.2061,-205.0001 423.2061,-201.5 413.2061,-198.0001 413.2061,-205.0001"/>
+<path fill="none" stroke="#191970" d="M326.1569,-201.5C347.6961,-201.5 372.7423,-201.5 395.2137,-201.5"/>
+<polygon fill="#191970" stroke="#191970" points="395.3354,-205.0001 405.3354,-201.5 395.3353,-198.0001 395.3354,-205.0001"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="mom__cap_8F90.html#a5fb5cf93f9c582256b6835d768a42e60" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="441.5,-148 441.5,-167 520.5,-167 520.5,-148 441.5,-148"/>
-<text text-anchor="middle" x="481" y="-155" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">setscalarfield</text>
+<polygon fill="#ffffff" stroke="#000000" points="421.5,-148 421.5,-167 495.5,-167 495.5,-148 421.5,-148"/>
+<text text-anchor="middle" x="458.5" y="-155" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">setscalarfield</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node8&#45;&gt;Node9</title>
-<path fill="none" stroke="#191970" d="M376.0509,-157.5C395.0231,-157.5 414.4037,-157.5 431.2632,-157.5"/>
-<polygon fill="#191970" stroke="#191970" points="431.4086,-161.0001 441.4086,-157.5 431.4085,-154.0001 431.4086,-161.0001"/>
+<path fill="none" stroke="#191970" d="M357.066,-157.5C375.4669,-157.5 394.3277,-157.5 410.7171,-157.5"/>
+<polygon fill="#191970" stroke="#191970" points="411.1009,-161.0001 421.1008,-157.5 411.1008,-154.0001 411.1009,-161.0001"/>
 </g>
 </g>
 </svg>

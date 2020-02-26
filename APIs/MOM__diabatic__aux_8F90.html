@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/parameterizations/vertical/MOM_diabatic_aux.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/vertical/MOM_diabatic_aux.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,18 +93,16 @@ $(document).ready(function(){initNavTree('MOM__diabatic__aux_8F90.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Types</a> &#124;
-<a href="#namespaces">Modules</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#namespaces">Modules</a>  </div>
   <div class="headertitle">
 <div class="title">MOM_diabatic_aux.F90 File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;MOM_memory.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="version__variable_8h_source.html">version_variable.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_diabatic_aux.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__diabatic__aux_8F90__incl.svg" width="299" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__diabatic__aux_8F90__incl.svg" width="238" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -121,11 +119,6 @@ Modules</h2></td></tr>
 <tr class="memitem:namespacemom__diabatic__aux"><td class="memItemLeft" align="right" valign="top">module &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__diabatic__aux.html">mom_diabatic_aux</a></td></tr>
 <tr class="memdesc:namespacemom__diabatic__aux"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides functions for some diabatic processes such as fraxil, brine rejection, tendency due to surface flux divergence. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ae08f3ab52050dc24fc945bc5970ddfdb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MOM__diabatic__aux_8F90.html#ae08f3ab52050dc24fc945bc5970ddfdb">_OLD_ALG_</a></td></tr>
-<tr class="separator:ae08f3ab52050dc24fc945bc5970ddfdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fffddaa09c8650a74e045c2fe29e256"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__diabatic__aux.html#a1fffddaa09c8650a74e045c2fe29e256">mom_diabatic_aux::id_clock_uv_at_h</a></td></tr>
 <tr class="memdesc:a1fffddaa09c8650a74e045c2fe29e256"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPU time clock IDs.  <a href="namespacemom__diabatic__aux.html#a1fffddaa09c8650a74e045c2fe29e256">More...</a><br /></td></tr>
 <tr class="separator:a1fffddaa09c8650a74e045c2fe29e256"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,9 +134,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a737df97b7e0205b0680c3b901ff6e2ff"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__diabatic__aux.html#a737df97b7e0205b0680c3b901ff6e2ff">mom_diabatic_aux::adjust_salt</a> (h, tv, G, GV, CS, halo)</td></tr>
 <tr class="memdesc:a737df97b7e0205b0680c3b901ff6e2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine keeps salinity from falling below a small but positive threshold. This usually occurs when the ice model attempts to extract more salt then is actually available to it from the ocean.  <a href="namespacemom__diabatic__aux.html#a737df97b7e0205b0680c3b901ff6e2ff">More...</a><br /></td></tr>
 <tr class="separator:a737df97b7e0205b0680c3b901ff6e2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73cdec946a5ab30bee6fdd119aa970ad"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__diabatic__aux.html#a73cdec946a5ab30bee6fdd119aa970ad">mom_diabatic_aux::insert_brine</a> (h, tv, G, GV, fluxes, nkmb, CS, dt, id_brine_lay)</td></tr>
-<tr class="memdesc:a73cdec946a5ab30bee6fdd119aa970ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert salt from brine rejection into the first layer below the mixed layer which both contains mass and in which the change in layer density remains stable after the addition of salt via brine rejection.  <a href="namespacemom__diabatic__aux.html#a73cdec946a5ab30bee6fdd119aa970ad">More...</a><br /></td></tr>
-<tr class="separator:a73cdec946a5ab30bee6fdd119aa970ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb56de23dcf992c100569ff4f2dbaac"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__diabatic__aux.html#a7cb56de23dcf992c100569ff4f2dbaac">mom_diabatic_aux::insert_brine</a> (h, tv, G, GV, US, fluxes, nkmb, CS, dt, id_brine_lay)</td></tr>
+<tr class="memdesc:a7cb56de23dcf992c100569ff4f2dbaac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert salt from brine rejection into the first layer below the mixed layer which both contains mass and in which the change in layer density remains stable after the addition of salt via brine rejection.  <a href="namespacemom__diabatic__aux.html#a7cb56de23dcf992c100569ff4f2dbaac">More...</a><br /></td></tr>
+<tr class="separator:a7cb56de23dcf992c100569ff4f2dbaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acde4c76c9a489b82cba0bac5ec1b1198"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__diabatic__aux.html#acde4c76c9a489b82cba0bac5ec1b1198">mom_diabatic_aux::tridiagts</a> (G, GV, is, ie, js, je, hold, ea, eb, T, S)</td></tr>
 <tr class="memdesc:acde4c76c9a489b82cba0bac5ec1b1198"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a simple tri-diagonal solver for T and S. "Simple" means it only uses arrays hold, ea and eb.  <a href="namespacemom__diabatic__aux.html#acde4c76c9a489b82cba0bac5ec1b1198">More...</a><br /></td></tr>
 <tr class="separator:acde4c76c9a489b82cba0bac5ec1b1198"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,21 +158,6 @@ Macros</h2></td></tr>
 <tr class="memdesc:a071e066ca5ed6619c6a9515fb07f5567"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine initializes the control structure and any related memory for the diabatic_aux module.  <a href="namespacemom__diabatic__aux.html#a071e066ca5ed6619c6a9515fb07f5567">More...</a><br /></td></tr>
 <tr class="separator:a071e066ca5ed6619c6a9515fb07f5567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ae08f3ab52050dc24fc945bc5970ddfdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae08f3ab52050dc24fc945bc5970ddfdb">&#9670;&nbsp;</a></span>_OLD_ALG_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define _OLD_ALG_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

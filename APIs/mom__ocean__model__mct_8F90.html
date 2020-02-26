@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/config_src/mct_driver/mom_ocean_model_mct.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/config_src/mct_driver/mom_ocean_model_mct.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('mom__ocean__model__mct_8F90.html','');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mom_ocean_model_mct.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="mom__ocean__model__mct_8F90__incl.svg" width="211" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="mom__ocean__model__mct_8F90__incl.svg" width="244" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -111,9 +111,6 @@ Include dependency graph for mom_ocean_model_mct.F90:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Types</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacemom__ocean__model__mct_1_1ocean__model__data__get.html">mom_ocean_model_mct::ocean_model_data_get</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface extracts a named scalar field or array from the ocean surface or public type.  <a href="interfacemom__ocean__model__mct_1_1ocean__model__data__get.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">type &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__ocean__model__mct_1_1ocean__public__type.html">mom_ocean_model_mct::ocean_public_type</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type is used for communication with other components via the FMS coupler. The element names and types can be changed only with great deliberation, hence the persistnce of things like the cutsy element name "avg_kount".  <a href="structmom__ocean__model__mct_1_1ocean__public__type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,12 +156,6 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:af453e38e57801cebcc7145c370c30f28"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ocean__model__mct.html#af453e38e57801cebcc7145c370c30f28">mom_ocean_model_mct::ocean_stock_pe</a> (OS, index, value, time_index)</td></tr>
 <tr class="memdesc:af453e38e57801cebcc7145c370c30f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ocean_stock_pe - returns the integrated stocks of heat, water, etc. for conservation checks. Because of the way FMS is coded, only the root PE has the integrated amount, while all other PEs get 0.  <a href="namespacemom__ocean__model__mct.html#af453e38e57801cebcc7145c370c30f28">More...</a><br /></td></tr>
 <tr class="separator:af453e38e57801cebcc7145c370c30f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a025d1ad9e4c31dea58e21644f2b6a4d6"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ocean__model__mct.html#a025d1ad9e4c31dea58e21644f2b6a4d6">mom_ocean_model_mct::ocean_model_data2d_get</a> (OS, Ocean, name, array2D, isc, jsc)</td></tr>
-<tr class="memdesc:a025d1ad9e4c31dea58e21644f2b6a4d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine extracts a named 2-D field from the ocean surface or public type.  <a href="namespacemom__ocean__model__mct.html#a025d1ad9e4c31dea58e21644f2b6a4d6">More...</a><br /></td></tr>
-<tr class="separator:a025d1ad9e4c31dea58e21644f2b6a4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28e765a0ec5628848930ac69a8d90fb4"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ocean__model__mct.html#a28e765a0ec5628848930ac69a8d90fb4">mom_ocean_model_mct::ocean_model_data1d_get</a> (OS, Ocean, name, value)</td></tr>
-<tr class="memdesc:a28e765a0ec5628848930ac69a8d90fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine extracts a named scalar field from the ocean surface or public type.  <a href="namespacemom__ocean__model__mct.html#a28e765a0ec5628848930ac69a8d90fb4">More...</a><br /></td></tr>
-<tr class="separator:a28e765a0ec5628848930ac69a8d90fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2c455dca4cdd74e1a2906f91bdf4aba"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ocean__model__mct.html#af2c455dca4cdd74e1a2906f91bdf4aba">mom_ocean_model_mct::ocean_public_type_chksum</a> (id, timestep, ocn)</td></tr>
 <tr class="memdesc:af2c455dca4cdd74e1a2906f91bdf4aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out FMS-format checsums on fields from the ocean surface state.  <a href="namespacemom__ocean__model__mct.html#af2c455dca4cdd74e1a2906f91bdf4aba">More...</a><br /></td></tr>
 <tr class="separator:af2c455dca4cdd74e1a2906f91bdf4aba"><td class="memSeparator" colspan="2">&#160;</td></tr>

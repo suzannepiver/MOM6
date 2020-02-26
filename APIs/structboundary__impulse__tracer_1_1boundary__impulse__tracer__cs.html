@@ -101,11 +101,11 @@ $(document).ready(function(){initNavTree('structboundary__impulse__tracer_1_1bou
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The control structure for the boundary impulse tracer package. </p>
 
-<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00039">39</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00040">40</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for boundary_impulse_tracer::boundary_impulse_tracer_cs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structboundary__impulse__tracer_1_1boundary__impulse__tracer__cs__coll__graph.svg" width="544" height="471"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structboundary__impulse__tracer_1_1boundary__impulse__tracer__cs__coll__graph.svg" width="512" height="471"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -142,7 +142,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:abcc79d6eca2b257ca4e92a989637e63c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An effective piston velocity used to flux tracer out at the surface.  <a href="structboundary__impulse__tracer_1_1boundary__impulse__tracer__cs.html#abcc79d6eca2b257ca4e92a989637e63c">More...</a><br /></td></tr>
 <tr class="separator:abcc79d6eca2b257ca4e92a989637e63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac226fdafc173e7f5deb6760bb584143e"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboundary__impulse__tracer_1_1boundary__impulse__tracer__cs.html#ac226fdafc173e7f5deb6760bb584143e">remaining_source_time</a></td></tr>
-<tr class="memdesc:ac226fdafc173e7f5deb6760bb584143e"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much longer (same units as the timestep) to inject the tracer at the surface.  <a href="structboundary__impulse__tracer_1_1boundary__impulse__tracer__cs.html#ac226fdafc173e7f5deb6760bb584143e">More...</a><br /></td></tr>
+<tr class="memdesc:ac226fdafc173e7f5deb6760bb584143e"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much longer (same units as the timestep) to inject the tracer at the surface [s].  <a href="structboundary__impulse__tracer_1_1boundary__impulse__tracer__cs.html#ac226fdafc173e7f5deb6760bb584143e">More...</a><br /></td></tr>
 <tr class="separator:ac226fdafc173e7f5deb6760bb584143e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5244fa909213cc1380e9f4e18a3c9009"><td class="memItemLeft" align="right" valign="top">type(diag_ctrl), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboundary__impulse__tracer_1_1boundary__impulse__tracer__cs.html#a5244fa909213cc1380e9f4e18a3c9009">diag</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a5244fa909213cc1380e9f4e18a3c9009"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that is used to regulate the timing of diagnostic output.  <a href="structboundary__impulse__tracer_1_1boundary__impulse__tracer__cs.html#a5244fa909213cc1380e9f4e18a3c9009">More...</a><br /></td></tr>
@@ -169,8 +169,8 @@ Public variables and constants</h2></td></tr>
 
 <p>These tracers are not offered to the coupler. </p>
 
-<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00041">41</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">logical</span> :: coupled_tracers = .false. <span class="comment">!&lt; These tracers are not offered to the  coupler.</span></div>
+<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00042">42</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">logical</span> :: coupled_tracers = .false. <span class="comment">!&lt; These tracers are not offered to the  coupler.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -188,8 +188,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure that is used to regulate the timing of diagnostic output. </p>
 
-<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00055">55</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to</span></div>
+<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00056">56</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -207,8 +207,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Indices returned by aof_set_coupler_flux if it is used and the surface tracer concentrations are to be provided to the coupler. </p>
 
-<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00046">46</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(NTR_MAX)</span> :: ind_tr<span class="comment">  !&lt; Indices returned by aof_set_coupler_flux if it is used and the</span></div>
+<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00047">47</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(NTR_MAX)</span> :: ind_tr<span class="comment">  !&lt; Indices returned by aof_set_coupler_flux if it is used and the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -226,8 +226,8 @@ Public variables and constants</h2></td></tr>
 
 <p>An effective piston velocity used to flux tracer out at the surface. </p>
 
-<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00051">51</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">  real</span> :: kw_eff<span class="comment"> !&lt; An effective piston velocity used to flux tracer out at the surface</span></div>
+<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00052">52</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">  real</span> :: kw_eff<span class="comment"> !&lt; An effective piston velocity used to flux tracer out at the surface</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -245,8 +245,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A value to use to fill in tracers over land. </p>
 
-<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00050">50</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(NTR_MAX)</span>  :: land_val = -1.0<span class="comment"> !&lt; A value to use to fill in tracers over land</span></div>
+<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00051">51</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(NTR_MAX)</span>  :: land_val = -1.0<span class="comment"> !&lt; A value to use to fill in tracers over land</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -264,8 +264,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Number of layers in mixed layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00049">49</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">integer</span> :: nkml<span class="comment"> !&lt; Number of layers in mixed layer</span></div>
+<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00050">50</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">integer</span> :: nkml<span class="comment"> !&lt; Number of layers in mixed layer</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -283,8 +283,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of tracers that are actually used. </p>
 
-<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00040">40</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">integer</span> :: ntr=ntr_max    <span class="comment">!&lt; The number of tracers that are actually used.</span></div>
+<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00041">41</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">integer</span> :: ntr=ntr_max    <span class="comment">!&lt; The number of tracers that are actually used.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -300,10 +300,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>How much longer (same units as the timestep) to inject the tracer at the surface. </p>
+<p>How much longer (same units as the timestep) to inject the tracer at the surface [s]. </p>
 
-<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00052">52</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">  real</span> :: remaining_source_time<span class="comment"> !&lt; How much longer (same units as the timestep) to</span></div>
+<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00053">53</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">  real</span> :: remaining_source_time<span class="comment"> !&lt; How much longer (same units as the timestep) to</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -321,8 +321,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the retart control structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00057">57</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">type</span>(MOM_restart_CS), <span class="keywordtype">pointer</span> :: restart_CSp =&gt; null() <span class="comment">!&lt; A pointer to the retart control structure</span></div>
+<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00058">58</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">type</span>(MOM_restart_CS), <span class="keywordtype">pointer</span> :: restart_CSp =&gt; null() <span class="comment">!&lt; A pointer to the retart control structure</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -340,8 +340,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the ocean model's clock. </p>
 
-<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00042">42</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time =&gt; null() <span class="comment">!&lt; A pointer to the ocean model&#39;s clock.</span></div>
+<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00043">43</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time =&gt; null() <span class="comment">!&lt; A pointer to the ocean model&#39;s clock.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -359,8 +359,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The array of tracers used in this subroutine, in g m-3? </p>
 
-<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00044">44</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: tr(:,:,:,:) =&gt; null() <span class="comment">!&lt; The array of tracers used in this subroutine, in g m-3?</span></div>
+<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00045">45</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: tr(:,:,:,:) =&gt; null() <span class="comment">!&lt; The array of tracers used in this subroutine, in g m-3?</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -378,8 +378,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Descriptions and metadata for the tracers. </p>
 
-<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00059">59</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">type</span>(vardesc) :: tr_desc(NTR_MAX)<span class="comment"> !&lt; Descriptions and metadata for the tracers</span></div>
+<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00060">60</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">type</span>(vardesc) :: tr_desc(NTR_MAX)<span class="comment"> !&lt; Descriptions and metadata for the tracers</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -397,8 +397,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the tracer registry. </p>
 
-<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00043">43</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">type</span>(tracer_registry_type), <span class="keywordtype">pointer</span> :: tr_Reg =&gt; null() <span class="comment">!&lt; A pointer to the tracer registry</span></div>
+<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00044">44</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">type</span>(tracer_registry_type), <span class="keywordtype">pointer</span> :: tr_Reg =&gt; null() <span class="comment">!&lt; A pointer to the tracer registry</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -416,13 +416,13 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, boundary_impulse can be initialized if not found in restart file. </p>
 
-<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00045">45</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">logical</span> :: tracers_may_reinit<span class="comment">  !&lt; If true, boundary_impulse can be initialized if not found in restart file</span></div>
+<p class="definition">Definition at line <a class="el" href="boundary__impulse__tracer_8F90_source.html#l00046">46</a> of file <a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">logical</span> :: tracers_may_reinit<span class="comment">  !&lt; If true, boundary_impulse can be initialized if not found in restart file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/tracer/<a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/tracer/<a class="el" href="boundary__impulse__tracer_8F90_source.html">boundary_impulse_tracer.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

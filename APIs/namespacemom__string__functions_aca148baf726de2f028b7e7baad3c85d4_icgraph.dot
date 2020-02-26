@@ -72,14 +72,14 @@ digraph "mom_string_functions::uppercase"
   Node1 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node31 [label="mom_remapping::setreconstructiontype",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__remapping.html#a41a89ac62578250500b7a450d5fdfae7",tooltip="Changes the method of reconstruction Use this routine to parse a string parameter specifying the reco..."];
   Node31 -> Node32 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node32 [label="mom_remapping::remapping\l_set_param",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__remapping.html#a9e811f89c505a4416ea0eec315769801",tooltip="Set parameters within remapping object."];
+  Node32 [label="mom_remapping::remapping\l_set_param",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__remapping.html#a50e96a4a1083bb1fae3ca0130b6a2c11",tooltip="Set parameters within remapping object."];
   Node32 -> Node33 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node33 [label="mom_remapping::initialize\l_remapping",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__remapping.html#a6847e0c44ccb54fb72587677f90d95b6",tooltip="Constructor for remapping control structure."];
+  Node33 [label="mom_remapping::initialize\l_remapping",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__remapping.html#a81211827af45207130d25cae520b55e5",tooltip="Constructor for remapping control structure."];
   Node33 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node33 -> Node34 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node34 [label="mom_ale_sponge::initialize\l_ale_sponge_fixed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ale__sponge.html#a15129d167423dc162d22ef7cf4742651",tooltip="This subroutine determines the number of points which are within sponges in this computational domain..."];
   Node33 -> Node35 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node35 [label="mom_ale_sponge::initialize\l_ale_sponge_varying",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ale__sponge.html#a0febb96fb2fd40a72580d078ca023098",tooltip="This subroutine determines the number of points which are within sponges in this computational domain..."];
+  Node35 [label="mom_ale_sponge::initialize\l_ale_sponge_varying",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__ale__sponge.html#a0febb96fb2fd40a72580d078ca023098",tooltip="This subroutine determines the number of points which are to be restoref in the computational domain...."];
   Node33 -> Node36 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node36 [label="mom_open_boundary::\linitialize_segment_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__open__boundary.html#adb17aba34a8aaceb524910d2e1196a0c",tooltip="Allocate space for reading OBC data from files. It sets up the required vertical remapping...."];
   Node36 -> Node37 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

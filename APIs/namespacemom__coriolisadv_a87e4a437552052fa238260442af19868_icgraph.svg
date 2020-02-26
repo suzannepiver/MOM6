@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 530;
+var viewWidth = 504;
 var viewHeight = 137;
 var sectionId = 'dynsection-4';
 </script>
@@ -54,13 +54,13 @@ var sectionId = 'dynsection-4';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_coriolisadv::gradke</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-133 526,-133 526,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-133 500,-133 500,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Calculates the acceleration due to the gradient of kinetic energy.">
-<polygon fill="#bfbfbf" stroke="#000000" points="389,-55 389,-74 522,-74 522,-55 389,-55"/>
-<text text-anchor="middle" x="455.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_coriolisadv::gradke</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="371,-55 371,-74 496,-74 496,-55 371,-55"/>
+<text text-anchor="middle" x="433.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_coriolisadv::gradke</text>
 </a>
 </g>
 </g>
@@ -68,64 +68,64 @@ var sectionId = 'dynsection-4';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__coriolisadv.html#ac677e9d644c881b7e8ce6413aa5450cd" target="_top" xlink:title="Calculates the Coriolis and momentum advection contributions to the acceleration.">
-<polygon fill="#ffffff" stroke="#000000" points="207,-55 207,-74 353,-74 353,-55 207,-55"/>
-<text text-anchor="middle" x="280" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_coriolisadv::coradcalc</text>
+<polygon fill="#ffffff" stroke="#000000" points="197,-55 197,-74 335,-74 335,-55 197,-55"/>
+<text text-anchor="middle" x="266" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_coriolisadv::coradcalc</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M378.8938,-64.5C370.2954,-64.5 361.5519,-64.5 353.0008,-64.5"/>
-<polygon fill="#191970" stroke="#191970" points="378.9008,-68.0001 388.9007,-64.5 378.9007,-61.0001 378.9008,-68.0001"/>
+<path fill="none" stroke="#191970" d="M360.4701,-64.5C352.0432,-64.5 343.4691,-64.5 335.0967,-64.5"/>
+<polygon fill="#191970" stroke="#191970" points="360.6527,-68.0001 370.6526,-64.5 360.6526,-61.0001 360.6527,-68.0001"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__dynamics__split__rk2.html#a976e700971f232fc11bc69b31d611c32" target="_top" xlink:title="RK2 splitting for time stepping MOM adiabatic dynamics.">
-<polygon fill="#ffffff" stroke="#000000" points="5.5,-98.5 5.5,-128.5 165.5,-128.5 165.5,-98.5 5.5,-98.5"/>
+<polygon fill="#ffffff" stroke="#000000" points="5.5,-98.5 5.5,-128.5 155.5,-128.5 155.5,-98.5 5.5,-98.5"/>
 <text text-anchor="start" x="13.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_dynamics_split</text>
-<text text-anchor="middle" x="85.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_rk2::step_mom_dyn_split_rk2</text>
+<text text-anchor="middle" x="80.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_rk2::step_mom_dyn_split_rk2</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M232.311,-76.5142C206.0304,-83.135 173.1595,-91.4161 145.1875,-98.463"/>
-<polygon fill="#191970" stroke="#191970" points="233.1948,-79.901 242.0367,-74.064 231.4846,-73.1131 233.1948,-79.901"/>
+<path fill="none" stroke="#191970" d="M219.8538,-76.6896C194.9011,-83.2808 163.8683,-91.4782 137.4256,-98.463"/>
+<polygon fill="#191970" stroke="#191970" points="221.0189,-80.0019 229.7934,-74.064 219.2311,-73.2341 221.0189,-80.0019"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__dynamics__unsplit.html#ab72d911d187f9247b6cc72d87e815370" target="_top" xlink:title="Step the MOM6 dynamics using an unsplit mixed 2nd order (for continuity) and 3rd order (for the invis...">
-<polygon fill="#ffffff" stroke="#000000" points="21,-49.5 21,-79.5 150,-79.5 150,-49.5 21,-49.5"/>
-<text text-anchor="start" x="29" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_dynamics_unsplit</text>
-<text text-anchor="middle" x="85.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::step_mom_dyn_unsplit</text>
+<polygon fill="#ffffff" stroke="#000000" points="19,-49.5 19,-79.5 142,-79.5 142,-49.5 19,-49.5"/>
+<text text-anchor="start" x="27" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_dynamics_unsplit</text>
+<text text-anchor="middle" x="80.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::step_mom_dyn_unsplit</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M196.5984,-64.5C181.0257,-64.5 164.9694,-64.5 150.071,-64.5"/>
-<polygon fill="#191970" stroke="#191970" points="196.7451,-68.0001 206.745,-64.5 196.745,-61.0001 196.7451,-68.0001"/>
+<path fill="none" stroke="#191970" d="M186.7307,-64.5C171.8664,-64.5 156.5301,-64.5 142.293,-64.5"/>
+<polygon fill="#191970" stroke="#191970" points="186.9267,-68.0001 196.9266,-64.5 186.9266,-61.0001 186.9267,-68.0001"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__dynamics__unsplit__rk2.html#a25424d65cc3339442e528c0a92b173a3" target="_top" xlink:title="Step the MOM6 dynamics using an unsplit quasi&#45;2nd order Runge&#45;Kutta scheme.">
-<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-30.5 171,-30.5 171,-.5 0,-.5"/>
+<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-30.5 161,-30.5 161,-.5 0,-.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_dynamics_unsplit</text>
-<text text-anchor="middle" x="85.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_rk2::step_mom_dyn_unsplit_rk2</text>
+<text text-anchor="middle" x="80.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_rk2::step_mom_dyn_unsplit_rk2</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M232.311,-52.4858C206.0304,-45.865 173.1595,-37.5839 145.1875,-30.537"/>
-<polygon fill="#191970" stroke="#191970" points="231.4846,-55.8869 242.0367,-54.936 233.1948,-49.099 231.4846,-55.8869"/>
+<path fill="none" stroke="#191970" d="M219.8538,-52.3104C194.9011,-45.7192 163.8683,-37.5218 137.4256,-30.537"/>
+<polygon fill="#191970" stroke="#191970" points="219.2311,-55.7659 229.7934,-54.936 221.0189,-48.9981 219.2311,-55.7659"/>
 </g>
 </g>
 </svg>

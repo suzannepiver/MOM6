@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('structmom__verticalgrid_1_1verticalgri
 </div><div class="dynheader">
 Collaboration diagram for mom_verticalgrid::verticalgrid_type:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__verticalgrid_1_1verticalgrid__type__coll__graph.svg" width="523" height="274"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__verticalgrid_1_1verticalgrid__type__coll__graph.svg" width="484" height="274"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -160,7 +160,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a8d7f9e01a4baf605091f37485369556d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The reduced gravity at each interface [L2 Z-1 T-2 ~&gt; m s-2].  <a href="structmom__verticalgrid_1_1verticalgrid__type.html#a8d7f9e01a4baf605091f37485369556d">More...</a><br /></td></tr>
 <tr class="separator:a8d7f9e01a4baf605091f37485369556d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66cc29715ec781fa7a25549d1e3b2cf2"><td class="memItemLeft" align="right" valign="top">real, dimension(:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__verticalgrid_1_1verticalgrid__type.html#a66cc29715ec781fa7a25549d1e3b2cf2">rlay</a></td></tr>
-<tr class="memdesc:a66cc29715ec781fa7a25549d1e3b2cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target coordinate value (potential density) in each layer [kg m-3].  <a href="structmom__verticalgrid_1_1verticalgrid__type.html#a66cc29715ec781fa7a25549d1e3b2cf2">More...</a><br /></td></tr>
+<tr class="memdesc:a66cc29715ec781fa7a25549d1e3b2cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target coordinate value (potential density) in each layer [R ~&gt; kg m-3].  <a href="structmom__verticalgrid_1_1verticalgrid__type.html#a66cc29715ec781fa7a25549d1e3b2cf2">More...</a><br /></td></tr>
 <tr class="separator:a66cc29715ec781fa7a25549d1e3b2cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32ae3c2d49449dd46532f84c8958dbac"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__verticalgrid_1_1verticalgrid__type.html#a32ae3c2d49449dd46532f84c8958dbac">nkml</a> = 0</td></tr>
 <tr class="memdesc:a32ae3c2d49449dd46532f84c8958dbac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of layers at the top that should be treated as parts of a homogeneous region.  <a href="structmom__verticalgrid_1_1verticalgrid__type.html#a32ae3c2d49449dd46532f84c8958dbac">More...</a><br /></td></tr>
@@ -189,6 +189,15 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a5f710b0aee7028de14d02a8c77e08c39"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__verticalgrid_1_1verticalgrid__type.html#a5f710b0aee7028de14d02a8c77e08c39">z_to_h</a></td></tr>
 <tr class="memdesc:a5f710b0aee7028de14d02a8c77e08c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constant that translates depth units to thickness units.  <a href="structmom__verticalgrid_1_1verticalgrid__type.html#a5f710b0aee7028de14d02a8c77e08c39">More...</a><br /></td></tr>
 <tr class="separator:a5f710b0aee7028de14d02a8c77e08c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e57235a6f0a5e4491cb57d3480cf19"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__verticalgrid_1_1verticalgrid__type.html#ac2e57235a6f0a5e4491cb57d3480cf19">h_to_rz</a></td></tr>
+<tr class="memdesc:ac2e57235a6f0a5e4491cb57d3480cf19"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constant that translates thickness units to the units of mass per unit area.  <a href="structmom__verticalgrid_1_1verticalgrid__type.html#ac2e57235a6f0a5e4491cb57d3480cf19">More...</a><br /></td></tr>
+<tr class="separator:ac2e57235a6f0a5e4491cb57d3480cf19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d6ee81d720c96731552ea8c9953a62e"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__verticalgrid_1_1verticalgrid__type.html#a5d6ee81d720c96731552ea8c9953a62e">rz_to_h</a></td></tr>
+<tr class="memdesc:a5d6ee81d720c96731552ea8c9953a62e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constant that translates mass per unit area units to thickness units.  <a href="structmom__verticalgrid_1_1verticalgrid__type.html#a5d6ee81d720c96731552ea8c9953a62e">More...</a><br /></td></tr>
+<tr class="separator:a5d6ee81d720c96731552ea8c9953a62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af11e08037e50df748a1dd710424f0f3a"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__verticalgrid_1_1verticalgrid__type.html#af11e08037e50df748a1dd710424f0f3a">h_to_mks</a></td></tr>
+<tr class="memdesc:af11e08037e50df748a1dd710424f0f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constant that translates thickness units to its MKS unit (m or kg m-2) based on GVBoussinesq.  <a href="structmom__verticalgrid_1_1verticalgrid__type.html#af11e08037e50df748a1dd710424f0f3a">More...</a><br /></td></tr>
+<tr class="separator:af11e08037e50df748a1dd710424f0f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb509d9b7741c1f8790caba12aac26a8"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__verticalgrid_1_1verticalgrid__type.html#aeb509d9b7741c1f8790caba12aac26a8">m_to_h_restart</a> = 0.0</td></tr>
 <tr class="memdesc:aeb509d9b7741c1f8790caba12aac26a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A copy of the m_to_H that is used in restart files.  <a href="structmom__verticalgrid_1_1verticalgrid__type.html#aeb509d9b7741c1f8790caba12aac26a8">More...</a><br /></td></tr>
 <tr class="separator:aeb509d9b7741c1f8790caba12aac26a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,7 +334,7 @@ Public variables and constants</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00050">50</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:)</span> :: &amp;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    g_prime, &amp;          !&lt; The reduced gravity at each interface [L2 Z-1 T-2 ~&gt; m s-2].</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Rlay<span class="comment">                !&lt; The target coordinate value (potential density) in each layer [kg m-3].</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Rlay<span class="comment">                !&lt; The target coordinate value (potential density) in each layer [R ~&gt; kg m-3].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -386,6 +395,25 @@ Public variables and constants</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="af11e08037e50df748a1dd710424f0f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af11e08037e50df748a1dd710424f0f3a">&#9670;&nbsp;</a></span>h_to_mks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real mom_verticalgrid::verticalgrid_type::h_to_mks</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A constant that translates thickness units to its MKS unit (m or kg m-2) based on GVBoussinesq. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00066">66</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">  real</span> :: H_to_MKS<span class="comment">      !&lt; A constant that translates thickness units to its</span></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="afd6132dc3cbebd2385bd84b1807c4227"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd6132dc3cbebd2385bd84b1807c4227">&#9670;&nbsp;</a></span>h_to_pa</h2>
 
@@ -402,6 +430,25 @@ Public variables and constants</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00061">61</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">  real</span> :: H_to_Pa<span class="comment">       !&lt; A constant that translates the units of thickness to pressure [Pa].</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac2e57235a6f0a5e4491cb57d3480cf19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2e57235a6f0a5e4491cb57d3480cf19">&#9670;&nbsp;</a></span>h_to_rz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real mom_verticalgrid::verticalgrid_type::h_to_rz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A constant that translates thickness units to the units of mass per unit area. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00064">64</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">  real</span> :: H_to_RZ<span class="comment">       !&lt; A constant that translates thickness units to the units of mass per unit area.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -495,8 +542,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A copy of the m_to_H that is used in restart files. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00065">65</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">  real</span> :: m_to_H_restart = 0.0<span class="comment"> !&lt; A copy of the m_to_H that is used in restart files.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00069">69</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">  real</span> :: m_to_H_restart = 0.0<span class="comment"> !&lt; A copy of the m_to_H that is used in restart files.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -607,10 +654,29 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The target coordinate value (potential density) in each layer [kg m-3]. </p>
+<p>The target coordinate value (potential density) in each layer [R ~&gt; kg m-3]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00050">50</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
 
+</div>
+</div>
+<a id="a5d6ee81d720c96731552ea8c9953a62e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d6ee81d720c96731552ea8c9953a62e">&#9670;&nbsp;</a></span>rz_to_h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real mom_verticalgrid::verticalgrid_type::rz_to_h</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A constant that translates mass per unit area units to thickness units. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00065">65</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">  real</span> :: RZ_to_H<span class="comment">       !&lt; A constant that translates mass per unit area units to thickness units.</span></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7a1d6ca7341080aefb1ed9d00d380246"></a>
@@ -709,7 +775,7 @@ Public variables and constants</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/core/<a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/core/<a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,0 +1,30 @@
+digraph "mom_forcing_type::extractfluxes1d"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_forcing_type::extractfluxes1d",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This subroutine extracts fluxes from the surface fluxes type. It works on a j-row for optimization pu..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_diabatic_aux::applyboundaryfluxesinout",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__aux.html#ae7a279c765fa370c302532c13a1adaca",tooltip="Update the thickness, temperature, and salinity due to thermodynamic boundary forcing (contained in f..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_bulk_mixed_layer\l::bulkmixedlayer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__bulk__mixed__layer.html#ad6b69cad68bd88aa1deee0481fd3cc59",tooltip="This subroutine partially steps the bulk mixed layer model. The following processes are executed,..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_diabatic_driver\l::layered_diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a71d8d849db16be4b87c2650b49f01c82",tooltip="Imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentum and tracers us..."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_diabatic_driver\l::diabatic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a9005de9f3ad26b32de53e3cd9826b9b9",tooltip="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu..."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_forcing_type::calculatebuoyancyflux1d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__forcing__type.html#a406a512f0d5b45c873fa91110ca7c387",tooltip="This routine calculates surface buoyancy flux by adding up the heat, FW & salt fluxes...."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom_forcing_type::calculatebuoyancyflux2d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__forcing__type.html#ae84373c4a259bd04330ec673af0fa536",tooltip="Calculates surface buoyancy flux by adding up the heat, FW and salt fluxes, for 2d arrays...."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_diabatic_driver\l::diabatic_ale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#ae57c48925de75712384e859a851c8c40",tooltip="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu..."];
+  Node8 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_diabatic_driver\l::diabatic_ale_legacy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a598d99106680c83e410a0a51a59588ea",tooltip="Applies diabatic forcing and diapycnal mixing of temperature, salinity and other tracers for use with..."];
+  Node9 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom_forcing_type::extractfluxes2d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__forcing__type.html#a86e5f73e34973c321ab80f2515336eec",tooltip="2d wrapper for 1d extract fluxes from surface fluxes type. This subroutine extracts fluxes from the s..."];
+}

@@ -180,8 +180,8 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a727bb828cfbb14eb6158debbd9f194e3"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a727bb828cfbb14eb6158debbd9f194e3">kd_min_tr</a></td></tr>
 <tr class="memdesc:a727bb828cfbb14eb6158debbd9f194e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A minimal diffusivity that should always be applied to tracers, especially in massless layers near the bottom [Z2 T-1 ~&gt; m2 s-1].  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a727bb828cfbb14eb6158debbd9f194e3">More...</a><br /></td></tr>
 <tr class="separator:a727bb828cfbb14eb6158debbd9f194e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ae46b3e905e6fe6ba3070b5781cedc9"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a1ae46b3e905e6fe6ba3070b5781cedc9">minimum_forcing_depth</a> = 0.001</td></tr>
-<tr class="memdesc:a1ae46b3e905e6fe6ba3070b5781cedc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The smallest depth over which heat and freshwater fluxes are applied [m].  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a1ae46b3e905e6fe6ba3070b5781cedc9">More...</a><br /></td></tr>
+<tr class="memitem:a1ae46b3e905e6fe6ba3070b5781cedc9"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a1ae46b3e905e6fe6ba3070b5781cedc9">minimum_forcing_depth</a></td></tr>
+<tr class="memdesc:a1ae46b3e905e6fe6ba3070b5781cedc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The smallest depth over which heat and freshwater fluxes are applied [H ~&gt; m or kg m-2].  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a1ae46b3e905e6fe6ba3070b5781cedc9">More...</a><br /></td></tr>
 <tr class="separator:a1ae46b3e905e6fe6ba3070b5781cedc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a845172e1ca5f46b1a60a0cac425a8858"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a845172e1ca5f46b1a60a0cac425a8858">evap_cfl_limit</a> = 0.8</td></tr>
 <tr class="memdesc:a845172e1ca5f46b1a60a0cac425a8858"><td class="mdescLeft">&#160;</td><td class="mdescRight">The largest fraction of a layer that can be evaporated in one time-step [nondim].  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a845172e1ca5f46b1a60a0cac425a8858">More...</a><br /></td></tr>
@@ -214,7 +214,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a2105aa8d7cdf0636b17923e3d88808ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure used to regulate timing of diagnostic output  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a2105aa8d7cdf0636b17923e3d88808ce">More...</a><br /></td></tr>
 <tr class="separator:a2105aa8d7cdf0636b17923e3d88808ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71a9ca1fc01fb44414e1a5fdb7c5d0c2"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#a71a9ca1fc01fb44414e1a5fdb7c5d0c2">mlddensitydifference</a></td></tr>
-<tr class="memdesc:a71a9ca1fc01fb44414e1a5fdb7c5d0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Density difference used to determine MLD_user.  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a71a9ca1fc01fb44414e1a5fdb7c5d0c2">More...</a><br /></td></tr>
+<tr class="memdesc:a71a9ca1fc01fb44414e1a5fdb7c5d0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Density difference used to determine MLD_user [R ~&gt; kg m-3].  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#a71a9ca1fc01fb44414e1a5fdb7c5d0c2">More...</a><br /></td></tr>
 <tr class="separator:a71a9ca1fc01fb44414e1a5fdb7c5d0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6a151e4d44524727664d11bf70868cc"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diabatic__driver_1_1diabatic__cs.html#ab6a151e4d44524727664d11bf70868cc">dz_subml_n2</a></td></tr>
 <tr class="memdesc:ab6a151e4d44524727664d11bf70868cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The distance over which to calculate a diagnostic of the average stratification at the base of the mixed layer [Z ~&gt; m].  <a href="structmom__diabatic__driver_1_1diabatic__cs.html#ab6a151e4d44524727664d11bf70868cc">More...</a><br /></td></tr>
@@ -2111,15 +2111,15 @@ Public variables and constants</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">real mom_diabatic_driver::diabatic_cs::minimum_forcing_depth = 0.001</td>
+          <td class="memname">real mom_diabatic_driver::diabatic_cs::minimum_forcing_depth</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The smallest depth over which heat and freshwater fluxes are applied [m]. </p>
+<p>The smallest depth over which heat and freshwater fluxes are applied [H ~&gt; m or kg m-2]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00151">151</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keywordtype">  real</span>    :: minimum_forcing_depth = 0.001<span class="comment"> !&lt; The smallest depth over which heat and freshwater</span></div>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keywordtype">  real</span>    :: minimum_forcing_depth<span class="comment">   !&lt; The smallest depth over which heat and freshwater</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2173,10 +2173,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Density difference used to determine MLD_user. </p>
+<p>Density difference used to determine MLD_user [R ~&gt; kg m-3]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keywordtype">  real</span> :: MLDdensityDifference<span class="comment">       !&lt; Density difference used to determine MLD_user</span></div>
+<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keywordtype">  real</span> :: MLDdensityDifference<span class="comment">       !&lt; Density difference used to determine MLD_user [R ~&gt; kg m-3]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2713,7 +2713,7 @@ Public variables and constants</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__diabatic__driver_8F90_source.html">MOM_diabatic_driver.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

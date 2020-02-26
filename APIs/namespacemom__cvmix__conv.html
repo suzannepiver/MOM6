@@ -217,7 +217,7 @@ Data Types</h2></td></tr>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keywordtype">  real</span> :: pref, rhok, rhokm1, dz, dh, hcorr</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordtype">integer</span> :: i, j, k</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  g_o_rho0 = gv%mks_g_Earth / gv%Rho0</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  g_o_rho0 = gv%mks_g_Earth / (us%R_to_kg_m3*gv%Rho0)</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="comment">! initialize dummy variables</span></div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  rho_lwr(:) = 0.0; rho_1d(:) = 0.0</div>
@@ -301,11 +301,11 @@ Data Types</h2></td></tr>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordflow">if</span> (cs%id_kv_conv &gt; 0) <span class="keyword">call </span>post_data(cs%id_kv_conv, cs%kv_conv, cs%diag)</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="MOM__diabatic__driver_8F90_source.html#l01232">mom_diabatic_driver::diabatic_ale()</a>, <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00449">mom_diabatic_driver::diabatic_ale_legacy()</a>, and <a class="el" href="MOM__diabatic__driver_8F90_source.html#l01911">mom_diabatic_driver::layered_diabatic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__diabatic__driver_8F90_source.html#l01229">mom_diabatic_driver::diabatic_ale()</a>, <a class="el" href="MOM__diabatic__driver_8F90_source.html#l00446">mom_diabatic_driver::diabatic_ale_legacy()</a>, and <a class="el" href="MOM__diabatic__driver_8F90_source.html#l01908">mom_diabatic_driver::layered_diabatic()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__cvmix__conv_a9fa2fba758d0df93a9d6219c21e5e06d_icgraph.svg" width="606" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__cvmix__conv_a9fa2fba758d0df93a9d6219c21e5e06d_icgraph.svg" width="582" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -347,7 +347,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keyword">deallocate</span>(cs)</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="MOM__diabatic__driver_8F90_source.html#l03748">mom_diabatic_driver::diabatic_driver_end()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__diabatic__driver_8F90_source.html#l03758">mom_diabatic_driver::diabatic_driver_end()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -523,7 +523,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__cvmix__conv_a96b32166eb7623c206f18549da8224ca_cgraph.svg" width="588" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__cvmix__conv_a96b32166eb7623c206f18549da8224ca_cgraph.svg" width="560" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -561,7 +561,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__CVMix__conv_8F90_source.html#l00050">mdl</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__set__viscosity_8F90_source.html#l01681">mom_set_visc::set_visc_register_restarts()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__set__viscosity_8F90_source.html#l01696">mom_set_visc::set_visc_register_restarts()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

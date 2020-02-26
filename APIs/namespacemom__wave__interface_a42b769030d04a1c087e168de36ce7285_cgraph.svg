@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 616;
+var viewWidth = 589;
 var viewHeight = 186;
 var sectionId = 'dynsection-12';
 </script>
@@ -54,14 +54,14 @@ var sectionId = 'dynsection-12';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_wave_interface::update_stokes_drift</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-182 612,-182 612,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-182 585,-182 585,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Constructs the Stokes Drift profile on the model grid based on desired coupling options.">
-<polygon fill="#bfbfbf" stroke="#000000" points="0,-97.5 0,-127.5 117,-127.5 117,-97.5 0,-97.5"/>
+<polygon fill="#bfbfbf" stroke="#000000" points="0,-97.5 0,-127.5 110,-127.5 110,-97.5 0,-97.5"/>
 <text text-anchor="start" x="8" y="-115.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
-<text text-anchor="middle" x="58.5" y="-104.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::update_stokes_drift</text>
+<text text-anchor="middle" x="55" y="-104.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::update_stokes_drift</text>
 </a>
 </g>
 </g>
@@ -69,129 +69,129 @@ var sectionId = 'dynsection-12';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__wave__interface.html#af4594bd7d4bc3eed353357d436a551c4" target="_top" xlink:title="Compute the Stokes drift at a given depth.">
-<polygon fill="#ffffff" stroke="#000000" points="155.5,-122.5 155.5,-152.5 272.5,-152.5 272.5,-122.5 155.5,-122.5"/>
-<text text-anchor="start" x="163.5" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
-<text text-anchor="middle" x="214" y="-129.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::dhh85_mid</text>
+<polygon fill="#ffffff" stroke="#000000" points="149,-122.5 149,-152.5 259,-152.5 259,-122.5 149,-122.5"/>
+<text text-anchor="start" x="157" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
+<text text-anchor="middle" x="204" y="-129.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::dhh85_mid</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M117.2879,-121.9514C126.4461,-123.4238 135.9782,-124.9563 145.3325,-126.4602"/>
-<polygon fill="#191970" stroke="#191970" points="144.9582,-129.9449 155.387,-128.0767 146.0693,-123.0336 144.9582,-129.9449"/>
+<path fill="none" stroke="#191970" d="M110.0588,-121.738C119.4109,-123.3072 129.2024,-124.9501 138.7858,-126.558"/>
+<polygon fill="#191970" stroke="#191970" points="138.2288,-130.0134 148.6701,-128.2165 139.3871,-123.1099 138.2288,-130.0134"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__wave__interface.html#aa07c73f561840851981d6a013423dd6e" target="_top" xlink:title="Interface to get Langmuir number based on options stored in wave structure.">
-<polygon fill="#ffffff" stroke="#000000" points="153,-73.5 153,-103.5 275,-103.5 275,-73.5 153,-73.5"/>
-<text text-anchor="start" x="161" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
-<text text-anchor="middle" x="214" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_langmuir_number</text>
+<polygon fill="#ffffff" stroke="#000000" points="146,-73.5 146,-103.5 262,-103.5 262,-73.5 146,-73.5"/>
+<text text-anchor="start" x="154" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
+<text text-anchor="middle" x="204" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_langmuir_number</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M117.2879,-103.4266C125.6331,-102.1386 134.2887,-100.8027 142.8374,-99.4833"/>
-<polygon fill="#191970" stroke="#191970" points="143.4495,-102.9303 152.7986,-97.9459 142.3817,-96.0123 143.4495,-102.9303"/>
+<path fill="none" stroke="#191970" d="M110.0588,-103.6315C118.4601,-102.2782 127.2161,-100.8679 135.8572,-99.476"/>
+<polygon fill="#191970" stroke="#191970" points="136.6041,-102.9009 145.9202,-97.8551 135.4908,-95.99 136.6041,-102.9009"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__wave__interface.html#a5ebd32de10bed6d66c0a95a4a15cc81a" target="_top" xlink:title="Get SL averaged Stokes drift from the banded Spectrum method.">
-<polygon fill="#ffffff" stroke="#000000" points="319,-147.5 319,-177.5 443,-177.5 443,-147.5 319,-147.5"/>
-<text text-anchor="start" x="327" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
-<text text-anchor="middle" x="381" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_sl_average_band</text>
+<polygon fill="#ffffff" stroke="#000000" points="307.5,-147.5 307.5,-177.5 422.5,-177.5 422.5,-147.5 307.5,-147.5"/>
+<text text-anchor="start" x="315.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
+<text text-anchor="middle" x="365" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_sl_average_band</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M254.2846,-103.5493C261.3147,-106.586 268.4641,-109.9466 275,-113.5 292.1139,-122.8044 293.6206,-129.7015 311,-138.5 314.5103,-140.2771 318.1824,-141.9725 321.9276,-143.5803"/>
-<polygon fill="#191970" stroke="#191970" points="320.754,-146.8811 331.3365,-147.393 323.383,-140.3935 320.754,-146.8811"/>
+<path fill="none" stroke="#191970" d="M241.9676,-103.5651C248.7538,-106.6225 255.6734,-109.9862 262,-113.5 279.0294,-122.9581 280.6812,-129.5829 298,-138.5 301.3264,-140.2127 304.8034,-141.856 308.3486,-143.4224"/>
+<polygon fill="#191970" stroke="#191970" points="307.2599,-146.7606 317.8364,-147.3839 309.9571,-140.3011 307.2599,-146.7606"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__wave__interface.html#ae631a776ca48a5b8be572bed00e6f5c1" target="_top" xlink:title="Get SL Averaged Stokes drift from a Stokes drift Profile.">
-<polygon fill="#ffffff" stroke="#000000" points="321.5,-98.5 321.5,-128.5 440.5,-128.5 440.5,-98.5 321.5,-98.5"/>
-<text text-anchor="start" x="329.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
-<text text-anchor="middle" x="381" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_sl_average_prof</text>
+<polygon fill="#ffffff" stroke="#000000" points="310,-98.5 310,-128.5 420,-128.5 420,-98.5 310,-98.5"/>
+<text text-anchor="start" x="318" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
+<text text-anchor="middle" x="365" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_sl_average_prof</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node3&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M275.2364,-97.6671C287.018,-99.4308 299.4375,-101.29 311.4597,-103.0898"/>
-<polygon fill="#191970" stroke="#191970" points="311.0342,-106.565 321.4422,-104.5842 312.0706,-99.6421 311.0342,-106.565"/>
+<path fill="none" stroke="#191970" d="M262.1247,-97.5256C274.4201,-99.4348 287.4721,-101.4615 300.0031,-103.4073"/>
+<polygon fill="#191970" stroke="#191970" points="299.498,-106.8707 309.9167,-104.9467 300.5722,-99.9536 299.498,-106.8707"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="namespacemom__wave__interface.html#a42ca9104192ff12c44c28b705d137eb9" target="_top" xlink:title="Get SL averaged Stokes drift from Li/FK 17 method.">
-<polygon fill="#ffffff" stroke="#000000" points="311,-49.5 311,-79.5 451,-79.5 451,-49.5 311,-49.5"/>
-<text text-anchor="start" x="319" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
-<text text-anchor="middle" x="381" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_stokessl_lifoxkemper</text>
+<polygon fill="#ffffff" stroke="#000000" points="298,-49.5 298,-79.5 432,-79.5 432,-49.5 298,-49.5"/>
+<text text-anchor="start" x="306" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
+<text text-anchor="middle" x="365" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_stokessl_lifoxkemper</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node3&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M275.2364,-79.6996C283.5329,-78.5072 292.1459,-77.2695 300.7136,-76.0382"/>
-<polygon fill="#191970" stroke="#191970" points="301.3286,-79.4858 310.729,-74.5988 300.3328,-72.557 301.3286,-79.4858"/>
+<path fill="none" stroke="#191970" d="M262.1247,-79.8354C270.476,-78.5905 279.1763,-77.2936 287.8253,-76.0043"/>
+<polygon fill="#191970" stroke="#191970" points="288.5564,-79.4341 297.931,-74.4979 287.5242,-72.5106 288.5564,-79.4341"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="This provides a convenient interface for writing an mpp_error message with run&#45;time filter based on a...">
-<polygon fill="#ffffff" stroke="#000000" points="323.5,-.5 323.5,-30.5 438.5,-30.5 438.5,-.5 323.5,-.5"/>
-<text text-anchor="start" x="331.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="381" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
+<polygon fill="#ffffff" stroke="#000000" points="312,-.5 312,-30.5 418,-30.5 418,-.5 312,-.5"/>
+<text text-anchor="start" x="320" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="365" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node3&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M242.4527,-73.3263C261.5706,-63.4039 287.4763,-50.4809 311,-40.5 316.0488,-38.3578 321.3505,-36.2379 326.682,-34.1919"/>
-<polygon fill="#191970" stroke="#191970" points="328.1278,-37.3878 336.2627,-30.6 325.6705,-30.8333 328.1278,-37.3878"/>
+<path fill="none" stroke="#191970" d="M231.5643,-73.3647C250.0873,-63.4587 275.191,-50.5393 298,-40.5 302.7779,-38.397 307.7938,-36.3104 312.8405,-34.2916"/>
+<polygon fill="#191970" stroke="#191970" points="314.4886,-37.4054 322.5293,-30.5062 311.9412,-30.8853 314.4886,-37.4054"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="namespacemom__wave__interface.html#ae771d75c78a0370ad163edd5b1c19965" target="_top" xlink:title="Computes wind speed from ustar_air based on COARE 3.5 Cd relationship Probably doesn&#39;t belong in this...">
-<polygon fill="#ffffff" stroke="#000000" points="487,-49.5 487,-79.5 608,-79.5 608,-49.5 487,-49.5"/>
-<text text-anchor="start" x="495" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
-<text text-anchor="middle" x="547.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::ust_2_u10_coare3p5</text>
+<polygon fill="#ffffff" stroke="#000000" points="468,-49.5 468,-79.5 581,-79.5 581,-49.5 468,-49.5"/>
+<text text-anchor="start" x="476" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
+<text text-anchor="middle" x="524.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::ust_2_u10_coare3p5</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M451.1284,-64.5C459.595,-64.5 468.2474,-64.5 476.7232,-64.5"/>
-<polygon fill="#191970" stroke="#191970" points="476.95,-68.0001 486.95,-64.5 476.9499,-61.0001 476.95,-68.0001"/>
+<path fill="none" stroke="#191970" d="M432.1801,-64.5C440.6539,-64.5 449.3219,-64.5 457.7884,-64.5"/>
+<polygon fill="#191970" stroke="#191970" points="457.9892,-68.0001 467.9892,-64.5 457.9891,-61.0001 457.9892,-68.0001"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="This returns .true. if the current PE is the root PE.">
-<polygon fill="#ffffff" stroke="#000000" points="490,-.5 490,-30.5 605,-30.5 605,-.5 490,-.5"/>
-<text text-anchor="start" x="498" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="547.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
+<polygon fill="#ffffff" stroke="#000000" points="471.5,-.5 471.5,-30.5 577.5,-30.5 577.5,-.5 471.5,-.5"/>
+<text text-anchor="start" x="479.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="524.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node8&#45;&gt;Node9</title>
-<path fill="none" stroke="#191970" d="M438.7663,-15.5C451.9392,-15.5 466.0542,-15.5 479.6067,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="479.8358,-19.0001 489.8358,-15.5 479.8357,-12.0001 479.8358,-19.0001"/>
+<path fill="none" stroke="#191970" d="M418.1112,-15.5C431.8936,-15.5 446.8752,-15.5 461.1275,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="461.349,-19.0001 471.349,-15.5 461.3489,-12.0001 461.349,-19.0001"/>
 </g>
 </g>
 </svg>

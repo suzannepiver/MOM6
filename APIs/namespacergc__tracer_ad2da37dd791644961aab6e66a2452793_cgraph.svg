@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 756;
+var viewWidth = 717;
 var viewHeight = 165;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,14 +54,14 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>rgc_tracer::initialize_rgc_tracer</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-161 752,-161 752,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-161 713,-161 713,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Initializes the NTR tracer fields in tr(:,:,:,:) and it sets up the tracer output.">
-<polygon fill="#bfbfbf" stroke="#000000" points="0,-63.5 0,-93.5 107,-93.5 107,-63.5 0,-63.5"/>
+<polygon fill="#bfbfbf" stroke="#000000" points="0,-63.5 0,-93.5 101,-93.5 101,-63.5 0,-63.5"/>
 <text text-anchor="start" x="8" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">rgc_tracer::initialize</text>
-<text text-anchor="middle" x="53.5" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_rgc_tracer</text>
+<text text-anchor="middle" x="50.5" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_rgc_tracer</text>
 </a>
 </g>
 </g>
@@ -69,113 +69,113 @@ var sectionId = 'dynsection-0';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__ale__sponge.html#a30b98598d25129c9fbb6e7c4b3480e7a" target="_top" xlink:title="Return the number of layers in the data with a fixed ALE sponge, or 0 if there are no sponge columns ...">
-<polygon fill="#ffffff" stroke="#000000" points="146,-126.5 146,-156.5 268,-156.5 268,-126.5 146,-126.5"/>
-<text text-anchor="start" x="154" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_ale_sponge::get</text>
-<text text-anchor="middle" x="207" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_ale_sponge_nz_data</text>
+<polygon fill="#ffffff" stroke="#000000" points="141,-126.5 141,-156.5 254,-156.5 254,-126.5 141,-126.5"/>
+<text text-anchor="start" x="149" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_ale_sponge::get</text>
+<text text-anchor="middle" x="197.5" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_ale_sponge_nz_data</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M90.2671,-93.5901C111.454,-102.2857 138.2807,-113.296 160.8729,-122.5684"/>
-<polygon fill="#191970" stroke="#191970" points="159.6871,-125.865 170.2672,-126.424 162.345,-119.3892 159.6871,-125.865"/>
+<path fill="none" stroke="#191970" d="M85.7102,-93.5901C105.9093,-102.2469 131.4614,-113.1977 153.0362,-122.4441"/>
+<polygon fill="#191970" stroke="#191970" points="151.7525,-125.7018 162.3227,-126.424 154.51,-119.2677 151.7525,-125.7018"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="This provides a convenient interface for writing an mpp_error message with run&#45;time filter based on a...">
-<polygon fill="#ffffff" stroke="#000000" points="482,-44.5 482,-74.5 597,-74.5 597,-44.5 482,-44.5"/>
-<text text-anchor="start" x="490" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="539.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
+<polygon fill="#ffffff" stroke="#000000" points="461,-44.5 461,-74.5 567,-74.5 567,-44.5 461,-44.5"/>
+<text text-anchor="start" x="469" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="514" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M107.3168,-81.8974C183.1006,-85.9099 325.485,-90.621 446,-78.5 454.4106,-77.6541 463.1834,-76.3904 471.8399,-74.9092"/>
-<polygon fill="#191970" stroke="#191970" points="472.7041,-78.3097 481.9196,-73.0824 471.4557,-71.4219 472.7041,-78.3097"/>
+<path fill="none" stroke="#191970" d="M101.2563,-81.8664C173.4282,-85.8894 309.7468,-90.6652 425,-78.5 433.357,-77.6179 442.0831,-76.2822 450.6644,-74.7194"/>
+<polygon fill="#191970" stroke="#191970" points="451.485,-78.1257 460.6406,-72.7942 450.1585,-71.2525 451.485,-78.1257"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__io.html#aa583d22dfaf16e3157b2741d838f5240" target="_top" xlink:title="This routine queries vardesc.">
-<polygon fill="#ffffff" stroke="#000000" points="143,-50 143,-69 271,-69 271,-50 143,-50"/>
-<text text-anchor="middle" x="207" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_io::query_vardesc</text>
+<polygon fill="#ffffff" stroke="#000000" points="137,-50 137,-69 258,-69 258,-50 137,-50"/>
+<text text-anchor="middle" x="197.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_io::query_vardesc</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M107.1869,-71.8547C115.4514,-70.8317 124.1093,-69.7601 132.7255,-68.6936"/>
-<polygon fill="#191970" stroke="#191970" points="133.3008,-72.1492 142.7951,-67.4472 132.4408,-65.2022 133.3008,-72.1492"/>
+<path fill="none" stroke="#191970" d="M101.0891,-71.9613C109.3863,-70.8888 118.1164,-69.7605 126.7945,-68.6388"/>
+<polygon fill="#191970" stroke="#191970" points="127.46,-72.082 136.9288,-67.3289 126.5626,-65.1397 127.46,-72.082"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="namespacemom__sponge.html#af3da4a8b352c4130919d7bfedf1a5a3e" target="_top" xlink:title="This subroutine stores the reference profile for the variable whose address is given by f_ptr....">
-<polygon fill="#ffffff" stroke="#000000" points="318.5,-.5 318.5,-30.5 434.5,-30.5 434.5,-.5 318.5,-.5"/>
-<text text-anchor="start" x="326.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_sponge::set_up</text>
-<text text-anchor="middle" x="376.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_sponge_field</text>
+<polygon fill="#ffffff" stroke="#000000" points="304.5,-.5 304.5,-30.5 414.5,-30.5 414.5,-.5 304.5,-.5"/>
+<text text-anchor="start" x="312.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_sponge::set_up</text>
+<text text-anchor="middle" x="359.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_sponge_field</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge7" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M82.9676,-63.3824C100.0609,-55.2831 122.2498,-45.8888 143,-40.5 197.4098,-26.3697 260.946,-20.2083 307.9936,-17.5308"/>
-<polygon fill="#191970" stroke="#191970" points="308.2731,-21.021 318.0736,-16.9959 307.9021,-14.0308 308.2731,-21.021"/>
+<path fill="none" stroke="#191970" d="M78.9336,-63.4014C95.4389,-55.3083 116.8845,-45.9138 137,-40.5 188.7126,-26.5822 249.2053,-20.404 294.0512,-17.6659"/>
+<polygon fill="#191970" stroke="#191970" points="294.4495,-21.149 304.2346,-17.0867 294.0519,-14.1603 294.4495,-21.149"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="This returns .true. if the current PE is the root PE.">
-<polygon fill="#ffffff" stroke="#000000" points="633,-22.5 633,-52.5 748,-52.5 748,-22.5 633,-22.5"/>
-<text text-anchor="start" x="641" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="690.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
+<polygon fill="#ffffff" stroke="#000000" points="603,-22.5 603,-52.5 709,-52.5 709,-22.5 603,-22.5"/>
+<text text-anchor="start" x="611" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="656" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M597.0174,-51.12C605.4639,-49.8894 614.2292,-48.6123 622.8561,-47.3554"/>
-<polygon fill="#191970" stroke="#191970" points="623.5016,-50.7984 632.8925,-45.8931 622.4924,-43.8715 623.5016,-50.7984"/>
+<path fill="none" stroke="#191970" d="M567.2796,-51.2454C575.651,-49.9484 584.3736,-48.5971 592.94,-47.2699"/>
+<polygon fill="#191970" stroke="#191970" points="593.5479,-50.7175 602.8941,-45.7277 592.4761,-43.8001 593.5479,-50.7175"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="namespacemom__io.html#ac4bc408e8b38dbd669842753f26ebf88" target="_top" xlink:title="Copies a string.">
-<polygon fill="#ffffff" stroke="#000000" points="307,-50 307,-69 446,-69 446,-50 307,-50"/>
-<text text-anchor="middle" x="376.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_io::safe_string_copy</text>
+<polygon fill="#ffffff" stroke="#000000" points="294,-50 294,-69 425,-69 425,-50 294,-50"/>
+<text text-anchor="middle" x="359.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_io::safe_string_copy</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M271.0807,-59.5C279.5034,-59.5 288.2163,-59.5 296.858,-59.5"/>
-<polygon fill="#191970" stroke="#191970" points="296.9484,-63.0001 306.9484,-59.5 296.9483,-56.0001 296.9484,-63.0001"/>
+<path fill="none" stroke="#191970" d="M258.2837,-59.5C266.5177,-59.5 275.0494,-59.5 283.508,-59.5"/>
+<polygon fill="#191970" stroke="#191970" points="283.7644,-63.0001 293.7644,-59.5 283.7644,-56.0001 283.7644,-63.0001"/>
 </g>
 <!-- Node6&#45;&gt;Node3 -->
 <g id="edge6" class="edge">
 <title>Node6&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M446.0995,-59.5C454.5888,-59.5 463.2542,-59.5 471.7164,-59.5"/>
-<polygon fill="#191970" stroke="#191970" points="471.9123,-63.0001 481.9123,-59.5 471.9122,-56.0001 471.9123,-63.0001"/>
+<path fill="none" stroke="#191970" d="M425.0219,-59.5C433.4416,-59.5 442.0517,-59.5 450.4393,-59.5"/>
+<polygon fill="#191970" stroke="#191970" points="450.5324,-63.0001 460.5323,-59.5 450.5323,-56.0001 450.5324,-63.0001"/>
 </g>
 <!-- Node7&#45;&gt;Node3 -->
 <g id="edge9" class="edge">
 <title>Node7&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M432.1395,-30.5192C445.5721,-34.1452 460.0503,-38.0534 473.8922,-41.7899"/>
-<polygon fill="#191970" stroke="#191970" points="473.2681,-45.2467 483.8347,-44.4738 475.0925,-38.4886 473.2681,-45.2467"/>
+<path fill="none" stroke="#191970" d="M412.238,-30.5192C424.8465,-34.11 438.427,-37.9776 451.4311,-41.681"/>
+<polygon fill="#191970" stroke="#191970" points="450.6613,-45.1009 461.2375,-44.4738 452.5786,-38.3686 450.6613,-45.1009"/>
 </g>
 <!-- Node7&#45;&gt;Node4 -->
 <g id="edge8" class="edge">
 <title>Node7&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M434.8251,-19.5865C488.0033,-23.3123 566.5811,-28.8178 622.5719,-32.7407"/>
-<polygon fill="#191970" stroke="#191970" points="622.5324,-36.2464 632.7526,-33.454 623.0217,-29.2635 622.5324,-36.2464"/>
+<path fill="none" stroke="#191970" d="M414.5745,-19.5865C464.9731,-23.326 539.532,-28.8582 592.4385,-32.7838"/>
+<polygon fill="#191970" stroke="#191970" points="592.486,-36.2969 602.7176,-33.5465 593.004,-29.316 592.486,-36.2969"/>
 </g>
 </g>
 </svg>

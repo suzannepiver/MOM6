@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/tracer/MOM_OCMIP2_CFC.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/tracer/MOM_OCMIP2_CFC.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('MOM__OCMIP2__CFC_8F90.html','');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_OCMIP2_CFC.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__OCMIP2__CFC_8F90__incl.svg" width="202" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__OCMIP2__CFC_8F90__incl.svg" width="212" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -136,9 +136,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a293cd355bf164bfd6bbe2cda4b00ad12"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ocmip2__cfc.html#a293cd355bf164bfd6bbe2cda4b00ad12">mom_ocmip2_cfc::init_tracer_cfc</a> (h, tr, name, land_val, IC_val, G, US, CS)</td></tr>
 <tr class="memdesc:a293cd355bf164bfd6bbe2cda4b00ad12"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine initializes a tracer array.  <a href="namespacemom__ocmip2__cfc.html#a293cd355bf164bfd6bbe2cda4b00ad12">More...</a><br /></td></tr>
 <tr class="separator:a293cd355bf164bfd6bbe2cda4b00ad12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af97d6b5ffc3e2a02d565592ba52bd39b"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ocmip2__cfc.html#af97d6b5ffc3e2a02d565592ba52bd39b">mom_ocmip2_cfc::ocmip2_cfc_column_physics</a> (h_old, h_new, ea, eb, fluxes, dt, G, GV, CS, evap_CFL_limit, minimum_forcing_depth)</td></tr>
-<tr class="memdesc:af97d6b5ffc3e2a02d565592ba52bd39b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine applies diapycnal diffusion, souces and sinks and any other column tracer physics or chemistry to the OCMIP2 CFC tracers. CFCs are relatively simple, as they are passive tracers with only a surface flux as a source.  <a href="namespacemom__ocmip2__cfc.html#af97d6b5ffc3e2a02d565592ba52bd39b">More...</a><br /></td></tr>
-<tr class="separator:af97d6b5ffc3e2a02d565592ba52bd39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc84df12994a1f74d181ab54e380878"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ocmip2__cfc.html#aebc84df12994a1f74d181ab54e380878">mom_ocmip2_cfc::ocmip2_cfc_column_physics</a> (h_old, h_new, ea, eb, fluxes, dt, G, GV, US, CS, evap_CFL_limit, minimum_forcing_depth)</td></tr>
+<tr class="memdesc:aebc84df12994a1f74d181ab54e380878"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine applies diapycnal diffusion, souces and sinks and any other column tracer physics or chemistry to the OCMIP2 CFC tracers. CFCs are relatively simple, as they are passive tracers with only a surface flux as a source.  <a href="namespacemom__ocmip2__cfc.html#aebc84df12994a1f74d181ab54e380878">More...</a><br /></td></tr>
+<tr class="separator:aebc84df12994a1f74d181ab54e380878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3c9967ff09b37934eb5ef51535e7ee3"><td class="memItemLeft" align="right" valign="top">integer function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ocmip2__cfc.html#ac3c9967ff09b37934eb5ef51535e7ee3">mom_ocmip2_cfc::ocmip2_cfc_stock</a> (h, stocks, G, GV, CS, names, units, stock_index)</td></tr>
 <tr class="memdesc:ac3c9967ff09b37934eb5ef51535e7ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calculates the mass-weighted integral of all tracer stocks, returning the number of stocks it has calculated. If the stock_index is present, only the stock corresponding to that coded index is returned.  <a href="namespacemom__ocmip2__cfc.html#ac3c9967ff09b37934eb5ef51535e7ee3">More...</a><br /></td></tr>
 <tr class="separator:ac3c9967ff09b37934eb5ef51535e7ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>

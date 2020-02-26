@@ -160,40 +160,40 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:af6acdcb169859b29b3cb1a329655a80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">horizontal phase speed [L T-1 ~&gt; m s-1]  <a href="structmom__internal__tides_1_1int__tide__cs.html#af6acdcb169859b29b3cb1a329655a80b">More...</a><br /></td></tr>
 <tr class="separator:af6acdcb169859b29b3cb1a329655a80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ee894ff4e65aea4115a0bb797337311"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:,:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a1ee894ff4e65aea4115a0bb797337311">tke_leak_loss</a></td></tr>
-<tr class="memdesc:a1ee894ff4e65aea4115a0bb797337311"><td class="mdescLeft">&#160;</td><td class="mdescRight">energy lost due to misc background processes [W m-2]  <a href="structmom__internal__tides_1_1int__tide__cs.html#a1ee894ff4e65aea4115a0bb797337311">More...</a><br /></td></tr>
+<tr class="memdesc:a1ee894ff4e65aea4115a0bb797337311"><td class="mdescLeft">&#160;</td><td class="mdescRight">energy lost due to misc background processes [R Z3 T-3 ~&gt; W m-2]  <a href="structmom__internal__tides_1_1int__tide__cs.html#a1ee894ff4e65aea4115a0bb797337311">More...</a><br /></td></tr>
 <tr class="separator:a1ee894ff4e65aea4115a0bb797337311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a723cbb2e6017c01cb46bf0a8e875d462"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:,:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a723cbb2e6017c01cb46bf0a8e875d462">tke_quad_loss</a></td></tr>
-<tr class="memdesc:a723cbb2e6017c01cb46bf0a8e875d462"><td class="mdescLeft">&#160;</td><td class="mdescRight">energy lost due to quadratic bottom drag [W m-2]  <a href="structmom__internal__tides_1_1int__tide__cs.html#a723cbb2e6017c01cb46bf0a8e875d462">More...</a><br /></td></tr>
+<tr class="memdesc:a723cbb2e6017c01cb46bf0a8e875d462"><td class="mdescLeft">&#160;</td><td class="mdescRight">energy lost due to quadratic bottom drag [R Z3 T-3 ~&gt; W m-2]  <a href="structmom__internal__tides_1_1int__tide__cs.html#a723cbb2e6017c01cb46bf0a8e875d462">More...</a><br /></td></tr>
 <tr class="separator:a723cbb2e6017c01cb46bf0a8e875d462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a446921d2311d100d8ffd3822cb9bf383"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:,:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a446921d2311d100d8ffd3822cb9bf383">tke_froude_loss</a></td></tr>
-<tr class="memdesc:a446921d2311d100d8ffd3822cb9bf383"><td class="mdescLeft">&#160;</td><td class="mdescRight">energy lost due to wave breaking [W m-2]  <a href="structmom__internal__tides_1_1int__tide__cs.html#a446921d2311d100d8ffd3822cb9bf383">More...</a><br /></td></tr>
+<tr class="memdesc:a446921d2311d100d8ffd3822cb9bf383"><td class="mdescLeft">&#160;</td><td class="mdescRight">energy lost due to wave breaking [R Z3 T-3 ~&gt; W m-2]  <a href="structmom__internal__tides_1_1int__tide__cs.html#a446921d2311d100d8ffd3822cb9bf383">More...</a><br /></td></tr>
 <tr class="separator:a446921d2311d100d8ffd3822cb9bf383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30a4183c81f6b7fccee72b79f23e44a1"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a30a4183c81f6b7fccee72b79f23e44a1">tke_itidal_loss_fixed</a></td></tr>
-<tr class="memdesc:a30a4183c81f6b7fccee72b79f23e44a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">fixed part of the energy lost due to small-scale drag [kg m L-2 Z-1 ~&gt; kg m-2] here; will be multiplied by N and En to get into [W m-2]  <a href="structmom__internal__tides_1_1int__tide__cs.html#a30a4183c81f6b7fccee72b79f23e44a1">More...</a><br /></td></tr>
+<tr class="memdesc:a30a4183c81f6b7fccee72b79f23e44a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed part of the energy lost due to small-scale drag [R L-2 Z3 ~&gt; kg m-2] here; This will be multiplied by N and the squared near-bottom velocity to get the energy losses in [R Z3 T-3 ~&gt; W m-2].  <a href="structmom__internal__tides_1_1int__tide__cs.html#a30a4183c81f6b7fccee72b79f23e44a1">More...</a><br /></td></tr>
 <tr class="separator:a30a4183c81f6b7fccee72b79f23e44a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90039a03fa824c7572b83283be21e433"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:,:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a90039a03fa824c7572b83283be21e433">tke_itidal_loss</a></td></tr>
-<tr class="memdesc:a90039a03fa824c7572b83283be21e433"><td class="mdescLeft">&#160;</td><td class="mdescRight">energy lost due to small-scale wave drag [W m-2]  <a href="structmom__internal__tides_1_1int__tide__cs.html#a90039a03fa824c7572b83283be21e433">More...</a><br /></td></tr>
+<tr class="memdesc:a90039a03fa824c7572b83283be21e433"><td class="mdescLeft">&#160;</td><td class="mdescRight">energy lost due to small-scale wave drag [R Z3 T-3 ~&gt; W m-2]  <a href="structmom__internal__tides_1_1int__tide__cs.html#a90039a03fa824c7572b83283be21e433">More...</a><br /></td></tr>
 <tr class="separator:a90039a03fa824c7572b83283be21e433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad026873b57a71beeef778b69a921e3db"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#ad026873b57a71beeef778b69a921e3db">tot_leak_loss</a></td></tr>
-<tr class="memdesc:ad026873b57a71beeef778b69a921e3db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy loss rates due to misc bakground processes, summed over angle, frequency and mode [W m-2].  <a href="structmom__internal__tides_1_1int__tide__cs.html#ad026873b57a71beeef778b69a921e3db">More...</a><br /></td></tr>
+<tr class="memdesc:ad026873b57a71beeef778b69a921e3db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy loss rates due to misc bakground processes, summed over angle, frequency and mode [R Z3 T-3 ~&gt; W m-2].  <a href="structmom__internal__tides_1_1int__tide__cs.html#ad026873b57a71beeef778b69a921e3db">More...</a><br /></td></tr>
 <tr class="separator:ad026873b57a71beeef778b69a921e3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa31428eec2f98ac2b76ba6b32799f2fa"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#aa31428eec2f98ac2b76ba6b32799f2fa">tot_quad_loss</a></td></tr>
-<tr class="memdesc:aa31428eec2f98ac2b76ba6b32799f2fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy loss rates due to quadratic bottom drag, summed over angle, frequency and mode [W m-2].  <a href="structmom__internal__tides_1_1int__tide__cs.html#aa31428eec2f98ac2b76ba6b32799f2fa">More...</a><br /></td></tr>
+<tr class="memdesc:aa31428eec2f98ac2b76ba6b32799f2fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy loss rates due to quadratic bottom drag, summed over angle, frequency and mode [R Z3 T-3 ~&gt; W m-2].  <a href="structmom__internal__tides_1_1int__tide__cs.html#aa31428eec2f98ac2b76ba6b32799f2fa">More...</a><br /></td></tr>
 <tr class="separator:aa31428eec2f98ac2b76ba6b32799f2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0f089ef71502a1f9b0c7a151a7c820c"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#ae0f089ef71502a1f9b0c7a151a7c820c">tot_itidal_loss</a></td></tr>
-<tr class="memdesc:ae0f089ef71502a1f9b0c7a151a7c820c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy loss rates due to small-scale drag, summed over angle, frequency and mode [W m-2].  <a href="structmom__internal__tides_1_1int__tide__cs.html#ae0f089ef71502a1f9b0c7a151a7c820c">More...</a><br /></td></tr>
+<tr class="memdesc:ae0f089ef71502a1f9b0c7a151a7c820c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy loss rates due to small-scale drag, summed over angle, frequency and mode [R Z3 T-3 ~&gt; W m-2].  <a href="structmom__internal__tides_1_1int__tide__cs.html#ae0f089ef71502a1f9b0c7a151a7c820c">More...</a><br /></td></tr>
 <tr class="separator:ae0f089ef71502a1f9b0c7a151a7c820c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13dcb4231fa1e3f0f4b3a7f85c662f5b"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a13dcb4231fa1e3f0f4b3a7f85c662f5b">tot_froude_loss</a></td></tr>
-<tr class="memdesc:a13dcb4231fa1e3f0f4b3a7f85c662f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy loss rates due to wave breaking, summed over angle, frequency and mode [W m-2].  <a href="structmom__internal__tides_1_1int__tide__cs.html#a13dcb4231fa1e3f0f4b3a7f85c662f5b">More...</a><br /></td></tr>
+<tr class="memdesc:a13dcb4231fa1e3f0f4b3a7f85c662f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy loss rates due to wave breaking, summed over angle, frequency and mode [R Z3 T-3 ~&gt; W m-2].  <a href="structmom__internal__tides_1_1int__tide__cs.html#a13dcb4231fa1e3f0f4b3a7f85c662f5b">More...</a><br /></td></tr>
 <tr class="separator:a13dcb4231fa1e3f0f4b3a7f85c662f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a275160053dd30e4e6ba8b44da19e731d"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a275160053dd30e4e6ba8b44da19e731d">tot_allprocesses_loss</a></td></tr>
-<tr class="memdesc:a275160053dd30e4e6ba8b44da19e731d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy loss rates due to all processes, summed over angle, frequency and mode [W m-2].  <a href="structmom__internal__tides_1_1int__tide__cs.html#a275160053dd30e4e6ba8b44da19e731d">More...</a><br /></td></tr>
+<tr class="memdesc:a275160053dd30e4e6ba8b44da19e731d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy loss rates due to all processes, summed over angle, frequency and mode [R Z3 T-3 ~&gt; W m-2].  <a href="structmom__internal__tides_1_1int__tide__cs.html#a275160053dd30e4e6ba8b44da19e731d">More...</a><br /></td></tr>
 <tr class="separator:a275160053dd30e4e6ba8b44da19e731d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab845642ca4f47c06665104ecf8eef553"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#ab845642ca4f47c06665104ecf8eef553">q_itides</a></td></tr>
 <tr class="memdesc:ab845642ca4f47c06665104ecf8eef553"><td class="mdescLeft">&#160;</td><td class="mdescRight">fraction of local dissipation [nondim]  <a href="structmom__internal__tides_1_1int__tide__cs.html#ab845642ca4f47c06665104ecf8eef553">More...</a><br /></td></tr>
 <tr class="separator:ab845642ca4f47c06665104ecf8eef553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b52b5e2aff5b337fdf7b2b664c91d2c"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a4b52b5e2aff5b337fdf7b2b664c91d2c">en_sum</a></td></tr>
-<tr class="memdesc:a4b52b5e2aff5b337fdf7b2b664c91d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">global sum of energy for use in debugging  <a href="structmom__internal__tides_1_1int__tide__cs.html#a4b52b5e2aff5b337fdf7b2b664c91d2c">More...</a><br /></td></tr>
+<tr class="memdesc:a4b52b5e2aff5b337fdf7b2b664c91d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">global sum of energy for use in debugging [R Z3 T-2 ~&gt; J m-2]  <a href="structmom__internal__tides_1_1int__tide__cs.html#a4b52b5e2aff5b337fdf7b2b664c91d2c">More...</a><br /></td></tr>
 <tr class="separator:a4b52b5e2aff5b337fdf7b2b664c91d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7475f1c062da3b6bfa6af331b70ac1e3"><td class="memItemLeft" align="right" valign="top">type(time_type), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a7475f1c062da3b6bfa6af331b70ac1e3">time</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a7475f1c062da3b6bfa6af331b70ac1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the model's clock.  <a href="structmom__internal__tides_1_1int__tide__cs.html#a7475f1c062da3b6bfa6af331b70ac1e3">More...</a><br /></td></tr>
@@ -220,7 +220,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a5acffeacc7e63864e58b24ee1c785bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, apply wave breaking as a sink.  <a href="structmom__internal__tides_1_1int__tide__cs.html#a5acffeacc7e63864e58b24ee1c785bea">More...</a><br /></td></tr>
 <tr class="separator:a5acffeacc7e63864e58b24ee1c785bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3854d2a415e43e71151518f5efc14625"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a3854d2a415e43e71151518f5efc14625">en</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a3854d2a415e43e71151518f5efc14625"><td class="mdescLeft">&#160;</td><td class="mdescRight">The internal wave energy density as a function of (i,j,angle,frequency,mode)  <a href="structmom__internal__tides_1_1int__tide__cs.html#a3854d2a415e43e71151518f5efc14625">More...</a><br /></td></tr>
+<tr class="memdesc:a3854d2a415e43e71151518f5efc14625"><td class="mdescLeft">&#160;</td><td class="mdescRight">The internal wave energy density as a function of (i,j,angle,frequency,mode) integrated within an angular and frequency band [R Z3 T-2 ~&gt; J m-2].  <a href="structmom__internal__tides_1_1int__tide__cs.html#a3854d2a415e43e71151518f5efc14625">More...</a><br /></td></tr>
 <tr class="separator:a3854d2a415e43e71151518f5efc14625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06616e25ee68d1ace351154c49892948"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__internal__tides_1_1int__tide__cs.html#a06616e25ee68d1ace351154c49892948">en_restart</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a06616e25ee68d1ace351154c49892948"><td class="mdescLeft">&#160;</td><td class="mdescRight">The internal wave energy density as a function of (i,j,angle); temporary for restart.  <a href="structmom__internal__tides_1_1int__tide__cs.html#a06616e25ee68d1ace351154c49892948">More...</a><br /></td></tr>
@@ -311,8 +311,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, apply a drag due to background processes as a sink. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00097">97</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">logical</span> :: apply_background_drag</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00098">98</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">logical</span> :: apply_background_drag</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -330,8 +330,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, apply a quadratic bottom drag as a sink. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00099">99</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">logical</span> :: apply_bottom_drag</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00100">100</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">logical</span> :: apply_bottom_drag</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -349,8 +349,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, apply wave breaking as a sink. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">logical</span> :: apply_Froude_drag</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00104">104</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">logical</span> :: apply_Froude_drag</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -368,8 +368,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, apply scattering due to small-scale roughness as a sink. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00101">101</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">logical</span> :: apply_wave_drag</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">logical</span> :: apply_wave_drag</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -387,8 +387,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The bottom drag coefficient [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00096">96</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">  real</span> :: cdrag<span class="comment">         !&lt; The bottom drag coefficient [nondim].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00097">97</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">  real</span> :: cdrag<span class="comment">         !&lt; The bottom drag coefficient [nondim].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -444,8 +444,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A constant rate at which internal tide energy is lost to the interior ocean internal wave field. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">  real</span> :: decay_rate<span class="comment">    !&lt; A constant rate at which internal tide energy is</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00095">95</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">  real</span> :: decay_rate<span class="comment">    !&lt; A constant rate at which internal tide energy is</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -463,8 +463,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure that is used to regulate the timing of diagnostic output. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to regulate the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to regulate the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -499,10 +499,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The internal wave energy density as a function of (i,j,angle,frequency,mode) </p>
+<p>The internal wave energy density as a function of (i,j,angle,frequency,mode) integrated within an angular and frequency band [R Z3 T-2 ~&gt; J m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00105">105</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:,:,:)</span>, <span class="keywordtype">pointer</span> :: En =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00106">106</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:,:,:)</span>, <span class="keywordtype">pointer</span> :: En =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -520,8 +520,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The internal wave energy density as a function of (i,j,angle); temporary for restart. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00107">107</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: En_restart =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: En_restart =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -537,10 +537,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>global sum of energy for use in debugging </p>
+<p>global sum of energy for use in debugging [R Z3 T-2 ~&gt; J m-2] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">  real</span> :: En_sum<span class="comment">        !&lt; global sum of energy for use in debugging</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00092">92</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">  real</span> :: En_sum<span class="comment">        !&lt; global sum of energy for use in debugging [R Z3 T-2 ~&gt; J m-2]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -577,8 +577,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The frequency of each band [T-1 ~&gt; s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:)</span> :: frequency<span class="comment">  !&lt; The frequency of each band [T-1 ~&gt; s-1].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:)</span> :: frequency<span class="comment">  !&lt; The frequency of each band [T-1 ~&gt; s-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -596,7 +596,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00127">127</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 
 </div>
 </div>
@@ -614,7 +614,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00127">127</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 
 </div>
 </div>
@@ -632,8 +632,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">integer</span> :: id_dx_Cv = -1, id_dy_cu = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">integer</span> :: id_dx_Cv = -1, id_dy_cu = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -651,7 +651,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 
 </div>
 </div>
@@ -669,10 +669,10 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00132">132</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;             id_En_ang_mode, &amp;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;             id_itidal_loss_ang_mode</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00134">134</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;             id_En_ang_mode, &amp;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;             id_itidal_loss_ang_mode</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -690,13 +690,13 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;             id_En_mode, &amp;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;             id_itidal_loss_mode, &amp;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;             id_allprocesses_loss_mode, &amp;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;             id_Ub_mode, &amp;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;             id_cp_mode</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00127">127</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;             id_En_mode, &amp;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;             id_itidal_loss_mode, &amp;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;             id_allprocesses_loss_mode, &amp;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;             id_Ub_mode, &amp;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;             id_cp_mode</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -714,7 +714,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00132">132</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00134">134</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 
 </div>
 </div>
@@ -732,7 +732,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00127">127</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 
 </div>
 </div>
@@ -750,7 +750,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00118">118</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 
 </div>
 </div>
@@ -768,7 +768,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 
 </div>
 </div>
@@ -786,7 +786,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 
 </div>
 </div>
@@ -804,8 +804,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">integer</span> :: id_refl_pref = -1, id_refl_ang = -1, id_land_mask = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">integer</span> :: id_refl_pref = -1, id_refl_ang = -1, id_land_mask = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -823,7 +823,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00118">118</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 
 </div>
 </div>
@@ -841,7 +841,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 
 </div>
 </div>
@@ -859,8 +859,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00118">118</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">integer</span> :: id_tot_En = -1, id_tke_itidal_input = -1, id_itide_drag = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">integer</span> :: id_tot_En = -1, id_tke_itidal_input = -1, id_itide_drag = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -878,8 +878,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">integer</span> :: id_tot_Froude_loss = -1, id_tot_allprocesses_loss = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">integer</span> :: id_tot_Froude_loss = -1, id_tot_allprocesses_loss = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -897,7 +897,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 
 </div>
 </div>
@@ -915,8 +915,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">integer</span> :: id_tot_leak_loss = -1, id_tot_quad_loss = -1, id_tot_itidal_loss = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">integer</span> :: id_tot_leak_loss = -1, id_tot_quad_loss = -1, id_tot_itidal_loss = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -934,7 +934,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 
 </div>
 </div>
@@ -952,7 +952,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diag handles. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00127">127</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 
 </div>
 </div>
@@ -970,8 +970,8 @@ Public variables and constants</h2></td></tr>
 
 <p>directory to look for coastline angle file </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00093">93</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">character(len=200)</span> :: inputdir<span class="comment"> !&lt; directory to look for coastline angle file</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">character(len=200)</span> :: inputdir<span class="comment"> !&lt; directory to look for coastline angle file</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1065,8 +1065,8 @@ Public variables and constants</h2></td></tr>
 
 <p>fraction of local dissipation [nondim] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">  real</span> :: q_itides<span class="comment">      !&lt; fraction of local dissipation [nondim]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">  real</span> :: q_itides<span class="comment">      !&lt; fraction of local dissipation [nondim]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1179,8 +1179,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the model's clock. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00092">92</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time =&gt; null() <span class="comment">!&lt; A pointer to the model&#39;s clock.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00093">93</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time =&gt; null() <span class="comment">!&lt; A pointer to the model&#39;s clock.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1196,7 +1196,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>energy lost due to wave breaking [W m-2] </p>
+<p>energy lost due to wave breaking [R Z3 T-3 ~&gt; W m-2] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00073">73</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:,:)</span> :: TKE_Froude_loss</div>
@@ -1215,10 +1215,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>energy lost due to small-scale wave drag [W m-2] </p>
+<p>energy lost due to small-scale wave drag [R Z3 T-3 ~&gt; W m-2] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:,:)</span> :: TKE_itidal_loss</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00079">79</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:,:)</span> :: TKE_itidal_loss</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1234,7 +1234,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>fixed part of the energy lost due to small-scale drag [kg m L-2 Z-1 ~&gt; kg m-2] here; will be multiplied by N and En to get into [W m-2] </p>
+<p>Fixed part of the energy lost due to small-scale drag [R L-2 Z3 ~&gt; kg m-2] here; This will be multiplied by N and the squared near-bottom velocity to get the energy losses in [R Z3 T-3 ~&gt; W m-2]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: TKE_itidal_loss_fixed</div>
@@ -1253,7 +1253,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>energy lost due to misc background processes [W m-2] </p>
+<p>energy lost due to misc background processes [R Z3 T-3 ~&gt; W m-2] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00069">69</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:,:)</span> :: TKE_leak_loss</div>
@@ -1272,7 +1272,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>energy lost due to quadratic bottom drag [W m-2] </p>
+<p>energy lost due to quadratic bottom drag [R Z3 T-3 ~&gt; W m-2] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:,:)</span> :: TKE_quad_loss</div>
@@ -1291,10 +1291,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Energy loss rates due to all processes, summed over angle, frequency and mode [W m-2]. </p>
+<p>Energy loss rates due to all processes, summed over angle, frequency and mode [R Z3 T-3 ~&gt; W m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: tot_allprocesses_loss<span class="comment"> !&lt; Energy loss rates due to all processes,</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00089">89</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: tot_allprocesses_loss<span class="comment"> !&lt; Energy loss rates due to all processes,</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1310,10 +1310,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Energy loss rates due to wave breaking, summed over angle, frequency and mode [W m-2]. </p>
+<p>Energy loss rates due to wave breaking, summed over angle, frequency and mode [R Z3 T-3 ~&gt; W m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: tot_Froude_loss<span class="comment"> !&lt; Energy loss rates due to wave breaking,</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: tot_Froude_loss<span class="comment"> !&lt; Energy loss rates due to wave breaking,</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1329,10 +1329,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Energy loss rates due to small-scale drag, summed over angle, frequency and mode [W m-2]. </p>
+<p>Energy loss rates due to small-scale drag, summed over angle, frequency and mode [R Z3 T-3 ~&gt; W m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00084">84</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: tot_itidal_loss<span class="comment"> !&lt; Energy loss rates due to small-scale drag,</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: tot_itidal_loss<span class="comment"> !&lt; Energy loss rates due to small-scale drag,</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1348,10 +1348,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Energy loss rates due to misc bakground processes, summed over angle, frequency and mode [W m-2]. </p>
+<p>Energy loss rates due to misc bakground processes, summed over angle, frequency and mode [R Z3 T-3 ~&gt; W m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00080">80</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: tot_leak_loss<span class="comment"> !&lt; Energy loss rates due to misc bakground processes,</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00081">81</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: tot_leak_loss<span class="comment"> !&lt; Energy loss rates due to misc bakground processes,</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1367,10 +1367,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Energy loss rates due to quadratic bottom drag, summed over angle, frequency and mode [W m-2]. </p>
+<p>Energy loss rates due to quadratic bottom drag, summed over angle, frequency and mode [R Z3 T-3 ~&gt; W m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00082">82</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: tot_quad_loss<span class="comment"> !&lt; Energy loss rates due to quadratic bottom drag,</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00083">83</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: tot_quad_loss<span class="comment"> !&lt; Energy loss rates due to quadratic bottom drag,</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1445,13 +1445,13 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the wave_structure module control structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">type</span>(wave_structure_CS), <span class="keywordtype">pointer</span> :: wave_structure_CSp =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__internal__tides_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">type</span>(wave_structure_CS), <span class="keywordtype">pointer</span> :: wave_structure_CSp =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/parameterizations/lateral/<a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/lateral/<a class="el" href="MOM__internal__tides_8F90_source.html">MOM_internal_tides.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

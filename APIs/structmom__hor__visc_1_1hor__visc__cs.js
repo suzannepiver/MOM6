@@ -1,5 +1,6 @@
 var structmom__hor__visc_1_1hor__visc__cs =
 [
+    [ "add_les_viscosity", "structmom__hor__visc_1_1hor__visc__cs.html#a7db0b831b7ea3867f092827a42de125c", null ],
     [ "ah_bg_xx", "structmom__hor__visc_1_1hor__visc__cs.html#ac1efd636e044acd790440f52c8dd90e2", null ],
     [ "ah_bg_xy", "structmom__hor__visc_1_1hor__visc__cs.html#a0d88370f21172942f12542a60fddfd4b", null ],
     [ "ah_max_xx", "structmom__hor__visc_1_1hor__visc__cs.html#a271a4e25b6b7e53c2b2134876d3307bc", null ],
@@ -8,8 +9,6 @@ var structmom__hor__visc_1_1hor__visc__cs =
     [ "answers_2018", "structmom__hor__visc_1_1hor__visc__cs.html#a5b88c7b8acab9d01773ffe65773d05e9", null ],
     [ "better_bound_ah", "structmom__hor__visc_1_1hor__visc__cs.html#a7eefaffebc5f1a0b14bd79e648433b1c", null ],
     [ "better_bound_kh", "structmom__hor__visc_1_1hor__visc__cs.html#a875377aa3fc020e4f115dddfac8f9345", null ],
-    [ "biharm5_const2_xx", "structmom__hor__visc_1_1hor__visc__cs.html#a6df026976f768350f455f0c2c0c6ea1f", null ],
-    [ "biharm5_const2_xy", "structmom__hor__visc_1_1hor__visc__cs.html#a9f1e9a9f6c9524411a3af9cfd05cd70d", null ],
     [ "biharm5_const_xx", "structmom__hor__visc_1_1hor__visc__cs.html#a0b5f150d4dd58c77a2ac9673c2d1f2cd", null ],
     [ "biharm5_const_xy", "structmom__hor__visc_1_1hor__visc__cs.html#adb0a14bed5f51984a502a7c672ab8fc1", null ],
     [ "biharm_const2_xx", "structmom__hor__visc_1_1hor__visc__cs.html#a0f55ecff0939baaea23557a42b6e9247", null ],

@@ -177,9 +177,9 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a599916daf5a41a89fc8f7fd9defb9ef9"><td class="memItemLeft" align="right" valign="top">type(efp_type)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__sum__output_1_1sum__output__cs.html#a599916daf5a41a89fc8f7fd9defb9ef9">mass_prev_efp</a></td></tr>
 <tr class="memdesc:a599916daf5a41a89fc8f7fd9defb9ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An extended fixed point version of mass_prev.  <a href="structmom__sum__output_1_1sum__output__cs.html#a599916daf5a41a89fc8f7fd9defb9ef9">More...</a><br /></td></tr>
 <tr class="separator:a599916daf5a41a89fc8f7fd9defb9ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08735fa6194f3bd5ef2a32e38ea9ec82"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__sum__output_1_1sum__output__cs.html#a08735fa6194f3bd5ef2a32e38ea9ec82">dt</a></td></tr>
-<tr class="memdesc:a08735fa6194f3bd5ef2a32e38ea9ec82"><td class="mdescLeft">&#160;</td><td class="mdescRight">The baroclinic dynamics time step [s].  <a href="structmom__sum__output_1_1sum__output__cs.html#a08735fa6194f3bd5ef2a32e38ea9ec82">More...</a><br /></td></tr>
-<tr class="separator:a08735fa6194f3bd5ef2a32e38ea9ec82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322880c4033bab11e939afd8f4ada050"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__sum__output_1_1sum__output__cs.html#a322880c4033bab11e939afd8f4ada050">dt_in_t</a></td></tr>
+<tr class="memdesc:a322880c4033bab11e939afd8f4ada050"><td class="mdescLeft">&#160;</td><td class="mdescRight">The baroclinic dynamics time step [T ~&gt; s].  <a href="structmom__sum__output_1_1sum__output__cs.html#a322880c4033bab11e939afd8f4ada050">More...</a><br /></td></tr>
+<tr class="separator:a322880c4033bab11e939afd8f4ada050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4157c10ebdc23e9815863d1eeae5d98f"><td class="memItemLeft" align="right" valign="top">type(time_type)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__sum__output_1_1sum__output__cs.html#a4157c10ebdc23e9815863d1eeae5d98f">energysavedays</a></td></tr>
 <tr class="memdesc:a4157c10ebdc23e9815863d1eeae5d98f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interval between writing the energies and other integral quantities of the run.  <a href="structmom__sum__output_1_1sum__output__cs.html#a4157c10ebdc23e9815863d1eeae5d98f">More...</a><br /></td></tr>
 <tr class="separator:a4157c10ebdc23e9815863d1eeae5d98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -331,22 +331,22 @@ Public variables and constants</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a08735fa6194f3bd5ef2a32e38ea9ec82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08735fa6194f3bd5ef2a32e38ea9ec82">&#9670;&nbsp;</a></span>dt</h2>
+<a id="a322880c4033bab11e939afd8f4ada050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a322880c4033bab11e939afd8f4ada050">&#9670;&nbsp;</a></span>dt_in_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">real mom_sum_output::sum_output_cs::dt</td>
+          <td class="memname">real mom_sum_output::sum_output_cs::dt_in_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The baroclinic dynamics time step [s]. </p>
+<p>The baroclinic dynamics time step [T ~&gt; s]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__sum__output_8F90_source.html#l00101">101</a> of file <a class="el" href="MOM__sum__output_8F90_source.html">MOM_sum_output.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">  real</span>    :: dt<span class="comment">                 !&lt; The baroclinic dynamics time step [s].</span></div>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">  real</span>    :: dt_in_T<span class="comment">            !&lt; The baroclinic dynamics time step [T ~&gt; s].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1017,7 +1017,7 @@ Public variables and constants</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/diagnostics/<a class="el" href="MOM__sum__output_8F90_source.html">MOM_sum_output.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/diagnostics/<a class="el" href="MOM__sum__output_8F90_source.html">MOM_sum_output.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

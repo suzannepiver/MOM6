@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 576;
+var viewWidth = 538;
 var viewHeight = 216;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,13 +54,13 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_diagnostics::diagnostics_cs</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-212 571.5,-212 571.5,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-212 534,-212 534,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="The control structure for the MOM_diagnostics module.">
-<polygon fill="#bfbfbf" stroke="#000000" points="203,-.5 203,-19.5 376,-19.5 376,-.5 203,-.5"/>
-<text text-anchor="middle" x="289.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diagnostics::diagnostics_cs</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="189,-.5 189,-19.5 353,-19.5 353,-.5 189,-.5"/>
+<text text-anchor="middle" x="271" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diagnostics::diagnostics_cs</text>
 </a>
 </g>
 </g>
@@ -68,120 +68,120 @@ var sectionId = 'dynsection-0';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="0,-183 0,-202 35,-202 35,-183 0,-183"/>
-<text text-anchor="middle" x="17.5" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">p3d</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="0,-183 0,-202 32,-202 32,-183 0,-183"/>
+<text text-anchor="middle" x="16" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">p3d</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M17.1524,-172.6934C17.7396,-139.2479 24.2059,-71.9149 64.5,-38 75.2665,-28.938 144.2109,-21.2632 202.9781,-16.2534"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="13.6522,-172.997 17.144,-182.9998 20.6522,-173.0027 13.6522,-172.997"/>
-<text text-anchor="middle" x="85" y="-107" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> var_ptr</text>
-<text text-anchor="middle" x="85" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">deriv</text>
-<text text-anchor="middle" x="85" y="-85" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">prev_val</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M15.4103,-172.2768C15.6334,-138.7645 21.3887,-72.0446 61,-38 70.885,-29.5042 134.2083,-21.8321 188.7604,-16.6764"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="11.9141,-172.6738 15.5157,-182.6376 18.9137,-172.6025 11.9141,-172.6738"/>
+<text text-anchor="middle" x="79.5" y="-107" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> var_ptr</text>
+<text text-anchor="middle" x="79.5" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">deriv</text>
+<text text-anchor="middle" x="79.5" y="-85" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">prev_val</text>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="53,-177.5 53,-207.5 174,-207.5 174,-177.5 53,-177.5"/>
-<text text-anchor="start" x="61" y="-195.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">type(wave_speed_cs)</text>
-<text text-anchor="middle" x="113.5" y="-184.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">, pointer</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="50,-177.5 50,-207.5 162,-207.5 162,-177.5 50,-177.5"/>
+<text text-anchor="start" x="58" y="-195.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">type(wave_speed_cs)</text>
+<text text-anchor="middle" x="106" y="-184.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">, pointer</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node1 -->
 <g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M110.9026,-167.0944C108.9181,-132.791 111.0357,-72.047 145.5,-38 154.3779,-29.2296 177.5612,-23.0708 202.7963,-18.8093"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="107.4246,-167.5219 111.6552,-177.2354 114.4054,-167.0038 107.4246,-167.5219"/>
-<text text-anchor="middle" x="188.5" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> wave_speed_csp</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M103.2863,-167.181C101.1354,-132.9778 102.9238,-72.349 137,-38 145.118,-29.817 166.3225,-23.8152 189.5308,-19.5165"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="99.8082,-167.5982 104.0871,-177.2906 106.7864,-167.0454 99.8082,-167.5982"/>
+<text text-anchor="middle" x="176.5" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> wave_speed_csp</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="192.5,-183 192.5,-202 290.5,-202 290.5,-183 192.5,-183"/>
-<text text-anchor="middle" x="241.5" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">group_pass_type</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="180.5,-183 180.5,-202 271.5,-202 271.5,-183 180.5,-183"/>
+<text text-anchor="middle" x="226" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">group_pass_type</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node1 -->
 <g id="edge3" class="edge">
 <title>Node4&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M238.6298,-172.4362C235.2035,-141.5813 232.5154,-81.4973 255.5,-38 259.4298,-30.563 266.2599,-24.3475 272.7723,-19.6769"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="235.2047,-173.2508 239.9271,-182.7349 242.1498,-172.3759 235.2047,-173.2508"/>
-<text text-anchor="middle" x="285.5" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> pass_ke_uv</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M222.8854,-172.5014C219.0801,-141.7332 215.6408,-81.7623 238,-38 241.7604,-30.6401 248.382,-24.4354 254.7117,-19.7521"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="219.4687,-173.3445 224.3088,-182.7691 226.4024,-172.3832 219.4687,-173.3445"/>
+<text text-anchor="middle" x="266" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> pass_ke_uv</text>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="309,-183 309,-202 366,-202 366,-183 309,-183"/>
-<text text-anchor="middle" x="337.5" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">diag_ctrl</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="289.5,-183 289.5,-202 342.5,-202 342.5,-183 289.5,-183"/>
+<text text-anchor="middle" x="316" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">diag_ctrl</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node1 -->
 <g id="edge4" class="edge">
 <title>Node5&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M338.3619,-172.7254C338.904,-142.2545 336.7994,-82.6722 315.5,-38 312.1882,-31.0541 306.5394,-24.6539 301.3514,-19.731"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="334.8586,-172.7867 338.0591,-182.8865 341.8555,-172.9953 334.8586,-172.7867"/>
-<text text-anchor="middle" x="349.5" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> diag</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M316.5257,-172.8795C316.6216,-142.613 313.9339,-83.298 294,-38 291.01,-31.2056 285.8898,-24.7258 281.2384,-19.7141"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="313.0249,-172.9187 316.3828,-182.9673 320.0242,-173.0179 313.0249,-172.9187"/>
+<text text-anchor="middle" x="327" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> diag</text>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="384.5,-183 384.5,-202 434.5,-202 434.5,-183 384.5,-183"/>
-<text text-anchor="middle" x="409.5" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">integer</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="361,-183 361,-202 407,-202 407,-183 361,-183"/>
+<text text-anchor="middle" x="384" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">integer</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node1 -->
 <g id="edge5" class="edge">
 <title>Node6&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M402.3489,-173.4236C400.6789,-168.7335 398.9625,-163.7068 397.5,-159 380.9945,-105.8786 402.9333,-79.1469 365.5,-38 357.8354,-29.575 347.4125,-23.6783 336.744,-19.5534"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="399.0921,-174.7088 405.8141,-182.8982 405.6662,-172.3044 399.0921,-174.7088"/>
-<text text-anchor="middle" x="429" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> id_cfl_cg1_y</text>
-<text text-anchor="middle" x="429" y="-140" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_cfl_cg1</text>
-<text text-anchor="middle" x="429" y="-129" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_u</text>
-<text text-anchor="middle" x="429" y="-118" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_ke_visc</text>
-<text text-anchor="middle" x="429" y="-107" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_e</text>
-<text text-anchor="middle" x="429" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_v</text>
-<text text-anchor="middle" x="429" y="-85" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_sob</text>
-<text text-anchor="middle" x="429" y="-74" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_masscello</text>
-<text text-anchor="middle" x="429" y="-63" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_h_rlay</text>
-<text text-anchor="middle" x="429" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_col_ht</text>
-<text text-anchor="middle" x="429" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">...</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M377.3603,-173.0161C375.867,-168.4367 374.3316,-163.5614 373,-159 357.4431,-105.7097 378.7297,-79.627 342,-38 334.636,-29.6541 324.4603,-23.7706 314.111,-19.632"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="374.1658,-174.5003 380.6521,-182.8776 380.8056,-172.2839 374.1658,-174.5003"/>
+<text text-anchor="middle" x="402" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> id_cfl_cg1_y</text>
+<text text-anchor="middle" x="402" y="-140" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_cfl_cg1</text>
+<text text-anchor="middle" x="402" y="-129" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_u</text>
+<text text-anchor="middle" x="402" y="-118" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_ke_visc</text>
+<text text-anchor="middle" x="402" y="-107" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_e</text>
+<text text-anchor="middle" x="402" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_v</text>
+<text text-anchor="middle" x="402" y="-85" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_sob</text>
+<text text-anchor="middle" x="402" y="-74" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_masscello</text>
+<text text-anchor="middle" x="402" y="-63" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_h_rlay</text>
+<text text-anchor="middle" x="402" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">id_col_ht</text>
+<text text-anchor="middle" x="402" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">...</text>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="465,-183 465,-202 500,-202 500,-183 465,-183"/>
-<text text-anchor="middle" x="482.5" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">real</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="437,-183 437,-202 469,-202 469,-183 437,-183"/>
+<text text-anchor="middle" x="453" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">real</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node1 -->
 <g id="edge6" class="edge">
 <title>Node7&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M486.2963,-172.7447C491.3507,-139.9211 495.9417,-74.1888 460.5,-38 448.2917,-25.5344 412.0371,-18.6167 376.0347,-14.7786"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="482.7989,-172.4316 484.5541,-182.88 489.6977,-173.6176 482.7989,-172.4316"/>
-<text text-anchor="middle" x="528.5" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> dke_dt</text>
-<text text-anchor="middle" x="528.5" y="-140" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">p_ebt</text>
-<text text-anchor="middle" x="528.5" y="-129" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">vhgm_rlay</text>
-<text text-anchor="middle" x="528.5" y="-118" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">e_d</text>
-<text text-anchor="middle" x="528.5" y="-107" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mono_n2_depth</text>
-<text text-anchor="middle" x="528.5" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dh_dt</text>
-<text text-anchor="middle" x="528.5" y="-85" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ke_visc</text>
-<text text-anchor="middle" x="528.5" y="-74" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">cfl_cg1_x</text>
-<text text-anchor="middle" x="528.5" y="-63" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">uh_rlay</text>
-<text text-anchor="middle" x="528.5" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ke_dia</text>
-<text text-anchor="middle" x="528.5" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">...</text>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M456.753,-172.7869C461.7436,-140.0254 466.2432,-74.3822 431,-38 419.7671,-26.4041 386.5749,-19.5798 353.3139,-15.5784"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="453.259,-172.4564 455.0316,-182.9019 460.1598,-173.6308 453.259,-172.4564"/>
+<text text-anchor="middle" x="495" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000"> dke_dt</text>
+<text text-anchor="middle" x="495" y="-140" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">p_ebt</text>
+<text text-anchor="middle" x="495" y="-129" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">vhgm_rlay</text>
+<text text-anchor="middle" x="495" y="-118" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">e_d</text>
+<text text-anchor="middle" x="495" y="-107" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mono_n2_depth</text>
+<text text-anchor="middle" x="495" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dh_dt</text>
+<text text-anchor="middle" x="495" y="-85" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ke_visc</text>
+<text text-anchor="middle" x="495" y="-74" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">cfl_cg1_x</text>
+<text text-anchor="middle" x="495" y="-63" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">uh_rlay</text>
+<text text-anchor="middle" x="495" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ke_dia</text>
+<text text-anchor="middle" x="495" y="-41" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">...</text>
 </g>
 </g>
 </svg>

@@ -105,16 +105,16 @@ $(document).ready(function(){initNavTree('interfacemom__eos_1_1calculate__densit
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private functions</h2></td></tr>
-<tr class="memitem:aa73d0f1e49876153834b80e0d20d2f5e"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacemom__eos_1_1calculate__density__second__derivs.html#aa73d0f1e49876153834b80e0d20d2f5e">calculate_density_second_derivs_scalar</a> (T, S, pressure, drho_dS_dS, drho_dS_dT, drho_dT_dT, drho_dS_dP, drho_dT_dP, EOS)</td></tr>
-<tr class="memdesc:aa73d0f1e49876153834b80e0d20d2f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the appropriate subroutine to calculate density second derivatives for scalar nputs.  <a href="interfacemom__eos_1_1calculate__density__second__derivs.html#aa73d0f1e49876153834b80e0d20d2f5e">More...</a><br /></td></tr>
-<tr class="separator:aa73d0f1e49876153834b80e0d20d2f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ec4ddee1e68a4c8a4bade5a42f0a1f0"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacemom__eos_1_1calculate__density__second__derivs.html#a4ec4ddee1e68a4c8a4bade5a42f0a1f0">calculate_density_second_derivs_array</a> (T, S, pressure, drho_dS_dS, drho_dS_dT, drho_dT_dT, drho_dS_dP, drho_dT_dP, start, npts, EOS)</td></tr>
-<tr class="memdesc:a4ec4ddee1e68a4c8a4bade5a42f0a1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the appropriate subroutine to calculate density second derivatives for 1-D array inputs.  <a href="interfacemom__eos_1_1calculate__density__second__derivs.html#a4ec4ddee1e68a4c8a4bade5a42f0a1f0">More...</a><br /></td></tr>
-<tr class="separator:a4ec4ddee1e68a4c8a4bade5a42f0a1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033e590d1cd2e6864421247f04b0b32d"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacemom__eos_1_1calculate__density__second__derivs.html#a033e590d1cd2e6864421247f04b0b32d">calculate_density_second_derivs_scalar</a> (T, S, pressure, drho_dS_dS, drho_dS_dT, drho_dT_dT, drho_dS_dP, drho_dT_dP, EOS, scale)</td></tr>
+<tr class="memdesc:a033e590d1cd2e6864421247f04b0b32d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the appropriate subroutine to calculate density second derivatives for scalar nputs.  <a href="interfacemom__eos_1_1calculate__density__second__derivs.html#a033e590d1cd2e6864421247f04b0b32d">More...</a><br /></td></tr>
+<tr class="separator:a033e590d1cd2e6864421247f04b0b32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a38bb75bf60ecc125a00613fa7471a"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacemom__eos_1_1calculate__density__second__derivs.html#aa3a38bb75bf60ecc125a00613fa7471a">calculate_density_second_derivs_array</a> (T, S, pressure, drho_dS_dS, drho_dS_dT, drho_dT_dT, drho_dS_dP, drho_dT_dP, start, npts, EOS, scale)</td></tr>
+<tr class="memdesc:aa3a38bb75bf60ecc125a00613fa7471a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the appropriate subroutine to calculate density second derivatives for 1-D array inputs.  <a href="interfacemom__eos_1_1calculate__density__second__derivs.html#aa3a38bb75bf60ecc125a00613fa7471a">More...</a><br /></td></tr>
+<tr class="separator:aa3a38bb75bf60ecc125a00613fa7471a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Functions and subroutines</h2>
-<a id="a4ec4ddee1e68a4c8a4bade5a42f0a1f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ec4ddee1e68a4c8a4bade5a42f0a1f0">&#9670;&nbsp;</a></span>calculate_density_second_derivs_array()</h2>
+<a id="aa3a38bb75bf60ecc125a00613fa7471a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3a38bb75bf60ecc125a00613fa7471a">&#9670;&nbsp;</a></span>calculate_density_second_derivs_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,7 +186,13 @@ Private functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">type(<a class="el" href="structmom__eos_1_1eos__type.html">eos_type</a>), pointer&#160;</td>
-          <td class="paramname"><em>EOS</em>&#160;</td>
+          <td class="paramname"><em>EOS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real, intent(in), optional&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -207,59 +213,71 @@ Private functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>Potential temperature referenced to the surface [degC] </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>Salinity [ppt] </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">pressure</td><td>Pressure [Pa] </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">drho_ds_ds</td><td>Partial derivative of beta with respect to S [kg m-3 ppt-2] </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">drho_ds_dt</td><td>Partial derivative of beta with respcct to T [kg m-3 ppt-1 degC-1] </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">drho_dt_dt</td><td>Partial derivative of alpha with respect to T [kg m-3 degC-2] </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">drho_ds_dp</td><td>Partial derivative of beta with respect to pressure [kg m-3 ppt-1 Pa-1] </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">drho_dt_dp</td><td>Partial derivative of alpha with respect to pressure [kg m-3 degC-1 Pa-1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">drho_ds_ds</td><td>Partial derivative of beta with respect to S [kg m-3 ppt-2] or [R ppt-2 ~&gt; kg m-3 ppt-2] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">drho_ds_dt</td><td>Partial derivative of beta with respect to T [kg m-3 ppt-1 degC-1] or [R ppt-1 degC-1 ~&gt; kg m-3 ppt-1 degC-1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">drho_dt_dt</td><td>Partial derivative of alpha with respect to T [kg m-3 degC-2] or [R degC-2 ~&gt; kg m-3 degC-2] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">drho_ds_dp</td><td>Partial derivative of beta with respect to pressure [kg m-3 ppt-1 Pa-1] or [R ppt-1 Pa-1 ~&gt; kg m-3 ppt-1 Pa-1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">drho_dt_dp</td><td>Partial derivative of alpha with respect to pressure [kg m-3 degC-1 Pa-1] or [R degC-1 Pa-1 ~&gt; kg m-3 degC-1 Pa-1] </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">start</td><td>Starting index within the array </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">npts</td><td>The number of values to calculate </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">eos</td><td>Equation of state structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scale</td><td>A multiplicative factor by which to scale density from kg m-3 to the desired units [R m3 kg-1] </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__EOS_8F90_source.html#l00402">402</a> of file <a class="el" href="MOM__EOS_8F90_source.html">MOM_EOS.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(in)</span>  :: T<span class="comment"> !&lt; Potential temperature referenced to the surface [degC]</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(in)</span>  :: S<span class="comment"> !&lt; Salinity [ppt]</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(in)</span>  :: pressure<span class="comment"> !&lt; Pressure [Pa]</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(out)</span> :: drho_dS_dS<span class="comment"> !&lt; Partial derivative of beta with respect</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">                                                !! to S [kg m-3 ppt-2]</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(out)</span> :: drho_dS_dT<span class="comment"> !&lt; Partial derivative of beta with respcct</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">                                                !! to T [kg m-3 ppt-1 degC-1]</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(out)</span> :: drho_dT_dT<span class="comment"> !&lt; Partial derivative of alpha with respect</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment">                                                !! to T [kg m-3 degC-2]</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(out)</span> :: drho_dS_dP<span class="comment"> !&lt; Partial derivative of beta with respect</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">                                                !! to pressure [kg m-3 ppt-1 Pa-1]</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(out)</span> :: drho_dT_dP<span class="comment"> !&lt; Partial derivative of alpha with respect</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">                                                !! to pressure [kg m-3 degC-1 Pa-1]</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  <span class="keywordtype">integer</span>,            <span class="keywordtype">intent(in)</span>  :: start<span class="comment"> !&lt; Starting index within the array</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  <span class="keywordtype">integer</span>,            <span class="keywordtype">intent(in)</span>  :: npts<span class="comment"> !&lt; The number of values to calculate</span></div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  <span class="keywordtype">type</span>(EOS_type),     <span class="keywordtype">pointer</span>     :: EOS<span class="comment"> !&lt; Equation of state structure</span></div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160; </div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(eos)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="stringliteral">&quot;calculate_density_derivs called with an unassociated EOS_type EOS.&quot;</span>)</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  <span class="keywordflow">select case</span> (eos%form_of_EOS)</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordflow">case</span> (eos_linear)</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;      <span class="keyword">call </span>calculate_density_second_derivs_linear(t, s, pressure, drho_ds_ds, drho_ds_dt, &amp;</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                                                  drho_dt_dt, drho_ds_dp, drho_dt_dp, start, npts)</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keywordflow">case</span> (eos_wright)</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;      <span class="keyword">call </span>calculate_density_second_derivs_wright(t, s, pressure, drho_ds_ds, drho_ds_dt, &amp;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                                                  drho_dt_dt, drho_ds_dp, drho_dt_dp, start, npts)</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keywordflow">case</span> (eos_teos10)</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;      <span class="keyword">call </span>calculate_density_second_derivs_teos10(t, s, pressure, drho_ds_ds, drho_ds_dt, &amp;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                                                  drho_dt_dt, drho_ds_dp, drho_dt_dp, start, npts)</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="keywordflow">    case default</span></div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;      <span class="keyword">call </span>mom_error(fatal, &amp;</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;           <span class="stringliteral">&quot;calculate_density_derivs: EOS%form_of_EOS is not valid.&quot;</span>)</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="keywordflow">  end select</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="MOM__EOS_8F90_source.html#l00448">448</a> of file <a class="el" href="MOM__EOS_8F90_source.html">MOM_EOS.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(in)</span>  :: T<span class="comment"> !&lt; Potential temperature referenced to the surface [degC]</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(in)</span>  :: S<span class="comment"> !&lt; Salinity [ppt]</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(in)</span>  :: pressure<span class="comment">   !&lt; Pressure [Pa]</span></div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(out)</span> :: drho_dS_dS<span class="comment"> !&lt; Partial derivative of beta with respect to S</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="comment">                                                !!  [kg m-3 ppt-2] or [R ppt-2 ~&gt; kg m-3 ppt-2]</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(out)</span> :: drho_dS_dT<span class="comment"> !&lt; Partial derivative of beta with respect to T</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="comment">                                                !! [kg m-3 ppt-1 degC-1] or [R ppt-1 degC-1 ~&gt; kg m-3 ppt-1 degC-1]</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(out)</span> :: drho_dT_dT<span class="comment"> !&lt; Partial derivative of alpha with respect to T</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="comment">                                                !! [kg m-3 degC-2] or [R degC-2 ~&gt; kg m-3 degC-2]</span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(out)</span> :: drho_dS_dP<span class="comment"> !&lt; Partial derivative of beta with respect to pressure</span></div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="comment">                                                !! [kg m-3 ppt-1 Pa-1] or [R ppt-1 Pa-1 ~&gt; kg m-3 ppt-1 Pa-1]</span></div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">intent(out)</span> :: drho_dT_dP<span class="comment"> !&lt; Partial derivative of alpha with respect to pressure</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="comment">                                                !! [kg m-3 degC-1 Pa-1] or [R degC-1 Pa-1 ~&gt; kg m-3 degC-1 Pa-1]</span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  <span class="keywordtype">integer</span>,            <span class="keywordtype">intent(in)</span>  :: start<span class="comment"> !&lt; Starting index within the array</span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  <span class="keywordtype">integer</span>,            <span class="keywordtype">intent(in)</span>  :: npts<span class="comment"> !&lt; The number of values to calculate</span></div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="keywordtype">type</span>(EOS_type),     <span class="keywordtype">pointer</span>     :: EOS<span class="comment"> !&lt; Equation of state structure</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="keywordtype">  real</span>,     <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span>  :: scale<span class="comment"> !&lt; A multiplicative factor by which to scale density</span></div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="comment">                                           !! from kg m-3 to the desired units [R m3 kg-1]</span></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  <span class="keywordtype">integer</span> :: j</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160; </div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(eos)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="stringliteral">&quot;calculate_density_derivs called with an unassociated EOS_type EOS.&quot;</span>)</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  <span class="keywordflow">select case</span> (eos%form_of_EOS)</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    <span class="keywordflow">case</span> (eos_linear)</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;      <span class="keyword">call </span>calculate_density_second_derivs_linear(t, s, pressure, drho_ds_ds, drho_ds_dt, &amp;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                                                  drho_dt_dt, drho_ds_dp, drho_dt_dp, start, npts)</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <span class="keywordflow">case</span> (eos_wright)</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;      <span class="keyword">call </span>calculate_density_second_derivs_wright(t, s, pressure, drho_ds_ds, drho_ds_dt, &amp;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                                                  drho_dt_dt, drho_ds_dp, drho_dt_dp, start, npts)</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    <span class="keywordflow">case</span> (eos_teos10)</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;      <span class="keyword">call </span>calculate_density_second_derivs_teos10(t, s, pressure, drho_ds_ds, drho_ds_dt, &amp;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                                                  drho_dt_dt, drho_ds_dp, drho_dt_dp, start, npts)</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;<span class="keywordflow">    case default</span></div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;      <span class="keyword">call </span>mom_error(fatal, &amp;</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;           <span class="stringliteral">&quot;calculate_density_derivs: EOS%form_of_EOS is not valid.&quot;</span>)</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;<span class="keywordflow">  end select</span></div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160; </div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(scale)) <span class="keywordflow">then</span> ; <span class="keywordflow">if</span> (scale /= 1.0) <span class="keywordflow">then</span> ; <span class="keywordflow">do</span> j=start,start+npts-1</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    drho_ds_ds(j) = scale * drho_ds_ds(j)</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    drho_ds_dt(j) = scale * drho_ds_dt(j)</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    drho_dt_dt(j) = scale * drho_dt_dt(j)</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    drho_ds_dp(j) = scale * drho_ds_dp(j)</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    drho_dt_dp(j) = scale * drho_dt_dp(j)</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;<span class="keywordflow">  enddo</span> ;<span class="keywordflow"> endif</span> ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aa73d0f1e49876153834b80e0d20d2f5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa73d0f1e49876153834b80e0d20d2f5e">&#9670;&nbsp;</a></span>calculate_density_second_derivs_scalar()</h2>
+<a id="a033e590d1cd2e6864421247f04b0b32d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a033e590d1cd2e6864421247f04b0b32d">&#9670;&nbsp;</a></span>calculate_density_second_derivs_scalar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,7 +337,13 @@ Private functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">type(<a class="el" href="structmom__eos_1_1eos__type.html">eos_type</a>), pointer&#160;</td>
-          <td class="paramname"><em>EOS</em>&#160;</td>
+          <td class="paramname"><em>EOS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real, intent(in), optional&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -340,55 +364,66 @@ Private functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>Potential temperature referenced to the surface [degC] </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>Salinity [ppt] </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">pressure</td><td>Pressure [Pa] </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">drho_ds_ds</td><td>Partial derivative of beta with respect to S [kg m-3 ppt-2] </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">drho_ds_dt</td><td>Partial derivative of beta with respcct to T [kg m-3 ppt-1 degC-1] </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">drho_dt_dt</td><td>Partial derivative of alpha with respect to T [kg m-3 degC-2] </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">drho_ds_dp</td><td>Partial derivative of beta with respect to pressure [kg m-3 ppt-1 Pa-1] </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">drho_dt_dp</td><td>Partial derivative of alpha with respect to pressure [kg m-3 degC-1 Pa-1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">drho_ds_ds</td><td>Partial derivative of beta with respect to S [kg m-3 ppt-2] or [R ppt-2 ~&gt; kg m-3 ppt-2] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">drho_ds_dt</td><td>Partial derivative of beta with respect to T [kg m-3 ppt-1 degC-1] or [R ppt-1 degC-1 ~&gt; kg m-3 ppt-1 degC-1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">drho_dt_dt</td><td>Partial derivative of alpha with respect to T [kg m-3 degC-2] or [R degC-2 ~&gt; kg m-3 degC-2] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">drho_ds_dp</td><td>Partial derivative of beta with respect to pressure [kg m-3 ppt-1 Pa-1] or [R ppt-1 Pa-1 ~&gt; kg m-3 ppt-1 Pa-1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">drho_dt_dp</td><td>Partial derivative of alpha with respect to pressure [kg m-3 degC-1 Pa-1] or [R degC-1 Pa-1 ~&gt; kg m-3 degC-1 Pa-1] </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">eos</td><td>Equation of state structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scale</td><td>A multiplicative factor by which to scale density from kg m-3 to the desired units [R m3 kg-1] </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__EOS_8F90_source.html#l00442">442</a> of file <a class="el" href="MOM__EOS_8F90_source.html">MOM_EOS.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(in)</span>  :: T<span class="comment"> !&lt; Potential temperature referenced to the surface [degC]</span></div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(in)</span>  :: S<span class="comment"> !&lt; Salinity [ppt]</span></div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(in)</span>  :: pressure<span class="comment"> !&lt; Pressure [Pa]</span></div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(out)</span> :: drho_dS_dS<span class="comment"> !&lt; Partial derivative of beta with respect</span></div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="comment">                                  !! to S [kg m-3 ppt-2]</span></div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(out)</span> :: drho_dS_dT<span class="comment"> !&lt; Partial derivative of beta with respcct</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="comment">                                  !! to T [kg m-3 ppt-1 degC-1]</span></div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(out)</span> :: drho_dT_dT<span class="comment"> !&lt; Partial derivative of alpha with respect</span></div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="comment">                                  !! to T [kg m-3 degC-2]</span></div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(out)</span> :: drho_dS_dP<span class="comment"> !&lt; Partial derivative of beta with respect</span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="comment">                                  !! to pressure [kg m-3 ppt-1 Pa-1]</span></div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(out)</span> :: drho_dT_dP<span class="comment"> !&lt; Partial derivative of alpha with respect</span></div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="comment">                                  !! to pressure [kg m-3 degC-1 Pa-1]</span></div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;  <span class="keywordtype">type</span>(EOS_type),     <span class="keywordtype">pointer</span>     :: EOS<span class="comment"> !&lt; Equation of state structure</span></div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160; </div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(eos)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="stringliteral">&quot;calculate_density_derivs called with an unassociated EOS_type EOS.&quot;</span>)</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160; </div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  <span class="keywordflow">select case</span> (eos%form_of_EOS)</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <span class="keywordflow">case</span> (eos_linear)</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;      <span class="keyword">call </span>calculate_density_second_derivs_linear(t, s, pressure, drho_ds_ds, drho_ds_dt, &amp;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                                                  drho_dt_dt, drho_ds_dp, drho_dt_dp)</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <span class="keywordflow">case</span> (eos_wright)</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;      <span class="keyword">call </span>calculate_density_second_derivs_wright(t, s, pressure, drho_ds_ds, drho_ds_dt, &amp;</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                                                  drho_dt_dt, drho_ds_dp, drho_dt_dp)</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <span class="keywordflow">case</span> (eos_teos10)</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;      <span class="keyword">call </span>calculate_density_second_derivs_teos10(t, s, pressure, drho_ds_ds, drho_ds_dt, &amp;</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                                                  drho_dt_dt, drho_ds_dp, drho_dt_dp)</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="keywordflow">    case default</span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;      <span class="keyword">call </span>mom_error(fatal, &amp;</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;           <span class="stringliteral">&quot;calculate_density_derivs: EOS%form_of_EOS is not valid.&quot;</span>)</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;<span class="keywordflow">  end select</span></div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="MOM__EOS_8F90_source.html#l00499">499</a> of file <a class="el" href="MOM__EOS_8F90_source.html">MOM_EOS.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(in)</span>  :: T<span class="comment"> !&lt; Potential temperature referenced to the surface [degC]</span></div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(in)</span>  :: S<span class="comment"> !&lt; Salinity [ppt]</span></div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(in)</span>  :: pressure<span class="comment">   !&lt; Pressure [Pa]</span></div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(out)</span> :: drho_dS_dS<span class="comment"> !&lt; Partial derivative of beta with respect to S</span></div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="comment">                                  !! [kg m-3 ppt-2] or [R ppt-2 ~&gt; kg m-3 ppt-2]</span></div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(out)</span> :: drho_dS_dT<span class="comment"> !&lt; Partial derivative of beta with respect to T</span></div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;<span class="comment">                                  !! [kg m-3 ppt-1 degC-1] or [R ppt-1 degC-1 ~&gt; kg m-3 ppt-1 degC-1]</span></div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(out)</span> :: drho_dT_dT<span class="comment"> !&lt; Partial derivative of alpha with respect to T</span></div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;<span class="comment">                                  !! [kg m-3 degC-2] or [R degC-2 ~&gt; kg m-3 degC-2]</span></div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(out)</span> :: drho_dS_dP<span class="comment"> !&lt; Partial derivative of beta with respect to pressure</span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="comment">                                  !! [kg m-3 ppt-1 Pa-1] or [R ppt-1 Pa-1 ~&gt; kg m-3 ppt-1 Pa-1]</span></div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(out)</span> :: drho_dT_dP<span class="comment"> !&lt; Partial derivative of alpha with respect to pressure</span></div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;<span class="comment">                                  !! [kg m-3 degC-1 Pa-1] or [R degC-1 Pa-1 ~&gt; kg m-3 degC-1 Pa-1]</span></div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  <span class="keywordtype">type</span>(EOS_type), <span class="keywordtype">pointer</span>    :: EOS<span class="comment"> !&lt; Equation of state structure</span></div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: scale<span class="comment"> !&lt; A multiplicative factor by which to scale density</span></div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="comment">                                  !! from kg m-3 to the desired units [R m3 kg-1]</span></div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160; </div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;  <span class="keywordflow">if</span> (.not.<span class="keyword">associated</span>(eos)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <span class="stringliteral">&quot;calculate_density_derivs called with an unassociated EOS_type EOS.&quot;</span>)</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160; </div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;  <span class="keywordflow">select case</span> (eos%form_of_EOS)</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    <span class="keywordflow">case</span> (eos_linear)</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;      <span class="keyword">call </span>calculate_density_second_derivs_linear(t, s, pressure, drho_ds_ds, drho_ds_dt, &amp;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                                                  drho_dt_dt, drho_ds_dp, drho_dt_dp)</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="keywordflow">case</span> (eos_wright)</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;      <span class="keyword">call </span>calculate_density_second_derivs_wright(t, s, pressure, drho_ds_ds, drho_ds_dt, &amp;</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;                                                  drho_dt_dt, drho_ds_dp, drho_dt_dp)</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <span class="keywordflow">case</span> (eos_teos10)</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;      <span class="keyword">call </span>calculate_density_second_derivs_teos10(t, s, pressure, drho_ds_ds, drho_ds_dt, &amp;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;                                                  drho_dt_dt, drho_ds_dp, drho_dt_dp)</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;<span class="keywordflow">    case default</span></div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;      <span class="keyword">call </span>mom_error(fatal, &amp;</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;           <span class="stringliteral">&quot;calculate_density_derivs: EOS%form_of_EOS is not valid.&quot;</span>)</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;<span class="keywordflow">  end select</span></div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160; </div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(scale)) <span class="keywordflow">then</span> ; <span class="keywordflow">if</span> (scale /= 1.0) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    drho_ds_ds = scale * drho_ds_ds</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    drho_ds_dt = scale * drho_ds_dt</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    drho_dt_dt = scale * drho_dt_dt</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    drho_ds_dp = scale * drho_ds_dp</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    drho_dt_dp = scale * drho_dt_dp</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;<span class="keywordflow">  endif</span> ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/equation_of_state/<a class="el" href="MOM__EOS_8F90_source.html">MOM_EOS.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/equation_of_state/<a class="el" href="MOM__EOS_8F90_source.html">MOM_EOS.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

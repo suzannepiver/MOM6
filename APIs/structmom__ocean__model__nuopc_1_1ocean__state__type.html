@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('structmom__ocean__model__nuopc_1_1ocea
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="structmom__ocean__model__nuopc_1_1ocean__state__type.html" title="The ocean_state_type contains all information about the state of the ocean, with a format that is pri...">ocean_state_type</a> contains all information about the state of the ocean, with a format that is private so it can be readily changed without disrupting other coupled components. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00141">141</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00133">133</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_ocean_model_nuopc::ocean_state_type:</div>
 <div class="dyncontent">
@@ -226,8 +226,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The heat capacity of seawater, in J K-1 kg-1. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00164">164</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keywordtype">  real</span> :: C_p<span class="comment">                 !&lt; The heat capacity of seawater, in J K-1 kg-1.</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00156">156</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keywordtype">  real</span> :: C_p<span class="comment">                 !&lt; The heat capacity of seawater, in J K-1 kg-1.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -245,8 +245,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, apply diabatic and thermodynamic processes before time stepping the dynamics. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00182">182</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordtype">logical</span> :: diabatic_first<span class="comment">   !&lt; If true, apply diabatic and thermodynamic</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00174">174</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordtype">logical</span> :: diabatic_first<span class="comment">   !&lt; If true, apply diabatic and thermodynamic</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -264,9 +264,9 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the diagnostic regulatory structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00221">221</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: &amp;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    diag =&gt; null()            <span class="comment">!&lt; A pointer to the diagnostic regulatory structure</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00213">213</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: &amp;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    diag =&gt; null()            <span class="comment">!&lt; A pointer to the diagnostic regulatory structure</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -284,8 +284,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure containing several relevant directory paths. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00188">188</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordtype">type</span>(directories) :: dirs<span class="comment">   !&lt; A structure containing several relevant directory paths.</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00180">180</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordtype">type</span>(directories) :: dirs<span class="comment">   !&lt; A structure containing several relevant directory paths.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -303,8 +303,8 @@ Public variables and constants</h2></td></tr>
 
 <p>(baroclinic) dynamics time step (seconds) </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00178">178</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keywordtype">  real</span>    :: dt<span class="comment">               !&lt; (baroclinic) dynamics time step (seconds)</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00170">170</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keywordtype">  real</span>    :: dt<span class="comment">               !&lt; (baroclinic) dynamics time step (seconds)</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -322,8 +322,8 @@ Public variables and constants</h2></td></tr>
 
 <p>thermodynamics time step (seconds) </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00179">179</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keywordtype">  real</span>    :: dt_therm<span class="comment">         !&lt; thermodynamics time step (seconds)</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00171">171</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keywordtype">  real</span>    :: dt_therm<span class="comment">         !&lt; thermodynamics time step (seconds)</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -341,8 +341,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Max allowable difference between ESMF mesh and MOM6 domain coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00185">185</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="keywordtype">  real</span> :: eps_omesh<span class="comment">           !&lt; Max allowable difference between ESMF mesh and MOM6</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00177">177</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keywordtype">  real</span> :: eps_omesh<span class="comment">           !&lt; Max allowable difference between ESMF mesh and MOM6</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -360,8 +360,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A secondary structure containing pointers to the ocean forcing fields for when multiple coupled timesteps are taken per thermodynamic step. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00192">192</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordtype">type</span>(forcing)   :: flux_tmp<span class="comment"> !&lt; A secondary structure containing pointers to the</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00184">184</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordtype">type</span>(forcing)   :: flux_tmp<span class="comment"> !&lt; A secondary structure containing pointers to the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -379,8 +379,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure containing pointers to the thermodynamic ocean forcing fields. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00190">190</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">type</span>(forcing)   :: fluxes<span class="comment">   !&lt; A structure containing pointers to</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00182">182</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordtype">type</span>(forcing)   :: fluxes<span class="comment">   !&lt; A structure containing pointers to</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -398,8 +398,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure with the driving mechanical surface forces. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00189">189</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordtype">type</span>(mech_forcing) :: forces<span class="comment"> !&lt; A structure with the driving mechanical surface forces</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00181">181</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordtype">type</span>(mech_forcing) :: forces<span class="comment"> !&lt; A structure with the driving mechanical surface forces</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -417,9 +417,9 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the MOM forcing control structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00216">216</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordtype">type</span>(surface_forcing_CS), <span class="keywordtype">pointer</span> :: &amp;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    forcing_CSp =&gt; null()     <span class="comment">!&lt; A pointer to the MOM forcing control structure</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00208">208</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keywordtype">type</span>(surface_forcing_CS), <span class="keywordtype">pointer</span> :: &amp;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    forcing_CSp =&gt; null()     <span class="comment">!&lt; A pointer to the MOM forcing control structure</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -437,9 +437,9 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to a grid structure containing metrics. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00197">197</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type), <span class="keywordtype">pointer</span> :: &amp;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    grid =&gt; null()            <span class="comment">!&lt; A pointer to a grid structure containing metrics</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00189">189</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordtype">type</span>(ocean_grid_type), <span class="keywordtype">pointer</span> :: &amp;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    grid =&gt; null()            <span class="comment">!&lt; A pointer to a grid structure containing metrics</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -457,9 +457,9 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to a structure containing information. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00200">200</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">pointer</span> :: &amp;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    GV =&gt; null()              <span class="comment">!&lt; A pointer to a structure containing information</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00192">192</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">pointer</span> :: &amp;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    GV =&gt; null()              <span class="comment">!&lt; A pointer to a structure containing information</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -477,9 +477,9 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the control structure for the. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00207">207</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keywordtype">type</span>(ice_shelf_CS), <span class="keywordtype">pointer</span> :: &amp;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    Ice_shelf_CSp =&gt; null()   <span class="comment">!&lt; A pointer to the control structure for the</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00199">199</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">type</span>(ice_shelf_CS), <span class="keywordtype">pointer</span> :: &amp;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    Ice_shelf_CSp =&gt; null()   <span class="comment">!&lt; A pointer to the control structure for the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -497,8 +497,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the icebergs can change ocean the ocean dynamics and forcing fluxes. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00156">156</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">logical</span> :: icebergs_alter_ocean<span class="comment"> !&lt; If true, the icebergs can change ocean the</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00148">148</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordtype">logical</span> :: icebergs_alter_ocean<span class="comment"> !&lt; If true, the icebergs can change ocean the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -516,8 +516,8 @@ Public variables and constants</h2></td></tr>
 
 <p>True if this is an ocean PE. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00143">143</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">logical</span> :: is_ocean_PE = .false.  <span class="comment">!&lt; True if this is an ocean PE.</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00135">135</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">logical</span> :: is_ocean_PE = .false.  <span class="comment">!&lt; True if this is an ocean PE.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -535,9 +535,9 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the control structure for the. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00211">211</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keywordtype">type</span>(marine_ice_CS), <span class="keywordtype">pointer</span> :: &amp;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    marine_ice_CSp =&gt; null()  <span class="comment">!&lt; A pointer to the control structure for the</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00203">203</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordtype">type</span>(marine_ice_CS), <span class="keywordtype">pointer</span> :: &amp;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    marine_ice_CSp =&gt; null()  <span class="comment">!&lt; A pointer to the control structure for the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -555,9 +555,9 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the MOM control structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00205">205</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordtype">type</span>(MOM_control_struct), <span class="keywordtype">pointer</span> :: &amp;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    MOM_CSp =&gt; null()         <span class="comment">!&lt; A pointer to the MOM control structure</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00197">197</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">type</span>(MOM_control_struct), <span class="keywordtype">pointer</span> :: &amp;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    MOM_CSp =&gt; null()         <span class="comment">!&lt; A pointer to the MOM control structure</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -575,8 +575,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of calls to update_ocean. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00152">152</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">integer</span> :: nstep = 0<span class="comment">        !&lt; The number of calls to update_ocean.</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00144">144</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">integer</span> :: nstep = 0<span class="comment">        !&lt; The number of calls to update_ocean.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -594,8 +594,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If false, use the model in prognostic mode with the barotropic and baroclinic dynamics, thermodynamics, etc. stepped forward integrated in time. If true, all of the above are bypassed with all fields necessary to integrate only the tracer advection and diffusion equation read in from files stored from a previous integration of the prognostic model. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00165">165</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">logical</span> :: offline_tracer_mode = .false. <span class="comment">!&lt; If false, use the model in prognostic mode</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00157">157</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordtype">logical</span> :: offline_tracer_mode = .false. <span class="comment">!&lt; If false, use the model in prognostic mode</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -613,8 +613,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A conversion factor between pressure and ocean depth in m, usually 1/(rho_0*g), in m Pa-1. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00162">162</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keywordtype">  real</span> :: press_to_z<span class="comment">          !&lt; A conversion factor between pressure and ocean</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00154">154</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keywordtype">  real</span> :: press_to_z<span class="comment">          !&lt; A conversion factor between pressure and ocean</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -632,8 +632,8 @@ Public variables and constants</h2></td></tr>
 
 <p>An integer that is bit-tested to determine whether incremental restart files are saved and whether they have a time stamped name. +1 (bit 0) for generic files and +2 (bit 1) for time-stamped files. A restart file is saved at the end of a run segment unless Restart_control is negative. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00145">145</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordtype">integer</span> :: Restart_control<span class="comment">  !&lt; An integer that is bit-tested to determine whether</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00137">137</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">integer</span> :: Restart_control<span class="comment">  !&lt; An integer that is bit-tested to determine whether</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -651,9 +651,9 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer set to the restart control structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00218">218</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordtype">type</span>(MOM_restart_CS), <span class="keywordtype">pointer</span> :: &amp;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    restart_CSp =&gt; null()     <span class="comment">!&lt; A pointer set to the restart control structure</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00210">210</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordtype">type</span>(MOM_restart_CS), <span class="keywordtype">pointer</span> :: &amp;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    restart_CSp =&gt; null()     <span class="comment">!&lt; A pointer set to the restart control structure</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -671,8 +671,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the coupled MOM driver adds a term to restore salinity to a specified value. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00158">158</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">logical</span> :: restore_salinity<span class="comment"> !&lt; If true, the coupled MOM driver adds a term to</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00150">150</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordtype">logical</span> :: restore_salinity<span class="comment"> !&lt; If true, the coupled MOM driver adds a term to</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -690,8 +690,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the coupled MOM driver adds a term to restore sst to a specified value. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00160">160</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">logical</span> :: restore_temp<span class="comment">     !&lt; If true, the coupled MOM driver adds a term to</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00152">152</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">logical</span> :: restore_temp<span class="comment">     !&lt; If true, the coupled MOM driver adds a term to</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -709,8 +709,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure containing pointers to the ocean surface state fields. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00195">195</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">type</span>(surface)   :: sfc_state<span class="comment"> !&lt; A structure containing pointers to</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00187">187</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordtype">type</span>(surface)   :: sfc_state<span class="comment"> !&lt; A structure containing pointers to</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -728,8 +728,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, advance the state of MOM with a single step including both dynamics and thermodynamics. If false, the two phases are advanced with separate calls. The default is true. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00173">173</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordtype">logical</span> :: single_step_call<span class="comment"> !&lt; If true, advance the state of MOM with a single</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00165">165</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">logical</span> :: single_step_call<span class="comment"> !&lt; If true, advance the state of MOM with a single</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -747,8 +747,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, thermodynamic and tracer time steps can span multiple coupled time steps. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00180">180</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordtype">logical</span> :: thermo_spans_coupling<span class="comment"> !&lt; If true, thermodynamic and tracer time</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00172">172</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordtype">logical</span> :: thermo_spans_coupling<span class="comment"> !&lt; If true, thermodynamic and tracer time</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -766,8 +766,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The ocean model's time and master clock. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00144">144</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">type</span>(time_type) :: Time<span class="comment">     !&lt; The ocean model&#39;s time and master clock.</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00136">136</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">type</span>(time_type) :: Time<span class="comment">     !&lt; The ocean model&#39;s time and master clock.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -785,8 +785,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to a structure containing dimensional unit scaling factors. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00203">203</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type), <span class="keywordtype">pointer</span> :: US =&gt; null() <span class="comment">!&lt; A pointer to a structure containing</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00195">195</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type), <span class="keywordtype">pointer</span> :: US =&gt; null() <span class="comment">!&lt; A pointer to a structure containing</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -804,8 +804,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the ice shelf model is enabled. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00153">153</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordtype">logical</span> :: use_ice_shelf<span class="comment">    !&lt; If true, the ice shelf model is enabled.</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00145">145</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordtype">logical</span> :: use_ice_shelf<span class="comment">    !&lt; If true, the ice shelf model is enabled.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -823,8 +823,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true use wave coupling. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00154">154</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordtype">logical</span> :: use_waves<span class="comment">        !&lt; If true use wave coupling.</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00146">146</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordtype">logical</span> :: use_waves<span class="comment">        !&lt; If true use wave coupling.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -842,14 +842,14 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure containing pointers to the surface wave fields. </p>
 
-<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00214">214</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordtype">type</span>(wave_parameters_cs), <span class="keywordtype">pointer</span> :: &amp;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    Waves<span class="comment"> !&lt; A structure containing pointers to the surface wave fields</span></div>
+<p class="definition">Definition at line <a class="el" href="mom__ocean__model__nuopc_8F90_source.html#l00206">206</a> of file <a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordtype">type</span>(wave_parameters_cs), <span class="keywordtype">pointer</span> :: &amp;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    Waves<span class="comment"> !&lt; A structure containing pointers to the surface wave fields</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/config_src/nuopc_driver/<a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/config_src/nuopc_driver/<a class="el" href="mom__ocean__model__nuopc_8F90_source.html">mom_ocean_model_nuopc.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

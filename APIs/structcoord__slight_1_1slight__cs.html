@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('structcoord__slight_1_1slight__cs.html
 </div><div class="dynheader">
 Collaboration diagram for coord_slight::slight_cs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structcoord__slight_1_1slight__cs__coll__graph.svg" width="632" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structcoord__slight_1_1slight__cs__coll__graph.svg" width="594" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -145,8 +145,11 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:afd335e33958ca09ec3ba89fcc00b1c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A value of the stratification ratio that defines a problematic halocline region [nondim].  <a href="structcoord__slight_1_1slight__cs.html#afd335e33958ca09ec3ba89fcc00b1c0c">More...</a><br /></td></tr>
 <tr class="separator:afd335e33958ca09ec3ba89fcc00b1c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a848c333cfe84ec9123a7305b4d90d42f"><td class="memItemLeft" align="right" valign="top">real, dimension(:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcoord__slight_1_1slight__cs.html#a848c333cfe84ec9123a7305b4d90d42f">target_density</a></td></tr>
-<tr class="memdesc:a848c333cfe84ec9123a7305b4d90d42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nominal density of interfaces [kg m-3].  <a href="structcoord__slight_1_1slight__cs.html#a848c333cfe84ec9123a7305b4d90d42f">More...</a><br /></td></tr>
+<tr class="memdesc:a848c333cfe84ec9123a7305b4d90d42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nominal density of interfaces [R ~&gt; kg m-3].  <a href="structcoord__slight_1_1slight__cs.html#a848c333cfe84ec9123a7305b4d90d42f">More...</a><br /></td></tr>
 <tr class="separator:a848c333cfe84ec9123a7305b4d90d42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17f7b9c14f17fcba88394e7a781e298"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcoord__slight_1_1slight__cs.html#aa17f7b9c14f17fcba88394e7a781e298">kg_m3_to_r</a></td></tr>
+<tr class="memdesc:aa17f7b9c14f17fcba88394e7a781e298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Density scaling factor [R m3 kg-1 ~&gt; 1].  <a href="structcoord__slight_1_1slight__cs.html#aa17f7b9c14f17fcba88394e7a781e298">More...</a><br /></td></tr>
+<tr class="separator:aa17f7b9c14f17fcba88394e7a781e298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9f125eded625ac8c10058dc31f0e42f"><td class="memItemLeft" align="right" valign="top">real, dimension(:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcoord__slight_1_1slight__cs.html#ac9f125eded625ac8c10058dc31f0e42f">max_interface_depths</a></td></tr>
 <tr class="memdesc:ac9f125eded625ac8c10058dc31f0e42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum depths of interfaces [H ~&gt; m or kg m-2].  <a href="structcoord__slight_1_1slight__cs.html#ac9f125eded625ac8c10058dc31f0e42f">More...</a><br /></td></tr>
 <tr class="separator:ac9f125eded625ac8c10058dc31f0e42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,8 +270,27 @@ Public variables and constants</h2></td></tr>
 
 <p>Interpolation control structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="coord__slight_8F90_source.html#l00064">64</a> of file <a class="el" href="coord__slight_8F90_source.html">coord_slight.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">type</span>(interp_CS_type) :: interp_CS</div>
+<p class="definition">Definition at line <a class="el" href="coord__slight_8F90_source.html#l00067">67</a> of file <a class="el" href="coord__slight_8F90_source.html">coord_slight.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">type</span>(interp_CS_type) :: interp_CS</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa17f7b9c14f17fcba88394e7a781e298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa17f7b9c14f17fcba88394e7a781e298">&#9670;&nbsp;</a></span>kg_m3_to_r</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real coord_slight::slight_cs::kg_m3_to_r</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Density scaling factor [R m3 kg-1 ~&gt; 1]. </p>
+
+<p class="definition">Definition at line <a class="el" href="coord__slight_8F90_source.html#l00058">58</a> of file <a class="el" href="coord__slight_8F90_source.html">coord_slight.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">  real</span> :: kg_m3_to_R</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -286,8 +308,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Maximum depths of interfaces [H ~&gt; m or kg m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="coord__slight_8F90_source.html#l00058">58</a> of file <a class="el" href="coord__slight_8F90_source.html">coord_slight.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:)</span> :: max_interface_depths</div>
+<p class="definition">Definition at line <a class="el" href="coord__slight_8F90_source.html#l00061">61</a> of file <a class="el" href="coord__slight_8F90_source.html">coord_slight.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:)</span> :: max_interface_depths</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -305,8 +327,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Maximum thicknesses of layers [H ~&gt; m or kg m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="coord__slight_8F90_source.html#l00061">61</a> of file <a class="el" href="coord__slight_8F90_source.html">coord_slight.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:)</span> :: max_layer_thickness</div>
+<p class="definition">Definition at line <a class="el" href="coord__slight_8F90_source.html#l00064">64</a> of file <a class="el" href="coord__slight_8F90_source.html">coord_slight.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:)</span> :: max_layer_thickness</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -436,7 +458,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Nominal density of interfaces [kg m-3]. </p>
+<p>Nominal density of interfaces [R ~&gt; kg m-3]. </p>
 
 <p class="definition">Definition at line <a class="el" href="coord__slight_8F90_source.html#l00055">55</a> of file <a class="el" href="coord__slight_8F90_source.html">coord_slight.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:)</span> :: target_density</div>
@@ -444,7 +466,7 @@ Public variables and constants</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/ALE/<a class="el" href="coord__slight_8F90_source.html">coord_slight.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/ALE/<a class="el" href="coord__slight_8F90_source.html">coord_slight.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

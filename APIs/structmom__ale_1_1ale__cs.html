@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('structmom__ale_1_1ale__cs.html','');})
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ALE control structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00063">63</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00065">65</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_ale::ale_cs:</div>
 <div class="dyncontent">
@@ -115,7 +115,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a52a017062606d96d14de227090d85d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, uses the old "remapping via a delta z" method. If False, uses the new method that remaps between grids described by h.  <a href="structmom__ale_1_1ale__cs.html#a52a017062606d96d14de227090d85d8f">More...</a><br /></td></tr>
 <tr class="separator:a52a017062606d96d14de227090d85d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b99af769873e03fb4af22e34ad2dbf6"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__ale_1_1ale__cs.html#a2b99af769873e03fb4af22e34ad2dbf6">regrid_time_scale</a></td></tr>
-<tr class="memdesc:a2b99af769873e03fb4af22e34ad2dbf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time-scale used in blending between the current (old) grid and the target (new) grid. (s)  <a href="structmom__ale_1_1ale__cs.html#a2b99af769873e03fb4af22e34ad2dbf6">More...</a><br /></td></tr>
+<tr class="memdesc:a2b99af769873e03fb4af22e34ad2dbf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time-scale used in blending between the current (old) grid and the target (new) grid [T ~&gt; s].  <a href="structmom__ale_1_1ale__cs.html#a2b99af769873e03fb4af22e34ad2dbf6">More...</a><br /></td></tr>
 <tr class="separator:a2b99af769873e03fb4af22e34ad2dbf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a161dc0ea45776b4cf41ccc2483faee92"><td class="memItemLeft" align="right" valign="top">type(regridding_cs)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__ale_1_1ale__cs.html#a161dc0ea45776b4cf41ccc2483faee92">regridcs</a></td></tr>
 <tr class="memdesc:a161dc0ea45776b4cf41ccc2483faee92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regridding parameters and work arrays.  <a href="structmom__ale_1_1ale__cs.html#a161dc0ea45776b4cf41ccc2483faee92">More...</a><br /></td></tr>
@@ -129,6 +129,9 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:aec77a94648a600f69bcaf4eee636589e"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__ale_1_1ale__cs.html#aec77a94648a600f69bcaf4eee636589e">remap_after_initialization</a></td></tr>
 <tr class="memdesc:aec77a94648a600f69bcaf4eee636589e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether to regrid/remap after initializing the state.  <a href="structmom__ale_1_1ale__cs.html#aec77a94648a600f69bcaf4eee636589e">More...</a><br /></td></tr>
 <tr class="separator:aec77a94648a600f69bcaf4eee636589e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f5f9c5434cc5f162cf6c3042f72aee5"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__ale_1_1ale__cs.html#a4f5f9c5434cc5f162cf6c3042f72aee5">answers_2018</a></td></tr>
+<tr class="memdesc:a4f5f9c5434cc5f162cf6c3042f72aee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, use the order of arithmetic and expressions for remapping that recover the answers from the end of 2018. Otherwise, use more robust and accurate forms of mathematically equivalent expressions.  <a href="structmom__ale_1_1ale__cs.html#a4f5f9c5434cc5f162cf6c3042f72aee5">More...</a><br /></td></tr>
+<tr class="separator:a4f5f9c5434cc5f162cf6c3042f72aee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9bbc9d9a09b20959005900488dba7d6"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__ale_1_1ale__cs.html#af9bbc9d9a09b20959005900488dba7d6">show_call_tree</a></td></tr>
 <tr class="memdesc:af9bbc9d9a09b20959005900488dba7d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">For debugging.  <a href="structmom__ale_1_1ale__cs.html#af9bbc9d9a09b20959005900488dba7d6">More...</a><br /></td></tr>
 <tr class="separator:af9bbc9d9a09b20959005900488dba7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,6 +179,25 @@ Public variables and constants</h2></td></tr>
 <tr class="separator:a1e837e000a4d699349c2ee7b0518a5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variables and constants</h2>
+<a id="a4f5f9c5434cc5f162cf6c3042f72aee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f5f9c5434cc5f162cf6c3042f72aee5">&#9670;&nbsp;</a></span>answers_2018</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">logical mom_ale::ale_cs::answers_2018</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, use the order of arithmetic and expressions for remapping that recover the answers from the end of 2018. Otherwise, use more robust and accurate forms of mathematically equivalent expressions. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00080">80</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">logical</span> :: answers_2018<span class="comment">   !&lt; If true, use the order of arithmetic and expressions for remapping</span></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a4fc6ae9f6eaf7ce50d5ffc58bd1beeae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4fc6ae9f6eaf7ce50d5ffc58bd1beeae">&#9670;&nbsp;</a></span>diag</h2>
 
@@ -190,8 +212,8 @@ Public variables and constants</h2></td></tr>
 
 <p>structure to regulate output </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00081">81</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span>           :: diag<span class="comment">                          !&lt; structure to regulate output</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span>           :: diag<span class="comment">                          !&lt; structure to regulate output</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -209,8 +231,8 @@ Public variables and constants</h2></td></tr>
 
 <p>flag for doing diagnostics </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">allocatable</span> :: do_tendency_diag<span class="comment">              !&lt; flag for doing diagnostics</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">allocatable</span> :: do_tendency_diag<span class="comment">              !&lt; flag for doing diagnostics</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -228,8 +250,8 @@ Public variables and constants</h2></td></tr>
 
 <p>diagnostic id </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">integer</span>                            :: id_dzRegrid = -1<span class="comment">              !&lt; diagnostic id</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00092">92</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">integer</span>                            :: id_dzRegrid = -1<span class="comment">              !&lt; diagnostic id</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -247,8 +269,8 @@ Public variables and constants</h2></td></tr>
 
 <p>diagnostic id for interface heights before ALE. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">integer</span> :: id_e_preale = -1<span class="comment"> !&lt; diagnostic id for interface heights before ALE.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00100">100</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">integer</span> :: id_e_preale = -1<span class="comment"> !&lt; diagnostic id for interface heights before ALE.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -266,8 +288,8 @@ Public variables and constants</h2></td></tr>
 
 <p>diagnostic id for layer thicknesses before ALE. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">integer</span> :: id_h_preale = -1<span class="comment"> !&lt; diagnostic id for layer thicknesses before ALE.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00097">97</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">integer</span> :: id_h_preale = -1<span class="comment"> !&lt; diagnostic id for layer thicknesses before ALE.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -285,8 +307,8 @@ Public variables and constants</h2></td></tr>
 
 <p>diagnostic id </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00083">83</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">allocatable</span> :: id_Htracer_remap_tendency<span class="comment">     !&lt; diagnostic id</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00089">89</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">allocatable</span> :: id_Htracer_remap_tendency<span class="comment">     !&lt; diagnostic id</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -304,8 +326,8 @@ Public variables and constants</h2></td></tr>
 
 <p>diagnostic id </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00084">84</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">allocatable</span> :: id_Htracer_remap_tendency_2d<span class="comment">  !&lt; diagnostic id</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">allocatable</span> :: id_Htracer_remap_tendency_2d<span class="comment">  !&lt; diagnostic id</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -323,8 +345,8 @@ Public variables and constants</h2></td></tr>
 
 <p>diagnostic id for salinities before ALE. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00093">93</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">integer</span> :: id_S_preale = -1<span class="comment"> !&lt; diagnostic id for salinities before ALE.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00099">99</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">integer</span> :: id_S_preale = -1<span class="comment"> !&lt; diagnostic id for salinities before ALE.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -342,8 +364,8 @@ Public variables and constants</h2></td></tr>
 
 <p>diagnostic id for temperatures before ALE. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00092">92</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">integer</span> :: id_T_preale = -1<span class="comment"> !&lt; diagnostic id for temperatures before ALE.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00098">98</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">integer</span> :: id_T_preale = -1<span class="comment"> !&lt; diagnostic id for temperatures before ALE.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -361,8 +383,8 @@ Public variables and constants</h2></td></tr>
 
 <p>diagnostic id </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00082">82</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">allocatable</span> :: id_tracer_remap_tendency<span class="comment">      !&lt; diagnostic id</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">allocatable</span> :: id_tracer_remap_tendency<span class="comment">      !&lt; diagnostic id</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -380,8 +402,8 @@ Public variables and constants</h2></td></tr>
 
 <p>diagnostic id for zonal velocity before ALE. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00089">89</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">integer</span> :: id_u_preale = -1<span class="comment"> !&lt; diagnostic id for zonal velocity before ALE.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00095">95</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">integer</span> :: id_u_preale = -1<span class="comment"> !&lt; diagnostic id for zonal velocity before ALE.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -399,8 +421,8 @@ Public variables and constants</h2></td></tr>
 
 <p>diagnostic id for meridional velocity before ALE. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">integer</span> :: id_v_preale = -1<span class="comment"> !&lt; diagnostic id for meridional velocity before ALE.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00096">96</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">integer</span> :: id_v_preale = -1<span class="comment"> !&lt; diagnostic id for meridional velocity before ALE.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -418,8 +440,8 @@ Public variables and constants</h2></td></tr>
 
 <p>diagnostic id for layer thicknesses used for remapping </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00095">95</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">integer</span> :: id_vert_remap_h = -1<span class="comment">      !&lt; diagnostic id for layer thicknesses used for remapping</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00101">101</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">integer</span> :: id_vert_remap_h = -1<span class="comment">      !&lt; diagnostic id for layer thicknesses used for remapping</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -437,8 +459,8 @@ Public variables and constants</h2></td></tr>
 
 <p>diagnostic id for layer thickness tendency due to ALE </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00096">96</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">integer</span> :: id_vert_remap_h_tendency = -1<span class="comment"> !&lt; diagnostic id for layer thickness tendency due to ALE</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">integer</span> :: id_vert_remap_h_tendency = -1<span class="comment"> !&lt; diagnostic id for layer thickness tendency due to ALE</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -456,8 +478,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Used only for queries, not directly by this module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00074">74</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">integer</span> :: nk<span class="comment">              !&lt; Used only for queries, not directly by this module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">integer</span> :: nk<span class="comment">             !&lt; Used only for queries, not directly by this module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -473,10 +495,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The time-scale used in blending between the current (old) grid and the target (new) grid. (s) </p>
+<p>The time-scale used in blending between the current (old) grid and the target (new) grid [T ~&gt; s]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00068">68</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">  real</span> :: regrid_time_scale<span class="comment"> !&lt; The time-scale used in blending between the current (old) grid</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00070">70</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">  real</span> :: regrid_time_scale<span class="comment"> !&lt; The time-scale used in blending between the current (old) grid</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -494,8 +516,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Regridding parameters and work arrays. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">type</span>(regridding_CS) :: regridCS<span class="comment"> !&lt; Regridding parameters and work arrays</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00073">73</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">type</span>(regridding_CS) :: regridCS<span class="comment"> !&lt; Regridding parameters and work arrays</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -513,8 +535,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Indicates whether to regrid/remap after initializing the state. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">logical</span> :: remap_after_initialization<span class="comment"> !&lt;   Indicates whether to regrid/remap after initializing the state.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">logical</span> :: remap_after_initialization<span class="comment"> !&lt; Indicates whether to regrid/remap after initializing the state.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -532,8 +554,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, uses the old "remapping via a delta z" method. If False, uses the new method that remaps between grids described by h. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00064">64</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">logical</span> :: remap_uv_using_old_alg<span class="comment">              !&lt; If true, uses the old &quot;remapping via a delta z&quot;</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00066">66</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">logical</span> :: remap_uv_using_old_alg<span class="comment"> !&lt; If true, uses the old &quot;remapping via a delta z&quot;</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -551,8 +573,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Remapping parameters and work arrays. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00072">72</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">type</span>(remapping_CS)  :: remapCS<span class="comment">  !&lt; Remapping parameters and work arrays</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00074">74</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">type</span>(remapping_CS)  :: remapCS<span class="comment">  !&lt; Remapping parameters and work arrays</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -570,13 +592,13 @@ Public variables and constants</h2></td></tr>
 
 <p>For debugging. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">logical</span> :: show_call_tree<span class="comment"> !&lt; For debugging</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__ALE_8F90_source.html#l00084">84</a> of file <a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">logical</span> :: show_call_tree<span class="comment"> !&lt; For debugging</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/ALE/<a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/ALE/<a class="el" href="MOM__ALE_8F90_source.html">MOM_ALE.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

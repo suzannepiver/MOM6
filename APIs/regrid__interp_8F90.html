@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/ALE/regrid_interp.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/ALE/regrid_interp.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -173,15 +173,15 @@ Variables</h2></td></tr>
 <tr class="memitem:a3d1406836d089b4553421776277e1339"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceregrid__interp.html#a3d1406836d089b4553421776277e1339">regrid_interp::regridding_set_ppolys</a> (CS, densities, n0, h0, ppoly0_E, ppoly0_S, ppoly0_coefs, degree, h_neglect, h_neglect_edge)</td></tr>
 <tr class="memdesc:a3d1406836d089b4553421776277e1339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds an interpolated profile for the densities within each grid cell.  <a href="namespaceregrid__interp.html#a3d1406836d089b4553421776277e1339">More...</a><br /></td></tr>
 <tr class="separator:a3d1406836d089b4553421776277e1339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84197231e39bd4e90c5a89107313b2a4"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceregrid__interp.html#a84197231e39bd4e90c5a89107313b2a4">regrid_interp::interpolate_grid</a> (n0, h0, x0, ppoly0_E, ppoly0_coefs, target_values, degree, n1, h1, x1)</td></tr>
-<tr class="memdesc:a84197231e39bd4e90c5a89107313b2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given target values (e.g., density), build new grid based on polynomial.  <a href="namespaceregrid__interp.html#a84197231e39bd4e90c5a89107313b2a4">More...</a><br /></td></tr>
-<tr class="separator:a84197231e39bd4e90c5a89107313b2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52b8ce5b52f9d45f8180c6fd75388174"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceregrid__interp.html#a52b8ce5b52f9d45f8180c6fd75388174">regrid_interp::interpolate_grid</a> (n0, h0, x0, ppoly0_E, ppoly0_coefs, target_values, degree, n1, h1, x1, answers_2018)</td></tr>
+<tr class="memdesc:a52b8ce5b52f9d45f8180c6fd75388174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given target values (e.g., density), build new grid based on polynomial.  <a href="namespaceregrid__interp.html#a52b8ce5b52f9d45f8180c6fd75388174">More...</a><br /></td></tr>
+<tr class="separator:a52b8ce5b52f9d45f8180c6fd75388174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaef8cc7e1258b61710adbd6fb742122"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceregrid__interp.html#abaef8cc7e1258b61710adbd6fb742122">regrid_interp::build_and_interpolate_grid</a> (CS, densities, n0, h0, x0, target_values, n1, h1, x1, h_neglect, h_neglect_edge)</td></tr>
 <tr class="memdesc:abaef8cc7e1258b61710adbd6fb742122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a grid by interpolating for target values.  <a href="namespaceregrid__interp.html#abaef8cc7e1258b61710adbd6fb742122">More...</a><br /></td></tr>
 <tr class="separator:abaef8cc7e1258b61710adbd6fb742122"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa46a706d5c4fbe40ef7eb0880305a4f0"><td class="memItemLeft" align="right" valign="top">real function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceregrid__interp.html#aa46a706d5c4fbe40ef7eb0880305a4f0">regrid_interp::get_polynomial_coordinate</a> (N, h, x_g, ppoly_E, ppoly_coefs, target_value, degree)</td></tr>
-<tr class="memdesc:aa46a706d5c4fbe40ef7eb0880305a4f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a target value, find corresponding coordinate for given polynomial.  <a href="namespaceregrid__interp.html#aa46a706d5c4fbe40ef7eb0880305a4f0">More...</a><br /></td></tr>
-<tr class="separator:aa46a706d5c4fbe40ef7eb0880305a4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4486297065684fba5322858738b1e2ee"><td class="memItemLeft" align="right" valign="top">real function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceregrid__interp.html#a4486297065684fba5322858738b1e2ee">regrid_interp::get_polynomial_coordinate</a> (N, h, x_g, ppoly_E, ppoly_coefs, target_value, degree, answers_2018)</td></tr>
+<tr class="memdesc:a4486297065684fba5322858738b1e2ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a target value, find corresponding coordinate for given polynomial.  <a href="namespaceregrid__interp.html#a4486297065684fba5322858738b1e2ee">More...</a><br /></td></tr>
+<tr class="separator:a4486297065684fba5322858738b1e2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d21d91c26022a3e79268be4fe14d44"><td class="memItemLeft" align="right" valign="top">integer function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceregrid__interp.html#ab4d21d91c26022a3e79268be4fe14d44">regrid_interp::interpolation_scheme</a> (interp_scheme)</td></tr>
 <tr class="memdesc:ab4d21d91c26022a3e79268be4fe14d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Numeric value of interpolation_scheme corresponding to scheme name.  <a href="namespaceregrid__interp.html#ab4d21d91c26022a3e79268be4fe14d44">More...</a><br /></td></tr>
 <tr class="separator:ab4d21d91c26022a3e79268be4fe14d44"><td class="memSeparator" colspan="2">&#160;</td></tr>

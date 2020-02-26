@@ -37,7 +37,7 @@ digraph "mom_error_handler::assert"
   Node4 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node16 [label="mom_set_diffusivity\l::set_diffusivity_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__set__diffusivity.html#a99cccff4bd9b753e86e50f1a188c3283",tooltip=" "];
   Node4 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node17 [label="mom_tracer_hor_diff\l::tracer_hor_diff_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__hor__diff.html#a9e3ff6d371746132cea51d96a7f02e7f",tooltip="Initialize lateral tracer diffusion module."];
+  Node17 [label="mom_tracer_hor_diff\l::tracer_hor_diff_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__hor__diff.html#a87eed0408da0c4732372732b34451b73",tooltip="Initialize lateral tracer diffusion module."];
   Node1 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node18 [label="mom_diag_remap::diag\l_remap_calc_hmask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__remap.html#a5b0f7f8140918d3567bcc568cda0932e",tooltip="Calculate masks for target grid."];
   Node1 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -50,11 +50,11 @@ digraph "mom_error_handler::assert"
   Node20 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node22 [label="mom_diag_mediator::\lregister_static_field",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a87fa69b9e2ba3205756d93e1e13e1dc7",tooltip="Registers a static diagnostic, returning an integer handle."];
   Node22 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node23 [label="mom_geothermal::geothermal_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__geothermal.html#a0abbb7953860e3357bbd3d35f46fd851",tooltip="Initialize parameters and allocate memory associated with the geothermal heating module."];
+  Node23 [label="mom_geothermal::geothermal_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__geothermal.html#aaddc9edf4f1c558e9cf2e41134526f08",tooltip="Initialize parameters and allocate memory associated with the geothermal heating module."];
   Node23 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node24 [label="mom_diabatic_driver\l::diabatic_driver_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diabatic__driver.html#a51d273bae7e5d2217fa5498620532888",tooltip="This routine initializes the diabatic driver module."];
   Node1 -> Node25 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node25 [label="mom_diag_remap::horizontally\l_average_diag_field",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__remap.html#a0b4fc9c68477bcf276740e63785c701b",tooltip="Horizontally average field."];
+  Node25 [label="mom_diag_remap::horizontally\l_average_diag_field",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__remap.html#abefc54b57db0b1d275dfd5e0e757ee32",tooltip="Horizontally average field."];
   Node25 -> Node26 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node26 [label="mom_diag_mediator::\lpost_xy_average",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#ab41a1779c5edb50aa7256477cef952ae",tooltip="Post the horizontally area-averaged diagnostic."];
   Node26 -> Node27 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

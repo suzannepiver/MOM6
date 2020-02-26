@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 671;
+var viewWidth = 651;
 var viewHeight = 248;
 var sectionId = 'dynsection-29';
 </script>
@@ -54,13 +54,13 @@ var sectionId = 'dynsection-29';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_checksums::chksum_u_2d</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-243.5 667,-243.5 667,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-243.5 647,-243.5 647,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Checksums a 2d array staggered at C&#45;grid u points.">
-<polygon fill="#bfbfbf" stroke="#000000" points="0,-104.5 0,-123.5 166,-123.5 166,-104.5 0,-104.5"/>
-<text text-anchor="middle" x="83" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_checksums::chksum_u_2d</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="0,-104.5 0,-123.5 161,-123.5 161,-104.5 0,-104.5"/>
+<text text-anchor="middle" x="80.5" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_checksums::chksum_u_2d</text>
 </a>
 </g>
 </g>
@@ -68,144 +68,144 @@ var sectionId = 'dynsection-29';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__checksums.html#a2bbf928379ba9abdc67a2f6f93ea8c34" target="_top" xlink:title="Write a message including checksums of non&#45;shifted and laterally shifted arrays.">
-<polygon fill="#ffffff" stroke="#000000" points="384.5,-209 384.5,-239 502.5,-239 502.5,-209 384.5,-209"/>
-<text text-anchor="start" x="392.5" y="-227" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_checksums::chk</text>
-<text text-anchor="middle" x="443.5" y="-216" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_sum_msg_nsew</text>
+<polygon fill="#ffffff" stroke="#000000" points="376,-209 376,-239 492,-239 492,-209 376,-209"/>
+<text text-anchor="start" x="384" y="-227" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_checksums::chk</text>
+<text text-anchor="middle" x="434" y="-216" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_sum_msg_nsew</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M93.5055,-123.6334C113.141,-141.013 157.462,-177.3511 202,-194 257.42,-214.7168 324.4738,-221.7455 373.8494,-223.8623"/>
-<polygon fill="#191970" stroke="#191970" points="373.9839,-227.3696 384.1068,-224.2426 374.2434,-220.3744 373.9839,-227.3696"/>
+<path fill="none" stroke="#191970" d="M90.7476,-123.6281C109.91,-140.9992 153.2051,-177.3239 197,-194 251.2782,-214.668 317.0928,-221.7012 365.5801,-223.8322"/>
+<polygon fill="#191970" stroke="#191970" points="365.5274,-227.3326 375.6534,-224.2157 365.7938,-220.3377 365.5274,-227.3326"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="This returns .true. if the current PE is the root PE.">
-<polygon fill="#ffffff" stroke="#000000" points="548,-143 548,-173 663,-173 663,-143 548,-143"/>
-<text text-anchor="start" x="556" y="-161" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="605.5" y="-150" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
+<polygon fill="#ffffff" stroke="#000000" points="537,-143 537,-173 643,-173 643,-143 537,-143"/>
+<text text-anchor="start" x="545" y="-161" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="590" y="-150" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge8" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M124.4236,-123.5588C147.2279,-128.6046 176.0819,-134.6368 202,-139 278.4326,-151.867 297.6469,-156.1013 375,-161 435.7672,-164.8483 451.1189,-161.9765 512,-161 520.2869,-160.8671 528.9854,-160.668 537.602,-160.4343"/>
-<polygon fill="#191970" stroke="#191970" points="537.7546,-163.9314 547.65,-160.146 537.5538,-156.9343 537.7546,-163.9314"/>
+<path fill="none" stroke="#191970" d="M120.7775,-123.5019C143.1422,-128.5613 171.5152,-134.6243 197,-139 272.0868,-151.8924 290.9721,-156.101 367,-161 426.4323,-164.8297 441.4529,-162.0033 501,-161 509.3328,-160.8596 518.1026,-160.6453 526.7559,-160.3945"/>
+<polygon fill="#191970" stroke="#191970" points="526.9394,-163.8906 536.8274,-160.0855 526.7247,-156.8939 526.9394,-163.8906"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__checksums.html#ad46f7b2b2e81477204b3eca85f920d11" target="_top" xlink:title="Write a message including checksums of non&#45;shifted and westward shifted arrays.">
-<polygon fill="#ffffff" stroke="#000000" points="384.5,-121 384.5,-151 502.5,-151 502.5,-121 384.5,-121"/>
-<text text-anchor="start" x="392.5" y="-139" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_checksums::chk</text>
-<text text-anchor="middle" x="443.5" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_sum_msg_w</text>
+<polygon fill="#ffffff" stroke="#000000" points="376,-121 376,-151 492,-151 492,-121 376,-121"/>
+<text text-anchor="start" x="384" y="-139" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_checksums::chk</text>
+<text text-anchor="middle" x="434" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_sum_msg_w</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M166.1586,-119.0749C229.2565,-122.9255 314.9796,-128.1569 374.3461,-131.7798"/>
-<polygon fill="#191970" stroke="#191970" points="374.1806,-135.2761 384.3752,-132.3918 374.607,-128.2891 374.1806,-135.2761"/>
+<path fill="none" stroke="#191970" d="M161.1569,-119.0197C222.8633,-122.86 307.0197,-128.0974 365.4852,-131.736"/>
+<polygon fill="#191970" stroke="#191970" points="365.5299,-135.2455 375.728,-132.3735 365.9648,-128.259 365.5299,-135.2455"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__checksums.html#a6400a8423305b77e4aed5d1cb4c24520" target="_top" xlink:title="A wrapper for MOM_error used in the checksum code.">
-<polygon fill="#ffffff" stroke="#000000" points="202,-77 202,-107 339,-107 339,-77 202,-77"/>
-<text text-anchor="start" x="210" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_checksums::chksum</text>
-<text text-anchor="middle" x="270.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_error</text>
+<polygon fill="#ffffff" stroke="#000000" points="197,-77 197,-107 331,-107 331,-77 197,-77"/>
+<text text-anchor="start" x="205" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_checksums::chksum</text>
+<text text-anchor="middle" x="264" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_error</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M164.1497,-104.4784C173.2823,-103.4069 182.5773,-102.3163 191.6796,-101.2483"/>
-<polygon fill="#191970" stroke="#191970" points="192.3316,-104.6959 201.8556,-100.0543 191.5158,-97.7435 192.3316,-104.6959"/>
+<path fill="none" stroke="#191970" d="M159.9185,-104.4784C168.8563,-103.4069 177.953,-102.3163 186.8611,-101.2483"/>
+<polygon fill="#191970" stroke="#191970" points="187.3078,-104.7199 196.82,-100.0543 186.4745,-97.7696 187.3078,-104.7199"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="MOM__checksums_8F90.html#a9a7c036cc3f0557b0ca26ff97aa2ad1b" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="246,-38.5 246,-57.5 295,-57.5 295,-38.5 246,-38.5"/>
-<text text-anchor="middle" x="270.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">subchk</text>
+<polygon fill="#ffffff" stroke="#000000" points="240,-38.5 240,-57.5 288,-57.5 288,-38.5 240,-38.5"/>
+<text text-anchor="middle" x="264" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">subchk</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge9" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M105.1119,-104.4535C128.813,-94.4133 167.6698,-78.5049 202,-67 213.0197,-63.307 225.2015,-59.7599 236.1992,-56.7512"/>
-<polygon fill="#191970" stroke="#191970" points="237.1464,-60.1209 245.8989,-54.1506 235.3336,-53.3597 237.1464,-60.1209"/>
+<path fill="none" stroke="#191970" d="M102.138,-104.4579C125.3334,-94.4215 163.3673,-78.5161 197,-67 207.6621,-63.3492 219.4423,-59.8381 230.1129,-56.8489"/>
+<polygon fill="#191970" stroke="#191970" points="231.2131,-60.1765 239.9307,-54.1554 229.3611,-53.4259 231.2131,-60.1765"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="MOM__checksums_8F90.html#ad399546f73e634377973802b3dc64d28" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="243,-.5 243,-19.5 298,-19.5 298,-.5 243,-.5"/>
-<text text-anchor="middle" x="270.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">substats</text>
+<polygon fill="#ffffff" stroke="#000000" points="237,-.5 237,-19.5 291,-19.5 291,-.5 237,-.5"/>
+<text text-anchor="middle" x="264" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">substats</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
 <g id="edge11" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="#191970" d="M93.6557,-104.3839C113.5354,-86.925 158.2386,-49.892 202,-29 211.6059,-24.4141 222.5146,-20.7616 232.7578,-17.9341"/>
-<polygon fill="#191970" stroke="#191970" points="233.8921,-21.2564 242.7063,-15.3776 232.1499,-14.4766 233.8921,-21.2564"/>
+<path fill="none" stroke="#191970" d="M90.9032,-104.3938C110.3185,-86.9511 154.0096,-49.9434 197,-29 206.3749,-24.4329 217.0379,-20.7865 227.057,-17.9589"/>
+<polygon fill="#191970" stroke="#191970" points="228.0083,-21.3278 236.7899,-15.4004 226.2286,-14.5578 228.0083,-21.3278"/>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M480.6661,-208.8583C503.9218,-199.3837 534.0759,-187.0987 558.9217,-176.9763"/>
-<polygon fill="#191970" stroke="#191970" points="560.5665,-180.0856 568.5069,-173.0713 557.9254,-173.603 560.5665,-180.0856"/>
+<path fill="none" stroke="#191970" d="M469.7896,-208.8583C492.1839,-199.3837 521.2212,-187.0987 545.1468,-176.9763"/>
+<polygon fill="#191970" stroke="#191970" points="546.5311,-180.1911 554.377,-173.0713 543.8035,-173.7443 546.5311,-180.1911"/>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M502.9029,-144.0671C514.2874,-145.6131 526.2858,-147.2425 537.9057,-148.8205"/>
-<polygon fill="#191970" stroke="#191970" points="537.6146,-152.313 547.9947,-150.1906 538.5567,-145.3767 537.6146,-152.313"/>
+<path fill="none" stroke="#191970" d="M492.0886,-144.192C503.4117,-145.7888 515.3348,-147.4703 526.8135,-149.0891"/>
+<polygon fill="#191970" stroke="#191970" points="526.3694,-152.561 536.7602,-150.4918 527.3469,-145.6296 526.3694,-152.561"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="This provides a convenient interface for writing an mpp_error message with run&#45;time filter based on a...">
-<polygon fill="#ffffff" stroke="#000000" points="386,-72 386,-102 501,-102 501,-72 386,-72"/>
-<text text-anchor="start" x="394" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="443.5" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
+<polygon fill="#ffffff" stroke="#000000" points="381,-72 381,-102 487,-102 487,-72 381,-72"/>
+<text text-anchor="start" x="389" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="434" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge6" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M339.3713,-90.0095C351.3234,-89.6641 363.7444,-89.3051 375.6684,-88.9605"/>
-<polygon fill="#191970" stroke="#191970" points="376.1002,-92.4495 385.9949,-88.662 375.8979,-85.4524 376.1002,-92.4495"/>
+<path fill="none" stroke="#191970" d="M331.1885,-90.0239C344.2237,-89.6405 357.8441,-89.2399 370.7477,-88.8604"/>
+<polygon fill="#191970" stroke="#191970" points="371.0247,-92.3538 380.9175,-88.5613 370.8189,-85.3568 371.0247,-92.3538"/>
 </g>
 <!-- Node6&#45;&gt;Node3 -->
 <g id="edge7" class="edge">
 <title>Node6&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M486.8941,-102.0393C495.2874,-105.1723 503.9666,-108.5696 512,-112 530.6703,-119.9725 550.9386,-129.7946 567.8164,-138.3127"/>
-<polygon fill="#191970" stroke="#191970" points="566.3127,-141.4746 576.8125,-142.8908 569.4876,-135.2359 566.3127,-141.4746"/>
+<path fill="none" stroke="#191970" d="M476.8413,-102.112C484.9359,-105.2129 493.2813,-108.58 501,-112 518.6799,-119.8337 537.7898,-129.5393 553.7528,-138.0133"/>
+<polygon fill="#191970" stroke="#191970" points="552.2861,-141.1982 562.7534,-142.837 555.5927,-135.0283 552.2861,-141.1982"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="namespacemom__checksums.html#a13c171528ae5ab341cf75ef302a5b930" target="_top" xlink:title="Does a bitcount of a number by first casting to an integer and then using BTEST to check bit by bit.">
-<polygon fill="#ffffff" stroke="#000000" points="375,-33.5 375,-52.5 512,-52.5 512,-33.5 375,-33.5"/>
-<text text-anchor="middle" x="443.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_checksums::bitcount</text>
+<polygon fill="#ffffff" stroke="#000000" points="367,-33.5 367,-52.5 501,-52.5 501,-33.5 367,-33.5"/>
+<text text-anchor="middle" x="434" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_checksums::bitcount</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge10" class="edge">
 <title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M295.2867,-47.2836C313.5164,-46.7568 339.3767,-46.0093 364.4041,-45.286"/>
-<polygon fill="#191970" stroke="#191970" points="364.7846,-48.7766 374.6792,-44.989 364.5823,-41.7795 364.7846,-48.7766"/>
+<path fill="none" stroke="#191970" d="M288.3569,-47.2836C306.3512,-46.7544 331.9114,-46.0026 356.608,-45.2762"/>
+<polygon fill="#191970" stroke="#191970" points="356.852,-48.7707 366.7447,-44.9781 356.6461,-41.7737 356.852,-48.7707"/>
 </g>
 </g>
 </svg>

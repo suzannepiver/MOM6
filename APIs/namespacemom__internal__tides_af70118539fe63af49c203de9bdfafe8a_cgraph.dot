@@ -13,7 +13,7 @@ digraph "mom_internal_tides::propagate"
   Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="mom_error_handler::\lis_root_pe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71",tooltip="This returns .true. if the current PE is the root PE."];
   Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="mom_internal_tides\l::propagate_x",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__internal__tides.html#a487e6cad7cea4c5095f198c236628d6d",tooltip="Propagates the internal wave energy in the logical x-direction."];
+  Node5 [label="mom_internal_tides\l::propagate_x",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__internal__tides.html#a0b300e27b0ec984bfe8b9afe4e89f8ab",tooltip="Propagates the internal wave energy in the logical x-direction."];
   Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node6 [label="mom_internal_tides\l::ppm_reconstruction_x",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__internal__tides.html#afa863318cc960c0be08672731ce6f225",tooltip="Calculates left/right edge values for PPM reconstruction in x-direction."];
   Node6 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -25,11 +25,11 @@ digraph "mom_internal_tides::propagate"
   Node9 [label="mom_internal_tides\l::teleport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__internal__tides.html#a0a20d26531e245a26385d1c056b6a5b6",tooltip="Moves energy across lines of partial reflection to prevent reflection of energy that is supposed to g..."];
   Node9 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node10 [label="mom_internal_tides\l::zonal_flux_en",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__internal__tides.html#a11b6fedbef7fd03428f8dfc404252792",tooltip="Evaluates the zonal mass or volume fluxes in a layer."];
+  Node10 [label="mom_internal_tides\l::zonal_flux_en",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__internal__tides.html#a5470c5a9a8fea70664dbf793c48cef65",tooltip="Evaluates the zonal mass or volume fluxes in a layer."];
   Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node11 [label="mom_internal_tides\l::propagate_y",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__internal__tides.html#a5f63667c6d87b8ae6d51076ea2942aca",tooltip="Propagates the internal wave energy in the logical y-direction."];
+  Node11 [label="mom_internal_tides\l::propagate_y",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__internal__tides.html#ae1a31a7f0db2b05c1d863f022b799c7b",tooltip="Propagates the internal wave energy in the logical y-direction."];
   Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node12 [label="mom_internal_tides\l::merid_flux_en",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__internal__tides.html#a08d375b914ce03bed1b317c9b7371f77",tooltip="Evaluates the meridional mass or volume fluxes in a layer."];
+  Node12 [label="mom_internal_tides\l::merid_flux_en",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__internal__tides.html#aa1b6ca95d1076457e3b7ca32942be143",tooltip="Evaluates the meridional mass or volume fluxes in a layer."];
   Node11 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node13 [label="mom_internal_tides\l::ppm_reconstruction_y",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__internal__tides.html#a6c3dc6d74dfd6e5b13d5f710899be278",tooltip="Calculates left/right edge valus for PPM reconstruction in y-direction."];
   Node13 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

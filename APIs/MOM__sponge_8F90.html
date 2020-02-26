@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/parameterizations/vertical/MOM_sponge.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/vertical/MOM_sponge.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('MOM__sponge_8F90.html','');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_sponge.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__sponge_8F90__incl.svg" width="299" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__sponge_8F90__incl.svg" width="280" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -133,18 +133,18 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a2c3c6a03d98c13221031af667b42428d"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__sponge.html#a2c3c6a03d98c13221031af667b42428d">mom_sponge::initialize_sponge</a> (Iresttime, int_height, G, param_file, CS, GV, Iresttime_i_mean, int_height_i_mean)</td></tr>
 <tr class="memdesc:a2c3c6a03d98c13221031af667b42428d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine determines the number of points which are within sponges in this computational domain. Only points that have positive values of Iresttime and which mask2dT indicates are ocean points are included in the sponges. It also stores the target interface heights.  <a href="namespacemom__sponge.html#a2c3c6a03d98c13221031af667b42428d">More...</a><br /></td></tr>
 <tr class="separator:a2c3c6a03d98c13221031af667b42428d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a8f89e7376419836a450e8cf25fc37b"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__sponge.html#a0a8f89e7376419836a450e8cf25fc37b">mom_sponge::init_sponge_diags</a> (Time, G, diag, CS)</td></tr>
-<tr class="memdesc:a0a8f89e7376419836a450e8cf25fc37b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine sets up diagnostics for the sponges. It is separate from initialize_sponge because it requires fields that are not readily available where initialize_sponge is called.  <a href="namespacemom__sponge.html#a0a8f89e7376419836a450e8cf25fc37b">More...</a><br /></td></tr>
-<tr class="separator:a0a8f89e7376419836a450e8cf25fc37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4b2c0efb73f14a43936a11b39027f57"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__sponge.html#ad4b2c0efb73f14a43936a11b39027f57">mom_sponge::init_sponge_diags</a> (Time, G, GV, US, diag, CS)</td></tr>
+<tr class="memdesc:ad4b2c0efb73f14a43936a11b39027f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine sets up diagnostics for the sponges. It is separate from initialize_sponge because it requires fields that are not readily available where initialize_sponge is called.  <a href="namespacemom__sponge.html#ad4b2c0efb73f14a43936a11b39027f57">More...</a><br /></td></tr>
+<tr class="separator:ad4b2c0efb73f14a43936a11b39027f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3da4a8b352c4130919d7bfedf1a5a3e"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__sponge.html#af3da4a8b352c4130919d7bfedf1a5a3e">mom_sponge::set_up_sponge_field</a> (sp_val, f_ptr, G, nlay, CS, sp_val_i_mean)</td></tr>
 <tr class="memdesc:af3da4a8b352c4130919d7bfedf1a5a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine stores the reference profile for the variable whose address is given by f_ptr. nlay is the number of layers in this variable.  <a href="namespacemom__sponge.html#af3da4a8b352c4130919d7bfedf1a5a3e">More...</a><br /></td></tr>
 <tr class="separator:af3da4a8b352c4130919d7bfedf1a5a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5a144fffdfc612c6e3de802261cc85c"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__sponge.html#ac5a144fffdfc612c6e3de802261cc85c">mom_sponge::set_up_sponge_ml_density</a> (sp_val, G, CS, sp_val_i_mean)</td></tr>
 <tr class="memdesc:ac5a144fffdfc612c6e3de802261cc85c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine stores the reference value for mixed layer density. It is handled differently from other values because it is only used in determining which layers can be inflated.  <a href="namespacemom__sponge.html#ac5a144fffdfc612c6e3de802261cc85c">More...</a><br /></td></tr>
 <tr class="separator:ac5a144fffdfc612c6e3de802261cc85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc5fe4db356e9e93696c909cd2c4d7ba"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__sponge.html#afc5fe4db356e9e93696c909cd2c4d7ba">mom_sponge::apply_sponge</a> (h, dt, G, GV, ea, eb, CS, Rcv_ml)</td></tr>
-<tr class="memdesc:afc5fe4db356e9e93696c909cd2c4d7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine applies damping to the layers thicknesses, mixed layer buoyancy, and a variety of tracers for every column where there is damping.  <a href="namespacemom__sponge.html#afc5fe4db356e9e93696c909cd2c4d7ba">More...</a><br /></td></tr>
-<tr class="separator:afc5fe4db356e9e93696c909cd2c4d7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b8b22a1b577bdcf336c8d22b85b45d7"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__sponge.html#a0b8b22a1b577bdcf336c8d22b85b45d7">mom_sponge::apply_sponge</a> (h, dt, G, GV, US, ea, eb, CS, Rcv_ml)</td></tr>
+<tr class="memdesc:a0b8b22a1b577bdcf336c8d22b85b45d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine applies damping to the layers thicknesses, mixed layer buoyancy, and a variety of tracers for every column where there is damping.  <a href="namespacemom__sponge.html#a0b8b22a1b577bdcf336c8d22b85b45d7">More...</a><br /></td></tr>
+<tr class="separator:a0b8b22a1b577bdcf336c8d22b85b45d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b62e032925716da3a7b099364ddd720"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__sponge.html#a9b62e032925716da3a7b099364ddd720">mom_sponge::sponge_end</a> (CS)</td></tr>
 <tr class="memdesc:a9b62e032925716da3a7b099364ddd720"><td class="mdescLeft">&#160;</td><td class="mdescRight">This call deallocates any memory in the sponge control structure.  <a href="namespacemom__sponge.html#a9b62e032925716da3a7b099364ddd720">More...</a><br /></td></tr>
 <tr class="separator:a9b62e032925716da3a7b099364ddd720"><td class="memSeparator" colspan="2">&#160;</td></tr>

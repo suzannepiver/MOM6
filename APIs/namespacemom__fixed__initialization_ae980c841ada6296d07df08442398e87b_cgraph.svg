@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 666;
+var viewWidth = 626;
 var viewHeight = 718;
 var sectionId = 'dynsection-2';
 </script>
@@ -54,14 +54,14 @@ var sectionId = 'dynsection-2';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_fixed_initialization::mom_initialize_topography</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-713.5 662,-713.5 662,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-713.5 622,-713.5 622,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="MOM_initialize_topography makes the appropriate call to set up the bathymetry. At this point the topo...">
-<polygon fill="#bfbfbf" stroke="#000000" points="0,-350.5 0,-380.5 147,-380.5 147,-350.5 0,-350.5"/>
+<polygon fill="#bfbfbf" stroke="#000000" points="0,-350.5 0,-380.5 138,-380.5 138,-350.5 0,-350.5"/>
 <text text-anchor="start" x="8" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_fixed_initialization</text>
-<text text-anchor="middle" x="73.5" y="-357.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::mom_initialize_topography</text>
+<text text-anchor="middle" x="69" y="-357.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::mom_initialize_topography</text>
 </a>
 </g>
 </g>
@@ -69,343 +69,343 @@ var sectionId = 'dynsection-2';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacebenchmark__initialization.html#aa9f5b306237bd4938a117fe871a93ed7" target="_top" xlink:title="This subroutine sets up the benchmark test case topography.">
-<polygon fill="#ffffff" stroke="#000000" points="200,-668 200,-709 329,-709 329,-668 200,-668"/>
-<text text-anchor="start" x="208" y="-697" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">benchmark_initialization</text>
-<text text-anchor="start" x="208" y="-686" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::benchmark_initialize</text>
-<text text-anchor="middle" x="264.5" y="-675" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
+<polygon fill="#ffffff" stroke="#000000" points="189,-668 189,-709 310,-709 310,-668 189,-668"/>
+<text text-anchor="start" x="197" y="-697" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">benchmark_initialization</text>
+<text text-anchor="start" x="197" y="-686" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::benchmark_initialize</text>
+<text text-anchor="middle" x="249.5" y="-675" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M74.7905,-380.617C79.6517,-428.2549 101.0084,-576.9126 183,-658.5 185.535,-661.0225 188.2998,-663.3351 191.2302,-665.455"/>
-<polygon fill="#191970" stroke="#191970" points="189.5534,-668.536 199.8734,-670.9336 193.3011,-662.6237 189.5534,-668.536"/>
+<path fill="none" stroke="#191970" d="M70.1221,-380.5176C74.441,-427.8604 94.0148,-575.7384 174,-658.5 176.0216,-660.5918 178.2076,-662.5413 180.5182,-664.3578"/>
+<polygon fill="#191970" stroke="#191970" points="178.5708,-667.2662 188.7974,-670.0351 182.5296,-661.4931 178.5708,-667.2662"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacedense__water__initialization.html#ae2a5062c406c66b1917f2ad564d4a5e6" target="_top" xlink:title="Initialize the topography field for the dense water experiment.">
-<polygon fill="#ffffff" stroke="#000000" points="195,-608 195,-649 334,-649 334,-608 195,-608"/>
-<text text-anchor="start" x="203" y="-637" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dense_water_initialization</text>
-<text text-anchor="start" x="203" y="-626" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::dense_water_initialize</text>
-<text text-anchor="middle" x="264.5" y="-615" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
+<polygon fill="#ffffff" stroke="#000000" points="185.5,-608 185.5,-649 313.5,-649 313.5,-608 185.5,-608"/>
+<text text-anchor="start" x="193.5" y="-637" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dense_water_initialization</text>
+<text text-anchor="start" x="193.5" y="-626" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::dense_water_initialize</text>
+<text text-anchor="middle" x="249.5" y="-615" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M76.4409,-380.671C85.1589,-421.6728 114.6424,-535.8212 183,-598.5 184.2988,-599.6909 185.6489,-600.8356 187.0429,-601.9359"/>
-<polygon fill="#191970" stroke="#191970" points="185.2417,-604.9459 195.4552,-607.7631 189.2278,-599.1916 185.2417,-604.9459"/>
+<path fill="none" stroke="#191970" d="M71.7118,-380.5703C79.7987,-421.3186 107.4461,-534.8863 174,-598.5 175.2618,-599.706 176.578,-600.8655 177.9404,-601.9803"/>
+<polygon fill="#191970" stroke="#191970" points="176.0228,-604.9119 186.1917,-607.8861 180.0971,-599.2197 176.0228,-604.9119"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="namespacedome2d__initialization.html#ae850c5e89a9275c4333c02828187bf81" target="_top" xlink:title="Initialize topography with a shelf and slope in a 2D domain.">
-<polygon fill="#ffffff" stroke="#000000" points="183,-558.5 183,-588.5 346,-588.5 346,-558.5 183,-558.5"/>
-<text text-anchor="start" x="191" y="-576.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dome2d_initialization</text>
-<text text-anchor="middle" x="264.5" y="-565.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::dome2d_initialize_topography</text>
+<polygon fill="#ffffff" stroke="#000000" points="174,-558.5 174,-588.5 325,-588.5 325,-558.5 174,-558.5"/>
+<text text-anchor="start" x="182" y="-576.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dome2d_initialization</text>
+<text text-anchor="middle" x="249.5" y="-565.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::dome2d_initialize_topography</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M78.2308,-380.7215C89.9688,-415.9459 123.8349,-503.5644 183,-549.5 184.7986,-550.8964 186.6766,-552.2117 188.618,-553.4505"/>
-<polygon fill="#191970" stroke="#191970" points="187.049,-556.5831 197.4856,-558.4073 190.4644,-550.4729 187.049,-556.5831"/>
+<path fill="none" stroke="#191970" d="M73.415,-380.631C84.4119,-415.6626 116.3735,-502.899 174,-549.5 175.6042,-550.7973 177.2796,-552.0249 179.0124,-553.1866"/>
+<polygon fill="#191970" stroke="#191970" points="177.6857,-556.4638 188.0902,-558.4631 181.2034,-550.4118 177.6857,-556.4638"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="namespacedome__initialization.html#a80775c1d93b437bb2cc4c75c3c99ecb4" target="_top" xlink:title="This subroutine sets up the DOME topography.">
-<polygon fill="#ffffff" stroke="#000000" points="189,-509.5 189,-539.5 340,-539.5 340,-509.5 189,-509.5"/>
-<text text-anchor="start" x="197" y="-527.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dome_initialization</text>
-<text text-anchor="middle" x="264.5" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::dome_initialize_topography</text>
+<polygon fill="#ffffff" stroke="#000000" points="179.5,-509.5 179.5,-539.5 319.5,-539.5 319.5,-509.5 179.5,-509.5"/>
+<text text-anchor="start" x="187.5" y="-527.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dome_initialization</text>
+<text text-anchor="middle" x="249.5" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::dome_initialize_topography</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M81.8814,-380.8396C97.8597,-408.6558 135.3712,-467.4955 183,-499.5 186.0672,-501.5611 189.3114,-503.4579 192.6689,-505.2029"/>
-<polygon fill="#191970" stroke="#191970" points="191.2375,-508.3973 201.7773,-509.4761 194.2107,-502.0601 191.2375,-508.3973"/>
+<path fill="none" stroke="#191970" d="M76.9398,-380.7485C92.1035,-408.4168 127.8262,-467.0248 174,-499.5 176.7105,-501.4064 179.5764,-503.1751 182.5447,-504.8151"/>
+<polygon fill="#191970" stroke="#191970" points="181.19,-508.05 191.7038,-509.3582 184.3006,-501.7791 181.19,-508.05"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="namespacedumbbell__initialization.html#aba31e0ec02e4c1c0e5987d8843be5e76" target="_top" xlink:title="Initialization of topography.">
-<polygon fill="#ffffff" stroke="#000000" points="205.5,-449 205.5,-490 323.5,-490 323.5,-449 205.5,-449"/>
-<text text-anchor="start" x="213.5" y="-478" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dumbbell_initialization</text>
-<text text-anchor="start" x="213.5" y="-467" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::dumbbell_initialize</text>
-<text text-anchor="middle" x="264.5" y="-456" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
+<polygon fill="#ffffff" stroke="#000000" points="193.5,-449 193.5,-490 305.5,-490 305.5,-449 193.5,-449"/>
+<text text-anchor="start" x="201.5" y="-478" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dumbbell_initialization</text>
+<text text-anchor="start" x="201.5" y="-467" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::dumbbell_initialize</text>
+<text text-anchor="middle" x="249.5" y="-456" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
 <g id="edge8" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M92.7861,-380.6539C113.9911,-396.7973 149.5112,-422.341 183,-439.5 187.2227,-441.6636 191.6387,-443.7486 196.1367,-445.7416"/>
-<polygon fill="#191970" stroke="#191970" points="194.8768,-449.0091 205.4491,-449.6991 197.6146,-442.5667 194.8768,-449.0091"/>
+<path fill="none" stroke="#191970" d="M87.4729,-380.5573C107.7889,-396.6181 141.8343,-422.0917 174,-439.5 177.229,-441.2476 180.582,-442.9499 184.0003,-444.5982"/>
+<polygon fill="#191970" stroke="#191970" points="182.6152,-447.8137 193.1613,-448.8289 185.5501,-441.4586 182.6152,-447.8137"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="namespaceisomip__initialization.html#a7292729944785b82fbeb51a27029b1b3" target="_top" xlink:title="Initialization of topography for the ISOMIP configuration.">
-<polygon fill="#ffffff" stroke="#000000" points="187,-399.5 187,-429.5 342,-429.5 342,-399.5 187,-399.5"/>
-<text text-anchor="start" x="195" y="-417.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">isomip_initialization</text>
-<text text-anchor="middle" x="264.5" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::isomip_initialize_topography</text>
+<polygon fill="#ffffff" stroke="#000000" points="177,-399.5 177,-429.5 322,-429.5 322,-399.5 177,-399.5"/>
+<text text-anchor="start" x="185" y="-417.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">isomip_initialization</text>
+<text text-anchor="middle" x="249.5" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::isomip_initialize_topography</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
 <g id="edge9" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="#191970" d="M132.1043,-380.5346C152.3629,-385.7318 175.2391,-391.6006 196.2063,-396.9796"/>
-<polygon fill="#191970" stroke="#191970" points="195.4504,-400.399 206.0065,-399.4938 197.1899,-393.6186 195.4504,-400.399"/>
+<path fill="none" stroke="#191970" d="M124.6288,-380.6014C143.5034,-385.7253 164.7592,-391.4956 184.3108,-396.8032"/>
+<polygon fill="#191970" stroke="#191970" points="183.4872,-400.2062 194.0549,-399.4484 185.3212,-393.4507 183.4872,-400.2062"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
 <g id="a_node10"><a xlink:href="namespacekelvin__initialization.html#abddff8dbfe770caf9b7d5564b3a0fc6d" target="_top" xlink:title="This subroutine sets up the Kelvin topography and land mask.">
-<polygon fill="#ffffff" stroke="#000000" points="188.5,-350.5 188.5,-380.5 340.5,-380.5 340.5,-350.5 188.5,-350.5"/>
-<text text-anchor="start" x="196.5" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">kelvin_initialization</text>
-<text text-anchor="middle" x="264.5" y="-357.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::kelvin_initialize_topography</text>
+<polygon fill="#ffffff" stroke="#000000" points="178.5,-350.5 178.5,-380.5 320.5,-380.5 320.5,-350.5 178.5,-350.5"/>
+<text text-anchor="start" x="186.5" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">kelvin_initialization</text>
+<text text-anchor="middle" x="249.5" y="-357.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::kelvin_initialize_topography</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node10 -->
 <g id="edge11" class="edge">
 <title>Node1&#45;&gt;Node10</title>
-<path fill="none" stroke="#191970" d="M147.0724,-365.5C157.2397,-365.5 167.7576,-365.5 178.1305,-365.5"/>
-<polygon fill="#191970" stroke="#191970" points="178.4367,-369.0001 188.4367,-365.5 178.4366,-362.0001 178.4367,-369.0001"/>
+<path fill="none" stroke="#191970" d="M138.0119,-365.5C147.9394,-365.5 158.2303,-365.5 168.3662,-365.5"/>
+<polygon fill="#191970" stroke="#191970" points="168.4314,-369.0001 178.4313,-365.5 168.4313,-362.0001 168.4314,-369.0001"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
 <g id="a_node11"><a xlink:href="namespaceneverland__initialization.html#ac855cd08ae8a9a5bc1dfe8106084aa0a" target="_top" xlink:title="This subroutine sets up the Neverland test case topography.">
-<polygon fill="#ffffff" stroke="#000000" points="202,-290 202,-331 327,-331 327,-290 202,-290"/>
-<text text-anchor="start" x="210" y="-319" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">neverland_initialization</text>
-<text text-anchor="start" x="210" y="-308" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::neverland_initialize</text>
-<text text-anchor="middle" x="264.5" y="-297" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
+<polygon fill="#ffffff" stroke="#000000" points="192,-290 192,-331 307,-331 307,-290 192,-290"/>
+<text text-anchor="start" x="200" y="-319" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">neverland_initialization</text>
+<text text-anchor="start" x="200" y="-308" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::neverland_initialize</text>
+<text text-anchor="middle" x="249.5" y="-297" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node11 -->
 <g id="edge13" class="edge">
 <title>Node1&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M125.6916,-350.471C146.1852,-344.5697 170.0546,-337.6963 192.1618,-331.3304"/>
-<polygon fill="#191970" stroke="#191970" points="193.2027,-334.6729 201.8437,-328.5424 191.2657,-327.9463 193.2027,-334.6729"/>
+<path fill="none" stroke="#191970" d="M118.3224,-350.471C138.0552,-344.4583 161.0998,-337.4364 182.3203,-330.9703"/>
+<polygon fill="#191970" stroke="#191970" points="183.3779,-334.307 191.9234,-328.0441 181.3375,-327.6109 183.3779,-334.307"/>
 </g>
 <!-- Node14 -->
 <g id="node14" class="node">
 <title>Node14</title>
 <g id="a_node14"><a xlink:href="namespacephillips__initialization.html#a99b5e25a77486b3004be63895ab57b73" target="_top" xlink:title="Initialize topography.">
-<polygon fill="#ffffff" stroke="#000000" points="209.5,-230 209.5,-271 319.5,-271 319.5,-230 209.5,-230"/>
-<text text-anchor="start" x="217.5" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">phillips_initialization</text>
-<text text-anchor="start" x="217.5" y="-248" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::phillips_initialize</text>
-<text text-anchor="middle" x="264.5" y="-237" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
+<polygon fill="#ffffff" stroke="#000000" points="198,-230 198,-271 301,-271 301,-230 198,-230"/>
+<text text-anchor="start" x="206" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">phillips_initialization</text>
+<text text-anchor="start" x="206" y="-248" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::phillips_initialize</text>
+<text text-anchor="middle" x="249.5" y="-237" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node14 -->
 <g id="edge17" class="edge">
 <title>Node1&#45;&gt;Node14</title>
-<path fill="none" stroke="#191970" d="M89.7966,-350.2119C110.2449,-331.6804 147.0123,-300.4603 183,-280.5 188.237,-277.5953 193.8108,-274.8699 199.4908,-272.3379"/>
-<polygon fill="#191970" stroke="#191970" points="201.2677,-275.3863 209.1095,-268.2619 198.5364,-268.941 201.2677,-275.3863"/>
+<path fill="none" stroke="#191970" d="M84.5914,-350.3087C104.1636,-331.8747 139.3839,-300.7529 174,-280.5 178.6413,-277.7845 183.5747,-275.2124 188.6103,-272.8013"/>
+<polygon fill="#191970" stroke="#191970" points="190.0954,-275.9709 197.7435,-268.639 187.1925,-269.6012 190.0954,-275.9709"/>
 </g>
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
 <g id="a_node15"><a xlink:href="namespaceseamount__initialization.html#ad0d12dd03f77e4a827fcd925805b92c9" target="_top" xlink:title="Initialization of topography.">
-<polygon fill="#ffffff" stroke="#000000" points="203,-170 203,-211 326,-211 326,-170 203,-170"/>
-<text text-anchor="start" x="211" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">seamount_initialization</text>
-<text text-anchor="start" x="211" y="-188" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::seamount_initialize</text>
-<text text-anchor="middle" x="264.5" y="-177" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
+<polygon fill="#ffffff" stroke="#000000" points="191.5,-170 191.5,-211 307.5,-211 307.5,-170 191.5,-170"/>
+<text text-anchor="start" x="199.5" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">seamount_initialization</text>
+<text text-anchor="start" x="199.5" y="-188" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::seamount_initialize</text>
+<text text-anchor="middle" x="249.5" y="-177" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node15 -->
 <g id="edge18" class="edge">
 <title>Node1&#45;&gt;Node15</title>
-<path fill="none" stroke="#191970" d="M81.2474,-350.0689C96.6982,-320.7699 134.1065,-256.7781 183,-220.5 186.4055,-217.9732 190.0464,-215.6395 193.8299,-213.487"/>
-<polygon fill="#191970" stroke="#191970" points="195.6136,-216.5045 202.8732,-208.7876 192.3858,-210.2931 195.6136,-216.5045"/>
+<path fill="none" stroke="#191970" d="M76.345,-350.1695C91.0173,-321.0427 126.6535,-257.3322 174,-220.5 176.6162,-218.4648 179.3882,-216.5505 182.2655,-214.7519"/>
+<polygon fill="#191970" stroke="#191970" points="184.1957,-217.6809 191.1625,-209.6988 180.7385,-211.5941 184.1957,-217.6809"/>
 </g>
 <!-- Node16 -->
 <g id="node16" class="node">
 <title>Node16</title>
 <g id="a_node16"><a xlink:href="namespaceshelfwave__initialization.html#ac2db4043726cb7eed851c69d6190b8dd" target="_top" xlink:title="Initialization of topography.">
-<polygon fill="#ffffff" stroke="#000000" points="202,-110 202,-151 327,-151 327,-110 202,-110"/>
-<text text-anchor="start" x="210" y="-139" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">shelfwave_initialization</text>
-<text text-anchor="start" x="210" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::shelfwave_initialize</text>
-<text text-anchor="middle" x="264.5" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
+<polygon fill="#ffffff" stroke="#000000" points="191,-110 191,-151 308,-151 308,-110 191,-110"/>
+<text text-anchor="start" x="199" y="-139" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">shelfwave_initialization</text>
+<text text-anchor="start" x="199" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::shelfwave_initialize</text>
+<text text-anchor="middle" x="249.5" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node16 -->
 <g id="edge19" class="edge">
 <title>Node1&#45;&gt;Node16</title>
-<path fill="none" stroke="#191970" d="M77.5348,-350.2524C88.2485,-312.6372 120.925,-214.556 183,-160.5 186.0469,-157.8467 189.349,-155.4201 192.8193,-153.2019"/>
-<polygon fill="#191970" stroke="#191970" points="194.7942,-156.1047 201.743,-148.1068 191.3234,-150.0258 194.7942,-156.1047"/>
+<path fill="none" stroke="#191970" d="M72.7657,-350.3536C82.8032,-312.9693 113.6412,-215.3734 174,-160.5 176.583,-158.1518 179.3722,-155.9771 182.3037,-153.9646"/>
+<polygon fill="#191970" stroke="#191970" points="184.1852,-156.9166 190.8886,-148.712 180.5318,-150.9456 184.1852,-156.9166"/>
 </g>
 <!-- Node17 -->
 <g id="node17" class="node">
 <title>Node17</title>
 <g id="a_node17"><a xlink:href="namespacesloshing__initialization.html#a0ecf019d4e63415fc16ce5ca4158f7f3" target="_top" xlink:title="Initialization of topography.">
-<polygon fill="#ffffff" stroke="#000000" points="206.5,-50 206.5,-91 322.5,-91 322.5,-50 206.5,-50"/>
-<text text-anchor="start" x="214.5" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sloshing_initialization</text>
-<text text-anchor="start" x="214.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::sloshing_initialize</text>
-<text text-anchor="middle" x="264.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
+<polygon fill="#ffffff" stroke="#000000" points="195,-50 195,-91 304,-91 304,-50 195,-50"/>
+<text text-anchor="start" x="203" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sloshing_initialization</text>
+<text text-anchor="start" x="203" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::sloshing_initialize</text>
+<text text-anchor="middle" x="249.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_topography</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node17 -->
 <g id="edge20" class="edge">
 <title>Node1&#45;&gt;Node17</title>
-<path fill="none" stroke="#191970" d="M75.4896,-350.2452C82.1159,-305.4902 107.4691,-173.1314 183,-100.5 187.247,-96.4161 192.0965,-92.8799 197.2655,-89.8194"/>
-<polygon fill="#191970" stroke="#191970" points="198.9995,-92.8619 206.2165,-85.1052 195.7376,-86.6684 198.9995,-92.8619"/>
+<path fill="none" stroke="#191970" d="M70.7945,-350.346C76.8365,-305.8682 100.3767,-174.1949 174,-100.5 177.4921,-97.0045 181.4423,-93.9039 185.6597,-91.1556"/>
+<polygon fill="#191970" stroke="#191970" points="187.7077,-94.0153 194.6308,-85.9953 184.2174,-87.9475 187.7077,-94.0153"/>
 </g>
 <!-- Node18 -->
 <g id="node18" class="node">
 <title>Node18</title>
 <g id="a_node18"><a xlink:href="namespaceuser__initialization.html#ad48bbaeae8df60afdaffe34590d835ab" target="_top" xlink:title="Initialize topography.">
-<polygon fill="#ffffff" stroke="#000000" points="192,-.5 192,-30.5 337,-30.5 337,-.5 192,-.5"/>
-<text text-anchor="start" x="200" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">user_initialization</text>
-<text text-anchor="middle" x="264.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::user_initialize_topography</text>
+<polygon fill="#ffffff" stroke="#000000" points="182,-.5 182,-30.5 317,-30.5 317,-.5 182,-.5"/>
+<text text-anchor="start" x="190" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">user_initialization</text>
+<text text-anchor="middle" x="249.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::user_initialize_topography</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node18 -->
 <g id="edge21" class="edge">
 <title>Node1&#45;&gt;Node18</title>
-<path fill="none" stroke="#191970" d="M73.9499,-350.3897C76.3092,-299.114 91.0401,-129.9793 183,-40.5 184.4718,-39.0679 186.0234,-37.7177 187.6419,-36.4445"/>
-<polygon fill="#191970" stroke="#191970" points="189.865,-39.1685 196.2319,-30.7001 185.9737,-33.3497 189.865,-39.1685"/>
+<path fill="none" stroke="#191970" d="M71.9987,-350.3802C83.7329,-292.6004 128.1515,-86.683 174,-40.5 175.4227,-39.0669 176.9293,-37.716 178.5054,-36.4425"/>
+<polygon fill="#191970" stroke="#191970" points="180.6239,-39.2339 186.9008,-30.6986 176.6712,-33.4567 180.6239,-39.2339"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__error__handler.html#a1c462df7b61f1296407b4af51dfeceab" target="_top" xlink:title="This provides a convenient interface for writing an informative comment.">
-<polygon fill="#ffffff" stroke="#000000" points="387,-374.5 387,-404.5 502,-404.5 502,-374.5 387,-374.5"/>
-<text text-anchor="start" x="395" y="-392.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="444.5" y="-381.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_mesg</text>
+<polygon fill="#ffffff" stroke="#000000" points="365.5,-374.5 365.5,-404.5 471.5,-404.5 471.5,-374.5 365.5,-374.5"/>
+<text text-anchor="start" x="373.5" y="-392.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="418.5" y="-381.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_mesg</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M329.1594,-670.9665C335.3294,-667.5215 341.0999,-663.4084 346,-658.5 415.2163,-589.1661 436.2333,-467.258 442.2449,-414.7391"/>
-<polygon fill="#191970" stroke="#191970" points="445.7429,-414.9413 443.3119,-404.6292 438.7815,-414.2066 445.7429,-414.9413"/>
+<path fill="none" stroke="#191970" d="M310.2467,-670.0775C315.6621,-666.8114 320.7086,-662.9831 325,-658.5 392.3476,-588.143 411.4113,-466.7864 416.6216,-414.576"/>
+<polygon fill="#191970" stroke="#191970" points="420.1152,-414.8036 417.5355,-404.5276 413.144,-414.1694 420.1152,-414.8036"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="This returns .true. if the current PE is the root PE.">
-<polygon fill="#ffffff" stroke="#000000" points="543,-239.5 543,-269.5 658,-269.5 658,-239.5 543,-239.5"/>
-<text text-anchor="start" x="551" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="600.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
+<polygon fill="#ffffff" stroke="#000000" points="512,-239.5 512,-269.5 618,-269.5 618,-239.5 512,-239.5"/>
+<text text-anchor="start" x="520" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="565" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M463.5646,-374.3318C476.0442,-364.3078 492.6396,-350.7977 507,-338.5 531.0744,-317.8837 557.9298,-293.6205 576.6603,-276.4857"/>
-<polygon fill="#191970" stroke="#191970" points="579.1535,-278.9482 584.1585,-269.61 574.4226,-273.7889 579.1535,-278.9482"/>
+<path fill="none" stroke="#191970" d="M435.7328,-374.4626C447.2203,-364.3782 462.6115,-350.7503 476,-338.5 498.5649,-317.8535 523.8944,-293.8659 541.7443,-276.8232"/>
+<polygon fill="#191970" stroke="#191970" points="544.5744,-278.9595 549.3824,-269.5184 539.7363,-273.9005 544.5744,-278.9595"/>
 </g>
 <!-- Node7&#45;&gt;Node3 -->
 <g id="edge7" class="edge">
 <title>Node7&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M326.6267,-509.3883C333.41,-506.5994 340.0156,-503.328 346,-499.5 381.3884,-476.8637 411.8328,-438.1328 429.1616,-413.1886"/>
-<polygon fill="#191970" stroke="#191970" points="432.218,-414.9176 434.9374,-404.6777 426.4259,-410.9869 432.218,-414.9176"/>
+<path fill="none" stroke="#191970" d="M306.3637,-509.4836C312.9063,-506.6632 319.275,-503.3584 325,-499.5 359.0603,-476.5449 387.828,-437.9033 404.1221,-413.0647"/>
+<polygon fill="#191970" stroke="#191970" points="407.102,-414.9015 409.5475,-404.5928 401.2071,-411.1264 407.102,-414.9015"/>
 </g>
 <!-- Node9&#45;&gt;Node3 -->
 <g id="edge10" class="edge">
 <title>Node9&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M342.1422,-403.7164C353.6524,-402.1177 365.4375,-400.4809 376.725,-398.9132"/>
-<polygon fill="#191970" stroke="#191970" points="377.5057,-402.3385 386.9291,-397.496 376.5426,-395.405 377.5057,-402.3385"/>
+<path fill="none" stroke="#191970" d="M322.152,-403.7527C333.1349,-402.128 344.3903,-400.463 355.1559,-398.8704"/>
+<polygon fill="#191970" stroke="#191970" points="355.9226,-402.2952 365.3028,-397.3694 354.8982,-395.3705 355.9226,-402.2952"/>
 </g>
 <!-- Node10&#45;&gt;Node3 -->
 <g id="edge12" class="edge">
 <title>Node10&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M340.5753,-375.6434C352.5975,-377.2463 364.9593,-378.8946 376.7747,-380.47"/>
-<polygon fill="#191970" stroke="#191970" points="376.62,-383.9802 386.9949,-381.8327 377.5452,-377.0416 376.62,-383.9802"/>
+<path fill="none" stroke="#191970" d="M320.6814,-375.6086C332.1463,-377.2367 343.9467,-378.9125 355.2096,-380.512"/>
+<polygon fill="#191970" stroke="#191970" points="354.9842,-384.015 365.377,-381.9559 355.9685,-377.0846 354.9842,-384.015"/>
 </g>
 <!-- Node11&#45;&gt;Node3 -->
 <g id="edge15" class="edge">
 <title>Node11&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M320.4466,-331.0168C329.0556,-334.3935 337.8032,-337.9524 346,-341.5 366.0701,-350.1863 387.9781,-360.7508 406.026,-369.755"/>
-<polygon fill="#191970" stroke="#191970" points="404.5748,-372.9427 415.0819,-374.3032 407.7165,-366.6873 404.5748,-372.9427"/>
+<path fill="none" stroke="#191970" d="M301.33,-331.1016C309.3049,-334.4669 317.4078,-338.0002 325,-341.5 343.8752,-350.2011 364.4644,-360.662 381.5054,-369.5941"/>
+<polygon fill="#191970" stroke="#191970" points="380.0963,-372.808 390.5742,-374.3783 383.3625,-366.6166 380.0963,-372.808"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
 <g id="a_node12"><a xlink:href="namespaceneverland__initialization.html#ac47b2f62d94cc877898360b481c13540" target="_top" xlink:title="Returns the value of a cosine&#45;bell function evaluated at x/L.">
-<polygon fill="#ffffff" stroke="#000000" points="382,-298.5 382,-328.5 507,-328.5 507,-298.5 382,-298.5"/>
-<text text-anchor="start" x="390" y="-316.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">neverland_initialization</text>
-<text text-anchor="middle" x="444.5" y="-305.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::cosbell</text>
+<polygon fill="#ffffff" stroke="#000000" points="361,-298.5 361,-328.5 476,-328.5 476,-298.5 361,-298.5"/>
+<text text-anchor="start" x="369" y="-316.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">neverland_initialization</text>
+<text text-anchor="middle" x="418.5" y="-305.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::cosbell</text>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node12 -->
 <g id="edge14" class="edge">
 <title>Node11&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M327.2026,-311.545C341.5466,-311.7841 356.9124,-312.0402 371.642,-312.2857"/>
-<polygon fill="#191970" stroke="#191970" points="371.6605,-315.7864 381.7175,-312.4536 371.7772,-308.7874 371.6605,-315.7864"/>
+<path fill="none" stroke="#191970" d="M307.1875,-311.524C321.1146,-311.7713 336.1257,-312.0377 350.4772,-312.2925"/>
+<polygon fill="#191970" stroke="#191970" points="350.7251,-315.7974 360.7857,-312.4755 350.8494,-308.7985 350.7251,-315.7974"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
 <g id="a_node13"><a xlink:href="namespaceneverland__initialization.html#ac08a73f9f287ed5a927c681ae585c122" target="_top" xlink:title="Returns the value of a sin&#45;spike function evaluated at x/L.">
-<polygon fill="#ffffff" stroke="#000000" points="382,-249.5 382,-279.5 507,-279.5 507,-249.5 382,-249.5"/>
-<text text-anchor="start" x="390" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">neverland_initialization</text>
-<text text-anchor="middle" x="444.5" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::spike</text>
+<polygon fill="#ffffff" stroke="#000000" points="361,-249.5 361,-279.5 476,-279.5 476,-249.5 361,-249.5"/>
+<text text-anchor="start" x="369" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">neverland_initialization</text>
+<text text-anchor="middle" x="418.5" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::spike</text>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node13 -->
 <g id="edge16" class="edge">
 <title>Node11&#45;&gt;Node13</title>
-<path fill="none" stroke="#191970" d="M327.2026,-294.476C342.9147,-290.4607 359.8528,-286.1321 375.838,-282.047"/>
-<polygon fill="#191970" stroke="#191970" points="376.8264,-285.4069 385.6484,-279.5399 375.0931,-278.6249 376.8264,-285.4069"/>
+<path fill="none" stroke="#191970" d="M307.1875,-294.7981C322.091,-290.7415 338.2358,-286.3471 353.4852,-282.1963"/>
+<polygon fill="#191970" stroke="#191970" points="354.6252,-285.5135 363.3549,-279.5099 352.7867,-278.7592 354.6252,-285.5135"/>
 </g>
 <!-- Node19 -->
 <g id="node19" class="node">
 <title>Node19</title>
 <g id="a_node19"><a xlink:href="namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="This provides a convenient interface for writing an mpp_error message with run&#45;time filter based on a...">
-<polygon fill="#ffffff" stroke="#000000" points="387,-126.5 387,-156.5 502,-156.5 502,-126.5 387,-126.5"/>
-<text text-anchor="start" x="395" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="444.5" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
+<polygon fill="#ffffff" stroke="#000000" points="365.5,-126.5 365.5,-156.5 471.5,-156.5 471.5,-126.5 365.5,-126.5"/>
+<text text-anchor="start" x="373.5" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="418.5" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node18&#45;&gt;Node19 -->
 <g id="edge22" class="edge">
 <title>Node18&#45;&gt;Node19</title>
-<path fill="none" stroke="#191970" d="M325.6158,-30.5251C332.7242,-33.344 339.6827,-36.6461 346,-40.5 379.3729,-60.8594 409.4204,-95.0924 427.3164,-117.9852"/>
-<polygon fill="#191970" stroke="#191970" points="424.7067,-120.3344 433.5619,-126.1513 430.267,-116.0818 424.7067,-120.3344"/>
+<path fill="none" stroke="#191970" d="M305.8131,-30.5874C312.5199,-33.4043 319.0785,-36.689 325,-40.5 357.0707,-61.1401 385.4962,-95.3038 402.3554,-118.1046"/>
+<polygon fill="#191970" stroke="#191970" points="399.5384,-120.1821 408.234,-126.235 405.2109,-116.0806 399.5384,-120.1821"/>
 </g>
 <!-- Node20 -->
 <g id="node20" class="node">
 <title>Node20</title>
 <g id="a_node20"><a xlink:href="namespaceuser__initialization.html#aebfc0db710e83bae83f08e1a774256dd" target="_top" xlink:title="Write output about the parameter values being used.">
-<polygon fill="#ffffff" stroke="#000000" points="395.5,-.5 395.5,-30.5 493.5,-30.5 493.5,-.5 395.5,-.5"/>
-<text text-anchor="start" x="403.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">user_initialization</text>
-<text text-anchor="middle" x="444.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::write_user_log</text>
+<polygon fill="#ffffff" stroke="#000000" points="372.5,-.5 372.5,-30.5 464.5,-30.5 464.5,-.5 372.5,-.5"/>
+<text text-anchor="start" x="380.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">user_initialization</text>
+<text text-anchor="middle" x="418.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::write_user_log</text>
 </a>
 </g>
 </g>
 <!-- Node18&#45;&gt;Node20 -->
 <g id="edge24" class="edge">
 <title>Node18&#45;&gt;Node20</title>
-<path fill="none" stroke="#191970" d="M337.194,-15.5C353.0494,-15.5 369.6495,-15.5 384.9244,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="385.2622,-19.0001 395.2622,-15.5 385.2621,-12.0001 385.2622,-19.0001"/>
+<path fill="none" stroke="#191970" d="M317.265,-15.5C332.1178,-15.5 347.6893,-15.5 362.043,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="362.252,-19.0001 372.2519,-15.5 362.2519,-12.0001 362.252,-19.0001"/>
 </g>
 <!-- Node19&#45;&gt;Node4 -->
 <g id="edge23" class="edge">
 <title>Node19&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M465.2156,-156.5055C492.4886,-176.261 540.5859,-211.1007 571.4745,-233.4751"/>
-<polygon fill="#191970" stroke="#191970" points="569.5469,-236.4006 579.6987,-239.4324 573.6533,-230.7316 569.5469,-236.4006"/>
+<path fill="none" stroke="#191970" d="M437.9541,-156.5055C463.4568,-176.1766 508.3489,-210.8032 537.3693,-233.1876"/>
+<polygon fill="#191970" stroke="#191970" points="535.4096,-236.0962 545.4655,-239.4324 539.6849,-230.5534 535.4096,-236.0962"/>
 </g>
 </g>
 </svg>

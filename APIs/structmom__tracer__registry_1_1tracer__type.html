@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('structmom__tracer__registry_1_1tracer_
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The tracer type. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00037">37</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00038">38</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_tracer_registry::tracer_type:</div>
 <div class="dyncontent">
@@ -115,44 +115,50 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a32da591fb8ec729c64ce272c9877b659"><td class="mdescLeft">&#160;</td><td class="mdescRight">tracer concentration array [conc]  <a href="structmom__tracer__registry_1_1tracer__type.html#a32da591fb8ec729c64ce272c9877b659">More...</a><br /></td></tr>
 <tr class="separator:a32da591fb8ec729c64ce272c9877b659"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f98b87ead305fc43576f13361f0c400"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a9f98b87ead305fc43576f13361f0c400">ad_x</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a9f98b87ead305fc43576f13361f0c400"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic array for x-advective tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#a9f98b87ead305fc43576f13361f0c400">More...</a><br /></td></tr>
+<tr class="memdesc:a9f98b87ead305fc43576f13361f0c400"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic array for x-advective tracer flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#a9f98b87ead305fc43576f13361f0c400">More...</a><br /></td></tr>
 <tr class="separator:a9f98b87ead305fc43576f13361f0c400"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07dfe8ce86e64835019eebaab36e683e"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a07dfe8ce86e64835019eebaab36e683e">ad_y</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a07dfe8ce86e64835019eebaab36e683e"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic array for y-advective tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#a07dfe8ce86e64835019eebaab36e683e">More...</a><br /></td></tr>
+<tr class="memdesc:a07dfe8ce86e64835019eebaab36e683e"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic array for y-advective tracer flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#a07dfe8ce86e64835019eebaab36e683e">More...</a><br /></td></tr>
 <tr class="separator:a07dfe8ce86e64835019eebaab36e683e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae96397f42d630999fab4dbdefde27262"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#ae96397f42d630999fab4dbdefde27262">ad2d_x</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:ae96397f42d630999fab4dbdefde27262"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic vertical sum x-advective tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#ae96397f42d630999fab4dbdefde27262">More...</a><br /></td></tr>
+<tr class="memdesc:ae96397f42d630999fab4dbdefde27262"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic vertical sum x-advective tracer flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#ae96397f42d630999fab4dbdefde27262">More...</a><br /></td></tr>
 <tr class="separator:ae96397f42d630999fab4dbdefde27262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac22ee7cb288d31a9c4088f40d2a7a2de"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#ac22ee7cb288d31a9c4088f40d2a7a2de">ad2d_y</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:ac22ee7cb288d31a9c4088f40d2a7a2de"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic vertical sum y-advective tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#ac22ee7cb288d31a9c4088f40d2a7a2de">More...</a><br /></td></tr>
+<tr class="memdesc:ac22ee7cb288d31a9c4088f40d2a7a2de"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic vertical sum y-advective tracer flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#ac22ee7cb288d31a9c4088f40d2a7a2de">More...</a><br /></td></tr>
 <tr class="separator:ac22ee7cb288d31a9c4088f40d2a7a2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32fc6af6966ad44f7953189bbbab5d24"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a32fc6af6966ad44f7953189bbbab5d24">df_x</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a32fc6af6966ad44f7953189bbbab5d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic array for x-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#a32fc6af6966ad44f7953189bbbab5d24">More...</a><br /></td></tr>
+<tr class="memdesc:a32fc6af6966ad44f7953189bbbab5d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic array for x-diffusive tracer flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#a32fc6af6966ad44f7953189bbbab5d24">More...</a><br /></td></tr>
 <tr class="separator:a32fc6af6966ad44f7953189bbbab5d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe14ac7e7546d15643452aaa28ba7689"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#abe14ac7e7546d15643452aaa28ba7689">df_y</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:abe14ac7e7546d15643452aaa28ba7689"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic array for y-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#abe14ac7e7546d15643452aaa28ba7689">More...</a><br /></td></tr>
+<tr class="memdesc:abe14ac7e7546d15643452aaa28ba7689"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic array for y-diffusive tracer flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#abe14ac7e7546d15643452aaa28ba7689">More...</a><br /></td></tr>
 <tr class="separator:abe14ac7e7546d15643452aaa28ba7689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa751ab81598e3f45df292ec53e65b5"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#affa751ab81598e3f45df292ec53e65b5">lbd_dfx</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:affa751ab81598e3f45df292ec53e65b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic array for x-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#affa751ab81598e3f45df292ec53e65b5">More...</a><br /></td></tr>
+<tr class="separator:affa751ab81598e3f45df292ec53e65b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3c86cafe4d9339628e29864bbb7ad8"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#aba3c86cafe4d9339628e29864bbb7ad8">lbd_dfy</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:aba3c86cafe4d9339628e29864bbb7ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic array for y-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#aba3c86cafe4d9339628e29864bbb7ad8">More...</a><br /></td></tr>
+<tr class="separator:aba3c86cafe4d9339628e29864bbb7ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb6fe0d878e46f1bbcafca20d99ce32"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a5eb6fe0d878e46f1bbcafca20d99ce32">lbd_dfx_2d</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:a5eb6fe0d878e46f1bbcafca20d99ce32"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic array for x-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#a5eb6fe0d878e46f1bbcafca20d99ce32">More...</a><br /></td></tr>
+<tr class="separator:a5eb6fe0d878e46f1bbcafca20d99ce32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6a6d7d1467111eadca62c2add6612e"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#abe6a6d7d1467111eadca62c2add6612e">lbd_dfy_2d</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:abe6a6d7d1467111eadca62c2add6612e"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic array for y-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#abe6a6d7d1467111eadca62c2add6612e">More...</a><br /></td></tr>
+<tr class="separator:abe6a6d7d1467111eadca62c2add6612e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a1f6ac9ed7d1be5bbc510cdad9a3e53"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a1a1f6ac9ed7d1be5bbc510cdad9a3e53">lbd_bulk_df_x</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:a1a1f6ac9ed7d1be5bbc510cdad9a3e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic array for x-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#a1a1f6ac9ed7d1be5bbc510cdad9a3e53">More...</a><br /></td></tr>
+<tr class="separator:a1a1f6ac9ed7d1be5bbc510cdad9a3e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a791b80c9d8fbfe4494aee65392a3ecd3"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a791b80c9d8fbfe4494aee65392a3ecd3">lbd_bulk_df_y</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:a791b80c9d8fbfe4494aee65392a3ecd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic array for y-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#a791b80c9d8fbfe4494aee65392a3ecd3">More...</a><br /></td></tr>
+<tr class="separator:a791b80c9d8fbfe4494aee65392a3ecd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf3b547c7c05ecc7147336eb956e5998"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#abf3b547c7c05ecc7147336eb956e5998">df2d_x</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:abf3b547c7c05ecc7147336eb956e5998"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic vertical sum x-diffusive flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#abf3b547c7c05ecc7147336eb956e5998">More...</a><br /></td></tr>
+<tr class="memdesc:abf3b547c7c05ecc7147336eb956e5998"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic vertical sum x-diffusive flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#abf3b547c7c05ecc7147336eb956e5998">More...</a><br /></td></tr>
 <tr class="separator:abf3b547c7c05ecc7147336eb956e5998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a591202820acc6ca8f32b612c7dded555"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a591202820acc6ca8f32b612c7dded555">df2d_y</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a591202820acc6ca8f32b612c7dded555"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic vertical sum y-diffusive flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#a591202820acc6ca8f32b612c7dded555">More...</a><br /></td></tr>
+<tr class="memdesc:a591202820acc6ca8f32b612c7dded555"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic vertical sum y-diffusive flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#a591202820acc6ca8f32b612c7dded555">More...</a><br /></td></tr>
 <tr class="separator:a591202820acc6ca8f32b612c7dded555"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af452412563111ef94d2fd886dfe642db"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#af452412563111ef94d2fd886dfe642db">df2d_conc_x</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:af452412563111ef94d2fd886dfe642db"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic vertical sum x-diffusive content flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#af452412563111ef94d2fd886dfe642db">More...</a><br /></td></tr>
-<tr class="separator:af452412563111ef94d2fd886dfe642db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d6a20d8cfe5a9ccab8d55b39e1a1f8f"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a1d6a20d8cfe5a9ccab8d55b39e1a1f8f">df2d_conc_y</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a1d6a20d8cfe5a9ccab8d55b39e1a1f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">diagnostic vertical sum y-diffusive content flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#a1d6a20d8cfe5a9ccab8d55b39e1a1f8f">More...</a><br /></td></tr>
-<tr class="separator:a1d6a20d8cfe5a9ccab8d55b39e1a1f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a9d2f828ca672a2ee3a3bac05668338"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a5a9d2f828ca672a2ee3a3bac05668338">advection_xy</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a5a9d2f828ca672a2ee3a3bac05668338"><td class="mdescLeft">&#160;</td><td class="mdescRight">convergence of lateral advective tracer fluxes [conc H s-1 ~&gt; conc m s-1 or conc kg m-2 s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#a5a9d2f828ca672a2ee3a3bac05668338">More...</a><br /></td></tr>
+<tr class="memdesc:a5a9d2f828ca672a2ee3a3bac05668338"><td class="mdescLeft">&#160;</td><td class="mdescRight">convergence of lateral advective tracer fluxes [conc H T-1 ~&gt; conc m s-1 or conc kg m-2 s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#a5a9d2f828ca672a2ee3a3bac05668338">More...</a><br /></td></tr>
 <tr class="separator:a5a9d2f828ca672a2ee3a3bac05668338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ff30bd71e9a56b0d72fab34f89bd92b"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a1ff30bd71e9a56b0d72fab34f89bd92b">diff_cont_xy</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a1ff30bd71e9a56b0d72fab34f89bd92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">convergence of lateral diffusive tracer fluxes [conc H s-1 ~&gt; conc m s-1 or conc kg m-2 s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#a1ff30bd71e9a56b0d72fab34f89bd92b">More...</a><br /></td></tr>
-<tr class="separator:a1ff30bd71e9a56b0d72fab34f89bd92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac24dc1fc7491b388156c2a10159ee3c0"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#ac24dc1fc7491b388156c2a10159ee3c0">diff_conc_xy</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:ac24dc1fc7491b388156c2a10159ee3c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">convergence of lateral diffusive tracer fluxes expressed as a change in concentration [conc s-1]  <a href="structmom__tracer__registry_1_1tracer__type.html#ac24dc1fc7491b388156c2a10159ee3c0">More...</a><br /></td></tr>
-<tr class="separator:ac24dc1fc7491b388156c2a10159ee3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5da2daf244864a992e5878ad7a8ee834"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a5da2daf244864a992e5878ad7a8ee834">t_prev</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a5da2daf244864a992e5878ad7a8ee834"><td class="mdescLeft">&#160;</td><td class="mdescRight">tracer concentration array at a previous timestep used for diagnostics [conc]  <a href="structmom__tracer__registry_1_1tracer__type.html#a5da2daf244864a992e5878ad7a8ee834">More...</a><br /></td></tr>
 <tr class="separator:a5da2daf244864a992e5878ad7a8ee834"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,12 +210,6 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a0045f153bd6ece2450fc5a68e3d43d84"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a0045f153bd6ece2450fc5a68e3d43d84">ind_tr_squared</a> = -1</td></tr>
 <tr class="memdesc:a0045f153bd6ece2450fc5a68e3d43d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tracer registry index for the square of this tracer.  <a href="structmom__tracer__registry_1_1tracer__type.html#a0045f153bd6ece2450fc5a68e3d43d84">More...</a><br /></td></tr>
 <tr class="separator:a0045f153bd6ece2450fc5a68e3d43d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8932a91d6c5e45bd9329a01083c1326"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#ae8932a91d6c5e45bd9329a01083c1326">advect_tr</a> = .true.</td></tr>
-<tr class="memdesc:ae8932a91d6c5e45bd9329a01083c1326"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, this tracer should be advected.  <a href="structmom__tracer__registry_1_1tracer__type.html#ae8932a91d6c5e45bd9329a01083c1326">More...</a><br /></td></tr>
-<tr class="separator:ae8932a91d6c5e45bd9329a01083c1326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab54c1c5a842046994dbc505dd61defed"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#ab54c1c5a842046994dbc505dd61defed">hordiff_tr</a> = .true.</td></tr>
-<tr class="memdesc:ab54c1c5a842046994dbc505dd61defed"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, this tracer should experience epineutral diffusion.  <a href="structmom__tracer__registry_1_1tracer__type.html#ab54c1c5a842046994dbc505dd61defed">More...</a><br /></td></tr>
-<tr class="separator:ab54c1c5a842046994dbc505dd61defed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a570eef304821c1c16486d52b62f55d38"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a570eef304821c1c16486d52b62f55d38">remap_tr</a> = .true.</td></tr>
 <tr class="memdesc:a570eef304821c1c16486d52b62f55d38"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, this tracer should be vertically remapped.  <a href="structmom__tracer__registry_1_1tracer__type.html#a570eef304821c1c16486d52b62f55d38">More...</a><br /></td></tr>
 <tr class="separator:a570eef304821c1c16486d52b62f55d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,6 +232,24 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:ada16e9869678e4e27e6af77f70719720"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#ada16e9869678e4e27e6af77f70719720">id_dfy</a> = -1</td></tr>
 <tr class="memdesc:ada16e9869678e4e27e6af77f70719720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__tracer__registry_1_1tracer__type.html#ada16e9869678e4e27e6af77f70719720">More...</a><br /></td></tr>
 <tr class="separator:ada16e9869678e4e27e6af77f70719720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b08c94e37be474e9ce904739c44272f"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a3b08c94e37be474e9ce904739c44272f">id_lbd_bulk_dfx</a> = -1</td></tr>
+<tr class="memdesc:a3b08c94e37be474e9ce904739c44272f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__tracer__registry_1_1tracer__type.html#a3b08c94e37be474e9ce904739c44272f">More...</a><br /></td></tr>
+<tr class="separator:a3b08c94e37be474e9ce904739c44272f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e12b0d5929767f4a82d712c9727e51"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a53e12b0d5929767f4a82d712c9727e51">id_lbd_bulk_dfy</a> = -1</td></tr>
+<tr class="memdesc:a53e12b0d5929767f4a82d712c9727e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__tracer__registry_1_1tracer__type.html#a53e12b0d5929767f4a82d712c9727e51">More...</a><br /></td></tr>
+<tr class="separator:a53e12b0d5929767f4a82d712c9727e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6a944a33968ec6d5e01dce5bf12929"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a8f6a944a33968ec6d5e01dce5bf12929">id_lbd_dfx</a> = -1</td></tr>
+<tr class="memdesc:a8f6a944a33968ec6d5e01dce5bf12929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__tracer__registry_1_1tracer__type.html#a8f6a944a33968ec6d5e01dce5bf12929">More...</a><br /></td></tr>
+<tr class="separator:a8f6a944a33968ec6d5e01dce5bf12929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37880ffaa41cd3134b6a7b45a5271c94"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a37880ffaa41cd3134b6a7b45a5271c94">id_lbd_dfy</a> = -1</td></tr>
+<tr class="memdesc:a37880ffaa41cd3134b6a7b45a5271c94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__tracer__registry_1_1tracer__type.html#a37880ffaa41cd3134b6a7b45a5271c94">More...</a><br /></td></tr>
+<tr class="separator:a37880ffaa41cd3134b6a7b45a5271c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb01a6233b82fe066cceb6335fe653ba"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#aeb01a6233b82fe066cceb6335fe653ba">id_lbd_dfx_2d</a> = -1</td></tr>
+<tr class="memdesc:aeb01a6233b82fe066cceb6335fe653ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__tracer__registry_1_1tracer__type.html#aeb01a6233b82fe066cceb6335fe653ba">More...</a><br /></td></tr>
+<tr class="separator:aeb01a6233b82fe066cceb6335fe653ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c8a960f1047d3c0dfd2a8e301468685"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a2c8a960f1047d3c0dfd2a8e301468685">id_lbd_dfy_2d</a> = -1</td></tr>
+<tr class="memdesc:a2c8a960f1047d3c0dfd2a8e301468685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__tracer__registry_1_1tracer__type.html#a2c8a960f1047d3c0dfd2a8e301468685">More...</a><br /></td></tr>
+<tr class="separator:a2c8a960f1047d3c0dfd2a8e301468685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f9e4f788f43dd44ea25d3031c22a117"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a9f9e4f788f43dd44ea25d3031c22a117">id_adx_2d</a> = -1</td></tr>
 <tr class="memdesc:a9f9e4f788f43dd44ea25d3031c22a117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__tracer__registry_1_1tracer__type.html#a9f9e4f788f43dd44ea25d3031c22a117">More...</a><br /></td></tr>
 <tr class="separator:a9f9e4f788f43dd44ea25d3031c22a117"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,6 +277,15 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:ac8375b663c282d4e9f482898d6ecb35f"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#ac8375b663c282d4e9f482898d6ecb35f">id_dfxy_conc</a> = -1</td></tr>
 <tr class="memdesc:ac8375b663c282d4e9f482898d6ecb35f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__tracer__registry_1_1tracer__type.html#ac8375b663c282d4e9f482898d6ecb35f">More...</a><br /></td></tr>
 <tr class="separator:ac8375b663c282d4e9f482898d6ecb35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754aff4104da4efb960c86cf6a419b40"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a754aff4104da4efb960c86cf6a419b40">id_lbdxy_cont</a> = -1</td></tr>
+<tr class="memdesc:a754aff4104da4efb960c86cf6a419b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__tracer__registry_1_1tracer__type.html#a754aff4104da4efb960c86cf6a419b40">More...</a><br /></td></tr>
+<tr class="separator:a754aff4104da4efb960c86cf6a419b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a537c9d88d986f4481f7483f0896a1910"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a537c9d88d986f4481f7483f0896a1910">id_lbdxy_cont_2d</a> = -1</td></tr>
+<tr class="memdesc:a537c9d88d986f4481f7483f0896a1910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__tracer__registry_1_1tracer__type.html#a537c9d88d986f4481f7483f0896a1910">More...</a><br /></td></tr>
+<tr class="separator:a537c9d88d986f4481f7483f0896a1910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5b7a323a7ed9ab156746508d089f8b2"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#ae5b7a323a7ed9ab156746508d089f8b2">id_lbdxy_conc</a> = -1</td></tr>
+<tr class="memdesc:ae5b7a323a7ed9ab156746508d089f8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__tracer__registry_1_1tracer__type.html#ae5b7a323a7ed9ab156746508d089f8b2">More...</a><br /></td></tr>
+<tr class="separator:ae5b7a323a7ed9ab156746508d089f8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8880329115aaa00b4d4684d3b68e90e6"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__tracer__registry_1_1tracer__type.html#a8880329115aaa00b4d4684d3b68e90e6">id_remap_conc</a> = -1</td></tr>
 <tr class="memdesc:a8880329115aaa00b4d4684d3b68e90e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnostic IDs.  <a href="structmom__tracer__registry_1_1tracer__type.html#a8880329115aaa00b4d4684d3b68e90e6">More...</a><br /></td></tr>
 <tr class="separator:a8880329115aaa00b4d4684d3b68e90e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,10 +321,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>diagnostic vertical sum x-advective tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
+<p>diagnostic vertical sum x-advective tracer flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00050">50</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>,   <span class="keywordtype">pointer</span> :: ad2d_x         =&gt; null() <span class="comment">!&lt; diagnostic vertical sum x-advective tracer flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00051">51</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>,   <span class="keywordtype">pointer</span> :: ad2d_x         =&gt; null() <span class="comment">!&lt; diagnostic vertical sum x-advective tracer flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -313,10 +340,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>diagnostic vertical sum y-advective tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
+<p>diagnostic vertical sum y-advective tracer flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00052">52</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>,   <span class="keywordtype">pointer</span> :: ad2d_y         =&gt; null() <span class="comment">!&lt; diagnostic vertical sum y-advective tracer flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00053">53</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>,   <span class="keywordtype">pointer</span> :: ad2d_y         =&gt; null() <span class="comment">!&lt; diagnostic vertical sum y-advective tracer flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -332,10 +359,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>diagnostic array for x-advective tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
+<p>diagnostic array for x-advective tracer flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00046">46</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: ad_x           =&gt; null() <span class="comment">!&lt; diagnostic array for x-advective tracer flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00047">47</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: ad_x           =&gt; null() <span class="comment">!&lt; diagnostic array for x-advective tracer flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -351,29 +378,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>diagnostic array for y-advective tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
+<p>diagnostic array for y-advective tracer flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00048">48</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: ad_y           =&gt; null() <span class="comment">!&lt; diagnostic array for y-advective tracer flux</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ae8932a91d6c5e45bd9329a01083c1326"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8932a91d6c5e45bd9329a01083c1326">&#9670;&nbsp;</a></span>advect_tr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">logical mom_tracer_registry::tracer_type::advect_tr = .true.</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>If true, this tracer should be advected. </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00104">104</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">logical</span> :: advect_tr = .true.     <span class="comment">!&lt; If true, this tracer should be advected</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00049">49</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: ad_y           =&gt; null() <span class="comment">!&lt; diagnostic array for y-advective tracer flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -389,10 +397,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>convergence of lateral advective tracer fluxes [conc H s-1 ~&gt; conc m s-1 or conc kg m-2 s-1] </p>
+<p>convergence of lateral advective tracer fluxes [conc H T-1 ~&gt; conc m s-1 or conc kg m-2 s-1] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00068">68</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: advection_xy   =&gt; null() <span class="comment">!&lt; convergence of lateral advective tracer fluxes</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00081">81</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: advection_xy   =&gt; null() <span class="comment">!&lt; convergence of lateral advective tracer fluxes</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -410,8 +418,8 @@ Public variables and constants</h2></td></tr>
 
 <p>CMOR long name of the tracer. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">character(len=240)</span>              :: cmor_longname<span class="comment">            !&lt; CMOR long name of the tracer</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00100">100</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">character(len=240)</span>              :: cmor_longname<span class="comment">            !&lt; CMOR long name of the tracer</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -429,8 +437,8 @@ Public variables and constants</h2></td></tr>
 
 <p>CMOR name of this tracer. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">character(len=64)</span>               :: cmor_name<span class="comment">                !&lt; CMOR name of this tracer</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00098">98</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">character(len=64)</span>               :: cmor_name<span class="comment">                !&lt; CMOR name of this tracer</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -448,8 +456,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The CMOR variable prefix for tendencies of this tracer, required because CMOR does not follow any discernable pattern for these names. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00098">98</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">character(len=48)</span>               :: cmor_tendprefix = <span class="stringliteral">&quot;&quot;</span><span class="comment">     !&lt; The CMOR variable prefix for tendencies of this</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">character(len=48)</span>               :: cmor_tendprefix = <span class="stringliteral">&quot;&quot;</span><span class="comment">     !&lt; The CMOR variable prefix for tendencies of this</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -467,8 +475,8 @@ Public variables and constants</h2></td></tr>
 
 <p>CMOR physical dimensions of the tracer. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">character(len=64)</span>               :: cmor_units<span class="comment">               !&lt; CMOR physical dimensions of the tracer</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00099">99</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">character(len=64)</span>               :: cmor_units<span class="comment">               !&lt; CMOR physical dimensions of the tracer</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -486,8 +494,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A scaling factor used to convert the flux convergence of this tracer to its desired units. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00096">96</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">  real</span>                            :: conv_scale = 1.0<span class="comment">         !&lt; A scaling factor used to convert the flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">  real</span>                            :: conv_scale = 1.0<span class="comment">         !&lt; A scaling factor used to convert the flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -505,46 +513,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The units for the flux convergence of this tracer. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00095">95</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">character(len=48)</span>               :: conv_units = <span class="stringliteral">&quot;&quot;</span><span class="comment">          !&lt; The units for the flux convergence of this tracer.</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="af452412563111ef94d2fd886dfe642db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af452412563111ef94d2fd886dfe642db">&#9670;&nbsp;</a></span>df2d_conc_x</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">real, dimension(:,:), pointer mom_tracer_registry::tracer_type::df2d_conc_x =&gt; NULL()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>diagnostic vertical sum x-diffusive content flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00063">63</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>,   <span class="keywordtype">pointer</span> :: df2d_conc_x    =&gt; null() <span class="comment">!&lt; diagnostic vertical sum x-diffusive content flux</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1d6a20d8cfe5a9ccab8d55b39e1a1f8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d6a20d8cfe5a9ccab8d55b39e1a1f8f">&#9670;&nbsp;</a></span>df2d_conc_y</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">real, dimension(:,:), pointer mom_tracer_registry::tracer_type::df2d_conc_y =&gt; NULL()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>diagnostic vertical sum y-diffusive content flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00065">65</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>,   <span class="keywordtype">pointer</span> :: df2d_conc_y    =&gt; null() <span class="comment">!&lt; diagnostic vertical sum y-diffusive content flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00108">108</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">character(len=48)</span>               :: conv_units = <span class="stringliteral">&quot;&quot;</span><span class="comment">          !&lt; The units for the flux convergence of this tracer.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -560,10 +530,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>diagnostic vertical sum x-diffusive flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
+<p>diagnostic vertical sum x-diffusive flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00059">59</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>,   <span class="keywordtype">pointer</span> :: df2d_x         =&gt; null() <span class="comment">!&lt; diagnostic vertical sum x-diffusive flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00072">72</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>,   <span class="keywordtype">pointer</span> :: df2d_x         =&gt; null() <span class="comment">!&lt; diagnostic vertical sum x-diffusive flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -579,10 +549,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>diagnostic vertical sum y-diffusive flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
+<p>diagnostic vertical sum y-diffusive flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00061">61</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>,   <span class="keywordtype">pointer</span> :: df2d_y         =&gt; null() <span class="comment">!&lt; diagnostic vertical sum y-diffusive flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00074">74</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>,   <span class="keywordtype">pointer</span> :: df2d_y         =&gt; null() <span class="comment">!&lt; diagnostic vertical sum y-diffusive flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -598,10 +568,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>diagnostic array for x-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
+<p>diagnostic array for x-diffusive tracer flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00055">55</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: df_x           =&gt; null() <span class="comment">!&lt; diagnostic array for x-diffusive tracer flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00056">56</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: df_x           =&gt; null() <span class="comment">!&lt; diagnostic array for x-diffusive tracer flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -617,10 +587,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>diagnostic array for y-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
+<p>diagnostic array for y-diffusive tracer flux [conc H L2 T-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00057">57</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: df_y           =&gt; null() <span class="comment">!&lt; diagnostic array for y-diffusive tracer flux</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00058">58</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: df_y           =&gt; null() <span class="comment">!&lt; diagnostic array for y-diffusive tracer flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -638,46 +608,8 @@ Public variables and constants</h2></td></tr>
 
 <p>An integer indicating which template is to be used to label diagnostics. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00108">108</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">integer</span> :: diag_form = 1<span class="comment">  !&lt; An integer indicating which template is to be used to label diagnostics.</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ac24dc1fc7491b388156c2a10159ee3c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac24dc1fc7491b388156c2a10159ee3c0">&#9670;&nbsp;</a></span>diff_conc_xy</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">real, dimension(:,:,:), pointer mom_tracer_registry::tracer_type::diff_conc_xy =&gt; NULL()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>convergence of lateral diffusive tracer fluxes expressed as a change in concentration [conc s-1] </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00072">72</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: diff_conc_xy   =&gt; null() <span class="comment">!&lt; convergence of lateral diffusive tracer fluxes</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1ff30bd71e9a56b0d72fab34f89bd92b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ff30bd71e9a56b0d72fab34f89bd92b">&#9670;&nbsp;</a></span>diff_cont_xy</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">real, dimension(:,:,:), pointer mom_tracer_registry::tracer_type::diff_cont_xy =&gt; NULL()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>convergence of lateral diffusive tracer fluxes [conc H s-1 ~&gt; conc m s-1 or conc kg m-2 s-1] </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00070">70</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: diff_cont_xy   =&gt; null() <span class="comment">!&lt; convergence of lateral diffusive tracer fluxes</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">integer</span> :: diag_form = 1<span class="comment">  !&lt; An integer indicating which template is to be used to label diagnostics.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -695,8 +627,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A word or phrase used construct the long names of flux diagnostics. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">character(len=64)</span>               :: flux_longname = <span class="stringliteral">&quot;&quot;</span><span class="comment">       !&lt; A word or phrase used construct the long</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00103">103</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">character(len=64)</span>               :: flux_longname = <span class="stringliteral">&quot;&quot;</span><span class="comment">       !&lt; A word or phrase used construct the long</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -714,8 +646,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Short tracer name snippet used construct the names of flux diagnostics. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">character(len=32)</span>               :: flux_nameroot = <span class="stringliteral">&quot;&quot;</span><span class="comment">       !&lt; Short tracer name snippet used construct the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00101">101</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">character(len=32)</span>               :: flux_nameroot = <span class="stringliteral">&quot;&quot;</span><span class="comment">       !&lt; Short tracer name snippet used construct the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -733,8 +665,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A scaling factor used to convert the fluxes of this tracer to its desired units. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00092">92</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">  real</span>                            :: flux_scale= 1.0<span class="comment">          !&lt; A scaling factor used to convert the fluxes</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00105">105</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">  real</span>                            :: flux_scale= 1.0<span class="comment">          !&lt; A scaling factor used to convert the fluxes</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -752,27 +684,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The units for fluxes of this variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">character(len=48)</span>               :: flux_units = <span class="stringliteral">&quot;&quot;</span><span class="comment">          !&lt; The units for fluxes of this variable.</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ab54c1c5a842046994dbc505dd61defed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab54c1c5a842046994dbc505dd61defed">&#9670;&nbsp;</a></span>hordiff_tr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">logical mom_tracer_registry::tracer_type::hordiff_tr = .true.</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>If true, this tracer should experience epineutral diffusion. </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00105">105</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">logical</span> :: hordiff_tr = .true.    <span class="comment">!&lt; If true, this tracer should experience epineutral diffusion</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00107">107</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">character(len=48)</span>               :: flux_units = <span class="stringliteral">&quot;&quot;</span><span class="comment">          !&lt; The units for fluxes of this variable.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -790,8 +703,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">integer</span> :: id_adv_xy = -1, id_adv_xy_2d = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00128">128</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">integer</span> :: id_adv_xy = -1, id_adv_xy_2d = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -809,7 +722,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00128">128</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
 
 </div>
 </div>
@@ -827,8 +740,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">integer</span> :: id_adx = -1, id_ady = -1, id_dfx = -1, id_dfy = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">integer</span> :: id_adx = -1, id_ady = -1, id_dfx = -1, id_dfy = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -846,8 +759,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">integer</span> :: id_adx_2d = -1, id_ady_2d = -1, id_dfx_2d = -1, id_dfy_2d = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00127">127</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">integer</span> :: id_adx_2d = -1, id_ady_2d = -1, id_dfx_2d = -1, id_dfy_2d = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -865,7 +778,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
 
 </div>
 </div>
@@ -883,7 +796,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00127">127</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
 
 </div>
 </div>
@@ -901,7 +814,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
 
 </div>
 </div>
@@ -919,7 +832,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00127">127</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
 
 </div>
 </div>
@@ -937,7 +850,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00129">129</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
 
 </div>
 </div>
@@ -955,8 +868,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">integer</span> :: id_dfxy_cont = -1, id_dfxy_cont_2d = -1, id_dfxy_conc = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00129">129</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">integer</span> :: id_dfxy_cont = -1, id_dfxy_cont_2d = -1, id_dfxy_conc = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -974,7 +887,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00129">129</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
 
 </div>
 </div>
@@ -992,7 +905,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +923,172 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00127">127</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+
+</div>
+</div>
+<a id="a3b08c94e37be474e9ce904739c44272f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b08c94e37be474e9ce904739c44272f">&#9670;&nbsp;</a></span>id_lbd_bulk_dfx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_tracer_registry::tracer_type::id_lbd_bulk_dfx = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diagnostic IDs. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">integer</span> :: id_lbd_bulk_dfx = -1, id_lbd_bulk_dfy = -1, id_lbd_dfx = -1, id_lbd_dfy = -1</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a53e12b0d5929767f4a82d712c9727e51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53e12b0d5929767f4a82d712c9727e51">&#9670;&nbsp;</a></span>id_lbd_bulk_dfy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_tracer_registry::tracer_type::id_lbd_bulk_dfy = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diagnostic IDs. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+
+</div>
+</div>
+<a id="a8f6a944a33968ec6d5e01dce5bf12929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f6a944a33968ec6d5e01dce5bf12929">&#9670;&nbsp;</a></span>id_lbd_dfx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_tracer_registry::tracer_type::id_lbd_dfx = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diagnostic IDs. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+
+</div>
+</div>
+<a id="aeb01a6233b82fe066cceb6335fe653ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb01a6233b82fe066cceb6335fe653ba">&#9670;&nbsp;</a></span>id_lbd_dfx_2d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_tracer_registry::tracer_type::id_lbd_dfx_2d = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diagnostic IDs. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">integer</span> :: id_lbd_dfx_2d = -1  , id_lbd_dfy_2d = -1</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a37880ffaa41cd3134b6a7b45a5271c94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37880ffaa41cd3134b6a7b45a5271c94">&#9670;&nbsp;</a></span>id_lbd_dfy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_tracer_registry::tracer_type::id_lbd_dfy = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diagnostic IDs. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+
+</div>
+</div>
+<a id="a2c8a960f1047d3c0dfd2a8e301468685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c8a960f1047d3c0dfd2a8e301468685">&#9670;&nbsp;</a></span>id_lbd_dfy_2d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_tracer_registry::tracer_type::id_lbd_dfy_2d = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diagnostic IDs. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+
+</div>
+</div>
+<a id="ae5b7a323a7ed9ab156746508d089f8b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5b7a323a7ed9ab156746508d089f8b2">&#9670;&nbsp;</a></span>id_lbdxy_conc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_tracer_registry::tracer_type::id_lbdxy_conc = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diagnostic IDs. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00130">130</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+
+</div>
+</div>
+<a id="a754aff4104da4efb960c86cf6a419b40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a754aff4104da4efb960c86cf6a419b40">&#9670;&nbsp;</a></span>id_lbdxy_cont</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_tracer_registry::tracer_type::id_lbdxy_cont = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diagnostic IDs. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00130">130</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">integer</span> :: id_lbdxy_cont = -1, id_lbdxy_cont_2d = -1, id_lbdxy_conc = -1</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a537c9d88d986f4481f7483f0896a1910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a537c9d88d986f4481f7483f0896a1910">&#9670;&nbsp;</a></span>id_lbdxy_cont_2d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_tracer_registry::tracer_type::id_lbdxy_cont_2d = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diagnostic IDs. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00130">130</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
 
 </div>
 </div>
@@ -1028,8 +1106,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">integer</span> :: id_remap_conc = -1, id_remap_cont = -1, id_remap_cont_2d = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">integer</span> :: id_remap_conc = -1, id_remap_cont = -1, id_remap_cont_2d = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1047,7 +1125,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
 
 </div>
 </div>
@@ -1065,7 +1143,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
 
 </div>
 </div>
@@ -1083,8 +1161,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00116">116</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">integer</span> :: id_tendency = -1, id_trxh_tendency = -1, id_trxh_tendency_2d = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00132">132</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">integer</span> :: id_tendency = -1, id_trxh_tendency = -1, id_trxh_tendency_2d = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1102,8 +1180,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00110">110</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">integer</span> :: id_tr = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">integer</span> :: id_tr = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1121,8 +1199,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00117">117</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">integer</span> :: id_tr_vardec = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00133">133</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">integer</span> :: id_tr_vardec = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1140,7 +1218,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00116">116</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00132">132</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1236,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00116">116</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00132">132</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
 
 </div>
 </div>
@@ -1176,8 +1254,122 @@ Public variables and constants</h2></td></tr>
 
 <p>The tracer registry index for the square of this tracer. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00101">101</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">integer</span> :: ind_tr_squared = -1<span class="comment"> !&lt; The tracer registry index for the square of this tracer</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">integer</span> :: ind_tr_squared = -1<span class="comment"> !&lt; The tracer registry index for the square of this tracer</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1a1f6ac9ed7d1be5bbc510cdad9a3e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a1f6ac9ed7d1be5bbc510cdad9a3e53">&#9670;&nbsp;</a></span>lbd_bulk_df_x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real, dimension(:,:), pointer mom_tracer_registry::tracer_type::lbd_bulk_df_x =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>diagnostic array for x-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00068">68</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: lbd_bulk_df_x       =&gt; null() <span class="comment">!&lt; diagnostic array for x-diffusive tracer flux</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a791b80c9d8fbfe4494aee65392a3ecd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a791b80c9d8fbfe4494aee65392a3ecd3">&#9670;&nbsp;</a></span>lbd_bulk_df_y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real, dimension(:,:), pointer mom_tracer_registry::tracer_type::lbd_bulk_df_y =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>diagnostic array for y-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00070">70</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: lbd_bulk_df_y       =&gt; null() <span class="comment">!&lt; diagnostic array for y-diffusive tracer flux</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="affa751ab81598e3f45df292ec53e65b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa751ab81598e3f45df292ec53e65b5">&#9670;&nbsp;</a></span>lbd_dfx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real, dimension(:,:,:), pointer mom_tracer_registry::tracer_type::lbd_dfx =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>diagnostic array for x-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00060">60</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: lbd_dfx       =&gt; null()  <span class="comment">!&lt; diagnostic array for x-diffusive tracer flux</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5eb6fe0d878e46f1bbcafca20d99ce32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb6fe0d878e46f1bbcafca20d99ce32">&#9670;&nbsp;</a></span>lbd_dfx_2d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real, dimension(:,:), pointer mom_tracer_registry::tracer_type::lbd_dfx_2d =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>diagnostic array for x-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00064">64</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: lbd_dfx_2d       =&gt; null() <span class="comment">!&lt; diagnostic array for x-diffusive tracer flux</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aba3c86cafe4d9339628e29864bbb7ad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba3c86cafe4d9339628e29864bbb7ad8">&#9670;&nbsp;</a></span>lbd_dfy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real, dimension(:,:,:), pointer mom_tracer_registry::tracer_type::lbd_dfy =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>diagnostic array for y-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00062">62</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: lbd_dfy       =&gt; null()  <span class="comment">!&lt; diagnostic array for y-diffusive tracer flux</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abe6a6d7d1467111eadca62c2add6612e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6a6d7d1467111eadca62c2add6612e">&#9670;&nbsp;</a></span>lbd_dfy_2d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real, dimension(:,:), pointer mom_tracer_registry::tracer_type::lbd_dfy_2d =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>diagnostic array for y-diffusive tracer flux [conc H m2 s-1 ~&gt; conc m3 s-1 or conc kg s-1] </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00066">66</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: lbd_dfy_2d       =&gt; null() <span class="comment">!&lt; diagnostic array for y-diffusive tracer flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1195,8 +1387,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Long name of the variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00081">81</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">character(len=240)</span>              :: longname<span class="comment">                 !&lt; Long name of the variable</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">character(len=240)</span>              :: longname<span class="comment">                 !&lt; Long name of the variable</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1214,8 +1406,8 @@ Public variables and constants</h2></td></tr>
 
 <p>tracer name used for diagnostics and error messages </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00079">79</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">character(len=32)</span>               :: name<span class="comment">                     !&lt; tracer name used for diagnostics and error messages</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00092">92</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">character(len=32)</span>               :: name<span class="comment">                     !&lt; tracer name used for diagnostics and error messages</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1233,8 +1425,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the registry to set up the diagnostics associated with this tracer. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00083">83</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">logical</span>                         :: registry_diags = .false. <span class="comment">!&lt; If true, use the registry to set up the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00096">96</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">logical</span>                         :: registry_diags = .false. <span class="comment">!&lt; If true, use the registry to set up the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1252,8 +1444,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, this tracer should be vertically remapped. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00106">106</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">logical</span> :: remap_tr = .true.      <span class="comment">!&lt; If true, this tracer should be vertically remapped</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">logical</span> :: remap_tr = .true.      <span class="comment">!&lt; If true, this tracer should be vertically remapped</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1271,8 +1463,8 @@ Public variables and constants</h2></td></tr>
 
 <p>tracer concentration array [conc] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00039">39</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: t              =&gt; null() <span class="comment">!&lt; tracer concentration array [conc]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00040">40</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: t              =&gt; null() <span class="comment">!&lt; tracer concentration array [conc]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1290,8 +1482,8 @@ Public variables and constants</h2></td></tr>
 
 <p>tracer concentration array at a previous timestep used for diagnostics [conc] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00074">74</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: t_prev         =&gt; null() <span class="comment">!&lt; tracer concentration array at a previous</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: t_prev         =&gt; null() <span class="comment">!&lt; tracer concentration array at a previous</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1309,8 +1501,8 @@ Public variables and constants</h2></td></tr>
 
 <p>layer integrated tracer concentration array at a previous timestep used for diagnostics </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: Trxh_prev      =&gt; null() <span class="comment">!&lt; layer integrated tracer concentration array</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00089">89</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: Trxh_prev      =&gt; null() <span class="comment">!&lt; layer integrated tracer concentration array</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1328,13 +1520,13 @@ Public variables and constants</h2></td></tr>
 
 <p>Physical dimensions of the tracer concentration. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00080">80</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">character(len=64)</span>               :: units<span class="comment">                    !&lt; Physical dimensions of the tracer concentration</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__tracer__registry_8F90_source.html#l00093">93</a> of file <a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">character(len=64)</span>               :: units<span class="comment">                    !&lt; Physical dimensions of the tracer concentration</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/tracer/<a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/tracer/<a class="el" href="MOM__tracer__registry_8F90_source.html">MOM_tracer_registry.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

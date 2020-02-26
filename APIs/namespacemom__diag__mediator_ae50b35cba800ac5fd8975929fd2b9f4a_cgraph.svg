@@ -46,23 +46,23 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 886;
+var viewWidth = 840;
 var viewHeight = 341;
-var sectionId = 'dynsection-59';
+var sectionId = 'dynsection-60';
 </script>
 <script xlink:href="svgpan.js"/>
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_diag_mediator::register_diag_field_expand_cmor</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-337 882,-337 882,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-337 836,-337 836,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Returns True if either the native or CMOr version of the diagnostic were registered....">
-<polygon fill="#bfbfbf" stroke="#000000" points="0,-118.5 0,-159.5 117,-159.5 117,-118.5 0,-118.5"/>
+<polygon fill="#bfbfbf" stroke="#000000" points="0,-118.5 0,-159.5 110,-159.5 110,-118.5 0,-118.5"/>
 <text text-anchor="start" x="8" y="-147.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
 <text text-anchor="start" x="8" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">register_diag_field</text>
-<text text-anchor="middle" x="58.5" y="-125.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_expand_cmor</text>
+<text text-anchor="middle" x="55" y="-125.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_expand_cmor</text>
 </a>
 </g>
 </g>
@@ -70,218 +70,218 @@ var sectionId = 'dynsection-59';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__diag__mediator.html#a8415b33a337b1fbc7535688eca85ab37" target="_top" xlink:title="Create a diagnostic type and attached to list.">
-<polygon fill="#ffffff" stroke="#000000" points="153,-206 153,-236 270,-236 270,-206 153,-206"/>
-<text text-anchor="start" x="161" y="-224" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
-<text text-anchor="middle" x="211.5" y="-213" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">add_diag_to_list</text>
+<polygon fill="#ffffff" stroke="#000000" points="146,-206 146,-236 256,-236 256,-206 146,-206"/>
+<text text-anchor="start" x="154" y="-224" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
+<text text-anchor="middle" x="201" y="-213" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">add_diag_to_list</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M97.1084,-159.6921C120.7101,-172.3413 150.7493,-188.4408 174.1222,-200.9674"/>
-<polygon fill="#191970" stroke="#191970" points="172.5796,-204.1116 183.0469,-205.7506 175.8863,-197.9419 172.5796,-204.1116"/>
+<path fill="none" stroke="#191970" d="M91.842,-159.6921C114.2642,-172.2854 142.7752,-188.2984 165.0358,-200.8009"/>
+<polygon fill="#191970" stroke="#191970" points="163.4158,-203.9053 173.8487,-205.7506 166.8437,-197.802 163.4158,-203.9053"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="This returns .true. if the current PE is the root PE.">
-<polygon fill="#ffffff" stroke="#000000" points="763,-231 763,-261 878,-261 878,-231 763,-231"/>
-<text text-anchor="start" x="771" y="-249" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="820.5" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
+<polygon fill="#ffffff" stroke="#000000" points="726,-231 726,-261 832,-261 832,-231 726,-231"/>
+<text text-anchor="start" x="734" y="-249" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="779" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge13" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M72.7886,-159.6933C89.7071,-182.9521 119.8089,-220.6378 153,-245 235.0757,-305.2433 262.688,-333 364.5,-333 364.5,-333 364.5,-333 517.5,-333 614.7648,-333 723.0101,-291.0718 780.1152,-265.4297"/>
-<polygon fill="#191970" stroke="#191970" points="781.8513,-268.485 789.5005,-261.1542 778.9493,-262.1148 781.8513,-268.485"/>
+<path fill="none" stroke="#191970" d="M68.6696,-159.6219C84.8791,-182.8152 113.7906,-220.4409 146,-245 223.5488,-304.1296 249.4801,-333 347,-333 347,-333 347,-333 493,-333 585.0442,-333 686.8195,-291.2449 740.667,-265.5889"/>
+<polygon fill="#191970" stroke="#191970" points="742.3571,-268.6594 749.8354,-261.1542 739.3091,-262.3578 742.3571,-268.6594"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="namespacemom__diag__mediator.html#a14d405e0958e6e58797253c52c666cdb" target="_top" xlink:title="Adds the encoded &quot;cell_methods&quot; for a diagnostics as a diag% property This allows access to the cell_...">
-<polygon fill="#ffffff" stroke="#000000" points="459,-143 459,-173 576,-173 576,-143 459,-143"/>
-<text text-anchor="start" x="467" y="-161" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
-<text text-anchor="middle" x="517.5" y="-150" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">add_xyz_method</text>
+<polygon fill="#ffffff" stroke="#000000" points="438,-143 438,-173 548,-173 548,-143 438,-143"/>
+<text text-anchor="start" x="446" y="-161" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
+<text text-anchor="middle" x="493" y="-150" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">add_xyz_method</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
 <g id="edge9" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="#191970" d="M117.0989,-141.4257C201.9226,-144.9369 358.6038,-151.4226 448.7676,-155.1549"/>
-<polygon fill="#191970" stroke="#191970" points="448.7517,-158.6571 458.8879,-155.5738 449.0412,-151.6631 448.7517,-158.6571"/>
+<path fill="none" stroke="#191970" d="M110.0295,-141.3871C190.8373,-144.8925 341.3363,-151.421 427.652,-155.1653"/>
+<polygon fill="#191970" stroke="#191970" points="427.7088,-158.6709 437.8511,-155.6077 428.0122,-151.6775 427.7088,-158.6709"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
 <g id="a_node10"><a xlink:href="namespacemom__diag__mediator.html#ae0f04c145cb120fc2ab6cbfe9f166392" target="_top" xlink:title="Attaches &quot;cell_methods&quot; attribute to a variable based on defaults for axes_grp or optional arguments.">
-<polygon fill="#ffffff" stroke="#000000" points="306,-99 306,-129 423,-129 423,-99 306,-99"/>
-<text text-anchor="start" x="314" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
-<text text-anchor="middle" x="364.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">attach_cell_methods</text>
+<polygon fill="#ffffff" stroke="#000000" points="292,-99 292,-129 402,-129 402,-99 292,-99"/>
+<text text-anchor="start" x="300" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
+<text text-anchor="middle" x="347" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">attach_cell_methods</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node10 -->
 <g id="edge11" class="edge">
 <title>Node1&#45;&gt;Node10</title>
-<path fill="none" stroke="#191970" d="M117.1378,-134.2093C168.0854,-130.0469 241.9353,-124.0135 295.6726,-119.6232"/>
-<polygon fill="#191970" stroke="#191970" points="296.1186,-123.0985 305.8004,-118.7957 295.5485,-116.1217 296.1186,-123.0985"/>
+<path fill="none" stroke="#191970" d="M110.2663,-134.2683C159.0931,-130.0879 230.3511,-123.9871 281.9208,-119.5718"/>
+<polygon fill="#191970" stroke="#191970" points="282.2948,-123.0527 291.9598,-118.7123 281.6976,-116.0782 282.2948,-123.0527"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
 <g id="a_node11"><a xlink:href="namespacemom__diag__mediator.html#a65fe8d329cf5dbfd08c98874a7a64407" target="_top" xlink:title="Log a diagnostic to the available diagnostics file.">
-<polygon fill="#ffffff" stroke="#000000" points="153,-61 153,-91 270,-91 270,-61 153,-61"/>
-<text text-anchor="start" x="161" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
-<text text-anchor="middle" x="211.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">log_available_diag</text>
+<polygon fill="#ffffff" stroke="#000000" points="146,-61 146,-91 256,-91 256,-61 146,-61"/>
+<text text-anchor="start" x="154" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
+<text text-anchor="middle" x="201" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">log_available_diag</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node11 -->
 <g id="edge14" class="edge">
 <title>Node1&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M108.5979,-118.3714C126.8342,-110.8624 147.3521,-102.4138 165.2406,-95.048"/>
-<polygon fill="#191970" stroke="#191970" points="166.9629,-98.124 174.877,-91.0801 164.2976,-91.6512 166.9629,-98.124"/>
+<path fill="none" stroke="#191970" d="M102.8059,-118.3714C120.2078,-110.8624 139.787,-102.4138 156.8571,-95.048"/>
+<polygon fill="#191970" stroke="#191970" points="158.2576,-98.2557 166.0526,-91.0801 155.4842,-91.8285 158.2576,-98.2557"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
 <g id="a_node13"><a xlink:href="namespacemom__diag__mediator.html#aca4a32fea8dade9f51e076a56b9bad2b" target="_top" xlink:title="Returns an FMS id from register_diag_field_fms (the diag_manager routine) after expanding axes (axes&#45;...">
-<polygon fill="#ffffff" stroke="#000000" points="153,-.5 153,-41.5 270,-41.5 270,-.5 153,-.5"/>
-<text text-anchor="start" x="161" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
-<text text-anchor="start" x="161" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">register_diag_field</text>
-<text text-anchor="middle" x="211.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_expand_axes</text>
+<polygon fill="#ffffff" stroke="#000000" points="146,-.5 146,-41.5 256,-41.5 256,-.5 146,-.5"/>
+<text text-anchor="start" x="154" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
+<text text-anchor="start" x="154" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">register_diag_field</text>
+<text text-anchor="middle" x="201" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_expand_axes</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node13 -->
 <g id="edge16" class="edge">
 <title>Node1&#45;&gt;Node13</title>
-<path fill="none" stroke="#191970" d="M77.3883,-118.4022C95.5426,-99.3705 124.3715,-71.0868 153,-51 154.8979,-49.6684 156.8629,-48.3592 158.8724,-47.0773"/>
-<polygon fill="#191970" stroke="#191970" points="161.1342,-49.8011 167.8982,-41.6464 157.5252,-43.8032 161.1342,-49.8011"/>
+<path fill="none" stroke="#191970" d="M73.5012,-118.1383C90.9842,-99.1826 118.5549,-71.179 146,-51 147.8156,-49.6651 149.6975,-48.3498 151.6233,-47.0596"/>
+<polygon fill="#191970" stroke="#191970" points="153.6995,-49.8876 160.2763,-41.5812 149.9551,-43.9733 153.6995,-49.8876"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__diag__mediator.html#a1b0bed2113a0c268eafd1bafbb48bd4f" target="_top" xlink:title="Make a new diagnostic. Either use memory which is in the array of &#39;primary&#39; diagnostics,...">
-<polygon fill="#ffffff" stroke="#000000" points="306,-274 306,-304 423,-304 423,-274 306,-274"/>
-<text text-anchor="start" x="314" y="-292" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
-<text text-anchor="middle" x="364.5" y="-281" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">alloc_diag_with_id</text>
+<polygon fill="#ffffff" stroke="#000000" points="292,-274 292,-304 402,-304 402,-274 292,-274"/>
+<text text-anchor="start" x="300" y="-292" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
+<text text-anchor="middle" x="347" y="-281" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">alloc_diag_with_id</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M242.834,-236.0343C261.1536,-244.7124 284.7786,-255.7124 306,-265 309.7901,-266.6588 313.7322,-268.3493 317.6993,-270.0262"/>
-<polygon fill="#191970" stroke="#191970" points="316.3656,-273.2622 326.9416,-273.8933 319.0675,-266.8046 316.3656,-273.2622"/>
+<path fill="none" stroke="#191970" d="M231.6081,-236.1664C249.1967,-244.7893 271.7508,-255.6909 292,-265 295.4195,-266.572 298.9691,-268.1783 302.5441,-269.7779"/>
+<polygon fill="#191970" stroke="#191970" points="301.434,-273.1142 311.9943,-273.9681 304.2714,-266.7151 301.434,-273.1142"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__error__handler.html#a33bcd190d460095104954f2e654f9fe6" target="_top" xlink:title="Issues a FATAL error if the assertion fails, i.e. the first argument is false.">
-<polygon fill="#ffffff" stroke="#000000" points="460,-192 460,-222 575,-222 575,-192 460,-192"/>
-<text text-anchor="start" x="468" y="-210" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="517.5" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">assert</text>
+<polygon fill="#ffffff" stroke="#000000" points="440,-192 440,-222 546,-222 546,-192 440,-192"/>
+<text text-anchor="start" x="448" y="-210" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="493" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">assert</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M270.2143,-217.038C282.0586,-216.3047 294.4251,-215.5863 306,-215 353.8708,-212.5753 407.8708,-210.5445 449.3244,-209.1357"/>
-<polygon fill="#191970" stroke="#191970" points="449.705,-212.625 459.5818,-208.7911 449.4698,-205.6289 449.705,-212.625"/>
+<path fill="none" stroke="#191970" d="M256.3275,-217.1207C268.0991,-216.3601 280.4581,-215.6101 292,-215 338.0378,-212.5665 390.0427,-210.5155 429.6192,-209.0996"/>
+<polygon fill="#191970" stroke="#191970" points="429.7898,-212.5958 439.6598,-208.7444 429.5422,-205.6002 429.7898,-212.5958"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="namespacemom__diag__mediator.html#a3f7442639213320f7429e2288a79fda2" target="_top" xlink:title="Returns a new diagnostic id, it may be necessary to expand the diagnostics array.">
-<polygon fill="#ffffff" stroke="#000000" points="306,-225 306,-255 423,-255 423,-225 306,-225"/>
-<text text-anchor="start" x="314" y="-243" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
-<text text-anchor="middle" x="364.5" y="-232" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">get_new_diag_id</text>
+<polygon fill="#ffffff" stroke="#000000" points="292,-225 292,-255 402,-255 402,-225 292,-225"/>
+<text text-anchor="start" x="300" y="-243" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
+<text text-anchor="middle" x="347" y="-232" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">get_new_diag_id</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node2&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M270.2162,-228.2916C278.6354,-229.3371 287.3589,-230.4204 295.9473,-231.4869"/>
-<polygon fill="#191970" stroke="#191970" points="295.5858,-234.9688 305.9409,-232.728 296.4485,-228.0222 295.5858,-234.9688"/>
+<path fill="none" stroke="#191970" d="M256.1963,-228.1831C264.5541,-229.2707 273.2434,-230.4015 281.7888,-231.5136"/>
+<polygon fill="#191970" stroke="#191970" points="281.3575,-234.9869 291.7256,-232.8068 282.2609,-228.0454 281.3575,-234.9869"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="This provides a convenient interface for writing an mpp_error message with run&#45;time filter based on a...">
-<polygon fill="#ffffff" stroke="#000000" points="612,-168 612,-198 727,-198 727,-168 612,-168"/>
-<text text-anchor="start" x="620" y="-186" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="669.5" y="-175" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
+<polygon fill="#ffffff" stroke="#000000" points="584,-168 584,-198 690,-198 690,-168 584,-168"/>
+<text text-anchor="start" x="592" y="-186" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="637" y="-175" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M575.3983,-197.8582C584.0541,-196.4915 593.0425,-195.0722 601.878,-193.6772"/>
-<polygon fill="#191970" stroke="#191970" points="602.431,-197.1333 611.7627,-192.1164 601.3392,-190.219 602.431,-197.1333"/>
+<path fill="none" stroke="#191970" d="M546.2112,-198.1315C555.0591,-196.6568 564.3142,-195.1143 573.389,-193.6018"/>
+<polygon fill="#191970" stroke="#191970" points="574.2383,-197.0086 583.5268,-191.9122 573.0874,-190.1039 574.2383,-197.0086"/>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M705.6683,-198.0901C726.5101,-206.7857 752.8999,-217.796 775.1242,-227.0684"/>
-<polygon fill="#191970" stroke="#191970" points="773.7888,-230.3036 784.3655,-230.924 776.4842,-223.8433 773.7888,-230.3036"/>
+<path fill="none" stroke="#191970" d="M671.0125,-198.0901C690.366,-206.6765 714.8065,-217.5198 735.5394,-226.7182"/>
+<polygon fill="#191970" stroke="#191970" points="734.2127,-229.9585 744.7728,-230.8147 737.0515,-223.56 734.2127,-229.9585"/>
 </g>
 <!-- Node7&#45;&gt;Node4 -->
 <g id="edge7" class="edge">
 <title>Node7&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M423.2162,-227.3357C431.9719,-225.4472 441.0565,-223.4878 449.9761,-221.564"/>
-<polygon fill="#191970" stroke="#191970" points="450.9129,-224.9425 459.9502,-219.4127 449.437,-218.0998 450.9129,-224.9425"/>
+<path fill="none" stroke="#191970" d="M402.1963,-227.5241C411.2102,-225.4867 420.6097,-223.3622 429.7984,-221.2853"/>
+<polygon fill="#191970" stroke="#191970" points="430.6757,-224.6754 439.658,-219.0568 429.1324,-217.8476 430.6757,-224.6754"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="namespacemom__diag__mediator.html#a883862f004e30bbc5211f38635511ba0" target="_top" xlink:title="Initializes a diag_type (used after allocating new memory)">
-<polygon fill="#ffffff" stroke="#000000" points="459,-241 459,-271 576,-271 576,-241 459,-241"/>
-<text text-anchor="start" x="467" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
-<text text-anchor="middle" x="517.5" y="-248" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">initialize_diag_type</text>
+<polygon fill="#ffffff" stroke="#000000" points="438,-241 438,-271 548,-271 548,-241 438,-241"/>
+<text text-anchor="start" x="446" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
+<text text-anchor="middle" x="493" y="-248" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">initialize_diag_type</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge8" class="edge">
 <title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M423.2162,-246.1403C431.6354,-247.0207 440.3589,-247.933 448.9473,-248.8311"/>
-<polygon fill="#191970" stroke="#191970" points="448.6311,-252.317 458.9409,-249.8762 449.3592,-245.355 448.6311,-252.317"/>
+<path fill="none" stroke="#191970" d="M402.1963,-246.0489C410.4633,-246.9549 419.0546,-247.8964 427.5101,-248.823"/>
+<polygon fill="#191970" stroke="#191970" points="427.4038,-252.3322 437.7256,-249.9425 428.1664,-245.3739 427.4038,-252.3322"/>
 </g>
 <!-- Node9&#45;&gt;Node5 -->
 <g id="edge10" class="edge">
 <title>Node9&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M576.2672,-167.6657C584.6734,-169.0483 593.3766,-170.4797 601.9353,-171.8874"/>
-<polygon fill="#191970" stroke="#191970" points="601.4542,-175.3552 611.8897,-173.5246 602.5903,-168.448 601.4542,-175.3552"/>
+<path fill="none" stroke="#191970" d="M548.2623,-167.5942C556.4949,-169.0234 565.0365,-170.5063 573.4235,-171.9624"/>
+<polygon fill="#191970" stroke="#191970" points="573.0947,-175.4576 583.546,-173.7198 574.2921,-168.5608 573.0947,-175.4576"/>
 </g>
 <!-- Node10&#45;&gt;Node5 -->
 <g id="edge12" class="edge">
 <title>Node10&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M423.1291,-113.0321C466.2526,-113.8069 525.8403,-118.0137 576,-133 598.2288,-139.6414 621.2321,-151.8619 638.8599,-162.5587"/>
-<polygon fill="#191970" stroke="#191970" points="637.2171,-165.6588 647.5555,-167.9759 640.9185,-159.7175 637.2171,-165.6588"/>
+<path fill="none" stroke="#191970" d="M402.3835,-113.1024C443.4486,-113.8952 500.3279,-118.0937 548,-133 569.1228,-139.6047 590.8154,-151.6631 607.4958,-162.283"/>
+<polygon fill="#191970" stroke="#191970" points="605.9284,-165.4403 616.2116,-167.9913 609.7636,-159.5844 605.9284,-165.4403"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
 <g id="a_node12"><a xlink:href="namespacemom__diag__mediator.html#ae002ca447acba252bf7bdc042e75a01e" target="_top" xlink:title="Describe an option setting in the diagnostic files.">
-<polygon fill="#ffffff" stroke="#000000" points="306,-50 306,-80 423,-80 423,-50 306,-50"/>
-<text text-anchor="start" x="314" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
-<text text-anchor="middle" x="364.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">describe_option</text>
+<polygon fill="#ffffff" stroke="#000000" points="292,-50 292,-80 402,-80 402,-50 292,-50"/>
+<text text-anchor="start" x="300" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diag_mediator::</text>
+<text text-anchor="middle" x="347" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">describe_option</text>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node12 -->
 <g id="edge15" class="edge">
 <title>Node11&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M270.2162,-71.7786C278.6354,-71.1733 287.3589,-70.5461 295.9473,-69.9286"/>
-<polygon fill="#191970" stroke="#191970" points="296.2177,-73.4183 305.9409,-69.2101 295.7156,-66.4363 296.2177,-73.4183"/>
+<path fill="none" stroke="#191970" d="M256.1963,-71.8414C264.4633,-71.2185 273.0546,-70.5712 281.5101,-69.9342"/>
+<polygon fill="#191970" stroke="#191970" points="282.0169,-73.406 291.7256,-69.1645 281.4909,-66.4258 282.0169,-73.406"/>
 </g>
 </g>
 </svg>

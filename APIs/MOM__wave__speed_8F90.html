@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/diagnostics/MOM_wave_speed.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/diagnostics/MOM_wave_speed.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('MOM__wave__speed_8F90.html','');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_wave_speed.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__wave__speed_8F90__incl.svg" width="299" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__wave__speed_8F90__incl.svg" width="280" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -133,9 +133,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:aaeee30fd118f8b7396f5bdd68c5a10e4"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__wave__speed.html#aaeee30fd118f8b7396f5bdd68c5a10e4">mom_wave_speed::wave_speeds</a> (h, tv, G, GV, US, nmodes, cn, CS, full_halos)</td></tr>
 <tr class="memdesc:aaeee30fd118f8b7396f5bdd68c5a10e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the wave speeds for the first few barolinic modes.  <a href="namespacemom__wave__speed.html#aaeee30fd118f8b7396f5bdd68c5a10e4">More...</a><br /></td></tr>
 <tr class="separator:aaeee30fd118f8b7396f5bdd68c5a10e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d633de4db3e5c4e4a7d313c428c7a56"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__wave__speed.html#a1d633de4db3e5c4e4a7d313c428c7a56">mom_wave_speed::tridiag_det</a> (a, b, c, nrows, lam, det_out, ddet_out)</td></tr>
-<tr class="memdesc:a1d633de4db3e5c4e4a7d313c428c7a56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the determinant of a tridiagonal matrix with diagonals a,b-lam,c where lam is constant across rows.  <a href="namespacemom__wave__speed.html#a1d633de4db3e5c4e4a7d313c428c7a56">More...</a><br /></td></tr>
-<tr class="separator:a1d633de4db3e5c4e4a7d313c428c7a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5079e31d32604f816bcf78f5d7086682"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__wave__speed.html#a5079e31d32604f816bcf78f5d7086682">mom_wave_speed::tridiag_det</a> (a, b, c, nrows, lam, det_out, ddet_out, row_scale)</td></tr>
+<tr class="memdesc:a5079e31d32604f816bcf78f5d7086682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the determinant of a tridiagonal matrix with diagonals a,b-lam,c and its derivative with lam, where lam is constant across rows. Only the ratio of det to its derivative and their signs are typically used, so internal rescaling by consistent factors are used to avoid over- or underflow.  <a href="namespacemom__wave__speed.html#a5079e31d32604f816bcf78f5d7086682">More...</a><br /></td></tr>
+<tr class="separator:a5079e31d32604f816bcf78f5d7086682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46e21529ec8098b0b19053afa133b971"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__wave__speed.html#a46e21529ec8098b0b19053afa133b971">mom_wave_speed::wave_speed_init</a> (CS, use_ebt_mode, mono_N2_column_fraction, mono_N2_depth)</td></tr>
 <tr class="memdesc:a46e21529ec8098b0b19053afa133b971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize control structure for MOM_wave_speed.  <a href="namespacemom__wave__speed.html#a46e21529ec8098b0b19053afa133b971">More...</a><br /></td></tr>
 <tr class="separator:a46e21529ec8098b0b19053afa133b971"><td class="memSeparator" colspan="2">&#160;</td></tr>

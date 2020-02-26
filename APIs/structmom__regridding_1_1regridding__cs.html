@@ -112,13 +112,13 @@ Collaboration diagram for mom_regridding::regridding_cs:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public variables and constants</h2></td></tr>
 <tr class="memitem:a2e2de077cabcaa7b091ed12ec715a7df"><td class="memItemLeft" align="right" valign="top">real, dimension(:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__regridding_1_1regridding__cs.html#a2e2de077cabcaa7b091ed12ec715a7df">coordinateresolution</a></td></tr>
-<tr class="memdesc:a2e2de077cabcaa7b091ed12ec715a7df"><td class="mdescLeft">&#160;</td><td class="mdescRight">This array is set by function setCoordinateResolution() It contains the "resolution" or delta coordinate of the target coorindate. It has the units of the target coordinate, e.g. [Z ~&gt; m] for z*, non-dimensional for sigma, etc.  <a href="structmom__regridding_1_1regridding__cs.html#a2e2de077cabcaa7b091ed12ec715a7df">More...</a><br /></td></tr>
+<tr class="memdesc:a2e2de077cabcaa7b091ed12ec715a7df"><td class="mdescLeft">&#160;</td><td class="mdescRight">This array is set by function setCoordinateResolution() It contains the "resolution" or delta coordinate of the target coordinate. It has the units of the target coordinate, e.g. [Z ~&gt; m] for z*, non-dimensional for sigma, etc.  <a href="structmom__regridding_1_1regridding__cs.html#a2e2de077cabcaa7b091ed12ec715a7df">More...</a><br /></td></tr>
 <tr class="separator:a2e2de077cabcaa7b091ed12ec715a7df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bb0fbc7aec6363dff22e37a9cdff176"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__regridding_1_1regridding__cs.html#a1bb0fbc7aec6363dff22e37a9cdff176">coord_scale</a> = 1.0</td></tr>
 <tr class="memdesc:a1bb0fbc7aec6363dff22e37a9cdff176"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a scaling factor that restores coordinateResolution to values in the natural units for output.  <a href="structmom__regridding_1_1regridding__cs.html#a1bb0fbc7aec6363dff22e37a9cdff176">More...</a><br /></td></tr>
 <tr class="separator:a1bb0fbc7aec6363dff22e37a9cdff176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1468a64a398d5554c4e0795d9b184199"><td class="memItemLeft" align="right" valign="top">real, dimension(:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__regridding_1_1regridding__cs.html#a1468a64a398d5554c4e0795d9b184199">target_density</a></td></tr>
-<tr class="memdesc:a1468a64a398d5554c4e0795d9b184199"><td class="mdescLeft">&#160;</td><td class="mdescRight">This array is set by function <a class="el" href="namespacemom__regridding.html#ae7eade38ab8e2adb0797a7191ddebb18" title="Set target densities based on vector of interface values.">set_target_densities()</a> This array is the nominal coordinate of interfaces and is the running sum of coordinateResolution. i.e. target_density(k+1) = coordinateResolution(k) + coordinateResolution(k) It is only used in "rho" mode.  <a href="structmom__regridding_1_1regridding__cs.html#a1468a64a398d5554c4e0795d9b184199">More...</a><br /></td></tr>
+<tr class="memdesc:a1468a64a398d5554c4e0795d9b184199"><td class="mdescLeft">&#160;</td><td class="mdescRight">This array is set by function <a class="el" href="namespacemom__regridding.html#ae7eade38ab8e2adb0797a7191ddebb18" title="Set target densities based on vector of interface values.">set_target_densities()</a> This array is the nominal coordinate of interfaces and is the running sum of coordinateResolution, in [R ~&gt; kg m-3]. i.e. target_density(k+1) = coordinateResolution(k) + coordinateResolution(k) It is only used in "rho", "SLight" or "Hycom" mode.  <a href="structmom__regridding_1_1regridding__cs.html#a1468a64a398d5554c4e0795d9b184199">More...</a><br /></td></tr>
 <tr class="separator:a1468a64a398d5554c4e0795d9b184199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6f876f2f44108306fec0c0b57ab8ef3"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__regridding_1_1regridding__cs.html#af6f876f2f44108306fec0c0b57ab8ef3">target_density_set</a> = .false.</td></tr>
 <tr class="memdesc:af6f876f2f44108306fec0c0b57ab8ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A flag to indicate that the target_density arrays has been filled with data.  <a href="structmom__regridding_1_1regridding__cs.html#af6f876f2f44108306fec0c0b57ab8ef3">More...</a><br /></td></tr>
@@ -254,7 +254,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This array is set by function setCoordinateResolution() It contains the "resolution" or delta coordinate of the target coorindate. It has the units of the target coordinate, e.g. [Z ~&gt; m] for z*, non-dimensional for sigma, etc. </p>
+<p>This array is set by function setCoordinateResolution() It contains the "resolution" or delta coordinate of the target coordinate. It has the units of the target coordinate, e.g. [Z ~&gt; m] for z*, non-dimensional for sigma, etc. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__regridding_8F90_source.html#l00051">51</a> of file <a class="el" href="MOM__regridding_8F90_source.html">MOM_regridding.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">allocatable</span> :: coordinateResolution</div>
@@ -596,7 +596,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This array is set by function <a class="el" href="namespacemom__regridding.html#ae7eade38ab8e2adb0797a7191ddebb18" title="Set target densities based on vector of interface values.">set_target_densities()</a> This array is the nominal coordinate of interfaces and is the running sum of coordinateResolution. i.e. target_density(k+1) = coordinateResolution(k) + coordinateResolution(k) It is only used in "rho" mode. </p>
+<p>This array is set by function <a class="el" href="namespacemom__regridding.html#ae7eade38ab8e2adb0797a7191ddebb18" title="Set target densities based on vector of interface values.">set_target_densities()</a> This array is the nominal coordinate of interfaces and is the running sum of coordinateResolution, in [R ~&gt; kg m-3]. i.e. target_density(k+1) = coordinateResolution(k) + coordinateResolution(k) It is only used in "rho", "SLight" or "Hycom" mode. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__regridding_8F90_source.html#l00062">62</a> of file <a class="el" href="MOM__regridding_8F90_source.html">MOM_regridding.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:)</span>, <span class="keywordtype">allocatable</span> :: target_density</div>
@@ -642,7 +642,7 @@ Public variables and constants</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/ALE/<a class="el" href="MOM__regridding_8F90_source.html">MOM_regridding.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/ALE/<a class="el" href="MOM__regridding_8F90_source.html">MOM_regridding.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

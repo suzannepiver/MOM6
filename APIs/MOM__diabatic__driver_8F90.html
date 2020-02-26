@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/parameterizations/vertical/MOM_diabatic_driver.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/vertical/MOM_diabatic_driver.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('MOM__diabatic__driver_8F90.html','');}
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_diabatic_driver.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__diabatic__driver_8F90__incl.svg" width="299" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__diabatic__driver_8F90__incl.svg" width="280" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -165,12 +165,12 @@ Modules</h2></td></tr>
 <tr class="memitem:a71d8d849db16be4b87c2650b49f01c82"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__diabatic__driver.html#a71d8d849db16be4b87c2650b49f01c82">mom_diabatic_driver::layered_diabatic</a> (u, v, h, tv, Hml, fluxes, visc, ADp, CDp, dt, Time_end, G, GV, US, CS, WAVES)</td></tr>
 <tr class="memdesc:a71d8d849db16be4b87c2650b49f01c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentum and tracers using the original MOM6 algorithms.  <a href="namespacemom__diabatic__driver.html#a71d8d849db16be4b87c2650b49f01c82">More...</a><br /></td></tr>
 <tr class="separator:a71d8d849db16be4b87c2650b49f01c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89d71204e03c56940387511357dac3bd"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__diabatic__driver.html#a89d71204e03c56940387511357dac3bd">mom_diabatic_driver::extract_diabatic_member</a> (CS, opacity_CSp, optics_CSp, evap_CFL_limit, minimum_forcing_depth, diabatic_aux_CSp)</td></tr>
-<tr class="memdesc:a89d71204e03c56940387511357dac3bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointers or values of members within the diabatic_CS type. For extensibility, each returned argument is an optional argument.  <a href="namespacemom__diabatic__driver.html#a89d71204e03c56940387511357dac3bd">More...</a><br /></td></tr>
-<tr class="separator:a89d71204e03c56940387511357dac3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1524abcabaf6ccb0be7da294b0968984"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__diabatic__driver.html#a1524abcabaf6ccb0be7da294b0968984">mom_diabatic_driver::adiabatic</a> (h, tv, fluxes, dt, G, GV, CS)</td></tr>
-<tr class="memdesc:a1524abcabaf6ccb0be7da294b0968984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Routine called for adiabatic physics.  <a href="namespacemom__diabatic__driver.html#a1524abcabaf6ccb0be7da294b0968984">More...</a><br /></td></tr>
-<tr class="separator:a1524abcabaf6ccb0be7da294b0968984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad8cfe1e5f0bf6c89b44e6bbbf2a685"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__diabatic__driver.html#a5ad8cfe1e5f0bf6c89b44e6bbbf2a685">mom_diabatic_driver::extract_diabatic_member</a> (CS, opacity_CSp, optics_CSp, evap_CFL_limit, minimum_forcing_depth, KPP_CSp, energetic_PBL_CSp, diabatic_aux_CSp)</td></tr>
+<tr class="memdesc:a5ad8cfe1e5f0bf6c89b44e6bbbf2a685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointers or values of members within the diabatic_CS type. For extensibility, each returned argument is an optional argument.  <a href="namespacemom__diabatic__driver.html#a5ad8cfe1e5f0bf6c89b44e6bbbf2a685">More...</a><br /></td></tr>
+<tr class="separator:a5ad8cfe1e5f0bf6c89b44e6bbbf2a685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef60aa7bfe62f65408c7005b6cb613e8"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__diabatic__driver.html#aef60aa7bfe62f65408c7005b6cb613e8">mom_diabatic_driver::adiabatic</a> (h, tv, fluxes, dt, G, GV, US, CS)</td></tr>
+<tr class="memdesc:aef60aa7bfe62f65408c7005b6cb613e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Routine called for adiabatic physics.  <a href="namespacemom__diabatic__driver.html#aef60aa7bfe62f65408c7005b6cb613e8">More...</a><br /></td></tr>
+<tr class="separator:aef60aa7bfe62f65408c7005b6cb613e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dab75ba033d39c67378d4d096dc8634"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__diabatic__driver.html#a4dab75ba033d39c67378d4d096dc8634">mom_diabatic_driver::diagnose_diabatic_diff_tendency</a> (tv, h, temp_old, saln_old, dt, G, GV, CS)</td></tr>
 <tr class="memdesc:a4dab75ba033d39c67378d4d096dc8634"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine diagnoses tendencies from application of diabatic diffusion using ALE algorithm. Note that layer thickness is not altered by diabatic diffusion.  <a href="namespacemom__diabatic__driver.html#a4dab75ba033d39c67378d4d096dc8634">More...</a><br /></td></tr>
 <tr class="separator:a4dab75ba033d39c67378d4d096dc8634"><td class="memSeparator" colspan="2">&#160;</td></tr>

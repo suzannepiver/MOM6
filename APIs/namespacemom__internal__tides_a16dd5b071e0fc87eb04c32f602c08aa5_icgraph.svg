@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 714;
+var viewWidth = 676;
 var viewHeight = 88;
 var sectionId = 'dynsection-7';
 </script>
@@ -54,14 +54,14 @@ var sectionId = 'dynsection-7';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_internal_tides::ppm_limit_pos</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-84 710,-84 710,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-84 672,-84 672,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Limits the left/right edge values of the PPM reconstruction to give a reconstruction that is positive...">
-<polygon fill="#bfbfbf" stroke="#000000" points="597,-24.5 597,-54.5 706,-54.5 706,-24.5 597,-24.5"/>
-<text text-anchor="start" x="605" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_internal_tides</text>
-<text text-anchor="middle" x="651.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::ppm_limit_pos</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="567,-24.5 567,-54.5 668,-54.5 668,-24.5 567,-24.5"/>
+<text text-anchor="start" x="575" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_internal_tides</text>
+<text text-anchor="middle" x="617.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::ppm_limit_pos</text>
 </a>
 </g>
 </g>
@@ -69,103 +69,103 @@ var sectionId = 'dynsection-7';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__internal__tides.html#afa863318cc960c0be08672731ce6f225" target="_top" xlink:title="Calculates left/right edge values for PPM reconstruction in x&#45;direction.">
-<polygon fill="#ffffff" stroke="#000000" points="436,-49.5 436,-79.5 561,-79.5 561,-49.5 436,-49.5"/>
-<text text-anchor="start" x="444" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_internal_tides</text>
-<text text-anchor="middle" x="498.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::ppm_reconstruction_x</text>
+<polygon fill="#ffffff" stroke="#000000" points="412,-49.5 412,-79.5 531,-79.5 531,-49.5 412,-49.5"/>
+<text text-anchor="start" x="420" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_internal_tides</text>
+<text text-anchor="middle" x="471.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::ppm_reconstruction_x</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M586.5813,-50.1076C578.189,-51.4789 569.6064,-52.8813 561.2501,-54.2467"/>
-<polygon fill="#191970" stroke="#191970" points="587.391,-53.5218 596.6956,-48.455 586.2621,-46.6135 587.391,-53.5218"/>
+<path fill="none" stroke="#191970" d="M556.9511,-49.868C548.4055,-51.3313 539.6252,-52.8347 531.0977,-54.2949"/>
+<polygon fill="#191970" stroke="#191970" points="557.5802,-53.3113 566.846,-48.1736 556.3987,-46.4117 557.5802,-53.3113"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="namespacemom__internal__tides.html#a6c3dc6d74dfd6e5b13d5f710899be278" target="_top" xlink:title="Calculates left/right edge valus for PPM reconstruction in y&#45;direction.">
-<polygon fill="#ffffff" stroke="#000000" points="436,-.5 436,-30.5 561,-30.5 561,-.5 436,-.5"/>
-<text text-anchor="start" x="444" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_internal_tides</text>
-<text text-anchor="middle" x="498.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::ppm_reconstruction_y</text>
+<polygon fill="#ffffff" stroke="#000000" points="412,-.5 412,-30.5 531,-30.5 531,-.5 412,-.5"/>
+<text text-anchor="start" x="420" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_internal_tides</text>
+<text text-anchor="middle" x="471.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::ppm_reconstruction_y</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M586.5813,-29.3167C578.189,-28.0002 569.6064,-26.6539 561.2501,-25.3431"/>
-<polygon fill="#191970" stroke="#191970" points="586.274,-32.8112 596.6956,-30.9032 587.3589,-25.8958 586.274,-32.8112"/>
+<path fill="none" stroke="#191970" d="M556.9511,-29.5468C548.4055,-28.142 539.6252,-26.6987 531.0977,-25.2969"/>
+<polygon fill="#191970" stroke="#191970" points="556.4107,-33.0048 566.846,-31.1733 557.5462,-26.0975 556.4107,-33.0048"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="namespacemom__internal__tides.html#a07a0a9afe5f00de36b27617f6c0a8883" target="_top" xlink:title="Propagates the internal wave energy in the logical x&#45;direction.">
-<polygon fill="#ffffff" stroke="#000000" points="291,-49.5 291,-79.5 400,-79.5 400,-49.5 291,-49.5"/>
-<text text-anchor="start" x="299" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_internal_tides</text>
-<text text-anchor="middle" x="345.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::propagate_x</text>
+<g id="a_node3"><a xlink:href="namespacemom__internal__tides.html#a0b300e27b0ec984bfe8b9afe4e89f8ab" target="_top" xlink:title="Propagates the internal wave energy in the logical x&#45;direction.">
+<polygon fill="#ffffff" stroke="#000000" points="275,-49.5 275,-79.5 376,-79.5 376,-49.5 275,-49.5"/>
+<text text-anchor="start" x="283" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_internal_tides</text>
+<text text-anchor="middle" x="325.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::propagate_x</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M425.5809,-64.5C417.1339,-64.5 408.6286,-64.5 400.4782,-64.5"/>
-<polygon fill="#191970" stroke="#191970" points="425.8276,-68.0001 435.8276,-64.5 425.8276,-61.0001 425.8276,-68.0001"/>
+<path fill="none" stroke="#191970" d="M401.6438,-64.5C393.0344,-64.5 384.3665,-64.5 376.1204,-64.5"/>
+<polygon fill="#191970" stroke="#191970" points="401.695,-68.0001 411.695,-64.5 401.6949,-61.0001 401.695,-68.0001"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="namespacemom__internal__tides.html#a184959fcb65c0c765afad1e3cfc1326f" target="_top" xlink:title="Propagates internal waves at a single frequency.">
-<polygon fill="#ffffff" stroke="#000000" points="146,-24.5 146,-54.5 255,-54.5 255,-24.5 146,-24.5"/>
-<text text-anchor="start" x="154" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_internal_tides</text>
-<text text-anchor="middle" x="200.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::propagate</text>
+<g id="a_node4"><a xlink:href="namespacemom__internal__tides.html#af70118539fe63af49c203de9bdfafe8a" target="_top" xlink:title="Propagates internal waves at a single frequency.">
+<polygon fill="#ffffff" stroke="#000000" points="138,-24.5 138,-54.5 239,-54.5 239,-24.5 138,-24.5"/>
+<text text-anchor="start" x="146" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_internal_tides</text>
+<text text-anchor="middle" x="188.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::propagate</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M280.8147,-53.3474C272.3288,-51.8843 263.6984,-50.3963 255.3958,-48.9648"/>
-<polygon fill="#191970" stroke="#191970" points="280.2324,-56.7985 290.6817,-55.0486 281.4218,-49.9003 280.2324,-56.7985"/>
+<path fill="none" stroke="#191970" d="M264.9582,-53.4522C256.4171,-51.8936 247.7087,-50.3045 239.3738,-48.7835"/>
+<polygon fill="#191970" stroke="#191970" points="264.4096,-56.9098 274.8755,-55.262 265.6663,-50.0236 264.4096,-56.9098"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__internal__tides.html#aeeeea20ff7fe971846b7539d377f4389" target="_top" xlink:title="Calls subroutines in this file that are needed to refract, propagate, and dissipate energy density of...">
-<polygon fill="#ffffff" stroke="#000000" points="0,-24.5 0,-54.5 110,-54.5 110,-24.5 0,-24.5"/>
+<polygon fill="#ffffff" stroke="#000000" points="0,-24.5 0,-54.5 102,-54.5 102,-24.5 0,-24.5"/>
 <text text-anchor="start" x="8" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_internal_tides</text>
-<text text-anchor="middle" x="55" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::propagate_int_tide</text>
+<text text-anchor="middle" x="51" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::propagate_int_tide</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M135.7035,-39.5C127.2539,-39.5 118.6594,-39.5 110.3834,-39.5"/>
-<polygon fill="#191970" stroke="#191970" points="135.9072,-43.0001 145.9072,-39.5 135.9072,-36.0001 135.9072,-43.0001"/>
+<path fill="none" stroke="#191970" d="M127.4577,-39.5C118.975,-39.5 110.3338,-39.5 102.0595,-39.5"/>
+<polygon fill="#191970" stroke="#191970" points="127.6908,-43.0001 137.6907,-39.5 127.6907,-36.0001 127.6908,-43.0001"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="namespacemom__internal__tides.html#a7e1558cf7b38648be5da7d18a71eb596" target="_top" xlink:title="Propagates the internal wave energy in the logical y&#45;direction.">
-<polygon fill="#ffffff" stroke="#000000" points="291,-.5 291,-30.5 400,-30.5 400,-.5 291,-.5"/>
-<text text-anchor="start" x="299" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_internal_tides</text>
-<text text-anchor="middle" x="345.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::propagate_y</text>
+<g id="a_node7"><a xlink:href="namespacemom__internal__tides.html#ae1a31a7f0db2b05c1d863f022b799c7b" target="_top" xlink:title="Propagates the internal wave energy in the logical y&#45;direction.">
+<polygon fill="#ffffff" stroke="#000000" points="275,-.5 275,-30.5 376,-30.5 376,-.5 275,-.5"/>
+<text text-anchor="start" x="283" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_internal_tides</text>
+<text text-anchor="middle" x="325.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::propagate_y</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M425.5809,-15.5C417.1339,-15.5 408.6286,-15.5 400.4782,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="425.8276,-19.0001 435.8276,-15.5 425.8276,-12.0001 425.8276,-19.0001"/>
+<path fill="none" stroke="#191970" d="M401.6438,-15.5C393.0344,-15.5 384.3665,-15.5 376.1204,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="401.695,-19.0001 411.695,-15.5 401.6949,-12.0001 401.695,-19.0001"/>
 </g>
 <!-- Node7&#45;&gt;Node4 -->
 <g id="edge7" class="edge">
 <title>Node7&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M280.8147,-26.2065C272.3288,-27.6111 263.6984,-29.0396 255.3958,-30.4138"/>
-<polygon fill="#191970" stroke="#191970" points="281.3875,-29.6594 290.6817,-24.5734 280.2444,-22.7534 281.3875,-29.6594"/>
+<path fill="none" stroke="#191970" d="M264.9582,-26.1059C256.4171,-27.6021 247.7087,-29.1277 239.3738,-30.5878"/>
+<polygon fill="#191970" stroke="#191970" points="265.6295,-29.5417 274.8755,-24.3685 264.4215,-22.6467 265.6295,-29.5417"/>
 </g>
 </g>
 </svg>

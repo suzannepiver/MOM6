@@ -271,7 +271,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">integer function mom_checksums::bitcount </td>
           <td>(</td>
-          <td class="paramtype">real&#160;</td>
+          <td class="paramtype">real, intent(in)&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
           <td></td>
         </tr>
@@ -286,26 +286,18 @@ Variables</h2></td></tr>
 <p>Does a bitcount of a number by first casting to an integer and then using BTEST to check bit by bit. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>Number to be bitcount </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>Number to be bitcount </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__checksums_8F90_source.html#l01852">1852</a> of file <a class="el" href="MOM__checksums_8F90_source.html">MOM_checksums.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;<span class="keywordtype">  real</span> :: x<span class="comment"> !&lt; Number to be bitcount</span></div>
-<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160; </div>
-<div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;  <span class="comment">! Local variables</span></div>
-<div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;  <span class="keywordtype">integer(kind(x))</span> :: y<span class="comment"> !&lt; Store the integer representation of the memory used by x</span></div>
-<div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;  <span class="keywordtype">integer</span> :: bit</div>
-<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160; </div>
-<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;  bitcount = 0</div>
-<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;  y = transfer(x,y)</div>
-<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160; </div>
-<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;  <span class="comment">! Fortran standard says that bit indexing start at 0</span></div>
-<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;  <span class="keywordflow">do</span> bit = 0, bit_size(y)-1</div>
-<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;    <span class="keywordflow">if</span> (btest(y,bit)) bitcount = bitcount+1</div>
-<div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;<span class="keywordflow">  enddo</span></div>
-<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="MOM__checksums_8F90_source.html#l01855">1855</a> of file <a class="el" href="MOM__checksums_8F90_source.html">MOM_checksums.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">intent(in)</span> :: x<span class="comment"> !&lt; Number to be bitcount</span></div>
+<div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160; </div>
+<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: xk = kind(x)  <span class="comment">!&lt; Kind type of x</span></div>
+<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160; </div>
+<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;  <span class="comment">! NOTE: Assumes that reals and integers of kind=xk are the same size</span></div>
+<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;  bitcount = popcnt(transfer(x, 1_xk))</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="MOM__checksums_8F90_source.html#l00088">chksum0()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01551">chksum1d()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01609">chksum2d()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01637">chksum3d()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>.</p>
 <div class="dynheader">
@@ -387,7 +379,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a77a351d5fb63b21521d26bebb90bcfab_cgraph.svg" width="370" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a77a351d5fb63b21521d26bebb90bcfab_cgraph.svg" width="355" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -471,7 +463,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a6d1676bbe17574f8eebcfcf3c2bd50fb_cgraph.svg" width="370" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a6d1676bbe17574f8eebcfcf3c2bd50fb_cgraph.svg" width="355" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -556,14 +548,17 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">intent(in)</span> :: aMax<span class="comment"> !&lt; The maximum value of the array</span></div>
 <div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;  <span class="keywordtype">integer</span>,          <span class="keywordtype">intent(in)</span> :: iounit<span class="comment"> !&lt; Checksum logger IO unit</span></div>
 <div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160; </div>
-<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;  <span class="keywordflow">if</span> (is_root_pe()) <span class="keyword">write</span>(iounit, <span class="stringliteral">&#39;(A,3(A,ES25.16,1X),A)&#39;</span>) &amp;</div>
-<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;    fmsg, <span class="stringliteral">&quot; mean=&quot;</span>, amean, <span class="stringliteral">&quot;min=&quot;</span>, amin, <span class="stringliteral">&quot;max=&quot;</span>, amax, trim(mesg)</div>
+<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;  <span class="comment">! NOTE: We add zero to aMin and aMax to remove any negative zeros.</span></div>
+<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;  <span class="comment">! This is due to inconsistencies of signed zero in local vs MPI calculations.</span></div>
+<div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160; </div>
+<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;  <span class="keywordflow">if</span> (is_root_pe()) <span class="keyword">write</span>(iounit, <span class="stringliteral">&#39;(A,3(A,ES25.16,1X),A)&#39;</span>) &amp;</div>
+<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;    fmsg, <span class="stringliteral">&quot; mean=&quot;</span>, amean, <span class="stringliteral">&quot;min=&quot;</span>, (0. + amin), <span class="stringliteral">&quot;max=&quot;</span>, (0. + amax), trim(mesg)</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a13fdbca7f1f980b4ecbd22e1ff32005e_cgraph.svg" width="370" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a13fdbca7f1f980b4ecbd22e1ff32005e_cgraph.svg" width="355" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -671,7 +666,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_afd3901de6e3cac8dd66aa0ea36011e4c_cgraph.svg" width="370" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_afd3901de6e3cac8dd66aa0ea36011e4c_cgraph.svg" width="355" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -781,13 +776,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a2bbf928379ba9abdc67a2f6f93ea8c34_cgraph.svg" width="370" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a2bbf928379ba9abdc67a2f6f93ea8c34_cgraph.svg" width="355" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a2bbf928379ba9abdc67a2f6f93ea8c34_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a2bbf928379ba9abdc67a2f6f93ea8c34_icgraph.svg" width="655" height="424"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -873,13 +868,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a980dd3235b339afa9decbe8474a0bc58_cgraph.svg" width="370" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a980dd3235b339afa9decbe8474a0bc58_cgraph.svg" width="355" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a980dd3235b339afa9decbe8474a0bc58_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a980dd3235b339afa9decbe8474a0bc58_icgraph.svg" width="655" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -965,13 +960,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_ad46f7b2b2e81477204b3eca85f920d11_cgraph.svg" width="370" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_ad46f7b2b2e81477204b3eca85f920d11_cgraph.svg" width="355" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_ad46f7b2b2e81477204b3eca85f920d11_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_ad46f7b2b2e81477204b3eca85f920d11_icgraph.svg" width="655" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1056,7 +1051,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">call </span>chk_sum_msg(<span class="stringliteral">&quot; scalar:&quot;</span>, bc, mesg, iounit)</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00077">bc_modulus</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01852">bitcount()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01843">chksum_error()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
+<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00077">bc_modulus</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01855">bitcount()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01846">chksum_error()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1183,11 +1178,11 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l01600"></a><span class="lineno"> 1600</span>&#160;    <span class="keyword">write</span>(0,<span class="stringliteral">&#39;(A50,1X,ES25.16,1X,I12)&#39;</span>) mesg, sum, sum_bc</div>
 <div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l01852">bitcount()</a>, and <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>.</p>
+<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l01855">bitcount()</a>, and <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_aa064e020b99a0efca89590774af3454d_cgraph.svg" width="440" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_aa064e020b99a0efca89590774af3454d_cgraph.svg" width="431" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1262,11 +1257,11 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;<span class="comment">!      mesg, sum, sum1, sum, sum1</span></div>
 <div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l01852">bitcount()</a>, and <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>.</p>
+<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l01855">bitcount()</a>, and <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a06dcbee42e0aa2afca2803757905effd_cgraph.svg" width="440" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a06dcbee42e0aa2afca2803757905effd_cgraph.svg" width="431" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1342,11 +1337,11 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;<span class="comment">!      mesg, sum, sum1, sum, sum1</span></div>
 <div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l01852">bitcount()</a>, and <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>.</p>
+<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l01855">bitcount()</a>, and <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a4538309762110054a606a863a2efcd40_cgraph.svg" width="440" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a4538309762110054a606a863a2efcd40_cgraph.svg" width="431" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1584,7 +1579,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;  <span class="keyword">end subroutine </span><a class="code" href="MOM__checksums_8F90.html#ad399546f73e634377973802b3dc64d28">substats</a></div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01843">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
+<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01846">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="MOM__checksums_8F90_source.html#l00377">chksum_pair_b_2d()</a>.</p>
 <div class="dynheader">
@@ -1596,7 +1591,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a49d2774940029da8ff95cf4c9cf578fd_icgraph.svg" width="463" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a49d2774940029da8ff95cf4c9cf578fd_icgraph.svg" width="452" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1839,7 +1834,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;  <span class="keyword">end subroutine </span><a class="code" href="MOM__checksums_8F90.html#ad399546f73e634377973802b3dc64d28">substats</a></div>
 <div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01843">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
+<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01846">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="MOM__checksums_8F90_source.html#l00409">chksum_pair_b_3d()</a>.</p>
 <div class="dynheader">
@@ -1851,7 +1846,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a4f6f9fc4c335aa2c0e4457a236d49b14_icgraph.svg" width="463" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a4f6f9fc4c335aa2c0e4457a236d49b14_icgraph.svg" width="452" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1900,11 +1895,11 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__checksums_8F90_source.html#l01843">1843</a> of file <a class="el" href="MOM__checksums_8F90_source.html">MOM_checksums.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;  <span class="comment">! Wrapper for MOM_error to help place specific break points in debuggers</span></div>
-<div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">intent(in)</span> :: signal<span class="comment"> !&lt; An error severity level, such as FATAL or WARNING</span></div>
-<div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">intent(in)</span> :: message<span class="comment"> !&lt; An error message</span></div>
-<div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;  <span class="keyword">call </span>mom_error(signal, message)</div>
+<p class="definition">Definition at line <a class="el" href="MOM__checksums_8F90_source.html#l01846">1846</a> of file <a class="el" href="MOM__checksums_8F90_source.html">MOM_checksums.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;  <span class="comment">! Wrapper for MOM_error to help place specific break points in debuggers</span></div>
+<div class="line"><a name="l01847"></a><span class="lineno"> 1847</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">intent(in)</span> :: signal<span class="comment"> !&lt; An error severity level, such as FATAL or WARNING</span></div>
+<div class="line"><a name="l01848"></a><span class="lineno"> 1848</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">intent(in)</span> :: message<span class="comment"> !&lt; An error message</span></div>
+<div class="line"><a name="l01849"></a><span class="lineno"> 1849</span>&#160;  <span class="keyword">call </span>mom_error(signal, message)</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 
@@ -1912,7 +1907,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a6400a8423305b77e4aed5d1cb4c24520_cgraph.svg" width="596" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a6400a8423305b77e4aed5d1cb4c24520_cgraph.svg" width="568" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
@@ -2129,7 +2124,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="keyword">end subroutine </span><a class="code" href="MOM__checksums_8F90.html#ad399546f73e634377973802b3dc64d28">substats</a></div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01843">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
+<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01846">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="MOM__checksums_8F90_source.html#l00200">chksum_pair_h_2d()</a>.</p>
 <div class="dynheader">
@@ -2141,7 +2136,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_afa9bfb664bf3ee16447d4ebff9b78ea8_icgraph.svg" width="464" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_afa9bfb664bf3ee16447d4ebff9b78ea8_icgraph.svg" width="452" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2355,7 +2350,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;  <span class="keyword">end subroutine </span><a class="code" href="MOM__checksums_8F90.html#ad399546f73e634377973802b3dc64d28">substats</a></div>
 <div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01843">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
+<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01846">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="MOM__checksums_8F90_source.html#l00224">chksum_pair_h_3d()</a>.</p>
 <div class="dynheader">
@@ -2367,7 +2362,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a656dc8f5cc5bdb1ab2ffbf164cfc4e5c_icgraph.svg" width="464" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a656dc8f5cc5bdb1ab2ffbf164cfc4e5c_icgraph.svg" width="452" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -3101,7 +3096,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;  <span class="keyword">end subroutine </span><a class="code" href="MOM__checksums_8F90.html#ad399546f73e634377973802b3dc64d28">substats</a></div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01794">chk_sum_msg_w()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01843">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
+<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01794">chk_sum_msg_w()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01846">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="MOM__checksums_8F90_source.html#l00589">chksum_uv_2d()</a>.</p>
 <div class="dynheader">
@@ -3113,7 +3108,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a170da5dcb63242191738bab00ae7a98c_icgraph.svg" width="463" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a170da5dcb63242191738bab00ae7a98c_icgraph.svg" width="452" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -3355,7 +3350,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;  <span class="keyword">end subroutine </span><a class="code" href="MOM__checksums_8F90.html#ad399546f73e634377973802b3dc64d28">substats</a></div>
 <div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01794">chk_sum_msg_w()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01843">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
+<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01794">chk_sum_msg_w()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01846">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="MOM__checksums_8F90_source.html#l00617">chksum_uv_3d()</a>.</p>
 <div class="dynheader">
@@ -3367,7 +3362,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a002adb81ca40e3604e68c69c470e3a60_icgraph.svg" width="463" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a002adb81ca40e3604e68c69c470e3a60_icgraph.svg" width="452" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -3863,7 +3858,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;  <span class="keyword">end subroutine </span><a class="code" href="MOM__checksums_8F90.html#ad399546f73e634377973802b3dc64d28">substats</a></div>
 <div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01782">chk_sum_msg_s()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01843">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
+<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01782">chk_sum_msg_s()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01846">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="MOM__checksums_8F90_source.html#l00589">chksum_uv_2d()</a>.</p>
 <div class="dynheader">
@@ -3875,7 +3870,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a036af9a886db469fc5ea2af3137b36f6_icgraph.svg" width="463" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a036af9a886db469fc5ea2af3137b36f6_icgraph.svg" width="452" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -4118,7 +4113,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;  <span class="keyword">end subroutine </span><a class="code" href="MOM__checksums_8F90.html#ad399546f73e634377973802b3dc64d28">substats</a></div>
 <div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01782">chk_sum_msg_s()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01843">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
+<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01767">chk_sum_msg_nsew()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01782">chk_sum_msg_s()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01846">chksum_error()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00078">default_shift</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="MOM__checksums_8F90_source.html#l00617">chksum_uv_3d()</a>.</p>
 <div class="dynheader">
@@ -4130,7 +4125,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a3c48ee0130a4658c4c4224cdbe4449b9_icgraph.svg" width="463" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a3c48ee0130a4658c4c4224cdbe4449b9_icgraph.svg" width="452" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -4186,7 +4181,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_aa60d4336935b61bdb90e5f182d9a21ad_icgraph.svg" width="462" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_aa60d4336935b61bdb90e5f182d9a21ad_icgraph.svg" width="443" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -4260,7 +4255,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a2ae26d49eb294b8b0e6872cc1642eb4b_cgraph.svg" width="462" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a2ae26d49eb294b8b0e6872cc1642eb4b_cgraph.svg" width="443" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -4317,7 +4312,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_ae5399b160c30b9e0d9a806af7e322f8e_cgraph.svg" width="462" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_ae5399b160c30b9e0d9a806af7e322f8e_cgraph.svg" width="443" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -4376,7 +4371,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a1cfab80ba102a9eb5b77d6c5db2a298a_cgraph.svg" width="462" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a1cfab80ba102a9eb5b77d6c5db2a298a_cgraph.svg" width="443" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -4406,20 +4401,20 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__checksums_8F90_source.html#l01832">1832</a> of file <a class="el" href="MOM__checksums_8F90_source.html">MOM_checksums.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;  <span class="keywordtype">type</span>(param_file_type),   <span class="keywordtype">intent(in)</span>    :: param_file<span class="comment"> !&lt; A structure to parse for run-time parameters</span></div>
-<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;<span class="comment">! This include declares and sets the variable &quot;version&quot;.</span></div>
-<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;<span class="preprocessor">#include &quot;version_variable.h&quot;</span></div>
-<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;<span class="preprocessor"></span>  <span class="keywordtype">character(len=40)</span>  :: mdl = <span class="stringliteral">&quot;MOM_checksums&quot;</span> <span class="comment">! This module&#39;s name.</span></div>
-<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160; </div>
-<div class="line"><a name="l01837"></a><span class="lineno"> 1837</span>&#160;  <span class="keyword">call </span>log_version(param_file, mdl, version)</div>
-<div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="MOM__checksums_8F90_source.html#l01835">1835</a> of file <a class="el" href="MOM__checksums_8F90_source.html">MOM_checksums.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;  <span class="keywordtype">type</span>(param_file_type),   <span class="keywordtype">intent(in)</span>    :: param_file<span class="comment"> !&lt; A structure to parse for run-time parameters</span></div>
+<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160;<span class="comment">! This include declares and sets the variable &quot;version&quot;.</span></div>
+<div class="line"><a name="l01837"></a><span class="lineno"> 1837</span>&#160;<span class="preprocessor">#include &quot;version_variable.h&quot;</span></div>
+<div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160;<span class="preprocessor"></span>  <span class="keywordtype">character(len=40)</span>  :: mdl = <span class="stringliteral">&quot;MOM_checksums&quot;</span> <span class="comment">! This module&#39;s name.</span></div>
+<div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160; </div>
+<div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;  <span class="keyword">call </span>log_version(param_file, mdl, version)</div>
+<div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160; </div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="MOM__debugging_8F90_source.html#l00081">mom_debugging::mom_debugging_init()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a4844ebcc4ee98794babd6b17219f5139_icgraph.svg" width="386" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__checksums_a4844ebcc4ee98794babd6b17219f5139_icgraph.svg" width="376" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -4550,7 +4545,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keyword">end subroutine </span><a class="code" href="MOM__checksums_8F90.html#ad399546f73e634377973802b3dc64d28">substats</a></div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01843">chksum_error()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
+<p class="reference">References <a class="el" href="MOM__checksums_8F90_source.html#l00079">calculatestatistics</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00081">checkfornans</a>, <a class="el" href="MOM__checksums_8F90_source.html#l01846">chksum_error()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00167">subchk()</a>, <a class="el" href="MOM__checksums_8F90_source.html#l00179">substats()</a>, and <a class="el" href="MOM__checksums_8F90_source.html#l00080">writechksums</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

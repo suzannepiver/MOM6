@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 529;
+var viewWidth = 505;
 var viewHeight = 137;
 var sectionId = 'dynsection-6';
 </script>
@@ -54,13 +54,13 @@ var sectionId = 'dynsection-6';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_forcing_type::calculatebuoyancyflux2d</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-133 525,-133 525,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-133 501,-133 501,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Calculates surface buoyancy flux by adding up the heat, FW and salt fluxes, for 2d arrays....">
-<polygon fill="#bfbfbf" stroke="#000000" points="300,-55 300,-74 521,-74 521,-55 300,-55"/>
-<text text-anchor="middle" x="410.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_forcing_type::calculatebuoyancyflux2d</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="287,-55 287,-74 497,-74 497,-55 287,-55"/>
+<text text-anchor="middle" x="392" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_forcing_type::calculatebuoyancyflux2d</text>
 </a>
 </g>
 </g>
@@ -68,77 +68,77 @@ var sectionId = 'dynsection-6';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__diabatic__driver.html#ae57c48925de75712384e859a851c8c40" target="_top" xlink:title="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu...">
-<polygon fill="#ffffff" stroke="#000000" points="150,-98.5 150,-128.5 264,-128.5 264,-98.5 150,-98.5"/>
-<text text-anchor="start" x="158" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diabatic_driver</text>
-<text text-anchor="middle" x="207" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::diabatic_ale</text>
+<polygon fill="#ffffff" stroke="#000000" points="143.5,-98.5 143.5,-128.5 250.5,-128.5 250.5,-98.5 143.5,-98.5"/>
+<text text-anchor="start" x="151.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diabatic_driver</text>
+<text text-anchor="middle" x="197" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::diabatic_ale</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M360.8187,-76.4626C331.6697,-83.4813 294.7164,-92.3791 264.3357,-99.6944"/>
-<polygon fill="#191970" stroke="#191970" points="361.8773,-79.8078 370.7801,-74.064 360.2386,-73.0023 361.8773,-79.8078"/>
+<path fill="none" stroke="#191970" d="M343.9099,-76.5842C315.6955,-83.6739 279.9779,-92.6491 250.826,-99.9745"/>
+<polygon fill="#191970" stroke="#191970" points="345.0936,-79.8956 353.9391,-74.064 343.3876,-73.1067 345.0936,-79.8956"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__diabatic__driver.html#a598d99106680c83e410a0a51a59588ea" target="_top" xlink:title="Applies diabatic forcing and diapycnal mixing of temperature, salinity and other tracers for use with...">
-<polygon fill="#ffffff" stroke="#000000" points="150,-49.5 150,-79.5 264,-79.5 264,-49.5 150,-49.5"/>
-<text text-anchor="start" x="158" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diabatic_driver</text>
-<text text-anchor="middle" x="207" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::diabatic_ale_legacy</text>
+<polygon fill="#ffffff" stroke="#000000" points="143,-49.5 143,-79.5 251,-79.5 251,-49.5 143,-49.5"/>
+<text text-anchor="start" x="151" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diabatic_driver</text>
+<text text-anchor="middle" x="197" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::diabatic_ale_legacy</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M289.7774,-64.5C280.9462,-64.5 272.3126,-64.5 264.1556,-64.5"/>
-<polygon fill="#191970" stroke="#191970" points="289.8174,-68.0001 299.8174,-64.5 289.8173,-61.0001 289.8174,-68.0001"/>
+<path fill="none" stroke="#191970" d="M276.5297,-64.5C267.8477,-64.5 259.3627,-64.5 251.3629,-64.5"/>
+<polygon fill="#191970" stroke="#191970" points="276.7948,-68.0001 286.7947,-64.5 276.7947,-61.0001 276.7948,-68.0001"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__diabatic__driver.html#a71d8d849db16be4b87c2650b49f01c82" target="_top" xlink:title="Imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentum and tracers us...">
-<polygon fill="#ffffff" stroke="#000000" points="150,-.5 150,-30.5 264,-30.5 264,-.5 150,-.5"/>
-<text text-anchor="start" x="158" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diabatic_driver</text>
-<text text-anchor="middle" x="207" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::layered_diabatic</text>
+<polygon fill="#ffffff" stroke="#000000" points="143.5,-.5 143.5,-30.5 250.5,-30.5 250.5,-.5 143.5,-.5"/>
+<text text-anchor="start" x="151.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diabatic_driver</text>
+<text text-anchor="middle" x="197" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::layered_diabatic</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M360.8187,-52.5374C331.6697,-45.5187 294.7164,-36.6209 264.3357,-29.3056"/>
-<polygon fill="#191970" stroke="#191970" points="360.2386,-55.9977 370.7801,-54.936 361.8773,-49.1922 360.2386,-55.9977"/>
+<path fill="none" stroke="#191970" d="M343.9099,-52.4158C315.6955,-45.3261 279.9779,-36.3509 250.826,-29.0255"/>
+<polygon fill="#191970" stroke="#191970" points="343.3876,-55.8933 353.9391,-54.936 345.0936,-49.1044 343.3876,-55.8933"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__diabatic__driver.html#a9005de9f3ad26b32de53e3cd9826b9b9" target="_top" xlink:title="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu...">
-<polygon fill="#ffffff" stroke="#000000" points="0,-49.5 0,-79.5 114,-79.5 114,-49.5 0,-49.5"/>
+<polygon fill="#ffffff" stroke="#000000" points="0,-49.5 0,-79.5 107,-79.5 107,-49.5 0,-49.5"/>
 <text text-anchor="start" x="8" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diabatic_driver</text>
-<text text-anchor="middle" x="57" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::diabatic</text>
+<text text-anchor="middle" x="53.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::diabatic</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M151.1049,-95.2409C135.2839,-90.0727 118.2477,-84.5076 103.0763,-79.5516"/>
-<polygon fill="#191970" stroke="#191970" points="150.1786,-98.6203 160.7711,-98.3986 152.3523,-91.9663 150.1786,-98.6203"/>
+<path fill="none" stroke="#191970" d="M143.1446,-95.1104C128.2033,-90.0084 112.1561,-84.5289 97.8266,-79.6359"/>
+<polygon fill="#191970" stroke="#191970" points="142.1798,-98.4793 152.7744,-98.3986 144.4419,-91.8548 142.1798,-98.4793"/>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M139.6894,-64.5C131.2716,-64.5 122.7232,-64.5 114.4745,-64.5"/>
-<polygon fill="#191970" stroke="#191970" points="139.8636,-68.0001 149.8635,-64.5 139.8635,-61.0001 139.8636,-68.0001"/>
+<path fill="none" stroke="#191970" d="M132.5691,-64.5C124.1423,-64.5 115.5794,-64.5 107.3519,-64.5"/>
+<polygon fill="#191970" stroke="#191970" points="132.7488,-68.0001 142.7488,-64.5 132.7488,-61.0001 132.7488,-68.0001"/>
 </g>
 <!-- Node5&#45;&gt;Node3 -->
 <g id="edge6" class="edge">
 <title>Node5&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M151.1049,-33.7591C135.2839,-38.9273 118.2477,-44.4924 103.0763,-49.4484"/>
-<polygon fill="#191970" stroke="#191970" points="152.3523,-37.0337 160.7711,-30.6014 150.1786,-30.3797 152.3523,-37.0337"/>
+<path fill="none" stroke="#191970" d="M143.1446,-33.8896C128.2033,-38.9916 112.1561,-44.4711 97.8266,-49.3641"/>
+<polygon fill="#191970" stroke="#191970" points="144.4419,-37.1452 152.7744,-30.6014 142.1798,-30.5207 144.4419,-37.1452"/>
 </g>
 </g>
 </svg>

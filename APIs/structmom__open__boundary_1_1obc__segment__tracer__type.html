@@ -99,14 +99,13 @@ $(document).ready(function(){initNavTree('structmom__open__boundary_1_1obc__segm
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Tracer segment data structure, for putting into an array of objects, not all the same shape. </p>
-<p>Tracer on OBC segment data structure, for putting into a segment tracer registry. </p>
+<div class="textblock"><p>Tracer on OBC segment data structure, for putting into a segment tracer registry. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00089">89</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00084">84</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_open_boundary::obc_segment_tracer_type:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__open__boundary_1_1obc__segment__tracer__type__coll__graph.svg" width="476" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__open__boundary_1_1obc__segment__tracer__type__coll__graph.svg" width="443" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -146,8 +145,8 @@ Public variables and constants</h2></td></tr>
 
 <p>reservoir values have been set when True </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00095">95</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">logical</span>                         :: is_initialized<span class="comment">        !&lt; reservoir values have been set when True</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">logical</span>                         :: is_initialized<span class="comment">        !&lt; reservoir values have been set when True</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -165,8 +164,8 @@ Public variables and constants</h2></td></tr>
 
 <p>tracer name used for error messages </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00092">92</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">character(len=32)</span>               :: name<span class="comment">                  !&lt; tracer name used for error messages</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">character(len=32)</span>               :: name<span class="comment">                  !&lt; tracer name used for error messages</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -184,8 +183,8 @@ Public variables and constants</h2></td></tr>
 
 <p>tracer concentration for generic inflows </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">  real</span>                            :: OBC_inflow_conc = 0.0<span class="comment"> !&lt; tracer concentration for generic inflows</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">  real</span>                            :: OBC_inflow_conc = 0.0<span class="comment"> !&lt; tracer concentration for generic inflows</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -203,8 +202,8 @@ Public variables and constants</h2></td></tr>
 
 <p>tracer concentration array </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: t          =&gt; null()  <span class="comment">!&lt; tracer concentration array</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: t          =&gt; null()  <span class="comment">!&lt; tracer concentration array</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -222,8 +221,8 @@ Public variables and constants</h2></td></tr>
 
 <p>metadata describing the tracer </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00093">93</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">type</span>(tracer_type), <span class="keywordtype">pointer</span>      :: Tr         =&gt; null()  <span class="comment">!&lt; metadata describing the tracer</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">type</span>(tracer_type), <span class="keywordtype">pointer</span>      :: Tr         =&gt; null()  <span class="comment">!&lt; metadata describing the tracer</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -241,13 +240,13 @@ Public variables and constants</h2></td></tr>
 
 <p>tracer reservoir array </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: tres       =&gt; null()  <span class="comment">!&lt; tracer reservoir array</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00089">89</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:,:)</span>, <span class="keywordtype">pointer</span> :: tres       =&gt; null()  <span class="comment">!&lt; tracer reservoir array</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/core/<a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/core/<a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

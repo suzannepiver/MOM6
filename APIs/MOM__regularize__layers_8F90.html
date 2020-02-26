@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/parameterizations/vertical/MOM_regularize_layers.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/vertical/MOM_regularize_layers.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('MOM__regularize__layers_8F90.html','')
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_regularize_layers.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__regularize__layers_8F90__incl.svg" width="278" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__regularize__layers_8F90__incl.svg" width="246" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -125,12 +125,12 @@ Modules</h2></td></tr>
 <tr class="memitem:a6de9cd8fa696db5f598a330aaddd772b"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__regularize__layers.html#a6de9cd8fa696db5f598a330aaddd772b">mom_regularize_layers::id_clock_eos</a></td></tr>
 <tr class="memdesc:a6de9cd8fa696db5f598a330aaddd772b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock IDs.  <a href="namespacemom__regularize__layers.html#a6de9cd8fa696db5f598a330aaddd772b">More...</a><br /></td></tr>
 <tr class="separator:a6de9cd8fa696db5f598a330aaddd772b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32e5e07fe85a2f1861fe05f60576fe59"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__regularize__layers.html#a32e5e07fe85a2f1861fe05f60576fe59">mom_regularize_layers::regularize_layers</a> (h, tv, dt, ea, eb, G, GV, CS)</td></tr>
-<tr class="memdesc:a32e5e07fe85a2f1861fe05f60576fe59"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine partially steps the bulk mixed layer model. The following processes are executed, in the order listed.  <a href="namespacemom__regularize__layers.html#a32e5e07fe85a2f1861fe05f60576fe59">More...</a><br /></td></tr>
-<tr class="separator:a32e5e07fe85a2f1861fe05f60576fe59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8738e3c92f1d19b3f2269cb97f7eaf7"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__regularize__layers.html#af8738e3c92f1d19b3f2269cb97f7eaf7">mom_regularize_layers::regularize_surface</a> (h, tv, dt, ea, eb, G, GV, CS)</td></tr>
-<tr class="memdesc:af8738e3c92f1d19b3f2269cb97f7eaf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine ensures that there is a degree of horizontal smoothness in the depths of the near-surface interfaces.  <a href="namespacemom__regularize__layers.html#af8738e3c92f1d19b3f2269cb97f7eaf7">More...</a><br /></td></tr>
-<tr class="separator:af8738e3c92f1d19b3f2269cb97f7eaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd6e85c8425099cc30c8d67de17c1ed"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__regularize__layers.html#a6cd6e85c8425099cc30c8d67de17c1ed">mom_regularize_layers::regularize_layers</a> (h, tv, dt, ea, eb, G, GV, US, CS)</td></tr>
+<tr class="memdesc:a6cd6e85c8425099cc30c8d67de17c1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine partially steps the bulk mixed layer model. The following processes are executed, in the order listed.  <a href="namespacemom__regularize__layers.html#a6cd6e85c8425099cc30c8d67de17c1ed">More...</a><br /></td></tr>
+<tr class="separator:a6cd6e85c8425099cc30c8d67de17c1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220f46f9b601c8d813a3a94fba61ca0e"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__regularize__layers.html#a220f46f9b601c8d813a3a94fba61ca0e">mom_regularize_layers::regularize_surface</a> (h, tv, dt, ea, eb, G, GV, US, CS)</td></tr>
+<tr class="memdesc:a220f46f9b601c8d813a3a94fba61ca0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine ensures that there is a degree of horizontal smoothness in the depths of the near-surface interfaces.  <a href="namespacemom__regularize__layers.html#a220f46f9b601c8d813a3a94fba61ca0e">More...</a><br /></td></tr>
+<tr class="separator:a220f46f9b601c8d813a3a94fba61ca0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ba20ced31449e07aa640de2b71c0be8"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__regularize__layers.html#a4ba20ced31449e07aa640de2b71c0be8">mom_regularize_layers::find_deficit_ratios</a> (e, def_rat_u, def_rat_v, G, GV, CS, def_rat_u_2lay, def_rat_v_2lay, halo, h)</td></tr>
 <tr class="memdesc:a4ba20ced31449e07aa640de2b71c0be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine determines the amount by which the harmonic mean thickness at velocity points differ from the arithmetic means, relative to the the arithmetic means, after eliminating thickness variations that are solely due to topography and aggregating all interior layers into one.  <a href="namespacemom__regularize__layers.html#a4ba20ced31449e07aa640de2b71c0be8">More...</a><br /></td></tr>
 <tr class="separator:a4ba20ced31449e07aa640de2b71c0be8"><td class="memSeparator" colspan="2">&#160;</td></tr>

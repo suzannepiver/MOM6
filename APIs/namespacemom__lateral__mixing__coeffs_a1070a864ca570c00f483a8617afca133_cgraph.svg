@@ -46,22 +46,22 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1190;
+var viewWidth = 1133;
 var viewHeight = 156;
-var sectionId = 'dynsection-8';
+var sectionId = 'dynsection-10';
 </script>
 <script xlink:href="svgpan.js"/>
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_lateral_mixing_coeffs::varmix_init</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-151.5 1186,-151.5 1186,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-151.5 1129,-151.5 1129,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Initializes the variables mixing coefficients container.">
-<polygon fill="#bfbfbf" stroke="#000000" points="0,-88.5 0,-118.5 110,-118.5 110,-88.5 0,-88.5"/>
+<polygon fill="#bfbfbf" stroke="#000000" points="0,-88.5 0,-118.5 104,-118.5 104,-88.5 0,-88.5"/>
 <text text-anchor="start" x="8" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_lateral_mixing</text>
-<text text-anchor="middle" x="55" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_coeffs::varmix_init</text>
+<text text-anchor="middle" x="52" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_coeffs::varmix_init</text>
 </a>
 </g>
 </g>
@@ -69,146 +69,146 @@ var sectionId = 'dynsection-8';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="This provides a convenient interface for writing an mpp_error message with run&#45;time filter based on a...">
-<polygon fill="#ffffff" stroke="#000000" points="914,-68.5 914,-98.5 1029,-98.5 1029,-68.5 914,-68.5"/>
-<text text-anchor="start" x="922" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="971.5" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
+<polygon fill="#ffffff" stroke="#000000" points="873.5,-68.5 873.5,-98.5 979.5,-98.5 979.5,-68.5 873.5,-68.5"/>
+<text text-anchor="start" x="881.5" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="926.5" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M110.0852,-115.407C175.2736,-128.4378 287.2542,-147.5 384.5,-147.5 384.5,-147.5 384.5,-147.5 564,-147.5 703.8016,-147.5 738.632,-133.4716 876,-107.5 885.8897,-105.6302 896.2816,-103.351 906.4217,-100.9497"/>
-<polygon fill="#191970" stroke="#191970" points="907.5562,-104.2761 916.4499,-98.5183 905.9067,-97.4732 907.5562,-104.2761"/>
+<path fill="none" stroke="#191970" d="M104.1379,-115.2334C166.7067,-128.2677 274.9607,-147.5 369,-147.5 369,-147.5 369,-147.5 540,-147.5 655.2127,-147.5 787.18,-119.478 863.2838,-100.5182"/>
+<polygon fill="#191970" stroke="#191970" points="864.3481,-103.8595 873.1901,-98.0226 862.6381,-97.0716 864.3481,-103.8595"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__wave__speed.html#a46e21529ec8098b0b19053afa133b971" target="_top" xlink:title="Initialize control structure for MOM_wave_speed.">
-<polygon fill="#ffffff" stroke="#000000" points="146,-66.5 146,-96.5 280,-96.5 280,-66.5 146,-66.5"/>
-<text text-anchor="start" x="154" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_speed::wave</text>
-<text text-anchor="middle" x="213" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_speed_init</text>
+<polygon fill="#ffffff" stroke="#000000" points="140,-66.5 140,-96.5 268,-96.5 268,-66.5 140,-66.5"/>
+<text text-anchor="start" x="148" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_speed::wave</text>
+<text text-anchor="middle" x="204" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_speed_init</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M110.2607,-95.8055C118.5117,-94.6566 127.1436,-93.4547 135.7478,-92.2566"/>
-<polygon fill="#191970" stroke="#191970" points="136.3895,-95.7011 145.8112,-90.8554 135.4241,-88.768 136.3895,-95.7011"/>
+<path fill="none" stroke="#191970" d="M104.3098,-95.9288C112.5189,-94.7407 121.1378,-93.4932 129.7272,-92.25"/>
+<polygon fill="#191970" stroke="#191970" points="130.3752,-95.6928 139.7707,-90.7963 129.3724,-88.765 130.3752,-95.6928"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="This returns .true. if the current PE is the root PE.">
-<polygon fill="#ffffff" stroke="#000000" points="1067,-68.5 1067,-98.5 1182,-98.5 1182,-68.5 1067,-68.5"/>
-<text text-anchor="start" x="1075" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="1124.5" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
+<polygon fill="#ffffff" stroke="#000000" points="1019,-68.5 1019,-98.5 1125,-98.5 1125,-68.5 1019,-68.5"/>
+<text text-anchor="start" x="1027" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="1072" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M1029.3427,-83.5C1038.2579,-83.5 1047.5331,-83.5 1056.6427,-83.5"/>
-<polygon fill="#191970" stroke="#191970" points="1056.8293,-87.0001 1066.8293,-83.5 1056.8293,-80.0001 1056.8293,-87.0001"/>
+<path fill="none" stroke="#191970" d="M979.8526,-83.5C989.1442,-83.5 998.8912,-83.5 1008.4246,-83.5"/>
+<polygon fill="#191970" stroke="#191970" points="1008.6538,-87.0001 1018.6538,-83.5 1008.6538,-80.0001 1008.6538,-87.0001"/>
 </g>
 <!-- Node4&#45;&gt;Node2 -->
 <g id="edge9" class="edge">
 <title>Node4&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M280.2056,-80.5655C336.0915,-79.8375 417.7208,-78.8874 489,-78.5 555.6657,-78.1377 572.3352,-77.9988 639,-78.5 730.7026,-79.1895 836.6194,-80.9484 903.8046,-82.1841"/>
-<polygon fill="#191970" stroke="#191970" points="903.7748,-85.684 913.838,-82.37 903.9046,-78.6852 903.7748,-85.684"/>
+<path fill="none" stroke="#191970" d="M268.2282,-80.5729C322.1024,-79.8438 401.0722,-78.8887 470,-78.5 532.2212,-78.1491 547.7797,-78.0086 610,-78.5 697.7129,-79.1928 799.0864,-80.9654 862.9881,-82.202"/>
+<polygon fill="#191970" stroke="#191970" points="863.2367,-85.7074 873.3031,-82.4033 863.3733,-78.7087 863.2367,-85.7074"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="namespacemom__remapping.html#a6847e0c44ccb54fb72587677f90d95b6" target="_top" xlink:title="Constructor for remapping control structure.">
-<polygon fill="#ffffff" stroke="#000000" points="316,-.5 316,-30.5 453,-30.5 453,-.5 316,-.5"/>
-<text text-anchor="start" x="324" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_remapping::initialize</text>
-<text text-anchor="middle" x="384.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_remapping</text>
+<g id="a_node5"><a xlink:href="namespacemom__remapping.html#a81211827af45207130d25cae520b55e5" target="_top" xlink:title="Constructor for remapping control structure.">
+<polygon fill="#ffffff" stroke="#000000" points="304,-.5 304,-30.5 434,-30.5 434,-.5 304,-.5"/>
+<text text-anchor="start" x="312" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_remapping::initialize</text>
+<text text-anchor="middle" x="369" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_remapping</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M252.3456,-66.3583C277.1829,-56.7999 309.453,-44.3811 335.8872,-34.2081"/>
-<polygon fill="#191970" stroke="#191970" points="337.2618,-37.4294 345.3375,-30.5713 334.7477,-30.8965 337.2618,-37.4294"/>
+<path fill="none" stroke="#191970" d="M241.8543,-66.3583C265.6455,-56.8418 296.5252,-44.4899 321.8947,-34.3421"/>
+<polygon fill="#191970" stroke="#191970" points="323.3369,-37.5349 331.3218,-30.5713 320.7371,-31.0356 323.3369,-37.5349"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="namespacemom__wave__speed.html#a035c9e3306d6b21809e240a5b24a2db0" target="_top" xlink:title="Sets internal parameters for MOM_wave_speed.">
-<polygon fill="#ffffff" stroke="#000000" points="497,-88.5 497,-118.5 631,-118.5 631,-88.5 497,-88.5"/>
-<text text-anchor="start" x="505" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_speed::wave</text>
-<text text-anchor="middle" x="564" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_speed_set_param</text>
+<polygon fill="#ffffff" stroke="#000000" points="476,-88.5 476,-118.5 604,-118.5 604,-88.5 476,-88.5"/>
+<text text-anchor="start" x="484" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_speed::wave</text>
+<text text-anchor="middle" x="540" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_speed_set_param</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node9 -->
 <g id="edge10" class="edge">
 <title>Node4&#45;&gt;Node9</title>
-<path fill="none" stroke="#191970" d="M280.261,-85.7158C339.2812,-89.4151 425.0959,-94.7938 486.8801,-98.6663"/>
-<polygon fill="#191970" stroke="#191970" points="486.7671,-102.166 496.9665,-99.2985 487.2051,-95.1797 486.7671,-102.166"/>
+<path fill="none" stroke="#191970" d="M268.3866,-85.7158C324.768,-89.4074 406.6933,-94.7716 465.8097,-98.6423"/>
+<polygon fill="#191970" stroke="#191970" points="465.6239,-102.1375 475.8312,-99.2985 466.0813,-95.1525 465.6239,-102.1375"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="namespacemom__remapping.html#a9e811f89c505a4416ea0eec315769801" target="_top" xlink:title="Set parameters within remapping object.">
-<polygon fill="#ffffff" stroke="#000000" points="489,-.5 489,-30.5 639,-30.5 639,-.5 489,-.5"/>
-<text text-anchor="start" x="497" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_remapping::remapping</text>
-<text text-anchor="middle" x="564" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_set_param</text>
+<g id="a_node6"><a xlink:href="namespacemom__remapping.html#a50e96a4a1083bb1fae3ca0130b6a2c11" target="_top" xlink:title="Set parameters within remapping object.">
+<polygon fill="#ffffff" stroke="#000000" points="470,-.5 470,-30.5 610,-30.5 610,-.5 470,-.5"/>
+<text text-anchor="start" x="478" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_remapping::remapping</text>
+<text text-anchor="middle" x="540" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_set_param</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M453.1296,-15.5C461.5236,-15.5 470.179,-15.5 478.7788,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="478.8297,-19.0001 488.8296,-15.5 478.8296,-12.0001 478.8297,-19.0001"/>
+<path fill="none" stroke="#191970" d="M434.1356,-15.5C442.5475,-15.5 451.2387,-15.5 459.8571,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="459.9197,-19.0001 469.9197,-15.5 459.9196,-12.0001 459.9197,-19.0001"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="namespacemom__remapping.html#a41a89ac62578250500b7a450d5fdfae7" target="_top" xlink:title="Changes the method of reconstruction Use this routine to parse a string parameter specifying the reco...">
-<polygon fill="#ffffff" stroke="#000000" points="675,-9 675,-28 876,-28 876,-9 675,-9"/>
-<text text-anchor="middle" x="775.5" y="-16" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_remapping::setreconstructiontype</text>
+<polygon fill="#ffffff" stroke="#000000" points="646,-9 646,-28 834,-28 834,-9 646,-9"/>
+<text text-anchor="middle" x="740" y="-16" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_remapping::setreconstructiontype</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M639.1625,-16.5661C647.4404,-16.6836 655.9919,-16.8048 664.589,-16.9268"/>
-<polygon fill="#191970" stroke="#191970" points="664.6398,-20.4278 674.6885,-17.07 664.7392,-13.4285 664.6398,-20.4278"/>
+<path fill="none" stroke="#191970" d="M610.2313,-16.5535C618.483,-16.6772 627.0322,-16.8055 635.6246,-16.9344"/>
+<polygon fill="#191970" stroke="#191970" points="635.6644,-20.4353 645.7158,-17.0857 635.7695,-13.4361 635.6644,-20.4353"/>
 </g>
 <!-- Node7&#45;&gt;Node2 -->
 <g id="edge7" class="edge">
 <title>Node7&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M815.4339,-28.0912C833.9986,-32.8395 856.2819,-38.9529 876,-45.5 892.8292,-51.0879 910.9834,-58.0636 926.8978,-64.5076"/>
-<polygon fill="#191970" stroke="#191970" points="925.9051,-67.8832 936.4856,-68.4341 928.558,-61.4053 925.9051,-67.8832"/>
+<path fill="none" stroke="#191970" d="M776.8993,-28.0872C794.353,-32.8789 815.3973,-39.0293 834,-45.5 850.1594,-51.1208 867.5849,-58.0453 882.9071,-64.4367"/>
+<polygon fill="#191970" stroke="#191970" points="881.5711,-67.6718 892.1454,-68.331 884.2902,-61.2214 881.5711,-67.6718"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="namespacemom__string__functions.html#aca148baf726de2f028b7e7baad3c85d4" target="_top" xlink:title="Return a string in which all uppercase letters have been replaced by their lowercase counterparts.">
-<polygon fill="#ffffff" stroke="#000000" points="912,-3.5 912,-33.5 1031,-33.5 1031,-3.5 912,-3.5"/>
-<text text-anchor="start" x="920" y="-21.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_string_functions</text>
-<text text-anchor="middle" x="971.5" y="-10.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::uppercase</text>
+<polygon fill="#ffffff" stroke="#000000" points="870,-3.5 870,-33.5 983,-33.5 983,-3.5 870,-3.5"/>
+<text text-anchor="start" x="878" y="-21.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_string_functions</text>
+<text text-anchor="middle" x="926.5" y="-10.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::uppercase</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge8" class="edge">
 <title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M876.0837,-18.5C884.7706,-18.5 893.4304,-18.5 901.7899,-18.5"/>
-<polygon fill="#191970" stroke="#191970" points="901.8193,-22.0001 911.8192,-18.5 901.8192,-15.0001 901.8193,-22.0001"/>
+<path fill="none" stroke="#191970" d="M834.0696,-18.5C842.7581,-18.5 851.4372,-18.5 859.805,-18.5"/>
+<polygon fill="#191970" stroke="#191970" points="859.8373,-22.0001 869.8372,-18.5 859.8372,-15.0001 859.8373,-22.0001"/>
 </g>
 <!-- Node9&#45;&gt;Node2 -->
 <g id="edge11" class="edge">
 <title>Node9&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M631.2903,-100.1974C706.6403,-96.4992 828.0717,-90.5394 903.6493,-86.8301"/>
-<polygon fill="#191970" stroke="#191970" points="904.1833,-90.3082 913.9997,-86.3221 903.8401,-83.3166 904.1833,-90.3082"/>
+<path fill="none" stroke="#191970" d="M604.2565,-100.175C676.0683,-96.4589 791.6157,-90.4798 863.0841,-86.7815"/>
+<polygon fill="#191970" stroke="#191970" points="863.4926,-90.2652 873.2983,-86.253 863.1308,-83.2745 863.4926,-90.2652"/>
 </g>
 </g>
 </svg>

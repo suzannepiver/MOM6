@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('structmom__entrain__diffusive_1_1entra
 </div><div class="dynheader">
 Collaboration diagram for mom_entrain_diffusive::entrain_diffusive_cs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__entrain__diffusive_1_1entrain__diffusive__cs__coll__graph.svg" width="435" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__entrain__diffusive_1_1entrain__diffusive__cs__coll__graph.svg" width="407" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -123,6 +123,9 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a494616228fc4770aebb8138359c1eb32"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__entrain__diffusive_1_1entrain__diffusive__cs.html#a494616228fc4770aebb8138359c1eb32">tolerance_ent</a></td></tr>
 <tr class="memdesc:a494616228fc4770aebb8138359c1eb32"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tolerance with which to solve for entrainment values [H ~&gt; m or kg m-2].  <a href="structmom__entrain__diffusive_1_1entrain__diffusive__cs.html#a494616228fc4770aebb8138359c1eb32">More...</a><br /></td></tr>
 <tr class="separator:a494616228fc4770aebb8138359c1eb32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab45176c75bd9dc5dda4f622360294f"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__entrain__diffusive_1_1entrain__diffusive__cs.html#a1ab45176c75bd9dc5dda4f622360294f">rho_sig_off</a></td></tr>
+<tr class="memdesc:a1ab45176c75bd9dc5dda4f622360294f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset between potential density and a sigma value [R ~&gt; kg m-3].  <a href="structmom__entrain__diffusive_1_1entrain__diffusive__cs.html#a1ab45176c75bd9dc5dda4f622360294f">More...</a><br /></td></tr>
+<tr class="separator:a1ab45176c75bd9dc5dda4f622360294f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90befefd96d23e33df09235fd7eab51c"><td class="memItemLeft" align="right" valign="top">type(diag_ctrl), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__entrain__diffusive_1_1entrain__diffusive__cs.html#a90befefd96d23e33df09235fd7eab51c">diag</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a90befefd96d23e33df09235fd7eab51c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that is used to regulate the timing of diagnostic output.  <a href="structmom__entrain__diffusive_1_1entrain__diffusive__cs.html#a90befefd96d23e33df09235fd7eab51c">More...</a><br /></td></tr>
 <tr class="separator:a90befefd96d23e33df09235fd7eab51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,8 +189,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure that is used to regulate the timing of diagnostic output. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__entrain__diffusive_8F90_source.html#l00038">38</a> of file <a class="el" href="MOM__entrain__diffusive_8F90_source.html">MOM_entrain_diffusive.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__entrain__diffusive_8F90_source.html#l00039">39</a> of file <a class="el" href="MOM__entrain__diffusive_8F90_source.html">MOM_entrain_diffusive.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -205,8 +208,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic ID for mixing work. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__entrain__diffusive_8F90_source.html#l00041">41</a> of file <a class="el" href="MOM__entrain__diffusive_8F90_source.html">MOM_entrain_diffusive.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">integer</span> :: id_diff_work = -1<span class="comment"> !&lt; Diagnostic ID for mixing work</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__entrain__diffusive_8F90_source.html#l00042">42</a> of file <a class="el" href="MOM__entrain__diffusive_8F90_source.html">MOM_entrain_diffusive.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">integer</span> :: id_diff_work = -1<span class="comment"> !&lt; Diagnostic ID for mixing work</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -224,8 +227,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic ID for diffusivity. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__entrain__diffusive_8F90_source.html#l00040">40</a> of file <a class="el" href="MOM__entrain__diffusive_8F90_source.html">MOM_entrain_diffusive.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">integer</span> :: id_Kd = -1<span class="comment">      !&lt; Diagnostic ID for diffusivity</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__entrain__diffusive_8F90_source.html#l00041">41</a> of file <a class="el" href="MOM__entrain__diffusive_8F90_source.html">MOM_entrain_diffusive.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">integer</span> :: id_Kd = -1<span class="comment">      !&lt; Diagnostic ID for diffusivity</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -245,6 +248,25 @@ Public variables and constants</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="MOM__entrain__diffusive_8F90_source.html#l00034">34</a> of file <a class="el" href="MOM__entrain__diffusive_8F90_source.html">MOM_entrain_diffusive.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">integer</span> :: max_ent_it<span class="comment">      !&lt; The maximum number of iterations that may be used to</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1ab45176c75bd9dc5dda4f622360294f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab45176c75bd9dc5dda4f622360294f">&#9670;&nbsp;</a></span>rho_sig_off</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real mom_entrain_diffusive::entrain_diffusive_cs::rho_sig_off</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The offset between potential density and a sigma value [R ~&gt; kg m-3]. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__entrain__diffusive_8F90_source.html#l00038">38</a> of file <a class="el" href="MOM__entrain__diffusive_8F90_source.html">MOM_entrain_diffusive.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">  real</span>    :: Rho_sig_off<span class="comment">     !&lt; The offset between potential density and a sigma value [R ~&gt; kg m-3]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -268,7 +290,7 @@ Public variables and constants</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__entrain__diffusive_8F90_source.html">MOM_entrain_diffusive.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__entrain__diffusive_8F90_source.html">MOM_entrain_diffusive.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

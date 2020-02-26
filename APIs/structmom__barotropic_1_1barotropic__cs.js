@@ -115,7 +115,6 @@ var structmom__barotropic_1_1barotropic__cs =
     [ "pass_ubt_cor", "structmom__barotropic_1_1barotropic__cs.html#a403fef8c25ead6c1e8855709583763f7", null ],
     [ "pass_ubta_uhbta", "structmom__barotropic_1_1barotropic__cs.html#a04a7c9d25e66e9bea416a6809dbf0163", null ],
     [ "q_d", "structmom__barotropic_1_1barotropic__cs.html#ae1a9ba5ebb828c8c35e2d62b72ea7728", null ],
-    [ "rho0", "structmom__barotropic_1_1barotropic__cs.html#a647aaa0098e63a445973bfcd70104070", null ],
     [ "sadourny", "structmom__barotropic_1_1barotropic__cs.html#a224b0864de5a52a6b80f31f7ad57654c", null ],
     [ "split", "structmom__barotropic_1_1barotropic__cs.html#aeda17ad2fd040204769f70a94203cf42", null ],
     [ "strong_drag", "structmom__barotropic_1_1barotropic__cs.html#aa28438ef04fef7c40554297a16b48924", null ],

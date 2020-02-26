@@ -1,0 +1,27 @@
+digraph "mom_neutral_diffusion::find_neutral_pos_full"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mom_neutral_diffusion\l::find_neutral_pos_full",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Use the full equation of state to calculate the difference in locally referenced potential density...."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_neutral_diffusion\l::search_other_column",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__neutral__diffusion.html#a2952cbcce84dbdae01fce09240f819c5",tooltip="Searches the \"other\" (searched) column for the position of the neutral surface."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_neutral_diffusion\l::find_neutral_surface\l_positions_discontinuous",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__neutral__diffusion.html#a72eca09bc6cc25f8a3831ad8e2be91d4",tooltip="Higher order version of find_neutral_surface_positions. Returns positions within left/right columns o..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mom_neutral_diffusion\l::ndiff_unit_tests_discontinuous",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__neutral__diffusion.html#aa44f980bb24df5dc71913b32892b2f71",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mom_neutral_diffusion\l::neutral_diffusion_unit_tests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__neutral__diffusion.html#a6f91c93a6363fb39395796420f25fad2",tooltip="Returns true if unit tests of neutral_diffusion functions fail. Otherwise returns false."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mom_unit_tests::unit\l_tests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__unit__tests.html#a57645db02bc734c32de50d028ef906ac",tooltip="Calls unit tests for other modules. Note that if a unit test returns true, a FATAL error is triggered..."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mom::initialize_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a96708b16215666edbfa5b46228f3a200",tooltip="Initialize MOM, including memory allocation, setting up parameters and diagnostics,..."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mom_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6",tooltip=" "];
+  Node3 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mom_neutral_diffusion\l::neutral_diffusion_calc\l_coeffs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__neutral__diffusion.html#a572a6c3f71eec3adb740a788b4ac21bd",tooltip="Calculate remapping factors for u/v columns used to map adjoining columns to a shared coordinate spac..."];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mom_tracer_hor_diff\l::tracer_hordiff",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tracer__hor__diff.html#a098229e37012e7bd93d13036bfc864ac",tooltip="Compute along-coordinate diffusion of all tracers using the diffusivity in CSKhTr,..."];
+}

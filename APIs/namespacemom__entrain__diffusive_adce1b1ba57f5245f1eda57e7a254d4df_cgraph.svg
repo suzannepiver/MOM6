@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 748;
+var viewWidth = 709;
 var viewHeight = 61;
 var sectionId = 'dynsection-7';
 </script>
@@ -54,14 +54,14 @@ var sectionId = 'dynsection-7';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_entrain_diffusive::f_kb_to_ea_kb</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-57 744,-57 744,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-57 705,-57 705,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Given an entrainment from below for layer kb, determine a consistent entrainment from above,...">
-<polygon fill="#bfbfbf" stroke="#000000" points="0,-22.5 0,-52.5 122,-52.5 122,-22.5 0,-22.5"/>
+<polygon fill="#bfbfbf" stroke="#000000" points="0,-22.5 0,-52.5 115,-52.5 115,-22.5 0,-22.5"/>
 <text text-anchor="start" x="8" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_entrain_diffusive</text>
-<text text-anchor="middle" x="61" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::f_kb_to_ea_kb</text>
+<text text-anchor="middle" x="57.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::f_kb_to_ea_kb</text>
 </a>
 </g>
 </g>
@@ -69,71 +69,71 @@ var sectionId = 'dynsection-7';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__entrain__diffusive.html#aa2d2f462912ba1e201b1b73e62a905f3" target="_top" xlink:title="This subroutine determines the reference density difference between the bottommost buffer layer and t...">
-<polygon fill="#ffffff" stroke="#000000" points="316,-22.5 316,-52.5 438,-52.5 438,-22.5 316,-22.5"/>
-<text text-anchor="start" x="324" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_entrain_diffusive</text>
-<text text-anchor="middle" x="377" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::determine_dskb</text>
+<polygon fill="#ffffff" stroke="#000000" points="302,-22.5 302,-52.5 417,-52.5 417,-22.5 302,-22.5"/>
+<text text-anchor="start" x="310" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_entrain_diffusive</text>
+<text text-anchor="middle" x="359.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::determine_dskb</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M122.0512,-39.676C133.9714,-40.0195 146.376,-40.3203 158,-40.5 212.2157,-41.3382 225.7843,-41.3382 280,-40.5 288.3547,-40.3708 297.1128,-40.1791 305.8043,-39.954"/>
-<polygon fill="#191970" stroke="#191970" points="306.0484,-43.4487 315.9488,-39.676 305.8566,-36.4513 306.0484,-43.4487"/>
+<path fill="none" stroke="#191970" d="M115.35,-39.646C127.1441,-40.002 139.4704,-40.3151 151,-40.5 202.1045,-41.3196 214.8955,-41.3196 266,-40.5 274.2869,-40.3671 282.9854,-40.168 291.602,-39.9343"/>
+<polygon fill="#191970" stroke="#191970" points="291.7546,-43.4314 301.65,-39.646 291.5538,-36.4343 291.7546,-43.4314"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__entrain__diffusive.html#ae45dbf976314c3a9e278ebcebedab109" target="_top" xlink:title="Maximize F = ent*ds_kb*I_dSkbp1 in the range min_ent &lt; ent &lt; max_ent.">
-<polygon fill="#ffffff" stroke="#000000" points="158,-.5 158,-30.5 280,-30.5 280,-.5 158,-.5"/>
-<text text-anchor="start" x="166" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_entrain_diffusive</text>
-<text text-anchor="middle" x="219" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::find_maxf_kb</text>
+<polygon fill="#ffffff" stroke="#000000" points="151,-.5 151,-30.5 266,-30.5 266,-.5 151,-.5"/>
+<text text-anchor="start" x="159" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_entrain_diffusive</text>
+<text text-anchor="middle" x="208.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::find_maxf_kb</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M122.0869,-28.9942C130.5129,-27.821 139.226,-26.6078 147.8146,-25.4119"/>
-<polygon fill="#191970" stroke="#191970" points="148.3933,-28.8652 157.815,-24.0194 147.4279,-21.9321 148.3933,-28.8652"/>
+<path fill="none" stroke="#191970" d="M115.0174,-29.12C123.4639,-27.8894 132.2292,-26.6123 140.8561,-25.3554"/>
+<polygon fill="#191970" stroke="#191970" points="141.5016,-28.7984 150.8925,-23.8931 140.4924,-21.8715 141.5016,-28.7984"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="This provides a convenient interface for writing an mpp_error message with run&#45;time filter based on a...">
-<polygon fill="#ffffff" stroke="#000000" points="474,-22.5 474,-52.5 589,-52.5 589,-22.5 474,-22.5"/>
-<text text-anchor="start" x="482" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="531.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
+<polygon fill="#ffffff" stroke="#000000" points="453,-22.5 453,-52.5 559,-52.5 559,-22.5 453,-22.5"/>
+<text text-anchor="start" x="461" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="506" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M438.0625,-37.5C446.4576,-37.5 455.1198,-37.5 463.6279,-37.5"/>
-<polygon fill="#191970" stroke="#191970" points="463.9013,-41.0001 473.9013,-37.5 463.9012,-34.0001 463.9013,-41.0001"/>
+<path fill="none" stroke="#191970" d="M417.4007,-37.5C425.7023,-37.5 434.2792,-37.5 442.6787,-37.5"/>
+<polygon fill="#191970" stroke="#191970" points="442.8059,-41.0001 452.8059,-37.5 442.8058,-34.0001 442.8059,-41.0001"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="This returns .true. if the current PE is the root PE.">
-<polygon fill="#ffffff" stroke="#000000" points="625,-22.5 625,-52.5 740,-52.5 740,-22.5 625,-22.5"/>
-<text text-anchor="start" x="633" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="682.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
+<polygon fill="#ffffff" stroke="#000000" points="595,-22.5 595,-52.5 701,-52.5 701,-22.5 595,-22.5"/>
+<text text-anchor="start" x="603" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="648" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M589.0174,-37.5C597.4639,-37.5 606.2292,-37.5 614.8561,-37.5"/>
-<polygon fill="#191970" stroke="#191970" points="614.8926,-41.0001 624.8925,-37.5 614.8925,-34.0001 614.8926,-41.0001"/>
+<path fill="none" stroke="#191970" d="M559.2796,-37.5C567.56,-37.5 576.184,-37.5 584.6606,-37.5"/>
+<polygon fill="#191970" stroke="#191970" points="584.8941,-41.0001 594.8941,-37.5 584.8941,-34.0001 584.8941,-41.0001"/>
 </g>
 <!-- Node5&#45;&gt;Node2 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M280.0869,-24.0058C288.5129,-25.179 297.226,-26.3922 305.8146,-27.5881"/>
-<polygon fill="#191970" stroke="#191970" points="305.4279,-31.0679 315.815,-28.9806 306.3933,-24.1348 305.4279,-31.0679"/>
+<path fill="none" stroke="#191970" d="M266.0174,-23.88C274.4639,-25.1106 283.2292,-26.3877 291.8561,-27.6446"/>
+<polygon fill="#191970" stroke="#191970" points="291.4924,-31.1285 301.8925,-29.1069 292.5016,-24.2016 291.4924,-31.1285"/>
 </g>
 </g>
 </svg>

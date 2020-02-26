@@ -101,11 +101,11 @@ $(document).ready(function(){initNavTree('structmom__variables_1_1accel__diag__p
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Pointers to arrays with accelerations, which can later be used for derived diagnostics, like energy balances. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00155">155</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00151">151</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_variables::accel_diag_ptrs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__variables_1_1accel__diag__ptrs__coll__graph.svg" width="166" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__variables_1_1accel__diag__ptrs__coll__graph.svg" width="160" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -142,10 +142,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a8b8bb50892040dd20d4cb414e3d0fccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Meridional acceleration due to diapycnal mixing [L T-2 ~&gt; m s-2].  <a href="structmom__variables_1_1accel__diag__ptrs.html#a8b8bb50892040dd20d4cb414e3d0fccf">More...</a><br /></td></tr>
 <tr class="separator:a8b8bb50892040dd20d4cb414e3d0fccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3a18ab163e9d78c20315e2d3362e061"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__variables_1_1accel__diag__ptrs.html#af3a18ab163e9d78c20315e2d3362e061">du_other</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:af3a18ab163e9d78c20315e2d3362e061"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zonal velocity changes due to any other processes that are not due to any explicit accelerations [m s-1].  <a href="structmom__variables_1_1accel__diag__ptrs.html#af3a18ab163e9d78c20315e2d3362e061">More...</a><br /></td></tr>
+<tr class="memdesc:af3a18ab163e9d78c20315e2d3362e061"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zonal velocity changes due to any other processes that are not due to any explicit accelerations [L T-1 ~&gt; m s-1].  <a href="structmom__variables_1_1accel__diag__ptrs.html#af3a18ab163e9d78c20315e2d3362e061">More...</a><br /></td></tr>
 <tr class="separator:af3a18ab163e9d78c20315e2d3362e061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61a9cf62d8d00727f4806696c04e33e1"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__variables_1_1accel__diag__ptrs.html#a61a9cf62d8d00727f4806696c04e33e1">dv_other</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a61a9cf62d8d00727f4806696c04e33e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Meridional velocity changes due to any other processes that are not due to any explicit accelerations [m s-1].  <a href="structmom__variables_1_1accel__diag__ptrs.html#a61a9cf62d8d00727f4806696c04e33e1">More...</a><br /></td></tr>
+<tr class="memdesc:a61a9cf62d8d00727f4806696c04e33e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Meridional velocity changes due to any other processes that are not due to any explicit accelerations [L T-1 ~&gt; m s-1].  <a href="structmom__variables_1_1accel__diag__ptrs.html#a61a9cf62d8d00727f4806696c04e33e1">More...</a><br /></td></tr>
 <tr class="separator:a61a9cf62d8d00727f4806696c04e33e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1c22c990a55c3b88dad3147a07832b8"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__variables_1_1accel__diag__ptrs.html#aa1c22c990a55c3b88dad3147a07832b8">gradkeu</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:aa1c22c990a55c3b88dad3147a07832b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">gradKEu = - d/dx(u2) [L T-2 ~&gt; m s-2]  <a href="structmom__variables_1_1accel__diag__ptrs.html#aa1c22c990a55c3b88dad3147a07832b8">More...</a><br /></td></tr>
@@ -175,7 +175,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Zonal Coriolis and momentum advection accelerations [L T-2 ~&gt; m s-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00154">154</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
 
 </div>
 </div>
@@ -193,7 +193,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Meridional Coriolis and momentum advection accelerations [L T-2 ~&gt; m s-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00154">154</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
 
 </div>
 </div>
@@ -211,18 +211,18 @@ Public variables and constants</h2></td></tr>
 
 <p>Zonal acceleration due to along isopycnal viscosity [L T-2 ~&gt; m s-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    diffu =&gt; null(), &amp;     <span class="comment">!&lt; Zonal acceleration due to along isopycnal viscosity [L T-2 ~&gt; m s-2]</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    diffv =&gt; null(), &amp;     <span class="comment">!&lt; Meridional acceleration due to along isopycnal viscosity [L T-2 ~&gt; m s-2]</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    cau =&gt; null(), &amp;       <span class="comment">!&lt; Zonal Coriolis and momentum advection accelerations [L T-2 ~&gt; m s-2]</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    cav =&gt; null(), &amp;       <span class="comment">!&lt; Meridional Coriolis and momentum advection accelerations [L T-2 ~&gt; m s-2]</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    pfu =&gt; null(), &amp;       <span class="comment">!&lt; Zonal acceleration due to pressure forces [L T-2 ~&gt; m s-2]</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    pfv =&gt; null(), &amp;       <span class="comment">!&lt; Meridional acceleration due to pressure forces [L T-2 ~&gt; m s-2]</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    du_dt_visc =&gt; null(), &amp;<span class="comment">!&lt; Zonal acceleration due to vertical viscosity [L T-2 ~&gt; m s-2]</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    dv_dt_visc =&gt; null(), &amp;<span class="comment">!&lt; Meridional acceleration due to vertical viscosity [L T-2 ~&gt; m s-2]</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    du_dt_dia =&gt; null(), &amp; <span class="comment">!&lt; Zonal acceleration due to diapycnal  mixing [L T-2 ~&gt; m s-2]</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    dv_dt_dia =&gt; null()    <span class="comment">!&lt; Meridional acceleration due to diapycnal  mixing [L T-2 ~&gt; m s-2]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00154">154</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    diffu =&gt; null(), &amp;     <span class="comment">!&lt; Zonal acceleration due to along isopycnal viscosity [L T-2 ~&gt; m s-2]</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    diffv =&gt; null(), &amp;     <span class="comment">!&lt; Meridional acceleration due to along isopycnal viscosity [L T-2 ~&gt; m s-2]</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    cau =&gt; null(), &amp;       <span class="comment">!&lt; Zonal Coriolis and momentum advection accelerations [L T-2 ~&gt; m s-2]</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    cav =&gt; null(), &amp;       <span class="comment">!&lt; Meridional Coriolis and momentum advection accelerations [L T-2 ~&gt; m s-2]</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    pfu =&gt; null(), &amp;       <span class="comment">!&lt; Zonal acceleration due to pressure forces [L T-2 ~&gt; m s-2]</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    pfv =&gt; null(), &amp;       <span class="comment">!&lt; Meridional acceleration due to pressure forces [L T-2 ~&gt; m s-2]</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    du_dt_visc =&gt; null(), &amp;<span class="comment">!&lt; Zonal acceleration due to vertical viscosity [L T-2 ~&gt; m s-2]</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    dv_dt_visc =&gt; null(), &amp;<span class="comment">!&lt; Meridional acceleration due to vertical viscosity [L T-2 ~&gt; m s-2]</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    du_dt_dia =&gt; null(), &amp; <span class="comment">!&lt; Zonal acceleration due to diapycnal  mixing [L T-2 ~&gt; m s-2]</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    dv_dt_dia =&gt; null()    <span class="comment">!&lt; Meridional acceleration due to diapycnal  mixing [L T-2 ~&gt; m s-2]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -240,7 +240,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Meridional acceleration due to along isopycnal viscosity [L T-2 ~&gt; m s-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00154">154</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
 
 </div>
 </div>
@@ -258,7 +258,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Zonal acceleration due to diapycnal mixing [L T-2 ~&gt; m s-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00154">154</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
 
 </div>
 </div>
@@ -276,7 +276,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Zonal acceleration due to vertical viscosity [L T-2 ~&gt; m s-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00154">154</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
 
 </div>
 </div>
@@ -292,10 +292,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Zonal velocity changes due to any other processes that are not due to any explicit accelerations [m s-1]. </p>
+<p>Zonal velocity changes due to any other processes that are not due to any explicit accelerations [L T-1 ~&gt; m s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00169">169</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: du_other =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00165">165</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: du_other =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -313,7 +313,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Meridional acceleration due to diapycnal mixing [L T-2 ~&gt; m s-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00154">154</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
 
 </div>
 </div>
@@ -331,7 +331,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Meridional acceleration due to vertical viscosity [L T-2 ~&gt; m s-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00154">154</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
 
 </div>
 </div>
@@ -347,10 +347,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Meridional velocity changes due to any other processes that are not due to any explicit accelerations [m s-1]. </p>
+<p>Meridional velocity changes due to any other processes that are not due to any explicit accelerations [L T-1 ~&gt; m s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00172">172</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: dv_other =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00168">168</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: dv_other =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -368,8 +368,8 @@ Public variables and constants</h2></td></tr>
 
 <p>gradKEu = - d/dx(u2) [L T-2 ~&gt; m s-2] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00177">177</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: gradKEu(:,:,:) =&gt; null()  <span class="comment">!&lt; gradKEu = - d/dx(u2) [L T-2 ~&gt; m s-2]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00173">173</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: gradKEu(:,:,:) =&gt; null()  <span class="comment">!&lt; gradKEu = - d/dx(u2) [L T-2 ~&gt; m s-2]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -387,8 +387,8 @@ Public variables and constants</h2></td></tr>
 
 <p>gradKEv = - d/dy(u2) [L T-2 ~&gt; m s-2] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00178">178</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: gradKEv(:,:,:) =&gt; null()  <span class="comment">!&lt; gradKEv = - d/dy(u2) [L T-2 ~&gt; m s-2]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00174">174</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: gradKEv(:,:,:) =&gt; null()  <span class="comment">!&lt; gradKEv = - d/dy(u2) [L T-2 ~&gt; m s-2]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -406,7 +406,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Zonal acceleration due to pressure forces [L T-2 ~&gt; m s-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00154">154</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
 
 </div>
 </div>
@@ -424,7 +424,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Meridional acceleration due to pressure forces [L T-2 ~&gt; m s-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00154">154</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
 
 </div>
 </div>
@@ -442,8 +442,8 @@ Public variables and constants</h2></td></tr>
 
 <p>rv_x_u = rv * u at v [L T-2 ~&gt; m s-2] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00180">180</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: rv_x_u(:,:,:) =&gt; null()   <span class="comment">!&lt; rv_x_u = rv * u at v [L T-2 ~&gt; m s-2]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00176">176</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: rv_x_u(:,:,:) =&gt; null()   <span class="comment">!&lt; rv_x_u = rv * u at v [L T-2 ~&gt; m s-2]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -461,13 +461,13 @@ Public variables and constants</h2></td></tr>
 
 <p>rv_x_v = rv * v at u [L T-2 ~&gt; m s-2] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00179">179</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: rv_x_v(:,:,:) =&gt; null()   <span class="comment">!&lt; rv_x_v = rv * v at u [L T-2 ~&gt; m s-2]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00175">175</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: rv_x_v(:,:,:) =&gt; null()   <span class="comment">!&lt; rv_x_v = rv * v at u [L T-2 ~&gt; m s-2]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/core/<a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/core/<a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

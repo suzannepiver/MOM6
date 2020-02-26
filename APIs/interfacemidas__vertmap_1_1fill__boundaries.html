@@ -164,23 +164,23 @@ Private functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>output filled array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="midas__vertmap_8F90_source.html#l00781">781</a> of file <a class="el" href="midas__vertmap_8F90_source.html">midas_vertmap.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">intent(in)</span> :: m<span class="comment"> !&lt; input array</span></div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">intent(in)</span> :: cyclic_x<span class="comment"> !&lt; zonal cyclic condition</span></div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">intent(in)</span> :: tripolar_n<span class="comment">  !&lt; northern fold condition</span></div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(0:size(m,1)+1,0:size(m,2)+1)</span> :: mp<span class="comment"> !&lt; output filled array</span></div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;  <span class="comment">! Local variables</span></div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(size(m,1),size(m,2))</span> :: m_real</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(0:size(m,1)+1,0:size(m,2)+1)</span> :: mp_real</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160; </div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;  m_real = real(m)</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160; </div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;  mp_real = fill_boundaries_real(m_real,cyclic_x,tripolar_n)</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160; </div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;  mp = int(mp_real)</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160; </div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;  <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="midas__vertmap_8F90_source.html#l00782">782</a> of file <a class="el" href="midas__vertmap_8F90_source.html">midas_vertmap.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">intent(in)</span> :: m<span class="comment"> !&lt; input array</span></div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">intent(in)</span> :: cyclic_x<span class="comment"> !&lt; zonal cyclic condition</span></div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">intent(in)</span> :: tripolar_n<span class="comment">  !&lt; northern fold condition</span></div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(0:size(m,1)+1,0:size(m,2)+1)</span> :: mp<span class="comment"> !&lt; output filled array</span></div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;  <span class="comment">! Local variables</span></div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(size(m,1),size(m,2))</span> :: m_real</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(0:size(m,1)+1,0:size(m,2)+1)</span> :: mp_real</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160; </div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;  m_real = real(m)</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160; </div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;  mp_real = fill_boundaries_real(m_real,cyclic_x,tripolar_n)</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160; </div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;  mp = int(mp_real)</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160; </div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;  <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -235,42 +235,42 @@ Private functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>output filled array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="midas__vertmap_8F90_source.html#l00801">801</a> of file <a class="el" href="midas__vertmap_8F90_source.html">midas_vertmap.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">intent(in)</span> :: m<span class="comment"> !&lt; input array</span></div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">intent(in)</span> :: cyclic_x<span class="comment"> !&lt; zonal cyclic condition</span></div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">intent(in)</span> :: tripolar_n<span class="comment">  !&lt; northern fold condition</span></div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(0:size(m,1)+1,0:size(m,2)+1)</span> :: mp<span class="comment"> !&lt; output filled array</span></div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160; </div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;  <span class="keywordtype">integer</span> :: ni,nj,i,j</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160; </div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;  ni=<span class="keyword">size</span>(m,1); nj=<span class="keyword">size</span>(m,2)</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160; </div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;  mp(1:ni,1:nj)=m(:,:)</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160; </div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;  <span class="keywordflow">if</span> (cyclic_x) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;     mp(0,1:nj)=m(ni,1:nj)</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;     mp(ni+1,1:nj)=m(1,1:nj)</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;     mp(0,1:nj)=m(1,1:nj)</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;     mp(ni+1,1:nj)=m(ni,1:nj)</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160; </div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;  mp(1:ni,0)=m(1:ni,1)</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;  <span class="keywordflow">if</span> (tripolar_n) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;     <span class="keywordflow">do</span> i=1,ni</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;       mp(i,nj+1)=m(ni-i+1,nj)</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;<span class="keywordflow">     enddo</span></div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;     mp(1:ni,nj+1)=m(1:ni,nj)</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160; </div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;  <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="midas__vertmap_8F90_source.html#l00802">802</a> of file <a class="el" href="midas__vertmap_8F90_source.html">midas_vertmap.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">intent(in)</span> :: m<span class="comment"> !&lt; input array</span></div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">intent(in)</span> :: cyclic_x<span class="comment"> !&lt; zonal cyclic condition</span></div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">intent(in)</span> :: tripolar_n<span class="comment">  !&lt; northern fold condition</span></div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(0:size(m,1)+1,0:size(m,2)+1)</span> :: mp<span class="comment"> !&lt; output filled array</span></div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160; </div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;  <span class="keywordtype">integer</span> :: ni,nj,i,j</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160; </div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;  ni=<span class="keyword">size</span>(m,1); nj=<span class="keyword">size</span>(m,2)</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160; </div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;  mp(1:ni,1:nj)=m(:,:)</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160; </div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;  <span class="keywordflow">if</span> (cyclic_x) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;     mp(0,1:nj)=m(ni,1:nj)</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;     mp(ni+1,1:nj)=m(1,1:nj)</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;     mp(0,1:nj)=m(1,1:nj)</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;     mp(ni+1,1:nj)=m(ni,1:nj)</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160; </div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;  mp(1:ni,0)=m(1:ni,1)</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;  <span class="keywordflow">if</span> (tripolar_n) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;     <span class="keywordflow">do</span> i=1,ni</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;       mp(i,nj+1)=m(ni-i+1,nj)</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;<span class="keywordflow">     enddo</span></div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;     mp(1:ni,nj+1)=m(1:ni,nj)</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160; </div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;  <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/initialization/<a class="el" href="midas__vertmap_8F90_source.html">midas_vertmap.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/initialization/<a class="el" href="midas__vertmap_8F90_source.html">midas_vertmap.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

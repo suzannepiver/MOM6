@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('structmom__set__diffusivity_1_1set__di
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This control structure contains parameters for MOM_set_diffusivity. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00055">55</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00056">56</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_set_diffusivity::set_diffusivity_cs:</div>
 <div class="dyncontent">
@@ -118,7 +118,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:ae0d5ec562bf0bbc584f8ed6662998c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, a refined bulk mixed layer is used with GVnk_rho_varies variable density mixed &amp; buffer layers.  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#ae0d5ec562bf0bbc584f8ed6662998c82">More...</a><br /></td></tr>
 <tr class="separator:ae0d5ec562bf0bbc584f8ed6662998c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a761417505e2768138e350cadd7c33e2e"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a761417505e2768138e350cadd7c33e2e">fluxri_max</a></td></tr>
-<tr class="memdesc:a761417505e2768138e350cadd7c33e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The flux Richardson number where the stratification is large enough that N2 &gt; omega2. The full expression for the Flux Richardson number is usually FLUX_RI_MAX*N2/(N2+OMEGA2). The default is 0.2.  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a761417505e2768138e350cadd7c33e2e">More...</a><br /></td></tr>
+<tr class="memdesc:a761417505e2768138e350cadd7c33e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The flux Richardson number where the stratification is large enough that N2 &gt; omega2 [nondim]. The full expression for the Flux Richardson number is usually FLUX_RI_MAX*N2/(N2+OMEGA2). The default is 0.2.  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a761417505e2768138e350cadd7c33e2e">More...</a><br /></td></tr>
 <tr class="separator:a761417505e2768138e350cadd7c33e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d8b6dfa52e3c6feaeba39604fb609b7"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a0d8b6dfa52e3c6feaeba39604fb609b7">bottomdraglaw</a></td></tr>
 <tr class="memdesc:a0d8b6dfa52e3c6feaeba39604fb609b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, the bottom stress is calculated with a drag law c_drag*|u|*u.  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a0d8b6dfa52e3c6feaeba39604fb609b7">More...</a><br /></td></tr>
@@ -166,28 +166,25 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:ac531ad116cd57691bb59610389d9a610"><td class="mdescLeft">&#160;</td><td class="mdescRight">If enabled, dissipation is limited to be larger than the following:  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#ac531ad116cd57691bb59610389d9a610">More...</a><br /></td></tr>
 <tr class="separator:ac531ad116cd57691bb59610389d9a610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a857fd412ab6ae4e9f66e58b34afe9c34"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a857fd412ab6ae4e9f66e58b34afe9c34">dissip_min</a></td></tr>
-<tr class="memdesc:a857fd412ab6ae4e9f66e58b34afe9c34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum dissipation [kg Z2 m-3 T-3 ~&gt; W m-3].  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a857fd412ab6ae4e9f66e58b34afe9c34">More...</a><br /></td></tr>
+<tr class="memdesc:a857fd412ab6ae4e9f66e58b34afe9c34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum dissipation [R Z2 T-3 ~&gt; W m-3].  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a857fd412ab6ae4e9f66e58b34afe9c34">More...</a><br /></td></tr>
 <tr class="separator:a857fd412ab6ae4e9f66e58b34afe9c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a714c7ed0172a25e5880317fcf543cd38"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a714c7ed0172a25e5880317fcf543cd38">dissip_n0</a></td></tr>
-<tr class="memdesc:a714c7ed0172a25e5880317fcf543cd38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coefficient a in minimum dissipation = a+b*N [kg Z2 m-3 T-3 ~&gt; W m-3].  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a714c7ed0172a25e5880317fcf543cd38">More...</a><br /></td></tr>
+<tr class="memdesc:a714c7ed0172a25e5880317fcf543cd38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coefficient a in minimum dissipation = a+b*N [R Z2 T-3 ~&gt; W m-3].  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a714c7ed0172a25e5880317fcf543cd38">More...</a><br /></td></tr>
 <tr class="separator:a714c7ed0172a25e5880317fcf543cd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d30eb853f2f3d0c4dc4d8293cab07db"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a7d30eb853f2f3d0c4dc4d8293cab07db">dissip_n1</a></td></tr>
-<tr class="memdesc:a7d30eb853f2f3d0c4dc4d8293cab07db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coefficient b in minimum dissipation = a+b*N [kg Z2 m-3 T-2 ~&gt; J m-3].  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a7d30eb853f2f3d0c4dc4d8293cab07db">More...</a><br /></td></tr>
+<tr class="memdesc:a7d30eb853f2f3d0c4dc4d8293cab07db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coefficient b in minimum dissipation = a+b*N [R Z2 T-2 ~&gt; J m-3].  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a7d30eb853f2f3d0c4dc4d8293cab07db">More...</a><br /></td></tr>
 <tr class="separator:a7d30eb853f2f3d0c4dc4d8293cab07db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affaf25dd04b0743e94729211ad720b91"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#affaf25dd04b0743e94729211ad720b91">dissip_n2</a></td></tr>
-<tr class="memdesc:affaf25dd04b0743e94729211ad720b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coefficient c in minimum dissipation = c*N2 [kg Z2 m-3 T-1 ~&gt; J s m-3].  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#affaf25dd04b0743e94729211ad720b91">More...</a><br /></td></tr>
+<tr class="memdesc:affaf25dd04b0743e94729211ad720b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coefficient c in minimum dissipation = c*N2 [R Z2 T-1 ~&gt; J s m-3].  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#affaf25dd04b0743e94729211ad720b91">More...</a><br /></td></tr>
 <tr class="separator:affaf25dd04b0743e94729211ad720b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcddf45021fe31460c96bb48b16520b9"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#adcddf45021fe31460c96bb48b16520b9">dissip_kd_min</a></td></tr>
 <tr class="memdesc:adcddf45021fe31460c96bb48b16520b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum Kd [Z2 T-1 ~&gt; m2 s-1], with dissipation Rho0*Kd_min*N^2.  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#adcddf45021fe31460c96bb48b16520b9">More...</a><br /></td></tr>
 <tr class="separator:adcddf45021fe31460c96bb48b16520b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b5a5785d79a37eb5951b092937572a6"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a3b5a5785d79a37eb5951b092937572a6">tke_itide_max</a></td></tr>
-<tr class="memdesc:a3b5a5785d79a37eb5951b092937572a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum internal tide conversion [W m-2] available to mix above the BBL  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a3b5a5785d79a37eb5951b092937572a6">More...</a><br /></td></tr>
-<tr class="separator:a3b5a5785d79a37eb5951b092937572a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1bb6ef3e913624e457e3601eec4ba29"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#aa1bb6ef3e913624e457e3601eec4ba29">omega</a></td></tr>
 <tr class="memdesc:aa1bb6ef3e913624e457e3601eec4ba29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Earth's rotation frequency [T-1 ~&gt; s-1].  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#aa1bb6ef3e913624e457e3601eec4ba29">More...</a><br /></td></tr>
 <tr class="separator:aa1bb6ef3e913624e457e3601eec4ba29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16150a4b9a050ffac409cc55916cea3f"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a16150a4b9a050ffac409cc55916cea3f">ml_radiation</a></td></tr>
-<tr class="memdesc:a16150a4b9a050ffac409cc55916cea3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">allow a fraction of TKE available from wind work to penetrate below mixed layer base with a vertical decay scale determined by the minimum of (1) The depth of the mixed layer, or (2) An Ekman length scale. Energy available to drive mixing below the mixed layer is given by E = ML_RAD_COEFF*MSTAR*USTAR**3. Optionally, if ML_rad_TKE_decay is true, this is further reduced by a factor of exp(-h_ML*Idecay_len_TkE), where Idecay_len_TKE is calculated the same way as in the mixed layer code. The diapycnal diffusivity is KD(k) = E/(N2(k)+OMEGA2), where N2 is the squared buoyancy frequency [s-2] and OMEGA2 is the rotation rate of the earth squared.  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a16150a4b9a050ffac409cc55916cea3f">More...</a><br /></td></tr>
+<tr class="memdesc:a16150a4b9a050ffac409cc55916cea3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">allow a fraction of TKE available from wind work to penetrate below mixed layer base with a vertical decay scale determined by the minimum of (1) The depth of the mixed layer, or (2) An Ekman length scale. Energy available to drive mixing below the mixed layer is given by E = ML_RAD_COEFF*MSTAR*USTAR**3. Optionally, if ML_rad_TKE_decay is true, this is further reduced by a factor of exp(-h_ML*Idecay_len_TkE), where Idecay_len_TKE is calculated the same way as in the mixed layer code. The diapycnal diffusivity is KD(k) = E/(N2(k)+OMEGA2), where N2 is the squared buoyancy frequency [T-2 ~&gt; s-2] and OMEGA2 is the rotation rate of the earth squared.  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a16150a4b9a050ffac409cc55916cea3f">More...</a><br /></td></tr>
 <tr class="separator:a16150a4b9a050ffac409cc55916cea3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c7d9a5b4a9c305fc924650728f30580"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a2c7d9a5b4a9c305fc924650728f30580">ml_rad_kd_max</a></td></tr>
 <tr class="memdesc:a2c7d9a5b4a9c305fc924650728f30580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum diapycnal diffusivity due to turbulence radiated from the base of the mixed layer [Z2 T-1 ~&gt; m2 s-1].  <a href="structmom__set__diffusivity_1_1set__diffusivity__cs.html#a2c7d9a5b4a9c305fc924650728f30580">More...</a><br /></td></tr>
@@ -320,8 +317,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the order of arithmetic and expressions that recover the answers from the end of 2018. Otherwise, use updated and more robust forms of the same expressions. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00151">151</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">logical</span> :: answers_2018<span class="comment">   !&lt; If true, use the order of arithmetic and expressions that recover the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00150">150</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordtype">logical</span> :: answers_2018<span class="comment">   !&lt; If true, use the order of arithmetic and expressions that recover the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -339,8 +336,8 @@ Public variables and constants</h2></td></tr>
 
 <p>efficiency with which the energy extracted by bottom drag drives BBL diffusion [nondim] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00072">72</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">  real</span>    :: BBL_effic<span class="comment">       !&lt; efficiency with which the energy extracted</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00073">73</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">  real</span>    :: BBL_effic<span class="comment">       !&lt; efficiency with which the energy extracted</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -358,8 +355,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, take the maximum of the diffusivity from the BBL mixing and the other diffusivities. Otherwise, diffusivities from the BBL_mixing is added. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00066">66</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">logical</span> :: BBL_mixing_as_max<span class="comment"> !&lt;  If true, take the maximum of the diffusivity</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00067">67</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">logical</span> :: BBL_mixing_as_max<span class="comment"> !&lt;  If true, take the maximum of the diffusivity</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -377,8 +374,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00160">160</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">type</span>(bkgnd_mixing_cs),     <span class="keywordtype">pointer</span> :: bkgnd_mixing_csp     =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00159">159</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">type</span>(bkgnd_mixing_cs),     <span class="keywordtype">pointer</span> :: bkgnd_mixing_csp     =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -396,8 +393,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the bottom stress is calculated with a drag law c_drag*|u|*u. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00064">64</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">logical</span> :: bottomdraglaw<span class="comment">   !&lt; If true, the  bottom stress is calculated with a</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00065">65</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">logical</span> :: bottomdraglaw<span class="comment">   !&lt; If true, the  bottom stress is calculated with a</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -415,8 +412,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, a refined bulk mixed layer is used with GVnk_rho_varies variable density mixed &amp; buffer layers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00058">58</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">logical</span> :: bulkmixedlayer<span class="comment">  !&lt; If true, a refined bulk mixed layer is used with</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00059">59</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">logical</span> :: bulkmixedlayer<span class="comment">  !&lt; If true, a refined bulk mixed layer is used with</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -434,8 +431,8 @@ Public variables and constants</h2></td></tr>
 
 <p>quadratic drag coefficient [nondim] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00074">74</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">  real</span>    :: cdrag<span class="comment">           !&lt; quadratic drag coefficient [nondim]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">  real</span>    :: cdrag<span class="comment">           !&lt; quadratic drag coefficient [nondim]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -453,8 +450,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00159">159</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">type</span>(CVMix_ddiff_cs),      <span class="keywordtype">pointer</span> :: CVMix_ddiff_csp      =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">type</span>(CVMix_ddiff_cs),      <span class="keywordtype">pointer</span> :: CVMix_ddiff_csp      =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -472,8 +469,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00158">158</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">type</span>(CVMix_shear_cs),      <span class="keywordtype">pointer</span> :: CVMix_shear_csp      =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00157">157</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordtype">type</span>(CVMix_shear_cs),      <span class="keywordtype">pointer</span> :: CVMix_shear_csp      =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -491,8 +488,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, write verbose checksums for debugging. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00056">56</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">           !&lt; If true, write verbose checksums for debugging.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00057">57</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">logical</span> :: debug<span class="comment">           !&lt; If true, write verbose checksums for debugging.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -510,8 +507,8 @@ Public variables and constants</h2></td></tr>
 
 <p>structure to regulate diagnostic output timing </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; structure to regulate diagnostic output timing</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; structure to regulate diagnostic output timing</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -529,8 +526,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Minimum Kd [Z2 T-1 ~&gt; m2 s-1], with dissipation Rho0*Kd_min*N^2. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">  real</span> :: dissip_Kd_min<span class="comment"> !&lt; Minimum Kd [Z2 T-1 ~&gt; m2 s-1], with dissipation Rho0*Kd_min*N^2</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00095">95</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">  real</span> :: dissip_Kd_min<span class="comment"> !&lt; Minimum Kd [Z2 T-1 ~&gt; m2 s-1], with dissipation Rho0*Kd_min*N^2</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -546,10 +543,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Minimum dissipation [kg Z2 m-3 T-3 ~&gt; W m-3]. </p>
+<p>Minimum dissipation [R Z2 T-3 ~&gt; W m-3]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">  real</span> :: dissip_min<span class="comment">    !&lt; Minimum dissipation [kg Z2 m-3 T-3 ~&gt; W m-3]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">  real</span> :: dissip_min<span class="comment">    !&lt; Minimum dissipation [R Z2 T-3 ~&gt; W m-3]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -565,10 +562,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Coefficient a in minimum dissipation = a+b*N [kg Z2 m-3 T-3 ~&gt; W m-3]. </p>
+<p>Coefficient a in minimum dissipation = a+b*N [R Z2 T-3 ~&gt; W m-3]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">  real</span> :: dissip_N0<span class="comment">     !&lt; Coefficient a in minimum dissipation = a+b*N [kg Z2 m-3 T-3 ~&gt; W m-3]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00092">92</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">  real</span> :: dissip_N0<span class="comment">     !&lt; Coefficient a in minimum dissipation = a+b*N [R Z2 T-3 ~&gt; W m-3]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -584,10 +581,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Coefficient b in minimum dissipation = a+b*N [kg Z2 m-3 T-2 ~&gt; J m-3]. </p>
+<p>Coefficient b in minimum dissipation = a+b*N [R Z2 T-2 ~&gt; J m-3]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00092">92</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">  real</span> :: dissip_N1<span class="comment">     !&lt; Coefficient b in minimum dissipation = a+b*N [kg Z2 m-3 T-2 ~&gt; J m-3]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00093">93</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">  real</span> :: dissip_N1<span class="comment">     !&lt; Coefficient b in minimum dissipation = a+b*N [R Z2 T-2 ~&gt; J m-3]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -603,10 +600,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Coefficient c in minimum dissipation = c*N2 [kg Z2 m-3 T-1 ~&gt; J s m-3]. </p>
+<p>Coefficient c in minimum dissipation = c*N2 [R Z2 T-1 ~&gt; J s m-3]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00093">93</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">  real</span> :: dissip_N2<span class="comment">     !&lt; Coefficient c in minimum dissipation = c*N2 [kg Z2 m-3 T-1 ~&gt; J s m-3]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">  real</span> :: dissip_N2<span class="comment">     !&lt; Coefficient c in minimum dissipation = c*N2 [R Z2 T-1 ~&gt; J s m-3]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -624,8 +621,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, enable double-diffusive mixing using an old method. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00143">143</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">logical</span> :: double_diffusion<span class="comment"> !&lt; If true, enable double-diffusive mixing using an old method.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00142">142</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordtype">logical</span> :: double_diffusion<span class="comment"> !&lt; If true, enable double-diffusive mixing using an old method.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -641,10 +638,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The flux Richardson number where the stratification is large enough that N2 &gt; omega2. The full expression for the Flux Richardson number is usually FLUX_RI_MAX*N2/(N2+OMEGA2). The default is 0.2. </p>
+<p>The flux Richardson number where the stratification is large enough that N2 &gt; omega2 [nondim]. The full expression for the Flux Richardson number is usually FLUX_RI_MAX*N2/(N2+OMEGA2). The default is 0.2. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00060">60</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">  real</span>    :: FluxRi_max<span class="comment">      !&lt; The flux Richardson number where the stratification is</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00061">61</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">  real</span>    :: FluxRi_max<span class="comment">      !&lt; The flux Richardson number where the stratification is</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -662,7 +659,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00165">165</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
 
 </div>
 </div>
@@ -680,8 +677,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordtype">integer</span> :: id_Kd_layer   = -1, id_kd_bbl      = -1, id_n2         = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00165">165</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">integer</span> :: id_Kd_layer   = -1, id_kd_bbl      = -1, id_n2         = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -699,7 +696,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00165">165</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00164">164</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
 
 </div>
 </div>
@@ -717,8 +714,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00167">167</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordtype">integer</span> :: id_Kd_Work    = -1, id_kt_extra    = -1, id_ks_extra   = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordtype">integer</span> :: id_Kd_Work    = -1, id_kt_extra    = -1, id_ks_extra   = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -736,7 +733,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00167">167</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
 
 </div>
 </div>
@@ -754,7 +751,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00167">167</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
 
 </div>
 </div>
@@ -772,8 +769,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00165">165</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">integer</span> :: id_maxTKE     = -1, id_tke_to_kd   = -1, id_kd_user    = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00164">164</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">integer</span> :: id_maxTKE     = -1, id_tke_to_kd   = -1, id_kd_user    = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -791,7 +788,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00165">165</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
 
 </div>
 </div>
@@ -809,7 +806,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00165">165</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00164">164</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
 
 </div>
 </div>
@@ -827,8 +824,8 @@ Public variables and constants</h2></td></tr>
 
 <p>inverse of a maximum decay scale for bottom-drag driven turbulence [Z-1 ~&gt; m-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">  real</span>    :: IMax_decay<span class="comment">      !&lt; inverse of a maximum decay scale for</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">  real</span>    :: IMax_decay<span class="comment">      !&lt; inverse of a maximum decay scale for</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -846,8 +843,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The directory in which input files are found. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00155">155</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordtype">character(len=200)</span> :: inputdir<span class="comment"> !&lt; The directory in which input files are found</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00154">154</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordtype">character(len=200)</span> :: inputdir<span class="comment"> !&lt; The directory in which input files are found</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -865,8 +862,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00161">161</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">type</span>(int_tide_CS),         <span class="keywordtype">pointer</span> :: int_tide_CSp         =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00160">160</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">type</span>(int_tide_CS),         <span class="keywordtype">pointer</span> :: int_tide_CSp         =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -884,8 +881,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00157">157</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordtype">type</span>(Kappa_shear_CS),      <span class="keywordtype">pointer</span> :: kappaShear_CSp       =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00156">156</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">type</span>(Kappa_shear_CS),      <span class="keywordtype">pointer</span> :: kappaShear_CSp       =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -903,8 +900,8 @@ Public variables and constants</h2></td></tr>
 
 <p>interior diapycnal diffusivity [Z2 T-1 ~&gt; m2 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">  real</span>    :: Kd<span class="comment">              !&lt; interior diapycnal diffusivity [Z2 T-1 ~&gt; m2 s-1].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00079">79</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">  real</span>    :: Kd<span class="comment">              !&lt; interior diapycnal diffusivity [Z2 T-1 ~&gt; m2 s-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -922,8 +919,8 @@ Public variables and constants</h2></td></tr>
 
 <p>uniform diffusivity added everywhere without filtering or scaling [Z2 T-1 ~&gt; m2 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00082">82</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">  real</span>    :: Kd_add<span class="comment">          !&lt; uniform diffusivity added everywhere without</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00083">83</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">  real</span>    :: Kd_add<span class="comment">          !&lt; uniform diffusivity added everywhere without</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -941,8 +938,8 @@ Public variables and constants</h2></td></tr>
 
 <p>maximum increment for diapycnal diffusivity [Z2 T-1 ~&gt; m2 s-1]. Set to a negative value to have no limit. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00080">80</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">  real</span>    :: Kd_max<span class="comment">          !&lt; maximum increment for diapycnal diffusivity [Z2 T-1 ~&gt; m2 s-1].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00081">81</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">  real</span>    :: Kd_max<span class="comment">          !&lt; maximum increment for diapycnal diffusivity [Z2 T-1 ~&gt; m2 s-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -960,8 +957,8 @@ Public variables and constants</h2></td></tr>
 
 <p>minimum diapycnal diffusivity [Z2 T-1 ~&gt; m2 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00079">79</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">  real</span>    :: Kd_min<span class="comment">          !&lt; minimum diapycnal diffusivity [Z2 T-1 ~&gt; m2 s-1].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00080">80</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">  real</span>    :: Kd_min<span class="comment">          !&lt; minimum diapycnal diffusivity [Z2 T-1 ~&gt; m2 s-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -979,8 +976,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Vertical diffusivity used to interpolate more sensible values of T &amp; S into thin layers [Z2 T-1 ~&gt; m2 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00084">84</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">  real</span>    :: Kd_smooth<span class="comment">       !&lt; Vertical diffusivity used to interpolate more</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">  real</span>    :: Kd_smooth<span class="comment">       !&lt; Vertical diffusivity used to interpolate more</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -998,8 +995,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The interior vertical viscosity [Z2 T-1 ~&gt; m2 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00077">77</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">  real</span>    :: Kv<span class="comment">              !&lt; The interior vertical viscosity [Z2 T-1 ~&gt; m2 s-1].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">  real</span>    :: Kv<span class="comment">              !&lt; The interior vertical viscosity [Z2 T-1 ~&gt; m2 s-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1017,8 +1014,8 @@ Public variables and constants</h2></td></tr>
 
 <p>molecular visc for double diff convect [Z2 T-1 ~&gt; m2 s-1] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00149">149</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keywordtype">  real</span>    :: Kv_molecular<span class="comment">               !&lt; molecular visc for double diff convect [Z2 T-1 ~&gt; m2 s-1]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00148">148</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keywordtype">  real</span>    :: Kv_molecular<span class="comment">               !&lt; molecular visc for double diff convect [Z2 T-1 ~&gt; m2 s-1]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1036,8 +1033,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If enabled, dissipation is limited to be larger than the following: </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">logical</span> :: limit_dissipation<span class="comment"> !&lt; If enabled, dissipation is limited to be larger</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00089">89</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">logical</span> :: limit_dissipation<span class="comment"> !&lt; If enabled, dissipation is limited to be larger</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1055,8 +1052,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use simpler/less precise, BBL diffusivity. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">logical</span> :: LOTW_BBL_use_omega<span class="comment"> !&lt; If true, use simpler/less precise, BBL diffusivity.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00072">72</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">logical</span> :: LOTW_BBL_use_omega<span class="comment"> !&lt; If true, use simpler/less precise, BBL diffusivity.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1074,8 +1071,8 @@ Public variables and constants</h2></td></tr>
 
 <p>max density ratio for salt fingering </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00147">147</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keywordtype">  real</span>    :: Max_Rrho_salt_fingers<span class="comment">      !&lt; max density ratio for salt fingering</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00146">146</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keywordtype">  real</span>    :: Max_Rrho_salt_fingers<span class="comment">      !&lt; max density ratio for salt fingering</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1093,8 +1090,8 @@ Public variables and constants</h2></td></tr>
 
 <p>max salt diffusivity for salt fingers [Z2 T-1 ~&gt; m2 s-1] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00148">148</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keywordtype">  real</span>    :: Max_salt_diff_salt_fingers<span class="comment"> !&lt; max salt diffusivity for salt fingers [Z2 T-1 ~&gt; m2 s-1]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00147">147</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keywordtype">  real</span>    :: Max_salt_diff_salt_fingers<span class="comment"> !&lt; max salt diffusivity for salt fingers [Z2 T-1 ~&gt; m2 s-1]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1112,8 +1109,8 @@ Public variables and constants</h2></td></tr>
 
 <p>When setting the decay scale for turbulence, use this fraction of the absolute rotation rate blended with the local value of f, as f^2 ~= (1-of)*f^2 + of*4*omega^2. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00133">133</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keywordtype">  real</span>    :: ML_omega_frac<span class="comment">    !&lt;   When setting the decay scale for turbulence, use</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00132">132</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keywordtype">  real</span>    :: ML_omega_frac<span class="comment">    !&lt;   When setting the decay scale for turbulence, use</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1131,8 +1128,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true use code with a bug that reduces the energy available in the transition layer by a factor of the inverse of the energy deposition lenthscale (in m). </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00118">118</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">logical</span> :: ML_rad_bug<span class="comment">       !&lt; If true use code with a bug that reduces the energy available</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00117">117</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">logical</span> :: ML_rad_bug<span class="comment">       !&lt; If true use code with a bug that reduces the energy available</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1150,8 +1147,8 @@ Public variables and constants</h2></td></tr>
 
 <p>coefficient, which scales MSTAR*USTAR^3 to obtain energy available for mixing below mixed layer base [nondim] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">  real</span> :: ML_rad_coeff<span class="comment">        !&lt; coefficient, which scales MSTAR*USTAR^3 to</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">  real</span> :: ML_rad_coeff<span class="comment">        !&lt; coefficient, which scales MSTAR*USTAR^3 to</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1169,8 +1166,8 @@ Public variables and constants</h2></td></tr>
 
 <p>non-dim coefficient to scale penetration depth </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">  real</span> :: ML_rad_efold_coeff<span class="comment">  !&lt; non-dim coefficient to scale penetration depth</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">  real</span> :: ML_rad_efold_coeff<span class="comment">  !&lt; non-dim coefficient to scale penetration depth</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1188,8 +1185,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Maximum diapycnal diffusivity due to turbulence radiated from the base of the mixed layer [Z2 T-1 ~&gt; m2 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">  real</span> :: ML_rad_kd_max<span class="comment">   !&lt; Maximum diapycnal diffusivity due to turbulence</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">  real</span> :: ML_rad_kd_max<span class="comment">   !&lt; Maximum diapycnal diffusivity due to turbulence</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1207,8 +1204,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, apply same exponential decay to ML_rad as applied to the other surface sources of TKE in the mixed layer code. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">logical</span> :: ML_rad_TKE_decay<span class="comment"> !&lt; If true, apply same exponential decay</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">logical</span> :: ML_rad_TKE_decay<span class="comment"> !&lt; If true, apply same exponential decay</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1224,10 +1221,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>allow a fraction of TKE available from wind work to penetrate below mixed layer base with a vertical decay scale determined by the minimum of (1) The depth of the mixed layer, or (2) An Ekman length scale. Energy available to drive mixing below the mixed layer is given by E = ML_RAD_COEFF*MSTAR*USTAR**3. Optionally, if ML_rad_TKE_decay is true, this is further reduced by a factor of exp(-h_ML*Idecay_len_TkE), where Idecay_len_TKE is calculated the same way as in the mixed layer code. The diapycnal diffusivity is KD(k) = E/(N2(k)+OMEGA2), where N2 is the squared buoyancy frequency [s-2] and OMEGA2 is the rotation rate of the earth squared. </p>
+<p>allow a fraction of TKE available from wind work to penetrate below mixed layer base with a vertical decay scale determined by the minimum of (1) The depth of the mixed layer, or (2) An Ekman length scale. Energy available to drive mixing below the mixed layer is given by E = ML_RAD_COEFF*MSTAR*USTAR**3. Optionally, if ML_rad_TKE_decay is true, this is further reduced by a factor of exp(-h_ML*Idecay_len_TkE), where Idecay_len_TKE is calculated the same way as in the mixed layer code. The diapycnal diffusivity is KD(k) = E/(N2(k)+OMEGA2), where N2 is the squared buoyancy frequency [T-2 ~&gt; s-2] and OMEGA2 is the rotation rate of the earth squared. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00099">99</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">logical</span> :: ML_radiation<span class="comment"> !&lt; allow a fraction of TKE available from wind work</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00098">98</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">logical</span> :: ML_radiation<span class="comment"> !&lt; allow a fraction of TKE available from wind work</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1245,8 +1242,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use absolute rotation rate instead of the vertical component of rotation when setting the decay scale for mixed layer turbulence. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00130">130</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">logical</span> :: ML_use_omega<span class="comment">     !&lt; If true, use absolute rotation rate instead</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00129">129</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">logical</span> :: ML_use_omega<span class="comment">     !&lt; If true, use absolute rotation rate instead</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1264,8 +1261,8 @@ Public variables and constants</h2></td></tr>
 
 <p>ratio of friction velocity cubed to TKE input to the mixed layer [nondim] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00128">128</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">  real</span>    :: mstar<span class="comment">            !&lt; ratio of friction velocity cubed to</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00127">127</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">  real</span>    :: mstar<span class="comment">            !&lt; ratio of friction velocity cubed to</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1283,8 +1280,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Earth's rotation frequency [T-1 ~&gt; s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00098">98</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">  real</span> :: omega<span class="comment">         !&lt; Earth&#39;s rotation frequency [T-1 ~&gt; s-1]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00097">97</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">  real</span> :: omega<span class="comment">         !&lt; Earth&#39;s rotation frequency [T-1 ~&gt; s-1]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1302,8 +1299,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, uses a simple estimate of Kd/TKE that does not rely on a layer-formulation. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00145">145</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordtype">logical</span> :: simple_TKE_to_Kd<span class="comment"> !&lt; If true, uses a simple estimate of Kd/TKE that</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00144">144</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">logical</span> :: simple_TKE_to_Kd<span class="comment"> !&lt; If true, uses a simple estimate of Kd/TKE that</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1321,27 +1318,8 @@ Public variables and constants</h2></td></tr>
 
 <p>ratio of natural Ekman depth to TKE decay scale [nondim] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00127">127</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">  real</span>    :: TKE_decay<span class="comment">        !&lt; ratio of natural Ekman depth to TKE decay scale [nondim]</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a3b5a5785d79a37eb5951b092937572a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b5a5785d79a37eb5951b092937572a6">&#9670;&nbsp;</a></span>tke_itide_max</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">real mom_set_diffusivity::set_diffusivity_cs::tke_itide_max</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>maximum internal tide conversion [W m-2] available to mix above the BBL </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00096">96</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">  real</span> :: TKE_itide_max<span class="comment"> !&lt; maximum internal tide conversion [W m-2]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">  real</span>    :: TKE_decay<span class="comment">        !&lt; ratio of natural Ekman depth to TKE decay scale [nondim]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1359,8 +1337,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00162">162</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">type</span>(tidal_mixing_cs),     <span class="keywordtype">pointer</span> :: tm_csp               =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00161">161</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">type</span>(tidal_mixing_cs),     <span class="keywordtype">pointer</span> :: tm_csp               =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1378,8 +1356,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, enable double-diffusive mixing via CVMix. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00144">144</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">logical</span> :: use_CVMix_ddiff<span class="comment">  !&lt; If true, enable double-diffusive mixing via CVMix.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00143">143</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">logical</span> :: use_CVMix_ddiff<span class="comment">  !&lt; If true, enable double-diffusive mixing via CVMix.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1397,8 +1375,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use one of the CVMix modules to find shear-driven diapycnal diffusivity. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00141">141</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">logical</span> :: use_CVMix_shear<span class="comment">  !&lt; If true, use one of the CVMix modules to find</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00140">140</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordtype">logical</span> :: use_CVMix_shear<span class="comment">  !&lt; If true, use one of the CVMix modules to find</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1416,8 +1394,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use simpler/less precise, BBL diffusivity. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00070">70</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">logical</span> :: use_LOTW_BBL_diffusivity<span class="comment"> !&lt; If true, use simpler/less precise, BBL diffusivity.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">logical</span> :: use_LOTW_BBL_diffusivity<span class="comment"> !&lt; If true, use simpler/less precise, BBL diffusivity.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1435,8 +1413,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the kappa_shear module to find the shear-driven diapycnal diffusivity. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00137">137</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">logical</span> :: useKappaShear<span class="comment">    !&lt; If true, use the kappa_shear module to find the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00136">136</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">logical</span> :: useKappaShear<span class="comment">    !&lt; If true, use the kappa_shear module to find the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1454,8 +1432,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, call user-defined code to change diffusivity. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00136">136</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">logical</span> :: user_change_diff<span class="comment"> !&lt; If true, call user-defined code to change diffusivity.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00135">135</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">logical</span> :: user_change_diff<span class="comment"> !&lt; If true, call user-defined code to change diffusivity.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1473,8 +1451,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Control structure for a child module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00156">156</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">type</span>(user_change_diff_CS), <span class="keywordtype">pointer</span> :: user_change_diff_CSp =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00155">155</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordtype">type</span>(user_change_diff_CS), <span class="keywordtype">pointer</span> :: user_change_diff_CSp =&gt; null() <span class="comment">!&lt; Control structure for a child module</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1492,8 +1470,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A minimum value of ustar to avoid numerical problems [Z T-1 ~&gt; m s-1]. If the value is small enough, this parameter should not affect the solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">  real</span>    :: ustar_min<span class="comment">        !&lt; A minimum value of ustar to avoid numerical</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">  real</span>    :: ustar_min<span class="comment">        !&lt; A minimum value of ustar to avoid numerical</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1511,13 +1489,13 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, do the calculations of the shear-driven mixing at the cell vertices (i.e., the vorticity points). </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00139">139</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">logical</span> :: Vertex_Shear<span class="comment">     !&lt; If true, do the calculations of the shear-driven mixing</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__set__diffusivity_8F90_source.html#l00138">138</a> of file <a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordtype">logical</span> :: Vertex_Shear<span class="comment">     !&lt; If true, do the calculations of the shear-driven mixing</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__set__diffusivity_8F90_source.html">MOM_set_diffusivity.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

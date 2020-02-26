@@ -9,7 +9,6 @@ var structmom__pointaccel_1_1pointaccel__cs =
     [ "time", "structmom__pointaccel_1_1pointaccel__cs.html#a238a514c03e67dffe6007d9776709e2b", null ],
     [ "u_accel_bt", "structmom__pointaccel_1_1pointaccel__cs.html#a525f46bc7535b6f16af518e83a09acb0", null ],
     [ "u_av", "structmom__pointaccel_1_1pointaccel__cs.html#a2970ade010b540f92d5beadd1f3d5e9d", null ],
-    [ "u_av_scale", "structmom__pointaccel_1_1pointaccel__cs.html#a016a1280792af43e81899b00ed4e7de3", null ],
     [ "u_file", "structmom__pointaccel_1_1pointaccel__cs.html#a561fd0e841c1def38557c8a65e138ad9", null ],
     [ "u_prev", "structmom__pointaccel_1_1pointaccel__cs.html#a9ec7a3900afe6cea99184067c4f8ee1c", null ],
     [ "u_trunc_file", "structmom__pointaccel_1_1pointaccel__cs.html#adc370bba144c94116c1c46fa7c72b3bc", null ],

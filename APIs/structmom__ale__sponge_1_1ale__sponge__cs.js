@@ -23,7 +23,6 @@ var structmom__ale__sponge_1_1ale__sponge__cs =
     [ "jsc", "structmom__ale__sponge_1_1ale__sponge__cs.html#a2186deb4d781770baaaf8b3f27f3ac0c", null ],
     [ "jscb", "structmom__ale__sponge_1_1ale__sponge__cs.html#aaedba05a9c5520b498c6f949d05aee28", null ],
     [ "jsd", "structmom__ale__sponge_1_1ale__sponge__cs.html#aeb0753b692596df9a2a0d411823dd8b0", null ],
-    [ "new_sponges", "structmom__ale__sponge_1_1ale__sponge__cs.html#a62b341c5ee439b14c54b7bba37c75527", null ],
     [ "num_col", "structmom__ale__sponge_1_1ale__sponge__cs.html#ad185f2cce3a80153a0ed2f592a1d4b9f", null ],
     [ "num_col_u", "structmom__ale__sponge_1_1ale__sponge__cs.html#ab0cf8fde105120e9d24125c5f5f9967d", null ],
     [ "num_col_v", "structmom__ale__sponge_1_1ale__sponge__cs.html#a15b52221c6fa13a231fdd3f8cbdce25b", null ],
@@ -37,6 +36,8 @@ var structmom__ale__sponge_1_1ale__sponge__cs =
     [ "ref_val_v", "structmom__ale__sponge_1_1ale__sponge__cs.html#addf4e0296494b367ca544c0b67ec61e1", null ],
     [ "remap_cs", "structmom__ale__sponge_1_1ale__sponge__cs.html#a6626e27e4bf8e00e472c623f49d40018", null ],
     [ "sponge_uv", "structmom__ale__sponge_1_1ale__sponge__cs.html#a3e427f69f737c36936716cb6afbd77b1", null ],
+    [ "spongedataongrid", "structmom__ale__sponge_1_1ale__sponge__cs.html#a044175e6bf6cb077372da277770bbee9", null ],
+    [ "time_varying_sponges", "structmom__ale__sponge_1_1ale__sponge__cs.html#a36cce595f128d5d8b59a83c2d9b4d265", null ],
     [ "var", "structmom__ale__sponge_1_1ale__sponge__cs.html#a2a722846d2f482eef6e6b3eae507a302", null ],
     [ "var_u", "structmom__ale__sponge_1_1ale__sponge__cs.html#a0f9afae0af7a242f22c74a0c6dbe4611", null ],
     [ "var_v", "structmom__ale__sponge_1_1ale__sponge__cs.html#a382dfc380baddc9873ee3c92faf47da8", null ]

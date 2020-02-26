@@ -115,7 +115,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:acb03a40e21e2d53e5a9ac9840b3f0107"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lower fraction of water column over which N2 is limited as monotonic for the purposes of calculating the equivalent barotropic wave speed.  <a href="structmom__diagnostics_1_1diagnostics__cs.html#acb03a40e21e2d53e5a9ac9840b3f0107">More...</a><br /></td></tr>
 <tr class="separator:acb03a40e21e2d53e5a9ac9840b3f0107"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a973fc4df5d7dd5ad11d1c7e4ee32f12a"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a973fc4df5d7dd5ad11d1c7e4ee32f12a">mono_n2_depth</a> = -1.</td></tr>
-<tr class="memdesc:a973fc4df5d7dd5ad11d1c7e4ee32f12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The depth below which N2 is limited as monotonic for the purposes of calculating the equivalent barotropic wave speed [m].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a973fc4df5d7dd5ad11d1c7e4ee32f12a">More...</a><br /></td></tr>
+<tr class="memdesc:a973fc4df5d7dd5ad11d1c7e4ee32f12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The depth below which N2 is limited as monotonic for the purposes of calculating the equivalent barotropic wave speed [Z ~&gt; m].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a973fc4df5d7dd5ad11d1c7e4ee32f12a">More...</a><br /></td></tr>
 <tr class="separator:a973fc4df5d7dd5ad11d1c7e4ee32f12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40bfdcc199e1f8698537a5ec9eeb594f"><td class="memItemLeft" align="right" valign="top">type(diag_ctrl), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a40bfdcc199e1f8698537a5ec9eeb594f">diag</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a40bfdcc199e1f8698537a5ec9eeb594f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that is used to regulate the timing of diagnostic output.  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a40bfdcc199e1f8698537a5ec9eeb594f">More...</a><br /></td></tr>
@@ -127,13 +127,13 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:ad271bbc774136fac980de11a64a18415"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface height above bottom [Z ~&gt; m]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#ad271bbc774136fac980de11a64a18415">More...</a><br /></td></tr>
 <tr class="separator:ad271bbc774136fac980de11a64a18415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed2f081c50f1f23e03b9a47781cca473"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#aed2f081c50f1f23e03b9a47781cca473">du_dt</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:aed2f081c50f1f23e03b9a47781cca473"><td class="mdescLeft">&#160;</td><td class="mdescRight">net i-acceleration [L T-1 s-1 ~&gt; m s-2]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#aed2f081c50f1f23e03b9a47781cca473">More...</a><br /></td></tr>
+<tr class="memdesc:aed2f081c50f1f23e03b9a47781cca473"><td class="mdescLeft">&#160;</td><td class="mdescRight">net i-acceleration [L T-2 ~&gt; m s-2]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#aed2f081c50f1f23e03b9a47781cca473">More...</a><br /></td></tr>
 <tr class="separator:aed2f081c50f1f23e03b9a47781cca473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ac7f7d67d666780270751b2304a5b9d"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a3ac7f7d67d666780270751b2304a5b9d">dv_dt</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a3ac7f7d67d666780270751b2304a5b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">net j-acceleration [L T-1 s-1 ~&gt; m s-2]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a3ac7f7d67d666780270751b2304a5b9d">More...</a><br /></td></tr>
+<tr class="memdesc:a3ac7f7d67d666780270751b2304a5b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">net j-acceleration [L T-2 ~&gt; m s-2]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a3ac7f7d67d666780270751b2304a5b9d">More...</a><br /></td></tr>
 <tr class="separator:a3ac7f7d67d666780270751b2304a5b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71e82a28dab00874a6519510dca4ea8e"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a71e82a28dab00874a6519510dca4ea8e">dh_dt</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a71e82a28dab00874a6519510dca4ea8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">thickness rate of change [H s-1 ~&gt; m s-1 or kg m-2 s-1]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a71e82a28dab00874a6519510dca4ea8e">More...</a><br /></td></tr>
+<tr class="memdesc:a71e82a28dab00874a6519510dca4ea8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">thickness rate of change [H T-1 ~&gt; m s-1 or kg m-2 s-1]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a71e82a28dab00874a6519510dca4ea8e">More...</a><br /></td></tr>
 <tr class="separator:a71e82a28dab00874a6519510dca4ea8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f2f04cd586f7cfd3e40554f6458f4a"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#ac7f2f04cd586f7cfd3e40554f6458f4a">p_ebt</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:ac7f2f04cd586f7cfd3e40554f6458f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent barotropic modal structure [nondim].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#ac7f2f04cd586f7cfd3e40554f6458f4a">More...</a><br /></td></tr>
@@ -154,43 +154,43 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a2fb6bf287dfd1703a4e8910e9214fe03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Meridional Gent-McWilliams transports in potential density coordinates [H m2 s-1 ~&gt; m3 s-1 or kg s-1].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a2fb6bf287dfd1703a4e8910e9214fe03">More...</a><br /></td></tr>
 <tr class="separator:a2fb6bf287dfd1703a4e8910e9214fe03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a268da0c05d718f1434051f236a63ce49"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a268da0c05d718f1434051f236a63ce49">cg1</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a268da0c05d718f1434051f236a63ce49"><td class="mdescLeft">&#160;</td><td class="mdescRight">First baroclinic gravity wave speed [m s-1].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a268da0c05d718f1434051f236a63ce49">More...</a><br /></td></tr>
+<tr class="memdesc:a268da0c05d718f1434051f236a63ce49"><td class="mdescLeft">&#160;</td><td class="mdescRight">First baroclinic gravity wave speed [L T-1 ~&gt; m s-1].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a268da0c05d718f1434051f236a63ce49">More...</a><br /></td></tr>
 <tr class="separator:a268da0c05d718f1434051f236a63ce49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae92bcb31df9132f586e47b0fb392e789"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#ae92bcb31df9132f586e47b0fb392e789">rd1</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:ae92bcb31df9132f586e47b0fb392e789"><td class="mdescLeft">&#160;</td><td class="mdescRight">First baroclinic deformation radius [m].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#ae92bcb31df9132f586e47b0fb392e789">More...</a><br /></td></tr>
+<tr class="memdesc:ae92bcb31df9132f586e47b0fb392e789"><td class="mdescLeft">&#160;</td><td class="mdescRight">First baroclinic deformation radius [L ~&gt; m].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#ae92bcb31df9132f586e47b0fb392e789">More...</a><br /></td></tr>
 <tr class="separator:ae92bcb31df9132f586e47b0fb392e789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51fecdff127af664375f7b42c5a1302c"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a51fecdff127af664375f7b42c5a1302c">cfl_cg1</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a51fecdff127af664375f7b42c5a1302c"><td class="mdescLeft">&#160;</td><td class="mdescRight">CFL for first baroclinic gravity wave speed, nondim.  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a51fecdff127af664375f7b42c5a1302c">More...</a><br /></td></tr>
+<tr class="memdesc:a51fecdff127af664375f7b42c5a1302c"><td class="mdescLeft">&#160;</td><td class="mdescRight">CFL for first baroclinic gravity wave speed [nondim].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a51fecdff127af664375f7b42c5a1302c">More...</a><br /></td></tr>
 <tr class="separator:a51fecdff127af664375f7b42c5a1302c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9472943b4082ff020eb856ef6d9c26d4"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a9472943b4082ff020eb856ef6d9c26d4">cfl_cg1_x</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a9472943b4082ff020eb856ef6d9c26d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">i-component of CFL for first baroclinic gravity wave speed, nondim  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a9472943b4082ff020eb856ef6d9c26d4">More...</a><br /></td></tr>
+<tr class="memdesc:a9472943b4082ff020eb856ef6d9c26d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">i-component of CFL for first baroclinic gravity wave speed [nondim]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a9472943b4082ff020eb856ef6d9c26d4">More...</a><br /></td></tr>
 <tr class="separator:a9472943b4082ff020eb856ef6d9c26d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0fd3141256de9f1fe685f61c98f7045"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#ab0fd3141256de9f1fe685f61c98f7045">cfl_cg1_y</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:ab0fd3141256de9f1fe685f61c98f7045"><td class="mdescLeft">&#160;</td><td class="mdescRight">j-component of CFL for first baroclinic gravity wave speed, nondim  <a href="structmom__diagnostics_1_1diagnostics__cs.html#ab0fd3141256de9f1fe685f61c98f7045">More...</a><br /></td></tr>
+<tr class="memdesc:ab0fd3141256de9f1fe685f61c98f7045"><td class="mdescLeft">&#160;</td><td class="mdescRight">j-component of CFL for first baroclinic gravity wave speed [nondim]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#ab0fd3141256de9f1fe685f61c98f7045">More...</a><br /></td></tr>
 <tr class="separator:ab0fd3141256de9f1fe685f61c98f7045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96c0f8c2888e5025e87a236ebc400591"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a96c0f8c2888e5025e87a236ebc400591">ke</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a96c0f8c2888e5025e87a236ebc400591"><td class="mdescLeft">&#160;</td><td class="mdescRight">KE per unit mass [m2 s-2].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a96c0f8c2888e5025e87a236ebc400591">More...</a><br /></td></tr>
+<tr class="memdesc:a96c0f8c2888e5025e87a236ebc400591"><td class="mdescLeft">&#160;</td><td class="mdescRight">KE per unit mass [L2 T-2 ~&gt; m2 s-2].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a96c0f8c2888e5025e87a236ebc400591">More...</a><br /></td></tr>
 <tr class="separator:a96c0f8c2888e5025e87a236ebc400591"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8525effd0837c28e6a7bba22812b3ee"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#ae8525effd0837c28e6a7bba22812b3ee">dke_dt</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:ae8525effd0837c28e6a7bba22812b3ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">time derivative of the layer KE [m3 s-3]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#ae8525effd0837c28e6a7bba22812b3ee">More...</a><br /></td></tr>
+<tr class="memdesc:ae8525effd0837c28e6a7bba22812b3ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">time derivative of the layer KE [H L2 T-3 ~&gt; m3 s-3]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#ae8525effd0837c28e6a7bba22812b3ee">More...</a><br /></td></tr>
 <tr class="separator:ae8525effd0837c28e6a7bba22812b3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6616683b53d2d055c6e80367f19402f1"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a6616683b53d2d055c6e80367f19402f1">pe_to_ke</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a6616683b53d2d055c6e80367f19402f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">potential energy to KE term [m3 s-3]  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a6616683b53d2d055c6e80367f19402f1">More...</a><br /></td></tr>
 <tr class="separator:a6616683b53d2d055c6e80367f19402f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace9e2cd660ec43084967f7e229e3c937"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#ace9e2cd660ec43084967f7e229e3c937">ke_coradv</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:ace9e2cd660ec43084967f7e229e3c937"><td class="mdescLeft">&#160;</td><td class="mdescRight">KE source from the combined Coriolis and advection terms [m3 s-3].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#ace9e2cd660ec43084967f7e229e3c937">More...</a><br /></td></tr>
+<tr class="memdesc:ace9e2cd660ec43084967f7e229e3c937"><td class="mdescLeft">&#160;</td><td class="mdescRight">KE source from the combined Coriolis and.  <a href="structmom__diagnostics_1_1diagnostics__cs.html#ace9e2cd660ec43084967f7e229e3c937">More...</a><br /></td></tr>
 <tr class="separator:ace9e2cd660ec43084967f7e229e3c937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eb499d95e92cc1bf685559d7fd97d23"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a7eb499d95e92cc1bf685559d7fd97d23">ke_adv</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a7eb499d95e92cc1bf685559d7fd97d23"><td class="mdescLeft">&#160;</td><td class="mdescRight">KE source from along-layer advection [m3 s-3].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a7eb499d95e92cc1bf685559d7fd97d23">More...</a><br /></td></tr>
+<tr class="memdesc:a7eb499d95e92cc1bf685559d7fd97d23"><td class="mdescLeft">&#160;</td><td class="mdescRight">KE source from along-layer advection [H L2 T-3 ~&gt; m3 s-3].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a7eb499d95e92cc1bf685559d7fd97d23">More...</a><br /></td></tr>
 <tr class="separator:a7eb499d95e92cc1bf685559d7fd97d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d036c103858a8a74f0f425192484bf7"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a8d036c103858a8a74f0f425192484bf7">ke_visc</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a8d036c103858a8a74f0f425192484bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">KE source from vertical viscosity [m3 s-3].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a8d036c103858a8a74f0f425192484bf7">More...</a><br /></td></tr>
+<tr class="memdesc:a8d036c103858a8a74f0f425192484bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">KE source from vertical viscosity [H L2 T-3 ~&gt; m3 s-3].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a8d036c103858a8a74f0f425192484bf7">More...</a><br /></td></tr>
 <tr class="separator:a8d036c103858a8a74f0f425192484bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23e4f5f4fb48652807b7fffd80bdeebf"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a23e4f5f4fb48652807b7fffd80bdeebf">ke_horvisc</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a23e4f5f4fb48652807b7fffd80bdeebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">KE source from horizontal viscosity [m3 s-3].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a23e4f5f4fb48652807b7fffd80bdeebf">More...</a><br /></td></tr>
+<tr class="memdesc:a23e4f5f4fb48652807b7fffd80bdeebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">KE source from horizontal viscosity [H L2 T-3 ~&gt; m3 s-3].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a23e4f5f4fb48652807b7fffd80bdeebf">More...</a><br /></td></tr>
 <tr class="separator:a23e4f5f4fb48652807b7fffd80bdeebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9eecf8fd05cfa422970e2a8cfbb46110"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a9eecf8fd05cfa422970e2a8cfbb46110">ke_dia</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a9eecf8fd05cfa422970e2a8cfbb46110"><td class="mdescLeft">&#160;</td><td class="mdescRight">KE source from diapycnal diffusion [m3 s-3].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a9eecf8fd05cfa422970e2a8cfbb46110">More...</a><br /></td></tr>
+<tr class="memdesc:a9eecf8fd05cfa422970e2a8cfbb46110"><td class="mdescLeft">&#160;</td><td class="mdescRight">KE source from diapycnal diffusion [H L2 T-3 ~&gt; m3 s-3].  <a href="structmom__diagnostics_1_1diagnostics__cs.html#a9eecf8fd05cfa422970e2a8cfbb46110">More...</a><br /></td></tr>
 <tr class="separator:a9eecf8fd05cfa422970e2a8cfbb46110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a896de22d765c19bff0b0b878943b6598"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__diagnostics_1_1diagnostics__cs.html#a896de22d765c19bff0b0b878943b6598">id_u</a> = -1</td></tr>
@@ -393,7 +393,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>CFL for first baroclinic gravity wave speed, nondim. </p>
+<p>CFL for first baroclinic gravity wave speed [nondim]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
@@ -411,7 +411,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>i-component of CFL for first baroclinic gravity wave speed, nondim </p>
+<p>i-component of CFL for first baroclinic gravity wave speed [nondim] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
@@ -429,7 +429,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>j-component of CFL for first baroclinic gravity wave speed, nondim </p>
+<p>j-component of CFL for first baroclinic gravity wave speed [nondim] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
@@ -447,15 +447,15 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>First baroclinic gravity wave speed [m s-1]. </p>
+<p>First baroclinic gravity wave speed [L T-1 ~&gt; m s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    cg1 =&gt; null(),       &amp; <span class="comment">!&lt; First baroclinic gravity wave speed [m s-1]</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    rd1 =&gt; null(),       &amp; <span class="comment">!&lt; First baroclinic deformation radius [m]</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    cfl_cg1 =&gt; null(),   &amp; <span class="comment">!&lt; CFL for first baroclinic gravity wave speed, nondim</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    cfl_cg1_x =&gt; null(), &amp; <span class="comment">!&lt; i-component of CFL for first baroclinic gravity wave speed, nondim</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    cfl_cg1_y =&gt; null()    <span class="comment">!&lt; j-component of CFL for first baroclinic gravity wave speed, nondim</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    cg1 =&gt; null(),       &amp; <span class="comment">!&lt; First baroclinic gravity wave speed [L T-1 ~&gt; m s-1]</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    rd1 =&gt; null(),       &amp; <span class="comment">!&lt; First baroclinic deformation radius [L ~&gt; m]</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    cfl_cg1 =&gt; null(),   &amp; <span class="comment">!&lt; CFL for first baroclinic gravity wave speed [nondim]</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    cfl_cg1_x =&gt; null(), &amp; <span class="comment">!&lt; i-component of CFL for first baroclinic gravity wave speed [nondim]</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    cfl_cg1_y =&gt; null()    <span class="comment">!&lt; j-component of CFL for first baroclinic gravity wave speed [nondim]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -473,8 +473,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Time derivatives of various fields. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00142">142</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordtype">type</span>(p3d) :: deriv(MAX_FIELDS_)<span class="comment">    !&lt; Time derivatives of various fields</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00143">143</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">type</span>(p3d) :: deriv(MAX_FIELDS_)<span class="comment">    !&lt; Time derivatives of various fields</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -490,7 +490,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>thickness rate of change [H s-1 ~&gt; m s-1 or kg m-2 s-1] </p>
+<p>thickness rate of change [H T-1 ~&gt; m s-1 or kg m-2 s-1] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00068">68</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
@@ -527,7 +527,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>time derivative of the layer KE [m3 s-3] </p>
+<p>time derivative of the layer KE [H L2 T-3 ~&gt; m3 s-3] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
@@ -545,13 +545,13 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>net i-acceleration [L T-1 s-1 ~&gt; m s-2] </p>
+<p>net i-acceleration [L T-2 ~&gt; m s-2] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00068">68</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    du_dt =&gt; null(), &amp; <span class="comment">!&lt; net i-acceleration [L T-1 s-1 ~&gt; m s-2]</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    dv_dt =&gt; null(), &amp; <span class="comment">!&lt; net j-acceleration [L T-1 s-1 ~&gt; m s-2]</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    dh_dt =&gt; null(), &amp; <span class="comment">!&lt; thickness rate of change [H s-1 ~&gt; m s-1 or kg m-2 s-1]</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    du_dt =&gt; null(), &amp; <span class="comment">!&lt; net i-acceleration [L T-2 ~&gt; m s-2]</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    dv_dt =&gt; null(), &amp; <span class="comment">!&lt; net j-acceleration [L T-2 ~&gt; m s-2]</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    dh_dt =&gt; null(), &amp; <span class="comment">!&lt; thickness rate of change [H T-1 ~&gt; m s-1 or kg m-2 s-1]</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    p_ebt =&gt; null()    <span class="comment">!&lt; Equivalent barotropic modal structure [nondim]</span></div>
 </div><!-- fragment -->
 </div>
@@ -568,7 +568,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>net j-acceleration [L T-1 s-1 ~&gt; m s-2] </p>
+<p>net j-acceleration [L T-2 ~&gt; m s-2] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00068">68</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
@@ -646,7 +646,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -664,8 +664,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">integer</span> :: id_cfl_cg1_x      = -1, id_cfl_cg1_y      = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">integer</span> :: id_cfl_cg1_x      = -1, id_cfl_cg1_y      = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -683,7 +683,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -701,8 +701,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">integer</span> :: id_cg1            = -1, id_cfl_cg1        = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00121">121</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">integer</span> :: id_cg1            = -1, id_cfl_cg1        = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -720,8 +720,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">integer</span> :: id_cg_ebt         = -1, id_rd_ebt         = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">integer</span> :: id_cg_ebt         = -1, id_rd_ebt         = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -739,8 +739,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">integer</span> :: id_col_ht         = -1, id_dh_dt          = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">integer</span> :: id_col_ht         = -1, id_dh_dt          = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -758,7 +758,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -776,7 +776,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -794,7 +794,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -812,8 +812,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00110">110</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">integer</span> :: id_du_dt          = -1, id_dv_dt          = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">integer</span> :: id_du_dt          = -1, id_dv_dt          = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -831,7 +831,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00110">110</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -849,8 +849,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">integer</span> :: id_e              = -1, id_e_d            = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00110">110</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">integer</span> :: id_e              = -1, id_e_d            = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -868,7 +868,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00110">110</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -886,7 +886,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00108">108</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -904,8 +904,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00136">136</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">integer</span> :: id_h_pre_sync     = -1   <span class="comment">!!@}</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00137">137</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">integer</span> :: id_h_pre_sync     = -1   <span class="comment">!!@}</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -923,8 +923,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00118">118</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">integer</span> :: id_h_Rlay         = -1, id_rd1            = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">integer</span> :: id_h_Rlay         = -1, id_rd1            = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -942,8 +942,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">integer</span> :: id_KE             = -1, id_dkedt          = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">integer</span> :: id_KE             = -1, id_dkedt          = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -961,8 +961,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">integer</span> :: id_KE_adv         = -1, id_ke_visc        = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">integer</span> :: id_KE_adv         = -1, id_ke_visc        = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -980,7 +980,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -998,7 +998,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00116">116</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1016,8 +1016,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">integer</span> :: id_KE_horvisc     = -1, id_ke_dia         = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00116">116</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">integer</span> :: id_KE_horvisc     = -1, id_ke_dia         = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1035,7 +1035,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1053,8 +1053,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">integer</span> :: id_mass_wt        = -1, id_col_mass       = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">integer</span> :: id_mass_wt        = -1, id_col_mass       = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1072,8 +1072,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">integer</span> :: id_masscello      = -1, id_masso          = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00127">127</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">integer</span> :: id_masscello      = -1, id_masso          = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1091,7 +1091,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00127">127</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1109,8 +1109,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">integer</span> :: id_p_ebt          = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">integer</span> :: id_p_ebt          = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1128,8 +1128,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00133">133</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">integer</span> :: id_pbo            = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00134">134</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordtype">integer</span> :: id_pbo            = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1147,8 +1147,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00113">113</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">integer</span> :: id_PE_to_KE       = -1, id_ke_coradv      = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">integer</span> :: id_PE_to_KE       = -1, id_ke_coradv      = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1166,7 +1166,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1184,7 +1184,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00118">118</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1202,7 +1202,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00123">123</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1220,7 +1220,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00134">134</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00135">135</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1238,8 +1238,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00135">135</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">integer</span> :: id_rhopot0        = -1, id_rhopot2        = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00136">136</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">integer</span> :: id_rhopot0        = -1, id_rhopot2        = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1257,7 +1257,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00135">135</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00136">136</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1275,8 +1275,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00119">119</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">integer</span> :: id_Rml            = -1, id_rcv            = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">integer</span> :: id_Rml            = -1, id_rcv            = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1294,7 +1294,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1312,7 +1312,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00132">132</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00133">133</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1330,7 +1330,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00129">129</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00130">130</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1348,7 +1348,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00130">130</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1366,8 +1366,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">integer</span> :: id_sosga          = -1, id_tosga          = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00132">132</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">integer</span> :: id_sosga          = -1, id_tosga          = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1385,7 +1385,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00128">128</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00129">129</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1403,8 +1403,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">integer</span> :: id_temp_int       = -1, id_salt_int       = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00125">125</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">integer</span> :: id_temp_int       = -1, id_salt_int       = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1422,8 +1422,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00132">132</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">integer</span> :: id_temp_layer_ave = -1, id_salt_layer_ave = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00133">133</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">integer</span> :: id_temp_layer_ave = -1, id_salt_layer_ave = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1441,8 +1441,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00130">130</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">integer</span> :: id_thetaoga       = -1, id_soga           = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">integer</span> :: id_thetaoga       = -1, id_soga           = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1460,8 +1460,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00134">134</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordtype">integer</span> :: id_thkcello       = -1, id_rhoinsitu      = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00135">135</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">integer</span> :: id_thkcello       = -1, id_rhoinsitu      = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1479,8 +1479,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00129">129</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">integer</span> :: id_tob            = -1, id_sob            = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00130">130</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">integer</span> :: id_tob            = -1, id_sob            = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1498,7 +1498,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00132">132</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1516,8 +1516,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00128">128</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">integer</span> :: id_Tpot           = -1, id_sprac          = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00129">129</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">integer</span> :: id_Tpot           = -1, id_sprac          = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1535,8 +1535,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00108">108</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">integer</span> :: id_u = -1,   id_v = -1, id_h = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">integer</span> :: id_u = -1,   id_v = -1, id_h = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1554,8 +1554,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00116">116</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">integer</span> :: id_uh_Rlay        = -1, id_vh_rlay        = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00117">117</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">integer</span> :: id_uh_Rlay        = -1, id_vh_rlay        = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1573,8 +1573,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00117">117</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">integer</span> :: id_uhGM_Rlay      = -1, id_vhgm_rlay      = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00118">118</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">integer</span> :: id_uhGM_Rlay      = -1, id_vhgm_rlay      = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1592,7 +1592,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00108">108</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1610,7 +1610,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00116">116</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00117">117</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1628,7 +1628,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00117">117</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00118">118</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
 </div>
 </div>
@@ -1646,8 +1646,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic IDs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00127">127</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">integer</span> :: id_volcello       = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00128">128</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">integer</span> :: id_volcello       = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1663,21 +1663,22 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>KE per unit mass [m2 s-2]. </p>
+<p>KE per unit mass [L2 T-2 ~&gt; m2 s-2]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    KE        =&gt; null(), &amp;  <span class="comment">!&lt; KE per unit mass [m2 s-2]</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    dke_dt    =&gt; null(), &amp;  <span class="comment">!&lt; time derivative of the layer KE [m3 s-3]</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    KE        =&gt; null(), &amp;  <span class="comment">!&lt; KE per unit mass [L2 T-2 ~&gt; m2 s-2]</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    dke_dt    =&gt; null(), &amp;  <span class="comment">!&lt; time derivative of the layer KE [H L2 T-3 ~&gt; m3 s-3]</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    pe_to_ke  =&gt; null(), &amp;  <span class="comment">!&lt; potential energy to KE term [m3 s-3]</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    ke_coradv =&gt; null(), &amp;  <span class="comment">!&lt; KE source from the combined Coriolis and advection terms [m3 s-3].</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">                            !! The Coriolis source should be zero, but is not due to truncation</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">                            !! errors.  There should be near-cancellation of the global integral</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">                            !! of this spurious Coriolis source.</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    ke_adv     =&gt; null(), &amp; <span class="comment">!&lt; KE source from along-layer advection [m3 s-3]</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    ke_visc    =&gt; null(), &amp; <span class="comment">!&lt; KE source from vertical viscosity [m3 s-3]</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    ke_horvisc =&gt; null(), &amp; <span class="comment">!&lt; KE source from horizontal viscosity [m3 s-3]</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    ke_dia     =&gt; null()    <span class="comment">!&lt; KE source from diapycnal diffusion [m3 s-3]</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    ke_coradv =&gt; null(), &amp;  <span class="comment">!&lt; KE source from the combined Coriolis and</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">                            !! advection terms [H L2 T-3 ~&gt; m3 s-3].</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">                            !! The Coriolis source should be zero, but is not due to truncation</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">                            !! errors.  There should be near-cancellation of the global integral</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">                            !! of this spurious Coriolis source.</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    ke_adv     =&gt; null(), &amp; <span class="comment">!&lt; KE source from along-layer advection [H L2 T-3 ~&gt; m3 s-3]</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    ke_visc    =&gt; null(), &amp; <span class="comment">!&lt; KE source from vertical viscosity [H L2 T-3 ~&gt; m3 s-3]</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    ke_horvisc =&gt; null(), &amp; <span class="comment">!&lt; KE source from horizontal viscosity [H L2 T-3 ~&gt; m3 s-3]</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    ke_dia     =&gt; null()    <span class="comment">!&lt; KE source from diapycnal diffusion [H L2 T-3 ~&gt; m3 s-3]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1693,7 +1694,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>KE source from along-layer advection [m3 s-3]. </p>
+<p>KE source from along-layer advection [H L2 T-3 ~&gt; m3 s-3]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
@@ -1711,7 +1712,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>KE source from the combined Coriolis and advection terms [m3 s-3]. </p>
+<p>KE source from the combined Coriolis and. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
@@ -1729,7 +1730,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>KE source from diapycnal diffusion [m3 s-3]. </p>
+<p>KE source from diapycnal diffusion [H L2 T-3 ~&gt; m3 s-3]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
@@ -1747,7 +1748,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>KE source from horizontal viscosity [m3 s-3]. </p>
+<p>KE source from horizontal viscosity [H L2 T-3 ~&gt; m3 s-3]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
@@ -1765,7 +1766,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>KE source from vertical viscosity [m3 s-3]. </p>
+<p>KE source from vertical viscosity [H L2 T-3 ~&gt; m3 s-3]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
@@ -1802,7 +1803,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The depth below which N2 is limited as monotonic for the purposes of calculating the equivalent barotropic wave speed [m]. </p>
+<p>The depth below which N2 is limited as monotonic for the purposes of calculating the equivalent barotropic wave speed [Z ~&gt; m]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00054">54</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">  real</span> :: mono_N2_depth = -1.<span class="comment">          !&lt; The depth below which N2 is limited as monotonic for the purposes of</span></div>
@@ -1823,8 +1824,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of layers in each diagnostics. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00146">146</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordtype">integer</span>   :: nlay(MAX_FIELDS_)<span class="comment"> !&lt; The number of layers in each diagnostics</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00147">147</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">integer</span>   :: nlay(MAX_FIELDS_)<span class="comment"> !&lt; The number of layers in each diagnostics</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1842,8 +1843,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of time derivative diagnostics. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00147">147</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">integer</span>   :: num_time_deriv = 0<span class="comment"> !&lt; The number of time derivative diagnostics</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00148">148</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordtype">integer</span>   :: num_time_deriv = 0<span class="comment"> !&lt; The number of time derivative diagnostics</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1879,8 +1880,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A handle used for group halo passes. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00149">149</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_KE_uv<span class="comment"> !&lt; A handle used for group halo passes</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00150">150</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordtype">type</span>(group_pass_type) :: pass_KE_uv<span class="comment"> !&lt; A handle used for group halo passes</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1916,8 +1917,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Previous values of variables used in the calculation of time derivatives previous values of variables used in calculation of time derivatives. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00143">143</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">type</span>(p3d) :: prev_val(MAX_FIELDS_)<span class="comment"> !&lt; Previous values of variables used in the calculation</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00144">144</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">type</span>(p3d) :: prev_val(MAX_FIELDS_)<span class="comment"> !&lt; Previous values of variables used in the calculation</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1933,7 +1934,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>First baroclinic deformation radius [m]. </p>
+<p>First baroclinic deformation radius [L ~&gt; m]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
 
@@ -1991,8 +1992,8 @@ Public variables and constants</h2></td></tr>
 
 <p>pointers to variables used in the calculation of time derivatives </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00140">140</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordtype">type</span>(p3d) :: var_ptr(MAX_FIELDS_)<span class="comment">  !&lt; pointers to variables used in the calculation</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00141">141</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">type</span>(p3d) :: var_ptr(MAX_FIELDS_)<span class="comment">  !&lt; pointers to variables used in the calculation</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2048,13 +2049,13 @@ Public variables and constants</h2></td></tr>
 
 <p>The control structure for calculating wave speed. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00138">138</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordtype">type</span>(wave_speed_CS), <span class="keywordtype">pointer</span> :: wave_speed_CSp =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__diagnostics_8F90_source.html#l00139">139</a> of file <a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">type</span>(wave_speed_CS), <span class="keywordtype">pointer</span> :: wave_speed_CSp =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/diagnostics/<a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/diagnostics/<a class="el" href="MOM__diagnostics_8F90_source.html">MOM_diagnostics.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

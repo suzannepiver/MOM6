@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 524;
+var viewWidth = 502;
 var viewHeight = 39;
 var sectionId = 'dynsection-4';
 </script>
@@ -54,14 +54,14 @@ var sectionId = 'dynsection-4';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_open_boundary::file_obc_end</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-35 520,-35 520,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-35 498,-35 498,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Clean up the file OBC from registry.">
-<polygon fill="#bfbfbf" stroke="#000000" points="393,-.5 393,-30.5 516,-30.5 516,-.5 393,-.5"/>
-<text text-anchor="start" x="401" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_open_boundary::</text>
-<text text-anchor="middle" x="454.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">file_obc_end</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="378,-.5 378,-30.5 494,-30.5 494,-.5 378,-.5"/>
+<text text-anchor="start" x="386" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_open_boundary::</text>
+<text text-anchor="middle" x="436" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">file_obc_end</text>
 </a>
 </g>
 </g>
@@ -69,47 +69,47 @@ var sectionId = 'dynsection-4';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__boundary__update.html#a32cfc645987cee827d4d193537b09c71" target="_top" xlink:title="Clean up the OBC registry.">
-<polygon fill="#ffffff" stroke="#000000" points="230,-.5 230,-30.5 357,-30.5 357,-.5 230,-.5"/>
-<text text-anchor="start" x="238" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_boundary_update</text>
-<text text-anchor="middle" x="293.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::obc_register_end</text>
+<polygon fill="#ffffff" stroke="#000000" points="224,-.5 224,-30.5 342,-30.5 342,-.5 224,-.5"/>
+<text text-anchor="start" x="232" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_boundary_update</text>
+<text text-anchor="middle" x="283" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::obc_register_end</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M382.5269,-15.5C374.1038,-15.5 365.5548,-15.5 357.2543,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="382.7137,-19.0001 392.7136,-15.5 382.7136,-12.0001 382.7137,-19.0001"/>
+<path fill="none" stroke="#191970" d="M367.4928,-15.5C359.0308,-15.5 350.437,-15.5 342.1316,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="367.7208,-19.0001 377.7208,-15.5 367.7208,-12.0001 367.7208,-19.0001"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom.html#ae6dad976fb4be1c7ba7fc1aff809616b" target="_top" xlink:title="End of ocean model, including memory deallocation.">
-<polygon fill="#ffffff" stroke="#000000" points="104,-6 104,-25 194,-25 194,-6 104,-6"/>
-<text text-anchor="middle" x="149" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom::mom_end</text>
+<polygon fill="#ffffff" stroke="#000000" points="101,-6 101,-25 188,-25 188,-6 101,-6"/>
+<text text-anchor="middle" x="144.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom::mom_end</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M219.576,-15.5C210.9395,-15.5 202.3349,-15.5 194.2562,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="219.6996,-19.0001 229.6996,-15.5 219.6995,-12.0001 219.6996,-19.0001"/>
+<path fill="none" stroke="#191970" d="M213.7476,-15.5C205.1043,-15.5 196.461,-15.5 188.3564,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="213.8618,-19.0001 223.8618,-15.5 213.8618,-12.0001 213.8618,-19.0001"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="0,-6 0,-25 68,-25 68,-6 0,-6"/>
-<text text-anchor="middle" x="34" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_main</text>
+<polygon fill="#ffffff" stroke="#000000" points="0,-6 0,-25 65,-25 65,-6 0,-6"/>
+<text text-anchor="middle" x="32.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_main</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M93.7708,-15.5C85.0926,-15.5 76.3453,-15.5 68.3213,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="93.8791,-19.0001 103.879,-15.5 93.879,-12.0001 93.8791,-19.0001"/>
+<path fill="none" stroke="#191970" d="M90.6878,-15.5C81.9364,-15.5 73.1136,-15.5 65.0761,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="90.8772,-19.0001 100.8772,-15.5 90.8771,-12.0001 90.8772,-19.0001"/>
 </g>
 </g>
 </svg>

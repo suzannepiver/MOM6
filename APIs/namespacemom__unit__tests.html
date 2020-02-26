@@ -131,29 +131,32 @@ Functions/Subroutines</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__unit__tests_8F90_source.html#l00022">22</a> of file <a class="el" href="MOM__unit__tests_8F90_source.html">MOM_unit_tests.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="comment">! Arguments</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">intent(in)</span> :: verbosity<span class="comment"> !&lt; The verbosity level</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="comment">! Local variables</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">logical</span> :: verbose</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  verbose = verbosity&gt;=5</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">if</span> (is_root_pe()) <span class="keywordflow">then</span> <span class="comment">! The following need only be tested on 1 PE</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span> (string_functions_unit_tests(verbose)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;       <span class="stringliteral">&quot;MOM_unit_tests: string_functions_unit_tests FAILED&quot;</span>)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (remapping_unit_tests(verbose)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;       <span class="stringliteral">&quot;MOM_unit_tests: remapping_unit_tests FAILED&quot;</span>)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (neutral_diffusion_unit_tests(verbose)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;       <span class="stringliteral">&quot;MOM_unit_tests: neutralDiffusionUnitTests FAILED&quot;</span>)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> (diag_vkernels_unit_tests(verbose)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;       <span class="stringliteral">&quot;MOM_unit_tests: diag_vkernels_unit_tests FAILED&quot;</span>)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="MOM__unit__tests_8F90_source.html#l00023">23</a> of file <a class="el" href="MOM__unit__tests_8F90_source.html">MOM_unit_tests.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="comment">! Arguments</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">intent(in)</span> :: verbosity<span class="comment"> !&lt; The verbosity level</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="comment">! Local variables</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">logical</span> :: verbose</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  verbose = verbosity&gt;=5</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">if</span> (is_root_pe()) <span class="keywordflow">then</span> <span class="comment">! The following need only be tested on 1 PE</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> (string_functions_unit_tests(verbose)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;       <span class="stringliteral">&quot;MOM_unit_tests: string_functions_unit_tests FAILED&quot;</span>)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (remapping_unit_tests(verbose)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;       <span class="stringliteral">&quot;MOM_unit_tests: remapping_unit_tests FAILED&quot;</span>)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> (neutral_diffusion_unit_tests(verbose)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;       <span class="stringliteral">&quot;MOM_unit_tests: neutralDiffusionUnitTests FAILED&quot;</span>)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (diag_vkernels_unit_tests(verbose)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;       <span class="stringliteral">&quot;MOM_unit_tests: diag_vkernels_unit_tests FAILED&quot;</span>)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span> (near_boundary_unit_tests(verbose)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;       <span class="stringliteral">&quot;MOM_unit_tests: near_boundary_unit_tests FAILED&quot;</span>)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__diag__vkernels_8F90_source.html#l00169">mom_diag_vkernels::diag_vkernels_unit_tests()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>, <a class="el" href="MOM__neutral__diffusion_8F90_source.html#l01509">mom_neutral_diffusion::neutral_diffusion_unit_tests()</a>, <a class="el" href="MOM__remapping_8F90_source.html#l01606">mom_remapping::remapping_unit_tests()</a>, and <a class="el" href="MOM__string__functions_8F90_source.html#l00314">mom_string_functions::string_functions_unit_tests()</a>.</p>
+<p class="reference">References <a class="el" href="MOM__diag__vkernels_8F90_source.html#l00169">mom_diag_vkernels::diag_vkernels_unit_tests()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00044">mom_error_handler::is_root_pe()</a>, <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>, <a class="el" href="MOM__lateral__boundary__diffusion_8F90_source.html#l00714">mom_lateral_boundary_diffusion::near_boundary_unit_tests()</a>, <a class="el" href="MOM__neutral__diffusion_8F90_source.html#l02024">mom_neutral_diffusion::neutral_diffusion_unit_tests()</a>, <a class="el" href="MOM__remapping_8F90_source.html#l01613">mom_remapping::remapping_unit_tests()</a>, and <a class="el" href="MOM__string__functions_8F90_source.html#l00314">mom_string_functions::string_functions_unit_tests()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM_8F90_source.html#l01500">mom::initialize_mom()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM_8F90_source.html#l01506">mom::initialize_mom()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -163,7 +166,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__unit__tests_a57645db02bc734c32de50d028ef906ac_icgraph.svg" width="492" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__unit__tests_a57645db02bc734c32de50d028ef906ac_icgraph.svg" width="480" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

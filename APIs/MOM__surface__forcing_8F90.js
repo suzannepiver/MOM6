@@ -4,7 +4,7 @@ var MOM__surface__forcing_8F90 =
     [ "buoyancy_forcing_const", "MOM__surface__forcing_8F90.html#a37f3decdcdd15562e3a1d59ad2faa592", null ],
     [ "buoyancy_forcing_from_data_override", "MOM__surface__forcing_8F90.html#aae90a5a100863b1c2cb4e930e6bf22a9", null ],
     [ "buoyancy_forcing_from_files", "MOM__surface__forcing_8F90.html#a01a06028c87fa3567748652c91de39fe", null ],
-    [ "buoyancy_forcing_linear", "MOM__surface__forcing_8F90.html#a0bbc70442ed1f2293408350eba2cd0d4", null ],
+    [ "buoyancy_forcing_linear", "MOM__surface__forcing_8F90.html#aad38755ede5df899000281e73b1c3075", null ],
     [ "buoyancy_forcing_zero", "MOM__surface__forcing_8F90.html#aa898503e8349fda86bc2568b8cce95f3", null ],
     [ "forcing_save_restart", "MOM__surface__forcing_8F90.html#a938b99b53ae2b01b468c9c4eaeb595d2", null ],
     [ "set_forcing", "MOM__surface__forcing_8F90.html#a8bf2faba72a8fbe4a187981d50c99337", null ],

@@ -13,9 +13,9 @@ digraph "mom_lateral_mixing_coeffs::varmix_init"
   Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="mom_wave_speed::wave\l_speed_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__wave__speed.html#a46e21529ec8098b0b19053afa133b971",tooltip="Initialize control structure for MOM_wave_speed."];
   Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="mom_remapping::initialize\l_remapping",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__remapping.html#a6847e0c44ccb54fb72587677f90d95b6",tooltip="Constructor for remapping control structure."];
+  Node5 [label="mom_remapping::initialize\l_remapping",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__remapping.html#a81211827af45207130d25cae520b55e5",tooltip="Constructor for remapping control structure."];
   Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="mom_remapping::remapping\l_set_param",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__remapping.html#a9e811f89c505a4416ea0eec315769801",tooltip="Set parameters within remapping object."];
+  Node6 [label="mom_remapping::remapping\l_set_param",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__remapping.html#a50e96a4a1083bb1fae3ca0130b6a2c11",tooltip="Set parameters within remapping object."];
   Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 [label="mom_remapping::setreconstructiontype",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__remapping.html#a41a89ac62578250500b7a450d5fdfae7",tooltip="Changes the method of reconstruction Use this routine to parse a string parameter specifying the reco..."];
   Node7 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

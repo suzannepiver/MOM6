@@ -205,80 +205,80 @@ Functions/Subroutines</h2></td></tr>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">  real</span> :: Temp_restore   <span class="comment">! The temperature that is being restored toward [degC].</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">  real</span> :: Salin_restore  <span class="comment">! The salinity that is being restored toward [ppt].</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">  real</span> :: density_restore  <span class="comment">! The potential density that is being restored</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                         <span class="comment">! toward [kg m-3].</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">  real</span> :: rhoXcp <span class="comment">! The mean density times the heat capacity [J m-3 degC-1].</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">  real</span> :: buoy_rest_const  <span class="comment">! A constant relating density anomalies to the</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                           <span class="comment">! restoring buoyancy flux [L2 m3 T-3 kg-1 ~&gt; m5 s-3 kg-1].</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">integer</span> :: i, j, is, ie, js, je</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">integer</span> :: isd, ied, jsd, jed</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  isd = g%isd ; ied = g%ied ; jsd = g%jsd ; jed = g%jed</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="comment">! Allocate and zero out the forcing arrays, as necessary.  This portion is</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="comment">! usually not changed.</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">if</span> (cs%use_temperature) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%evap, isd, ied, jsd, jed)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%lprec, isd, ied, jsd, jed)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%fprec, isd, ied, jsd, jed)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%lrunoff, isd, ied, jsd, jed)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%frunoff, isd, ied, jsd, jed)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%vprec, isd, ied, jsd, jed)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%sw, isd, ied, jsd, jed)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%lw, isd, ied, jsd, jed)</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%latent, isd, ied, jsd, jed)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%sens, isd, ied, jsd, jed)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">else</span> <span class="comment">! This is the buoyancy only mode.</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%buoy, isd, ied, jsd, jed)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">if</span> ( cs%use_temperature ) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">! Set whichever fluxes are to be used here.  Any fluxes that</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">! are always zero do not need to be changed here.</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="comment">! Fluxes of fresh water through the surface are in units of [kg m-2 s-1]</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="comment">! and are positive downward - i.e. evaporation should be negative.</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      fluxes%evap(i,j) = -0.0 * g%mask2dT(i,j)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      fluxes%lprec(i,j) = 0.0 * g%mask2dT(i,j)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="comment">! vprec will be set later, if it is needed for salinity restoring.</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      fluxes%vprec(i,j) = 0.0</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="comment">! Heat fluxes are in units of [W m-2] and are positive into the ocean.</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      fluxes%lw(i,j) = 0.0 * g%mask2dT(i,j)</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      fluxes%latent(i,j) = 0.0 * g%mask2dT(i,j)</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      fluxes%sens(i,j) = 0.0 * g%mask2dT(i,j)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      fluxes%sw(i,j) = 0.0 * g%mask2dT(i,j)</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordflow">else</span> <span class="comment">! This is the buoyancy only mode.</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="comment">!   fluxes%buoy is the buoyancy flux into the ocean [L2 T-3 ~&gt; m2 s-3].  A positive</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="comment">! buoyancy flux is of the same sign as heating the ocean.</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      fluxes%buoy(i,j) = 0.0 * g%mask2dT(i,j)</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordflow">if</span> (cs%restorebuoy) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> (cs%use_temperature) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="keyword">call </span>safe_alloc_ptr(fluxes%heat_added, isd, ied, jsd, jed)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <span class="comment">!   When modifying the code, comment out this error message.  It is here</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <span class="comment">! so that the original (unmodified) version is not accidentally used.</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;User_buoyancy_surface_forcing: &quot;</span> // &amp;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="stringliteral">&quot;Temperature and salinity restoring used without modification.&quot;</span> )</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      rhoxcp = cs%Rho0 * fluxes%C_p</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="comment">!   Set Temp_restore and Salin_restore to the temperature (in degC) and</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="comment">! salinity (in ppt) that are being restored toward.</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        temp_restore = 0.0</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        salin_restore = 0.0</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        fluxes%heat_added(i,j) = (g%mask2dT(i,j) * (rhoxcp * cs%Flux_const)) * &amp;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            (temp_restore - state%SST(i,j))</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        fluxes%vprec(i,j) = - (g%mask2dT(i,j) * (cs%Rho0*cs%Flux_const)) * &amp;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            ((salin_restore - state%SSS(i,j)) / &amp;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;             (0.5 * (salin_restore + state%SSS(i,j))))</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                         <span class="comment">! toward [R ~&gt; kg m-3].</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">  real</span> :: rhoXcp           <span class="comment">! Reference density times heat capacity times unit scaling</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                           <span class="comment">! factors [J T s-1 Z-1 m-2 degC-1 ~&gt; J m-3 degC-1]</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">  real</span> :: buoy_rest_const  <span class="comment">! A constant relating density anomalies to the</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                           <span class="comment">! restoring buoyancy flux [L2 T-3 R-1 ~&gt; m5 s-3 kg-1].</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">integer</span> :: i, j, is, ie, js, je</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">integer</span> :: isd, ied, jsd, jed</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  is = g%isc ; ie = g%iec ; js = g%jsc ; je = g%jec</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  isd = g%isd ; ied = g%ied ; jsd = g%jsd ; jed = g%jed</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="comment">! Allocate and zero out the forcing arrays, as necessary.  This portion is</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">! usually not changed.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">if</span> (cs%use_temperature) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%evap, isd, ied, jsd, jed)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%lprec, isd, ied, jsd, jed)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%fprec, isd, ied, jsd, jed)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%lrunoff, isd, ied, jsd, jed)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%frunoff, isd, ied, jsd, jed)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%vprec, isd, ied, jsd, jed)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%sw, isd, ied, jsd, jed)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%lw, isd, ied, jsd, jed)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%latent, isd, ied, jsd, jed)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%sens, isd, ied, jsd, jed)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">else</span> <span class="comment">! This is the buoyancy only mode.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">call </span>safe_alloc_ptr(fluxes%buoy, isd, ied, jsd, jed)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">if</span> ( cs%use_temperature ) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">! Set whichever fluxes are to be used here.  Any fluxes that</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">! are always zero do not need to be changed here.</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="comment">! Fluxes of fresh water through the surface are in units of [kg m-2 s-1]</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="comment">! and are positive downward - i.e. evaporation should be negative.</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      fluxes%evap(i,j) = -0.0 * g%mask2dT(i,j)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      fluxes%lprec(i,j) = 0.0 * g%mask2dT(i,j)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="comment">! vprec will be set later, if it is needed for salinity restoring.</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      fluxes%vprec(i,j) = 0.0</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="comment">! Heat fluxes are in units of [W m-2] and are positive into the ocean.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      fluxes%lw(i,j) = 0.0 * g%mask2dT(i,j)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      fluxes%latent(i,j) = 0.0 * g%mask2dT(i,j)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      fluxes%sens(i,j) = 0.0 * g%mask2dT(i,j)</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      fluxes%sw(i,j) = 0.0 * g%mask2dT(i,j)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">else</span> <span class="comment">! This is the buoyancy only mode.</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="comment">!   fluxes%buoy is the buoyancy flux into the ocean [L2 T-3 ~&gt; m2 s-3].  A positive</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="comment">! buoyancy flux is of the same sign as heating the ocean.</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      fluxes%buoy(i,j) = 0.0 * g%mask2dT(i,j)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordflow">if</span> (cs%restorebuoy) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span> (cs%use_temperature) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <span class="keyword">call </span>safe_alloc_ptr(fluxes%heat_added, isd, ied, jsd, jed)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <span class="comment">!   When modifying the code, comment out this error message.  It is here</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <span class="comment">! so that the original (unmodified) version is not accidentally used.</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;User_buoyancy_surface_forcing: &quot;</span> // &amp;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="stringliteral">&quot;Temperature and salinity restoring used without modification.&quot;</span> )</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      rhoxcp = us%R_to_kg_m3*us%Z_to_m*us%s_to_T * cs%Rho0 * fluxes%C_p</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="comment">!   Set Temp_restore and Salin_restore to the temperature (in degC) and</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="comment">! salinity (in ppt) that are being restored toward.</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        temp_restore = 0.0</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        salin_restore = 0.0</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        fluxes%heat_added(i,j) = (g%mask2dT(i,j) * (rhoxcp * cs%Flux_const)) * &amp;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            (temp_restore - state%SST(i,j))</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        fluxes%vprec(i,j) = - (g%mask2dT(i,j) * (cs%Rho0*cs%Flux_const)) * &amp;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            ((salin_restore - state%SSS(i,j)) / (0.5 * (salin_restore + state%SSS(i,j))))</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keywordflow">      enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <span class="comment">!   When modifying the code, comment out this error message.  It is here</span></div>
@@ -287,7 +287,7 @@ Functions/Subroutines</h2></td></tr>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      <span class="comment">!   &quot;Buoyancy restoring used without modification.&quot; )</span></div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <span class="comment">! The -1 is because density has the opposite sign to buoyancy.</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      buoy_rest_const = -1.0 * (cs%G_Earth * us%m_to_Z*us%T_to_s*cs%Flux_const) / cs%Rho0</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      buoy_rest_const = -1.0 * (cs%G_Earth * cs%Flux_const) / cs%Rho0</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      temp_restore = 0.0</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> i=is,ie</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;       <span class="comment">!   Set density_restore to an expression for the surface potential</span></div>
@@ -304,7 +304,7 @@ Functions/Subroutines</h2></td></tr>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        density_restore = temp_restore*cs%drho_dt + cs%Rho0</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        fluxes%buoy(i,j) = g%mask2dT(i,j) * buoy_rest_const * &amp;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                          (density_restore - state%sfc_density(i,j))</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                          (density_restore - us%kg_m3_to_R*state%sfc_density(i,j))</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordflow">      enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keywordflow">    endif</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keywordflow">  endif</span>                                             <span class="comment">! end RESTOREBUOY</span></div>
@@ -314,7 +314,7 @@ Functions/Subroutines</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebfb__surface__forcing_ab78d5d1aa0f1dcaf743ea22e71bc142d_cgraph.svg" width="578" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebfb__surface__forcing_ab78d5d1aa0f1dcaf743ea22e71bc142d_cgraph.svg" width="547" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -417,22 +417,22 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                 <span class="stringliteral">&quot;calculate accelerations and the mass for conservation &quot;</span>//&amp;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                 <span class="stringliteral">&quot;properties, or with BOUSSINSEQ false to convert some &quot;</span>//&amp;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                 <span class="stringliteral">&quot;parameters from vertical units of m to kg m-2.&quot;</span>, &amp;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                 units=<span class="stringliteral">&quot;kg m-3&quot;</span>, default=1035.0)</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                 units=<span class="stringliteral">&quot;kg m-3&quot;</span>, default=1035.0, scale=us%kg_m3_to_R)</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;LFR_SLAT&quot;</span>, cs%lfrslat, &amp;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                 <span class="stringliteral">&quot;Southern latitude where the linear forcing ramp begins.&quot;</span>, &amp;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                 units=<span class="stringliteral">&quot;degrees&quot;</span>, default = 20.0)</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                 units=<span class="stringliteral">&quot;degrees&quot;</span>, default=20.0)</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;LFR_NLAT&quot;</span>, cs%lfrnlat, &amp;</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                 <span class="stringliteral">&quot;Northern latitude where the linear forcing ramp ends.&quot;</span>, &amp;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                 units=<span class="stringliteral">&quot;degrees&quot;</span>, default = 40.0)</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                 units=<span class="stringliteral">&quot;degrees&quot;</span>, default=40.0)</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;SST_S&quot;</span>, cs%SST_s, &amp;</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                 <span class="stringliteral">&quot;SST at the southern edge of the linear forcing ramp.&quot;</span>, &amp;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                 units=<span class="stringliteral">&quot;C&quot;</span>, default = 20.0)</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                 units=<span class="stringliteral">&quot;C&quot;</span>, default=20.0)</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;SST_N&quot;</span>, cs%SST_n, &amp;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                 <span class="stringliteral">&quot;SST at the northern edge of the linear forcing ramp.&quot;</span>, &amp;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                 units=<span class="stringliteral">&quot;C&quot;</span>, default = 10.0)</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                 units=<span class="stringliteral">&quot;C&quot;</span>, default=10.0)</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;DRHO_DT&quot;</span>, cs%drho_dt, &amp;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                 <span class="stringliteral">&quot;The rate of change of density with temperature.&quot;</span>, &amp;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                 units=<span class="stringliteral">&quot;kg m-3 K-1&quot;</span>, default = -0.2)</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                 units=<span class="stringliteral">&quot;kg m-3 K-1&quot;</span>, default=-0.2, scale=us%kg_m3_to_R)</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;GUST_CONST&quot;</span>, cs%gust_const, &amp;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                 <span class="stringliteral">&quot;The background gustiness in the winds.&quot;</span>, units=<span class="stringliteral">&quot;Pa&quot;</span>, &amp;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                 default=0.02)</div>
@@ -445,8 +445,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;FLUXCONST&quot;</span>, cs%Flux_const, &amp;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                 <span class="stringliteral">&quot;The constant that relates the restoring surface fluxes &quot;</span>//&amp;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                 <span class="stringliteral">&quot;to the relative surface anomalies (akin to a piston &quot;</span>//&amp;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                 <span class="stringliteral">&quot;velocity).  Note the non-MKS units.&quot;</span>, units=<span class="stringliteral">&quot;m day-1&quot;</span>, &amp;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                 fail_if_missing=.true.)</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                 <span class="stringliteral">&quot;velocity).  Note the non-MKS units.&quot;</span>, &amp;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                 units=<span class="stringliteral">&quot;m day-1&quot;</span>, scale=us%m_to_Z*us%T_to_s, fail_if_missing=.true.)</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="comment">! Convert CS%Flux_const from m day-1 to m s-1.</span></div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    cs%Flux_const = cs%Flux_const / 86400.0</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keywordflow">  endif</span></div>
@@ -454,17 +454,17 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__surface__forcing_8F90_source.html#l01376">mom_surface_forcing::surface_forcing_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__surface__forcing_8F90_source.html#l01398">mom_surface_forcing::surface_forcing_init()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebfb__surface__forcing_aaf77fa8e36d280fa2f3033f38417d7a0_cgraph.svg" width="591" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebfb__surface__forcing_aaf77fa8e36d280fa2f3033f38417d7a0_cgraph.svg" width="558" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebfb__surface__forcing_aaf77fa8e36d280fa2f3033f38417d7a0_icgraph.svg" width="532" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebfb__surface__forcing_aaf77fa8e36d280fa2f3033f38417d7a0_icgraph.svg" width="508" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

@@ -101,11 +101,11 @@ $(document).ready(function(){initNavTree('structuser__tracer__example_1_1user__t
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The control structure for the USER_tracer_example module. </p>
 
-<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00034">34</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00035">35</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for user_tracer_example::user_tracer_example_cs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structuser__tracer__example_1_1user__tracer__example__cs__coll__graph.svg" width="492" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structuser__tracer__example_1_1user__tracer__example__cs__coll__graph.svg" width="462" height="400"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -157,8 +157,8 @@ Public variables and constants</h2></td></tr>
 
 <p>These tracers are not offered to the coupler. </p>
 
-<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00035">35</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">logical</span> :: coupled_tracers = .false. <span class="comment">!&lt; These tracers are not offered to the coupler.</span></div>
+<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00036">36</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">logical</span> :: coupled_tracers = .false. <span class="comment">!&lt; These tracers are not offered to the coupler.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -176,8 +176,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure that is used to regulate the timing of diagnostic output. </p>
 
-<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00047">47</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to regulate the timing of diagnostic output.</span></div>
+<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00048">48</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to regulate the timing of diagnostic output.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -195,8 +195,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Indices returned by aof_set_coupler_flux if it is used and the surface tracer concentrations are to be provided to the coupler. </p>
 
-<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00044">44</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(NTR)</span> :: ind_tr<span class="comment"> !&lt; Indices returned by aof_set_coupler_flux if it is used and the</span></div>
+<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00045">45</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(NTR)</span> :: ind_tr<span class="comment"> !&lt; Indices returned by aof_set_coupler_flux if it is used and the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -214,8 +214,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The value of tr that is used where land is masked out. </p>
 
-<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00041">41</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">  real</span> :: land_val(NTR) = -1.0<span class="comment"> !&lt; The value of tr that is used where land is masked out.</span></div>
+<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00042">42</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">  real</span> :: land_val(NTR) = -1.0<span class="comment"> !&lt; The value of tr that is used where land is masked out.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -233,8 +233,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the ocean model's clock. </p>
 
-<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00038">38</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time =&gt; null() <span class="comment">!&lt; A pointer to the ocean model&#39;s clock.</span></div>
+<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00039">39</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time =&gt; null() <span class="comment">!&lt; A pointer to the ocean model&#39;s clock.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -252,8 +252,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The array of tracers used in this subroutine, in g m-3? </p>
 
-<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00040">40</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: tr(:,:,:,:) =&gt; null()  <span class="comment">!&lt; The array of tracers used in this subroutine, in g m-3?</span></div>
+<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00041">41</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: tr(:,:,:,:) =&gt; null()  <span class="comment">!&lt; The array of tracers used in this subroutine, in g m-3?</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -271,8 +271,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Descriptions of each of the tracers. </p>
 
-<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00049">49</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">type</span>(vardesc) :: tr_desc(NTR)<span class="comment"> !&lt; Descriptions of each of the tracers.</span></div>
+<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00050">50</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">type</span>(vardesc) :: tr_desc(NTR)<span class="comment"> !&lt; Descriptions of each of the tracers.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -290,8 +290,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the tracer registry. </p>
 
-<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00039">39</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">type</span>(tracer_registry_type), <span class="keywordtype">pointer</span> :: tr_Reg =&gt; null() <span class="comment">!&lt; A pointer to the tracer registry</span></div>
+<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00040">40</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">type</span>(tracer_registry_type), <span class="keywordtype">pointer</span> :: tr_Reg =&gt; null() <span class="comment">!&lt; A pointer to the tracer registry</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -309,8 +309,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The full path to the IC file, or " " to initialize internally. </p>
 
-<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00036">36</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">character(len=200)</span> :: tracer_IC_file<span class="comment"> !&lt; The full path to the IC file, or &quot; &quot;</span></div>
+<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00037">37</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">character(len=200)</span> :: tracer_IC_file<span class="comment"> !&lt; The full path to the IC file, or &quot; &quot;</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -328,13 +328,13 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, sponges may be applied somewhere in the domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00042">42</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">logical</span> :: use_sponge<span class="comment">    !&lt; If true, sponges may be applied somewhere in the domain.</span></div>
+<p class="definition">Definition at line <a class="el" href="tracer__example_8F90_source.html#l00043">43</a> of file <a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">logical</span> :: use_sponge<span class="comment">    !&lt; If true, sponges may be applied somewhere in the domain.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/tracer/<a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/tracer/<a class="el" href="tracer__example_8F90_source.html">tracer_example.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

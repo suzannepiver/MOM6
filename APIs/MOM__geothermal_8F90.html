@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/parameterizations/vertical/MOM_geothermal.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/vertical/MOM_geothermal.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -100,11 +100,10 @@ $(document).ready(function(){initNavTree('MOM__geothermal_8F90.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;MOM_memory.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="version__variable_8h_source.html">version_variable.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_geothermal.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__geothermal_8F90__incl.svg" width="299" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__geothermal_8F90__incl.svg" width="238" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -124,12 +123,12 @@ Modules</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions/Subroutines</h2></td></tr>
-<tr class="memitem:a01cc49441a608cbb2a22f50df10420a5"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__geothermal.html#a01cc49441a608cbb2a22f50df10420a5">mom_geothermal::geothermal</a> (h, tv, dt, ea, eb, G, GV, CS, halo)</td></tr>
-<tr class="memdesc:a01cc49441a608cbb2a22f50df10420a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies geothermal heating, including the movement of water between isopycnal layers to match the target densities. The heating is applied to the bottommost layers that occur within ### of the bottom. If the partial derivative of the coordinate density with temperature is positive or very small, the layers are simply heated in place. Any heat that can not be applied to the ocean is returned (WHERE)?  <a href="namespacemom__geothermal.html#a01cc49441a608cbb2a22f50df10420a5">More...</a><br /></td></tr>
-<tr class="separator:a01cc49441a608cbb2a22f50df10420a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0abbb7953860e3357bbd3d35f46fd851"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__geothermal.html#a0abbb7953860e3357bbd3d35f46fd851">mom_geothermal::geothermal_init</a> (Time, G, param_file, diag, CS)</td></tr>
-<tr class="memdesc:a0abbb7953860e3357bbd3d35f46fd851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize parameters and allocate memory associated with the geothermal heating module.  <a href="namespacemom__geothermal.html#a0abbb7953860e3357bbd3d35f46fd851">More...</a><br /></td></tr>
-<tr class="separator:a0abbb7953860e3357bbd3d35f46fd851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab562e4b7ef124606e700afb51c021e9b"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__geothermal.html#ab562e4b7ef124606e700afb51c021e9b">mom_geothermal::geothermal</a> (h, tv, dt, ea, eb, G, GV, US, CS, halo)</td></tr>
+<tr class="memdesc:ab562e4b7ef124606e700afb51c021e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies geothermal heating, including the movement of water between isopycnal layers to match the target densities. The heating is applied to the bottommost layers that occur within ### of the bottom. If the partial derivative of the coordinate density with temperature is positive or very small, the layers are simply heated in place. Any heat that can not be applied to the ocean is returned (WHERE)?  <a href="namespacemom__geothermal.html#ab562e4b7ef124606e700afb51c021e9b">More...</a><br /></td></tr>
+<tr class="separator:ab562e4b7ef124606e700afb51c021e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaddc9edf4f1c558e9cf2e41134526f08"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__geothermal.html#aaddc9edf4f1c558e9cf2e41134526f08">mom_geothermal::geothermal_init</a> (Time, G, GV, US, param_file, diag, CS)</td></tr>
+<tr class="memdesc:aaddc9edf4f1c558e9cf2e41134526f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize parameters and allocate memory associated with the geothermal heating module.  <a href="namespacemom__geothermal.html#aaddc9edf4f1c558e9cf2e41134526f08">More...</a><br /></td></tr>
+<tr class="separator:aaddc9edf4f1c558e9cf2e41134526f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e5ab44d9a44f7b9f16e14c812f87141"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__geothermal.html#a0e5ab44d9a44f7b9f16e14c812f87141">mom_geothermal::geothermal_end</a> (CS)</td></tr>
 <tr class="memdesc:a0e5ab44d9a44f7b9f16e14c812f87141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up and deallocate memory associated with the geothermal heating module.  <a href="namespacemom__geothermal.html#a0e5ab44d9a44f7b9f16e14c812f87141">More...</a><br /></td></tr>
 <tr class="separator:a0e5ab44d9a44f7b9f16e14c812f87141"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -101,11 +101,11 @@ $(document).ready(function(){initNavTree('structisomip__tracer_1_1isomip__tracer
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ISOMIP tracer package control structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00044">44</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00045">45</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for isomip_tracer::isomip_tracer_cs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structisomip__tracer_1_1isomip__tracer__cs__coll__graph.svg" width="463" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structisomip__tracer_1_1isomip__tracer__cs__coll__graph.svg" width="436" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -157,8 +157,8 @@ Public variables and constants</h2></td></tr>
 
 <p>These tracers are not offered to the coupler. </p>
 
-<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00045">45</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">logical</span> :: coupled_tracers = .false.  <span class="comment">!&lt; These tracers are not offered to the coupler.</span></div>
+<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00046">46</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">logical</span> :: coupled_tracers = .false.  <span class="comment">!&lt; These tracers are not offered to the coupler.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -176,8 +176,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure that is used to regulate the timing of diagnostic output. </p>
 
-<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00057">57</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag<span class="comment"> !&lt; A structure that is used to regulate the</span></div>
+<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00058">58</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag<span class="comment"> !&lt; A structure that is used to regulate the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -195,8 +195,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Indices returned by aof_set_coupler_flux if it is used and the surface tracer concentrations are to be provided to the coupler. </p>
 
-<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00053">53</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(NTR)</span> :: ind_tr<span class="comment"> !&lt; Indices returned by aof_set_coupler_flux</span></div>
+<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00054">54</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(NTR)</span> :: ind_tr<span class="comment"> !&lt; Indices returned by aof_set_coupler_flux</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -214,8 +214,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The value of tr used where land is masked out. </p>
 
-<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00050">50</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">  real</span> :: land_val(NTR) = -1.0<span class="comment"> !&lt; The value of tr used where land is masked out.</span></div>
+<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00051">51</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">  real</span> :: land_val(NTR) = -1.0<span class="comment"> !&lt; The value of tr used where land is masked out.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -233,8 +233,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the ocean model's clock. </p>
 
-<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00047">47</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time<span class="comment"> !&lt; A pointer to the ocean model&#39;s clock.</span></div>
+<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00048">48</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time<span class="comment"> !&lt; A pointer to the ocean model&#39;s clock.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -252,8 +252,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The array of tracers used in this package, in g m-3? </p>
 
-<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00049">49</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: tr(:,:,:,:) =&gt; null()   <span class="comment">!&lt; The array of tracers used in this package, in g m-3?</span></div>
+<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00050">50</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: tr(:,:,:,:) =&gt; null()   <span class="comment">!&lt; The array of tracers used in this package, in g m-3?</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -271,8 +271,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Descriptions and metadata for the tracers in this package. </p>
 
-<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00060">60</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">type</span>(vardesc) :: tr_desc(NTR)<span class="comment"> !&lt; Descriptions and metadata for the tracers in this package</span></div>
+<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00061">61</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">type</span>(vardesc) :: tr_desc(NTR)<span class="comment"> !&lt; Descriptions and metadata for the tracers in this package</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -290,8 +290,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the MOM tracer registry. </p>
 
-<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00048">48</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">type</span>(tracer_registry_type), <span class="keywordtype">pointer</span> :: tr_Reg =&gt; null() <span class="comment">!&lt; A pointer to the MOM tracer registry</span></div>
+<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00049">49</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">type</span>(tracer_registry_type), <span class="keywordtype">pointer</span> :: tr_Reg =&gt; null() <span class="comment">!&lt; A pointer to the MOM tracer registry</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -309,8 +309,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The full path to the IC file, or " " to initialize internally. </p>
 
-<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00046">46</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">character(len = 200)</span> :: tracer_IC_file<span class="comment"> !&lt; The full path to the IC file, or &quot; &quot; to initialize internally.</span></div>
+<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00047">47</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">character(len = 200)</span> :: tracer_IC_file<span class="comment"> !&lt; The full path to the IC file, or &quot; &quot; to initialize internally.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -328,13 +328,13 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, sponges may be applied somewhere in the domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00051">51</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">logical</span> :: use_sponge<span class="comment">    !&lt; If true, sponges may be applied somewhere in the domain.</span></div>
+<p class="definition">Definition at line <a class="el" href="ISOMIP__tracer_8F90_source.html#l00052">52</a> of file <a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">logical</span> :: use_sponge<span class="comment">    !&lt; If true, sponges may be applied somewhere in the domain.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/tracer/<a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/tracer/<a class="el" href="ISOMIP__tracer_8F90_source.html">ISOMIP_tracer.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

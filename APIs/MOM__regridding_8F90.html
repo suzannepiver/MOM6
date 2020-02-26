@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/ALE/MOM_regridding.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/ALE/MOM_regridding.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('MOM__regridding_8F90.html','');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_regridding.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__regridding_8F90__incl.svg" width="191" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__regridding_8F90__incl.svg" width="286" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -179,15 +179,15 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a8b3b0c1555006f196d9bb1baededd9e6"><td class="memItemLeft" align="right" valign="top">real function, dimension(nk), public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__regridding.html#a8b3b0c1555006f196d9bb1baededd9e6">mom_regridding::uniformresolution</a> (nk, coordMode, maxDepth, rhoLight, rhoHeavy)</td></tr>
 <tr class="memdesc:a8b3b0c1555006f196d9bb1baededd9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a uniform resolution vector in the units of the coordinate.  <a href="namespacemom__regridding.html#a8b3b0c1555006f196d9bb1baededd9e6">More...</a><br /></td></tr>
 <tr class="separator:a8b3b0c1555006f196d9bb1baededd9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7e60904ce49d1fd66d99dbfb1c0c355"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__regridding.html#aa7e60904ce49d1fd66d99dbfb1c0c355">mom_regridding::initcoord</a> (CS, GV, coord_mode)</td></tr>
-<tr class="memdesc:aa7e60904ce49d1fd66d99dbfb1c0c355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the coordinate resolutions by calling the appropriate initialization routine for the specified coordinate mode.  <a href="namespacemom__regridding.html#aa7e60904ce49d1fd66d99dbfb1c0c355">More...</a><br /></td></tr>
-<tr class="separator:aa7e60904ce49d1fd66d99dbfb1c0c355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9614000d524a78e043d52f9734314e0"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__regridding.html#ad9614000d524a78e043d52f9734314e0">mom_regridding::initcoord</a> (CS, GV, US, coord_mode)</td></tr>
+<tr class="memdesc:ad9614000d524a78e043d52f9734314e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the coordinate resolutions by calling the appropriate initialization routine for the specified coordinate mode.  <a href="namespacemom__regridding.html#ad9614000d524a78e043d52f9734314e0">More...</a><br /></td></tr>
+<tr class="separator:ad9614000d524a78e043d52f9734314e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a162e9f816bc892550624d781fdddd6ca"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__regridding.html#a162e9f816bc892550624d781fdddd6ca">mom_regridding::setcoordinateresolution</a> (dz, CS, scale)</td></tr>
 <tr class="memdesc:a162e9f816bc892550624d781fdddd6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the fixed resolution data.  <a href="namespacemom__regridding.html#a162e9f816bc892550624d781fdddd6ca">More...</a><br /></td></tr>
 <tr class="separator:a162e9f816bc892550624d781fdddd6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d0d0a1095ab370feb260753e1c25ffa"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__regridding.html#a8d0d0a1095ab370feb260753e1c25ffa">mom_regridding::set_target_densities_from_gv</a> (GV, CS)</td></tr>
-<tr class="memdesc:a8d0d0a1095ab370feb260753e1c25ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set target densities based on the old Rlay variable.  <a href="namespacemom__regridding.html#a8d0d0a1095ab370feb260753e1c25ffa">More...</a><br /></td></tr>
-<tr class="separator:a8d0d0a1095ab370feb260753e1c25ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ada39c6f95e652907bab93f9c5a3f1"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__regridding.html#ab6ada39c6f95e652907bab93f9c5a3f1">mom_regridding::set_target_densities_from_gv</a> (GV, US, CS)</td></tr>
+<tr class="memdesc:ab6ada39c6f95e652907bab93f9c5a3f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set target densities based on the old Rlay variable.  <a href="namespacemom__regridding.html#ab6ada39c6f95e652907bab93f9c5a3f1">More...</a><br /></td></tr>
+<tr class="separator:ab6ada39c6f95e652907bab93f9c5a3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7eade38ab8e2adb0797a7191ddebb18"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__regridding.html#ae7eade38ab8e2adb0797a7191ddebb18">mom_regridding::set_target_densities</a> (CS, rho_int)</td></tr>
 <tr class="memdesc:ae7eade38ab8e2adb0797a7191ddebb18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set target densities based on vector of interface values.  <a href="namespacemom__regridding.html#ae7eade38ab8e2adb0797a7191ddebb18">More...</a><br /></td></tr>
 <tr class="separator:ae7eade38ab8e2adb0797a7191ddebb18"><td class="memSeparator" colspan="2">&#160;</td></tr>

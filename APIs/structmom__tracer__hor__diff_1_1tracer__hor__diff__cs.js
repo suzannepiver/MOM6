@@ -4,7 +4,6 @@ var structmom__tracer__hor__diff_1_1tracer__hor__diff__cs =
     [ "debug", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#abd7db0d569ed54d2772f5c80a06faca0", null ],
     [ "diag", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a1e603fd54b776578b73c675cb82d8bb3", null ],
     [ "diffuse_ml_interior", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a15d48ec55eafb96ce45aa90731cbd0c8", null ],
-    [ "dt", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a0a238c808eefaa599bf244d06902075c", null ],
     [ "first_call", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a66c21891e3bb452e704941be3b1cbfb9", null ],
     [ "id_cfl", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#af1f8562a68b20eaa9b0a2aafff5a09fa", null ],
     [ "id_khdt_x", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#af6c66a27ea26cf3c9d06d6f193e35d54", null ],
@@ -18,10 +17,13 @@ var structmom__tracer__hor__diff_1_1tracer__hor__diff__cs =
     [ "khtr_passivity_coeff", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a18f5d8b643ad06caf71afe6077171a8a", null ],
     [ "khtr_passivity_min", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a54c140fa08736d315789bea52c3b0f35", null ],
     [ "khtr_slope_cff", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a09447142e6db47b45818bb5bf3ad2b59", null ],
+    [ "lateral_boundary_diffusion_csp", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a8d609139e58711b832cfce081102c343", null ],
     [ "max_diff_cfl", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a140d2749ef18c8973b91e451599eeba2", null ],
     [ "ml_khtr_scale", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a3060f3a91b417e92264e8d46e501e778", null ],
     [ "neutral_diffusion_csp", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a35944101f97543ec3a0dce8c6be1e786", null ],
     [ "pass_t", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a8031c6f603d94548eff1f02f542c51f4", null ],
+    [ "recalc_neutral_surf", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#aba9ed2b11b275db3e03a5a1263889b45", null ],
     [ "show_call_tree", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a68ae45b6e115d8cc3d632a544c67e858", null ],
+    [ "use_lateral_boundary_diffusion", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a50ec3a0db88bd819eacd641c41865b0d", null ],
     [ "use_neutral_diffusion", "structmom__tracer__hor__diff_1_1tracer__hor__diff__cs.html#a40fad89ff96a3965c63db8cb69cc09c7", null ]
 ];

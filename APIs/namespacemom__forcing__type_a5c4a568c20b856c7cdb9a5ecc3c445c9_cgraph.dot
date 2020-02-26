@@ -1,0 +1,13 @@
+digraph "mom_forcing_type::mech_forcing_diags"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="mom_forcing_type::mech\l_forcing_diags",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Offer mechanical forcing fields for diagnostics for those fields registered as part of register_forci..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mom_diag_mediator::\ldisable_averaging",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a1761df399ba39742e34ab989469da0f2",tooltip="Call this subroutine to avoid averaging any offered fields."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mom_diag_mediator::\lenable_averaging",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__diag__mediator.html#a91244f765f2964dfb11f8787f65042f1",tooltip="This subroutine enables the accumulation of time averages over the specified time interval."];
+}

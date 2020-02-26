@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/user/BFB_initialization.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/user/BFB_initialization.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('BFB__initialization_8F90.html','');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for BFB_initialization.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="BFB__initialization_8F90__incl.svg" width="192" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="BFB__initialization_8F90__incl.svg" width="291" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -117,9 +117,9 @@ Modules</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions/Subroutines</h2></td></tr>
-<tr class="memitem:a681cb69f1a6fe142e5baa6aee5f57060"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebfb__initialization.html#a681cb69f1a6fe142e5baa6aee5f57060">bfb_initialization::bfb_set_coord</a> (Rlay, g_prime, GV, param_file, eqn_of_state)</td></tr>
-<tr class="memdesc:a681cb69f1a6fe142e5baa6aee5f57060"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine specifies the vertical coordinate in terms of temperature at the surface and at the bottom. This case is set up in such a way that the temperature of the topmost layer is equal to the SST at the southern edge of the domain. The temperatures are then converted to densities of the top and bottom layers and linearly interpolated for the intermediate layers.  <a href="namespacebfb__initialization.html#a681cb69f1a6fe142e5baa6aee5f57060">More...</a><br /></td></tr>
-<tr class="separator:a681cb69f1a6fe142e5baa6aee5f57060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c4812e80bffdd0501b93c123503d913"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebfb__initialization.html#a4c4812e80bffdd0501b93c123503d913">bfb_initialization::bfb_set_coord</a> (Rlay, g_prime, GV, US, param_file, eqn_of_state)</td></tr>
+<tr class="memdesc:a4c4812e80bffdd0501b93c123503d913"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine specifies the vertical coordinate in terms of temperature at the surface and at the bottom. This case is set up in such a way that the temperature of the topmost layer is equal to the SST at the southern edge of the domain. The temperatures are then converted to densities of the top and bottom layers and linearly interpolated for the intermediate layers.  <a href="namespacebfb__initialization.html#a4c4812e80bffdd0501b93c123503d913">More...</a><br /></td></tr>
+<tr class="separator:a4c4812e80bffdd0501b93c123503d913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1bf4c8e60817f03359d3fd31aab5a90"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebfb__initialization.html#af1bf4c8e60817f03359d3fd31aab5a90">bfb_initialization::bfb_initialize_sponges_southonly</a> (G, GV, US, use_temperature, tv, param_file, CSp, h)</td></tr>
 <tr class="memdesc:af1bf4c8e60817f03359d3fd31aab5a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine sets up the sponges for the southern bouundary of the domain. Maximum damping occurs within 2 degrees lat of the boundary. The damping linearly decreases northward over the next 2 degrees.  <a href="namespacebfb__initialization.html#af1bf4c8e60817f03359d3fd31aab5a90">More...</a><br /></td></tr>
 <tr class="separator:af1bf4c8e60817f03359d3fd31aab5a90"><td class="memSeparator" colspan="2">&#160;</td></tr>

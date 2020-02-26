@@ -8,7 +8,7 @@ digraph "mom_surface_forcing_nuopc::surface_forcing_cs"
   Node1 [label="mom_surface_forcing\l_nuopc::surface_forcing_cs",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Contains pointers to the forcing fields which may be used to drive MOM. All fluxes are positive downw..."];
   Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" handles" ,fontname="Helvetica"];
   Node2 [label="forcing_diags",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
-  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" adjust_net_srestore\l_by_scaling\nrigid_sea_ice\nadjust_net_fresh\l_water_to_zero\nmask_srestore_marginal\l_seas\nuse_limited_p_ssh\nmask_srestore_under\l_ice\nuse_net_fw_adjustment\l_sign_bug\nread_tideamp\nread_gust_2d\nuse_temperature\n..." ,fontname="Helvetica"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" adjust_net_srestore\l_by_scaling\nrigid_sea_ice\nadjust_net_fresh\l_water_to_zero\nliquid_runoff_from\l_data\nmask_srestore_marginal\l_seas\nuse_limited_p_ssh\nmask_srestore_under\l_ice\nuse_net_fw_adjustment\l_sign_bug\nread_tideamp\nread_gust_2d\n..." ,fontname="Helvetica"];
   Node3 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" temp_restore_file\nsalt_restore_file\ninputdir" ,fontname="Helvetica"];
   Node4 [label="character(len=200)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];

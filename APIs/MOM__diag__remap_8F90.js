@@ -11,7 +11,7 @@ var MOM__diag__remap_8F90 =
     [ "diag_remap_init", "MOM__diag__remap_8F90.html#a0607b4ad01c1d80f181aa7450ba4f703", null ],
     [ "diag_remap_set_active", "MOM__diag__remap_8F90.html#ab530334ce02c1bedad08ba84507ee5d1", null ],
     [ "diag_remap_update", "MOM__diag__remap_8F90.html#a1951a63528283e209401e317872f650b", null ],
-    [ "horizontally_average_diag_field", "MOM__diag__remap_8F90.html#a0b4fc9c68477bcf276740e63785c701b", null ],
+    [ "horizontally_average_diag_field", "MOM__diag__remap_8F90.html#abefc54b57db0b1d275dfd5e0e757ee32", null ],
     [ "vertically_interpolate_diag_field", "MOM__diag__remap_8F90.html#a1cca70d5101d28badb1ea1608c72191f", null ],
     [ "vertically_reintegrate_diag_field", "MOM__diag__remap_8F90.html#a123c7b7093ec2c3c304024184c3c7287", null ]
 ];

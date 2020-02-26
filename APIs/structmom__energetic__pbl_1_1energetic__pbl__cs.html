@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('structmom__energetic__pbl_1_1energetic
 </div><div class="dynheader">
 Collaboration diagram for mom_energetic_pbl::energetic_pbl_cs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__energetic__pbl_1_1energetic__pbl__cs__coll__graph.svg" width="630" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__energetic__pbl_1_1energetic__pbl__cs__coll__graph.svg" width="592" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -115,7 +115,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:aaf3ab339f702372d928b6e703bdb601d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The von Karman coefficient. This should be runtime, but because it is runtime in KPP and set to 0.4 it might change answers.  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#aaf3ab339f702372d928b6e703bdb601d">More...</a><br /></td></tr>
 <tr class="separator:aaf3ab339f702372d928b6e703bdb601d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ecf249fcee4bac68fcef1dbc8e7348c"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a9ecf249fcee4bac68fcef1dbc8e7348c">omega</a></td></tr>
-<tr class="memdesc:a9ecf249fcee4bac68fcef1dbc8e7348c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Earth's rotation rate [T-1].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a9ecf249fcee4bac68fcef1dbc8e7348c">More...</a><br /></td></tr>
+<tr class="memdesc:a9ecf249fcee4bac68fcef1dbc8e7348c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Earth's rotation rate [T-1 ~&gt; s-1].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a9ecf249fcee4bac68fcef1dbc8e7348c">More...</a><br /></td></tr>
 <tr class="separator:a9ecf249fcee4bac68fcef1dbc8e7348c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbe94892b7bf12d5999bfc8162c6d0b1"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#acbe94892b7bf12d5999bfc8162c6d0b1">omega_frac</a></td></tr>
 <tr class="memdesc:acbe94892b7bf12d5999bfc8162c6d0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">When setting the decay scale for turbulence, use this fraction of the absolute rotation rate blended with the local value of f, as sqrt((1-of)*f^2 + of*4*omega^2) [nondim].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#acbe94892b7bf12d5999bfc8162c6d0b1">More...</a><br /></td></tr>
@@ -253,25 +253,25 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:ab567d65c795b7c740fcac57c72ba0669"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mixed layer depth determined by active mixing in ePBL [Z ~&gt; m].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#ab567d65c795b7c740fcac57c72ba0669">More...</a><br /></td></tr>
 <tr class="separator:ab567d65c795b7c740fcac57c72ba0669"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f7c7319166d6819e320c5813ec23fb1"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a1f7c7319166d6819e320c5813ec23fb1">diag_tke_wind</a></td></tr>
-<tr class="memdesc:a1f7c7319166d6819e320c5813ec23fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The wind source of TKE [kg m-3 Z3 T-3 ~&gt; W m-2].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a1f7c7319166d6819e320c5813ec23fb1">More...</a><br /></td></tr>
+<tr class="memdesc:a1f7c7319166d6819e320c5813ec23fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The wind source of TKE [R Z3 T-3 ~&gt; W m-2].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a1f7c7319166d6819e320c5813ec23fb1">More...</a><br /></td></tr>
 <tr class="separator:a1f7c7319166d6819e320c5813ec23fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fffc6f8f58e50a79cc9875798d05fce"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a6fffc6f8f58e50a79cc9875798d05fce">diag_tke_mke</a></td></tr>
-<tr class="memdesc:a6fffc6f8f58e50a79cc9875798d05fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">The resolved KE source of TKE [kg m-3 Z3 T-3 ~&gt; W m-2].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a6fffc6f8f58e50a79cc9875798d05fce">More...</a><br /></td></tr>
+<tr class="memdesc:a6fffc6f8f58e50a79cc9875798d05fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">The resolved KE source of TKE [R Z3 T-3 ~&gt; W m-2].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a6fffc6f8f58e50a79cc9875798d05fce">More...</a><br /></td></tr>
 <tr class="separator:a6fffc6f8f58e50a79cc9875798d05fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14179e0f78031dea8f06aed43541bba2"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a14179e0f78031dea8f06aed43541bba2">diag_tke_conv</a></td></tr>
-<tr class="memdesc:a14179e0f78031dea8f06aed43541bba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The convective source of TKE [kg m-3 Z3 T-3 ~&gt; W m-2].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a14179e0f78031dea8f06aed43541bba2">More...</a><br /></td></tr>
+<tr class="memdesc:a14179e0f78031dea8f06aed43541bba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The convective source of TKE [R Z3 T-3 ~&gt; W m-2].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a14179e0f78031dea8f06aed43541bba2">More...</a><br /></td></tr>
 <tr class="separator:a14179e0f78031dea8f06aed43541bba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c27a438f45359c8bdf8087b4e110cc6"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a5c27a438f45359c8bdf8087b4e110cc6">diag_tke_forcing</a></td></tr>
 <tr class="memdesc:a5c27a438f45359c8bdf8087b4e110cc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The TKE sink required to mix surface penetrating shortwave heating.  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a5c27a438f45359c8bdf8087b4e110cc6">More...</a><br /></td></tr>
 <tr class="separator:a5c27a438f45359c8bdf8087b4e110cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d282db11ae0a2013e897d2e5a641ce3"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a3d282db11ae0a2013e897d2e5a641ce3">diag_tke_mech_decay</a></td></tr>
-<tr class="memdesc:a3d282db11ae0a2013e897d2e5a641ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The decay of mechanical TKE [kg m-3 Z3 T-3 ~&gt; W m-2].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a3d282db11ae0a2013e897d2e5a641ce3">More...</a><br /></td></tr>
+<tr class="memdesc:a3d282db11ae0a2013e897d2e5a641ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The decay of mechanical TKE [R Z3 T-3 ~&gt; W m-2].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a3d282db11ae0a2013e897d2e5a641ce3">More...</a><br /></td></tr>
 <tr class="separator:a3d282db11ae0a2013e897d2e5a641ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa03aa2e2a9ae8f5eeb2d531df5734646"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#aa03aa2e2a9ae8f5eeb2d531df5734646">diag_tke_conv_decay</a></td></tr>
-<tr class="memdesc:aa03aa2e2a9ae8f5eeb2d531df5734646"><td class="mdescLeft">&#160;</td><td class="mdescRight">The decay of convective TKE [kg m-3 Z3 T-3 ~&gt; W m-2].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#aa03aa2e2a9ae8f5eeb2d531df5734646">More...</a><br /></td></tr>
+<tr class="memdesc:aa03aa2e2a9ae8f5eeb2d531df5734646"><td class="mdescLeft">&#160;</td><td class="mdescRight">The decay of convective TKE [R Z3 T-3 ~&gt; W m-2].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#aa03aa2e2a9ae8f5eeb2d531df5734646">More...</a><br /></td></tr>
 <tr class="separator:aa03aa2e2a9ae8f5eeb2d531df5734646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d7661204cf185044393fd725ea23537"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a8d7661204cf185044393fd725ea23537">diag_tke_mixing</a></td></tr>
-<tr class="memdesc:a8d7661204cf185044393fd725ea23537"><td class="mdescLeft">&#160;</td><td class="mdescRight">The work done by TKE to deepen the mixed layer [kg m-3 Z3 T-3 ~&gt; W m-2].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a8d7661204cf185044393fd725ea23537">More...</a><br /></td></tr>
+<tr class="memdesc:a8d7661204cf185044393fd725ea23537"><td class="mdescLeft">&#160;</td><td class="mdescRight">The work done by TKE to deepen the mixed layer [R Z3 T-3 ~&gt; W m-2].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a8d7661204cf185044393fd725ea23537">More...</a><br /></td></tr>
 <tr class="separator:a8d7661204cf185044393fd725ea23537"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eea6049dfdc78a155858253a0c15de1"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a3eea6049dfdc78a155858253a0c15de1">mstar_mix</a></td></tr>
 <tr class="memdesc:a3eea6049dfdc78a155858253a0c15de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mstar used in EPBL [nondim].  <a href="structmom__energetic__pbl_1_1energetic__pbl__cs.html#a3eea6049dfdc78a155858253a0c15de1">More...</a><br /></td></tr>
@@ -405,7 +405,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The convective source of TKE [kg m-3 Z3 T-3 ~&gt; W m-2]. </p>
+<p>The convective source of TKE [R Z3 T-3 ~&gt; W m-2]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__energetic__PBL_8F90_source.html#l00169">169</a> of file <a class="el" href="MOM__energetic__PBL_8F90_source.html">MOM_energetic_PBL.F90</a>.</p>
 
@@ -423,7 +423,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The decay of convective TKE [kg m-3 Z3 T-3 ~&gt; W m-2]. </p>
+<p>The decay of convective TKE [R Z3 T-3 ~&gt; W m-2]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__energetic__PBL_8F90_source.html#l00169">169</a> of file <a class="el" href="MOM__energetic__PBL_8F90_source.html">MOM_energetic_PBL.F90</a>.</p>
 
@@ -459,7 +459,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The decay of mechanical TKE [kg m-3 Z3 T-3 ~&gt; W m-2]. </p>
+<p>The decay of mechanical TKE [R Z3 T-3 ~&gt; W m-2]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__energetic__PBL_8F90_source.html#l00169">169</a> of file <a class="el" href="MOM__energetic__PBL_8F90_source.html">MOM_energetic_PBL.F90</a>.</p>
 
@@ -477,7 +477,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The work done by TKE to deepen the mixed layer [kg m-3 Z3 T-3 ~&gt; W m-2]. </p>
+<p>The work done by TKE to deepen the mixed layer [R Z3 T-3 ~&gt; W m-2]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__energetic__PBL_8F90_source.html#l00169">169</a> of file <a class="el" href="MOM__energetic__PBL_8F90_source.html">MOM_energetic_PBL.F90</a>.</p>
 
@@ -495,7 +495,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The resolved KE source of TKE [kg m-3 Z3 T-3 ~&gt; W m-2]. </p>
+<p>The resolved KE source of TKE [R Z3 T-3 ~&gt; W m-2]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__energetic__PBL_8F90_source.html#l00169">169</a> of file <a class="el" href="MOM__energetic__PBL_8F90_source.html">MOM_energetic_PBL.F90</a>.</p>
 
@@ -513,18 +513,18 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The wind source of TKE [kg m-3 Z3 T-3 ~&gt; W m-2]. </p>
+<p>The wind source of TKE [R Z3 T-3 ~&gt; W m-2]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__energetic__PBL_8F90_source.html#l00169">169</a> of file <a class="el" href="MOM__energetic__PBL_8F90_source.html">MOM_energetic_PBL.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    diag_TKE_wind, &amp;   !&lt; The wind source of TKE [kg m-3 Z3 T-3 ~&gt; W m-2].</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    diag_TKE_MKE, &amp;    !&lt; The resolved KE source of TKE [kg m-3 Z3 T-3 ~&gt; W m-2].</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    diag_TKE_conv, &amp;   !&lt; The convective source of TKE [kg m-3 Z3 T-3 ~&gt; W m-2].</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    diag_TKE_wind, &amp;   !&lt; The wind source of TKE [R Z3 T-3 ~&gt; W m-2].</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    diag_TKE_MKE, &amp;    !&lt; The resolved KE source of TKE [R Z3 T-3 ~&gt; W m-2].</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    diag_TKE_conv, &amp;   !&lt; The convective source of TKE [R Z3 T-3 ~&gt; W m-2].</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    diag_TKE_forcing, &amp; !&lt; The TKE sink required to mix surface penetrating shortwave heating</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                       <span class="comment">!! [kg m-3 Z3 T-2 ~&gt; W m-2].</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    diag_tke_mech_decay, &amp; <span class="comment">!&lt; The decay of mechanical TKE [kg m-3 Z3 T-3 ~&gt; W m-2].</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    diag_tke_conv_decay, &amp; <span class="comment">!&lt; The decay of convective TKE [kg m-3 Z3 T-3 ~&gt; W m-2].</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    diag_tke_mixing, &amp; <span class="comment">!&lt; The work done by TKE to deepen the mixed layer [kg m-3 Z3 T-3 ~&gt; W m-2].</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                       <span class="comment">!! [R Z3 T-3 ~&gt; W m-2].</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    diag_tke_mech_decay, &amp; <span class="comment">!&lt; The decay of mechanical TKE [R Z3 T-3 ~&gt; W m-2].</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    diag_tke_conv_decay, &amp; <span class="comment">!&lt; The decay of convective TKE [R Z3 T-3 ~&gt; W m-2].</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    diag_tke_mixing, &amp; <span class="comment">!&lt; The work done by TKE to deepen the mixed layer [R Z3 T-3 ~&gt; W m-2].</span></div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="comment">! These additional diagnostics are also 2d.</span></div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    mstar_mix, &amp;       <span class="comment">!&lt; Mstar used in EPBL [nondim]</span></div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    mstar_lt, &amp;        <span class="comment">!&lt; Mstar due to Langmuir turbulence [nondim]</span></div>
@@ -1349,10 +1349,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The Earth's rotation rate [T-1]. </p>
+<p>The Earth's rotation rate [T-1 ~&gt; s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__energetic__PBL_8F90_source.html#l00040">40</a> of file <a class="el" href="MOM__energetic__PBL_8F90_source.html">MOM_energetic_PBL.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">  real</span>    :: omega<span class="comment">           !&lt;   The Earth&#39;s rotation rate [T-1].</span></div>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">  real</span>    :: omega<span class="comment">           !&lt;   The Earth&#39;s rotation rate [T-1 ~&gt; s-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1739,7 +1739,7 @@ Public variables and constants</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__energetic__PBL_8F90_source.html">MOM_energetic_PBL.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__energetic__PBL_8F90_source.html">MOM_energetic_PBL.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

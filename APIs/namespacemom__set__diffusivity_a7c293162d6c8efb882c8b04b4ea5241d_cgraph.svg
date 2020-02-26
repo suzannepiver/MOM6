@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 660;
+var viewWidth = 632;
 var viewHeight = 742;
 var sectionId = 'dynsection-8';
 </script>
@@ -54,14 +54,14 @@ var sectionId = 'dynsection-8';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_set_diffusivity::set_diffusivity</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-738 656,-738 656,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-738 628,-738 628,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Sets the interior vertical diffusion of scalars due to the following processes:">
-<polygon fill="#bfbfbf" stroke="#000000" points="0,-367.5 0,-397.5 108,-397.5 108,-367.5 0,-367.5"/>
+<polygon fill="#bfbfbf" stroke="#000000" points="0,-367.5 0,-397.5 104,-397.5 104,-367.5 0,-367.5"/>
 <text text-anchor="start" x="8" y="-385.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_set_diffusivity</text>
-<text text-anchor="middle" x="54" y="-374.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::set_diffusivity</text>
+<text text-anchor="middle" x="52" y="-374.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::set_diffusivity</text>
 </a>
 </g>
 </g>
@@ -69,419 +69,419 @@ var sectionId = 'dynsection-8';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__set__diffusivity.html#ac48033315c2bbdb5551b272a235c16e5" target="_top" xlink:title="This routine adds diffusion sustained by flow energy extracted by bottom drag.">
-<polygon fill="#ffffff" stroke="#000000" points="157,-703.5 157,-733.5 273,-733.5 273,-703.5 157,-703.5"/>
-<text text-anchor="start" x="165" y="-721.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_set_diffusivity</text>
-<text text-anchor="middle" x="215" y="-710.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::add_drag_diffusivity</text>
+<polygon fill="#ffffff" stroke="#000000" points="153.5,-703.5 153.5,-733.5 263.5,-733.5 263.5,-703.5 153.5,-703.5"/>
+<text text-anchor="start" x="161.5" y="-721.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_set_diffusivity</text>
+<text text-anchor="middle" x="208.5" y="-710.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::add_drag_diffusivity</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M56.4883,-397.757C65.9682,-454.1678 101.4431,-649.9777 144,-694.5 145.3823,-695.9461 146.8547,-697.3052 148.4013,-698.5823"/>
-<polygon fill="#191970" stroke="#191970" points="146.465,-701.4986 156.6801,-704.3098 150.4476,-695.742 146.465,-701.4986"/>
+<path fill="none" stroke="#191970" d="M54.4011,-397.7387C63.5571,-454.0848 97.8934,-649.6943 140,-694.5 141.4239,-696.0151 142.9488,-697.4347 144.5557,-698.7646"/>
+<polygon fill="#191970" stroke="#191970" points="142.963,-701.9168 153.1869,-704.6958 146.9275,-696.1477 142.963,-701.9168"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__set__diffusivity.html#a27672098f057608ce55b55c827fa9259" target="_top" xlink:title="Calculates a BBL diffusivity use a Prandtl number 1 diffusivitiy with a law of the wall turbulent vis...">
-<polygon fill="#ffffff" stroke="#000000" points="149.5,-654.5 149.5,-684.5 280.5,-684.5 280.5,-654.5 149.5,-654.5"/>
-<text text-anchor="start" x="157.5" y="-672.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_set_diffusivity</text>
-<text text-anchor="middle" x="215" y="-661.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::add_lotw_bbl_diffusivity</text>
+<polygon fill="#ffffff" stroke="#000000" points="145,-654.5 145,-684.5 272,-684.5 272,-654.5 145,-654.5"/>
+<text text-anchor="start" x="153" y="-672.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_set_diffusivity</text>
+<text text-anchor="middle" x="208.5" y="-661.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::add_lotw_bbl_diffusivity</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M54.6984,-397.6762C57.5674,-442.1941 72.0338,-573.8027 144,-645.5 145.0658,-646.5618 146.1802,-647.5767 147.3365,-648.5467"/>
-<polygon fill="#191970" stroke="#191970" points="145.3214,-651.4083 155.5086,-654.319 149.36,-645.6908 145.3214,-651.4083"/>
+<path fill="none" stroke="#191970" d="M52.6079,-397.6314C55.2066,-442.0261 68.8411,-573.33 140,-645.5 140.9456,-646.459 141.9315,-647.3797 142.953,-648.2638"/>
+<polygon fill="#191970" stroke="#191970" points="141.2347,-651.3397 151.3937,-654.3472 145.3276,-645.6609 141.2347,-651.3397"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__set__diffusivity.html#ad72c617e2c278a21315ee4fa1425fe05" target="_top" xlink:title="This routine adds effects of mixed layer radiation to the layer diffusivities.">
-<polygon fill="#ffffff" stroke="#000000" points="155,-605.5 155,-635.5 275,-635.5 275,-605.5 155,-605.5"/>
-<text text-anchor="start" x="163" y="-623.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_set_diffusivity</text>
-<text text-anchor="middle" x="215" y="-612.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::add_mlrad_diffusivity</text>
+<polygon fill="#ffffff" stroke="#000000" points="151,-605.5 151,-635.5 266,-635.5 266,-605.5 151,-605.5"/>
+<text text-anchor="start" x="159" y="-623.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_set_diffusivity</text>
+<text text-anchor="middle" x="208.5" y="-612.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::add_mlrad_diffusivity</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M56.0457,-397.611C62.0809,-436.3439 83.3592,-540.083 144,-596.5 145.2771,-597.6882 146.6152,-598.8177 148.0043,-599.8915"/>
-<polygon fill="#191970" stroke="#191970" points="146.1729,-602.8762 156.4499,-605.452 150.0223,-597.0296 146.1729,-602.8762"/>
+<path fill="none" stroke="#191970" d="M53.929,-397.566C59.6606,-436.192 80.0967,-539.6981 140,-596.5 141.2573,-597.6922 142.5771,-598.8256 143.9492,-599.903"/>
+<polygon fill="#191970" stroke="#191970" points="142.0458,-602.8405 152.3061,-605.4819 145.9324,-597.0186 142.0458,-602.8405"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__kappa__shear.html#a2d8e291656bab5f83179523c4bea4d85" target="_top" xlink:title="Subroutine for calculating shear&#45;driven diffusivity and TKE in corner columns.">
-<polygon fill="#ffffff" stroke="#000000" points="149.5,-556.5 149.5,-586.5 280.5,-586.5 280.5,-556.5 149.5,-556.5"/>
-<text text-anchor="start" x="157.5" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_kappa_shear::calc</text>
-<text text-anchor="middle" x="215" y="-563.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_kappa_shear_vertex</text>
+<polygon fill="#ffffff" stroke="#000000" points="147,-556.5 147,-586.5 270,-586.5 270,-556.5 147,-556.5"/>
+<text text-anchor="start" x="155" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_kappa_shear::calc</text>
+<text text-anchor="middle" x="208.5" y="-563.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_kappa_shear_vertex</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M58.8642,-397.7931C69.4839,-428.9118 97.5792,-500.1447 144,-541.5 148.184,-545.2274 152.8989,-548.5381 157.8591,-551.4687"/>
-<polygon fill="#191970" stroke="#191970" points="156.5204,-554.7214 166.9907,-556.3411 159.8157,-548.5456 156.5204,-554.7214"/>
+<path fill="none" stroke="#191970" d="M56.7041,-397.7441C66.9918,-428.7723 94.2949,-499.847 140,-541.5 144.0782,-545.2166 148.6903,-548.5261 153.5465,-551.4611"/>
+<polygon fill="#191970" stroke="#191970" points="152.0351,-554.6236 162.4889,-556.3468 155.3914,-548.4807 152.0351,-554.6236"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="namespacemom__error__handler.html#a9cda07a87815f0e5594066162b4345c3" target="_top" xlink:title="Writes a message about entering a subroutine if call tree reporting is active.">
-<polygon fill="#ffffff" stroke="#000000" points="335,-512.5 335,-542.5 450,-542.5 450,-512.5 335,-512.5"/>
-<text text-anchor="start" x="343" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="392.5" y="-519.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">calltree_enter</text>
+<polygon fill="#ffffff" stroke="#000000" points="325.5,-512.5 325.5,-542.5 431.5,-542.5 431.5,-512.5 325.5,-512.5"/>
+<text text-anchor="start" x="333.5" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="378.5" y="-519.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">calltree_enter</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="#191970" d="M63.5772,-397.5877C78.1507,-419.2014 108.0343,-458.563 144,-478.5 199.8862,-509.4797 272.3941,-521.0774 324.6474,-525.3149"/>
-<polygon fill="#191970" stroke="#191970" points="324.5859,-528.8198 334.8171,-526.0678 325.1028,-521.8389 324.5859,-528.8198"/>
+<path fill="none" stroke="#191970" d="M61.3017,-397.5523C75.4733,-419.122 104.5965,-458.4291 140,-478.5 194.1842,-509.2181 265.0071,-520.8081 315.3639,-525.1128"/>
+<polygon fill="#191970" stroke="#191970" points="315.2258,-528.6126 325.4682,-525.9026 315.7714,-521.6339 315.2258,-528.6126"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
 <g id="a_node11"><a xlink:href="namespacemom__error__handler.html#a88ea67781e2ed9b73ab7eac8ea5e8578" target="_top" xlink:title="Writes a message about leaving a subroutine if call tree reporting is active.">
-<polygon fill="#ffffff" stroke="#000000" points="335,-463.5 335,-493.5 450,-493.5 450,-463.5 335,-463.5"/>
-<text text-anchor="start" x="343" y="-481.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="392.5" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">calltree_leave</text>
+<polygon fill="#ffffff" stroke="#000000" points="325.5,-463.5 325.5,-493.5 431.5,-493.5 431.5,-463.5 325.5,-463.5"/>
+<text text-anchor="start" x="333.5" y="-481.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="378.5" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">calltree_leave</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node11 -->
 <g id="edge10" class="edge">
 <title>Node1&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M68.3008,-397.5801C84.8265,-413.939 113.6624,-439.3421 144,-451.5 201.9417,-474.7203 273.224,-480.3708 324.5628,-480.8648"/>
-<polygon fill="#191970" stroke="#191970" points="324.8676,-484.3657 334.8787,-480.8975 324.8899,-477.3657 324.8676,-484.3657"/>
+<path fill="none" stroke="#191970" d="M65.9243,-397.5577C82.0302,-413.8966 110.1783,-439.2819 140,-451.5 196.1589,-474.5087 265.6114,-480.0764 315.0557,-480.6009"/>
+<polygon fill="#191970" stroke="#191970" points="315.2773,-484.1017 325.2908,-480.6407 315.3046,-477.1018 315.2773,-484.1017"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
 <g id="a_node12"><a xlink:href="namespacemom__error__handler.html#a34a02e601a60f03cb97a72fe25a32853" target="_top" xlink:title="Writes a message about reaching a milestone if call tree reporting is active.">
-<polygon fill="#ffffff" stroke="#000000" points="335,-414.5 335,-444.5 450,-444.5 450,-414.5 335,-414.5"/>
-<text text-anchor="start" x="343" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="392.5" y="-421.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">calltree_waypoint</text>
+<polygon fill="#ffffff" stroke="#000000" points="325.5,-414.5 325.5,-444.5 431.5,-444.5 431.5,-414.5 325.5,-414.5"/>
+<text text-anchor="start" x="333.5" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="378.5" y="-421.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">calltree_waypoint</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node12 -->
 <g id="edge12" class="edge">
 <title>Node1&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M74.1632,-397.659C91.6075,-409.7644 118.0457,-425.7746 144,-432.5 203.6857,-447.9661 274.1712,-445.2304 324.8003,-439.7947"/>
-<polygon fill="#191970" stroke="#191970" points="325.4312,-443.2456 334.9716,-438.6378 324.6401,-436.2904 325.4312,-443.2456"/>
+<path fill="none" stroke="#191970" d="M71.6611,-397.6546C88.6847,-409.7574 114.5173,-425.7661 140,-432.5 197.9339,-447.8092 266.5779,-444.8524 315.3129,-439.3882"/>
+<polygon fill="#191970" stroke="#191970" points="315.882,-442.8453 325.3992,-438.1898 315.0561,-435.8942 315.882,-442.8453"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
 <g id="a_node13"><a xlink:href="namespacemom__cvmix__ddiff.html#ad96f057e8f188e3f81347b30deed0a31" target="_top" xlink:title="Subroutine for computing vertical diffusion coefficients for the double diffusion mixing parameteriza...">
-<polygon fill="#ffffff" stroke="#000000" points="144,-392.5 144,-422.5 286,-422.5 286,-392.5 144,-392.5"/>
-<text text-anchor="start" x="152" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_cvmix_ddiff::compute</text>
-<text text-anchor="middle" x="215" y="-399.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_ddiff_coeffs</text>
+<polygon fill="#ffffff" stroke="#000000" points="140,-392.5 140,-422.5 277,-422.5 277,-392.5 140,-392.5"/>
+<text text-anchor="start" x="148" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_cvmix_ddiff::compute</text>
+<text text-anchor="middle" x="208.5" y="-399.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_ddiff_coeffs</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node13 -->
 <g id="edge14" class="edge">
 <title>Node1&#45;&gt;Node13</title>
-<path fill="none" stroke="#191970" d="M108.0586,-390.8942C116.4215,-392.1928 125.2128,-393.5579 134.0119,-394.9242"/>
-<polygon fill="#191970" stroke="#191970" points="133.5086,-398.3879 143.9272,-396.4639 134.5827,-391.4708 133.5086,-398.3879"/>
+<path fill="none" stroke="#191970" d="M104.1122,-390.8246C112.4462,-392.1559 121.2271,-393.5586 130.0119,-394.962"/>
+<polygon fill="#191970" stroke="#191970" points="129.4815,-398.4215 139.9084,-396.5429 130.5857,-391.5092 129.4815,-398.4215"/>
 </g>
 <!-- Node14 -->
 <g id="node14" class="node">
 <title>Node14</title>
 <g id="a_node14"><a xlink:href="namespacemom__set__diffusivity.html#a99d0eb7701f8e04d856b75117fe7b83c" target="_top" xlink:title="This subroutine sets the additional diffusivities of temperature and salinity due to double diffusion...">
-<polygon fill="#ffffff" stroke="#000000" points="161,-343.5 161,-373.5 269,-373.5 269,-343.5 161,-343.5"/>
-<text text-anchor="start" x="169" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_set_diffusivity</text>
-<text text-anchor="middle" x="215" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::double_diffusion</text>
+<polygon fill="#ffffff" stroke="#000000" points="156.5,-343.5 156.5,-373.5 260.5,-373.5 260.5,-343.5 156.5,-343.5"/>
+<text text-anchor="start" x="164.5" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_set_diffusivity</text>
+<text text-anchor="middle" x="208.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::double_diffusion</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node14 -->
 <g id="edge15" class="edge">
 <title>Node1&#45;&gt;Node14</title>
-<path fill="none" stroke="#191970" d="M108.0586,-374.4416C121.7314,-372.4034 136.549,-370.1946 150.6738,-368.089"/>
-<polygon fill="#191970" stroke="#191970" points="151.4354,-371.5142 160.8101,-366.578 150.4033,-364.5907 151.4354,-371.5142"/>
+<path fill="none" stroke="#191970" d="M104.1122,-374.5083C117.6354,-372.4345 132.3352,-370.1802 146.3195,-368.0357"/>
+<polygon fill="#191970" stroke="#191970" points="146.9948,-371.4731 156.3487,-366.4976 145.9337,-364.554 146.9948,-371.4731"/>
 </g>
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
 <g id="a_node15"><a xlink:href="namespacemom__set__diffusivity.html#afef80c2221be24f63f1ca96c2abe6fa9" target="_top" xlink:title="Calculate Brunt&#45;Vaisala frequency, N^2.">
-<polygon fill="#ffffff" stroke="#000000" points="161,-294.5 161,-324.5 269,-324.5 269,-294.5 161,-294.5"/>
-<text text-anchor="start" x="169" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_set_diffusivity</text>
-<text text-anchor="middle" x="215" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::find_n2</text>
+<polygon fill="#ffffff" stroke="#000000" points="156.5,-294.5 156.5,-324.5 260.5,-324.5 260.5,-294.5 156.5,-294.5"/>
+<text text-anchor="start" x="164.5" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_set_diffusivity</text>
+<text text-anchor="middle" x="208.5" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::find_n2</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node15 -->
 <g id="edge16" class="edge">
 <title>Node1&#45;&gt;Node15</title>
-<path fill="none" stroke="#191970" d="M79.8654,-367.3572C97.5779,-357.3253 121.7916,-344.265 144,-334.5 148.9347,-332.3302 154.1225,-330.2106 159.3538,-328.1813"/>
-<polygon fill="#191970" stroke="#191970" points="160.6467,-331.4344 168.7717,-324.6348 158.1798,-324.8835 160.6467,-331.4344"/>
+<path fill="none" stroke="#191970" d="M77.2845,-367.3946C94.6007,-357.3789 118.2758,-344.3227 140,-334.5 144.7096,-332.3705 149.6594,-330.2844 154.6528,-328.2819"/>
+<polygon fill="#191970" stroke="#191970" points="156.2074,-331.4327 164.2578,-324.5449 153.6692,-324.9091 156.2074,-331.4327"/>
 </g>
 <!-- Node16 -->
 <g id="node16" class="node">
 <title>Node16</title>
 <g id="a_node16"><a xlink:href="namespacemom__set__diffusivity.html#a07c0ab3f141f8f9e057be3150a940a94" target="_top" xlink:title="Convert turbulent kinetic energy to diffusivity.">
-<polygon fill="#ffffff" stroke="#000000" points="161,-245.5 161,-275.5 269,-275.5 269,-245.5 161,-245.5"/>
-<text text-anchor="start" x="169" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_set_diffusivity</text>
-<text text-anchor="middle" x="215" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::find_tke_to_kd</text>
+<polygon fill="#ffffff" stroke="#000000" points="156.5,-245.5 156.5,-275.5 260.5,-275.5 260.5,-245.5 156.5,-245.5"/>
+<text text-anchor="start" x="164.5" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_set_diffusivity</text>
+<text text-anchor="middle" x="208.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::find_tke_to_kd</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node16 -->
 <g id="edge17" class="edge">
 <title>Node1&#45;&gt;Node16</title>
-<path fill="none" stroke="#191970" d="M64.4523,-367.2201C79.655,-346.0655 109.8115,-307.9327 144,-285.5 147.0764,-283.4814 150.3349,-281.6045 153.6984,-279.8624"/>
-<polygon fill="#191970" stroke="#191970" points="155.2495,-283.0005 162.7934,-275.5614 152.257,-276.6724 155.2495,-283.0005"/>
+<path fill="none" stroke="#191970" d="M62.1762,-367.2623C76.9889,-346.1578 106.4137,-308.0841 140,-285.5 142.9251,-283.5331 146.0243,-281.6983 149.225,-279.9902"/>
+<polygon fill="#191970" stroke="#191970" points="150.9885,-283.0247 158.4541,-275.507 147.9299,-276.7282 150.9885,-283.0247"/>
 </g>
 <!-- Node18 -->
 <g id="node18" class="node">
 <title>Node18</title>
 <g id="a_node18"><a xlink:href="namespacemom__full__convection.html#a327a95712c5da253285dd808a178f2b0" target="_top" xlink:title="Calculate new temperatures and salinities that have been subject to full convective mixing.">
-<polygon fill="#ffffff" stroke="#000000" points="157.5,-196.5 157.5,-226.5 272.5,-226.5 272.5,-196.5 157.5,-196.5"/>
-<text text-anchor="start" x="165.5" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_full_convection</text>
-<text text-anchor="middle" x="215" y="-203.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::full_convection</text>
+<polygon fill="#ffffff" stroke="#000000" points="154,-196.5 154,-226.5 263,-226.5 263,-196.5 154,-196.5"/>
+<text text-anchor="start" x="162" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_full_convection</text>
+<text text-anchor="middle" x="208.5" y="-203.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::full_convection</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node18 -->
 <g id="edge19" class="edge">
 <title>Node1&#45;&gt;Node18</title>
-<path fill="none" stroke="#191970" d="M59.3662,-367.3366C70.5311,-337.9053 99.0272,-272.7538 144,-236.5 146.2415,-234.6931 148.623,-233.012 151.1038,-231.4485"/>
-<polygon fill="#191970" stroke="#191970" points="152.8268,-234.4952 159.8623,-226.5736 149.4224,-228.3788 152.8268,-234.4952"/>
+<path fill="none" stroke="#191970" d="M57.1873,-367.3816C67.9997,-338.0291 95.6878,-273.0094 140,-236.5 142.0518,-234.8095 144.2279,-233.2281 146.4942,-231.7493"/>
+<polygon fill="#191970" stroke="#191970" points="148.6638,-234.5407 155.6096,-226.5403 145.1907,-228.463 148.6638,-234.5407"/>
 </g>
 <!-- Node21 -->
 <g id="node21" class="node">
 <title>Node21</title>
 <g id="a_node21"><a xlink:href="namespacemom__tidal__mixing.html#af6fabb2bc6e4aabd3187938bda8098ec" target="_top" xlink:title="This subroutine offers up diagnostics of the tidal mixing.">
-<polygon fill="#ffffff" stroke="#000000" points="152.5,-147.5 152.5,-177.5 277.5,-177.5 277.5,-147.5 152.5,-147.5"/>
-<text text-anchor="start" x="160.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_tidal_mixing::post</text>
-<text text-anchor="middle" x="215" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_tidal_diagnostics</text>
+<polygon fill="#ffffff" stroke="#000000" points="148.5,-147.5 148.5,-177.5 268.5,-177.5 268.5,-147.5 148.5,-147.5"/>
+<text text-anchor="start" x="156.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_tidal_mixing::post</text>
+<text text-anchor="middle" x="208.5" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_tidal_diagnostics</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node21 -->
 <g id="edge22" class="edge">
 <title>Node1&#45;&gt;Node21</title>
-<path fill="none" stroke="#191970" d="M56.7781,-367.4382C64.2317,-331.2131 88.027,-238.4518 144,-187.5 145.7274,-185.9275 147.5598,-184.4528 149.474,-183.0698"/>
-<polygon fill="#191970" stroke="#191970" points="151.6719,-185.8248 158.3194,-177.5749 147.9781,-179.8787 151.6719,-185.8248"/>
+<path fill="none" stroke="#191970" d="M54.6495,-367.4838C61.7889,-331.3599 84.7505,-238.8063 140,-187.5 141.6959,-185.9252 143.4989,-184.4477 145.385,-183.0619"/>
+<polygon fill="#191970" stroke="#191970" points="147.5244,-185.8505 154.1133,-177.5537 143.7885,-179.9307 147.5244,-185.8505"/>
 </g>
 <!-- Node22 -->
 <g id="node22" class="node">
 <title>Node22</title>
 <g id="a_node22"><a xlink:href="namespacemom__tidal__mixing.html#a7d2dfb64df35957d1252ce841c0cdf43" target="_top" xlink:title="Sets up diagnostics arrays for tidal mixing.">
-<polygon fill="#ffffff" stroke="#000000" points="149.5,-98.5 149.5,-128.5 280.5,-128.5 280.5,-98.5 149.5,-98.5"/>
-<text text-anchor="start" x="157.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_tidal_mixing::setup</text>
-<text text-anchor="middle" x="215" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_tidal_diagnostics</text>
+<polygon fill="#ffffff" stroke="#000000" points="146,-98.5 146,-128.5 271,-128.5 271,-98.5 146,-98.5"/>
+<text text-anchor="start" x="154" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_tidal_mixing::setup</text>
+<text text-anchor="middle" x="208.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_tidal_diagnostics</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node22 -->
 <g id="edge23" class="edge">
 <title>Node1&#45;&gt;Node22</title>
-<path fill="none" stroke="#191970" d="M55.1275,-367.4407C59.1053,-325.0641 76.1655,-203.5885 144,-137.5 145.1067,-136.4218 146.2635,-135.3919 147.4634,-134.4083"/>
-<polygon fill="#191970" stroke="#191970" points="149.6899,-137.1244 155.9332,-128.5644 145.7146,-131.3627 149.6899,-137.1244"/>
+<path fill="none" stroke="#191970" d="M53.029,-367.4854C56.7253,-325.2261 72.9469,-204.0299 140,-137.5 141.0902,-136.4183 142.2318,-135.3852 143.4176,-134.3985"/>
+<polygon fill="#191970" stroke="#191970" points="145.6128,-137.1344 151.8049,-128.5374 141.6032,-131.3966 145.6128,-137.1344"/>
 </g>
 <!-- Node24 -->
 <g id="node24" class="node">
 <title>Node24</title>
 <g id="a_node24"><a xlink:href="namespacemom__bkgnd__mixing.html#ac43e811804d24aa3a648bf8ebb499887" target="_top" xlink:title="Get surface vertical background diffusivities/viscosities.">
-<polygon fill="#ffffff" stroke="#000000" points="151,-49.5 151,-79.5 279,-79.5 279,-49.5 151,-49.5"/>
-<text text-anchor="start" x="159" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_bkgnd_mixing::sfc</text>
-<text text-anchor="middle" x="215" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_bkgnd_mixing</text>
+<polygon fill="#ffffff" stroke="#000000" points="147,-49.5 147,-79.5 270,-79.5 270,-49.5 147,-49.5"/>
+<text text-anchor="start" x="155" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_bkgnd_mixing::sfc</text>
+<text text-anchor="middle" x="208.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_bkgnd_mixing</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node24 -->
 <g id="edge26" class="edge">
 <title>Node1&#45;&gt;Node24</title>
-<path fill="none" stroke="#191970" d="M56.7498,-367.3767C66.8681,-313.2434 103.5497,-130.1368 144,-88.5 144.9435,-87.5288 145.9276,-86.597 146.9475,-85.7028"/>
-<polygon fill="#191970" stroke="#191970" points="149.3611,-88.2749 155.3858,-79.5598 145.2412,-82.6157 149.3611,-88.2749"/>
+<path fill="none" stroke="#191970" d="M54.6573,-367.3949C64.443,-313.3241 99.9861,-130.4052 140,-88.5 140.9301,-87.526 141.9019,-86.5915 142.9103,-85.6948"/>
+<polygon fill="#191970" stroke="#191970" points="145.2966,-88.2842 151.2739,-79.5365 141.1461,-82.6474 145.2966,-88.2842"/>
 </g>
 <!-- Node26 -->
 <g id="node26" class="node">
 <title>Node26</title>
-<g id="a_node26"><a xlink:href="namespacemom__thickness__diffuse.html#aff6aa879773518e476ed0a603a1a301e" target="_top" xlink:title="Fills tracer values in massless layers with sensible values by diffusing vertically with a (small) co...">
-<polygon fill="#ffffff" stroke="#000000" points="152,-.5 152,-30.5 278,-30.5 278,-.5 152,-.5"/>
-<text text-anchor="start" x="160" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_thickness_diffuse</text>
-<text text-anchor="middle" x="215" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::vert_fill_ts</text>
+<g id="a_node26"><a xlink:href="namespacemom__isopycnal__slopes.html#a34691482caaff356da3c5182657dba0d" target="_top" xlink:title="Returns tracer arrays (nominally T and S) with massless layers filled with sensible values,...">
+<polygon fill="#ffffff" stroke="#000000" points="149,-.5 149,-30.5 268,-30.5 268,-.5 149,-.5"/>
+<text text-anchor="start" x="157" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_isopycnal_slopes</text>
+<text text-anchor="middle" x="208.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::vert_fill_ts</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node26 -->
 <g id="edge28" class="edge">
 <title>Node1&#45;&gt;Node26</title>
-<path fill="none" stroke="#191970" d="M56.0409,-367.4049C64.3888,-307.7315 97.6984,-89.1301 144,-39.5 144.8987,-38.5367 145.8374,-37.6121 146.8114,-36.7245"/>
-<polygon fill="#191970" stroke="#191970" points="149.0242,-39.4395 154.8968,-30.6212 144.8068,-33.8525 149.0242,-39.4395"/>
+<path fill="none" stroke="#191970" d="M53.9637,-367.4227C62.0045,-307.8173 94.1742,-89.4394 140,-39.5 140.8866,-38.5338 141.8143,-37.6065 142.7783,-36.7166"/>
+<polygon fill="#191970" stroke="#191970" points="144.971,-39.4461 150.8,-30.5988 140.726,-33.88 144.971,-39.4461"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="namespacemom__kappa__shear.html#a2e958f055f3a86997c989f200f2752ba" target="_top" xlink:title="This subroutine calculates shear&#45;driven diffusivity and TKE in a single column.">
-<polygon fill="#ffffff" stroke="#000000" points="322,-561.5 322,-591.5 463,-591.5 463,-561.5 322,-561.5"/>
-<text text-anchor="start" x="330" y="-579.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_kappa_shear::kappa</text>
-<text text-anchor="middle" x="392.5" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_shear_column</text>
+<g id="a_node6"><a xlink:href="namespacemom__kappa__shear.html#a26cc5bb15545f04cfaf07e53410e09ec" target="_top" xlink:title="This subroutine calculates shear&#45;driven diffusivity and TKE in a single column.">
+<polygon fill="#ffffff" stroke="#000000" points="313,-561.5 313,-591.5 444,-591.5 444,-561.5 313,-561.5"/>
+<text text-anchor="start" x="321" y="-579.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_kappa_shear::kappa</text>
+<text text-anchor="middle" x="378.5" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_shear_column</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M280.5901,-573.3476C290.6633,-573.6314 301.1644,-573.9272 311.5231,-574.219"/>
-<polygon fill="#191970" stroke="#191970" points="311.7187,-577.7258 321.8134,-574.5088 311.9159,-570.7285 311.7187,-577.7258"/>
+<path fill="none" stroke="#191970" d="M270.3548,-573.3193C280.8586,-573.6282 291.8728,-573.9521 302.6863,-574.2702"/>
+<polygon fill="#191970" stroke="#191970" points="302.8706,-577.777 312.9692,-574.5726 303.0765,-570.7801 302.8706,-577.777"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="namespacemom__kappa__shear.html#a0b931b0b834d887e321eb6eb1924fa9a" target="_top" xlink:title="This subroutine calculates the velocities, temperature and salinity that the water column will have a...">
-<polygon fill="#ffffff" stroke="#000000" points="499,-573.5 499,-603.5 652,-603.5 652,-573.5 499,-573.5"/>
-<text text-anchor="start" x="507" y="-591.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_kappa_shear::calculate</text>
-<text text-anchor="middle" x="575.5" y="-580.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_projected_state</text>
+<polygon fill="#ffffff" stroke="#000000" points="480,-573.5 480,-603.5 624,-603.5 624,-573.5 480,-573.5"/>
+<text text-anchor="start" x="488" y="-591.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_kappa_shear::calculate</text>
+<text text-anchor="middle" x="552" y="-580.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_projected_state</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M463.2526,-581.1395C471.6383,-581.6894 480.2695,-582.2554 488.8437,-582.8176"/>
-<polygon fill="#191970" stroke="#191970" points="488.6573,-586.3128 498.8649,-583.4748 489.1154,-579.3278 488.6573,-586.3128"/>
+<path fill="none" stroke="#191970" d="M444.0929,-581.0367C452.5075,-581.6187 461.205,-582.2202 469.8415,-582.8176"/>
+<polygon fill="#191970" stroke="#191970" points="469.7139,-586.317 479.9316,-583.5154 470.197,-579.3337 469.7139,-586.317"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="namespacemom__kappa__shear.html#a351d44e4fe5cfb5852d019a0c1e66100" target="_top" xlink:title="This subroutine calculates new, consistent estimates of TKE and kappa.">
-<polygon fill="#ffffff" stroke="#000000" points="511,-524.5 511,-554.5 640,-554.5 640,-524.5 511,-524.5"/>
-<text text-anchor="start" x="519" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_kappa_shear::find</text>
-<text text-anchor="middle" x="575.5" y="-531.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_kappa_tke</text>
+<polygon fill="#ffffff" stroke="#000000" points="491.5,-524.5 491.5,-554.5 612.5,-554.5 612.5,-524.5 491.5,-524.5"/>
+<text text-anchor="start" x="499.5" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_kappa_shear::find</text>
+<text text-anchor="middle" x="552" y="-531.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_kappa_tke</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node6&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M463.2526,-562.1948C475.6332,-559.6917 488.5487,-557.0803 501.0263,-554.5575"/>
-<polygon fill="#191970" stroke="#191970" points="501.8127,-557.9694 510.9207,-552.557 500.4254,-551.1083 501.8127,-557.9694"/>
+<path fill="none" stroke="#191970" d="M444.0929,-562.5119C456.3595,-559.896 469.2271,-557.1519 481.631,-554.5066"/>
+<polygon fill="#191970" stroke="#191970" points="482.4089,-557.9195 491.459,-552.4108 480.9489,-551.0735 482.4089,-557.9195"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
 <g id="a_node10"><a xlink:href="namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="This returns .true. if the current PE is the root PE.">
-<polygon fill="#ffffff" stroke="#000000" points="518,-451.5 518,-481.5 633,-481.5 633,-451.5 518,-451.5"/>
-<text text-anchor="start" x="526" y="-469.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="575.5" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
+<polygon fill="#ffffff" stroke="#000000" points="499,-451.5 499,-481.5 605,-481.5 605,-451.5 499,-451.5"/>
+<text text-anchor="start" x="507" y="-469.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="552" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node10 -->
 <g id="edge9" class="edge">
 <title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="#191970" d="M437.736,-512.4213C462.9051,-504.0316 494.412,-493.5293 520.9403,-484.6866"/>
-<polygon fill="#191970" stroke="#191970" points="522.0876,-487.9935 530.4676,-481.5108 519.874,-481.3527 522.0876,-487.9935"/>
+<path fill="none" stroke="#191970" d="M421.3877,-512.4213C445.0408,-504.1052 474.5979,-493.7134 499.6096,-484.9197"/>
+<polygon fill="#191970" stroke="#191970" points="501.0324,-488.1295 509.3054,-481.5108 498.7105,-481.5258 501.0324,-488.1295"/>
 </g>
 <!-- Node11&#45;&gt;Node10 -->
 <g id="edge11" class="edge">
 <title>Node11&#45;&gt;Node10</title>
-<path fill="none" stroke="#191970" d="M450.1512,-474.7196C468.4453,-473.52 488.841,-472.1826 507.7768,-470.9409"/>
-<polygon fill="#191970" stroke="#191970" points="508.0748,-474.4289 517.8243,-470.282 507.6167,-467.4439 508.0748,-474.4289"/>
+<path fill="none" stroke="#191970" d="M431.9714,-474.8017C449.8655,-473.5641 469.9862,-472.1724 488.5657,-470.8874"/>
+<polygon fill="#191970" stroke="#191970" points="488.9705,-474.3678 498.7051,-470.1861 488.4874,-467.3845 488.9705,-474.3678"/>
 </g>
 <!-- Node12&#45;&gt;Node10 -->
 <g id="edge13" class="edge">
 <title>Node12&#45;&gt;Node10</title>
-<path fill="none" stroke="#191970" d="M450.1512,-441.1562C468.4453,-444.8551 488.841,-448.9788 507.7768,-452.8073"/>
-<polygon fill="#191970" stroke="#191970" points="507.329,-456.2875 517.8243,-454.8388 508.7163,-449.4264 507.329,-456.2875"/>
+<path fill="none" stroke="#191970" d="M431.9714,-440.9031C449.9484,-444.7368 470.1726,-449.0498 488.8237,-453.0272"/>
+<polygon fill="#191970" stroke="#191970" points="488.195,-456.4718 498.7051,-455.1345 489.6551,-449.6258 488.195,-456.4718"/>
 </g>
 <!-- Node17 -->
 <g id="node17" class="node">
 <title>Node17</title>
-<g id="a_node17"><a xlink:href="namespacemom__set__diffusivity.html#ae1b3a63b8470de5a3d9ba9706376281b" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="338.5,-245.5 338.5,-275.5 446.5,-275.5 446.5,-245.5 338.5,-245.5"/>
-<text text-anchor="start" x="346.5" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_set_diffusivity</text>
-<text text-anchor="middle" x="392.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::set_density_ratios</text>
+<g id="a_node17"><a xlink:href="namespacemom__set__diffusivity.html#a5ba8a3be6234304aa5f1dfd0b831078a" target="_top" xlink:title=" ">
+<polygon fill="#ffffff" stroke="#000000" points="326.5,-245.5 326.5,-275.5 430.5,-275.5 430.5,-245.5 326.5,-245.5"/>
+<text text-anchor="start" x="334.5" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_set_diffusivity</text>
+<text text-anchor="middle" x="378.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::set_density_ratios</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node17 -->
 <g id="edge18" class="edge">
 <title>Node16&#45;&gt;Node17</title>
-<path fill="none" stroke="#191970" d="M269.2203,-260.5C287.8007,-260.5 308.7733,-260.5 328.0809,-260.5"/>
-<polygon fill="#191970" stroke="#191970" points="328.3061,-264.0001 338.3061,-260.5 328.3061,-257.0001 328.3061,-264.0001"/>
+<path fill="none" stroke="#191970" d="M260.8928,-260.5C278.3447,-260.5 297.9582,-260.5 316.0924,-260.5"/>
+<polygon fill="#191970" stroke="#191970" points="316.2803,-264.0001 326.2802,-260.5 316.2802,-257.0001 316.2803,-264.0001"/>
 </g>
 <!-- Node19 -->
 <g id="node19" class="node">
 <title>Node19</title>
 <g id="a_node19"><a xlink:href="namespacemom__full__convection.html#a2d2d4f8f10e25a0d9dc9bdfbf6729fe0" target="_top" xlink:title="This function returns True if the profiles around the given interface will be statically unstable aft...">
-<polygon fill="#ffffff" stroke="#000000" points="335,-196.5 335,-226.5 450,-226.5 450,-196.5 335,-196.5"/>
-<text text-anchor="start" x="343" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_full_convection</text>
-<text text-anchor="middle" x="392.5" y="-203.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::is_unstable</text>
+<polygon fill="#ffffff" stroke="#000000" points="324,-196.5 324,-226.5 433,-226.5 433,-196.5 324,-196.5"/>
+<text text-anchor="start" x="332" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_full_convection</text>
+<text text-anchor="middle" x="378.5" y="-203.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::is_unstable</text>
 </a>
 </g>
 </g>
 <!-- Node18&#45;&gt;Node19 -->
 <g id="edge20" class="edge">
 <title>Node18&#45;&gt;Node19</title>
-<path fill="none" stroke="#191970" d="M272.6292,-211.5C289.1436,-211.5 307.3041,-211.5 324.385,-211.5"/>
-<polygon fill="#191970" stroke="#191970" points="324.8565,-215.0001 334.8565,-211.5 324.8564,-208.0001 324.8565,-215.0001"/>
+<path fill="none" stroke="#191970" d="M263.2248,-211.5C279.3009,-211.5 297.039,-211.5 313.6816,-211.5"/>
+<polygon fill="#191970" stroke="#191970" points="313.8777,-215.0001 323.8777,-211.5 313.8777,-208.0001 313.8777,-215.0001"/>
 </g>
 <!-- Node20 -->
 <g id="node20" class="node">
 <title>Node20</title>
 <g id="a_node20"><a xlink:href="namespacemom__full__convection.html#a2e24ce95201c7690b82f38ecbdf6620b" target="_top" xlink:title="Returns the partial derivatives of locally referenced potential density with temperature and salinity...">
-<polygon fill="#ffffff" stroke="#000000" points="333,-147.5 333,-177.5 452,-177.5 452,-147.5 333,-147.5"/>
-<text text-anchor="start" x="341" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_full_convection</text>
-<text text-anchor="middle" x="392.5" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::smoothed_drdt_drds</text>
+<polygon fill="#ffffff" stroke="#000000" points="323,-147.5 323,-177.5 434,-177.5 434,-147.5 323,-147.5"/>
+<text text-anchor="start" x="331" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_full_convection</text>
+<text text-anchor="middle" x="378.5" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::smoothed_drdt_drds</text>
 </a>
 </g>
 </g>
 <!-- Node18&#45;&gt;Node20 -->
 <g id="edge21" class="edge">
 <title>Node18&#45;&gt;Node20</title>
-<path fill="none" stroke="#191970" d="M269.7042,-196.3986C288.1803,-191.2981 308.9768,-185.5571 328.1308,-180.2695"/>
-<polygon fill="#191970" stroke="#191970" points="329.2684,-183.5865 337.9764,-177.5516 327.4056,-176.8389 329.2684,-183.5865"/>
+<path fill="none" stroke="#191970" d="M260.8928,-196.3986C278.507,-191.3215 298.3233,-185.6098 316.5981,-180.3423"/>
+<polygon fill="#191970" stroke="#191970" points="317.6408,-183.6843 326.2802,-177.5516 315.702,-176.9582 317.6408,-183.6843"/>
 </g>
 <!-- Node23 -->
 <g id="node23" class="node">
 <title>Node23</title>
 <g id="a_node23"><a xlink:href="namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="This provides a convenient interface for writing an mpp_error message with run&#45;time filter based on a...">
-<polygon fill="#ffffff" stroke="#000000" points="335,-98.5 335,-128.5 450,-128.5 450,-98.5 335,-98.5"/>
-<text text-anchor="start" x="343" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="392.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
+<polygon fill="#ffffff" stroke="#000000" points="325.5,-98.5 325.5,-128.5 431.5,-128.5 431.5,-98.5 325.5,-98.5"/>
+<text text-anchor="start" x="333.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="378.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node22&#45;&gt;Node23 -->
 <g id="edge24" class="edge">
 <title>Node22&#45;&gt;Node23</title>
-<path fill="none" stroke="#191970" d="M280.5901,-113.5C294.8943,-113.5 310.0616,-113.5 324.4588,-113.5"/>
-<polygon fill="#191970" stroke="#191970" points="324.7827,-117.0001 334.7827,-113.5 324.7827,-110.0001 324.7827,-117.0001"/>
+<path fill="none" stroke="#191970" d="M271.3187,-113.5C285.6274,-113.5 300.8378,-113.5 315.1677,-113.5"/>
+<polygon fill="#191970" stroke="#191970" points="315.4212,-117.0001 325.4211,-113.5 315.4211,-110.0001 315.4212,-117.0001"/>
 </g>
 <!-- Node23&#45;&gt;Node10 -->
 <g id="edge25" class="edge">
 <title>Node23&#45;&gt;Node10</title>
-<path fill="none" stroke="#191970" d="M450.2172,-127.9241C454.8912,-130.5925 459.249,-133.7542 463,-137.5 549.6544,-224.0365 569.6178,-380.0337 574.1717,-441.0541"/>
-<polygon fill="#191970" stroke="#191970" points="570.6975,-441.5596 574.8553,-451.3045 577.682,-441.0937 570.6975,-441.5596"/>
+<path fill="none" stroke="#191970" d="M431.5604,-127.9194C436.1295,-130.5918 440.3808,-133.7555 444,-137.5 528.7593,-225.1944 547.0051,-380.5143 550.9278,-441.2037"/>
+<polygon fill="#191970" stroke="#191970" points="547.4452,-441.6113 551.5063,-451.3969 554.4339,-441.2145 547.4452,-441.6113"/>
 </g>
 <!-- Node25 -->
 <g id="node25" class="node">
 <title>Node25</title>
 <g id="a_node25"><a xlink:href="namespacemom__intrinsic__functions.html#a8c2f5945631280be41cfa981515e63fc" target="_top" xlink:title="Evaluate the inverse cosh, either using a math library or an equivalent expression.">
-<polygon fill="#ffffff" stroke="#000000" points="328,-49.5 328,-79.5 457,-79.5 457,-49.5 328,-49.5"/>
-<text text-anchor="start" x="336" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_intrinsic_functions</text>
-<text text-anchor="middle" x="392.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::invcosh</text>
+<polygon fill="#ffffff" stroke="#000000" points="317.5,-49.5 317.5,-79.5 439.5,-79.5 439.5,-49.5 317.5,-49.5"/>
+<text text-anchor="start" x="325.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_intrinsic_functions</text>
+<text text-anchor="middle" x="378.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::invcosh</text>
 </a>
 </g>
 </g>
 <!-- Node24&#45;&gt;Node25 -->
 <g id="edge27" class="edge">
 <title>Node24&#45;&gt;Node25</title>
-<path fill="none" stroke="#191970" d="M279.0816,-64.5C291.6185,-64.5 304.8688,-64.5 317.7184,-64.5"/>
-<polygon fill="#191970" stroke="#191970" points="317.9163,-68.0001 327.9163,-64.5 317.9163,-61.0001 317.9163,-68.0001"/>
+<path fill="none" stroke="#191970" d="M270.3548,-64.5C282.296,-64.5 294.8968,-64.5 307.1126,-64.5"/>
+<polygon fill="#191970" stroke="#191970" points="307.2603,-68.0001 317.2603,-64.5 307.2602,-61.0001 307.2603,-68.0001"/>
 </g>
 </g>
 </svg>

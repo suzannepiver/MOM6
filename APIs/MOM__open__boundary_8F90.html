@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/core/MOM_open_boundary.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/core/MOM_open_boundary.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('MOM__open__boundary_8F90.html','');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_open_boundary.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__open__boundary_8F90__incl.svg" width="206" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__open__boundary_8F90__incl.svg" width="231" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -116,7 +116,7 @@ Data Types</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open boundary segment data from files (mostly).  <a href="structmom__open__boundary_1_1obc__segment__data__type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">type &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1obc__segment__tracer__type.html">mom_open_boundary::obc_segment_tracer_type</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracer segment data structure, for putting into an array of objects, not all the same shape.  <a href="structmom__open__boundary_1_1obc__segment__tracer__type.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracer on OBC segment data structure, for putting into a segment tracer registry.  <a href="structmom__open__boundary_1_1obc__segment__tracer__type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">type &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1segment__tracer__registry__type.html">mom_open_boundary::segment_tracer_registry_type</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registry type for tracers on segments.  <a href="structmom__open__boundary_1_1segment__tracer__registry__type.html#details">More...</a><br /></td></tr>
@@ -154,12 +154,12 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:ac357a1fb341db3aaffdfeca2eacab60b"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#ac357a1fb341db3aaffdfeca2eacab60b">mom_open_boundary::setup_segment_indices</a> (G, seg, Is_obc, Ie_obc, Js_obc, Je_obc)</td></tr>
 <tr class="memdesc:ac357a1fb341db3aaffdfeca2eacab60b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define indices for segment and store in hor_index_type using global segment bounds corresponding to q-points.  <a href="namespacemom__open__boundary.html#ac357a1fb341db3aaffdfeca2eacab60b">More...</a><br /></td></tr>
 <tr class="separator:ac357a1fb341db3aaffdfeca2eacab60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b3c20aa88968da38684e927678fc7da"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a7b3c20aa88968da38684e927678fc7da">mom_open_boundary::setup_u_point_obc</a> (OBC, G, segment_str, l_seg, PF, reentrant_y)</td></tr>
-<tr class="memdesc:a7b3c20aa88968da38684e927678fc7da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an OBC_SEGMENT_%%% string starting with "I=" and configure placement and type of OBC accordingly.  <a href="namespacemom__open__boundary.html#a7b3c20aa88968da38684e927678fc7da">More...</a><br /></td></tr>
-<tr class="separator:a7b3c20aa88968da38684e927678fc7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad10583c94c54ff4ae52bf7a5eb931b80"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#ad10583c94c54ff4ae52bf7a5eb931b80">mom_open_boundary::setup_v_point_obc</a> (OBC, G, segment_str, l_seg, PF, reentrant_x)</td></tr>
-<tr class="memdesc:ad10583c94c54ff4ae52bf7a5eb931b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an OBC_SEGMENT_%%% string starting with "J=" and configure placement and type of OBC accordingly.  <a href="namespacemom__open__boundary.html#ad10583c94c54ff4ae52bf7a5eb931b80">More...</a><br /></td></tr>
-<tr class="separator:ad10583c94c54ff4ae52bf7a5eb931b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40e3464225d4e017b1a738995eeb3b2"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#aa40e3464225d4e017b1a738995eeb3b2">mom_open_boundary::setup_u_point_obc</a> (OBC, G, US, segment_str, l_seg, PF, reentrant_y)</td></tr>
+<tr class="memdesc:aa40e3464225d4e017b1a738995eeb3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an OBC_SEGMENT_%%% string starting with "I=" and configure placement and type of OBC accordingly.  <a href="namespacemom__open__boundary.html#aa40e3464225d4e017b1a738995eeb3b2">More...</a><br /></td></tr>
+<tr class="separator:aa40e3464225d4e017b1a738995eeb3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706dd2fb2049757b3b76bf8b481e735c"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a706dd2fb2049757b3b76bf8b481e735c">mom_open_boundary::setup_v_point_obc</a> (OBC, G, US, segment_str, l_seg, PF, reentrant_x)</td></tr>
+<tr class="memdesc:a706dd2fb2049757b3b76bf8b481e735c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an OBC_SEGMENT_%%% string starting with "J=" and configure placement and type of OBC accordingly.  <a href="namespacemom__open__boundary.html#a706dd2fb2049757b3b76bf8b481e735c">More...</a><br /></td></tr>
+<tr class="separator:a706dd2fb2049757b3b76bf8b481e735c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eb361009a2dddf3ad9a24d0d7223898"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a0eb361009a2dddf3ad9a24d0d7223898">mom_open_boundary::parse_segment_str</a> (ni_global, nj_global, segment_str, l, m, n, action_str, reentrant)</td></tr>
 <tr class="memdesc:a0eb361009a2dddf3ad9a24d0d7223898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an OBC_SEGMENT_%%% string.  <a href="namespacemom__open__boundary.html#a0eb361009a2dddf3ad9a24d0d7223898">More...</a><br /></td></tr>
 <tr class="separator:a0eb361009a2dddf3ad9a24d0d7223898"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,12 +168,15 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a0aee21537ad757ce15e602d8fd55eb4d"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a0aee21537ad757ce15e602d8fd55eb4d">mom_open_boundary::parse_segment_data_str</a> (segment_str, var, value, filenam, fieldnam, fields, num_fields, debug)</td></tr>
 <tr class="memdesc:a0aee21537ad757ce15e602d8fd55eb4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an OBC_SEGMENT_%%_DATA string.  <a href="namespacemom__open__boundary.html#a0aee21537ad757ce15e602d8fd55eb4d">More...</a><br /></td></tr>
 <tr class="separator:a0aee21537ad757ce15e602d8fd55eb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2dbab2a3e23eb9848aba473f635cec"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a2e2dbab2a3e23eb9848aba473f635cec">mom_open_boundary::parse_for_tracer_reservoirs</a> (OBC, PF, use_temperature)</td></tr>
+<tr class="memdesc:a2e2dbab2a3e23eb9848aba473f635cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse all the OBC_SEGMENT_%%_DATA strings again to see which need tracer reservoirs (all pes need to know).  <a href="namespacemom__open__boundary.html#a2e2dbab2a3e23eb9848aba473f635cec">More...</a><br /></td></tr>
+<tr class="separator:a2e2dbab2a3e23eb9848aba473f635cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a349df847b304948d5b98352ddfd7bf8d"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a349df847b304948d5b98352ddfd7bf8d">mom_open_boundary::parse_segment_param_real</a> (segment_str, var, param_value, debug)</td></tr>
 <tr class="memdesc:a349df847b304948d5b98352ddfd7bf8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an OBC_SEGMENT_%%_PARAMS string.  <a href="namespacemom__open__boundary.html#a349df847b304948d5b98352ddfd7bf8d">More...</a><br /></td></tr>
 <tr class="separator:a349df847b304948d5b98352ddfd7bf8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a785993ea8b0558b21f1f1de109cf90b4"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a785993ea8b0558b21f1f1de109cf90b4">mom_open_boundary::open_boundary_init</a> (G, param_file, OBC)</td></tr>
-<tr class="memdesc:a785993ea8b0558b21f1f1de109cf90b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize open boundary control structure.  <a href="namespacemom__open__boundary.html#a785993ea8b0558b21f1f1de109cf90b4">More...</a><br /></td></tr>
-<tr class="separator:a785993ea8b0558b21f1f1de109cf90b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53dc87c231fcaf1c99fe818956fb111e"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a53dc87c231fcaf1c99fe818956fb111e">mom_open_boundary::open_boundary_init</a> (G, GV, US, param_file, OBC, restart_CSp)</td></tr>
+<tr class="memdesc:a53dc87c231fcaf1c99fe818956fb111e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize open boundary control structure and do any necessary rescaling of OBC fields that have been read from a restart file.  <a href="namespacemom__open__boundary.html#a53dc87c231fcaf1c99fe818956fb111e">More...</a><br /></td></tr>
+<tr class="separator:a53dc87c231fcaf1c99fe818956fb111e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af55e663cc3a1f5f697e72066d75c9160"><td class="memItemLeft" align="right" valign="top">logical function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#af55e663cc3a1f5f697e72066d75c9160">mom_open_boundary::open_boundary_query</a> (OBC, apply_open_OBC, apply_specified_OBC, apply_Flather_OBC, apply_nudged_OBC, needs_ext_seg_data)</td></tr>
 <tr class="separator:af55e663cc3a1f5f697e72066d75c9160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a709a33b9e33b5689d5ca73349ed51fb6"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a709a33b9e33b5689d5ca73349ed51fb6">mom_open_boundary::open_boundary_dealloc</a> (OBC)</td></tr>
@@ -188,6 +191,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a7aa6f2b520108ce761ef107557f69069"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a7aa6f2b520108ce761ef107557f69069">mom_open_boundary::open_boundary_impose_land_mask</a> (OBC, G, areaCu, areaCv, US)</td></tr>
 <tr class="memdesc:a7aa6f2b520108ce761ef107557f69069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reconcile masks and open boundaries, deallocate OBC on PEs where it is not needed. Also adjust u- and v-point cell area on specified open boundaries and mask all points outside open boundaries.  <a href="namespacemom__open__boundary.html#a7aa6f2b520108ce761ef107557f69069">More...</a><br /></td></tr>
 <tr class="separator:a7aa6f2b520108ce761ef107557f69069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2578141730f51e42c56bb05c3648ea08"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a2578141730f51e42c56bb05c3648ea08">mom_open_boundary::setup_obc_tracer_reservoirs</a> (G, OBC)</td></tr>
+<tr class="memdesc:a2578141730f51e42c56bb05c3648ea08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure the OBC tracer reservoirs are initialized.  <a href="namespacemom__open__boundary.html#a2578141730f51e42c56bb05c3648ea08">More...</a><br /></td></tr>
+<tr class="separator:a2578141730f51e42c56bb05c3648ea08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5ceafcce53e896d30012f321c73d9f4"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#ae5ceafcce53e896d30012f321c73d9f4">mom_open_boundary::radiation_open_bdry_conds</a> (OBC, u_new, u_old, v_new, v_old, G, US, dt)</td></tr>
 <tr class="memdesc:ae5ceafcce53e896d30012f321c73d9f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply radiation conditions to 3D u,v at open boundaries.  <a href="namespacemom__open__boundary.html#ae5ceafcce53e896d30012f321c73d9f4">More...</a><br /></td></tr>
 <tr class="separator:ae5ceafcce53e896d30012f321c73d9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,9 +221,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a556977a2754fab17e837a8fba75cd9ee"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a556977a2754fab17e837a8fba75cd9ee">mom_open_boundary::open_boundary_test_extern_uv</a> (G, OBC, u, v)</td></tr>
 <tr class="memdesc:a556977a2754fab17e837a8fba75cd9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set tangential velocities outside of open boundaries to silly values (used for checking the interior state is independent of values outside of the domain).  <a href="namespacemom__open__boundary.html#a556977a2754fab17e837a8fba75cd9ee">More...</a><br /></td></tr>
 <tr class="separator:a556977a2754fab17e837a8fba75cd9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad733fd1dae4a6dfc14ad9c814e16a122"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#ad733fd1dae4a6dfc14ad9c814e16a122">mom_open_boundary::open_boundary_test_extern_h</a> (G, OBC, h)</td></tr>
-<tr class="memdesc:ad733fd1dae4a6dfc14ad9c814e16a122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set thicknesses outside of open boundaries to silly values (used for checking the interior state is independent of values outside of the domain).  <a href="namespacemom__open__boundary.html#ad733fd1dae4a6dfc14ad9c814e16a122">More...</a><br /></td></tr>
-<tr class="separator:ad733fd1dae4a6dfc14ad9c814e16a122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4123d11abdb141b21a4d52a0c43c4adb"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a4123d11abdb141b21a4d52a0c43c4adb">mom_open_boundary::open_boundary_test_extern_h</a> (G, GV, OBC, h)</td></tr>
+<tr class="memdesc:a4123d11abdb141b21a4d52a0c43c4adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set thicknesses outside of open boundaries to silly values (used for checking the interior state is independent of values outside of the domain).  <a href="namespacemom__open__boundary.html#a4123d11abdb141b21a4d52a0c43c4adb">More...</a><br /></td></tr>
+<tr class="separator:a4123d11abdb141b21a4d52a0c43c4adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d2c8b028b9fc7d65f17155497a0487d"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a8d2c8b028b9fc7d65f17155497a0487d">mom_open_boundary::update_obc_segment_data</a> (G, GV, US, OBC, tv, h, Time)</td></tr>
 <tr class="memdesc:a8d2c8b028b9fc7d65f17155497a0487d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the OBC values on the segments.  <a href="namespacemom__open__boundary.html#a8d2c8b028b9fc7d65f17155497a0487d">More...</a><br /></td></tr>
 <tr class="separator:a8d2c8b028b9fc7d65f17155497a0487d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,9 +260,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a13ac2cc232309a51db31c3b9ee5f22af"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a13ac2cc232309a51db31c3b9ee5f22af">mom_open_boundary::flood_fill2</a> (G, color, cin, cout, cland)</td></tr>
 <tr class="memdesc:a13ac2cc232309a51db31c3b9ee5f22af"><td class="mdescLeft">&#160;</td><td class="mdescRight">flood the cin, cout values  <a href="namespacemom__open__boundary.html#a13ac2cc232309a51db31c3b9ee5f22af">More...</a><br /></td></tr>
 <tr class="separator:a13ac2cc232309a51db31c3b9ee5f22af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a991998929a7d7ab8fcbb59fe48443f8c"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a991998929a7d7ab8fcbb59fe48443f8c">mom_open_boundary::open_boundary_register_restarts</a> (HI, GV, OBC_CS, restart_CSp)</td></tr>
-<tr class="memdesc:a991998929a7d7ab8fcbb59fe48443f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register OBC segment data for restarts.  <a href="namespacemom__open__boundary.html#a991998929a7d7ab8fcbb59fe48443f8c">More...</a><br /></td></tr>
-<tr class="separator:a991998929a7d7ab8fcbb59fe48443f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d4f35b2cff85617fc5766739db81de"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#af1d4f35b2cff85617fc5766739db81de">mom_open_boundary::open_boundary_register_restarts</a> (HI, GV, OBC, Reg, param_file, restart_CSp, use_temperature)</td></tr>
+<tr class="memdesc:af1d4f35b2cff85617fc5766739db81de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register OBC segment data for restarts.  <a href="namespacemom__open__boundary.html#af1d4f35b2cff85617fc5766739db81de">More...</a><br /></td></tr>
+<tr class="separator:af1d4f35b2cff85617fc5766739db81de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a230cf67375352c9d55b4330180d35d7c"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a230cf67375352c9d55b4330180d35d7c">mom_open_boundary::update_segment_tracer_reservoirs</a> (G, GV, uhr, vhr, h, OBC, dt, Reg)</td></tr>
 <tr class="memdesc:a230cf67375352c9d55b4330180d35d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the OBC tracer reservoirs after the tracers have been updated.  <a href="namespacemom__open__boundary.html#a230cf67375352c9d55b4330180d35d7c">More...</a><br /></td></tr>
 <tr class="separator:a230cf67375352c9d55b4330180d35d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,7 +279,7 @@ Variables</h2></td></tr>
 <tr class="memdesc:ad14f75b62184f667bb07c0f31b633c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the use of a simple inflow open boundary.  <a href="namespacemom__open__boundary.html#ad14f75b62184f667bb07c0f31b633c7c">More...</a><br /></td></tr>
 <tr class="separator:ad14f75b62184f667bb07c0f31b633c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59020084f9aa725ff55812572cabe6e6"><td class="memItemLeft" align="right" valign="top">integer, parameter, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#a59020084f9aa725ff55812572cabe6e6">mom_open_boundary::obc_wall</a> = 2</td></tr>
-<tr class="memdesc:a59020084f9aa725ff55812572cabe6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the use of a closed sall.  <a href="namespacemom__open__boundary.html#a59020084f9aa725ff55812572cabe6e6">More...</a><br /></td></tr>
+<tr class="memdesc:a59020084f9aa725ff55812572cabe6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the use of a closed wall.  <a href="namespacemom__open__boundary.html#a59020084f9aa725ff55812572cabe6e6">More...</a><br /></td></tr>
 <tr class="separator:a59020084f9aa725ff55812572cabe6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab15bba6b94442339da4ea4dcb35811d"><td class="memItemLeft" align="right" valign="top">integer, parameter, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__open__boundary.html#aab15bba6b94442339da4ea4dcb35811d">mom_open_boundary::obc_flather</a> = 3</td></tr>
 <tr class="memdesc:aab15bba6b94442339da4ea4dcb35811d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the use of a Flather open boundary.  <a href="namespacemom__open__boundary.html#aab15bba6b94442339da4ea4dcb35811d">More...</a><br /></td></tr>
@@ -345,39 +351,39 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l01203">1203</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;    <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">intent(in)</span> :: string<span class="comment"> !&lt; Integer in form or %I, N or N-%I</span></div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;    <span class="keywordtype">integer</span>,          <span class="keywordtype">intent(in)</span> :: imax<span class="comment"> !&lt; Value to replace &#39;N&#39; with</span></div>
-<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;    <span class="comment">! Local variables</span></div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;    <span class="keywordtype">integer</span> slen</div>
-<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160; </div>
-<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;    slen = len_trim(string)</div>
-<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;    <span class="keywordflow">if</span> (slen==0) <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;MOM_open_boundary.F90, parse_segment_str&quot;</span>//&amp;</div>
-<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;                                <span class="stringliteral">&quot;Parsed string was empty!&quot;</span>)</div>
-<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;    <span class="keywordflow">if</span> (len_trim(string)==1 .and. string(1:1)==<span class="stringliteral">&#39;N&#39;</span>) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;      <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a> = imax</div>
-<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;    <span class="keywordflow">elseif</span> (string(1:1)==<span class="stringliteral">&#39;N&#39;</span>) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;      <span class="keywordflow">if</span> (string(2:2)==<span class="stringliteral">&#39;+&#39;</span>) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;        <span class="keyword">read</span>(string(3:slen),*,err=911) <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a></div>
-<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;        <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a> = imax + <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a></div>
-<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;      <span class="keywordflow">elseif</span> (string(2:2)==<span class="stringliteral">&#39;-&#39;</span>) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;        <span class="keyword">read</span>(string(3:slen),*,err=911) <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a></div>
-<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;        <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a> = imax - <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a></div>
-<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;<span class="keywordflow">      endif</span></div>
-<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;      <span class="keyword">read</span>(string(1:slen),*,err=911) <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a></div>
-<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;<span class="keywordflow">    endif</span></div>
-<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;    <span class="keywordflow">return</span></div>
-<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;    911 <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;MOM_open_boundary.F90, parse_segment_str&quot;</span>//&amp;</div>
-<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;                       <span class="stringliteral">&quot;Problem reading value from string &#39;&quot;</span>//trim(string)//<span class="stringliteral">&quot;&#39;.&quot;</span>)</div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l01214">1214</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;    <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">intent(in)</span> :: string<span class="comment"> !&lt; Integer in form or %I, N or N-%I</span></div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;    <span class="keywordtype">integer</span>,          <span class="keywordtype">intent(in)</span> :: imax<span class="comment"> !&lt; Value to replace &#39;N&#39; with</span></div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;    <span class="comment">! Local variables</span></div>
+<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;    <span class="keywordtype">integer</span> slen</div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160; </div>
+<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;    slen = len_trim(string)</div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;    <span class="keywordflow">if</span> (slen==0) <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;MOM_open_boundary.F90, parse_segment_str&quot;</span>//&amp;</div>
+<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;                                <span class="stringliteral">&quot;Parsed string was empty!&quot;</span>)</div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;    <span class="keywordflow">if</span> (len_trim(string)==1 .and. string(1:1)==<span class="stringliteral">&#39;N&#39;</span>) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;      <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a> = imax</div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;    <span class="keywordflow">elseif</span> (string(1:1)==<span class="stringliteral">&#39;N&#39;</span>) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;      <span class="keywordflow">if</span> (string(2:2)==<span class="stringliteral">&#39;+&#39;</span>) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;        <span class="keyword">read</span>(string(3:slen),*,err=911) <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a></div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;        <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a> = imax + <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a></div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;      <span class="keywordflow">elseif</span> (string(2:2)==<span class="stringliteral">&#39;-&#39;</span>) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;        <span class="keyword">read</span>(string(3:slen),*,err=911) <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a></div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;        <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a> = imax - <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a></div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;<span class="keywordflow">      endif</span></div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;      <span class="keyword">read</span>(string(1:slen),*,err=911) <a class="code" href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a></div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;<span class="keywordflow">    endif</span></div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;    <span class="keywordflow">return</span></div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;    911 <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;MOM_open_boundary.F90, parse_segment_str&quot;</span>//&amp;</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;                       <span class="stringliteral">&quot;Problem reading value from string &#39;&quot;</span>//trim(string)//<span class="stringliteral">&quot;&#39;.&quot;</span>)</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__open__boundary_8F90_source.html#l01118">mom_open_boundary::parse_segment_str()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__open__boundary_8F90_source.html#l01129">mom_open_boundary::parse_segment_str()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__open__boundary_8F90_a0793b1a5746e6ead6bff50c3a52cae90_cgraph.svg" width="548" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__open__boundary_8F90_a0793b1a5746e6ead6bff50c3a52cae90_cgraph.svg" width="512" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
@@ -391,7 +397,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aMOM__open__boundary_8F90_html_a0793b1a5746e6ead6bff50c3a52cae90"><div class="ttname"><a href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a></div><div class="ttdeci">integer function interpret_int_expr(string, imax)</div><div class="ttdef"><b>Definition:</b> <a href="MOM__open__boundary_8F90_source.html#l01203">MOM_open_boundary.F90:1203</a></div></div>
+<div class="ttc" id="aMOM__open__boundary_8F90_html_a0793b1a5746e6ead6bff50c3a52cae90"><div class="ttname"><a href="MOM__open__boundary_8F90.html#a0793b1a5746e6ead6bff50c3a52cae90">interpret_int_expr</a></div><div class="ttdeci">integer function interpret_int_expr(string, imax)</div><div class="ttdef"><b>Definition:</b> <a href="MOM__open__boundary_8F90_source.html#l01214">MOM_open_boundary.F90:1214</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/tracer/MOM_tracer_diabatic.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/tracer/MOM_tracer_diabatic.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('MOM__tracer__diabatic_8F90.html','');}
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_tracer_diabatic.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__tracer__diabatic_8F90__incl.svg" width="202" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__tracer__diabatic_8F90__incl.svg" width="212" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -117,7 +117,7 @@ Modules</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions/Subroutines</h2></td></tr>
 <tr class="memitem:ac5d57973547cc4ed3a89808d3910943e"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__tracer__diabatic.html#ac5d57973547cc4ed3a89808d3910943e">mom_tracer_diabatic::tracer_vertdiff</a> (h_old, ea, eb, dt, tr, G, GV, sfc_flux, btm_flux, btm_reservoir, sink_rate, convert_flux_in)</td></tr>
-<tr class="memdesc:ac5d57973547cc4ed3a89808d3910943e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine solves a tridiagonal equation for the final tracer concentrations after the dual-entrainments, and possibly sinking or surface and bottom sources, are applied. The sinking is implemented with an fully implicit upwind advection scheme.  <a href="namespacemom__tracer__diabatic.html#ac5d57973547cc4ed3a89808d3910943e">More...</a><br /></td></tr>
+<tr class="memdesc:ac5d57973547cc4ed3a89808d3910943e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine solves a tridiagonal equation for the final tracer concentrations after the dual-entrainments, and possibly sinking or surface and bottom sources, are applied. The sinking is implemented with an fully implicit upwind advection scheme. Alternate time units can be used for the timestep, surface and bottom fluxes and sink_rate provided they are all consistent.  <a href="namespacemom__tracer__diabatic.html#ac5d57973547cc4ed3a89808d3910943e">More...</a><br /></td></tr>
 <tr class="separator:ac5d57973547cc4ed3a89808d3910943e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4d3d4de0f2b84c15bccc5eb2f767df3"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__tracer__diabatic.html#ad4d3d4de0f2b84c15bccc5eb2f767df3">mom_tracer_diabatic::applytracerboundaryfluxesinout</a> (G, GV, Tr, dt, fluxes, h, evap_CFL_limit, minimum_forcing_depth, in_flux_optional, out_flux_optional, update_h_opt)</td></tr>
 <tr class="memdesc:ad4d3d4de0f2b84c15bccc5eb2f767df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This routine is modeled after applyBoundaryFluxesInOut in <a class="el" href="MOM__diabatic__aux_8F90.html">MOM_diabatic_aux.F90</a> NOTE: Please note that in this routine sfc_flux gets set to zero to ensure that the surface flux of the tracer does not get applied again during a subsequent call to tracer_vertdif.  <a href="namespacemom__tracer__diabatic.html#ad4d3d4de0f2b84c15bccc5eb2f767df3">More...</a><br /></td></tr>

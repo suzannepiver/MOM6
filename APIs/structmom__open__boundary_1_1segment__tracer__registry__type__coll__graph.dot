@@ -8,7 +8,7 @@ digraph "mom_open_boundary::segment_tracer_registry_type"
   Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" locked" ,fontname="Helvetica"];
   Node2 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tr" ,fontname="Helvetica"];
-  Node3 [label="mom_open_boundary::\lobc_segment_tracer_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmom__open__boundary_1_1obc__segment__tracer__type.html",tooltip="Tracer segment data structure, for putting into an array of objects, not all the same shape."];
+  Node3 [label="mom_open_boundary::\lobc_segment_tracer_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmom__open__boundary_1_1obc__segment__tracer__type.html",tooltip="Tracer on OBC segment data structure, for putting into a segment tracer registry."];
   Node2 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" is_initialized" ,fontname="Helvetica"];
   Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tr" ,fontname="Helvetica"];
   Node4 [label="tracer_type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];

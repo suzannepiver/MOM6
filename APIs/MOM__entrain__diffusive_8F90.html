@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/parameterizations/vertical/MOM_entrain_diffusive.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/vertical/MOM_entrain_diffusive.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('MOM__entrain__diffusive_8F90.html','')
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_entrain_diffusive.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__entrain__diffusive_8F90__incl.svg" width="299" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__entrain__diffusive_8F90__incl.svg" width="280" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -130,9 +130,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a13bbe9f35e3198470100375d9d016b7a"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__entrain__diffusive.html#a13bbe9f35e3198470100375d9d016b7a">mom_entrain_diffusive::f_to_ent</a> (F, h, kb, kmb, j, G, GV, CS, dsp1_ds, eakb, Ent_bl, ea, eb, do_i_in)</td></tr>
 <tr class="memdesc:a13bbe9f35e3198470100375d9d016b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates the actual entrainments (ea and eb) and the amount of surface forcing that is applied to each layer if there is no bulk mixed layer.  <a href="namespacemom__entrain__diffusive.html#a13bbe9f35e3198470100375d9d016b7a">More...</a><br /></td></tr>
 <tr class="separator:a13bbe9f35e3198470100375d9d016b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cb7f6c11941a32adc279456c4c165ad"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__entrain__diffusive.html#a4cb7f6c11941a32adc279456c4c165ad">mom_entrain_diffusive::set_ent_bl</a> (h, dtKd_int, tv, kb, kmb, do_i, G, GV, CS, j, Ent_bl, Sref, h_bl)</td></tr>
-<tr class="memdesc:a4cb7f6c11941a32adc279456c4c165ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine sets the average entrainment across each of the interfaces between buffer layers within a timestep. It also causes thin and relatively light interior layers to be entrained by the deepest buffer layer. Also find the initial coordinate potential densities (Sref) of each layer.  <a href="namespacemom__entrain__diffusive.html#a4cb7f6c11941a32adc279456c4c165ad">More...</a><br /></td></tr>
-<tr class="separator:a4cb7f6c11941a32adc279456c4c165ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a363a25e7823043bb028e920e359733b0"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__entrain__diffusive.html#a363a25e7823043bb028e920e359733b0">mom_entrain_diffusive::set_ent_bl</a> (h, dtKd_int, tv, kb, kmb, do_i, G, GV, US, CS, j, Ent_bl, Sref, h_bl)</td></tr>
+<tr class="memdesc:a363a25e7823043bb028e920e359733b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine sets the average entrainment across each of the interfaces between buffer layers within a timestep. It also causes thin and relatively light interior layers to be entrained by the deepest buffer layer. Also find the initial coordinate potential densities (Sref) of each layer.  <a href="namespacemom__entrain__diffusive.html#a363a25e7823043bb028e920e359733b0">More...</a><br /></td></tr>
+<tr class="separator:a363a25e7823043bb028e920e359733b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2d2f462912ba1e201b1b73e62a905f3"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__entrain__diffusive.html#aa2d2f462912ba1e201b1b73e62a905f3">mom_entrain_diffusive::determine_dskb</a> (h_bl, Sref, Ent_bl, E_kb, is, ie, kmb, G, GV, limit, dSkb, ddSkb_dE, dSlay, ddSlay_dE, dS_anom_lim, do_i_in)</td></tr>
 <tr class="memdesc:aa2d2f462912ba1e201b1b73e62a905f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine determines the reference density difference between the bottommost buffer layer and the first interior after the mixing between mixed and buffer layers and mixing with the layer below. Within the mixed and buffer layers, entrainment from the layer above is increased when it is necessary to keep the layers from developing a negative thickness; otherwise it equals Ent_bl. At each interface, the upward and downward fluxes average out to Ent_bl, unless entrainment by the layer below is larger than twice Ent_bl. The density difference across the first interior layer may also be returned. It could also be limited to avoid negative values or values that greatly exceed the density differences across an interface. Additionally, the partial derivatives of dSkb and dSlay with E_kb could also be returned.  <a href="namespacemom__entrain__diffusive.html#aa2d2f462912ba1e201b1b73e62a905f3">More...</a><br /></td></tr>
 <tr class="separator:aa2d2f462912ba1e201b1b73e62a905f3"><td class="memSeparator" colspan="2">&#160;</td></tr>

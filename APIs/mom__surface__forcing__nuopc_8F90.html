@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/config_src/nuopc_driver/mom_surface_forcing_nuopc.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/config_src/nuopc_driver/mom_surface_forcing_nuopc.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('mom__surface__forcing__nuopc_8F90.html
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mom_surface_forcing_nuopc.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="mom__surface__forcing__nuopc_8F90__incl.svg" width="299" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="mom__surface__forcing__nuopc_8F90__incl.svg" width="280" height="186"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -128,18 +128,18 @@ Modules</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions/Subroutines</h2></td></tr>
-<tr class="memitem:af81080e103477c19da28fa632eca7fe3"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__surface__forcing__nuopc.html#af81080e103477c19da28fa632eca7fe3">mom_surface_forcing_nuopc::convert_iob_to_fluxes</a> (IOB, fluxes, index_bounds, Time, G, US, CS, sfc_state, restore_salt, restore_temp)</td></tr>
-<tr class="memdesc:af81080e103477c19da28fa632eca7fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine translates the Ice_ocean_boundary_type into a MOM thermodynamic forcing type, including changes of units, sign conventions, and putting the fields into arrays with MOM-standard halos.  <a href="namespacemom__surface__forcing__nuopc.html#af81080e103477c19da28fa632eca7fe3">More...</a><br /></td></tr>
-<tr class="separator:af81080e103477c19da28fa632eca7fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e172486b93c1ee5fa06e979fe06992"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__surface__forcing__nuopc.html#a40e172486b93c1ee5fa06e979fe06992">mom_surface_forcing_nuopc::convert_iob_to_fluxes</a> (IOB, fluxes, index_bounds, Time, valid_time, G, US, CS, sfc_state, restore_salt, restore_temp)</td></tr>
+<tr class="memdesc:a40e172486b93c1ee5fa06e979fe06992"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine translates the Ice_ocean_boundary_type into a MOM thermodynamic forcing type, including changes of units, sign conventions, and putting the fields into arrays with MOM-standard halos.  <a href="namespacemom__surface__forcing__nuopc.html#a40e172486b93c1ee5fa06e979fe06992">More...</a><br /></td></tr>
+<tr class="separator:a40e172486b93c1ee5fa06e979fe06992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bf63d9e59835a90c3ae35236b43bb09"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__surface__forcing__nuopc.html#a0bf63d9e59835a90c3ae35236b43bb09">mom_surface_forcing_nuopc::convert_iob_to_forces</a> (IOB, forces, index_bounds, Time, G, US, CS)</td></tr>
 <tr class="memdesc:a0bf63d9e59835a90c3ae35236b43bb09"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine translates the Ice_ocean_boundary_type into a MOM mechanical forcing type, including changes of units, sign conventions, and putting the fields into arrays with MOM-standard halos.  <a href="namespacemom__surface__forcing__nuopc.html#a0bf63d9e59835a90c3ae35236b43bb09">More...</a><br /></td></tr>
 <tr class="separator:a0bf63d9e59835a90c3ae35236b43bb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f6c01b7295b315f26827fc63cf8a390"><td class="memItemLeft" align="right" valign="top">subroutine, private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__surface__forcing__nuopc.html#a9f6c01b7295b315f26827fc63cf8a390">mom_surface_forcing_nuopc::apply_flux_adjustments</a> (G, CS, Time, fluxes)</td></tr>
-<tr class="memdesc:a9f6c01b7295b315f26827fc63cf8a390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds thermodynamic flux adjustments obtained via data_override Component name is 'OCN' Available adjustments are:  <a href="namespacemom__surface__forcing__nuopc.html#a9f6c01b7295b315f26827fc63cf8a390">More...</a><br /></td></tr>
-<tr class="separator:a9f6c01b7295b315f26827fc63cf8a390"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a304d7efb5a1a92e8097672ee60020040"><td class="memItemLeft" align="right" valign="top">subroutine, private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__surface__forcing__nuopc.html#a304d7efb5a1a92e8097672ee60020040">mom_surface_forcing_nuopc::apply_force_adjustments</a> (G, CS, Time, forces)</td></tr>
-<tr class="memdesc:a304d7efb5a1a92e8097672ee60020040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds mechanical forcing adjustments obtained via data_override Component name is 'OCN' Available adjustments are:  <a href="namespacemom__surface__forcing__nuopc.html#a304d7efb5a1a92e8097672ee60020040">More...</a><br /></td></tr>
-<tr class="separator:a304d7efb5a1a92e8097672ee60020040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c8dacba7336c5efddd1e1d1ee343afa"><td class="memItemLeft" align="right" valign="top">subroutine, private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__surface__forcing__nuopc.html#a0c8dacba7336c5efddd1e1d1ee343afa">mom_surface_forcing_nuopc::apply_flux_adjustments</a> (G, US, CS, Time, fluxes)</td></tr>
+<tr class="memdesc:a0c8dacba7336c5efddd1e1d1ee343afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds thermodynamic flux adjustments obtained via data_override Component name is 'OCN' Available adjustments are:  <a href="namespacemom__surface__forcing__nuopc.html#a0c8dacba7336c5efddd1e1d1ee343afa">More...</a><br /></td></tr>
+<tr class="separator:a0c8dacba7336c5efddd1e1d1ee343afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64bce1c3695bb025594b16cd50a07744"><td class="memItemLeft" align="right" valign="top">subroutine, private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__surface__forcing__nuopc.html#a64bce1c3695bb025594b16cd50a07744">mom_surface_forcing_nuopc::apply_force_adjustments</a> (G, US, CS, Time, forces)</td></tr>
+<tr class="memdesc:a64bce1c3695bb025594b16cd50a07744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds mechanical forcing adjustments obtained via data_override Component name is 'OCN' Available adjustments are:  <a href="namespacemom__surface__forcing__nuopc.html#a64bce1c3695bb025594b16cd50a07744">More...</a><br /></td></tr>
+<tr class="separator:a64bce1c3695bb025594b16cd50a07744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e135d3baa97ffa2bd9287b8957befd5"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__surface__forcing__nuopc.html#a4e135d3baa97ffa2bd9287b8957befd5">mom_surface_forcing_nuopc::forcing_save_restart</a> (CS, G, Time, directory, time_stamped, filename_suffix)</td></tr>
 <tr class="memdesc:a4e135d3baa97ffa2bd9287b8957befd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save any restart files associated with the surface forcing.  <a href="namespacemom__surface__forcing__nuopc.html#a4e135d3baa97ffa2bd9287b8957befd5">More...</a><br /></td></tr>
 <tr class="separator:a4e135d3baa97ffa2bd9287b8957befd5"><td class="memSeparator" colspan="2">&#160;</td></tr>

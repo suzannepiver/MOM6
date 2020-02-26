@@ -139,7 +139,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:aa7c0a799de59e9cb4b5802033c74da35"><td class="mdescLeft">&#160;</td><td class="mdescRight">accumulated meridional thickness fluxes to advect tracers [H L2 ~&gt; m3 or kg]  <a href="structmom_1_1mom__control__struct.html#aa7c0a799de59e9cb4b5802033c74da35">More...</a><br /></td></tr>
 <tr class="separator:aa7c0a799de59e9cb4b5802033c74da35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa436a1001e0aa8dfb091f6398c444452"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom_1_1mom__control__struct.html#aa436a1001e0aa8dfb091f6398c444452">ssh_rint</a></td></tr>
-<tr class="memdesc:aa436a1001e0aa8dfb091f6398c444452"><td class="mdescLeft">&#160;</td><td class="mdescRight">A running time integral of the sea surface height [s m].  <a href="structmom_1_1mom__control__struct.html#aa436a1001e0aa8dfb091f6398c444452">More...</a><br /></td></tr>
+<tr class="memdesc:aa436a1001e0aa8dfb091f6398c444452"><td class="mdescLeft">&#160;</td><td class="mdescRight">A running time integral of the sea surface height [T m ~&gt; s m].  <a href="structmom_1_1mom__control__struct.html#aa436a1001e0aa8dfb091f6398c444452">More...</a><br /></td></tr>
 <tr class="separator:aa436a1001e0aa8dfb091f6398c444452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4814ada2b387f4449709b825ce56f8e4"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom_1_1mom__control__struct.html#a4814ada2b387f4449709b825ce56f8e4">ave_ssh_ibc</a></td></tr>
 <tr class="memdesc:a4814ada2b387f4449709b825ce56f8e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">time-averaged (over a forcing time step) sea surface height with a correction for the inverse barometer [m]  <a href="structmom_1_1mom__control__struct.html#a4814ada2b387f4449709b825ce56f8e4">More...</a><br /></td></tr>
@@ -151,10 +151,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a4a54cf3cefeab1fcaee5ed33bd7d38ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">active mixed layer depth [m]  <a href="structmom_1_1mom__control__struct.html#a4a54cf3cefeab1fcaee5ed33bd7d38ee">More...</a><br /></td></tr>
 <tr class="separator:a4a54cf3cefeab1fcaee5ed33bd7d38ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d2568366dbc4e291463a9e85887fc45"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom_1_1mom__control__struct.html#a8d2568366dbc4e291463a9e85887fc45">time_in_cycle</a></td></tr>
-<tr class="memdesc:a8d2568366dbc4e291463a9e85887fc45"><td class="mdescLeft">&#160;</td><td class="mdescRight">The running time of the current time-stepping cycle in calls that step the dynamics, and also the length of the time integral of ssh_rint [s].  <a href="structmom_1_1mom__control__struct.html#a8d2568366dbc4e291463a9e85887fc45">More...</a><br /></td></tr>
+<tr class="memdesc:a8d2568366dbc4e291463a9e85887fc45"><td class="mdescLeft">&#160;</td><td class="mdescRight">The running time of the current time-stepping cycle in calls that step the dynamics, and also the length of the time integral of ssh_rint [T ~&gt; s].  <a href="structmom_1_1mom__control__struct.html#a8d2568366dbc4e291463a9e85887fc45">More...</a><br /></td></tr>
 <tr class="separator:a8d2568366dbc4e291463a9e85887fc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b15fb018eb1d35d2b91235388d95f8a"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom_1_1mom__control__struct.html#a9b15fb018eb1d35d2b91235388d95f8a">time_in_thermo_cycle</a></td></tr>
-<tr class="memdesc:a9b15fb018eb1d35d2b91235388d95f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The running time of the current time-stepping cycle in calls that step the thermodynamics [s].  <a href="structmom_1_1mom__control__struct.html#a9b15fb018eb1d35d2b91235388d95f8a">More...</a><br /></td></tr>
+<tr class="memdesc:a9b15fb018eb1d35d2b91235388d95f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The running time of the current time-stepping cycle in calls that step the thermodynamics [T ~&gt; s].  <a href="structmom_1_1mom__control__struct.html#a9b15fb018eb1d35d2b91235388d95f8a">More...</a><br /></td></tr>
 <tr class="separator:a9b15fb018eb1d35d2b91235388d95f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae53622b9110ca53e50562ee6fd8b51e4"><td class="memItemLeft" align="right" valign="top">type(ocean_grid_type)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom_1_1mom__control__struct.html#ae53622b9110ca53e50562ee6fd8b51e4">g</a></td></tr>
 <tr class="memdesc:ae53622b9110ca53e50562ee6fd8b51e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure containing metrics and grid info  <a href="structmom_1_1mom__control__struct.html#ae53622b9110ca53e50562ee6fd8b51e4">More...</a><br /></td></tr>
@@ -169,13 +169,13 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:ab3fc3759e2063c33100069eae737b0a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure containing pointers to available thermodynamic fields  <a href="structmom_1_1mom__control__struct.html#ab3fc3759e2063c33100069eae737b0a0">More...</a><br /></td></tr>
 <tr class="separator:ab3fc3759e2063c33100069eae737b0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7873e23a6f09e8cc5dcda4af06b0d37c"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom_1_1mom__control__struct.html#a7873e23a6f09e8cc5dcda4af06b0d37c">t_dyn_rel_adv</a></td></tr>
-<tr class="memdesc:a7873e23a6f09e8cc5dcda4af06b0d37c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time of the dynamics relative to tracer advection and lateral mixing (in seconds), or equivalently the elapsed time since advectively updating the tracers. t_dyn_rel_adv is invariably positive and may span multiple coupling timesteps.  <a href="structmom_1_1mom__control__struct.html#a7873e23a6f09e8cc5dcda4af06b0d37c">More...</a><br /></td></tr>
+<tr class="memdesc:a7873e23a6f09e8cc5dcda4af06b0d37c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time of the dynamics relative to tracer advection and lateral mixing [T ~&gt; s], or equivalently the elapsed time since advectively updating the tracers. t_dyn_rel_adv is invariably positive and may span multiple coupling timesteps.  <a href="structmom_1_1mom__control__struct.html#a7873e23a6f09e8cc5dcda4af06b0d37c">More...</a><br /></td></tr>
 <tr class="separator:a7873e23a6f09e8cc5dcda4af06b0d37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6157bdea12cdce1a886c41ff5862624d"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom_1_1mom__control__struct.html#a6157bdea12cdce1a886c41ff5862624d">t_dyn_rel_thermo</a></td></tr>
-<tr class="memdesc:a6157bdea12cdce1a886c41ff5862624d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time of the dynamics relative to diabatic processes and remapping (in seconds). t_dyn_rel_thermo can be negative or positive depending on whether the diabatic processes are applied before or after the dynamics and may span multiple coupling timesteps.  <a href="structmom_1_1mom__control__struct.html#a6157bdea12cdce1a886c41ff5862624d">More...</a><br /></td></tr>
+<tr class="memdesc:a6157bdea12cdce1a886c41ff5862624d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time of the dynamics relative to diabatic processes and remapping [T ~&gt; s]. t_dyn_rel_thermo can be negative or positive depending on whether the diabatic processes are applied before or after the dynamics and may span multiple coupling timesteps.  <a href="structmom_1_1mom__control__struct.html#a6157bdea12cdce1a886c41ff5862624d">More...</a><br /></td></tr>
 <tr class="separator:a6157bdea12cdce1a886c41ff5862624d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc1b65ca9eeed960dc98034e5a5100fc"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom_1_1mom__control__struct.html#afc1b65ca9eeed960dc98034e5a5100fc">t_dyn_rel_diag</a></td></tr>
-<tr class="memdesc:afc1b65ca9eeed960dc98034e5a5100fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time of the diagnostics relative to diabatic processes and remapping (in seconds). t_dyn_rel_diag is always positive, since the diagnostics must lag.  <a href="structmom_1_1mom__control__struct.html#afc1b65ca9eeed960dc98034e5a5100fc">More...</a><br /></td></tr>
+<tr class="memdesc:afc1b65ca9eeed960dc98034e5a5100fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time of the diagnostics relative to diabatic processes and remapping [T ~&gt; s]. t_dyn_rel_diag is always positive, since the diagnostics must lag.  <a href="structmom_1_1mom__control__struct.html#afc1b65ca9eeed960dc98034e5a5100fc">More...</a><br /></td></tr>
 <tr class="separator:afc1b65ca9eeed960dc98034e5a5100fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0961c208122bc57d05c720910801c58b"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom_1_1mom__control__struct.html#a0961c208122bc57d05c720910801c58b">ndyn_per_adv</a> = 0</td></tr>
 <tr class="memdesc:a0961c208122bc57d05c720910801c58b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of calls to dynamics since the last call to advection.  <a href="structmom_1_1mom__control__struct.html#a0961c208122bc57d05c720910801c58b">More...</a><br /></td></tr>
@@ -205,10 +205,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:abbd22c4b35df9fa53a98803a5e9733e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to the ocean clock  <a href="structmom_1_1mom__control__struct.html#abbd22c4b35df9fa53a98803a5e9733e4">More...</a><br /></td></tr>
 <tr class="separator:abbd22c4b35df9fa53a98803a5e9733e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0ffc40dfa1896668a7f6a4ef184d23b"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom_1_1mom__control__struct.html#aa0ffc40dfa1896668a7f6a4ef184d23b">dt</a></td></tr>
-<tr class="memdesc:aa0ffc40dfa1896668a7f6a4ef184d23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">(baroclinic) dynamics time step [s]  <a href="structmom_1_1mom__control__struct.html#aa0ffc40dfa1896668a7f6a4ef184d23b">More...</a><br /></td></tr>
+<tr class="memdesc:aa0ffc40dfa1896668a7f6a4ef184d23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">(baroclinic) dynamics time step [T ~&gt; s]  <a href="structmom_1_1mom__control__struct.html#aa0ffc40dfa1896668a7f6a4ef184d23b">More...</a><br /></td></tr>
 <tr class="separator:aa0ffc40dfa1896668a7f6a4ef184d23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ab46a5df0a650fd8f06f46a3d6245a5"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom_1_1mom__control__struct.html#a2ab46a5df0a650fd8f06f46a3d6245a5">dt_therm</a></td></tr>
-<tr class="memdesc:a2ab46a5df0a650fd8f06f46a3d6245a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">thermodynamics time step [s]  <a href="structmom_1_1mom__control__struct.html#a2ab46a5df0a650fd8f06f46a3d6245a5">More...</a><br /></td></tr>
+<tr class="memdesc:a2ab46a5df0a650fd8f06f46a3d6245a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">thermodynamics time step [T ~&gt; s]  <a href="structmom_1_1mom__control__struct.html#a2ab46a5df0a650fd8f06f46a3d6245a5">More...</a><br /></td></tr>
 <tr class="separator:a2ab46a5df0a650fd8f06f46a3d6245a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac9d8ffe86c453a7fe640d49de48f26d"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom_1_1mom__control__struct.html#aac9d8ffe86c453a7fe640d49de48f26d">thermo_spans_coupling</a></td></tr>
 <tr class="memdesc:aac9d8ffe86c453a7fe640d49de48f26d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, thermodynamic and tracer time steps can span multiple coupled time steps.  <a href="structmom_1_1mom__control__struct.html#aac9d8ffe86c453a7fe640d49de48f26d">More...</a><br /></td></tr>
@@ -868,10 +868,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>(baroclinic) dynamics time step [s] </p>
+<p>(baroclinic) dynamics time step [T ~&gt; s] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM_8F90_source.html#l00217">217</a> of file <a class="el" href="MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keywordtype">  real</span>    :: dt<span class="comment">                      !&lt; (baroclinic) dynamics time step [s]</span></div>
+<div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keywordtype">  real</span>    :: dt<span class="comment">                      !&lt; (baroclinic) dynamics time step [T ~&gt; s]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -887,10 +887,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>thermodynamics time step [s] </p>
+<p>thermodynamics time step [T ~&gt; s] </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM_8F90_source.html#l00218">218</a> of file <a class="el" href="MOM_8F90_source.html">MOM.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="keywordtype">  real</span>    :: dt_therm<span class="comment">                !&lt; thermodynamics time step [s]</span></div>
+<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="keywordtype">  real</span>    :: dt_therm<span class="comment">                !&lt; thermodynamics time step [T ~&gt; s]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1673,7 +1673,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A running time integral of the sea surface height [s m]. </p>
+<p>A running time integral of the sea surface height [T m ~&gt; s m]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM_8F90_source.html">MOM.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: ssh_rint</div>
@@ -1729,7 +1729,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The time of the dynamics relative to tracer advection and lateral mixing (in seconds), or equivalently the elapsed time since advectively updating the tracers. t_dyn_rel_adv is invariably positive and may span multiple coupling timesteps. </p>
+<p>The time of the dynamics relative to tracer advection and lateral mixing [T ~&gt; s], or equivalently the elapsed time since advectively updating the tracers. t_dyn_rel_adv is invariably positive and may span multiple coupling timesteps. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM_8F90_source.html#l00188">188</a> of file <a class="el" href="MOM_8F90_source.html">MOM.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keywordtype">  real</span> :: t_dyn_rel_adv<span class="comment"> !&lt; The time of the dynamics relative to tracer advection and lateral mixing</span></div>
@@ -1748,7 +1748,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The time of the diagnostics relative to diabatic processes and remapping (in seconds). t_dyn_rel_diag is always positive, since the diagnostics must lag. </p>
+<p>The time of the diagnostics relative to diabatic processes and remapping [T ~&gt; s]. t_dyn_rel_diag is always positive, since the diagnostics must lag. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM_8F90_source.html#l00195">195</a> of file <a class="el" href="MOM_8F90_source.html">MOM.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="keywordtype">  real</span> :: t_dyn_rel_diag<span class="comment"> !&lt; The time of the diagnostics relative to diabatic processes and remapping</span></div>
@@ -1767,7 +1767,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The time of the dynamics relative to diabatic processes and remapping (in seconds). t_dyn_rel_thermo can be negative or positive depending on whether the diabatic processes are applied before or after the dynamics and may span multiple coupling timesteps. </p>
+<p>The time of the dynamics relative to diabatic processes and remapping [T ~&gt; s]. t_dyn_rel_thermo can be negative or positive depending on whether the diabatic processes are applied before or after the dynamics and may span multiple coupling timesteps. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM_8F90_source.html#l00191">191</a> of file <a class="el" href="MOM_8F90_source.html">MOM.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="keywordtype">  real</span> :: t_dyn_rel_thermo<span class="comment">  !&lt; The time of the dynamics relative to diabatic  processes and remapping</span></div>
@@ -1899,7 +1899,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The running time of the current time-stepping cycle in calls that step the dynamics, and also the length of the time integral of ssh_rint [s]. </p>
+<p>The running time of the current time-stepping cycle in calls that step the dynamics, and also the length of the time integral of ssh_rint [T ~&gt; s]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM_8F90_source.html#l00176">176</a> of file <a class="el" href="MOM_8F90_source.html">MOM.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keywordtype">  real</span> :: time_in_cycle<span class="comment"> !&lt; The running time of the current time-stepping cycle</span></div>
@@ -1918,7 +1918,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The running time of the current time-stepping cycle in calls that step the thermodynamics [s]. </p>
+<p>The running time of the current time-stepping cycle in calls that step the thermodynamics [T ~&gt; s]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM_8F90_source.html#l00179">179</a> of file <a class="el" href="MOM_8F90_source.html">MOM.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keywordtype">  real</span> :: time_in_thermo_cycle<span class="comment"> !&lt; The running time of the current time-stepping</span></div>
@@ -2367,7 +2367,7 @@ Public variables and constants</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/core/<a class="el" href="MOM_8F90_source.html">MOM.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/core/<a class="el" href="MOM_8F90_source.html">MOM.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

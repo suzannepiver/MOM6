@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 809;
+var viewWidth = 765;
 var viewHeight = 66;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,15 +54,15 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>baroclinic_zone_initialization::baroclinic_zone_init_temperature_salinity</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-62 805,-62 805,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-62 761,-62 761,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Initialization of temperature and salinity with the baroclinic zone initial conditions.">
-<polygon fill="#bfbfbf" stroke="#000000" points="0,-8.5 0,-49.5 177,-49.5 177,-8.5 0,-8.5"/>
+<polygon fill="#bfbfbf" stroke="#000000" points="0,-8.5 0,-49.5 165,-49.5 165,-8.5 0,-8.5"/>
 <text text-anchor="start" x="8" y="-37.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">baroclinic_zone_initialization</text>
 <text text-anchor="start" x="8" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::baroclinic_zone_init_temperature</text>
-<text text-anchor="middle" x="88.5" y="-15.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_salinity</text>
+<text text-anchor="middle" x="82.5" y="-15.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_salinity</text>
 </a>
 </g>
 </g>
@@ -70,77 +70,77 @@ var sectionId = 'dynsection-0';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacebaroclinic__zone__initialization.html#ae61a49364522c0a98058b170932974dc" target="_top" xlink:title="Reads the parameters unique to this module.">
-<polygon fill="#ffffff" stroke="#000000" points="213,-14 213,-44 364,-44 364,-14 213,-14"/>
-<text text-anchor="start" x="221" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">baroclinic_zone_initialization</text>
-<text text-anchor="middle" x="288.5" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::bcz_params</text>
+<polygon fill="#ffffff" stroke="#000000" points="201,-14 201,-44 341,-44 341,-14 201,-14"/>
+<text text-anchor="start" x="209" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">baroclinic_zone_initialization</text>
+<text text-anchor="middle" x="271" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::bcz_params</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M177.0963,-29C185.5645,-29 194.1432,-29 202.5853,-29"/>
-<polygon fill="#191970" stroke="#191970" points="202.7984,-32.5001 212.7984,-29 202.7983,-25.5001 202.7984,-32.5001"/>
+<path fill="none" stroke="#191970" d="M165.1788,-29C173.6181,-29 182.1829,-29 190.5973,-29"/>
+<polygon fill="#191970" stroke="#191970" points="190.7677,-32.5001 200.7677,-29 190.7677,-25.5001 190.7677,-32.5001"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__file__parser.html#a0d01b9a66f5ac12b657c00f1295351bb" target="_top" xlink:title="Remove the lowest level of recursion from the active block name.">
-<polygon fill="#ffffff" stroke="#000000" points="400,-38.5 400,-57.5 597,-57.5 597,-38.5 400,-38.5"/>
-<text text-anchor="middle" x="498.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_file_parser::closeparameterblock</text>
+<polygon fill="#ffffff" stroke="#000000" points="377,-38.5 377,-57.5 562,-57.5 562,-38.5 377,-38.5"/>
+<text text-anchor="middle" x="469.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_file_parser::closeparameterblock</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M364.0181,-35.8326C372.3852,-36.5896 381.0241,-37.3712 389.6977,-38.156"/>
-<polygon fill="#191970" stroke="#191970" points="389.6066,-41.662 399.8814,-39.0774 390.2375,-34.6904 389.6066,-41.662"/>
+<path fill="none" stroke="#191970" d="M341.263,-35.7254C349.5196,-36.5157 358.0695,-37.3341 366.6553,-38.1559"/>
+<polygon fill="#191970" stroke="#191970" points="366.4474,-41.6519 376.7354,-39.1208 367.1144,-34.6838 366.4474,-41.6519"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__file__parser.html#a363628fcd8540de780ebeacf24012229" target="_top" xlink:title="Tags blockName onto the end of the active parameter block name.">
-<polygon fill="#ffffff" stroke="#000000" points="400,-.5 400,-19.5 597,-19.5 597,-.5 400,-.5"/>
-<text text-anchor="middle" x="498.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_file_parser::openparameterblock</text>
+<polygon fill="#ffffff" stroke="#000000" points="378.5,-.5 378.5,-19.5 560.5,-19.5 560.5,-.5 378.5,-.5"/>
+<text text-anchor="middle" x="469.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_file_parser::openparameterblock</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M364.0181,-22.1674C372.3852,-21.4104 381.0241,-20.6288 389.6977,-19.844"/>
-<polygon fill="#191970" stroke="#191970" points="390.2375,-23.3096 399.8814,-18.9226 389.6066,-16.338 390.2375,-23.3096"/>
+<path fill="none" stroke="#191970" d="M341.263,-22.2746C350.1086,-21.4279 359.2909,-20.549 368.4933,-19.6681"/>
+<polygon fill="#191970" stroke="#191970" points="368.8508,-23.15 378.4718,-18.713 368.1838,-16.1819 368.8508,-23.15"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__file__parser.html#a73b11b969d303b1fc0ba5235c812fd05" target="_top" xlink:title="Truncates block name (shallower level of parameter block)">
-<polygon fill="#ffffff" stroke="#000000" points="635,-38.5 635,-57.5 799,-57.5 799,-38.5 635,-38.5"/>
-<text text-anchor="middle" x="717" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_file_parser::popblocklevel</text>
+<polygon fill="#ffffff" stroke="#000000" points="600.5,-38.5 600.5,-57.5 754.5,-57.5 754.5,-38.5 600.5,-38.5"/>
+<text text-anchor="middle" x="677.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_file_parser::popblocklevel</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M597.2024,-48C606.3232,-48 615.5431,-48 624.6044,-48"/>
-<polygon fill="#191970" stroke="#191970" points="624.7539,-51.5001 634.7539,-48 624.7539,-44.5001 624.7539,-51.5001"/>
+<path fill="none" stroke="#191970" d="M562.2462,-48C571.6339,-48 581.1455,-48 590.4699,-48"/>
+<polygon fill="#191970" stroke="#191970" points="590.4999,-51.5001 600.4999,-48 590.4998,-44.5001 590.4999,-51.5001"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="namespacemom__file__parser.html#a58777b0faf747d59a793b4e238919dc6" target="_top" xlink:title="Extends block name (deeper level of parameter block)">
-<polygon fill="#ffffff" stroke="#000000" points="633,-.5 633,-19.5 801,-19.5 801,-.5 633,-.5"/>
-<text text-anchor="middle" x="717" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_file_parser::pushblocklevel</text>
+<polygon fill="#ffffff" stroke="#000000" points="598,-.5 598,-19.5 757,-19.5 757,-.5 598,-.5"/>
+<text text-anchor="middle" x="677.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_file_parser::pushblocklevel</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M597.2024,-10C605.6447,-10 614.1718,-10 622.5795,-10"/>
-<polygon fill="#191970" stroke="#191970" points="622.7621,-13.5001 632.7621,-10 622.7621,-6.5001 622.7621,-13.5001"/>
+<path fill="none" stroke="#191970" d="M560.7318,-10C569.6936,-10 578.7837,-10 587.7307,-10"/>
+<polygon fill="#191970" stroke="#191970" points="587.7568,-13.5001 597.7567,-10 587.7567,-6.5001 587.7568,-13.5001"/>
 </g>
 </g>
 </svg>

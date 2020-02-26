@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('structmom__wave__structure_1_1wave__st
 </div><div class="dynheader">
 Collaboration diagram for mom_wave_structure::wave_structure_cs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__wave__structure_1_1wave__structure__cs__coll__graph.svg" width="364" height="274"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__wave__structure_1_1wave__structure__cs__coll__graph.svg" width="343" height="274"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -121,10 +121,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a46258465c77a273a400396ffa0ac74e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical structure of horizontal velocity (normalized) [m s-1].  <a href="structmom__wave__structure_1_1wave__structure__cs.html#a46258465c77a273a400396ffa0ac74e7">More...</a><br /></td></tr>
 <tr class="separator:a46258465c77a273a400396ffa0ac74e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71fe8104813307123ec81d829c316cdc"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__wave__structure_1_1wave__structure__cs.html#a71fe8104813307123ec81d829c316cdc">w_profile</a></td></tr>
-<tr class="memdesc:a71fe8104813307123ec81d829c316cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical profile of w_hat(z), where w(x,y,z,t) = w_hat(z)*exp(i(kx+ly-freq*t)) is the full time- varying vertical velocity with w_hat(z) = W0*w_strct(z) [m s-1].  <a href="structmom__wave__structure_1_1wave__structure__cs.html#a71fe8104813307123ec81d829c316cdc">More...</a><br /></td></tr>
+<tr class="memdesc:a71fe8104813307123ec81d829c316cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical profile of w_hat(z), where w(x,y,z,t) = w_hat(z)*exp(i(kx+ly-freq*t)) is the full time- varying vertical velocity with w_hat(z) = W0*w_strct(z) [Z T-1 ~&gt; m s-1].  <a href="structmom__wave__structure_1_1wave__structure__cs.html#a71fe8104813307123ec81d829c316cdc">More...</a><br /></td></tr>
 <tr class="separator:a71fe8104813307123ec81d829c316cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad387dd3c15d702fe441871d1388634d4"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__wave__structure_1_1wave__structure__cs.html#ad387dd3c15d702fe441871d1388634d4">uavg_profile</a></td></tr>
-<tr class="memdesc:ad387dd3c15d702fe441871d1388634d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical profile of the magnitude of horizontal velocity, (u^2+v^2)^0.5, averaged over a period [m s-1].  <a href="structmom__wave__structure_1_1wave__structure__cs.html#ad387dd3c15d702fe441871d1388634d4">More...</a><br /></td></tr>
+<tr class="memdesc:ad387dd3c15d702fe441871d1388634d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical profile of the magnitude of horizontal velocity, (u^2+v^2)^0.5, averaged over a period [L T-1 ~&gt; m s-1].  <a href="structmom__wave__structure_1_1wave__structure__cs.html#ad387dd3c15d702fe441871d1388634d4">More...</a><br /></td></tr>
 <tr class="separator:ad387dd3c15d702fe441871d1388634d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a344529cfb88e59f474290e27e64feb96"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__wave__structure_1_1wave__structure__cs.html#a344529cfb88e59f474290e27e64feb96">z_depths</a></td></tr>
 <tr class="memdesc:a344529cfb88e59f474290e27e64feb96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depths of layer interfaces [m].  <a href="structmom__wave__structure_1_1wave__structure__cs.html#a344529cfb88e59f474290e27e64feb96">More...</a><br /></td></tr>
@@ -269,7 +269,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Vertical profile of the magnitude of horizontal velocity, (u^2+v^2)^0.5, averaged over a period [m s-1]. </p>
+<p>Vertical profile of the magnitude of horizontal velocity, (u^2+v^2)^0.5, averaged over a period [L T-1 ~&gt; m s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__wave__structure_8F90_source.html#l00047">47</a> of file <a class="el" href="MOM__wave__structure_8F90_source.html">MOM_wave_structure.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: Uavg_profile</div>
@@ -288,7 +288,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Vertical profile of w_hat(z), where w(x,y,z,t) = w_hat(z)*exp(i(kx+ly-freq*t)) is the full time- varying vertical velocity with w_hat(z) = W0*w_strct(z) [m s-1]. </p>
+<p>Vertical profile of w_hat(z), where w(x,y,z,t) = w_hat(z)*exp(i(kx+ly-freq*t)) is the full time- varying vertical velocity with w_hat(z) = W0*w_strct(z) [Z T-1 ~&gt; m s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__wave__structure_8F90_source.html#l00043">43</a> of file <a class="el" href="MOM__wave__structure_8F90_source.html">MOM_wave_structure.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: W_profile</div>
@@ -334,7 +334,7 @@ Public variables and constants</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/diagnostics/<a class="el" href="MOM__wave__structure_8F90_source.html">MOM_wave_structure.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/diagnostics/<a class="el" href="MOM__wave__structure_8F90_source.html">MOM_wave_structure.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

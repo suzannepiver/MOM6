@@ -136,7 +136,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:afa5d30170ecbd6ec50738fa9f12eb956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local j of source location (computational)  <a href="structoil__tracer_1_1oil__tracer__cs.html#afa5d30170ecbd6ec50738fa9f12eb956">More...</a><br /></td></tr>
 <tr class="separator:afa5d30170ecbd6ec50738fa9f12eb956"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65b170eb3dc9190cc003b759757d31f7"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoil__tracer_1_1oil__tracer__cs.html#a65b170eb3dc9190cc003b759757d31f7">oil_source_rate</a></td></tr>
-<tr class="memdesc:a65b170eb3dc9190cc003b759757d31f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rate of oil injection [kg s-1].  <a href="structoil__tracer_1_1oil__tracer__cs.html#a65b170eb3dc9190cc003b759757d31f7">More...</a><br /></td></tr>
+<tr class="memdesc:a65b170eb3dc9190cc003b759757d31f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rate of oil injection [kg T-1 ~&gt; kg s-1].  <a href="structoil__tracer_1_1oil__tracer__cs.html#a65b170eb3dc9190cc003b759757d31f7">More...</a><br /></td></tr>
 <tr class="separator:a65b170eb3dc9190cc003b759757d31f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac44d97a388e116c6679a55b8e3f00699"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoil__tracer_1_1oil__tracer__cs.html#ac44d97a388e116c6679a55b8e3f00699">oil_start_year</a></td></tr>
 <tr class="memdesc:ac44d97a388e116c6679a55b8e3f00699"><td class="mdescLeft">&#160;</td><td class="mdescRight">The year in which tracers start aging, or at which the surface value equals young_val, in years.  <a href="structoil__tracer_1_1oil__tracer__cs.html#ac44d97a388e116c6679a55b8e3f00699">More...</a><br /></td></tr>
@@ -169,7 +169,7 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a7f724027d4521b12740e4f61213accf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decay time scale of oil [days].  <a href="structoil__tracer_1_1oil__tracer__cs.html#a7f724027d4521b12740e4f61213accf3">More...</a><br /></td></tr>
 <tr class="separator:a7f724027d4521b12740e4f61213accf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41b187837656466a85f4ccb40ae790e5"><td class="memItemLeft" align="right" valign="top">real, dimension(<a class="el" href="namespaceoil__tracer.html#a7d9cefa818e16dd56e1051c3bcff940f">ntr_max</a>)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoil__tracer_1_1oil__tracer__cs.html#a41b187837656466a85f4ccb40ae790e5">oil_decay_rate</a></td></tr>
-<tr class="memdesc:a41b187837656466a85f4ccb40ae790e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decay rate of oil [s-1] calculated from oil_decay_days.  <a href="structoil__tracer_1_1oil__tracer__cs.html#a41b187837656466a85f4ccb40ae790e5">More...</a><br /></td></tr>
+<tr class="memdesc:a41b187837656466a85f4ccb40ae790e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decay rate of oil [T-1 ~&gt; s-1] calculated from oil_decay_days.  <a href="structoil__tracer_1_1oil__tracer__cs.html#a41b187837656466a85f4ccb40ae790e5">More...</a><br /></td></tr>
 <tr class="separator:a41b187837656466a85f4ccb40ae790e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc1bbe9bec8ccb1069fabbba51c0c2a1"><td class="memItemLeft" align="right" valign="top">integer, dimension(<a class="el" href="namespaceoil__tracer.html#a7d9cefa818e16dd56e1051c3bcff940f">ntr_max</a>)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoil__tracer_1_1oil__tracer__cs.html#adc1bbe9bec8ccb1069fabbba51c0c2a1">oil_source_k</a></td></tr>
 <tr class="memdesc:adc1bbe9bec8ccb1069fabbba51c0c2a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Layer of source.  <a href="structoil__tracer_1_1oil__tracer__cs.html#adc1bbe9bec8ccb1069fabbba51c0c2a1">More...</a><br /></td></tr>
@@ -355,10 +355,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Decay rate of oil [s-1] calculated from oil_decay_days. </p>
+<p>Decay rate of oil [T-1 ~&gt; s-1] calculated from oil_decay_days. </p>
 
 <p class="definition">Definition at line <a class="el" href="oil__tracer_8F90_source.html#l00061">61</a> of file <a class="el" href="oil__tracer_8F90_source.html">oil_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(NTR_MAX)</span> :: oil_decay_rate<span class="comment">  !&lt; Decay rate of oil [s-1] calculated from oil_decay_days</span></div>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(NTR_MAX)</span> :: oil_decay_rate<span class="comment">  !&lt; Decay rate of oil [T-1 ~&gt; s-1] calculated from oil_decay_days</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -507,10 +507,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Rate of oil injection [kg s-1]. </p>
+<p>Rate of oil injection [kg T-1 ~&gt; kg s-1]. </p>
 
 <p class="definition">Definition at line <a class="el" href="oil__tracer_8F90_source.html#l00048">48</a> of file <a class="el" href="oil__tracer_8F90_source.html">oil_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">  real</span> :: oil_source_rate<span class="comment">     !&lt; Rate of oil injection [kg s-1]</span></div>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">  real</span> :: oil_source_rate<span class="comment">     !&lt; Rate of oil injection [kg T-1 ~&gt; kg s-1]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -686,7 +686,7 @@ Public variables and constants</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/tracer/<a class="el" href="oil__tracer_8F90_source.html">oil_tracer.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/tracer/<a class="el" href="oil__tracer_8F90_source.html">oil_tracer.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

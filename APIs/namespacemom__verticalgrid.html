@@ -124,9 +124,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a908fc7025e6cf5d60885dbb7565093cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="version__variable_8h.html#acda997fe1761de4c6bca0f27dc786964">character</a>(len=48) function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__verticalgrid.html#a908fc7025e6cf5d60885dbb7565093cd">get_tr_flux_units</a> (GV, tr_units, tr_vol_conc_units, tr_mass_conc_units)</td></tr>
 <tr class="memdesc:a908fc7025e6cf5d60885dbb7565093cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the model's tracer flux units.  <a href="namespacemom__verticalgrid.html#a908fc7025e6cf5d60885dbb7565093cd">More...</a><br /></td></tr>
 <tr class="separator:a908fc7025e6cf5d60885dbb7565093cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca0b871025638d55736e051a43906719"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__verticalgrid.html#aca0b871025638d55736e051a43906719">setverticalgridaxes</a> (Rlay, GV)</td></tr>
-<tr class="memdesc:aca0b871025638d55736e051a43906719"><td class="mdescLeft">&#160;</td><td class="mdescRight">This sets the coordinate data for the "layer mode" of the isopycnal model.  <a href="namespacemom__verticalgrid.html#aca0b871025638d55736e051a43906719">More...</a><br /></td></tr>
-<tr class="separator:aca0b871025638d55736e051a43906719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de628611339a946b2b4a1daa7efd181"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__verticalgrid.html#a0de628611339a946b2b4a1daa7efd181">setverticalgridaxes</a> (Rlay, GV, scale)</td></tr>
+<tr class="memdesc:a0de628611339a946b2b4a1daa7efd181"><td class="mdescLeft">&#160;</td><td class="mdescRight">This sets the coordinate data for the "layer mode" of the isopycnal model.  <a href="namespacemom__verticalgrid.html#a0de628611339a946b2b4a1daa7efd181">More...</a><br /></td></tr>
+<tr class="separator:a0de628611339a946b2b4a1daa7efd181"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64fe319acba142cde9c35f21257ff64f"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__verticalgrid.html#a64fe319acba142cde9c35f21257ff64f">verticalgridend</a> (GV)</td></tr>
 <tr class="memdesc:a64fe319acba142cde9c35f21257ff64f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocates the model's vertical grid structure.  <a href="namespacemom__verticalgrid.html#a64fe319acba142cde9c35f21257ff64f">More...</a><br /></td></tr>
 <tr class="separator:a64fe319acba142cde9c35f21257ff64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,10 +156,10 @@ Functions/Subroutines</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00174">174</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">intent(inout)</span> :: GV<span class="comment">   !&lt; The ocean&#39;s vertical grid structure</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  gv%m_to_H_restart = gv%m_to_H</div>
+<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00183">183</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">intent(inout)</span> :: GV<span class="comment">   !&lt; The ocean&#39;s vertical grid structure</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  gv%m_to_H_restart = gv%m_to_H</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -188,20 +188,20 @@ Functions/Subroutines</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00196">196</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordtype">character(len=48)</span>                   :: get_flux_units<span class="comment"> !&lt; The thickness flux units</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">intent(in)</span> :: GV<span class="comment">   !&lt; The ocean&#39;s vertical grid structure</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="comment">!   This subroutine returns the appropriate units for thickness fluxes,</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="comment">! depending on whether the model is Boussinesq or not and the scaling for</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="comment">! the vertical thickness.</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordflow">if</span> (gv%Boussinesq) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    get_flux_units = <span class="stringliteral">&quot;m3 s-1&quot;</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    get_flux_units = <span class="stringliteral">&quot;kg s-1&quot;</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keywordflow">  endif</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00205">205</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordtype">character(len=48)</span>                   :: get_flux_units<span class="comment"> !&lt; The thickness flux units</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">intent(in)</span> :: GV<span class="comment">   !&lt; The ocean&#39;s vertical grid structure</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="comment">!   This subroutine returns the appropriate units for thickness fluxes,</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="comment">! depending on whether the model is Boussinesq or not and the scaling for</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="comment">! the vertical thickness.</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keywordflow">if</span> (gv%Boussinesq) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    get_flux_units = <span class="stringliteral">&quot;m3 s-1&quot;</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    get_flux_units = <span class="stringliteral">&quot;kg s-1&quot;</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="keywordflow">  endif</span></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="MOM__dynamics__split__RK2_8F90_source.html#l00963">mom_dynamics_split_rk2::initialize_dyn_split_rk2()</a>, <a class="el" href="MOM__dynamics__unsplit_8F90_source.html#l00568">mom_dynamics_unsplit::initialize_dyn_unsplit()</a>, <a class="el" href="MOM__dynamics__unsplit__RK2_8F90_source.html#l00513">mom_dynamics_unsplit_rk2::initialize_dyn_unsplit_rk2()</a>, <a class="el" href="MOM__dynamics__split__RK2_8F90_source.html#l00882">mom_dynamics_split_rk2::register_restarts_dyn_split_rk2()</a>, <a class="el" href="MOM__dynamics__unsplit_8F90_source.html#l00526">mom_dynamics_unsplit::register_restarts_dyn_unsplit()</a>, <a class="el" href="MOM__dynamics__unsplit__RK2_8F90_source.html#l00468">mom_dynamics_unsplit_rk2::register_restarts_dyn_unsplit_rk2()</a>, and <a class="el" href="MOM_8F90_source.html#l02588">mom::set_restart_fields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__dynamics__split__RK2_8F90_source.html#l00958">mom_dynamics_split_rk2::initialize_dyn_split_rk2()</a>, <a class="el" href="MOM__dynamics__unsplit_8F90_source.html#l00565">mom_dynamics_unsplit::initialize_dyn_unsplit()</a>, <a class="el" href="MOM__dynamics__unsplit__RK2_8F90_source.html#l00510">mom_dynamics_unsplit_rk2::initialize_dyn_unsplit_rk2()</a>, <a class="el" href="MOM__dynamics__split__RK2_8F90_source.html#l00877">mom_dynamics_split_rk2::register_restarts_dyn_split_rk2()</a>, <a class="el" href="MOM__dynamics__unsplit_8F90_source.html#l00523">mom_dynamics_unsplit::register_restarts_dyn_unsplit()</a>, <a class="el" href="MOM__dynamics__unsplit__RK2_8F90_source.html#l00465">mom_dynamics_unsplit_rk2::register_restarts_dyn_unsplit_rk2()</a>, and <a class="el" href="MOM_8F90_source.html#l02606">mom::set_restart_fields()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -236,24 +236,24 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00181">181</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordtype">character(len=48)</span>                   :: get_thickness_units<span class="comment"> !&lt; The vertical thickness units</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">intent(in)</span> :: GV<span class="comment">   !&lt; The ocean&#39;s vertical grid structure</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="comment">!   This subroutine returns the appropriate units for thicknesses,</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="comment">! depending on whether the model is Boussinesq or not and the scaling for</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="comment">! the vertical thickness.</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordflow">if</span> (gv%Boussinesq) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    get_thickness_units = <span class="stringliteral">&quot;m&quot;</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    get_thickness_units = <span class="stringliteral">&quot;kg m-2&quot;</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="keywordflow">  endif</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00190">190</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">character(len=48)</span>                   :: get_thickness_units<span class="comment"> !&lt; The vertical thickness units</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">intent(in)</span> :: GV<span class="comment">   !&lt; The ocean&#39;s vertical grid structure</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="comment">!   This subroutine returns the appropriate units for thicknesses,</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="comment">! depending on whether the model is Boussinesq or not and the scaling for</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="comment">! the vertical thickness.</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordflow">if</span> (gv%Boussinesq) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    get_thickness_units = <span class="stringliteral">&quot;m&quot;</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    get_thickness_units = <span class="stringliteral">&quot;kg m-2&quot;</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keywordflow">  endif</span></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="MOM__ALE_8F90_source.html#l00237">mom_ale::ale_register_diags()</a>, <a class="el" href="MOM_8F90_source.html#l02519">mom::register_diags()</a>, <a class="el" href="MOM__diagnostics_8F90_source.html#l01797">mom_diagnostics::register_transport_diags()</a>, and <a class="el" href="MOM_8F90_source.html#l02588">mom::set_restart_fields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__ALE_8F90_source.html#l00252">mom_ale::ale_register_diags()</a>, <a class="el" href="MOM__diabatic__driver_8F90_source.html#l03187">mom_diabatic_driver::diabatic_driver_init()</a>, <a class="el" href="MOM__geothermal_8F90_source.html#l00379">mom_geothermal::geothermal_init()</a>, <a class="el" href="MOM_8F90_source.html#l02534">mom::register_diags()</a>, <a class="el" href="MOM__diagnostics_8F90_source.html#l01807">mom_diagnostics::register_transport_diags()</a>, and <a class="el" href="MOM_8F90_source.html#l02606">mom::set_restart_fields()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__verticalgrid_a1eea13d63bdc910462ffba406d32fe04_icgraph.svg" width="100%" height="466"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__verticalgrid_a1eea13d63bdc910462ffba406d32fe04_icgraph.svg" width="100%" height="542"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -309,80 +309,80 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00211">211</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keywordtype">character(len=48)</span>                      :: get_tr_flux_units<span class="comment"> !&lt; The model&#39;s flux units</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">                                                              !! for a tracer.</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type),    <span class="keywordtype">intent(in)</span> :: GV<span class="comment">                !&lt; The ocean&#39;s vertical</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">                                                              !! grid structure.</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: tr_units<span class="comment">          !&lt; Units for a tracer, for example</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment">                                                              !! Celsius or PSU.</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: tr_vol_conc_units<span class="comment"> !&lt; The concentration units per unit</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">                                                              !! volume, for example if the units are</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">                                                              !! umol m-3, tr_vol_conc_units would</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">                                                              !! be umol.</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: tr_mass_conc_units<span class="comment"> !&lt; The concentration units per unit</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment">                                                              !! mass of sea water, for example if</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment">                                                              !! the units are mol kg-1,</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment">                                                              !! tr_vol_conc_units would be mol.</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="comment">!   This subroutine returns the appropriate units for thicknesses and fluxes,</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="comment">! depending on whether the model is Boussinesq or not and the scaling for</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="comment">! the vertical thickness.</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordtype">integer</span> :: cnt</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  cnt = 0</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(tr_units)) cnt = cnt+1</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(tr_vol_conc_units)) cnt = cnt+1</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(tr_mass_conc_units)) cnt = cnt+1</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keywordflow">if</span> (cnt == 0) <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;get_tr_flux_units: One of the three &quot;</span>//&amp;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="stringliteral">&quot;arguments tr_units, tr_vol_conc_units, or tr_mass_conc_units &quot;</span>//&amp;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="stringliteral">&quot;must be present.&quot;</span>)</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="keywordflow">if</span> (cnt &gt; 1) <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;get_tr_flux_units: Only one of &quot;</span>//&amp;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="stringliteral">&quot;tr_units, tr_vol_conc_units, and tr_mass_conc_units may be present.&quot;</span>)</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(tr_units)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordflow">if</span> (gv%Boussinesq) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      get_tr_flux_units = trim(tr_units)//<span class="stringliteral">&quot; m3 s-1&quot;</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      get_tr_flux_units = trim(tr_units)//<span class="stringliteral">&quot; kg s-1&quot;</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="keywordflow">    endif</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(tr_vol_conc_units)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">if</span> (gv%Boussinesq) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      get_tr_flux_units = trim(tr_vol_conc_units)//<span class="stringliteral">&quot; s-1&quot;</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      get_tr_flux_units = trim(tr_vol_conc_units)//<span class="stringliteral">&quot; m-3 kg s-1&quot;</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keywordflow">    endif</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(tr_mass_conc_units)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">if</span> (gv%Boussinesq) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      get_tr_flux_units = trim(tr_mass_conc_units)//<span class="stringliteral">&quot; kg-1 m3 s-1&quot;</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      get_tr_flux_units = trim(tr_mass_conc_units)//<span class="stringliteral">&quot; s-1&quot;</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keywordflow">    endif</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00220">220</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordtype">character(len=48)</span>                      :: get_tr_flux_units<span class="comment"> !&lt; The model&#39;s flux units</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment">                                                              !! for a tracer.</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type),    <span class="keywordtype">intent(in)</span> :: GV<span class="comment">                !&lt; The ocean&#39;s vertical</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment">                                                              !! grid structure.</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: tr_units<span class="comment">          !&lt; Units for a tracer, for example</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment">                                                              !! Celsius or PSU.</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: tr_vol_conc_units<span class="comment"> !&lt; The concentration units per unit</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment">                                                              !! volume, for example if the units are</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">                                                              !! umol m-3, tr_vol_conc_units would</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">                                                              !! be umol.</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">optional</span>, <span class="keywordtype">intent(in)</span> :: tr_mass_conc_units<span class="comment"> !&lt; The concentration units per unit</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment">                                                              !! mass of sea water, for example if</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">                                                              !! the units are mol kg-1,</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">                                                              !! tr_vol_conc_units would be mol.</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="comment">!   This subroutine returns the appropriate units for thicknesses and fluxes,</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="comment">! depending on whether the model is Boussinesq or not and the scaling for</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="comment">! the vertical thickness.</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordtype">integer</span> :: cnt</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  cnt = 0</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(tr_units)) cnt = cnt+1</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(tr_vol_conc_units)) cnt = cnt+1</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(tr_mass_conc_units)) cnt = cnt+1</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keywordflow">if</span> (cnt == 0) <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;get_tr_flux_units: One of the three &quot;</span>//&amp;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="stringliteral">&quot;arguments tr_units, tr_vol_conc_units, or tr_mass_conc_units &quot;</span>//&amp;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="stringliteral">&quot;must be present.&quot;</span>)</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keywordflow">if</span> (cnt &gt; 1) <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;get_tr_flux_units: Only one of &quot;</span>//&amp;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="stringliteral">&quot;tr_units, tr_vol_conc_units, and tr_mass_conc_units may be present.&quot;</span>)</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(tr_units)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">if</span> (gv%Boussinesq) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      get_tr_flux_units = trim(tr_units)//<span class="stringliteral">&quot; m3 s-1&quot;</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      get_tr_flux_units = trim(tr_units)//<span class="stringliteral">&quot; kg s-1&quot;</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="keywordflow">    endif</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(tr_vol_conc_units)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">if</span> (gv%Boussinesq) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      get_tr_flux_units = trim(tr_vol_conc_units)//<span class="stringliteral">&quot; s-1&quot;</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      get_tr_flux_units = trim(tr_vol_conc_units)//<span class="stringliteral">&quot; m-3 kg s-1&quot;</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keywordflow">    endif</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">present</span>(tr_mass_conc_units)) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">if</span> (gv%Boussinesq) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      get_tr_flux_units = trim(tr_mass_conc_units)//<span class="stringliteral">&quot; kg-1 m3 s-1&quot;</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      get_tr_flux_units = trim(tr_mass_conc_units)//<span class="stringliteral">&quot; s-1&quot;</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keywordflow">    endif</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM_8F90_source.html#l01500">mom::initialize_mom()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM_8F90_source.html#l01506">mom::initialize_mom()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__verticalgrid_a908fc7025e6cf5d60885dbb7565093cd_cgraph.svg" width="568" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__verticalgrid_a908fc7025e6cf5d60885dbb7565093cd_cgraph.svg" width="536" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__verticalgrid_a908fc7025e6cf5d60885dbb7565093cd_icgraph.svg" width="499" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__verticalgrid_a908fc7025e6cf5d60885dbb7565093cd_icgraph.svg" width="483" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="aca0b871025638d55736e051a43906719"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca0b871025638d55736e051a43906719">&#9670;&nbsp;</a></span>setverticalgridaxes()</h2>
+<a id="a0de628611339a946b2b4a1daa7efd181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de628611339a946b2b4a1daa7efd181">&#9670;&nbsp;</a></span>setverticalgridaxes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -397,7 +397,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">type(<a class="el" href="structmom__verticalgrid_1_1verticalgrid__type.html">verticalgrid_type</a>), intent(inout)&#160;</td>
-          <td class="paramname"><em>GV</em>&#160;</td>
+          <td class="paramname"><em>GV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real, intent(in)&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -411,36 +417,38 @@ Here is the caller graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">gv</td><td>The container for vertical grid data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rlay</td><td>The layer target density </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rlay</td><td>The layer target density [R ~&gt; kg m-3] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scale</td><td>A unit scaling factor for Rlay </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00267">267</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">intent(inout)</span> :: GV<span class="comment">   !&lt; The container for vertical grid data</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(GV%ke)</span>,  <span class="keywordtype">intent(in)</span>    :: Rlay<span class="comment"> !&lt; The layer target density</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="comment">! Local variables</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="keywordtype">integer</span> :: k, nk</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  nk = gv%ke</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  gv%zAxisLongName = <span class="stringliteral">&#39;Target Potential Density&#39;</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  gv%zAxisUnits = <span class="stringliteral">&#39;kg m-3&#39;</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keywordflow">do</span> k=1,nk ; gv%sLayer(k) = rlay(k) ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="keywordflow">if</span> (nk &gt; 1) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    gv%sInterface(1) = 1.5*rlay(1) - 0.5*rlay(2)</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">do</span> k=2,nk ; gv%sInterface(k) = 0.5*( rlay(k-1) + rlay(k) ) ;<span class="keywordflow"> enddo</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    gv%sInterface(nk+1) = 1.5*rlay(nk) - 0.5*rlay(nk-1)</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    gv%sInterface(1) = 0.0 ; gv%sInterface(nk+1) = 2.0*rlay(nk)</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00276">276</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">intent(inout)</span> :: GV<span class="comment">   !&lt; The container for vertical grid data</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(GV%ke)</span>,  <span class="keywordtype">intent(in)</span>    :: Rlay<span class="comment"> !&lt; The layer target density [R ~&gt; kg m-3]</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keywordtype">  real</span>,                    <span class="keywordtype">intent(in)</span>    :: scale<span class="comment"> !&lt; A unit scaling factor for Rlay</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="comment">! Local variables</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keywordtype">integer</span> :: k, nk</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  nk = gv%ke</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  gv%zAxisLongName = <span class="stringliteral">&#39;Target Potential Density&#39;</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  gv%zAxisUnits = <span class="stringliteral">&#39;kg m-3&#39;</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keywordflow">do</span> k=1,nk ; gv%sLayer(k) = scale*rlay(k) ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keywordflow">if</span> (nk &gt; 1) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    gv%sInterface(1) = scale * (1.5*rlay(1) - 0.5*rlay(2))</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordflow">do</span> k=2,nk ; gv%sInterface(k) = scale * 0.5*( rlay(k-1) + rlay(k) ) ;<span class="keywordflow"> enddo</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    gv%sInterface(nk+1) = scale * (1.5*rlay(nk) - 0.5*rlay(nk-1))</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    gv%sInterface(1) = 0.0 ; gv%sInterface(nk+1) = 2.0*scale*rlay(nk)</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="MOM__coord__initialization_8F90_source.html#l00040">mom_coord_initialization::mom_initialize_coord()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__verticalgrid_aca0b871025638d55736e051a43906719_icgraph.svg" width="100%" height="378"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__verticalgrid_a0de628611339a946b2b4a1daa7efd181_icgraph.svg" width="100%" height="378"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -470,13 +478,13 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00289">289</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">pointer</span> :: GV<span class="comment"> !&lt; The ocean&#39;s vertical grid structure</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keyword">deallocate</span>( gv%g_prime, gv%Rlay )</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keyword">deallocate</span>( gv%sInterface , gv%sLayer )</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keyword">deallocate</span>( gv )</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00299">299</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">pointer</span> :: GV<span class="comment"> !&lt; The ocean&#39;s vertical grid structure</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <span class="keyword">deallocate</span>( gv%g_prime, gv%Rlay )</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keyword">deallocate</span>( gv%sInterface , gv%sLayer )</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keyword">deallocate</span>( gv )</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -522,105 +530,110 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00072">72</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">type</span>(param_file_type),   <span class="keywordtype">intent(in)</span> :: param_file<span class="comment"> !&lt; Parameter file handle/type</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">pointer</span>    :: GV<span class="comment">         !&lt; The container for vertical grid data</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),   <span class="keywordtype">intent(in)</span> :: US<span class="comment">         !&lt; A dimensional unit scaling type</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">! This routine initializes the verticalGrid_type structure (GV).</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="comment">! All memory is allocated but not necessarily set to meaningful values until later.</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="comment">! Local variables</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">integer</span> :: nk, H_power</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">  real</span>    :: H_rescale_factor</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="comment">! This include declares and sets the variable &quot;version&quot;.</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"># include &quot;version_variable.h&quot;</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span>  <span class="keywordtype">character(len=16)</span> :: mdl = <span class="stringliteral">&#39;MOM_verticalGrid&#39;</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">associated</span>(gv)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;     <span class="stringliteral">&#39;verticalGridInit: called with an associated GV pointer.&#39;</span>)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">allocate</span>(gv)</div>
+<p class="definition">Definition at line <a class="el" href="MOM__verticalGrid_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__verticalGrid_8F90_source.html">MOM_verticalGrid.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">type</span>(param_file_type),   <span class="keywordtype">intent(in)</span> :: param_file<span class="comment"> !&lt; Parameter file handle/type</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">pointer</span>    :: GV<span class="comment">         !&lt; The container for vertical grid data</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),   <span class="keywordtype">intent(in)</span> :: US<span class="comment">         !&lt; A dimensional unit scaling type</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="comment">! This routine initializes the verticalGrid_type structure (GV).</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">! All memory is allocated but not necessarily set to meaningful values until later.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="comment">! Local variables</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">integer</span> :: nk, H_power</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">  real</span>    :: H_rescale_factor</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">! This include declares and sets the variable &quot;version&quot;.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"># include &quot;version_variable.h&quot;</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span>  <span class="keywordtype">character(len=16)</span> :: mdl = <span class="stringliteral">&#39;MOM_verticalGrid&#39;</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="comment">! Read all relevant parameters and write them to the model log.</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">call </span>log_version(param_file, mdl, version, &amp;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                   <span class="stringliteral">&quot;Parameters providing information about the vertical grid.&quot;</span>)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;G_EARTH&quot;</span>, gv%mks_g_Earth, &amp;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                 <span class="stringliteral">&quot;The gravitational acceleration of the Earth.&quot;</span>, &amp;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                 units=<span class="stringliteral">&quot;m s-2&quot;</span>, default = 9.80)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;RHO_0&quot;</span>, gv%Rho0, &amp;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                 <span class="stringliteral">&quot;The mean ocean density used with BOUSSINESQ true to &quot;</span>//&amp;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                 <span class="stringliteral">&quot;calculate accelerations and the mass for conservation &quot;</span>//&amp;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                 <span class="stringliteral">&quot;properties, or with BOUSSINSEQ false to convert some &quot;</span>//&amp;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                 <span class="stringliteral">&quot;parameters from vertical units of m to kg m-2.&quot;</span>, &amp;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                 units=<span class="stringliteral">&quot;kg m-3&quot;</span>, default=1035.0)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;BOUSSINESQ&quot;</span>, gv%Boussinesq, &amp;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                 <span class="stringliteral">&quot;If true, make the Boussinesq approximation.&quot;</span>, default=.true.)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;ANGSTROM&quot;</span>, gv%Angstrom_m, &amp;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                 <span class="stringliteral">&quot;The minimum layer thickness, usually one-Angstrom.&quot;</span>, &amp;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                 units=<span class="stringliteral">&quot;m&quot;</span>, default=1.0e-10)</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;H_RESCALE_POWER&quot;</span>, h_power, &amp;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                 <span class="stringliteral">&quot;An integer power of 2 that is used to rescale the model&#39;s &quot;</span>//&amp;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                 <span class="stringliteral">&quot;intenal units of thickness.  Valid values range from -300 to 300.&quot;</span>, &amp;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                 units=<span class="stringliteral">&quot;nondim&quot;</span>, default=0, debuggingparam=.true.)</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordflow">if</span> (abs(h_power) &gt; 300) <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;verticalGridInit: &quot;</span>//&amp;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                 <span class="stringliteral">&quot;H_RESCALE_POWER is outside of the valid range of -300 to 300.&quot;</span>)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  h_rescale_factor = 1.0</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordflow">if</span> (h_power /= 0) h_rescale_factor = 2.0**h_power</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordflow">if</span> (.not.gv%Boussinesq) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;H_TO_KG_M2&quot;</span>, gv%H_to_kg_m2,&amp;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                 <span class="stringliteral">&quot;A constant that translates thicknesses from the model&#39;s &quot;</span>//&amp;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                 <span class="stringliteral">&quot;internal units of thickness to kg m-2.&quot;</span>, units=<span class="stringliteral">&quot;kg m-2 H-1&quot;</span>, &amp;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                 default=1.0)</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    gv%H_to_kg_m2 = gv%H_to_kg_m2 * h_rescale_factor</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;H_TO_M&quot;</span>, gv%H_to_m, &amp;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                 <span class="stringliteral">&quot;A constant that translates the model&#39;s internal &quot;</span>//&amp;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                 <span class="stringliteral">&quot;units of thickness into m.&quot;</span>, units=<span class="stringliteral">&quot;m H-1&quot;</span>, default=1.0)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    gv%H_to_m = gv%H_to_m * h_rescale_factor</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  gv%g_Earth = us%m_to_L**2*us%Z_to_m*us%T_to_s**2 * gv%mks_g_Earth</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#ifdef STATIC_MEMORY_</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor"></span>  <span class="comment">! Here NK_ is a macro, while nk is a variable.</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;NK&quot;</span>, nk, &amp;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                 <span class="stringliteral">&quot;The number of model layers.&quot;</span>, units=<span class="stringliteral">&quot;nondim&quot;</span>, &amp;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                 static_value=nk_)</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordflow">if</span> (nk /= nk_) <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;verticalGridInit: &quot;</span> // &amp;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;       <span class="stringliteral">&quot;Mismatched number of layers NK_ between MOM_memory.h and param_file&quot;</span>)</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor"></span>  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;NK&quot;</span>, nk, &amp;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                 <span class="stringliteral">&quot;The number of model layers.&quot;</span>, units=<span class="stringliteral">&quot;nondim&quot;</span>, fail_if_missing=.true.)</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor"></span>  gv%ke = nk</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordflow">if</span> (gv%Boussinesq) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    gv%H_to_kg_m2 = gv%Rho0 * gv%H_to_m</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    gv%kg_m2_to_H = 1.0 / gv%H_to_kg_m2</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    gv%m_to_H = 1.0 / gv%H_to_m</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    gv%Angstrom_H = gv%m_to_H * gv%Angstrom_m</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">associated</span>(gv)) <span class="keyword">call </span>mom_error(fatal, &amp;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;     <span class="stringliteral">&#39;verticalGridInit: called with an associated GV pointer.&#39;</span>)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">allocate</span>(gv)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="comment">! Read all relevant parameters and write them to the model log.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">call </span>log_version(param_file, mdl, version, &amp;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                   <span class="stringliteral">&quot;Parameters providing information about the vertical grid.&quot;</span>)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;G_EARTH&quot;</span>, gv%mks_g_Earth, &amp;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                 <span class="stringliteral">&quot;The gravitational acceleration of the Earth.&quot;</span>, &amp;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                 units=<span class="stringliteral">&quot;m s-2&quot;</span>, default = 9.80)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;RHO_0&quot;</span>, gv%Rho0, &amp;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                 <span class="stringliteral">&quot;The mean ocean density used with BOUSSINESQ true to &quot;</span>//&amp;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                 <span class="stringliteral">&quot;calculate accelerations and the mass for conservation &quot;</span>//&amp;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                 <span class="stringliteral">&quot;properties, or with BOUSSINSEQ false to convert some &quot;</span>//&amp;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                 <span class="stringliteral">&quot;parameters from vertical units of m to kg m-2.&quot;</span>, &amp;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                 units=<span class="stringliteral">&quot;kg m-3&quot;</span>, default=1035.0, scale=us%kg_m3_to_R)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;BOUSSINESQ&quot;</span>, gv%Boussinesq, &amp;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                 <span class="stringliteral">&quot;If true, make the Boussinesq approximation.&quot;</span>, default=.true.)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;ANGSTROM&quot;</span>, gv%Angstrom_m, &amp;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                 <span class="stringliteral">&quot;The minimum layer thickness, usually one-Angstrom.&quot;</span>, &amp;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                 units=<span class="stringliteral">&quot;m&quot;</span>, default=1.0e-10)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;H_RESCALE_POWER&quot;</span>, h_power, &amp;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                 <span class="stringliteral">&quot;An integer power of 2 that is used to rescale the model&#39;s &quot;</span>//&amp;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                 <span class="stringliteral">&quot;intenal units of thickness.  Valid values range from -300 to 300.&quot;</span>, &amp;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                 units=<span class="stringliteral">&quot;nondim&quot;</span>, default=0, debuggingparam=.true.)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordflow">if</span> (abs(h_power) &gt; 300) <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;verticalGridInit: &quot;</span>//&amp;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                 <span class="stringliteral">&quot;H_RESCALE_POWER is outside of the valid range of -300 to 300.&quot;</span>)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  h_rescale_factor = 1.0</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">if</span> (h_power /= 0) h_rescale_factor = 2.0**h_power</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordflow">if</span> (.not.gv%Boussinesq) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;H_TO_KG_M2&quot;</span>, gv%H_to_kg_m2,&amp;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                 <span class="stringliteral">&quot;A constant that translates thicknesses from the model&#39;s &quot;</span>//&amp;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                 <span class="stringliteral">&quot;internal units of thickness to kg m-2.&quot;</span>, units=<span class="stringliteral">&quot;kg m-2 H-1&quot;</span>, &amp;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                 default=1.0)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    gv%H_to_kg_m2 = gv%H_to_kg_m2 * h_rescale_factor</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;H_TO_M&quot;</span>, gv%H_to_m, &amp;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                 <span class="stringliteral">&quot;A constant that translates the model&#39;s internal &quot;</span>//&amp;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                 <span class="stringliteral">&quot;units of thickness into m.&quot;</span>, units=<span class="stringliteral">&quot;m H-1&quot;</span>, default=1.0)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    gv%H_to_m = gv%H_to_m * h_rescale_factor</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  gv%g_Earth = us%m_to_L**2*us%Z_to_m*us%T_to_s**2 * gv%mks_g_Earth</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#ifdef STATIC_MEMORY_</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor"></span>  <span class="comment">! Here NK_ is a macro, while nk is a variable.</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;NK&quot;</span>, nk, &amp;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                 <span class="stringliteral">&quot;The number of model layers.&quot;</span>, units=<span class="stringliteral">&quot;nondim&quot;</span>, &amp;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                 static_value=nk_)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">if</span> (nk /= nk_) <span class="keyword">call </span>mom_error(fatal, <span class="stringliteral">&quot;verticalGridInit: &quot;</span> // &amp;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;       <span class="stringliteral">&quot;Mismatched number of layers NK_ between MOM_memory.h and param_file&quot;</span>)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor"></span>  <span class="keyword">call </span>get_param(param_file, mdl, <span class="stringliteral">&quot;NK&quot;</span>, nk, &amp;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                 <span class="stringliteral">&quot;The number of model layers.&quot;</span>, units=<span class="stringliteral">&quot;nondim&quot;</span>, fail_if_missing=.true.)</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor"></span>  gv%ke = nk</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordflow">if</span> (gv%Boussinesq) <span class="keywordflow">then</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    gv%H_to_kg_m2 = us%R_to_kg_m3*gv%Rho0 * gv%H_to_m</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    gv%kg_m2_to_H = 1.0 / gv%H_to_kg_m2</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    gv%m_to_H = gv%Rho0 * gv%kg_m2_to_H</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    gv%H_to_m = gv%H_to_kg_m2 / gv%Rho0</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    gv%Angstrom_H = gv%Angstrom_m*1000.0*gv%kg_m2_to_H</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keywordflow">  endif</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  gv%H_subroundoff = 1e-20 * max(gv%Angstrom_H,gv%m_to_H*1e-17)</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  gv%H_to_Pa = gv%mks_g_Earth * gv%H_to_kg_m2</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  gv%H_to_Z = gv%H_to_m * us%m_to_Z</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  gv%Z_to_H = us%Z_to_m * gv%m_to_H</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  gv%Angstrom_Z = us%m_to_Z * gv%Angstrom_m</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">! Log derivative values.</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keyword">call </span>log_param(param_file, mdl, <span class="stringliteral">&quot;M to THICKNESS&quot;</span>, gv%m_to_H*h_rescale_factor)</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keyword">call </span>log_param(param_file, mdl, <span class="stringliteral">&quot;M to THICKNESS rescaled by 2^-n&quot;</span>, gv%m_to_H)</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keyword">call </span>log_param(param_file, mdl, <span class="stringliteral">&quot;THICKNESS to M rescaled by 2^n&quot;</span>, gv%H_to_m)</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keyword">allocate</span>( gv%sInterface(nk+1) )</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keyword">allocate</span>( gv%sLayer(nk) )</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keyword">allocate</span>( gv%g_prime(nk+1) ) ; gv%g_prime(:) = 0.0</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="comment">! The extent of Rlay should be changed to nk?</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keyword">allocate</span>( gv%Rlay(nk+1) )    ; gv%Rlay(:) = 0.0</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    gv%m_to_H = 1.0 / gv%H_to_m</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    gv%Angstrom_H = gv%m_to_H * gv%Angstrom_m</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    gv%H_to_MKS = gv%H_to_m</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    gv%kg_m2_to_H = 1.0 / gv%H_to_kg_m2</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    gv%m_to_H = us%R_to_kg_m3*gv%Rho0 * gv%kg_m2_to_H</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    gv%H_to_m = gv%H_to_kg_m2 / (us%R_to_kg_m3*gv%Rho0)</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    gv%Angstrom_H = gv%Angstrom_m*1000.0*gv%kg_m2_to_H</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    gv%H_to_MKS = gv%H_to_kg_m2</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keywordflow">  endif</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  gv%H_subroundoff = 1e-20 * max(gv%Angstrom_H,gv%m_to_H*1e-17)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  gv%H_to_Pa = gv%mks_g_Earth * gv%H_to_kg_m2</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  gv%H_to_Z = gv%H_to_m * us%m_to_Z</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  gv%Z_to_H = us%Z_to_m * gv%m_to_H</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  gv%Angstrom_Z = us%m_to_Z * gv%Angstrom_m</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  gv%H_to_RZ = gv%H_to_kg_m2 * us%kg_m3_to_R * us%m_to_Z</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  gv%RZ_to_H = gv%kg_m2_to_H * us%R_to_kg_m3 * us%Z_to_m</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">! Log derivative values.</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keyword">call </span>log_param(param_file, mdl, <span class="stringliteral">&quot;M to THICKNESS&quot;</span>, gv%m_to_H*h_rescale_factor)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keyword">call </span>log_param(param_file, mdl, <span class="stringliteral">&quot;M to THICKNESS rescaled by 2^-n&quot;</span>, gv%m_to_H)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keyword">call </span>log_param(param_file, mdl, <span class="stringliteral">&quot;THICKNESS to M rescaled by 2^n&quot;</span>, gv%H_to_m)</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keyword">allocate</span>( gv%sInterface(nk+1) )</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keyword">allocate</span>( gv%sLayer(nk) )</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keyword">allocate</span>( gv%g_prime(nk+1) ) ; gv%g_prime(:) = 0.0</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="comment">! The extent of Rlay should be changed to nk?</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keyword">allocate</span>( gv%Rlay(nk+1) )    ; gv%Rlay(:) = 0.0</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 
@@ -628,13 +641,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__verticalgrid_a2fbde8b173a9ce56fbd41e5b96d4b2f8_cgraph.svg" width="636" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__verticalgrid_a2fbde8b173a9ce56fbd41e5b96d4b2f8_cgraph.svg" width="599" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__verticalgrid_a2fbde8b173a9ce56fbd41e5b96d4b2f8_icgraph.svg" width="444" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__verticalgrid_a2fbde8b173a9ce56fbd41e5b96d4b2f8_icgraph.svg" width="419" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

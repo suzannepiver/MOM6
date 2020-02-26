@@ -13,7 +13,7 @@ var MOM__diagnostics_8F90 =
     [ "post_surface_dyn_diags", "MOM__diagnostics_8F90.html#ac756556059608d88e6a4ef34a07e60ee", null ],
     [ "post_surface_thermo_diags", "MOM__diagnostics_8F90.html#a6fc7dbf8144ba279cc9b7856780ba5d6", null ],
     [ "post_transport_diagnostics", "MOM__diagnostics_8F90.html#acab7430159d4702301069d0d4f82f45c", null ],
-    [ "register_surface_diags", "MOM__diagnostics_8F90.html#a799f906b25181063fa8ff701b2cc758a", null ],
+    [ "register_surface_diags", "MOM__diagnostics_8F90.html#ae9e2f6374b60bc78898a3c462174f90d", null ],
     [ "register_time_deriv", "MOM__diagnostics_8F90.html#addfe6cd212e836194ccaf737bcc5cce8", null ],
     [ "register_transport_diags", "MOM__diagnostics_8F90.html#ac16b7c49e4a4b5ea2beb426bc5270ee9", null ],
     [ "set_dependent_diagnostics", "MOM__diagnostics_8F90.html#a90a92410576d955e89d2aa4e3f6d7402", null ],

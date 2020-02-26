@@ -239,7 +239,7 @@ Data Types</h2></td></tr>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">parameter</span>         :: epsln = 1.e-10 <span class="comment">!&lt; Threshold to identify vanished layers</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">! some constants</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  gorho = gv%mks_g_Earth / gv%Rho0</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  gorho = gv%mks_g_Earth / (us%R_to_kg_m3*gv%Rho0)</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">do</span> j = g%jsc, g%jec</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">do</span> i = g%isc, g%iec</div>
@@ -378,11 +378,11 @@ Data Types</h2></td></tr>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <span class="keyword">deallocate</span>(cs)</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="MOM__set__diffusivity_8F90_source.html#l02211">mom_set_diffusivity::set_diffusivity_end()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__set__diffusivity_8F90_source.html#l02207">mom_set_diffusivity::set_diffusivity_end()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__cvmix__shear_a0c9f49bd2f832f20f4675b63b85e0e8e_icgraph.svg" width="383" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__cvmix__shear_a0c9f49bd2f832f20f4675b63b85e0e8e_icgraph.svg" width="372" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -565,11 +565,11 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      <span class="stringliteral">&#39;Vertical viscosity added by MOM_CVMix_shear module&#39;</span>, <span class="stringliteral">&#39;m2/s&#39;</span>, conversion=us%Z2_T_to_m2_s)</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MOM__kappa__shear_8F90_source.html#l02098">mom_kappa_shear::kappa_shear_is_used()</a>, <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00054">mdl</a>, and <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
+<p class="reference">References <a class="el" href="MOM__kappa__shear_8F90_source.html#l02109">mom_kappa_shear::kappa_shear_is_used()</a>, <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00054">mdl</a>, and <a class="el" href="MOM__error__handler_8F90_source.html#l00072">mom_error_handler::mom_error()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__cvmix__shear_aec86faeb6ba106f8c9584dd3b6368a41_cgraph.svg" width="628" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__cvmix__shear_aec86faeb6ba106f8c9584dd3b6368a41_cgraph.svg" width="598" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -611,7 +611,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MOM__CVMix__shear_8F90_source.html#l00054">mdl</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MOM__diabatic__driver_8F90_source.html#l03187">mom_diabatic_driver::diabatic_driver_init()</a>, and <a class="el" href="MOM__set__viscosity_8F90_source.html#l01681">mom_set_visc::set_visc_register_restarts()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MOM__diabatic__driver_8F90_source.html#l03187">mom_diabatic_driver::diabatic_driver_init()</a>, and <a class="el" href="MOM__set__viscosity_8F90_source.html#l01696">mom_set_visc::set_visc_register_restarts()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

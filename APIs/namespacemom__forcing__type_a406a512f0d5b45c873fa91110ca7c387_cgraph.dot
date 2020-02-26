@@ -7,7 +7,7 @@ digraph "mom_forcing_type::calculatebuoyancyflux1d"
   rankdir="LR";
   Node1 [label="mom_forcing_type::calculatebuoyancyflux1d",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This routine calculates surface buoyancy flux by adding up the heat, FW & salt fluxes...."];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="mom_forcing_type::extractfluxes1d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__forcing__type.html#ae53ab527ce199e239f6079e422ec70c8",tooltip="This subroutine extracts fluxes from the surface fluxes type. It works on a j-row for optimization pu..."];
+  Node2 [label="mom_forcing_type::extractfluxes1d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__forcing__type.html#af676e516c2d3f88e56494bc14642ef7a",tooltip="This subroutine extracts fluxes from the surface fluxes type. It works on a j-row for optimization pu..."];
   Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="mom_opacity::extract\l_optics_slice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__opacity.html#a4c1942f798619a9ad854d1152ebcab63",tooltip="This subroutine returns a 2-d slice at constant j of fields from an optics_type, with the potential f..."];
   Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

@@ -41,4 +41,14 @@ digraph "mom_dynamics_unsplit_rk2::step_mom_dyn_unsplit_rk2"
   Node16 [label="mom_set_visc::set_v_at_u",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__set__visc.html#a0356a4e81cca9f7f31bbf87c717a6600",tooltip="This subroutine finds a thickness-weighted value of v at the u-points."];
   Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node17 [label="mom_boundary_update\l::update_obc_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__boundary__update.html#a7c2a0d48706fa7b58ce1f584ff0c5d4f",tooltip="Calls appropriate routine to update the open boundary conditions."];
+  Node1 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="mom_vert_friction::\lvertvisc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__vert__friction.html#a8f1a390fa24fbe985068fed9ac26873c",tooltip="Perform a fully implicit vertical diffusion of momentum. Stress top and bottom boundary conditions ar..."];
+  Node18 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="mom_vert_friction::\lvertvisc_limit_vel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__vert__friction.html#ac14bc439f3b7ae3000fa9883c95ebfe2",tooltip="Velocity components which exceed a threshold for physically reasonable values are truncated...."];
+  Node1 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="mom_vert_friction::\lvertvisc_coef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__vert__friction.html#ac281f6595593b33436594112785e982b",tooltip="Calculate the coupling coefficients (CSa_u and CSa_v) and effective layer thicknesses (CSh_u and CSh_..."];
+  Node20 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="mom_vert_friction::\lfind_coupling_coef",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__vert__friction.html#aa9e6f1f0d75a54d85b0d0cdad874b41f",tooltip="Calculate the 'coupling coefficient' (a_cpl) at the interfaces. If BOTTOMDRAGLAW is defined,..."];
+  Node20 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

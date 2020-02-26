@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 696;
+var viewWidth = 668;
 var viewHeight = 137;
 var sectionId = 'dynsection-3';
 </script>
@@ -54,14 +54,14 @@ var sectionId = 'dynsection-3';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_wave_interface::get_sl_average_band</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-133 692,-133 692,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-133 664,-133 664,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Get SL averaged Stokes drift from the banded Spectrum method.">
-<polygon fill="#bfbfbf" stroke="#000000" points="564,-49.5 564,-79.5 688,-79.5 688,-49.5 564,-49.5"/>
-<text text-anchor="start" x="572" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
-<text text-anchor="middle" x="626" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_sl_average_band</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="545,-49.5 545,-79.5 660,-79.5 660,-49.5 545,-49.5"/>
+<text text-anchor="start" x="553" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
+<text text-anchor="middle" x="602.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_sl_average_band</text>
 </a>
 </g>
 </g>
@@ -69,111 +69,111 @@ var sectionId = 'dynsection-3';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__wave__interface.html#aa07c73f561840851981d6a013423dd6e" target="_top" xlink:title="Interface to get Langmuir number based on options stored in wave structure.">
-<polygon fill="#ffffff" stroke="#000000" points="406,-49.5 406,-79.5 528,-79.5 528,-49.5 406,-49.5"/>
-<text text-anchor="start" x="414" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
-<text text-anchor="middle" x="467" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_langmuir_number</text>
+<polygon fill="#ffffff" stroke="#000000" points="393,-49.5 393,-79.5 509,-79.5 509,-49.5 393,-49.5"/>
+<text text-anchor="start" x="401" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
+<text text-anchor="middle" x="451" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::get_langmuir_number</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M553.4021,-64.5C544.9654,-64.5 536.4243,-64.5 528.1626,-64.5"/>
-<polygon fill="#191970" stroke="#191970" points="553.6154,-68.0001 563.6153,-64.5 553.6153,-61.0001 553.6154,-68.0001"/>
+<path fill="none" stroke="#191970" d="M534.5163,-64.5C526.0143,-64.5 517.3805,-64.5 509.0492,-64.5"/>
+<polygon fill="#191970" stroke="#191970" points="534.7922,-68.0001 544.7922,-64.5 534.7921,-61.0001 534.7922,-68.0001"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__energetic__pbl.html#a01291f3e97cfdcf58866a1e9b0bcfc26" target="_top" xlink:title="This subroutine determines the diffusivities from the integrated energetics mixed layer model for a s...">
-<polygon fill="#ffffff" stroke="#000000" points="255,-98.5 255,-128.5 368,-128.5 368,-98.5 255,-98.5"/>
-<text text-anchor="start" x="263" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_energetic_pbl::</text>
-<text text-anchor="middle" x="311.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">epbl_column</text>
+<polygon fill="#ffffff" stroke="#000000" points="247,-98.5 247,-128.5 354,-128.5 354,-98.5 247,-98.5"/>
+<text text-anchor="start" x="255" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_energetic_pbl::</text>
+<text text-anchor="middle" x="300.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">epbl_column</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M409.5192,-82.6129C392.9877,-87.8222 375.1418,-93.4457 359.2657,-98.4484"/>
-<polygon fill="#191970" stroke="#191970" points="410.5903,-85.9451 419.076,-79.6014 408.4864,-79.2688 410.5903,-85.9451"/>
+<path fill="none" stroke="#191970" d="M394.9185,-82.7591C379.0448,-87.9273 361.9519,-93.4924 346.7298,-98.4484"/>
+<polygon fill="#191970" stroke="#191970" points="396.1919,-86.0254 404.617,-79.6014 394.0247,-79.3693 396.1919,-86.0254"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__cvmix__kpp.html#a118674d1bd14d2429b7f7d939b749f3c" target="_top" xlink:title="Compute OBL depth.">
-<polygon fill="#ffffff" stroke="#000000" points="253.5,-49.5 253.5,-79.5 369.5,-79.5 369.5,-49.5 253.5,-49.5"/>
-<text text-anchor="start" x="261.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_cvmix_kpp::kpp</text>
-<text text-anchor="middle" x="311.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_compute_bld</text>
+<polygon fill="#ffffff" stroke="#000000" points="244,-49.5 244,-79.5 357,-79.5 357,-49.5 244,-49.5"/>
+<text text-anchor="start" x="252" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_cvmix_kpp::kpp</text>
+<text text-anchor="middle" x="300.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_compute_bld</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M395.7606,-64.5C386.9812,-64.5 378.0902,-64.5 369.5398,-64.5"/>
-<polygon fill="#191970" stroke="#191970" points="395.9886,-68.0001 405.9886,-64.5 395.9886,-61.0001 395.9886,-68.0001"/>
+<path fill="none" stroke="#191970" d="M382.7907,-64.5C374.1816,-64.5 365.4485,-64.5 357.0475,-64.5"/>
+<polygon fill="#191970" stroke="#191970" points="382.8128,-68.0001 392.8128,-64.5 382.8127,-61.0001 382.8128,-68.0001"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="namespacemom__wave__interface.html#a42b769030d04a1c087e168de36ce7285" target="_top" xlink:title="Constructs the Stokes Drift profile on the model grid based on desired coupling options.">
-<polygon fill="#ffffff" stroke="#000000" points="253,-.5 253,-30.5 370,-30.5 370,-.5 253,-.5"/>
-<text text-anchor="start" x="261" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
-<text text-anchor="middle" x="311.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::update_stokes_drift</text>
+<polygon fill="#ffffff" stroke="#000000" points="245.5,-.5 245.5,-30.5 355.5,-30.5 355.5,-.5 245.5,-.5"/>
+<text text-anchor="start" x="253.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_wave_interface</text>
+<text text-anchor="middle" x="300.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::update_stokes_drift</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node2&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M409.5192,-46.3871C392.9877,-41.1778 375.1418,-35.5543 359.2657,-30.5516"/>
-<polygon fill="#191970" stroke="#191970" points="408.4864,-49.7312 419.076,-49.3986 410.5903,-43.0549 408.4864,-49.7312"/>
+<path fill="none" stroke="#191970" d="M394.9185,-46.2409C379.0448,-41.0727 361.9519,-35.5076 346.7298,-30.5516"/>
+<polygon fill="#191970" stroke="#191970" points="394.0247,-49.6307 404.617,-49.3986 396.1919,-42.9746 394.0247,-49.6307"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__energetic__pbl.html#a39d18925dcbd4477d63188edeae399f0" target="_top" xlink:title="This subroutine determines the diffusivities from the integrated energetics mixed layer model....">
-<polygon fill="#ffffff" stroke="#000000" points="104,-98.5 104,-128.5 217,-128.5 217,-98.5 104,-98.5"/>
-<text text-anchor="start" x="112" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_energetic_pbl::</text>
-<text text-anchor="middle" x="160.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">energetic_pbl</text>
+<polygon fill="#ffffff" stroke="#000000" points="101,-98.5 101,-128.5 208,-128.5 208,-98.5 101,-98.5"/>
+<text text-anchor="start" x="109" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_energetic_pbl::</text>
+<text text-anchor="middle" x="154.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">energetic_pbl</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M244.6215,-113.5C235.4775,-113.5 226.1626,-113.5 217.2228,-113.5"/>
-<polygon fill="#191970" stroke="#191970" points="244.8436,-117.0001 254.8436,-113.5 244.8435,-110.0001 244.8436,-117.0001"/>
+<path fill="none" stroke="#191970" d="M236.6994,-113.5C227.1332,-113.5 217.3528,-113.5 208.0295,-113.5"/>
+<polygon fill="#191970" stroke="#191970" points="236.9641,-117.0001 246.964,-113.5 236.964,-110.0001 236.9641,-117.0001"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="namespacemom.html#a972730596703580d4646320f2c9085a5" target="_top" xlink:title="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to...">
-<polygon fill="#ffffff" stroke="#000000" points="114.5,-6 114.5,-25 206.5,-25 206.5,-6 114.5,-6"/>
-<text text-anchor="middle" x="160.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom::step_mom</text>
+<g id="a_node7"><a xlink:href="namespacemom.html#ad55f786e26bcd3445a7224f2fad54f7e" target="_top" xlink:title="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to...">
+<polygon fill="#ffffff" stroke="#000000" points="109.5,-6 109.5,-25 199.5,-25 199.5,-6 109.5,-6"/>
+<text text-anchor="middle" x="154.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom::step_mom</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M242.5786,-15.5C230.4478,-15.5 218.0887,-15.5 206.7669,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="242.6871,-19.0001 252.6871,-15.5 242.687,-12.0001 242.6871,-19.0001"/>
+<path fill="none" stroke="#191970" d="M234.9621,-15.5C223.0796,-15.5 210.9305,-15.5 199.7921,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="235.3037,-19.0001 245.3037,-15.5 235.3036,-12.0001 235.3037,-19.0001"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="0,-6 0,-25 68,-25 68,-6 0,-6"/>
-<text text-anchor="middle" x="34" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_main</text>
+<polygon fill="#ffffff" stroke="#000000" points="0,-6 0,-25 65,-25 65,-6 0,-6"/>
+<text text-anchor="middle" x="32.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_main</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M104.2924,-15.5C92.0237,-15.5 79.3971,-15.5 68.2901,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="104.4728,-19.0001 114.4728,-15.5 104.4727,-12.0001 104.4728,-19.0001"/>
+<path fill="none" stroke="#191970" d="M99.2932,-15.5C87.6389,-15.5 75.7,-15.5 65.1988,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="99.4184,-19.0001 109.4183,-15.5 99.4183,-12.0001 99.4184,-19.0001"/>
 </g>
 </g>
 </svg>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/tracer/MOM_tracer_registry.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/tracer/MOM_tracer_registry.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('MOM__tracer__registry_8F90.html','');}
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_tracer_registry.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__tracer__registry_8F90__incl.svg" width="299" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__tracer__registry_8F90__incl.svg" width="280" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -133,9 +133,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:af9889848c1f3801951b0c79cace52e8d"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__tracer__registry.html#af9889848c1f3801951b0c79cace52e8d">mom_tracer_registry::lock_tracer_registry</a> (Reg)</td></tr>
 <tr class="memdesc:af9889848c1f3801951b0c79cace52e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine locks the tracer registry to prevent the addition of more tracers. After locked=.true., can then register common diagnostics.  <a href="namespacemom__tracer__registry.html#af9889848c1f3801951b0c79cace52e8d">More...</a><br /></td></tr>
 <tr class="separator:af9889848c1f3801951b0c79cace52e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac11b2e622e1faf6667d2203854203643"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__tracer__registry.html#ac11b2e622e1faf6667d2203854203643">mom_tracer_registry::register_tracer_diagnostics</a> (Reg, h, Time, diag, G, GV, use_ALE)</td></tr>
-<tr class="memdesc:ac11b2e622e1faf6667d2203854203643"><td class="mdescLeft">&#160;</td><td class="mdescRight">register_tracer_diagnostics does a set of register_diag_field calls for any previously registered in a tracer registry with a value of registry_diags set to .true.  <a href="namespacemom__tracer__registry.html#ac11b2e622e1faf6667d2203854203643">More...</a><br /></td></tr>
-<tr class="separator:ac11b2e622e1faf6667d2203854203643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6210cf64994a49ae3c14e3500c957fb1"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__tracer__registry.html#a6210cf64994a49ae3c14e3500c957fb1">mom_tracer_registry::register_tracer_diagnostics</a> (Reg, h, Time, diag, G, GV, US, use_ALE)</td></tr>
+<tr class="memdesc:a6210cf64994a49ae3c14e3500c957fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">register_tracer_diagnostics does a set of register_diag_field calls for any previously registered in a tracer registry with a value of registry_diags set to .true.  <a href="namespacemom__tracer__registry.html#a6210cf64994a49ae3c14e3500c957fb1">More...</a><br /></td></tr>
+<tr class="separator:a6210cf64994a49ae3c14e3500c957fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32c2b2e308a5183cd7681084e07d1624"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__tracer__registry.html#a32c2b2e308a5183cd7681084e07d1624">mom_tracer_registry::preale_tracer_diagnostics</a> (Reg, G, GV)</td></tr>
 <tr class="separator:a32c2b2e308a5183cd7681084e07d1624"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada71d85c8d29e91166c59601c0e799ef"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__tracer__registry.html#ada71d85c8d29e91166c59601c0e799ef">mom_tracer_registry::postale_tracer_diagnostics</a> (Reg, G, GV, diag, dt)</td></tr>

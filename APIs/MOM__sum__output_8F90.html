@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/diagnostics/MOM_sum_output.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/diagnostics/MOM_sum_output.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('MOM__sum__output_8F90.html','');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_sum_output.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__sum__output_8F90__incl.svg" width="299" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__sum__output_8F90__incl.svg" width="280" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -137,9 +137,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:ad3cc692dd515100ec8cf92d740c91e72"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__sum__output.html#ad3cc692dd515100ec8cf92d740c91e72">mom_sum_output::write_energy</a> (u, v, h, tv, day, n, G, GV, US, CS, tracer_CSp, OBC, dt_forcing)</td></tr>
 <tr class="memdesc:ad3cc692dd515100ec8cf92d740c91e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates and writes the total model energy, the energy and mass of each layer, and other globally integrated physical quantities.  <a href="namespacemom__sum__output.html#ad3cc692dd515100ec8cf92d740c91e72">More...</a><br /></td></tr>
 <tr class="separator:ad3cc692dd515100ec8cf92d740c91e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f7111a0644a40651873dc291ee05217"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__sum__output.html#a6f7111a0644a40651873dc291ee05217">mom_sum_output::accumulate_net_input</a> (fluxes, sfc_state, dt, G, CS)</td></tr>
-<tr class="memdesc:a6f7111a0644a40651873dc291ee05217"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine accumates the net input of volume, salt and heat, through the ocean surface for use in diagnosing conservation.  <a href="namespacemom__sum__output.html#a6f7111a0644a40651873dc291ee05217">More...</a><br /></td></tr>
-<tr class="separator:a6f7111a0644a40651873dc291ee05217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773833f7ac86b8b65b0e6e8f91f05ec4"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__sum__output.html#a773833f7ac86b8b65b0e6e8f91f05ec4">mom_sum_output::accumulate_net_input</a> (fluxes, sfc_state, tv, dt, G, US, CS)</td></tr>
+<tr class="memdesc:a773833f7ac86b8b65b0e6e8f91f05ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine accumates the net input of volume, salt and heat, through the ocean surface for use in diagnosing conservation.  <a href="namespacemom__sum__output.html#a773833f7ac86b8b65b0e6e8f91f05ec4">More...</a><br /></td></tr>
+<tr class="separator:a773833f7ac86b8b65b0e6e8f91f05ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53d3dcd50cba41760dd8713228785a8d"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__sum__output.html#a53d3dcd50cba41760dd8713228785a8d">mom_sum_output::depth_list_setup</a> (G, US, CS)</td></tr>
 <tr class="memdesc:a53d3dcd50cba41760dd8713228785a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine sets up an ordered list of depths, along with the cross sectional areas at each depth and the volume of fluid deeper than each depth. This might be read from a previously created file or it might be created anew. (For now only new creation occurs.  <a href="namespacemom__sum__output.html#a53d3dcd50cba41760dd8713228785a8d">More...</a><br /></td></tr>
 <tr class="separator:a53d3dcd50cba41760dd8713228785a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>

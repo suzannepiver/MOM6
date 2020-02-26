@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/tracer/oil_tracer.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/tracer/oil_tracer.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('oil__tracer_8F90.html','');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for oil_tracer.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="oil__tracer_8F90__incl.svg" width="202" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="oil__tracer_8F90__incl.svg" width="212" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -124,15 +124,15 @@ Modules</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions/Subroutines</h2></td></tr>
-<tr class="memitem:ae9bef348e3fea3af157e841a0c9f6aeb"><td class="memItemLeft" align="right" valign="top">logical function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoil__tracer.html#ae9bef348e3fea3af157e841a0c9f6aeb">oil_tracer::register_oil_tracer</a> (HI, GV, param_file, CS, tr_Reg, restart_CS)</td></tr>
-<tr class="memdesc:ae9bef348e3fea3af157e841a0c9f6aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register oil tracer fields and subroutines to be used with MOM.  <a href="namespaceoil__tracer.html#ae9bef348e3fea3af157e841a0c9f6aeb">More...</a><br /></td></tr>
-<tr class="separator:ae9bef348e3fea3af157e841a0c9f6aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aceaf614d8651772124719e32879e23"><td class="memItemLeft" align="right" valign="top">logical function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoil__tracer.html#a3aceaf614d8651772124719e32879e23">oil_tracer::register_oil_tracer</a> (HI, GV, US, param_file, CS, tr_Reg, restart_CS)</td></tr>
+<tr class="memdesc:a3aceaf614d8651772124719e32879e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register oil tracer fields and subroutines to be used with MOM.  <a href="namespaceoil__tracer.html#a3aceaf614d8651772124719e32879e23">More...</a><br /></td></tr>
+<tr class="separator:a3aceaf614d8651772124719e32879e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cb362789ef0ea593f8b7de22016a92e"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoil__tracer.html#a3cb362789ef0ea593f8b7de22016a92e">oil_tracer::initialize_oil_tracer</a> (restart, day, G, GV, US, h, diag, OBC, CS, sponge_CSp)</td></tr>
 <tr class="memdesc:a3cb362789ef0ea593f8b7de22016a92e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the oil tracers and set up tracer output.  <a href="namespaceoil__tracer.html#a3cb362789ef0ea593f8b7de22016a92e">More...</a><br /></td></tr>
 <tr class="separator:a3cb362789ef0ea593f8b7de22016a92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16435914b962aacb079217f7c88d7b0a"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoil__tracer.html#a16435914b962aacb079217f7c88d7b0a">oil_tracer::oil_tracer_column_physics</a> (h_old, h_new, ea, eb, fluxes, dt, G, GV, CS, tv, evap_CFL_limit, minimum_forcing_depth)</td></tr>
-<tr class="memdesc:a16435914b962aacb079217f7c88d7b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply sources, sinks, diapycnal mixing and rising motions to the oil tracers.  <a href="namespaceoil__tracer.html#a16435914b962aacb079217f7c88d7b0a">More...</a><br /></td></tr>
-<tr class="separator:a16435914b962aacb079217f7c88d7b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5cd83c5d5a92a7774d7e6bda53c646"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoil__tracer.html#a2e5cd83c5d5a92a7774d7e6bda53c646">oil_tracer::oil_tracer_column_physics</a> (h_old, h_new, ea, eb, fluxes, dt, G, GV, US, CS, tv, evap_CFL_limit, minimum_forcing_depth)</td></tr>
+<tr class="memdesc:a2e5cd83c5d5a92a7774d7e6bda53c646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply sources, sinks, diapycnal mixing and rising motions to the oil tracers.  <a href="namespaceoil__tracer.html#a2e5cd83c5d5a92a7774d7e6bda53c646">More...</a><br /></td></tr>
+<tr class="separator:a2e5cd83c5d5a92a7774d7e6bda53c646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8964b16549dba8fc850e4af15af8029"><td class="memItemLeft" align="right" valign="top">integer function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoil__tracer.html#ac8964b16549dba8fc850e4af15af8029">oil_tracer::oil_stock</a> (h, stocks, G, GV, CS, names, units, stock_index)</td></tr>
 <tr class="memdesc:ac8964b16549dba8fc850e4af15af8029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the mass-weighted integral of the oil tracer stocks, returning the number of stocks it has calculated. If the stock_index is present, only the stock corresponding to that coded index is returned.  <a href="namespaceoil__tracer.html#ac8964b16549dba8fc850e4af15af8029">More...</a><br /></td></tr>
 <tr class="separator:ac8964b16549dba8fc850e4af15af8029"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/parameterizations/lateral/MOM_MEKE_types.F90 Source File</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/lateral/MOM_MEKE_types.F90 Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,9 +106,9 @@ $(document).ready(function(){initNavTree('MOM__MEKE__types_8F90_source.html','')
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="comment">! Variables</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structmom__meke__types_1_1meke__type.html#a55c38f44014cf0258f3672a3e399a482">   10</a></span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: &amp;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    meke =&gt; null(), &amp;   <span class="comment">!&lt; Vertically averaged eddy kinetic energy [L2 T-2 ~&gt; m2 s-2].</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    gm_src =&gt; null(), &amp; <span class="comment">!&lt; MEKE source due to thickness mixing (GM) [kg m-2 L2 T-3 ~&gt; W m-2].</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    mom_src =&gt; null(),&amp; <span class="comment">!&lt; MEKE source from lateral friction in the momentum equations [kg m-2 L2 T-3 ~&gt; W m-2].</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    gme_snk =&gt; null(),&amp; <span class="comment">!&lt; MEKE sink from GME backscatter in the momentum equations [kg m-2 L2 T-3 ~&gt; W m-2].</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    gm_src =&gt; null(), &amp; <span class="comment">!&lt; MEKE source due to thickness mixing (GM) [R Z L2 T-3 ~&gt; W m-2].</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    mom_src =&gt; null(),&amp; <span class="comment">!&lt; MEKE source from lateral friction in the momentum equations [R Z L2 T-3 ~&gt; W m-2].</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    gme_snk =&gt; null(),&amp; <span class="comment">!&lt; MEKE sink from GME backscatter in the momentum equations [R Z L2 T-3 ~&gt; W m-2].</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    kh =&gt; null(), &amp;     <span class="comment">!&lt; The MEKE-derived lateral mixing coefficient [L2 T-1 ~&gt; m2 s-1].</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    kh_diff =&gt; null(), &amp; <span class="comment">!&lt; Uses the non-MEKE-derived thickness diffusion coefficient to diffuse</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">                        !! MEKE [L2 T-1 ~&gt; m2 s-1].</span></div>

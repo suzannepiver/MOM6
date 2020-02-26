@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('structmom__open__boundary_1_1ocean__ob
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Open-boundary data. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00193">193</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00195">195</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_open_boundary::ocean_obc_type:</div>
 <div class="dyncontent">
@@ -189,6 +189,15 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a7b56c0d30ff989dfd9cffad9a9ed776f"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1ocean__obc__type.html#a7b56c0d30ff989dfd9cffad9a9ed776f">g_earth</a></td></tr>
 <tr class="memdesc:a7b56c0d30ff989dfd9cffad9a9ed776f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The gravitational acceleration [m s-2].  <a href="structmom__open__boundary_1_1ocean__obc__type.html#a7b56c0d30ff989dfd9cffad9a9ed776f">More...</a><br /></td></tr>
 <tr class="separator:a7b56c0d30ff989dfd9cffad9a9ed776f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad97dff2cf13fa1c760a8ed59bdf956e9"><td class="memItemLeft" align="right" valign="top">logical, dimension(:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1ocean__obc__type.html#ad97dff2cf13fa1c760a8ed59bdf956e9">tracer_x_reservoirs_used</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:ad97dff2cf13fa1c760a8ed59bdf956e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimensioned by the number of tracers, set globally,.  <a href="structmom__open__boundary_1_1ocean__obc__type.html#ad97dff2cf13fa1c760a8ed59bdf956e9">More...</a><br /></td></tr>
+<tr class="separator:ad97dff2cf13fa1c760a8ed59bdf956e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a123a8735f2074c50fda6a2a3793b0bce"><td class="memItemLeft" align="right" valign="top">logical, dimension(:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1ocean__obc__type.html#a123a8735f2074c50fda6a2a3793b0bce">tracer_y_reservoirs_used</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:a123a8735f2074c50fda6a2a3793b0bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimensioned by the number of tracers, set globally,.  <a href="structmom__open__boundary_1_1ocean__obc__type.html#a123a8735f2074c50fda6a2a3793b0bce">More...</a><br /></td></tr>
+<tr class="separator:a123a8735f2074c50fda6a2a3793b0bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622e6dd1921e22b1fc957168365cfd1c"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1ocean__obc__type.html#a622e6dd1921e22b1fc957168365cfd1c">ntr</a> = 0</td></tr>
+<tr class="memdesc:a622e6dd1921e22b1fc957168365cfd1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of tracers  <a href="structmom__open__boundary_1_1ocean__obc__type.html#a622e6dd1921e22b1fc957168365cfd1c">More...</a><br /></td></tr>
+<tr class="separator:a622e6dd1921e22b1fc957168365cfd1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b93f0d76a6a2309a81ae365e6b3236c"><td class="memItemLeft" align="right" valign="top">type(<a class="el" href="structmom__open__boundary_1_1obc__segment__type.html">obc_segment_type</a>), dimension(:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1ocean__obc__type.html#a2b93f0d76a6a2309a81ae365e6b3236c">segment</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a2b93f0d76a6a2309a81ae365e6b3236c"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of segment objects.  <a href="structmom__open__boundary_1_1ocean__obc__type.html#a2b93f0d76a6a2309a81ae365e6b3236c">More...</a><br /></td></tr>
 <tr class="separator:a2b93f0d76a6a2309a81ae365e6b3236c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,19 +223,31 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a6c961c126d9e75e315495da8f3bf90ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registry type for boundaries.  <a href="structmom__open__boundary_1_1ocean__obc__type.html#a6c961c126d9e75e315495da8f3bf90ce">More...</a><br /></td></tr>
 <tr class="separator:a6c961c126d9e75e315495da8f3bf90ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b2ccf0f0aafcfc7d34432af3d4ddcfc"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1ocean__obc__type.html#a0b2ccf0f0aafcfc7d34432af3d4ddcfc">rx_normal</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a0b2ccf0f0aafcfc7d34432af3d4ddcfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array storage for restarts.  <a href="structmom__open__boundary_1_1ocean__obc__type.html#a0b2ccf0f0aafcfc7d34432af3d4ddcfc">More...</a><br /></td></tr>
+<tr class="memdesc:a0b2ccf0f0aafcfc7d34432af3d4ddcfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array storage for normal phase speed for EW radiation OBCs in units of.  <a href="structmom__open__boundary_1_1ocean__obc__type.html#a0b2ccf0f0aafcfc7d34432af3d4ddcfc">More...</a><br /></td></tr>
 <tr class="separator:a0b2ccf0f0aafcfc7d34432af3d4ddcfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa816ce333b8b114fd2089928c70f455"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1ocean__obc__type.html#aaa816ce333b8b114fd2089928c70f455">ry_normal</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:aaa816ce333b8b114fd2089928c70f455"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array storage for restarts.  <a href="structmom__open__boundary_1_1ocean__obc__type.html#aaa816ce333b8b114fd2089928c70f455">More...</a><br /></td></tr>
+<tr class="memdesc:aaa816ce333b8b114fd2089928c70f455"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array storage for normal phase speed for NS radiation OBCs in units of.  <a href="structmom__open__boundary_1_1ocean__obc__type.html#aaa816ce333b8b114fd2089928c70f455">More...</a><br /></td></tr>
 <tr class="separator:aaa816ce333b8b114fd2089928c70f455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15f10e1507245ba5b669a06a57f75bc"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1ocean__obc__type.html#af15f10e1507245ba5b669a06a57f75bc">rx_oblique</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:af15f10e1507245ba5b669a06a57f75bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array storage for oblique boundary condition restarts [L2 T-2 ~&gt; m2 s-2].  <a href="structmom__open__boundary_1_1ocean__obc__type.html#af15f10e1507245ba5b669a06a57f75bc">More...</a><br /></td></tr>
+<tr class="separator:af15f10e1507245ba5b669a06a57f75bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e654a41180eee33b98f3e2ff653ef2"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1ocean__obc__type.html#a64e654a41180eee33b98f3e2ff653ef2">ry_oblique</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:a64e654a41180eee33b98f3e2ff653ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array storage for oblique boundary condition restarts [L2 T-2 ~&gt; m2 s-2].  <a href="structmom__open__boundary_1_1ocean__obc__type.html#a64e654a41180eee33b98f3e2ff653ef2">More...</a><br /></td></tr>
+<tr class="separator:a64e654a41180eee33b98f3e2ff653ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab0a9cf93058b215b349a76ae4ca4414"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1ocean__obc__type.html#aab0a9cf93058b215b349a76ae4ca4414">cff_normal</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:aab0a9cf93058b215b349a76ae4ca4414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array storage for restarts.  <a href="structmom__open__boundary_1_1ocean__obc__type.html#aab0a9cf93058b215b349a76ae4ca4414">More...</a><br /></td></tr>
+<tr class="memdesc:aab0a9cf93058b215b349a76ae4ca4414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array storage for oblique boundary condition restarts [L2 T-2 ~&gt; m2 s-2].  <a href="structmom__open__boundary_1_1ocean__obc__type.html#aab0a9cf93058b215b349a76ae4ca4414">More...</a><br /></td></tr>
 <tr class="separator:aab0a9cf93058b215b349a76ae4ca4414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21c548e3233825a950af994220d3868c"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1ocean__obc__type.html#a21c548e3233825a950af994220d3868c">tres_x</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:a21c548e3233825a950af994220d3868c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array storage of tracer reservoirs for restarts [conc L ~&gt; conc m].  <a href="structmom__open__boundary_1_1ocean__obc__type.html#a21c548e3233825a950af994220d3868c">More...</a><br /></td></tr>
+<tr class="separator:a21c548e3233825a950af994220d3868c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff9782a7d7ac0044c91cf1b5afbf5a1"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:,:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1ocean__obc__type.html#afff9782a7d7ac0044c91cf1b5afbf5a1">tres_y</a> =&gt; NULL()</td></tr>
+<tr class="memdesc:afff9782a7d7ac0044c91cf1b5afbf5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array storage of tracer reservoirs for restarts [conc L ~&gt; conc m].  <a href="structmom__open__boundary_1_1ocean__obc__type.html#afff9782a7d7ac0044c91cf1b5afbf5a1">More...</a><br /></td></tr>
+<tr class="separator:afff9782a7d7ac0044c91cf1b5afbf5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdca59404b425a842b09b9a97e5a9c45"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1ocean__obc__type.html#acdca59404b425a842b09b9a97e5a9c45">silly_h</a></td></tr>
 <tr class="memdesc:acdca59404b425a842b09b9a97e5a9c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">A silly value of thickness outside of the domain that can be used to test the independence of the OBCs to this external data [H ~&gt; m or kg m-2].  <a href="structmom__open__boundary_1_1ocean__obc__type.html#acdca59404b425a842b09b9a97e5a9c45">More...</a><br /></td></tr>
 <tr class="separator:acdca59404b425a842b09b9a97e5a9c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a329314ce879cdaa1f90d93f3514bc766"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__open__boundary_1_1ocean__obc__type.html#a329314ce879cdaa1f90d93f3514bc766">silly_u</a></td></tr>
-<tr class="memdesc:a329314ce879cdaa1f90d93f3514bc766"><td class="mdescLeft">&#160;</td><td class="mdescRight">A silly value of velocity outside of the domain that can be used to test the independence of the OBCs to this external data [m s-1].  <a href="structmom__open__boundary_1_1ocean__obc__type.html#a329314ce879cdaa1f90d93f3514bc766">More...</a><br /></td></tr>
+<tr class="memdesc:a329314ce879cdaa1f90d93f3514bc766"><td class="mdescLeft">&#160;</td><td class="mdescRight">A silly value of velocity outside of the domain that can be used to test the independence of the OBCs to this external data [L T-1 ~&gt; m s-1].  <a href="structmom__open__boundary_1_1ocean__obc__type.html#a329314ce879cdaa1f90d93f3514bc766">More...</a><br /></td></tr>
 <tr class="separator:a329314ce879cdaa1f90d93f3514bc766"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variables and constants</h2>
@@ -244,8 +265,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If True, read data on supergrid. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00235">235</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordtype">logical</span> :: brushcutter_mode = .false.               <span class="comment">!&lt; If True, read data on supergrid.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00237">237</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordtype">logical</span> :: brushcutter_mode = .false.               <span class="comment">!&lt; If True, read data on supergrid.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -261,11 +282,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Array storage for restarts. </p>
+<p>Array storage for oblique boundary condition restarts [L2 T-2 ~&gt; m2 s-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00258">258</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: cff_normal =&gt; null()  <span class="comment">!&lt; Array storage for restarts</span></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00265">265</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+
 </div>
 </div>
 <a id="af15c7cccc63346ab4faa13824c3d1c65"></a>
@@ -282,8 +302,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If True, uses external data for tangential velocity to compute normal gradient in the strain on open boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00229">229</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordtype">logical</span> :: computed_strain = .false.                <span class="comment">!&lt; If True, uses external data for tangential velocity to compute</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00231">231</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keywordtype">logical</span> :: computed_strain = .false.                <span class="comment">!&lt; If True, uses external data for tangential velocity to compute</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -301,8 +321,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If True, uses external data for tangential velocity in the relative vorticity on open boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00222">222</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keywordtype">logical</span> :: computed_vorticity = .false.             <span class="comment">!&lt; If True, uses external data for tangential velocity</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00224">224</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">logical</span> :: computed_vorticity = .false.             <span class="comment">!&lt; If True, uses external data for tangential velocity</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -320,8 +340,8 @@ Public variables and constants</h2></td></tr>
 
 <p>True if any zonal velocity points in the global domain use Flather BCs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00200">200</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">logical</span> :: Flather_u_BCs_exist_globally = .false.   <span class="comment">!&lt; True if any zonal velocity points</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00202">202</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordtype">logical</span> :: Flather_u_BCs_exist_globally = .false.   <span class="comment">!&lt; True if any zonal velocity points</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -339,8 +359,8 @@ Public variables and constants</h2></td></tr>
 
 <p>True if any meridional velocity points in the global domain use Flather BCs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00202">202</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordtype">logical</span> :: Flather_v_BCs_exist_globally = .false.   <span class="comment">!&lt; True if any meridional velocity points</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00204">204</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordtype">logical</span> :: Flather_v_BCs_exist_globally = .false.   <span class="comment">!&lt; True if any meridional velocity points</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -358,8 +378,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If True, sets normal gradient of tangential velocity to zero in the strain on open boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00227">227</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordtype">logical</span> :: freeslip_strain = .false.                <span class="comment">!&lt; If True, sets normal gradient of tangential velocity to zero</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00229">229</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordtype">logical</span> :: freeslip_strain = .false.                <span class="comment">!&lt; If True, sets normal gradient of tangential velocity to zero</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -377,8 +397,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If True, sets normal gradient of tangential velocity to zero in the relative vorticity on open boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00220">220</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordtype">logical</span> :: freeslip_vorticity = .false.             <span class="comment">!&lt; If True, sets normal gradient of tangential velocity to zero</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00222">222</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keywordtype">logical</span> :: freeslip_vorticity = .false.             <span class="comment">!&lt; If True, sets normal gradient of tangential velocity to zero</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -396,8 +416,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The gravitational acceleration [m s-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00236">236</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keywordtype">  real</span> :: g_Earth<span class="comment">                                     !&lt; The gravitational acceleration [m s-2].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00238">238</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keywordtype">  real</span> :: g_Earth<span class="comment">                                     !&lt; The gravitational acceleration [m s-2].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -415,8 +435,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The relative weighting for the baroclinic radiation velocities (or speed of characteristics) at the new time level (1) or the running mean (0) for velocities. Valid values range from 0 to 1, with a default of 0.3. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00246">246</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="keywordtype">  real</span> :: gamma_uv<span class="comment"> !&lt; The relative weighting for the baroclinic radiation</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00255">255</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="keywordtype">  real</span> :: gamma_uv<span class="comment"> !&lt; The relative weighting for the baroclinic radiation</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -434,8 +454,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of model layers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00195">195</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">integer</span> :: ke = 0<span class="comment">                                   !&lt; The number of model layers</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00197">197</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">integer</span> :: ke = 0<span class="comment">                                   !&lt; The number of model layers</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -453,8 +473,27 @@ Public variables and constants</h2></td></tr>
 
 <p>Is any i/o needed for OBCs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00218">218</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordtype">logical</span> :: needs_IO_for_data = .false.              <span class="comment">!&lt; Is any i/o needed for OBCs</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00220">220</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordtype">logical</span> :: needs_IO_for_data = .false.              <span class="comment">!&lt; Is any i/o needed for OBCs</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a622e6dd1921e22b1fc957168365cfd1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a622e6dd1921e22b1fc957168365cfd1c">&#9670;&nbsp;</a></span>ntr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer mom_open_boundary::ocean_obc_type::ntr = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>number of tracers </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00245">245</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keywordtype">integer</span>                       :: ntr = 0<span class="comment">            !&lt; number of tracers</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -472,8 +511,8 @@ Public variables and constants</h2></td></tr>
 
 <p>True if any velocity points in the global domain use nudged BCs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00206">206</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordtype">logical</span> :: nudged_u_BCs_exist_globally = .false.    <span class="comment">!&lt; True if any velocity points in the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00208">208</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keywordtype">logical</span> :: nudged_u_BCs_exist_globally = .false.    <span class="comment">!&lt; True if any velocity points in the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -491,8 +530,8 @@ Public variables and constants</h2></td></tr>
 
 <p>True if any velocity points in the global domain use nudged BCs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00208">208</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keywordtype">logical</span> :: nudged_v_BCs_exist_globally = .false.    <span class="comment">!&lt; True if any velocity points in the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00210">210</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordtype">logical</span> :: nudged_v_BCs_exist_globally = .false.    <span class="comment">!&lt; True if any velocity points in the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -510,8 +549,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of open-boundary segments. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00194">194</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordtype">integer</span> :: number_of_segments = 0<span class="comment">                   !&lt; The number of open-boundary segments.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00196">196</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordtype">integer</span> :: number_of_segments = 0<span class="comment">                   !&lt; The number of open-boundary segments.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -529,8 +568,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Is there an open boundary on this tile? </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00253">253</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keywordtype">logical</span> :: OBC_pe<span class="comment"> !&lt; Is there an open boundary on this tile?</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00262">262</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="keywordtype">logical</span> :: OBC_pe<span class="comment"> !&lt; Is there an open boundary on this tile?</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -548,8 +587,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Registry type for boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00255">255</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordtype">type</span>(OBC_registry_type), <span class="keywordtype">pointer</span> :: OBC_Reg =&gt; null()  <span class="comment">!&lt; Registry type for boundaries</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00264">264</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keywordtype">type</span>(OBC_registry_type), <span class="keywordtype">pointer</span> :: OBC_Reg =&gt; null()  <span class="comment">!&lt; Registry type for boundaries</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -567,8 +606,8 @@ Public variables and constants</h2></td></tr>
 
 <p>True if any velocity points in the global domain use oblique BCs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00204">204</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordtype">logical</span> :: oblique_BCs_exist_globally = .false.     <span class="comment">!&lt; True if any velocity points</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00206">206</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordtype">logical</span> :: oblique_BCs_exist_globally = .false.     <span class="comment">!&lt; True if any velocity points</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -586,8 +625,8 @@ Public variables and constants</h2></td></tr>
 
 <p>True if any zonal velocity points in the global domain use open BCs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00196">196</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordtype">logical</span> :: open_u_BCs_exist_globally = .false.      <span class="comment">!&lt; True if any zonal velocity points</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00198">198</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">logical</span> :: open_u_BCs_exist_globally = .false.      <span class="comment">!&lt; True if any zonal velocity points</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -605,8 +644,8 @@ Public variables and constants</h2></td></tr>
 
 <p>True if any meridional velocity points in the global domain use open BCs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00198">198</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">logical</span> :: open_v_BCs_exist_globally = .false.      <span class="comment">!&lt; True if any meridional velocity points</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00200">200</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">logical</span> :: open_v_BCs_exist_globally = .false.      <span class="comment">!&lt; True if any meridional velocity points</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -624,8 +663,8 @@ Public variables and constants</h2></td></tr>
 
 <p>True if radiations BCs are in use anywhere. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00214">214</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordtype">logical</span> :: radiation_BCs_exist_globally = .false.   <span class="comment">!&lt; True if radiations BCs are in use anywhere.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00216">216</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordtype">logical</span> :: radiation_BCs_exist_globally = .false.   <span class="comment">!&lt; True if radiations BCs are in use anywhere.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -643,8 +682,8 @@ Public variables and constants</h2></td></tr>
 
 <p>ALE remapping control structure for segments only. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00254">254</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keywordtype">type</span>(remapping_CS),      <span class="keywordtype">pointer</span> :: remap_CS<span class="comment">   !&lt; ALE remapping control structure for segments only</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00263">263</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordtype">type</span>(remapping_CS),      <span class="keywordtype">pointer</span> :: remap_CS<span class="comment">   !&lt; ALE remapping control structure for segments only</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -662,8 +701,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The maximum magnitude of the baroclinic radiation velocity (or speed of characteristics) [m s-1]. The default value is 10 m s-1. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00250">250</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keywordtype">  real</span> :: rx_max<span class="comment">   !&lt; The maximum magnitude of the baroclinic radiation</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00259">259</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keywordtype">  real</span> :: rx_max<span class="comment">   !&lt; The maximum magnitude of the baroclinic radiation</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -679,11 +718,36 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Array storage for restarts. </p>
+<p>Array storage for normal phase speed for EW radiation OBCs in units of. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00256">256</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: rx_normal =&gt; null()  <span class="comment">!&lt; Array storage for restarts</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00265">265</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: &amp;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    rx_normal =&gt; null(), &amp; <span class="comment">!&lt; Array storage for normal phase speed for EW radiation OBCs in units of</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">                           !! grid points per timestep [nondim]</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    ry_normal =&gt; null(), &amp; <span class="comment">!&lt; Array storage for normal phase speed for NS radiation OBCs in units of</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">                           !! grid points per timestep [nondim]</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    rx_oblique =&gt; null(), &amp; <span class="comment">!&lt; Array storage for oblique boundary condition restarts [L2 T-2 ~&gt; m2 s-2]</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    ry_oblique =&gt; null(), &amp; <span class="comment">!&lt; Array storage for oblique boundary condition restarts [L2 T-2 ~&gt; m2 s-2]</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    cff_normal =&gt; null()   <span class="comment">!&lt; Array storage for oblique boundary condition restarts [L2 T-2 ~&gt; m2 s-2]</span></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="af15f10e1507245ba5b669a06a57f75bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af15f10e1507245ba5b669a06a57f75bc">&#9670;&nbsp;</a></span>rx_oblique</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real, dimension(:,:,:), pointer mom_open_boundary::ocean_obc_type::rx_oblique =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array storage for oblique boundary condition restarts [L2 T-2 ~&gt; m2 s-2]. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00265">265</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+
 </div>
 </div>
 <a id="aaa816ce333b8b114fd2089928c70f455"></a>
@@ -698,11 +762,28 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Array storage for restarts. </p>
+<p>Array storage for normal phase speed for NS radiation OBCs in units of. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00257">257</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:)</span> :: ry_normal =&gt; null()  <span class="comment">!&lt; Array storage for restarts</span></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00265">265</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+
+</div>
+</div>
+<a id="a64e654a41180eee33b98f3e2ff653ef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64e654a41180eee33b98f3e2ff653ef2">&#9670;&nbsp;</a></span>ry_oblique</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real, dimension(:,:,:), pointer mom_open_boundary::ocean_obc_type::ry_oblique =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array storage for oblique boundary condition restarts [L2 T-2 ~&gt; m2 s-2]. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00265">265</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+
 </div>
 </div>
 <a id="a2b93f0d76a6a2309a81ae365e6b3236c"></a>
@@ -719,9 +800,9 @@ Public variables and constants</h2></td></tr>
 
 <p>List of segment objects. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00238">238</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordtype">type</span>(OBC_segment_type), <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:)</span> :: &amp;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    segment =&gt; null()   <span class="comment">!&lt; List of segment objects.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00247">247</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keywordtype">type</span>(OBC_segment_type), <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:)</span> :: &amp;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    segment =&gt; null()   <span class="comment">!&lt; List of segment objects.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -739,10 +820,10 @@ Public variables and constants</h2></td></tr>
 
 <p>Segment number of u-points. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00241">241</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    segnum_u =&gt; null(), &amp;   <span class="comment">!&lt; Segment number of u-points.</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    segnum_v =&gt; null()      <span class="comment">!&lt; Segment number of v-points.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00250">250</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:)</span> :: &amp;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    segnum_u =&gt; null(), &amp;   <span class="comment">!&lt; Segment number of u-points.</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    segnum_v =&gt; null()      <span class="comment">!&lt; Segment number of v-points.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -760,7 +841,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Segment number of v-points. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00241">241</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00250">250</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
 
 </div>
 </div>
@@ -778,8 +859,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A silly value of thickness outside of the domain that can be used to test the independence of the OBCs to this external data [H ~&gt; m or kg m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00259">259</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keywordtype">  real</span> :: silly_h<span class="comment">  !&lt; A silly value of thickness outside of the domain that</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00276">276</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="keywordtype">  real</span> :: silly_h<span class="comment">  !&lt; A silly value of thickness outside of the domain that can be used to test</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -795,10 +876,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A silly value of velocity outside of the domain that can be used to test the independence of the OBCs to this external data [m s-1]. </p>
+<p>A silly value of velocity outside of the domain that can be used to test the independence of the OBCs to this external data [L T-1 ~&gt; m s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00262">262</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keywordtype">  real</span> :: silly_u<span class="comment">  !&lt; A silly value of velocity outside of the domain that</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00278">278</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keywordtype">  real</span> :: silly_u<span class="comment">  !&lt; A silly value of velocity outside of the domain that can be used to test</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -816,8 +897,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If True, uses external data for tangential velocity gradients to compute strain on open boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00231">231</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keywordtype">logical</span> :: specified_strain = .false.               <span class="comment">!&lt; If True, uses external data for tangential velocity gradients</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00233">233</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordtype">logical</span> :: specified_strain = .false.               <span class="comment">!&lt; If True, uses external data for tangential velocity gradients</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -835,8 +916,8 @@ Public variables and constants</h2></td></tr>
 
 <p>True if any zonal velocity points in the global domain use specified BCs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00210">210</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordtype">logical</span> :: specified_u_BCs_exist_globally = .false. <span class="comment">!&lt; True if any zonal velocity points</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00212">212</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordtype">logical</span> :: specified_u_BCs_exist_globally = .false. <span class="comment">!&lt; True if any zonal velocity points</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -854,8 +935,8 @@ Public variables and constants</h2></td></tr>
 
 <p>True if any meridional velocity points in the global domain use specified BCs. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00212">212</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordtype">logical</span> :: specified_v_BCs_exist_globally = .false. <span class="comment">!&lt; True if any meridional velocity points</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00214">214</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordtype">logical</span> :: specified_v_BCs_exist_globally = .false. <span class="comment">!&lt; True if any meridional velocity points</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -873,9 +954,88 @@ Public variables and constants</h2></td></tr>
 
 <p>If True, uses external data for tangential velocity gradients in the relative vorticity on open boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00224">224</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">logical</span> :: specified_vorticity = .false.            <span class="comment">!&lt; If True, uses external data for tangential velocity</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00226">226</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordtype">logical</span> :: specified_vorticity = .false.            <span class="comment">!&lt; If True, uses external data for tangential velocity</span></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="ad97dff2cf13fa1c760a8ed59bdf956e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad97dff2cf13fa1c760a8ed59bdf956e9">&#9670;&nbsp;</a></span>tracer_x_reservoirs_used</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">logical, dimension(:), pointer mom_open_boundary::ocean_obc_type::tracer_x_reservoirs_used =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dimensioned by the number of tracers, set globally,. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00239">239</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:)</span> :: &amp;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                   tracer_x_reservoirs_used =&gt; null() <span class="comment">!&lt; Dimensioned by the number of tracers, set globally,</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a123a8735f2074c50fda6a2a3793b0bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a123a8735f2074c50fda6a2a3793b0bce">&#9670;&nbsp;</a></span>tracer_y_reservoirs_used</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">logical, dimension(:), pointer mom_open_boundary::ocean_obc_type::tracer_y_reservoirs_used =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dimensioned by the number of tracers, set globally,. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00242">242</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keywordtype">logical</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:)</span> :: &amp;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                   tracer_y_reservoirs_used =&gt; null() <span class="comment">!&lt; Dimensioned by the number of tracers, set globally,</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a21c548e3233825a950af994220d3868c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21c548e3233825a950af994220d3868c">&#9670;&nbsp;</a></span>tres_x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real, dimension(:,:,:,:), pointer mom_open_boundary::ocean_obc_type::tres_x =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array storage of tracer reservoirs for restarts [conc L ~&gt; conc m]. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00273">273</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span>, <span class="keywordtype">dimension(:,:,:,:)</span> :: &amp;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    tres_x =&gt; null(), &amp; <span class="comment">!&lt; Array storage of tracer reservoirs for restarts [conc L ~&gt; conc m]</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    tres_y =&gt; null()    <span class="comment">!&lt; Array storage of tracer reservoirs for restarts [conc L ~&gt; conc m]</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afff9782a7d7ac0044c91cf1b5afbf5a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff9782a7d7ac0044c91cf1b5afbf5a1">&#9670;&nbsp;</a></span>tres_y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real, dimension(:,:,:,:), pointer mom_open_boundary::ocean_obc_type::tres_y =&gt; NULL()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array storage of tracer reservoirs for restarts [conc L ~&gt; conc m]. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00273">273</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+
 </div>
 </div>
 <a id="a235456af89eba8ebe11f69eb02b205f1"></a>
@@ -892,8 +1052,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Is OBC data time-dependent. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00217">217</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keywordtype">logical</span> :: update_OBC = .false.                     <span class="comment">!&lt; Is OBC data time-dependent</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00219">219</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordtype">logical</span> :: update_OBC = .false.                     <span class="comment">!&lt; Is OBC data time-dependent</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -911,8 +1071,8 @@ Public variables and constants</h2></td></tr>
 
 <p>True if any OBC_USER_CONFIG is set for input from user directory. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00215">215</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keywordtype">logical</span> :: user_BCs_set_globally = .false.          <span class="comment">!&lt; True if any OBC_USER_CONFIG is set</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00217">217</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keywordtype">logical</span> :: user_BCs_set_globally = .false.          <span class="comment">!&lt; True if any OBC_USER_CONFIG is set</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -930,8 +1090,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If True, zeros the Laplacian of flow on open boundaries for use in the biharmonic viscosity term. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00233">233</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordtype">logical</span> :: zero_biharmonic = .false.                <span class="comment">!&lt; If True, zeros the Laplacian of flow on open boundaries for</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00235">235</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordtype">logical</span> :: zero_biharmonic = .false.                <span class="comment">!&lt; If True, zeros the Laplacian of flow on open boundaries for</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -949,8 +1109,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If True, sets strain to zero on open boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00226">226</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordtype">logical</span> :: zero_strain = .false.                    <span class="comment">!&lt; If True, sets strain to zero on open boundaries.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00228">228</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keywordtype">logical</span> :: zero_strain = .false.                    <span class="comment">!&lt; If True, sets strain to zero on open boundaries.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -968,13 +1128,13 @@ Public variables and constants</h2></td></tr>
 
 <p>If True, sets relative vorticity to zero on open boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00219">219</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordtype">logical</span> :: zero_vorticity = .false.                 <span class="comment">!&lt; If True, sets relative vorticity to zero on open boundaries.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__open__boundary_8F90_source.html#l00221">221</a> of file <a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordtype">logical</span> :: zero_vorticity = .false.                 <span class="comment">!&lt; If True, sets relative vorticity to zero on open boundaries.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/core/<a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/core/<a class="el" href="MOM__open__boundary_8F90_source.html">MOM_open_boundary.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

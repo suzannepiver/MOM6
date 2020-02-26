@@ -6,7 +6,7 @@ digraph "mom_tracer_registry::tracer_type"
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
   Node1 [label="mom_tracer_registry\l::tracer_type",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The tracer type."];
-  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" remap_tr\nadvect_tr\nhordiff_tr\nregistry_diags" ,fontname="Helvetica"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" remap_tr\nregistry_diags" ,fontname="Helvetica"];
   Node2 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" longname\ncmor_longname" ,fontname="Helvetica"];
   Node3 [label="character(len=240)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
@@ -18,6 +18,6 @@ digraph "mom_tracer_registry::tracer_type"
   Node6 [label="character(len=32)",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" id_trxh_tendency_2d\nid_adx\nid_dfxy_cont_2d\nid_dfx\nid_ady\nid_remap_cont\l_2d\nid_dfxy_conc\nid_dfy\nid_tr_vardec\nid_remap_conc\n..." ,fontname="Helvetica"];
   Node7 [label="integer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
-  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" diff_conc_xy\nconv_scale\nadvection_xy\ndf2d_conc_x\ndf2d_conc_y\ndf2d_x\ntrxh_prev\ndf2d_y\ndf_x\nad2d_x\n..." ,fontname="Helvetica"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" conv_scale\nlbd_dfx_2d\nadvection_xy\nlbd_dfy_2d\nlbd_dfx\nlbd_dfy\ndf2d_x\nlbd_bulk_df\l_x\ntrxh_prev\ndf2d_y\n..." ,fontname="Helvetica"];
   Node8 [label="real",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
 }

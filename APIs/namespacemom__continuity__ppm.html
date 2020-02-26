@@ -115,39 +115,39 @@ Data Types</h2></td></tr>
 <tr class="memitem:a4b409d0d89dbdbbea05f4a3ade088902"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#a4b409d0d89dbdbbea05f4a3ade088902">id_clock_correct</a></td></tr>
 <tr class="memdesc:a4b409d0d89dbdbbea05f4a3ade088902"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPU time clock IDs.  <a href="namespacemom__continuity__ppm.html#a4b409d0d89dbdbbea05f4a3ade088902">More...</a><br /></td></tr>
 <tr class="separator:a4b409d0d89dbdbbea05f4a3ade088902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad928a3c6f1cb3c01f944a89d4b13d08b"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#ad928a3c6f1cb3c01f944a89d4b13d08b">continuity_ppm</a> (u, v, hin, h, uh, vh, dt_in_T, G, GV, US, CS, uhbt, vhbt, OBC, visc_rem_u, visc_rem_v, u_cor, v_cor, BT_cont)</td></tr>
-<tr class="memdesc:ad928a3c6f1cb3c01f944a89d4b13d08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time steps the layer thicknesses, using a monotonically limit, directionally split PPM scheme, based on Lin (1994).  <a href="namespacemom__continuity__ppm.html#ad928a3c6f1cb3c01f944a89d4b13d08b">More...</a><br /></td></tr>
-<tr class="separator:ad928a3c6f1cb3c01f944a89d4b13d08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9ae859f0fd4d6b13faab1065bf371b2"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#ac9ae859f0fd4d6b13faab1065bf371b2">zonal_mass_flux</a> (u, h_in, uh, dt_in_T, G, GV, US, CS, LB, uhbt, OBC, visc_rem_u, u_cor, BT_cont)</td></tr>
-<tr class="memdesc:ac9ae859f0fd4d6b13faab1065bf371b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the mass or volume fluxes through the zonal faces, and other related quantities.  <a href="namespacemom__continuity__ppm.html#ac9ae859f0fd4d6b13faab1065bf371b2">More...</a><br /></td></tr>
-<tr class="separator:ac9ae859f0fd4d6b13faab1065bf371b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a12a5757ff16a83b8971cec715147e4"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#a0a12a5757ff16a83b8971cec715147e4">zonal_flux_layer</a> (u, h, h_L, h_R, uh, duhdu, visc_rem, dt_in_T, G, US, j, ish, ieh, do_I, vol_CFL, OBC)</td></tr>
-<tr class="memdesc:a0a12a5757ff16a83b8971cec715147e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the zonal mass or volume fluxes in a layer.  <a href="namespacemom__continuity__ppm.html#a0a12a5757ff16a83b8971cec715147e4">More...</a><br /></td></tr>
-<tr class="separator:a0a12a5757ff16a83b8971cec715147e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0e7b60457e8fd605e3fffd6c3ba9827"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#ab0e7b60457e8fd605e3fffd6c3ba9827">zonal_face_thickness</a> (u, h, h_L, h_R, h_u, dt_in_T, G, US, LB, vol_CFL, marginal, visc_rem_u, OBC)</td></tr>
-<tr class="memdesc:ab0e7b60457e8fd605e3fffd6c3ba9827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the effective interface thickness at each zonal velocity point.  <a href="namespacemom__continuity__ppm.html#ab0e7b60457e8fd605e3fffd6c3ba9827">More...</a><br /></td></tr>
-<tr class="separator:ab0e7b60457e8fd605e3fffd6c3ba9827"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92727e6da5d660f09e7ed9abaa076b6e"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#a92727e6da5d660f09e7ed9abaa076b6e">zonal_flux_adjust</a> (u, h_in, h_L, h_R, uhbt, uh_tot_0, duhdu_tot_0, du, du_max_CFL, du_min_CFL, dt_in_T, G, US, CS, visc_rem, j, ish, ieh, do_I_in, full_precision, uh_3d, OBC)</td></tr>
-<tr class="memdesc:a92727e6da5d660f09e7ed9abaa076b6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the barotropic velocity adjustment that gives the desired barotropic (layer-summed) transport.  <a href="namespacemom__continuity__ppm.html#a92727e6da5d660f09e7ed9abaa076b6e">More...</a><br /></td></tr>
-<tr class="separator:a92727e6da5d660f09e7ed9abaa076b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6921e0b1534dfb716dc9cc6aa9b84f8"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#ac6921e0b1534dfb716dc9cc6aa9b84f8">set_zonal_bt_cont</a> (u, h_in, h_L, h_R, BT_cont, uh_tot_0, duhdu_tot_0, du_max_CFL, du_min_CFL, dt_in_T, G, US, CS, visc_rem, visc_rem_max, j, ish, ieh, do_I)</td></tr>
-<tr class="memdesc:ac6921e0b1534dfb716dc9cc6aa9b84f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a structure that describes the zonal barotropic volume or mass fluxes as a function of barotropic flow to agree closely with the sum of the layer's transports.  <a href="namespacemom__continuity__ppm.html#ac6921e0b1534dfb716dc9cc6aa9b84f8">More...</a><br /></td></tr>
-<tr class="separator:ac6921e0b1534dfb716dc9cc6aa9b84f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8518f52de5e1be087caac0fc7db255f"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#ad8518f52de5e1be087caac0fc7db255f">meridional_mass_flux</a> (v, h_in, vh, dt_in_T, G, GV, US, CS, LB, vhbt, OBC, visc_rem_v, v_cor, BT_cont)</td></tr>
-<tr class="memdesc:ad8518f52de5e1be087caac0fc7db255f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the mass or volume fluxes through the meridional faces, and other related quantities.  <a href="namespacemom__continuity__ppm.html#ad8518f52de5e1be087caac0fc7db255f">More...</a><br /></td></tr>
-<tr class="separator:ad8518f52de5e1be087caac0fc7db255f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7903cb1f2a81dd7c1e6c6327a8354660"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#a7903cb1f2a81dd7c1e6c6327a8354660">merid_flux_layer</a> (v, h, h_L, h_R, vh, dvhdv, visc_rem, dt_in_T, G, US, J, ish, ieh, do_I, vol_CFL, OBC)</td></tr>
-<tr class="memdesc:a7903cb1f2a81dd7c1e6c6327a8354660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the meridional mass or volume fluxes in a layer.  <a href="namespacemom__continuity__ppm.html#a7903cb1f2a81dd7c1e6c6327a8354660">More...</a><br /></td></tr>
-<tr class="separator:a7903cb1f2a81dd7c1e6c6327a8354660"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f73cd224d4e8bdb6012359220ebd6c"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#ac4f73cd224d4e8bdb6012359220ebd6c">merid_face_thickness</a> (v, h, h_L, h_R, h_v, dt_in_T, G, US, LB, vol_CFL, marginal, visc_rem_v, OBC)</td></tr>
-<tr class="memdesc:ac4f73cd224d4e8bdb6012359220ebd6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the effective interface thickness at each meridional velocity point.  <a href="namespacemom__continuity__ppm.html#ac4f73cd224d4e8bdb6012359220ebd6c">More...</a><br /></td></tr>
-<tr class="separator:ac4f73cd224d4e8bdb6012359220ebd6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0e2e51881c2eef081ee1e7731e8ebc4"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#aa0e2e51881c2eef081ee1e7731e8ebc4">meridional_flux_adjust</a> (v, h_in, h_L, h_R, vhbt, vh_tot_0, dvhdv_tot_0, dv, dv_max_CFL, dv_min_CFL, dt_in_T, G, US, CS, visc_rem, j, ish, ieh, do_I_in, full_precision, vh_3d, OBC)</td></tr>
-<tr class="memdesc:aa0e2e51881c2eef081ee1e7731e8ebc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the barotropic velocity adjustment that gives the desired barotropic (layer-summed) transport.  <a href="namespacemom__continuity__ppm.html#aa0e2e51881c2eef081ee1e7731e8ebc4">More...</a><br /></td></tr>
-<tr class="separator:aa0e2e51881c2eef081ee1e7731e8ebc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85af71a6eb17a9501238c84e11391b60"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#a85af71a6eb17a9501238c84e11391b60">set_merid_bt_cont</a> (v, h_in, h_L, h_R, BT_cont, vh_tot_0, dvhdv_tot_0, dv_max_CFL, dv_min_CFL, dt_in_T, G, US, CS, visc_rem, visc_rem_max, j, ish, ieh, do_I)</td></tr>
-<tr class="memdesc:a85af71a6eb17a9501238c84e11391b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets of a structure that describes the meridional barotropic volume or mass fluxes as a function of barotropic flow to agree closely with the sum of the layer's transports.  <a href="namespacemom__continuity__ppm.html#a85af71a6eb17a9501238c84e11391b60">More...</a><br /></td></tr>
-<tr class="separator:a85af71a6eb17a9501238c84e11391b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a665851a49a4bde77b4ef5e25332947f6"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#a665851a49a4bde77b4ef5e25332947f6">continuity_ppm</a> (u, v, hin, h, uh, vh, dt, G, GV, US, CS, uhbt, vhbt, OBC, visc_rem_u, visc_rem_v, u_cor, v_cor, BT_cont)</td></tr>
+<tr class="memdesc:a665851a49a4bde77b4ef5e25332947f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time steps the layer thicknesses, using a monotonically limit, directionally split PPM scheme, based on Lin (1994).  <a href="namespacemom__continuity__ppm.html#a665851a49a4bde77b4ef5e25332947f6">More...</a><br /></td></tr>
+<tr class="separator:a665851a49a4bde77b4ef5e25332947f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f5d6764ed315043d3b91b209db5c0a0"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#a5f5d6764ed315043d3b91b209db5c0a0">zonal_mass_flux</a> (u, h_in, uh, dt, G, GV, US, CS, LB, uhbt, OBC, visc_rem_u, u_cor, BT_cont)</td></tr>
+<tr class="memdesc:a5f5d6764ed315043d3b91b209db5c0a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the mass or volume fluxes through the zonal faces, and other related quantities.  <a href="namespacemom__continuity__ppm.html#a5f5d6764ed315043d3b91b209db5c0a0">More...</a><br /></td></tr>
+<tr class="separator:a5f5d6764ed315043d3b91b209db5c0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a713196d0cfe6cb4cc8a91239a8dba02d"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#a713196d0cfe6cb4cc8a91239a8dba02d">zonal_flux_layer</a> (u, h, h_L, h_R, uh, duhdu, visc_rem, dt, G, US, j, ish, ieh, do_I, vol_CFL, OBC)</td></tr>
+<tr class="memdesc:a713196d0cfe6cb4cc8a91239a8dba02d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the zonal mass or volume fluxes in a layer.  <a href="namespacemom__continuity__ppm.html#a713196d0cfe6cb4cc8a91239a8dba02d">More...</a><br /></td></tr>
+<tr class="separator:a713196d0cfe6cb4cc8a91239a8dba02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e76825c96ffca1ae0e84469ab46029b"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#a9e76825c96ffca1ae0e84469ab46029b">zonal_face_thickness</a> (u, h, h_L, h_R, h_u, dt, G, US, LB, vol_CFL, marginal, visc_rem_u, OBC)</td></tr>
+<tr class="memdesc:a9e76825c96ffca1ae0e84469ab46029b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the effective interface thickness at each zonal velocity point.  <a href="namespacemom__continuity__ppm.html#a9e76825c96ffca1ae0e84469ab46029b">More...</a><br /></td></tr>
+<tr class="separator:a9e76825c96ffca1ae0e84469ab46029b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad3f82b9824a13d3fe8792496e9b769"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#afad3f82b9824a13d3fe8792496e9b769">zonal_flux_adjust</a> (u, h_in, h_L, h_R, uhbt, uh_tot_0, duhdu_tot_0, du, du_max_CFL, du_min_CFL, dt, G, US, CS, visc_rem, j, ish, ieh, do_I_in, full_precision, uh_3d, OBC)</td></tr>
+<tr class="memdesc:afad3f82b9824a13d3fe8792496e9b769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the barotropic velocity adjustment that gives the desired barotropic (layer-summed) transport.  <a href="namespacemom__continuity__ppm.html#afad3f82b9824a13d3fe8792496e9b769">More...</a><br /></td></tr>
+<tr class="separator:afad3f82b9824a13d3fe8792496e9b769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e5aef71acbeef6afe5f6cf1ea30dcc"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#a30e5aef71acbeef6afe5f6cf1ea30dcc">set_zonal_bt_cont</a> (u, h_in, h_L, h_R, BT_cont, uh_tot_0, duhdu_tot_0, du_max_CFL, du_min_CFL, dt, G, US, CS, visc_rem, visc_rem_max, j, ish, ieh, do_I)</td></tr>
+<tr class="memdesc:a30e5aef71acbeef6afe5f6cf1ea30dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a structure that describes the zonal barotropic volume or mass fluxes as a function of barotropic flow to agree closely with the sum of the layer's transports.  <a href="namespacemom__continuity__ppm.html#a30e5aef71acbeef6afe5f6cf1ea30dcc">More...</a><br /></td></tr>
+<tr class="separator:a30e5aef71acbeef6afe5f6cf1ea30dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64c4b7cd1756aa3c121fbcf637d5cae"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#ae64c4b7cd1756aa3c121fbcf637d5cae">meridional_mass_flux</a> (v, h_in, vh, dt, G, GV, US, CS, LB, vhbt, OBC, visc_rem_v, v_cor, BT_cont)</td></tr>
+<tr class="memdesc:ae64c4b7cd1756aa3c121fbcf637d5cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the mass or volume fluxes through the meridional faces, and other related quantities.  <a href="namespacemom__continuity__ppm.html#ae64c4b7cd1756aa3c121fbcf637d5cae">More...</a><br /></td></tr>
+<tr class="separator:ae64c4b7cd1756aa3c121fbcf637d5cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac00aefda40cb9e22013e99cad342bb63"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#ac00aefda40cb9e22013e99cad342bb63">merid_flux_layer</a> (v, h, h_L, h_R, vh, dvhdv, visc_rem, dt, G, US, J, ish, ieh, do_I, vol_CFL, OBC)</td></tr>
+<tr class="memdesc:ac00aefda40cb9e22013e99cad342bb63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the meridional mass or volume fluxes in a layer.  <a href="namespacemom__continuity__ppm.html#ac00aefda40cb9e22013e99cad342bb63">More...</a><br /></td></tr>
+<tr class="separator:ac00aefda40cb9e22013e99cad342bb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293f7ab5bfd8f3f6a5a50903b05b6411"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#a293f7ab5bfd8f3f6a5a50903b05b6411">merid_face_thickness</a> (v, h, h_L, h_R, h_v, dt, G, US, LB, vol_CFL, marginal, visc_rem_v, OBC)</td></tr>
+<tr class="memdesc:a293f7ab5bfd8f3f6a5a50903b05b6411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the effective interface thickness at each meridional velocity point.  <a href="namespacemom__continuity__ppm.html#a293f7ab5bfd8f3f6a5a50903b05b6411">More...</a><br /></td></tr>
+<tr class="separator:a293f7ab5bfd8f3f6a5a50903b05b6411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6deb1b7de418a17cacd60dabc262ba29"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#a6deb1b7de418a17cacd60dabc262ba29">meridional_flux_adjust</a> (v, h_in, h_L, h_R, vhbt, vh_tot_0, dvhdv_tot_0, dv, dv_max_CFL, dv_min_CFL, dt, G, US, CS, visc_rem, j, ish, ieh, do_I_in, full_precision, vh_3d, OBC)</td></tr>
+<tr class="memdesc:a6deb1b7de418a17cacd60dabc262ba29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the barotropic velocity adjustment that gives the desired barotropic (layer-summed) transport.  <a href="namespacemom__continuity__ppm.html#a6deb1b7de418a17cacd60dabc262ba29">More...</a><br /></td></tr>
+<tr class="separator:a6deb1b7de418a17cacd60dabc262ba29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77c6806e82a3634fff7b7480f77c2f02"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#a77c6806e82a3634fff7b7480f77c2f02">set_merid_bt_cont</a> (v, h_in, h_L, h_R, BT_cont, vh_tot_0, dvhdv_tot_0, dv_max_CFL, dv_min_CFL, dt, G, US, CS, visc_rem, visc_rem_max, j, ish, ieh, do_I)</td></tr>
+<tr class="memdesc:a77c6806e82a3634fff7b7480f77c2f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets of a structure that describes the meridional barotropic volume or mass fluxes as a function of barotropic flow to agree closely with the sum of the layer's transports.  <a href="namespacemom__continuity__ppm.html#a77c6806e82a3634fff7b7480f77c2f02">More...</a><br /></td></tr>
+<tr class="separator:a77c6806e82a3634fff7b7480f77c2f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a7eac2a9b17d0e9ee9ca0a27d2f8fb6"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__continuity__ppm.html#a9a7eac2a9b17d0e9ee9ca0a27d2f8fb6">ppm_reconstruction_x</a> (h_in, h_L, h_R, G, LB, h_min, monotonic, simple_2nd, OBC)</td></tr>
 <tr class="memdesc:a9a7eac2a9b17d0e9ee9ca0a27d2f8fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates left/right edge values for PPM reconstruction.  <a href="namespacemom__continuity__ppm.html#a9a7eac2a9b17d0e9ee9ca0a27d2f8fb6">More...</a><br /></td></tr>
 <tr class="separator:a9a7eac2a9b17d0e9ee9ca0a27d2f8fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,8 +174,8 @@ Data Types</h2></td></tr>
 <tr class="separator:a38ffbfd81e4bef4c789429fb843ed7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function/Subroutine Documentation</h2>
-<a id="ad928a3c6f1cb3c01f944a89d4b13d08b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad928a3c6f1cb3c01f944a89d4b13d08b">&#9670;&nbsp;</a></span>continuity_ppm()</h2>
+<a id="a665851a49a4bde77b4ef5e25332947f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a665851a49a4bde77b4ef5e25332947f6">&#9670;&nbsp;</a></span>continuity_ppm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -220,7 +220,7 @@ Data Types</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">real, intent(in)&#160;</td>
-          <td class="paramname"><em>dt_in_T</em>, </td>
+          <td class="paramname"><em>dt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -313,7 +313,7 @@ Data Types</h2></td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">h</td><td>Final layer thickness [H ~&gt; m or kg m-2]. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">uh</td><td>Zonal volume flux, u*h*dy [H L2 T-1 ~&gt; m3 s-1 or kg s-1]. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">vh</td><td>Meridional volume flux, v*h*dx [H L2 T-1 ~&gt; m3 s-1 or kg s-1]. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt_in_t</td><td>Time increment [T ~&gt; s]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>Time increment [T ~&gt; s]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">gv</td><td>Vertical grid structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">uhbt</td><td>The summed volume flux through zonal faces </td></tr>
@@ -343,7 +343,7 @@ Data Types</h2></td></tr>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                           <span class="keywordtype">intent(out)</span>   :: uh<span class="comment">  !&lt; Zonal volume flux, u*h*dy [H L2 T-1 ~&gt; m3 s-1 or kg s-1].</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJB_(G),SZK_(G))</span>, &amp;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                           <span class="keywordtype">intent(out)</span>   :: vh<span class="comment">  !&lt; Meridional volume flux, v*h*dx [H L2 T-1 ~&gt; m3 s-1 or kg s-1].</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">  real</span>,                    <span class="keywordtype">intent(in)</span>    :: dt_in_T<span class="comment">  !&lt; Time increment [T ~&gt; s].</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">  real</span>,                    <span class="keywordtype">intent(in)</span>    :: dt<span class="comment">  !&lt; Time increment [T ~&gt; s].</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">type</span>(verticalGrid_type), <span class="keywordtype">intent(in)</span>    :: GV<span class="comment">  !&lt; Vertical grid structure.</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),   <span class="keywordtype">intent(in)</span>    :: US<span class="comment">   !&lt; A dimensional unit scaling type</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZIB_(G),SZJ_(G))</span>, &amp;</div>
@@ -403,12 +403,12 @@ Data Types</h2></td></tr>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="comment">!    First, advect zonally.</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    lb%ish = g%isc ; lb%ieh = g%iec</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    lb%jsh = g%jsc-stencil ; lb%jeh = g%jec+stencil</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">call </span>zonal_mass_flux(u, hin, uh, dt_in_t, g, gv, us, cs, lb, uhbt, obc, visc_rem_u, u_cor, bt_cont)</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">call </span>zonal_mass_flux(u, hin, uh, dt, g, gv, us, cs, lb, uhbt, obc, visc_rem_u, u_cor, bt_cont)</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">call </span>cpu_clock_begin(id_clock_update)</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">!$OMP parallel do default(shared)</span></div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> j=lb%jsh,lb%jeh ; <span class="keywordflow">do</span> i=lb%ish,lb%ieh</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      h(i,j,k) = hin(i,j,k) - dt_in_t * g%IareaT(i,j) * (uh(i,j,k) - uh(i-1,j,k))</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      h(i,j,k) = hin(i,j,k) - dt * g%IareaT(i,j) * (uh(i,j,k) - uh(i-1,j,k))</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="comment">!   Uncomment this line to prevent underflow.</span></div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="comment">!   if (h(i,j,k) &lt; h_min) h(i,j,k) = h_min</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
@@ -418,12 +418,12 @@ Data Types</h2></td></tr>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="comment">!    Now advect meridionally, using the updated thicknesses to determine</span></div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">!  the fluxes.</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">call </span>meridional_mass_flux(v, h, vh, dt_in_t, g, gv, us, cs, lb, vhbt, obc, visc_rem_v, v_cor, bt_cont)</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">call </span>meridional_mass_flux(v, h, vh, dt, g, gv, us, cs, lb, vhbt, obc, visc_rem_v, v_cor, bt_cont)</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keyword">call </span>cpu_clock_begin(id_clock_update)</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="comment">!$OMP parallel do default(shared)</span></div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> j=lb%jsh,lb%jeh ; <span class="keywordflow">do</span> i=lb%ish,lb%ieh</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      h(i,j,k) = h(i,j,k) - dt_in_t * g%IareaT(i,j) * (vh(i,j,k) - vh(i,j-1,k))</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      h(i,j,k) = h(i,j,k) - dt * g%IareaT(i,j) * (vh(i,j,k) - vh(i,j-1,k))</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="comment">!   This line prevents underflow.</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      <span class="keywordflow">if</span> (h(i,j,k) &lt; h_min) h(i,j,k) = h_min</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
@@ -434,24 +434,24 @@ Data Types</h2></td></tr>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    lb%ish = g%isc-stencil ; lb%ieh = g%iec+stencil</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    lb%jsh = g%jsc ; lb%jeh = g%jec</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keyword">call </span>meridional_mass_flux(v, hin, vh, dt_in_t, g, gv, us, cs, lb, vhbt, obc, visc_rem_v, v_cor, bt_cont)</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keyword">call </span>meridional_mass_flux(v, hin, vh, dt, g, gv, us, cs, lb, vhbt, obc, visc_rem_v, v_cor, bt_cont)</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keyword">call </span>cpu_clock_begin(id_clock_update)</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">!$OMP parallel do default(shared)</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> j=lb%jsh,lb%jeh ; <span class="keywordflow">do</span> i=lb%ish,lb%ieh</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      h(i,j,k) = hin(i,j,k) - dt_in_t * g%IareaT(i,j) * (vh(i,j,k) - vh(i,j-1,k))</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      h(i,j,k) = hin(i,j,k) - dt * g%IareaT(i,j) * (vh(i,j,k) - vh(i,j-1,k))</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keyword">call </span>cpu_clock_end(id_clock_update)</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="comment">!    Now advect zonally, using the updated thicknesses to determine</span></div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="comment">!  the fluxes.</span></div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    lb%ish = g%isc ; lb%ieh = g%iec ; lb%jsh = g%jsc ; lb%jeh = g%jec</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">call </span>zonal_mass_flux(u, h, uh, dt_in_t, g, gv, us, cs, lb, uhbt, obc, visc_rem_u, u_cor, bt_cont)</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">call </span>zonal_mass_flux(u, h, uh, dt, g, gv, us, cs, lb, uhbt, obc, visc_rem_u, u_cor, bt_cont)</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keyword">call </span>cpu_clock_begin(id_clock_update)</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">!$OMP parallel do default(shared)</span></div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> j=lb%jsh,lb%jeh ; <span class="keywordflow">do</span> i=lb%ish,lb%ieh</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      h(i,j,k) = h(i,j,k) - dt_in_t * g%IareaT(i,j) * (uh(i,j,k) - uh(i-1,j,k))</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      h(i,j,k) = h(i,j,k) - dt * g%IareaT(i,j) * (uh(i,j,k) - uh(i-1,j,k))</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      <span class="comment">! This line prevents underflow.</span></div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      <span class="keywordflow">if</span> (h(i,j,k) &lt; h_min) h(i,j,k) = h_min</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
@@ -464,7 +464,7 @@ Data Types</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_ad928a3c6f1cb3c01f944a89d4b13d08b_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a665851a49a4bde77b4ef5e25332947f6_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -502,7 +502,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a38ffbfd81e4bef4c789429fb843ed7cc_icgraph.svg" width="430" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a38ffbfd81e4bef4c789429fb843ed7cc_icgraph.svg" width="412" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -677,7 +677,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a832c506364bca555b36409a91e0f5906_cgraph.svg" width="568" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a832c506364bca555b36409a91e0f5906_cgraph.svg" width="536" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -717,8 +717,8 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ac4f73cd224d4e8bdb6012359220ebd6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4f73cd224d4e8bdb6012359220ebd6c">&#9670;&nbsp;</a></span>merid_face_thickness()</h2>
+<a id="a293f7ab5bfd8f3f6a5a50903b05b6411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a293f7ab5bfd8f3f6a5a50903b05b6411">&#9670;&nbsp;</a></span>merid_face_thickness()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -760,7 +760,7 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">real, intent(in)&#160;</td>
-          <td class="paramname"><em>dt_in_T</em>, </td>
+          <td class="paramname"><em>dt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -826,7 +826,7 @@ Here is the call graph for this function:</div>
     <tr><td class="paramdir">[in]</td><td class="paramname">h_l</td><td>Left thickness in the reconstruction, [H ~&gt; m or kg m-2]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h_r</td><td>Right thickness in the reconstruction, [H ~&gt; m or kg m-2]. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">h_v</td><td>Thickness at meridional faces, [H ~&gt; m or kg m-2]. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt_in_t</td><td>Time increment [T ~&gt; s]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>Time increment [T ~&gt; s]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">lb</td><td>Loop bounds structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vol_cfl</td><td>If true, rescale the ratio of face areas to the cell areas when estimating the CFL number. </td></tr>
@@ -848,7 +848,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;<span class="comment">                                                                   !! [H ~&gt; m or kg m-2].</span></div>
 <div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJB_(G),SZK_(G))</span>, <span class="keywordtype">intent(inout)</span> :: h_v<span class="comment">  !&lt; Thickness at meridional faces,</span></div>
 <div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;<span class="comment">                                                                   !! [H ~&gt; m or kg m-2].</span></div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;<span class="keywordtype">  real</span>,                                      <span class="keywordtype">intent(in)</span>    :: dt_in_T<span class="comment">   !&lt; Time increment [T ~&gt; s].</span></div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;<span class="keywordtype">  real</span>,                                      <span class="keywordtype">intent(in)</span>    :: dt<span class="comment">   !&lt; Time increment [T ~&gt; s].</span></div>
 <div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;  <span class="keywordtype">type</span>(loop_bounds_type),                    <span class="keywordtype">intent(in)</span>    :: LB<span class="comment">   !&lt; Loop bounds structure.</span></div>
 <div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),                     <span class="keywordtype">intent(in)</span>    :: US<span class="comment">   !&lt; A dimensional unit scaling type</span></div>
 <div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;  <span class="keywordtype">logical</span>,                                   <span class="keywordtype">intent(in)</span>    :: vol_CFL<span class="comment"> !&lt; If true, rescale the ratio</span></div>
@@ -875,15 +875,15 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;  <span class="comment">!$OMP parallel do default(shared) private(CFL,curv_3,h_marg,h_avg)</span></div>
 <div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;  <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> j=jsh-1,jeh ; <span class="keywordflow">do</span> i=ish,ieh</div>
 <div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;    <span class="keywordflow">if</span> (v(i,j,k) &gt; 0.0) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (v(i,j,k) * dt_in_t) * (g%dx_Cv(i,j) * g%IareaT(i,j))</div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;      <span class="keywordflow">else</span> ; cfl = v(i,j,k) * dt_in_t * g%IdyT(i,j) ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (v(i,j,k) * dt) * (g%dx_Cv(i,j) * g%IareaT(i,j))</div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;      <span class="keywordflow">else</span> ; cfl = v(i,j,k) * dt * g%IdyT(i,j) ;<span class="keywordflow"> endif</span></div>
 <div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;      curv_3 = h_l(i,j,k) + h_r(i,j,k) - 2.0*h(i,j,k)</div>
 <div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;      h_avg = h_r(i,j,k) + cfl * (0.5*(h_l(i,j,k) - h_r(i,j,k)) + curv_3*(cfl - 1.5))</div>
 <div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;      h_marg = h_r(i,j,k) + cfl * ((h_l(i,j,k) - h_r(i,j,k)) + &amp;</div>
 <div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;                                3.0*curv_3*(cfl - 1.0))</div>
 <div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;    <span class="keywordflow">elseif</span> (v(i,j,k) &lt; 0.0) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (-v(i,j,k)*dt_in_t) * (g%dx_Cv(i,j) * g%IareaT(i,j+1))</div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;      <span class="keywordflow">else</span> ; cfl = -v(i,j,k) * dt_in_t * g%IdyT(i,j+1) ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (-v(i,j,k)*dt) * (g%dx_Cv(i,j) * g%IareaT(i,j+1))</div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;      <span class="keywordflow">else</span> ; cfl = -v(i,j,k) * dt * g%IdyT(i,j+1) ;<span class="keywordflow"> endif</span></div>
 <div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;      curv_3 = h_l(i,j+1,k) + h_r(i,j+1,k) - 2.0*h(i,j+1,k)</div>
 <div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;      h_avg = h_l(i,j+1,k) + cfl * (0.5*(h_r(i,j+1,k)-h_l(i,j+1,k)) + curv_3*(cfl - 1.5))</div>
 <div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;      h_marg = h_l(i,j+1,k) + cfl * ((h_r(i,j+1,k)-h_l(i,j+1,k)) + &amp;</div>
@@ -948,14 +948,14 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_ac4f73cd224d4e8bdb6012359220ebd6c_icgraph.svg" width="590" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a293f7ab5bfd8f3f6a5a50903b05b6411_icgraph.svg" width="567" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a7903cb1f2a81dd7c1e6c6327a8354660"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7903cb1f2a81dd7c1e6c6327a8354660">&#9670;&nbsp;</a></span>merid_flux_layer()</h2>
+<a id="ac00aefda40cb9e22013e99cad342bb63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac00aefda40cb9e22013e99cad342bb63">&#9670;&nbsp;</a></span>merid_flux_layer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1009,7 +1009,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">real, intent(in)&#160;</td>
-          <td class="paramname"><em>dt_in_T</em>, </td>
+          <td class="paramname"><em>dt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1083,7 +1083,7 @@ Here is the caller graph for this function:</div>
     <tr><td class="paramdir">[in]</td><td class="paramname">h_r</td><td>Right thickness in the reconstruction [H ~&gt; m or kg m-2]. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">vh</td><td>Meridional mass or volume transport [H L2 T-1 ~&gt; m3 s-1 or kg s-1]. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">dvhdv</td><td>Partial derivative of vh with v [H L ~&gt; m2 or kg m-1]. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt_in_t</td><td>Time increment [T ~&gt; s]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>Time increment [T ~&gt; s]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">j</td><td>Spatial index. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ish</td><td>Start of index range. </td></tr>
@@ -1113,7 +1113,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;<span class="comment">                                                          !! [H L2 T-1 ~&gt; m3 s-1 or kg s-1].</span></div>
 <div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G))</span>,     <span class="keywordtype">intent(inout)</span> :: dvhdv<span class="comment">    !&lt; Partial derivative of vh with v</span></div>
 <div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;<span class="comment">                                                          !! [H L ~&gt; m2 or kg m-1].</span></div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;<span class="keywordtype">  real</span>,                         <span class="keywordtype">intent(in)</span>    :: dt_in_T<span class="comment">  !&lt; Time increment [T ~&gt; s].</span></div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;<span class="keywordtype">  real</span>,                         <span class="keywordtype">intent(in)</span>    :: dt<span class="comment">       !&lt; Time increment [T ~&gt; s].</span></div>
 <div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),        <span class="keywordtype">intent(in)</span>    :: US<span class="comment">       !&lt; A dimensional unit scaling type</span></div>
 <div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;  <span class="keywordtype">integer</span>,                      <span class="keywordtype">intent(in)</span>    :: j<span class="comment">        !&lt; Spatial index.</span></div>
 <div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;  <span class="keywordtype">integer</span>,                      <span class="keywordtype">intent(in)</span>    :: ish<span class="comment">      !&lt; Start of index range.</span></div>
@@ -1137,16 +1137,16 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160; </div>
 <div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;  <span class="keywordflow">do</span> i=ish,ieh ; <span class="keywordflow">if</span> (do_i(i)) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;    <span class="keywordflow">if</span> (v(i) &gt; 0.0) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (v(i) * dt_in_t) * (g%dx_Cv(i,j) * g%IareaT(i,j))</div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;      <span class="keywordflow">else</span> ; cfl = v(i) * dt_in_t * g%IdyT(i,j) ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (v(i) * dt) * (g%dx_Cv(i,j) * g%IareaT(i,j))</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;      <span class="keywordflow">else</span> ; cfl = v(i) * dt * g%IdyT(i,j) ;<span class="keywordflow"> endif</span></div>
 <div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;      curv_3 = h_l(i,j) + h_r(i,j) - 2.0*h(i,j)</div>
 <div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;      vh(i) = g%dx_Cv(i,j) * v(i) * ( h_r(i,j) + cfl * &amp;</div>
 <div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;          (0.5*(h_l(i,j) - h_r(i,j)) + curv_3*(cfl - 1.5)) )</div>
 <div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;      h_marg = h_r(i,j) + cfl * ((h_l(i,j) - h_r(i,j)) + &amp;</div>
 <div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;                                  3.0*curv_3*(cfl - 1.0))</div>
 <div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;    <span class="keywordflow">elseif</span> (v(i) &lt; 0.0) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (-v(i) * dt_in_t) * (g%dx_Cv(i,j) * g%IareaT(i,j+1))</div>
-<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;      <span class="keywordflow">else</span> ; cfl = -v(i) * dt_in_t * g%IdyT(i,j+1) ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (-v(i) * dt) * (g%dx_Cv(i,j) * g%IareaT(i,j+1))</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;      <span class="keywordflow">else</span> ; cfl = -v(i) * dt * g%IdyT(i,j+1) ;<span class="keywordflow"> endif</span></div>
 <div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;      curv_3 = h_l(i,j+1) + h_r(i,j+1) - 2.0*h(i,j+1)</div>
 <div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;      vh(i) = g%dx_Cv(i,j) * v(i) * ( h_l(i,j+1) + cfl * &amp;</div>
 <div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;          (0.5*(h_r(i,j+1)-h_l(i,j+1)) + curv_3*(cfl - 1.5)) )</div>
@@ -1179,14 +1179,14 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a7903cb1f2a81dd7c1e6c6327a8354660_icgraph.svg" width="100%" height="394"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_ac00aefda40cb9e22013e99cad342bb63_icgraph.svg" width="100%" height="394"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
-<a id="aa0e2e51881c2eef081ee1e7731e8ebc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0e2e51881c2eef081ee1e7731e8ebc4">&#9670;&nbsp;</a></span>meridional_flux_adjust()</h2>
+<a id="a6deb1b7de418a17cacd60dabc262ba29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6deb1b7de418a17cacd60dabc262ba29">&#9670;&nbsp;</a></span>meridional_flux_adjust()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1258,7 +1258,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">real, intent(in)&#160;</td>
-          <td class="paramname"><em>dt_in_T</em>, </td>
+          <td class="paramname"><em>dt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1354,7 +1354,7 @@ Here is the caller graph for this function:</div>
     <tr><td class="paramdir">[in]</td><td class="paramname">vh_tot_0</td><td>The summed transport with 0 adjustment [H L2 T-1 ~&gt; m3 s-1 or kg s-1]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dvhdv_tot_0</td><td>The partial derivative of dv_err with dv at 0 adjustment [H L ~&gt; m2 or kg m-1]. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">dv</td><td>The barotropic velocity adjustment [L T-1 ~&gt; m s-1]. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt_in_t</td><td>Time increment [T ~&gt; s]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>Time increment [T ~&gt; s]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">cs</td><td>This module's control structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">j</td><td>Spatial index. </td></tr>
@@ -1394,7 +1394,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G))</span>, <span class="keywordtype">intent(in)</span>    :: dvhdv_tot_0<span class="comment"> !&lt; The partial derivative of dv_err with</span></div>
 <div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;<span class="comment">                                                         !! dv at 0 adjustment [H L ~&gt; m2 or kg m-1].</span></div>
 <div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G))</span>, <span class="keywordtype">intent(out)</span>   :: dv<span class="comment">   !&lt; The barotropic velocity adjustment [L T-1 ~&gt; m s-1].</span></div>
-<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;<span class="keywordtype">  real</span>,                     <span class="keywordtype">intent(in)</span>    :: dt_in_T<span class="comment">   !&lt; Time increment [T ~&gt; s].</span></div>
+<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;<span class="keywordtype">  real</span>,                     <span class="keywordtype">intent(in)</span>    :: dt<span class="comment">   !&lt; Time increment [T ~&gt; s].</span></div>
 <div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),    <span class="keywordtype">intent(in)</span>    :: US<span class="comment">   !&lt; A dimensional unit scaling type</span></div>
 <div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;  <span class="keywordtype">type</span>(continuity_PPM_CS),  <span class="keywordtype">pointer</span>       :: CS<span class="comment">   !&lt; This module&#39;s control structure.</span></div>
 <div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;  <span class="keywordtype">integer</span>,                  <span class="keywordtype">intent(in)</span>    :: j<span class="comment">    !&lt; Spatial index.</span></div>
@@ -1462,7 +1462,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160;<span class="keywordflow">    enddo</span></div>
 <div class="line"><a name="l01579"></a><span class="lineno"> 1579</span>&#160;    domore = .false.</div>
 <div class="line"><a name="l01580"></a><span class="lineno"> 1580</span>&#160;    <span class="keywordflow">do</span> i=ish,ieh ; <span class="keywordflow">if</span> (do_i(i)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01581"></a><span class="lineno"> 1581</span>&#160;      <span class="keywordflow">if</span> ((dt_in_t * min(g%IareaT(i,j),g%IareaT(i,j+1))*abs(vh_err(i)) &gt; tol_eta) .or. &amp;</div>
+<div class="line"><a name="l01581"></a><span class="lineno"> 1581</span>&#160;      <span class="keywordflow">if</span> ((dt * min(g%IareaT(i,j),g%IareaT(i,j+1))*abs(vh_err(i)) &gt; tol_eta) .or. &amp;</div>
 <div class="line"><a name="l01582"></a><span class="lineno"> 1582</span>&#160;          (cs%better_iter .and. ((abs(vh_err(i)) &gt; tol_vel * dvhdv_tot(i)) .or. &amp;</div>
 <div class="line"><a name="l01583"></a><span class="lineno"> 1583</span>&#160;                                 (abs(vh_err(i)) &gt; vh_err_best(i))) )) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l01584"></a><span class="lineno"> 1584</span>&#160;        <span class="comment">!   Use Newton&#39;s method, provided it stays bounded.  Otherwise bisect</span></div>
@@ -1501,7 +1501,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;      <span class="keywordflow">do</span> i=ish,ieh ; v_new(i) = v(i,j,k) + dv(i) * visc_rem(i,k) ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;      <span class="keyword">call </span>merid_flux_layer(v_new, h_in(:,:,k), h_l(:,:,k), h_r(:,:,k), &amp;</div>
 <div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;                            vh_aux(:,k), dvhdv(:,k), visc_rem(:,k), &amp;</div>
-<div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;                            dt_in_t, g, us, j, ish, ieh, do_i, cs%vol_CFL, obc)</div>
+<div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;                            dt, g, us, j, ish, ieh, do_i, cs%vol_CFL, obc)</div>
 <div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> endif</span></div>
 <div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160; </div>
 <div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;    <span class="keywordflow">if</span> (itt &lt; max_itts) <span class="keywordflow">then</span></div>
@@ -1532,20 +1532,20 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_aa0e2e51881c2eef081ee1e7731e8ebc4_cgraph.svg" width="380" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a6deb1b7de418a17cacd60dabc262ba29_cgraph.svg" width="364" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_aa0e2e51881c2eef081ee1e7731e8ebc4_icgraph.svg" width="100%" height="361"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a6deb1b7de418a17cacd60dabc262ba29_icgraph.svg" width="100%" height="361"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ad8518f52de5e1be087caac0fc7db255f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8518f52de5e1be087caac0fc7db255f">&#9670;&nbsp;</a></span>meridional_mass_flux()</h2>
+<a id="ae64c4b7cd1756aa3c121fbcf637d5cae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64c4b7cd1756aa3c121fbcf637d5cae">&#9670;&nbsp;</a></span>meridional_mass_flux()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1575,7 +1575,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">real, intent(in)&#160;</td>
-          <td class="paramname"><em>dt_in_T</em>, </td>
+          <td class="paramname"><em>dt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1658,7 +1658,7 @@ Here is the caller graph for this function:</div>
     <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>Meridional velocity [L T-1 ~&gt; m s-1]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h_in</td><td>Layer thickness used to calculate fluxes [H ~&gt; m or kg m-2]. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">vh</td><td>Volume flux through meridional faces = v*h*dx [H m2 s-1 ~&gt; m3 s-1 or kg s-1]. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt_in_t</td><td>Time increment [T ~&gt; s]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>Time increment [T ~&gt; s]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">cs</td><td>This module's control structure.G </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">lb</td><td>Loop bounds structure. </td></tr>
@@ -1679,7 +1679,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;<span class="comment">                                                                   !! calculate fluxes [H ~&gt; m or kg m-2].</span></div>
 <div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJB_(G),SZK_(G))</span>, <span class="keywordtype">intent(out)</span>   :: vh<span class="comment">   !&lt; Volume flux through meridional</span></div>
 <div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;<span class="comment">                                                                   !! faces = v*h*dx [H m2 s-1 ~&gt; m3 s-1 or kg s-1].</span></div>
-<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;<span class="keywordtype">  real</span>,                                      <span class="keywordtype">intent(in)</span>    :: dt_in_T<span class="comment">   !&lt; Time increment [T ~&gt; s].</span></div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;<span class="keywordtype">  real</span>,                                      <span class="keywordtype">intent(in)</span>    :: dt<span class="comment">   !&lt; Time increment [T ~&gt; s].</span></div>
 <div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),                     <span class="keywordtype">intent(in)</span>    :: US<span class="comment">   !&lt; A dimensional unit scaling type</span></div>
 <div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;  <span class="keywordtype">type</span>(continuity_PPM_CS),                   <span class="keywordtype">pointer</span>       :: CS<span class="comment">   !&lt; This module&#39;s control structure.G</span></div>
 <div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;  <span class="keywordtype">type</span>(loop_bounds_type),                    <span class="keywordtype">intent(in)</span>    :: LB<span class="comment">   !&lt; Loop bounds structure.</span></div>
@@ -1738,8 +1738,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;<span class="keywordflow">  endif</span> ;<span class="keywordflow"> endif</span> ;<span class="keywordflow"> endif</span></div>
 <div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;  ish = lb%ish ; ieh = lb%ieh ; jsh = lb%jsh ; jeh = lb%jeh ; nz = g%ke</div>
 <div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160; </div>
-<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;  cfl_dt = cs%CFL_limit_adjust / (dt_in_t)</div>
-<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;  i_dt = 1.0 / (dt_in_t)</div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;  cfl_dt = cs%CFL_limit_adjust / dt</div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;  i_dt = 1.0 / dt</div>
 <div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;  <span class="keywordflow">if</span> (cs%aggress_adjust) cfl_dt = i_dt</div>
 <div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160; </div>
 <div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;  <span class="keyword">call </span>cpu_clock_begin(id_clock_update)</div>
@@ -1760,7 +1760,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160; </div>
 <div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;  <span class="keyword">call </span>cpu_clock_begin(id_clock_correct)</div>
 <div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;<span class="comment">!$OMP parallel do default(none) shared(ish,ieh,jsh,jeh,nz,v,h_in,h_L,h_R,vh,use_visc_rem, &amp;</span></div>
-<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;<span class="comment">!$OMP                                  visc_rem_v,dt,G,GV,CS,local_specified_BC,OBC,vhbt, &amp;</span></div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;<span class="comment">!$OMP                                  visc_rem_v,dt,US,G,GV,CS,local_specified_BC,OBC,vhbt, &amp;</span></div>
 <div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;<span class="comment">!$OMP                                  set_BT_cont,CFL_dt,I_dt,v_cor,BT_cont, local_Flather_OBC ) &amp;</span></div>
 <div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;<span class="comment">!$OMP                          private(do_I,dvhdv,dv,dv_max_CFL,dv_min_CFL,vh_tot_0,    &amp;</span></div>
 <div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;<span class="comment">!$OMP                                  dvhdv_tot_0,visc_rem_max,I_vrm,dv_lim,dy_N,      &amp;</span></div>
@@ -1776,7 +1776,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;<span class="keywordflow">      enddo</span> ;<span class="keywordflow"> endif</span></div>
 <div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;      <span class="keyword">call </span>merid_flux_layer(v(:,j,k), h_in(:,:,k), h_l(:,:,k), h_r(:,:,k), &amp;</div>
 <div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;                            vh(:,j,k), dvhdv(:,k), visc_rem(:,k), &amp;</div>
-<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;                            dt_in_t, g, us, j, ish, ieh, do_i, cs%vol_CFL, obc)</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;                            dt, g, us, j, ish, ieh, do_i, cs%vol_CFL, obc)</div>
 <div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;      <span class="keywordflow">if</span> (local_specified_bc) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;        <span class="keywordflow">do</span> i=ish,ieh</div>
 <div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;          <span class="keywordflow">if</span> (obc%segment(obc%segnum_v(i,j))%specified) &amp;</div>
@@ -1876,7 +1876,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160; </div>
 <div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">present</span>(vhbt)) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;        <span class="keyword">call </span>meridional_flux_adjust(v, h_in, h_l, h_r, vhbt(:,j), vh_tot_0, dvhdv_tot_0, dv, &amp;</div>
-<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;                               dv_max_cfl, dv_min_cfl, dt_in_t, g, us, cs, visc_rem, &amp;</div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;                               dv_max_cfl, dv_min_cfl, dt, g, us, cs, visc_rem, &amp;</div>
 <div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;                               j, ish, ieh, do_i, .true., vh, obc=obc)</div>
 <div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160; </div>
 <div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">present</span>(v_cor)) <span class="keywordflow">then</span> ; <span class="keywordflow">do</span> k=1,nz</div>
@@ -1890,7 +1890,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160; </div>
 <div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;      <span class="keywordflow">if</span> (set_bt_cont) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;        <span class="keyword">call </span>set_merid_bt_cont(v, h_in, h_l, h_r, bt_cont, vh_tot_0, dvhdv_tot_0,&amp;</div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;                               dv_max_cfl, dv_min_cfl, dt_in_t, g, us, cs, visc_rem, &amp;</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;                               dv_max_cfl, dv_min_cfl, dt, g, us, cs, visc_rem, &amp;</div>
 <div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;                               visc_rem_max, j, ish, ieh, do_i)</div>
 <div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;        <span class="keywordflow">if</span> (any_simple_obc) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;          <span class="keywordflow">do</span> i=ish,ieh</div>
@@ -1943,10 +1943,10 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160; </div>
 <div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;  <span class="keywordflow">if</span> (set_bt_cont) <span class="keywordflow">then</span> ; <span class="keywordflow">if</span> (<span class="keyword">allocated</span>(bt_cont%h_v)) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(v_cor)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;      <span class="keyword">call </span>merid_face_thickness(v_cor, h_in, h_l, h_r, bt_cont%h_v, dt_in_t, g, us, lb, &amp;</div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;      <span class="keyword">call </span>merid_face_thickness(v_cor, h_in, h_l, h_r, bt_cont%h_v, dt, g, us, lb, &amp;</div>
 <div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;                                cs%vol_CFL, cs%marginal_faces, visc_rem_v, obc)</div>
 <div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;      <span class="keyword">call </span>merid_face_thickness(v, h_in, h_l, h_r, bt_cont%h_v, dt_in_t, g, us, lb, &amp;</div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;      <span class="keyword">call </span>merid_face_thickness(v, h_in, h_l, h_r, bt_cont%h_v, dt, g, us, lb, &amp;</div>
 <div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;                                cs%vol_CFL, cs%marginal_faces, visc_rem_v, obc)</div>
 <div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;<span class="keywordflow">    endif</span></div>
 <div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;<span class="keywordflow">  endif</span> ;<span class="keywordflow"> endif</span></div>
@@ -1958,13 +1958,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_ad8518f52de5e1be087caac0fc7db255f_cgraph.svg" width="100%" height="596"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_ae64c4b7cd1756aa3c121fbcf637d5cae_cgraph.svg" width="100%" height="595"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_ad8518f52de5e1be087caac0fc7db255f_icgraph.svg" width="376" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_ae64c4b7cd1756aa3c121fbcf637d5cae_icgraph.svg" width="362" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2475,13 +2475,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a9a7eac2a9b17d0e9ee9ca0a27d2f8fb6_cgraph.svg" width="582" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a9a7eac2a9b17d0e9ee9ca0a27d2f8fb6_cgraph.svg" width="554" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a9a7eac2a9b17d0e9ee9ca0a27d2f8fb6_icgraph.svg" width="583" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a9a7eac2a9b17d0e9ee9ca0a27d2f8fb6_icgraph.svg" width="559" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2720,13 +2720,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_af71fa5f7f4b849ec735e2049df2d0693_cgraph.svg" width="582" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_af71fa5f7f4b849ec735e2049df2d0693_cgraph.svg" width="554" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_af71fa5f7f4b849ec735e2049df2d0693_icgraph.svg" width="591" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_af71fa5f7f4b849ec735e2049df2d0693_icgraph.svg" width="568" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2799,14 +2799,14 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_adf02002cf5951d7610b8643d2d401585_icgraph.svg" width="579" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_adf02002cf5951d7610b8643d2d401585_icgraph.svg" width="556" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a85af71a6eb17a9501238c84e11391b60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85af71a6eb17a9501238c84e11391b60">&#9670;&nbsp;</a></span>set_merid_bt_cont()</h2>
+<a id="a77c6806e82a3634fff7b7480f77c2f02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77c6806e82a3634fff7b7480f77c2f02">&#9670;&nbsp;</a></span>set_merid_bt_cont()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2872,7 +2872,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">real, intent(in)&#160;</td>
-          <td class="paramname"><em>dt_in_T</em>, </td>
+          <td class="paramname"><em>dt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2954,7 +2954,7 @@ Here is the caller graph for this function:</div>
     <tr><td class="paramdir">[in]</td><td class="paramname">dvhdv_tot_0</td><td>The partial derivative of du_err with dv at 0 adjustment [H L ~&gt; m2 or kg m-1]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dv_max_cfl</td><td>Maximum acceptable value of dv [L T-1 ~&gt; m s-1]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dv_min_cfl</td><td>Minimum acceptable value of dv [L T-1 ~&gt; m s-1]. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt_in_t</td><td>Time increment [T ~&gt; s]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>Time increment [T ~&gt; s]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">cs</td><td>This module's control structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">visc_rem</td><td>Both the fraction of the momentum originally in a layer that remains after a time-step of viscosity, and the fraction of a time-step's worth of a barotropic acceleration that a layer experiences after viscosity is applied. Non-dimensional between 0 (at the bottom) and 1 (far above the bottom). </td></tr>
@@ -2986,7 +2986,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;<span class="comment">                                                                   !!  of dv [L T-1 ~&gt; m s-1].</span></div>
 <div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G))</span>,                  <span class="keywordtype">intent(in)</span>    :: dv_min_CFL<span class="comment"> !&lt; Minimum acceptable value</span></div>
 <div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;<span class="comment">                                                                   !!  of dv [L T-1 ~&gt; m s-1].</span></div>
-<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;<span class="keywordtype">  real</span>,                                      <span class="keywordtype">intent(in)</span>    :: dt_in_T<span class="comment">   !&lt; Time increment [T ~&gt; s].</span></div>
+<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;<span class="keywordtype">  real</span>,                                      <span class="keywordtype">intent(in)</span>    :: dt<span class="comment">   !&lt; Time increment [T ~&gt; s].</span></div>
 <div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),                     <span class="keywordtype">intent(in)</span>    :: US<span class="comment">   !&lt; A dimensional unit scaling type</span></div>
 <div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;  <span class="keywordtype">type</span>(continuity_PPM_CS),                   <span class="keywordtype">pointer</span>       :: CS<span class="comment">   !&lt; This module&#39;s control structure.</span></div>
 <div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZK_(G))</span>,          <span class="keywordtype">intent(in)</span>    :: visc_rem<span class="comment"> !&lt; Both the fraction of the</span></div>
@@ -3034,13 +3034,13 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160;  <span class="keywordtype">logical</span> :: domore</div>
 <div class="line"><a name="l01715"></a><span class="lineno"> 1715</span>&#160;  <span class="keywordtype">integer</span> :: i, k, nz</div>
 <div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160; </div>
-<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;  nz = g%ke ; idt = 1.0/(dt_in_t)</div>
+<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;  nz = g%ke ; idt = 1.0 / dt</div>
 <div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;  min_visc_rem = 0.1 ; cfl_min = 1e-6</div>
 <div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160; </div>
 <div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160; <span class="comment">! Diagnose the zero-transport correction, dv0.</span></div>
 <div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;  <span class="keywordflow">do</span> i=ish,ieh ; zeros(i) = 0.0 ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160;  <span class="keyword">call </span>meridional_flux_adjust(v, h_in, h_l, h_r, zeros, vh_tot_0, dvhdv_tot_0, dv0, &amp;</div>
-<div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;                         dv_max_cfl, dv_min_cfl, dt_in_t, g, us, cs, visc_rem, &amp;</div>
+<div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;                         dv_max_cfl, dv_min_cfl, dt, g, us, cs, visc_rem, &amp;</div>
 <div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;                         j, ish, ieh, do_i, .true.)</div>
 <div class="line"><a name="l01725"></a><span class="lineno"> 1725</span>&#160; </div>
 <div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;  <span class="comment">!   Determine the southerly- and northerly- fluxes.  Choose a sufficiently</span></div>
@@ -3082,11 +3082,11 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l01762"></a><span class="lineno"> 1762</span>&#160;      v_0(i) = v(i,j,k) + dv0(i) * visc_rem(i,k)</div>
 <div class="line"><a name="l01763"></a><span class="lineno"> 1763</span>&#160;<span class="keywordflow">    endif</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160;    <span class="keyword">call </span>merid_flux_layer(v_0, h_in(:,:,k), h_l(:,:,k), h_r(:,:,k), vh_0, dvhdv_0, &amp;</div>
-<div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;                          visc_rem(:,k), dt_in_t, g, us, j, ish, ieh, do_i, cs%vol_CFL)</div>
+<div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;                          visc_rem(:,k), dt, g, us, j, ish, ieh, do_i, cs%vol_CFL)</div>
 <div class="line"><a name="l01766"></a><span class="lineno"> 1766</span>&#160;    <span class="keyword">call </span>merid_flux_layer(v_l, h_in(:,:,k), h_l(:,:,k), h_r(:,:,k), vh_l, dvhdv_l, &amp;</div>
-<div class="line"><a name="l01767"></a><span class="lineno"> 1767</span>&#160;                          visc_rem(:,k), dt_in_t, g, us, j, ish, ieh, do_i, cs%vol_CFL)</div>
+<div class="line"><a name="l01767"></a><span class="lineno"> 1767</span>&#160;                          visc_rem(:,k), dt, g, us, j, ish, ieh, do_i, cs%vol_CFL)</div>
 <div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160;    <span class="keyword">call </span>merid_flux_layer(v_r, h_in(:,:,k), h_l(:,:,k), h_r(:,:,k), vh_r, dvhdv_r, &amp;</div>
-<div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160;                          visc_rem(:,k), dt_in_t, g, us, j, ish, ieh, do_i, cs%vol_CFL)</div>
+<div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160;                          visc_rem(:,k), dt, g, us, j, ish, ieh, do_i, cs%vol_CFL)</div>
 <div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;    <span class="keywordflow">do</span> i=ish,ieh ; <span class="keywordflow">if</span> (do_i(i)) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;      famt_0(i) = famt_0(i) + dvhdv_0(i)</div>
 <div class="line"><a name="l01772"></a><span class="lineno"> 1772</span>&#160;      famt_l(i) = famt_l(i) + dvhdv_l(i)</div>
@@ -3130,20 +3130,20 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a85af71a6eb17a9501238c84e11391b60_cgraph.svg" width="583" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a77c6806e82a3634fff7b7480f77c2f02_cgraph.svg" width="559" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a85af71a6eb17a9501238c84e11391b60_icgraph.svg" width="579" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a77c6806e82a3634fff7b7480f77c2f02_icgraph.svg" width="556" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ac6921e0b1534dfb716dc9cc6aa9b84f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6921e0b1534dfb716dc9cc6aa9b84f8">&#9670;&nbsp;</a></span>set_zonal_bt_cont()</h2>
+<a id="a30e5aef71acbeef6afe5f6cf1ea30dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30e5aef71acbeef6afe5f6cf1ea30dcc">&#9670;&nbsp;</a></span>set_zonal_bt_cont()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3209,7 +3209,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">real, intent(in)&#160;</td>
-          <td class="paramname"><em>dt_in_T</em>, </td>
+          <td class="paramname"><em>dt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3291,7 +3291,7 @@ Here is the caller graph for this function:</div>
     <tr><td class="paramdir">[in]</td><td class="paramname">duhdu_tot_0</td><td>The partial derivative of du_err with du at 0 adjustment [H L ~&gt; m2 or kg m-1]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">du_max_cfl</td><td>Maximum acceptable value of du [L T-1 ~&gt; m s-1]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">du_min_cfl</td><td>Minimum acceptable value of du [L T-1 ~&gt; m s-1]. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt_in_t</td><td>Time increment [s]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>Time increment [T ~&gt; s]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">cs</td><td>This module's control structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">visc_rem</td><td>Both the fraction of the momentum originally in a layer that remains after a time-step of viscosity, and the fraction of a time-step's worth of a barotropic acceleration that a layer experiences after viscosity is applied. Non-dimensional between 0 (at the bottom) and 1 (far above the bottom). </td></tr>
@@ -3323,7 +3323,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;<span class="comment">                       !! value of du [L T-1 ~&gt; m s-1].</span></div>
 <div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZIB_(G))</span>,                 <span class="keywordtype">intent(in)</span>    :: du_min_CFL<span class="comment">  !&lt; Minimum acceptable</span></div>
 <div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;<span class="comment">                       !! value of du [L T-1 ~&gt; m s-1].</span></div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;<span class="keywordtype">  real</span>,                                      <span class="keywordtype">intent(in)</span>    :: dt_in_T<span class="comment">   !&lt; Time increment [s].</span></div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;<span class="keywordtype">  real</span>,                                      <span class="keywordtype">intent(in)</span>    :: dt<span class="comment">   !&lt; Time increment [T ~&gt; s].</span></div>
 <div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),                     <span class="keywordtype">intent(in)</span>    :: US<span class="comment">   !&lt; A dimensional unit scaling type</span></div>
 <div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;  <span class="keywordtype">type</span>(continuity_PPM_CS),                   <span class="keywordtype">pointer</span>       :: CS<span class="comment">   !&lt; This module&#39;s control structure.</span></div>
 <div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZIB_(G),SZK_(G))</span>,         <span class="keywordtype">intent(in)</span>    :: visc_rem<span class="comment"> !&lt; Both the fraction of the</span></div>
@@ -3371,13 +3371,13 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;  <span class="keywordtype">logical</span> :: domore</div>
 <div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;  <span class="keywordtype">integer</span> :: i, k, nz</div>
 <div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160; </div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;  nz = g%ke ; idt = 1.0 / (dt_in_t)</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;  nz = g%ke ; idt = 1.0 / dt</div>
 <div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;  min_visc_rem = 0.1 ; cfl_min = 1e-6</div>
 <div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160; </div>
 <div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160; <span class="comment">! Diagnose the zero-transport correction, du0.</span></div>
 <div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;  <span class="keywordflow">do</span> i=ish-1,ieh ; zeros(i) = 0.0 ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;  <span class="keyword">call </span>zonal_flux_adjust(u, h_in, h_l, h_r, zeros, uh_tot_0, duhdu_tot_0, du0, &amp;</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;                         du_max_cfl, du_min_cfl, dt_in_t, g, us, cs, visc_rem, &amp;</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;                         du_max_cfl, du_min_cfl, dt, g, us, cs, visc_rem, &amp;</div>
 <div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;                         j, ish, ieh, do_i, .true.)</div>
 <div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160; </div>
 <div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;  <span class="comment">! Determine the westerly- and easterly- fluxes.  Choose a sufficiently</span></div>
@@ -3419,11 +3419,11 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;      u_0(i) = u(i,j,k) + du0(i) * visc_rem(i,k)</div>
 <div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;<span class="keywordflow">    endif</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;    <span class="keyword">call </span>zonal_flux_layer(u_0, h_in(:,j,k), h_l(:,j,k), h_r(:,j,k), uh_0, duhdu_0, &amp;</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;                          visc_rem(:,k), dt_in_t, g, us, j, ish, ieh, do_i, cs%vol_CFL)</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;                          visc_rem(:,k), dt, g, us, j, ish, ieh, do_i, cs%vol_CFL)</div>
 <div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;    <span class="keyword">call </span>zonal_flux_layer(u_l, h_in(:,j,k), h_l(:,j,k), h_r(:,j,k), uh_l, duhdu_l, &amp;</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;                          visc_rem(:,k), dt_in_t, g, us, j, ish, ieh, do_i, cs%vol_CFL)</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;                          visc_rem(:,k), dt, g, us, j, ish, ieh, do_i, cs%vol_CFL)</div>
 <div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;    <span class="keyword">call </span>zonal_flux_layer(u_r, h_in(:,j,k), h_l(:,j,k), h_r(:,j,k), uh_r, duhdu_r, &amp;</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;                          visc_rem(:,k), dt_in_t, g, us, j, ish, ieh, do_i, cs%vol_CFL)</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;                          visc_rem(:,k), dt, g, us, j, ish, ieh, do_i, cs%vol_CFL)</div>
 <div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;    <span class="keywordflow">do</span> i=ish-1,ieh ; <span class="keywordflow">if</span> (do_i(i)) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;      famt_0(i) = famt_0(i) + duhdu_0(i)</div>
 <div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;      famt_l(i) = famt_l(i) + duhdu_l(i)</div>
@@ -3469,20 +3469,20 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_ac6921e0b1534dfb716dc9cc6aa9b84f8_cgraph.svg" width="571" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a30e5aef71acbeef6afe5f6cf1ea30dcc_cgraph.svg" width="547" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_ac6921e0b1534dfb716dc9cc6aa9b84f8_icgraph.svg" width="571" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a30e5aef71acbeef6afe5f6cf1ea30dcc_icgraph.svg" width="547" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ab0e7b60457e8fd605e3fffd6c3ba9827"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0e7b60457e8fd605e3fffd6c3ba9827">&#9670;&nbsp;</a></span>zonal_face_thickness()</h2>
+<a id="a9e76825c96ffca1ae0e84469ab46029b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e76825c96ffca1ae0e84469ab46029b">&#9670;&nbsp;</a></span>zonal_face_thickness()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3524,7 +3524,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">real, intent(in)&#160;</td>
-          <td class="paramname"><em>dt_in_T</em>, </td>
+          <td class="paramname"><em>dt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3590,7 +3590,7 @@ Here is the caller graph for this function:</div>
     <tr><td class="paramdir">[in]</td><td class="paramname">h_l</td><td>Left thickness in the reconstruction [H ~&gt; m or kg m-2]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h_r</td><td>Right thickness in the reconstruction [H ~&gt; m or kg m-2]. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">h_u</td><td>Thickness at zonal faces [H ~&gt; m or kg m-2]. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt_in_t</td><td>Time increment [T ~&gt; s]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>Time increment [T ~&gt; s]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">lb</td><td>Loop bounds structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vol_cfl</td><td>If true, rescale the ratio of face areas to the cell areas when estimating the CFL number. </td></tr>
@@ -3611,7 +3611,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZI_(G),SZJ_(G),SZK_(G))</span>,  <span class="keywordtype">intent(in)</span>    :: h_R<span class="comment">  !&lt; Right thickness in the</span></div>
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;<span class="comment">                                                                   !! reconstruction [H ~&gt; m or kg m-2].</span></div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZIB_(G),SZJ_(G),SZK_(G))</span>, <span class="keywordtype">intent(inout)</span> :: h_u<span class="comment">  !&lt; Thickness at zonal faces [H ~&gt; m or kg m-2].</span></div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;<span class="keywordtype">  real</span>,                                      <span class="keywordtype">intent(in)</span>    :: dt_in_T<span class="comment">   !&lt; Time increment [T ~&gt; s].</span></div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;<span class="keywordtype">  real</span>,                                      <span class="keywordtype">intent(in)</span>    :: dt<span class="comment">   !&lt; Time increment [T ~&gt; s].</span></div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),                     <span class="keywordtype">intent(in)</span>    :: US<span class="comment">   !&lt; A dimensional unit scaling type</span></div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;  <span class="keywordtype">type</span>(loop_bounds_type),                    <span class="keywordtype">intent(in)</span>    :: LB<span class="comment">   !&lt; Loop bounds structure.</span></div>
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;  <span class="keywordtype">logical</span>,                                   <span class="keywordtype">intent(in)</span>    :: vol_CFL<span class="comment"> !&lt; If true, rescale the ratio</span></div>
@@ -3639,14 +3639,14 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;  <span class="comment">!$OMP parallel do default(shared) private(CFL,curv_3,h_marg,h_avg)</span></div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;  <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> j=jsh,jeh ; <span class="keywordflow">do</span> i=ish-1,ieh</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    <span class="keywordflow">if</span> (u(i,j,k) &gt; 0.0) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (u(i,j,k) * dt_in_t) * (g%dy_Cu(i,j) * g%IareaT(i,j))</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;      <span class="keywordflow">else</span> ; cfl = u(i,j,k) * dt_in_t * g%IdxT(i,j) ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (u(i,j,k) * dt) * (g%dy_Cu(i,j) * g%IareaT(i,j))</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;      <span class="keywordflow">else</span> ; cfl = u(i,j,k) * dt * g%IdxT(i,j) ;<span class="keywordflow"> endif</span></div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;      curv_3 = h_l(i,j,k) + h_r(i,j,k) - 2.0*h(i,j,k)</div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;      h_avg = h_r(i,j,k) + cfl * (0.5*(h_l(i,j,k) - h_r(i,j,k)) + curv_3*(cfl - 1.5))</div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;      h_marg = h_r(i,j,k) + cfl * ((h_l(i,j,k) - h_r(i,j,k)) + 3.0*curv_3*(cfl - 1.0))</div>
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    <span class="keywordflow">elseif</span> (u(i,j,k) &lt; 0.0) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (-u(i,j,k)*dt_in_t) * (g%dy_Cu(i,j) * g%IareaT(i+1,j))</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;      <span class="keywordflow">else</span> ; cfl = -u(i,j,k) * dt_in_t * g%IdxT(i+1,j) ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (-u(i,j,k)*dt) * (g%dy_Cu(i,j) * g%IareaT(i+1,j))</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;      <span class="keywordflow">else</span> ; cfl = -u(i,j,k) * dt * g%IdxT(i+1,j) ;<span class="keywordflow"> endif</span></div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;      curv_3 = h_l(i+1,j,k) + h_r(i+1,j,k) - 2.0*h(i+1,j,k)</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;      h_avg = h_l(i+1,j,k) + cfl * (0.5*(h_r(i+1,j,k)-h_l(i+1,j,k)) + curv_3*(cfl - 1.5))</div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;      h_marg = h_l(i+1,j,k) + cfl * ((h_r(i+1,j,k)-h_l(i+1,j,k)) + &amp;</div>
@@ -3710,14 +3710,14 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_ab0e7b60457e8fd605e3fffd6c3ba9827_icgraph.svg" width="580" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a9e76825c96ffca1ae0e84469ab46029b_icgraph.svg" width="556" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a92727e6da5d660f09e7ed9abaa076b6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92727e6da5d660f09e7ed9abaa076b6e">&#9670;&nbsp;</a></span>zonal_flux_adjust()</h2>
+<a id="afad3f82b9824a13d3fe8792496e9b769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afad3f82b9824a13d3fe8792496e9b769">&#9670;&nbsp;</a></span>zonal_flux_adjust()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3789,7 +3789,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">real, intent(in)&#160;</td>
-          <td class="paramname"><em>dt_in_T</em>, </td>
+          <td class="paramname"><em>dt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3885,7 +3885,7 @@ Here is the caller graph for this function:</div>
     <tr><td class="paramdir">[in]</td><td class="paramname">uh_tot_0</td><td>The summed transport with 0 adjustment [H L2 T-1 ~&gt; m3 s-1 or kg s-1]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">duhdu_tot_0</td><td>The partial derivative of du_err with du at 0 adjustment [H L ~&gt; m2 or kg m-1]. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">du</td><td>The barotropic velocity adjustment [L T-1 ~&gt; m s-1]. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt_in_t</td><td>Time increment [T ~&gt; s]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>Time increment [T ~&gt; s]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">cs</td><td>This module's control structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">j</td><td>Spatial index. </td></tr>
@@ -3926,7 +3926,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;<span class="comment">                       !! of du_err with du at 0 adjustment [H L ~&gt; m2 or kg m-1].</span></div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZIB_(G))</span>,                 <span class="keywordtype">intent(out)</span>   :: du<span class="comment"> !&lt;</span></div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;<span class="comment">                       !! The barotropic velocity adjustment [L T-1 ~&gt; m s-1].</span></div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;<span class="keywordtype">  real</span>,                                      <span class="keywordtype">intent(in)</span>    :: dt_in_T<span class="comment">   !&lt; Time increment [T ~&gt; s].</span></div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;<span class="keywordtype">  real</span>,                                      <span class="keywordtype">intent(in)</span>    :: dt<span class="comment">   !&lt; Time increment [T ~&gt; s].</span></div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),                     <span class="keywordtype">intent(in)</span>    :: US<span class="comment">   !&lt; A dimensional unit scaling type</span></div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;  <span class="keywordtype">type</span>(continuity_PPM_CS),                   <span class="keywordtype">pointer</span>       :: CS<span class="comment">   !&lt; This module&#39;s control structure.</span></div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;  <span class="keywordtype">integer</span>,                                   <span class="keywordtype">intent(in)</span>    :: j<span class="comment">    !&lt; Spatial index.</span></div>
@@ -3994,7 +3994,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;<span class="keywordflow">    enddo</span></div>
 <div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    domore = .false.</div>
 <div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    <span class="keywordflow">do</span> i=ish-1,ieh ; <span class="keywordflow">if</span> (do_i(i)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;      <span class="keywordflow">if</span> ((dt_in_t * min(g%IareaT(i,j),g%IareaT(i+1,j))*abs(uh_err(i)) &gt; tol_eta) .or. &amp;</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;      <span class="keywordflow">if</span> ((dt * min(g%IareaT(i,j),g%IareaT(i+1,j))*abs(uh_err(i)) &gt; tol_eta) .or. &amp;</div>
 <div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;          (cs%better_iter .and. ((abs(uh_err(i)) &gt; tol_vel * duhdu_tot(i)) .or. &amp;</div>
 <div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;                                 (abs(uh_err(i)) &gt; uh_err_best(i))) )) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        <span class="comment">!   Use Newton&#39;s method, provided it stays bounded.  Otherwise bisect</span></div>
@@ -4033,7 +4033,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;      <span class="keywordflow">do</span> i=ish-1,ieh ; u_new(i) = u(i,j,k) + du(i) * visc_rem(i,k) ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;      <span class="keyword">call </span>zonal_flux_layer(u_new, h_in(:,j,k), h_l(:,j,k), h_r(:,j,k), &amp;</div>
 <div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;                            uh_aux(:,k), duhdu(:,k), visc_rem(:,k), &amp;</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;                            dt_in_t, g, us, j, ish, ieh, do_i, cs%vol_CFL, obc)</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;                            dt, g, us, j, ish, ieh, do_i, cs%vol_CFL, obc)</div>
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;<span class="keywordflow">    enddo</span> ;<span class="keywordflow"> endif</span></div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160; </div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    <span class="keywordflow">if</span> (itt &lt; max_itts) <span class="keywordflow">then</span></div>
@@ -4064,20 +4064,20 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a92727e6da5d660f09e7ed9abaa076b6e_cgraph.svg" width="368" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_afad3f82b9824a13d3fe8792496e9b769_cgraph.svg" width="352" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a92727e6da5d660f09e7ed9abaa076b6e_icgraph.svg" width="100%" height="361"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_afad3f82b9824a13d3fe8792496e9b769_icgraph.svg" width="100%" height="361"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a0a12a5757ff16a83b8971cec715147e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a12a5757ff16a83b8971cec715147e4">&#9670;&nbsp;</a></span>zonal_flux_layer()</h2>
+<a id="a713196d0cfe6cb4cc8a91239a8dba02d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a713196d0cfe6cb4cc8a91239a8dba02d">&#9670;&nbsp;</a></span>zonal_flux_layer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4131,7 +4131,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">real, intent(in)&#160;</td>
-          <td class="paramname"><em>dt_in_T</em>, </td>
+          <td class="paramname"><em>dt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4205,7 +4205,7 @@ Here is the caller graph for this function:</div>
     <tr><td class="paramdir">[in]</td><td class="paramname">h_r</td><td>Right thickness [H ~&gt; m or kg m-2]. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">uh</td><td>Zonal mass or volume transport [H L2 T-1 ~&gt; m3 s-1 or kg s-1]. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">duhdu</td><td>Partial derivative of uh with u [H L ~&gt; m2 or kg m-1]. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt_in_t</td><td>Time increment [T ~&gt; s]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>Time increment [T ~&gt; s]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">j</td><td>Spatial index. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ish</td><td>Start of index range. </td></tr>
@@ -4232,7 +4232,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="comment">                                                          !! transport [H L2 T-1 ~&gt; m3 s-1 or kg s-1].</span></div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZIB_(G))</span>,    <span class="keywordtype">intent(inout)</span> :: duhdu<span class="comment">    !&lt; Partial derivative of uh</span></div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;<span class="comment">                                                          !! with u [H L ~&gt; m2 or kg m-1].</span></div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;<span class="keywordtype">  real</span>,                         <span class="keywordtype">intent(in)</span>    :: dt_in_T<span class="comment">  !&lt; Time increment [T ~&gt; s].</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;<span class="keywordtype">  real</span>,                         <span class="keywordtype">intent(in)</span>    :: dt<span class="comment">  !&lt; Time increment [T ~&gt; s].</span></div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),        <span class="keywordtype">intent(in)</span>    :: US<span class="comment">       !&lt; A dimensional unit scaling type</span></div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;  <span class="keywordtype">integer</span>,                      <span class="keywordtype">intent(in)</span>    :: j<span class="comment">        !&lt; Spatial index.</span></div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;  <span class="keywordtype">integer</span>,                      <span class="keywordtype">intent(in)</span>    :: ish<span class="comment">      !&lt; Start of index range.</span></div>
@@ -4257,15 +4257,15 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;  <span class="keywordflow">do</span> i=ish-1,ieh ; <span class="keywordflow">if</span> (do_i(i)) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    <span class="comment">! Set new values of uh and duhdu.</span></div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <span class="keywordflow">if</span> (u(i) &gt; 0.0) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (u(i) * dt_in_t) * (g%dy_Cu(i,j) * g%IareaT(i,j))</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;      <span class="keywordflow">else</span> ; cfl = u(i) * dt_in_t * g%IdxT(i,j) ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (u(i) * dt) * (g%dy_Cu(i,j) * g%IareaT(i,j))</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;      <span class="keywordflow">else</span> ; cfl = u(i) * dt * g%IdxT(i,j) ;<span class="keywordflow"> endif</span></div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;      curv_3 = h_l(i) + h_r(i) - 2.0*h(i)</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;      uh(i) = g%dy_Cu(i,j) * u(i) * &amp;</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;          (h_r(i) + cfl * (0.5*(h_l(i) - h_r(i)) + curv_3*(cfl - 1.5)))</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;      h_marg = h_r(i) + cfl * ((h_l(i) - h_r(i)) + 3.0*curv_3*(cfl - 1.0))</div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordflow">elseif</span> (u(i) &lt; 0.0) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (-u(i) * dt_in_t) * (g%dy_Cu(i,j) * g%IareaT(i+1,j))</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;      <span class="keywordflow">else</span> ; cfl = -u(i) * dt_in_t * g%IdxT(i+1,j) ;<span class="keywordflow"> endif</span></div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;      <span class="keywordflow">if</span> (vol_cfl) <span class="keywordflow">then</span> ; cfl = (-u(i) * dt) * (g%dy_Cu(i,j) * g%IareaT(i+1,j))</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;      <span class="keywordflow">else</span> ; cfl = -u(i) * dt * g%IdxT(i+1,j) ;<span class="keywordflow"> endif</span></div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;      curv_3 = h_l(i+1) + h_r(i+1) - 2.0*h(i+1)</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;      uh(i) = g%dy_Cu(i,j) * u(i) * &amp;</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;          (h_l(i+1) + cfl * (0.5*(h_r(i+1)-h_l(i+1)) + curv_3*(cfl - 1.5)))</div>
@@ -4297,14 +4297,14 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a0a12a5757ff16a83b8971cec715147e4_icgraph.svg" width="100%" height="394"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a713196d0cfe6cb4cc8a91239a8dba02d_icgraph.svg" width="100%" height="394"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ac9ae859f0fd4d6b13faab1065bf371b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9ae859f0fd4d6b13faab1065bf371b2">&#9670;&nbsp;</a></span>zonal_mass_flux()</h2>
+<a id="a5f5d6764ed315043d3b91b209db5c0a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f5d6764ed315043d3b91b209db5c0a0">&#9670;&nbsp;</a></span>zonal_mass_flux()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4334,7 +4334,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">real, intent(in)&#160;</td>
-          <td class="paramname"><em>dt_in_T</em>, </td>
+          <td class="paramname"><em>dt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4417,7 +4417,7 @@ Here is the caller graph for this function:</div>
     <tr><td class="paramdir">[in]</td><td class="paramname">u</td><td>Zonal velocity [L T-1 ~&gt; m s-1]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">h_in</td><td>Layer thickness used to calculate fluxes [H ~&gt; m or kg m-2]. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">uh</td><td>Volume flux through zonal faces = u*h*dy </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt_in_t</td><td>Time increment [T ~&gt; s]. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>Time increment [T ~&gt; s]. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>A dimensional unit scaling type </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">cs</td><td>This module's control structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">lb</td><td>Loop bounds structure. </td></tr>
@@ -4440,7 +4440,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(SZIB_(G),SZJ_(G),SZK_(G))</span>, &amp;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                           <span class="keywordtype">intent(out)</span>   :: uh<span class="comment">   !&lt; Volume flux through zonal faces = u*h*dy</span></div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment">                                                 !! [H L2 T-1 ~&gt; m3 s-1 or kg s-1].</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="keywordtype">  real</span>,                    <span class="keywordtype">intent(in)</span>    :: dt_in_T<span class="comment">   !&lt; Time increment [T ~&gt; s].</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="keywordtype">  real</span>,                    <span class="keywordtype">intent(in)</span>    :: dt<span class="comment">   !&lt; Time increment [T ~&gt; s].</span></div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keywordtype">type</span>(unit_scale_type),   <span class="keywordtype">intent(in)</span>    :: US<span class="comment">   !&lt; A dimensional unit scaling type</span></div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">type</span>(continuity_PPM_CS), <span class="keywordtype">pointer</span>       :: CS<span class="comment">   !&lt; This module&#39;s control structure.</span></div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordtype">type</span>(loop_bounds_type),  <span class="keywordtype">intent(in)</span>    :: LB<span class="comment">   !&lt; Loop bounds structure.</span></div>
@@ -4499,8 +4499,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keywordflow">  endif</span> ;<span class="keywordflow"> endif</span></div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  ish = lb%ish ; ieh = lb%ieh ; jsh = lb%jsh ; jeh = lb%jeh ; nz = g%ke</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  cfl_dt = cs%CFL_limit_adjust / (dt_in_t)</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  i_dt = 1.0 / (dt_in_t)</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  cfl_dt = cs%CFL_limit_adjust / dt</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  i_dt = 1.0 / dt</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keywordflow">if</span> (cs%aggress_adjust) cfl_dt = i_dt</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keyword">call </span>cpu_clock_begin(id_clock_update)</div>
@@ -4521,7 +4521,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <span class="keyword">call </span>cpu_clock_begin(id_clock_correct)</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment">!$OMP parallel do default(none) shared(ish,ieh,jsh,jeh,nz,u,h_in,h_L,h_R,use_visc_rem,visc_rem_u,  &amp;</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">!$OMP                                  uh,dt,G,GV,CS,local_specified_BC,OBC,uhbt,set_BT_cont,    &amp;</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">!$OMP                                  uh,dt,US,G,GV,CS,local_specified_BC,OBC,uhbt,set_BT_cont,    &amp;</span></div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">!$OMP                                  CFL_dt,I_dt,u_cor,BT_cont, local_Flather_OBC) &amp;</span></div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment">!$OMP                          private(do_I,duhdu,du,du_max_CFL,du_min_CFL,uh_tot_0,duhdu_tot_0, &amp;</span></div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">!$OMP                                  is_simple,FAuI,visc_rem_max,I_vrm,du_lim,dx_E,dx_W,any_simple_OBC ) &amp;</span></div>
@@ -4536,7 +4536,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="keywordflow">      enddo</span> ;<span class="keywordflow"> endif</span></div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <span class="keyword">call </span>zonal_flux_layer(u(:,j,k), h_in(:,j,k), h_l(:,j,k), h_r(:,j,k), &amp;</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                            uh(:,j,k), duhdu(:,k), visc_rem(:,k), &amp;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                            dt_in_t, g, us, j, ish, ieh, do_i, cs%vol_CFL, obc)</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                            dt, g, us, j, ish, ieh, do_i, cs%vol_CFL, obc)</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      <span class="keywordflow">if</span> (local_specified_bc) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordflow">do</span> i=ish-1,ieh</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;          <span class="keywordflow">if</span> (obc%segment(obc%segnum_u(i,j))%specified) &amp;</div>
@@ -4640,7 +4640,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">present</span>(uhbt)) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        <span class="keyword">call </span>zonal_flux_adjust(u, h_in, h_l, h_r, uhbt(:,j), uh_tot_0, duhdu_tot_0, du, &amp;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                               du_max_cfl, du_min_cfl, dt_in_t, g, us, cs, visc_rem, &amp;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                               du_max_cfl, du_min_cfl, dt, g, us, cs, visc_rem, &amp;</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                               j, ish, ieh, do_i, .true., uh, obc=obc)</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">present</span>(u_cor)) <span class="keywordflow">then</span> ; <span class="keywordflow">do</span> k=1,nz</div>
@@ -4655,7 +4655,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160; </div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;      <span class="keywordflow">if</span> (set_bt_cont) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="keyword">call </span>set_zonal_bt_cont(u, h_in, h_l, h_r, bt_cont, uh_tot_0, duhdu_tot_0,&amp;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                               du_max_cfl, du_min_cfl, dt_in_t, g, us, cs, visc_rem, &amp;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                               du_max_cfl, du_min_cfl, dt, g, us, cs, visc_rem, &amp;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;                               visc_rem_max, j, ish, ieh, do_i)</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <span class="keywordflow">if</span> (any_simple_obc) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;          <span class="keywordflow">do</span> i=ish-1,ieh</div>
@@ -4708,10 +4708,10 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160; </div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;  <span class="keywordflow">if</span>  (set_bt_cont) <span class="keywordflow">then</span> ; <span class="keywordflow">if</span> (<span class="keyword">allocated</span>(bt_cont%h_u)) <span class="keywordflow">then</span></div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(u_cor)) <span class="keywordflow">then</span></div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;      <span class="keyword">call </span>zonal_face_thickness(u_cor, h_in, h_l, h_r, bt_cont%h_u, dt_in_t, g, us, lb, &amp;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;      <span class="keyword">call </span>zonal_face_thickness(u_cor, h_in, h_l, h_r, bt_cont%h_u, dt, g, us, lb, &amp;</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;                                cs%vol_CFL, cs%marginal_faces, visc_rem_u, obc)</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;      <span class="keyword">call </span>zonal_face_thickness(u, h_in, h_l, h_r, bt_cont%h_u, dt_in_t, g, us, lb, &amp;</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;      <span class="keyword">call </span>zonal_face_thickness(u, h_in, h_l, h_r, bt_cont%h_u, dt, g, us, lb, &amp;</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;                                cs%vol_CFL, cs%marginal_faces, visc_rem_u, obc)</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="keywordflow">    endif</span></div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;<span class="keywordflow">  endif</span> ;<span class="keywordflow"> endif</span></div>
@@ -4723,13 +4723,13 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_ac9ae859f0fd4d6b13faab1065bf371b2_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a5f5d6764ed315043d3b91b209db5c0a0_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_ac9ae859f0fd4d6b13faab1065bf371b2_icgraph.svg" width="368" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacemom__continuity__ppm_a5f5d6764ed315043d3b91b209db5c0a0_icgraph.svg" width="352" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

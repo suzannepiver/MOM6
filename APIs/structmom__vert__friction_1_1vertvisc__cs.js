@@ -4,6 +4,7 @@ var structmom__vert__friction_1_1vertvisc__cs =
     [ "a1_shelf_v", "structmom__vert__friction_1_1vertvisc__cs.html#a17b20569614cc2acc79b2f96f5ad2e46", null ],
     [ "a_u", "structmom__vert__friction_1_1vertvisc__cs.html#af16fe3106ab069f70ef1494eed36bd96", null ],
     [ "a_v", "structmom__vert__friction_1_1vertvisc__cs.html#a1f4e074cb2389c307db0b1b4f5bc720c", null ],
+    [ "answers_2018", "structmom__vert__friction_1_1vertvisc__cs.html#a94bc4cfa7ce7db44bc49b4fb1b0ae6ca", null ],
     [ "bottomdraglaw", "structmom__vert__friction_1_1vertvisc__cs.html#a4118945f069d102682bce027445b7d71", null ],
     [ "cfl_based_trunc", "structmom__vert__friction_1_1vertvisc__cs.html#af4a1925161558c3f0d3bc8028cc1ac56", null ],
     [ "cfl_report", "structmom__vert__friction_1_1vertvisc__cs.html#aef31e4cc1fe1ac798630c57c64489aa8", null ],

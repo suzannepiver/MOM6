@@ -5,14 +5,14 @@ digraph "mom_meke::meke_cs"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node1 [label="mom_meke::meke_cs",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Control structure that contains MEKE parameters and diagnostics handles."];
-  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" meke_geometric\nmeke_equilibrium\l_alt\nrd_as_max_scale\ninitialize\nkh_flux_enabled\nuse_old_lscale\nuse_min_lscale\ngm_src_alt\ndebug\nvisc_drag\n..." ,fontname="Helvetica"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" meke_geometric\nmeke_equilibrium\l_alt\nrd_as_max_scale\ninitialize\nmeke_equilibrium\l_restoring\nkh_flux_enabled\nuse_old_lscale\nuse_min_lscale\ngm_src_alt\ndebug\n..." ,fontname="Helvetica"];
   Node2 [label="logical",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pass_kh\npass_meke" ,fontname="Helvetica"];
   Node3 [label="group_pass_type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" diag" ,fontname="Helvetica"];
   Node4 [label="diag_ctrl",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
-  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" id_mom_src\nid_gm_src\nid_src\nid_leady\nid_au\nid_meke\nid_decay\nid_le\nid_ku\nid_clock\l_pass\n..." ,fontname="Helvetica"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" id_mom_src\nid_gm_src\nid_src\nid_leady\nid_au\nid_meke\nid_meke_equilibrium\nid_decay\nid_le\nid_ku\n..." ,fontname="Helvetica"];
   Node5 [label="integer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
-  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" adeform\nviscosity_coeff\l_ku\ncdrag\nagrid\nmeke_gmecoeff\nmeke_advection\l_factor\nmeke_uscale\nmeke_cd_scale\nmeke_damping\nkhmeke_fac\n..." ,fontname="Helvetica"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" adeform\nviscosity_coeff\l_ku\ncdrag\nagrid\nmeke_gmecoeff\nequilibrium\l_value\nmeke_advection\l_factor\nmeke_uscale\nmeke_cd_scale\nmeke_damping\n..." ,fontname="Helvetica"];
   Node6 [label="real",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
 }

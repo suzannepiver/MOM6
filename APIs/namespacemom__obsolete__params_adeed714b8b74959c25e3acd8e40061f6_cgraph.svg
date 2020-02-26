@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 598;
+var viewWidth = 564;
 var viewHeight = 230;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,14 +54,14 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_obsolete_params::find_obsolete_params</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-226.1335 594,-226.1335 594,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-225.545 560,-225.545 560,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Scans input parameter file for list obsolete parameters.">
-<polygon fill="#bfbfbf" stroke="#000000" points="0,-122.5 0,-152.5 126,-152.5 126,-122.5 0,-122.5"/>
+<polygon fill="#bfbfbf" stroke="#000000" points="0,-122.5 0,-152.5 118,-152.5 118,-122.5 0,-122.5"/>
 <text text-anchor="start" x="8" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_obsolete_params</text>
-<text text-anchor="middle" x="63" y="-129.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::find_obsolete_params</text>
+<text text-anchor="middle" x="59" y="-129.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::find_obsolete_params</text>
 </a>
 </g>
 </g>
@@ -69,127 +69,127 @@ var sectionId = 'dynsection-0';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="This returns .true. if the current PE is the root PE.">
-<polygon fill="#ffffff" stroke="#000000" points="475,-164.5 475,-194.5 590,-194.5 590,-164.5 475,-164.5"/>
-<text text-anchor="start" x="483" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="532.5" y="-171.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
+<polygon fill="#ffffff" stroke="#000000" points="450,-164.5 450,-194.5 556,-194.5 556,-164.5 450,-164.5"/>
+<text text-anchor="start" x="458" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="503" y="-171.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M78.5182,-152.6993C96.7463,-169.3858 128.743,-195.1785 162,-205.5 267.3503,-238.196 397.3468,-215.5843 472.0067,-196.9823"/>
-<polygon fill="#191970" stroke="#191970" points="472.8953,-200.3678 481.721,-194.5064 471.1664,-193.5847 472.8953,-200.3678"/>
+<path fill="none" stroke="#191970" d="M73.7687,-152.6878C91.1478,-169.3638 121.7487,-195.1469 154,-205.5 252.0092,-236.9623 373.1452,-215.3947 443.8734,-197.2071"/>
+<polygon fill="#191970" stroke="#191970" points="445.1567,-200.4884 453.9342,-194.5549 443.3723,-193.7196 445.1567,-200.4884"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="This provides a convenient interface for writing an mpp_error message with run&#45;time filter based on a...">
-<polygon fill="#ffffff" stroke="#000000" points="324,-123.5 324,-153.5 439,-153.5 439,-123.5 324,-123.5"/>
-<text text-anchor="start" x="332" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="381.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
+<polygon fill="#ffffff" stroke="#000000" points="308,-123.5 308,-153.5 414,-153.5 414,-123.5 308,-123.5"/>
+<text text-anchor="start" x="316" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="361" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M85.4126,-152.6759C104.7435,-164.7916 133.9033,-180.8074 162,-187.5 216.4759,-200.476 233.6232,-200.8851 288,-187.5 310.5794,-181.942 333.7452,-169.8564 351.3694,-159.0791"/>
-<polygon fill="#191970" stroke="#191970" points="353.4579,-161.8999 360.0481,-153.6041 349.723,-155.9795 353.4579,-161.8999"/>
+<path fill="none" stroke="#191970" d="M80.4149,-152.6689C98.9085,-164.7803 126.8593,-180.7938 154,-187.5 204.9132,-200.0802 221.2072,-200.5581 272,-187.5 293.4764,-181.9787 315.3232,-170.0631 331.9971,-159.365"/>
+<polygon fill="#191970" stroke="#191970" points="334.2954,-162.0405 340.693,-153.5953 330.4252,-156.2076 334.2954,-162.0405"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__obsolete__params.html#ad9be6c94848c1c99457b16e578dfe1c0" target="_top" xlink:title="Test for presence of obsolete STRING in parameter file.">
-<polygon fill="#ffffff" stroke="#000000" points="162,-147.5 162,-177.5 288,-177.5 288,-147.5 162,-147.5"/>
-<text text-anchor="start" x="170" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_obsolete_params</text>
-<text text-anchor="middle" x="225" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::obsolete_char</text>
+<polygon fill="#ffffff" stroke="#000000" points="154,-147.5 154,-177.5 272,-177.5 272,-147.5 154,-147.5"/>
+<text text-anchor="start" x="162" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_obsolete_params</text>
+<text text-anchor="middle" x="213" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::obsolete_char</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M126.0973,-147.2372C134.5261,-148.538 143.2273,-149.8807 151.8103,-151.2053"/>
-<polygon fill="#191970" stroke="#191970" points="151.3916,-154.682 161.8084,-152.7482 152.4592,-147.7639 151.3916,-154.682"/>
+<path fill="none" stroke="#191970" d="M118.1,-147.0942C126.5133,-148.4599 135.2284,-149.8747 143.8126,-151.2683"/>
+<polygon fill="#191970" stroke="#191970" points="143.3721,-154.7425 153.8037,-152.8902 144.4938,-147.833 143.3721,-154.7425"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__obsolete__params.html#aa0a8fe574d071d3a40ac146c2b8070f0" target="_top" xlink:title="Test for presence of obsolete INTEGER in parameter file.">
-<polygon fill="#ffffff" stroke="#000000" points="162,-98.5 162,-128.5 288,-128.5 288,-98.5 162,-98.5"/>
-<text text-anchor="start" x="170" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_obsolete_params</text>
-<text text-anchor="middle" x="225" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::obsolete_int</text>
+<polygon fill="#ffffff" stroke="#000000" points="154,-98.5 154,-128.5 272,-128.5 272,-98.5 154,-98.5"/>
+<text text-anchor="start" x="162" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_obsolete_params</text>
+<text text-anchor="middle" x="213" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::obsolete_int</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M126.0973,-128.1523C134.5261,-126.9035 143.2273,-125.6145 151.8103,-124.3429"/>
-<polygon fill="#191970" stroke="#191970" points="152.4293,-127.7895 161.8084,-122.8617 151.4034,-120.8651 152.4293,-127.7895"/>
+<path fill="none" stroke="#191970" d="M118.1,-128.2896C126.5133,-126.9785 135.2284,-125.6203 143.8126,-124.2825"/>
+<polygon fill="#191970" stroke="#191970" points="144.462,-127.7236 153.8037,-122.7254 143.384,-120.8071 144.462,-127.7236"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="namespacemom__obsolete__params.html#a0f74da6ca1e81bb5029fbdcd284d5427" target="_top" xlink:title="Test for presence of obsolete LOGICAL in parameter file.">
-<polygon fill="#ffffff" stroke="#000000" points="162,-49.5 162,-79.5 288,-79.5 288,-49.5 162,-49.5"/>
-<text text-anchor="start" x="170" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_obsolete_params</text>
-<text text-anchor="middle" x="225" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::obsolete_logical</text>
+<polygon fill="#ffffff" stroke="#000000" points="154,-49.5 154,-79.5 272,-79.5 272,-49.5 154,-49.5"/>
+<text text-anchor="start" x="162" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_obsolete_params</text>
+<text text-anchor="middle" x="213" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::obsolete_logical</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge8" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M92.6253,-122.4287C112.1579,-112.668 138.3982,-99.8877 162,-89.5 166.6598,-87.4491 171.544,-85.3774 176.4437,-83.3504"/>
-<polygon fill="#191970" stroke="#191970" points="177.8906,-86.5403 185.8301,-79.5249 175.2487,-80.058 177.8906,-86.5403"/>
+<path fill="none" stroke="#191970" d="M87.858,-122.2855C106.5616,-112.5825 131.5374,-99.9195 154,-89.5 158.1424,-87.5785 162.4732,-85.6305 166.8255,-83.7138"/>
+<polygon fill="#191970" stroke="#191970" points="168.5441,-86.7834 176.3231,-79.5905 165.7564,-80.3624 168.5441,-86.7834"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="namespacemom__obsolete__params.html#ae7343199aaed0daa5cda091cbd136c0c" target="_top" xlink:title="Test for presence of obsolete REAL in parameter file.">
-<polygon fill="#ffffff" stroke="#000000" points="162,-.5 162,-30.5 288,-30.5 288,-.5 162,-.5"/>
-<text text-anchor="start" x="170" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_obsolete_params</text>
-<text text-anchor="middle" x="225" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::obsolete_real</text>
+<polygon fill="#ffffff" stroke="#000000" points="154,-.5 154,-30.5 272,-30.5 272,-.5 154,-.5"/>
+<text text-anchor="start" x="162" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_obsolete_params</text>
+<text text-anchor="middle" x="213" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::obsolete_real</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge10" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M74.8916,-122.242C92.0829,-101.0824 125.8078,-62.808 162,-39.5 164.4447,-37.9256 167.0082,-36.4308 169.6445,-35.0149"/>
-<polygon fill="#191970" stroke="#191970" points="171.3906,-38.0566 178.821,-30.504 168.3026,-31.7745 171.3906,-38.0566"/>
+<path fill="none" stroke="#191970" d="M70.3465,-122.3216C86.7662,-101.2566 119.0377,-63.0939 154,-39.5 156.2428,-37.9864 158.596,-36.543 161.0178,-35.17"/>
+<polygon fill="#191970" stroke="#191970" points="162.7455,-38.2167 170.0134,-30.5077 159.5245,-32.0018 162.7455,-38.2167"/>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M436.8694,-153.5341C446.8199,-156.2359 457.2738,-159.0743 467.4679,-161.8423"/>
-<polygon fill="#191970" stroke="#191970" points="466.5695,-165.225 477.1373,-164.4677 468.4039,-158.4696 466.5695,-165.225"/>
+<path fill="none" stroke="#191970" d="M413.0692,-153.5341C422.2338,-156.1802 431.8522,-158.9573 441.2507,-161.671"/>
+<polygon fill="#191970" stroke="#191970" points="440.3586,-165.0563 450.937,-164.4677 442.3004,-158.331 440.3586,-165.0563"/>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge5" class="edge">
 <title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M288.2034,-152.8075C296.6788,-151.5077 305.3989,-150.1705 313.9455,-148.8598"/>
-<polygon fill="#191970" stroke="#191970" points="314.5198,-152.3127 323.8737,-147.3373 313.4587,-145.3936 314.5198,-152.3127"/>
+<path fill="none" stroke="#191970" d="M272.3445,-152.8766C280.6918,-151.523 289.2982,-150.1273 297.7157,-148.7623"/>
+<polygon fill="#191970" stroke="#191970" points="298.5486,-152.1731 307.8593,-147.1174 297.428,-145.2633 298.5486,-152.1731"/>
 </g>
 <!-- Node5&#45;&gt;Node3 -->
 <g id="edge7" class="edge">
 <title>Node5&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M288.2034,-123.5964C296.6788,-124.9503 305.3989,-126.3433 313.9455,-127.7085"/>
-<polygon fill="#191970" stroke="#191970" points="313.4468,-131.1732 323.8737,-129.2945 314.551,-124.2608 313.4468,-131.1732"/>
+<path fill="none" stroke="#191970" d="M272.3445,-123.5244C280.7835,-124.9499 289.4874,-126.4202 297.9931,-127.8569"/>
+<polygon fill="#191970" stroke="#191970" points="297.416,-131.309 307.8593,-129.5235 298.582,-124.4067 297.416,-131.309"/>
 </g>
 <!-- Node6&#45;&gt;Node3 -->
 <g id="edge9" class="edge">
 <title>Node6&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M264.9242,-79.6096C272.6424,-82.7364 280.6206,-86.1135 288,-89.5 307.2538,-98.3358 328.1834,-109.1827 345.3498,-118.4229"/>
-<polygon fill="#191970" stroke="#191970" points="344.0061,-121.6758 354.465,-123.3681 347.3442,-115.523 344.0061,-121.6758"/>
+<path fill="none" stroke="#191970" d="M250.0846,-79.5278C257.4094,-82.6881 264.9949,-86.0986 272,-89.5 290.1712,-98.3233 309.8958,-109.0586 326.1474,-118.2294"/>
+<polygon fill="#191970" stroke="#191970" points="324.854,-121.5202 335.2767,-123.4219 328.3148,-115.4355 324.854,-121.5202"/>
 </g>
 <!-- Node7&#45;&gt;Node3 -->
 <g id="edge11" class="edge">
 <title>Node7&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M271.9467,-30.643C277.5504,-33.2368 283.0365,-36.1841 288,-39.5 319.0643,-60.253 347.4045,-93.1075 364.5472,-115.2159"/>
-<polygon fill="#191970" stroke="#191970" points="361.9265,-117.5522 370.7622,-123.3987 367.5009,-113.3182 361.9265,-117.5522"/>
+<path fill="none" stroke="#191970" d="M256.7226,-30.6343C262.0669,-33.2415 267.2949,-36.1944 272,-39.5 301.8841,-60.4952 328.7865,-93.2929 345.0015,-115.3224"/>
+<polygon fill="#191970" stroke="#191970" points="342.1895,-117.4069 350.8758,-123.4732 347.8684,-113.3141 342.1895,-117.4069"/>
 </g>
 </g>
 </svg>

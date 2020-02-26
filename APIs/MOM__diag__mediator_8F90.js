@@ -45,6 +45,7 @@ var MOM__diag__mediator_8F90 =
     [ "downsample_field_3d", "MOM__diag__mediator_8F90.html#a640ec8fac9bad1d0af6f737d7e816403", null ],
     [ "downsample_mask_2d", "MOM__diag__mediator_8F90.html#a8e211bead8fe3f37da32dfa010b55b90", null ],
     [ "downsample_mask_3d", "MOM__diag__mediator_8F90.html#a0b0fe5fefbf6a1e9a5b1642f5852cdb6", null ],
+    [ "enable_averages", "MOM__diag__mediator_8F90.html#ada4d9d69fb0d79a0fe20a307eaf1ca9c", null ],
     [ "enable_averaging", "MOM__diag__mediator_8F90.html#a91244f765f2964dfb11f8787f65042f1", null ],
     [ "get_diag_time_end", "MOM__diag__mediator_8F90.html#a76e845bc64dfd5116f41fe90922b7937", null ],
     [ "get_new_diag_id", "MOM__diag__mediator_8F90.html#a3f7442639213320f7429e2288a79fda2", null ],

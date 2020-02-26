@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/tracer/dye_example.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/tracer/dye_example.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('dye__example_8F90.html','');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for dye_example.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="dye__example_8F90__incl.svg" width="202" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="dye__example_8F90__incl.svg" width="212" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -129,9 +129,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a4200969a80e51071559453d2ce03bebe"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceregional__dyes.html#a4200969a80e51071559453d2ce03bebe">regional_dyes::initialize_dye_tracer</a> (restart, day, G, GV, h, diag, OBC, CS, sponge_CSp)</td></tr>
 <tr class="memdesc:a4200969a80e51071559453d2ce03bebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine initializes the CSntr tracer fields in tr(:,:,:,:) and it sets up the tracer output.  <a href="namespaceregional__dyes.html#a4200969a80e51071559453d2ce03bebe">More...</a><br /></td></tr>
 <tr class="separator:a4200969a80e51071559453d2ce03bebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a071a809a79a9ca752f395a35b4887ca1"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceregional__dyes.html#a071a809a79a9ca752f395a35b4887ca1">regional_dyes::dye_tracer_column_physics</a> (h_old, h_new, ea, eb, fluxes, dt, G, GV, CS, evap_CFL_limit, minimum_forcing_depth)</td></tr>
-<tr class="memdesc:a071a809a79a9ca752f395a35b4887ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine applies diapycnal diffusion and any other column tracer physics or chemistry to the tracers from this file. This is a simple example of a set of advected passive tracers. The arguments to this subroutine are redundant in that h_new(k) = h_old(k) + ea(k) - eb(k-1) + eb(k) - ea(k+1)  <a href="namespaceregional__dyes.html#a071a809a79a9ca752f395a35b4887ca1">More...</a><br /></td></tr>
-<tr class="separator:a071a809a79a9ca752f395a35b4887ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a84fcf1505f825e711c1fc9bc86c70"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceregional__dyes.html#ae9a84fcf1505f825e711c1fc9bc86c70">regional_dyes::dye_tracer_column_physics</a> (h_old, h_new, ea, eb, fluxes, dt, G, GV, US, CS, evap_CFL_limit, minimum_forcing_depth)</td></tr>
+<tr class="memdesc:ae9a84fcf1505f825e711c1fc9bc86c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine applies diapycnal diffusion and any other column tracer physics or chemistry to the tracers from this file. This is a simple example of a set of advected passive tracers. The arguments to this subroutine are redundant in that h_new(k) = h_old(k) + ea(k) - eb(k-1) + eb(k) - ea(k+1)  <a href="namespaceregional__dyes.html#ae9a84fcf1505f825e711c1fc9bc86c70">More...</a><br /></td></tr>
+<tr class="separator:ae9a84fcf1505f825e711c1fc9bc86c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0641ff9c663bcfacdd597a79f63d15e0"><td class="memItemLeft" align="right" valign="top">integer function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceregional__dyes.html#a0641ff9c663bcfacdd597a79f63d15e0">regional_dyes::dye_stock</a> (h, stocks, G, GV, CS, names, units, stock_index)</td></tr>
 <tr class="memdesc:a0641ff9c663bcfacdd597a79f63d15e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calculates the mass-weighted integral of all tracer stocks, returning the number of stocks it has calculated. If the stock_index is present, only the stock corresponding to that coded index is returned.  <a href="namespaceregional__dyes.html#a0641ff9c663bcfacdd597a79f63d15e0">More...</a><br /></td></tr>
 <tr class="separator:a0641ff9c663bcfacdd597a79f63d15e0"><td class="memSeparator" colspan="2">&#160;</td></tr>

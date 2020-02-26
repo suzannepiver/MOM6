@@ -1,7 +1,7 @@
 var MOM__shared__initialization_8F90 =
 [
     [ "apply_topography_edits_from_file", "MOM__shared__initialization_8F90.html#a053b97ada59fb2f5893a0bbe592eaac3", null ],
-    [ "compute_global_grid_integrals", "MOM__shared__initialization_8F90.html#a501559f833324821cd6e04252d4e156b", null ],
+    [ "compute_global_grid_integrals", "MOM__shared__initialization_8F90.html#a25f3025f93e75f70fa21f444014345be", null ],
     [ "diagnosemaximumdepth", "MOM__shared__initialization_8F90.html#aab0fe8b21fe93b75e1bec9c652deb2a0", null ],
     [ "initialize_grid_rotation_angle", "MOM__shared__initialization_8F90.html#acf73ad1980ac8b8253fa085a1d8afc17", null ],
     [ "initialize_topography_from_file", "MOM__shared__initialization_8F90.html#a3b944f383cd2586189347532539656ef", null ],

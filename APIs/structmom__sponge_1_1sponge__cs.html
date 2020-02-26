@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('structmom__sponge_1_1sponge__cs.html',
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This control structure holds memory and parameters for the MOM_sponge module. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00040">40</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00041">41</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_sponge::sponge_cs:</div>
 <div class="dyncontent">
@@ -154,10 +154,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a50c084646768bede7428aee0c7167a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of the j-indicies of each of the columns being damped.  <a href="structmom__sponge_1_1sponge__cs.html#a50c084646768bede7428aee0c7167a13">More...</a><br /></td></tr>
 <tr class="separator:a50c084646768bede7428aee0c7167a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b3a6eed04de9000aabc329ddb5dd514"><td class="memItemLeft" align="right" valign="top">real, dimension(:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__sponge_1_1sponge__cs.html#a3b3a6eed04de9000aabc329ddb5dd514">iresttime_col</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a3b3a6eed04de9000aabc329ddb5dd514"><td class="mdescLeft">&#160;</td><td class="mdescRight">The inverse restoring time of each column.  <a href="structmom__sponge_1_1sponge__cs.html#a3b3a6eed04de9000aabc329ddb5dd514">More...</a><br /></td></tr>
+<tr class="memdesc:a3b3a6eed04de9000aabc329ddb5dd514"><td class="mdescLeft">&#160;</td><td class="mdescRight">The inverse restoring time of each column [T-1 ~&gt; s-1].  <a href="structmom__sponge_1_1sponge__cs.html#a3b3a6eed04de9000aabc329ddb5dd514">More...</a><br /></td></tr>
 <tr class="separator:a3b3a6eed04de9000aabc329ddb5dd514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a517e1f1da3d79797c5aa800c239b22ee"><td class="memItemLeft" align="right" valign="top">real, dimension(:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__sponge_1_1sponge__cs.html#a517e1f1da3d79797c5aa800c239b22ee">rcv_ml_ref</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a517e1f1da3d79797c5aa800c239b22ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value toward which the mixed layer coordinate-density is being damped [kg m-3].  <a href="structmom__sponge_1_1sponge__cs.html#a517e1f1da3d79797c5aa800c239b22ee">More...</a><br /></td></tr>
+<tr class="memdesc:a517e1f1da3d79797c5aa800c239b22ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value toward which the mixed layer coordinate-density is being damped [R ~&gt; kg m-3].  <a href="structmom__sponge_1_1sponge__cs.html#a517e1f1da3d79797c5aa800c239b22ee">More...</a><br /></td></tr>
 <tr class="separator:a517e1f1da3d79797c5aa800c239b22ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71ce241342853fb3d68d855df61ddf5b"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__sponge_1_1sponge__cs.html#a71ce241342853fb3d68d855df61ddf5b">ref_eta</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a71ce241342853fb3d68d855df61ddf5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value toward which the interface heights are being damped [Z ~&gt; m].  <a href="structmom__sponge_1_1sponge__cs.html#a71ce241342853fb3d68d855df61ddf5b">More...</a><br /></td></tr>
@@ -172,10 +172,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:aad5473d06a670043ebf247c5aaa66b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, apply sponges to the i-mean fields.  <a href="structmom__sponge_1_1sponge__cs.html#aad5473d06a670043ebf247c5aaa66b5a">More...</a><br /></td></tr>
 <tr class="separator:aad5473d06a670043ebf247c5aaa66b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29f4a72bf953ef3c11d25c1efcb00581"><td class="memItemLeft" align="right" valign="top">real, dimension(:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__sponge_1_1sponge__cs.html#a29f4a72bf953ef3c11d25c1efcb00581">iresttime_im</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a29f4a72bf953ef3c11d25c1efcb00581"><td class="mdescLeft">&#160;</td><td class="mdescRight">The inverse restoring time of each row for i-mean sponges.  <a href="structmom__sponge_1_1sponge__cs.html#a29f4a72bf953ef3c11d25c1efcb00581">More...</a><br /></td></tr>
+<tr class="memdesc:a29f4a72bf953ef3c11d25c1efcb00581"><td class="mdescLeft">&#160;</td><td class="mdescRight">The inverse restoring time of each row for i-mean sponges [T-1 ~&gt; s-1].  <a href="structmom__sponge_1_1sponge__cs.html#a29f4a72bf953ef3c11d25c1efcb00581">More...</a><br /></td></tr>
 <tr class="separator:a29f4a72bf953ef3c11d25c1efcb00581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20926118323ed0a3afc1e750b7a112c4"><td class="memItemLeft" align="right" valign="top">real, dimension(:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__sponge_1_1sponge__cs.html#a20926118323ed0a3afc1e750b7a112c4">rcv_ml_ref_im</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a20926118323ed0a3afc1e750b7a112c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">mixed layer coordinate-density is being damped [kg m-3].  <a href="structmom__sponge_1_1sponge__cs.html#a20926118323ed0a3afc1e750b7a112c4">More...</a><br /></td></tr>
+<tr class="memdesc:a20926118323ed0a3afc1e750b7a112c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">mixed layer coordinate-density is being damped [R ~&gt; kg m-3].  <a href="structmom__sponge_1_1sponge__cs.html#a20926118323ed0a3afc1e750b7a112c4">More...</a><br /></td></tr>
 <tr class="separator:a20926118323ed0a3afc1e750b7a112c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d9becce664fb2bccf5cd2031e8eed38"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__sponge_1_1sponge__cs.html#a3d9becce664fb2bccf5cd2031e8eed38">ref_eta_im</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:a3d9becce664fb2bccf5cd2031e8eed38"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value toward which the i-mean interface heights are being damped [Z ~&gt; m].  <a href="structmom__sponge_1_1sponge__cs.html#a3d9becce664fb2bccf5cd2031e8eed38">More...</a><br /></td></tr>
@@ -205,8 +205,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, a refined bulk mixed layer is used with nkml sublayers and nkbl buffer layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00041">41</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">logical</span> :: bulkmixedlayer<span class="comment">  !&lt; If true, a refined bulk mixed layer is used with</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00042">42</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">logical</span> :: bulkmixedlayer<span class="comment">  !&lt; If true, a refined bulk mixed layer is used with</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -224,8 +224,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Array of the i-indicies of each of the columns being damped. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00055">55</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">pointer</span> :: col_i(:) =&gt; null() <span class="comment">!&lt; Array of the i-indicies of each of the columns being damped.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00056">56</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">pointer</span> :: col_i(:) =&gt; null() <span class="comment">!&lt; Array of the i-indicies of each of the columns being damped.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -243,8 +243,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Array of the j-indicies of each of the columns being damped. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00056">56</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">pointer</span> :: col_j(:) =&gt; null() <span class="comment">!&lt; Array of the j-indicies of each of the columns being damped.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00057">57</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">integer</span>, <span class="keywordtype">pointer</span> :: col_j(:) =&gt; null() <span class="comment">!&lt; Array of the j-indicies of each of the columns being damped.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -262,8 +262,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure that is used to regulate the timing of diagnostic output. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00075">75</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00076">76</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -281,8 +281,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, apply sponges to the i-mean fields. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00065">65</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">logical</span> :: do_i_mean_sponge<span class="comment"> !&lt; If true, apply sponges to the i-mean fields.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00066">66</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">logical</span> :: do_i_mean_sponge<span class="comment"> !&lt; If true, apply sponges to the i-mean fields.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -300,8 +300,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of fields which have already been registered by calls to set_up_sponge_field. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00053">53</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">integer</span> :: fldno = 0<span class="comment"> !&lt; The number of fields which have already been</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00054">54</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">integer</span> :: fldno = 0<span class="comment"> !&lt; The number of fields which have already been</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -319,8 +319,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A diagnostic ID. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00077">77</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">integer</span> :: id_w_sponge = -1<span class="comment"> !&lt; A diagnostic ID</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">integer</span> :: id_w_sponge = -1<span class="comment"> !&lt; A diagnostic ID</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -338,8 +338,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The ending i-index of the computational domain at h. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00045">45</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">integer</span> :: iec<span class="comment">       !&lt; The ending i-index of the computational domain at h.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00046">46</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">integer</span> :: iec<span class="comment">       !&lt; The ending i-index of the computational domain at h.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -357,8 +357,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The ending i-index of the data domain at h. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00049">49</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">integer</span> :: ied<span class="comment">       !&lt; The ending i-index of the data domain at h.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00050">50</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">integer</span> :: ied<span class="comment">       !&lt; The ending i-index of the data domain at h.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -374,10 +374,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The inverse restoring time of each column. </p>
+<p>The inverse restoring time of each column [T-1 ~&gt; s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00057">57</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: Iresttime_col(:) =&gt; null() <span class="comment">!&lt; The inverse restoring time of each column.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00058">58</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: Iresttime_col(:) =&gt; null() <span class="comment">!&lt; The inverse restoring time of each column [T-1 ~&gt; s-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -393,10 +393,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The inverse restoring time of each row for i-mean sponges. </p>
+<p>The inverse restoring time of each row for i-mean sponges [T-1 ~&gt; s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00066">66</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: Iresttime_im(:) =&gt; null() <span class="comment">!&lt; The inverse restoring time of</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00067">67</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: Iresttime_im(:) =&gt; null() <span class="comment">!&lt; The inverse restoring time of</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -414,8 +414,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The starting i-index of the computational domain at h. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00044">44</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">integer</span> :: isc<span class="comment">       !&lt; The starting i-index of the computational domain at h.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00045">45</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">integer</span> :: isc<span class="comment">       !&lt; The starting i-index of the computational domain at h.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -433,8 +433,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The starting i-index of the data domain at h. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00048">48</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">integer</span> :: isd<span class="comment">       !&lt; The starting i-index of the data domain at h.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00049">49</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">integer</span> :: isd<span class="comment">       !&lt; The starting i-index of the data domain at h.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -452,8 +452,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The ending j-index of the computational domain at h. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00047">47</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">integer</span> :: jec<span class="comment">       !&lt; The ending j-index of the computational domain at h.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00048">48</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">integer</span> :: jec<span class="comment">       !&lt; The ending j-index of the computational domain at h.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -471,8 +471,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The ending j-index of the data domain at h. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00051">51</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">integer</span> :: jed<span class="comment">       !&lt; The ending j-index of the data domain at h.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00052">52</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">integer</span> :: jed<span class="comment">       !&lt; The ending j-index of the data domain at h.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -490,8 +490,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The starting j-index of the computational domain at h. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00046">46</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">integer</span> :: jsc<span class="comment">       !&lt; The starting j-index of the computational domain at h.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00047">47</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">integer</span> :: jsc<span class="comment">       !&lt; The starting j-index of the computational domain at h.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -509,8 +509,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The starting j-index of the data domain at h. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00050">50</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">integer</span> :: jsd<span class="comment">       !&lt; The starting j-index of the data domain at h.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00051">51</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">integer</span> :: jsd<span class="comment">       !&lt; The starting j-index of the data domain at h.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -528,8 +528,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The number of sponge points within the computational domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00052">52</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">integer</span> :: num_col<span class="comment">   !&lt; The number of sponge points within the computational domain.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00053">53</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">integer</span> :: num_col<span class="comment">   !&lt; The number of sponge points within the computational domain.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -547,8 +547,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The total number of layers. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00043">43</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">integer</span> :: nz<span class="comment">        !&lt; The total number of layers.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00044">44</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">integer</span> :: nz<span class="comment">        !&lt; The total number of layers.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -564,10 +564,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The value toward which the mixed layer coordinate-density is being damped [kg m-3]. </p>
+<p>The value toward which the mixed layer coordinate-density is being damped [R ~&gt; kg m-3]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00058">58</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: Rcv_ml_ref(:) =&gt; null() <span class="comment">!&lt; The value toward which the mixed layer</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00059">59</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: Rcv_ml_ref(:) =&gt; null() <span class="comment">!&lt; The value toward which the mixed layer</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -583,10 +583,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>mixed layer coordinate-density is being damped [kg m-3]. </p>
+<p>mixed layer coordinate-density is being damped [R ~&gt; kg m-3]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00068">68</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: Rcv_ml_ref_im(:) =&gt; null() <span class="comment">!! The value toward which the i-mean</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00069">69</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: Rcv_ml_ref_im(:) =&gt; null() <span class="comment">!! The value toward which the i-mean</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -604,8 +604,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The value toward which the interface heights are being damped [Z ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00060">60</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: Ref_eta(:,:) =&gt; null() <span class="comment">!&lt; The value toward which the interface</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00061">61</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: Ref_eta(:,:) =&gt; null() <span class="comment">!&lt; The value toward which the interface</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -623,8 +623,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The value toward which the i-mean interface heights are being damped [Z ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00070">70</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: Ref_eta_im(:,:) =&gt; null() <span class="comment">!&lt; The value toward which the i-mean</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00071">71</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: Ref_eta_im(:,:) =&gt; null() <span class="comment">!&lt; The value toward which the i-mean</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -642,8 +642,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The values to which the fields are damped. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00063">63</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">type</span>(p2d) :: Ref_val(MAX_FIELDS_)<span class="comment"> !&lt; The values to which the fields are damped.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00064">64</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">type</span>(p2d) :: Ref_val(MAX_FIELDS_)<span class="comment"> !&lt; The values to which the fields are damped.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -661,8 +661,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The values toward which the i-means of fields are damped. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00072">72</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">type</span>(p2d) :: Ref_val_im(MAX_FIELDS_)<span class="comment"> !&lt; The values toward which the i-means of</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00073">73</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">type</span>(p2d) :: Ref_val_im(MAX_FIELDS_)<span class="comment"> !&lt; The values toward which the i-means of</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -680,13 +680,13 @@ Public variables and constants</h2></td></tr>
 
 <p>Pointers to the fields that are being damped. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00062">62</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">type</span>(p3d) :: var(MAX_FIELDS_)<span class="comment"> !&lt; Pointers to the fields that are being damped.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__sponge_8F90_source.html#l00063">63</a> of file <a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">type</span>(p3d) :: var(MAX_FIELDS_)<span class="comment"> !&lt; Pointers to the fields that are being damped.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__sponge_8F90_source.html">MOM_sponge.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

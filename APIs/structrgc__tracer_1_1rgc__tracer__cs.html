@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('structrgc__tracer_1_1rgc__tracer__cs.h
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>tracer control structure </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00044">44</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00045">45</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for rgc_tracer::rgc_tracer_cs:</div>
 <div class="dyncontent">
@@ -172,8 +172,8 @@ Public variables and constants</h2></td></tr>
 
 <p>These tracers are not offered to the coupler. </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00045">45</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">logical</span> :: coupled_tracers = .false.  <span class="comment">!&lt; These tracers are not offered to the coupler.</span></div>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00046">46</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">logical</span> :: coupled_tracers = .false.  <span class="comment">!&lt; These tracers are not offered to the coupler.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -191,8 +191,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The length of the continental shelf (x dir, km) </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00054">54</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">  real</span> :: CSL<span class="comment">              !&lt; The length of the continental shelf (x dir, km)</span></div>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00055">55</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">  real</span> :: CSL<span class="comment">              !&lt; The length of the continental shelf (x dir, km)</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,8 +210,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure that is used to regulate the timing of diagnostic output. </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00058">58</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag<span class="comment"> !&lt; A structure that is used to regulate the timing of diagnostic output.</span></div>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00059">59</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag<span class="comment"> !&lt; A structure that is used to regulate the timing of diagnostic output.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -229,8 +229,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The value of tr used where land is masked out. </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00051">51</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">  real</span> :: land_val(NTR) = -1.0<span class="comment"> !&lt; The value of tr used where land is masked out.</span></div>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00052">52</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">  real</span> :: land_val(NTR) = -1.0<span class="comment"> !&lt; The value of tr used where land is masked out.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -248,8 +248,8 @@ Public variables and constants</h2></td></tr>
 
 <p>the latitudinal or y-direction length of the domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00052">52</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">  real</span> :: lenlat<span class="comment">           !&lt; the latitudinal or y-direction length of the domain.</span></div>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00053">53</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">  real</span> :: lenlat<span class="comment">           !&lt; the latitudinal or y-direction length of the domain.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -267,8 +267,8 @@ Public variables and constants</h2></td></tr>
 
 <p>the longitudinal or x-direction length of the domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00053">53</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">  real</span> :: lenlon<span class="comment">           !&lt; the longitudinal or x-direction length of the domain.</span></div>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00054">54</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">  real</span> :: lenlon<span class="comment">           !&lt; the longitudinal or x-direction length of the domain.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -286,8 +286,8 @@ Public variables and constants</h2></td></tr>
 
 <p>the length of the sponge layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00055">55</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">  real</span> :: lensponge<span class="comment">        !&lt; the length of the sponge layer.</span></div>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00056">56</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">  real</span> :: lensponge<span class="comment">        !&lt; the length of the sponge layer.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -305,8 +305,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, tracers are masked out in massless layers. </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00056">56</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">logical</span> :: mask_tracers<span class="comment">  !&lt; If true, tracers are masked out in massless layers.</span></div>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00057">57</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">logical</span> :: mask_tracers<span class="comment">  !&lt; If true, tracers are masked out in massless layers.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -324,8 +324,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the ocean model's clock. </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00047">47</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time<span class="comment"> !&lt; A pointer to the ocean model&#39;s clock.</span></div>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00048">48</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time<span class="comment"> !&lt; A pointer to the ocean model&#39;s clock.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -343,8 +343,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The array of tracers used in this package. </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00049">49</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: tr(:,:,:,:) =&gt; null()   <span class="comment">!&lt; The array of tracers used in this package.</span></div>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00050">50</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: tr(:,:,:,:) =&gt; null()   <span class="comment">!&lt; The array of tracers used in this package.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -362,8 +362,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The masked tracer concentration. </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00050">50</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: tr_aux(:,:,:,:) =&gt; null() <span class="comment">!&lt; The masked tracer concentration.</span></div>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00051">51</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: tr_aux(:,:,:,:) =&gt; null() <span class="comment">!&lt; The masked tracer concentration.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -381,8 +381,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Descriptions and metadata for the tracers. </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00059">59</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">type</span>(vardesc) :: tr_desc(NTR)<span class="comment"> !&lt; Descriptions and metadata for the tracers.</span></div>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00060">60</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">type</span>(vardesc) :: tr_desc(NTR)<span class="comment"> !&lt; Descriptions and metadata for the tracers.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -400,8 +400,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the tracer registry. </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00048">48</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">type</span>(tracer_registry_type), <span class="keywordtype">pointer</span> :: tr_Reg =&gt; null() <span class="comment">!&lt; A pointer to the tracer registry.</span></div>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00049">49</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">type</span>(tracer_registry_type), <span class="keywordtype">pointer</span> :: tr_Reg =&gt; null() <span class="comment">!&lt; A pointer to the tracer registry.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -419,8 +419,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The full path to the IC file, or " " to initialize internally. </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00046">46</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">character(len = 200)</span> :: tracer_IC_file<span class="comment"> !&lt; The full path to the IC file, or &quot; &quot; to initialize internally.</span></div>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00047">47</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">character(len = 200)</span> :: tracer_IC_file<span class="comment"> !&lt; The full path to the IC file, or &quot; &quot; to initialize internally.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -438,13 +438,13 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, sponges may be applied somewhere in the domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00057">57</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">logical</span> :: use_sponge<span class="comment">    !&lt; If true, sponges may be applied somewhere in the domain.</span></div>
+<p class="definition">Definition at line <a class="el" href="RGC__tracer_8F90_source.html#l00058">58</a> of file <a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">logical</span> :: use_sponge<span class="comment">    !&lt; If true, sponges may be applied somewhere in the domain.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/tracer/<a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/tracer/<a class="el" href="RGC__tracer_8F90_source.html">RGC_tracer.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

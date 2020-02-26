@@ -19,6 +19,7 @@ var MOM__CVMix__KPP_8F90 =
     [ "lt_vt2_mode_lf17", "MOM__CVMix__KPP_8F90.html#acfee181fef7d13f856d2135e52936144", null ],
     [ "lt_vt2_mode_rw16", "MOM__CVMix__KPP_8F90.html#a28ed11256ee4b98cb15530e600e558cf", null ],
     [ "lt_vt2_mode_vr12", "MOM__CVMix__KPP_8F90.html#a6cb86c81a9d5827900ec5167bb5bac27", null ],
+    [ "ncall_smooth", "MOM__CVMix__KPP_8F90.html#a96830bd98fac758ce7605f908f533bed", null ],
     [ "nlt_shape_cubic", "MOM__CVMix__KPP_8F90.html#a70bd2978b36d6b3aa9aa625c03c03f0a", null ],
     [ "nlt_shape_cubic_lmd", "MOM__CVMix__KPP_8F90.html#a9b5190793b228cf859a34c4a173fbe77", null ],
     [ "nlt_shape_cvmix", "MOM__CVMix__KPP_8F90.html#afe095f912beb51eb5710dbd68cc42dab", null ],

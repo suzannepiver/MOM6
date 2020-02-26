@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 531;
+var viewWidth = 504;
 var viewHeight = 198;
 var sectionId = 'dynsection-4';
 </script>
@@ -54,14 +54,14 @@ var sectionId = 'dynsection-4';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_barotropic::barotropic_get_tav</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-193.5 527,-193.5 527,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-193.5 500,-193.5 500,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Copies ubtav and vbtav from private type into arrays.">
-<polygon fill="#bfbfbf" stroke="#000000" points="379,-73.5 379,-103.5 523,-103.5 523,-73.5 379,-73.5"/>
-<text text-anchor="start" x="387" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_barotropic::barotropic</text>
-<text text-anchor="middle" x="451" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_get_tav</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="361,-73.5 361,-103.5 496,-103.5 496,-73.5 361,-73.5"/>
+<text text-anchor="start" x="369" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_barotropic::barotropic</text>
+<text text-anchor="middle" x="428.5" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_get_tav</text>
 </a>
 </g>
 </g>
@@ -69,82 +69,82 @@ var sectionId = 'dynsection-4';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom__hor__visc.html#a0c594d881fa7f6be08c7ae63da94f5ed" target="_top" xlink:title="Calculates the acceleration due to the horizontal viscosity.">
-<polygon fill="#ffffff" stroke="#000000" points="207,-73.5 207,-103.5 343,-103.5 343,-73.5 207,-73.5"/>
-<text text-anchor="start" x="215" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_hor_visc::horizontal</text>
-<text text-anchor="middle" x="275" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_viscosity</text>
+<polygon fill="#ffffff" stroke="#000000" points="197,-73.5 197,-103.5 325,-103.5 325,-73.5 197,-73.5"/>
+<text text-anchor="start" x="205" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_hor_visc::horizontal</text>
+<text text-anchor="middle" x="261" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_viscosity</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M368.8193,-88.5C360.1803,-88.5 351.4661,-88.5 343.0118,-88.5"/>
-<polygon fill="#191970" stroke="#191970" points="368.9063,-92.0001 378.9062,-88.5 368.9062,-85.0001 368.9063,-92.0001"/>
+<path fill="none" stroke="#191970" d="M350.8117,-88.5C342.2047,-88.5 333.5119,-88.5 325.0995,-88.5"/>
+<polygon fill="#191970" stroke="#191970" points="350.8542,-92.0001 360.8542,-88.5 350.8541,-85.0001 350.8542,-92.0001"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__dynamics__split__rk2.html#aa9a0a027754d3ca2d49f3993bc64b1b7" target="_top" xlink:title="This subroutine initializes all of the variables that are used by this dynamic core,...">
-<polygon fill="#ffffff" stroke="#000000" points="28.5,-148 28.5,-189 142.5,-189 142.5,-148 28.5,-148"/>
-<text text-anchor="start" x="36.5" y="-177" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_dynamics_split</text>
-<text text-anchor="start" x="36.5" y="-166" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_rk2::initialize_dyn</text>
-<text text-anchor="middle" x="85.5" y="-155" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_split_rk2</text>
+<polygon fill="#ffffff" stroke="#000000" points="26,-148 26,-189 135,-189 135,-148 26,-148"/>
+<text text-anchor="start" x="34" y="-177" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_dynamics_split</text>
+<text text-anchor="start" x="34" y="-166" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_rk2::initialize_dyn</text>
+<text text-anchor="middle" x="80.5" y="-155" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_split_rk2</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M236.6691,-108.1819C217.2285,-117.8417 193.1085,-129.3397 171,-138.5 161.9896,-142.2333 152.3286,-145.9179 142.8607,-149.3585"/>
-<polygon fill="#191970" stroke="#191970" points="238.4331,-111.213 245.8075,-103.6059 235.2988,-104.9539 238.4331,-111.213"/>
+<path fill="none" stroke="#191970" d="M223.8922,-108.2402C205.2446,-117.8545 182.1662,-129.2958 161,-138.5 152.7935,-142.0686 144.0119,-145.6124 135.3754,-148.9469"/>
+<polygon fill="#191970" stroke="#191970" points="225.6732,-111.2591 232.9337,-103.5432 222.4462,-105.0473 225.6732,-111.2591"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__dynamics__split__rk2.html#a976e700971f232fc11bc69b31d611c32" target="_top" xlink:title="RK2 splitting for time stepping MOM adiabatic dynamics.">
-<polygon fill="#ffffff" stroke="#000000" points="5.5,-98.5 5.5,-128.5 165.5,-128.5 165.5,-98.5 5.5,-98.5"/>
+<polygon fill="#ffffff" stroke="#000000" points="5.5,-98.5 5.5,-128.5 155.5,-128.5 155.5,-98.5 5.5,-98.5"/>
 <text text-anchor="start" x="13.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_dynamics_split</text>
-<text text-anchor="middle" x="85.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_rk2::step_mom_dyn_split_rk2</text>
+<text text-anchor="middle" x="80.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_rk2::step_mom_dyn_split_rk2</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M196.701,-98.8297C186.441,-100.1833 175.9155,-101.5718 165.6258,-102.9293"/>
-<polygon fill="#191970" stroke="#191970" points="197.3976,-102.2682 206.8539,-97.4903 196.482,-95.3283 197.3976,-102.2682"/>
+<path fill="none" stroke="#191970" d="M186.6863,-98.7928C176.4026,-100.2171 165.8339,-101.6809 155.5372,-103.107"/>
+<polygon fill="#191970" stroke="#191970" points="187.429,-102.2234 196.8542,-97.3845 186.4686,-95.2896 187.429,-102.2234"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__dynamics__unsplit.html#ab72d911d187f9247b6cc72d87e815370" target="_top" xlink:title="Step the MOM6 dynamics using an unsplit mixed 2nd order (for continuity) and 3rd order (for the invis...">
-<polygon fill="#ffffff" stroke="#000000" points="21,-49.5 21,-79.5 150,-79.5 150,-49.5 21,-49.5"/>
-<text text-anchor="start" x="29" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_dynamics_unsplit</text>
-<text text-anchor="middle" x="85.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::step_mom_dyn_unsplit</text>
+<polygon fill="#ffffff" stroke="#000000" points="19,-49.5 19,-79.5 142,-79.5 142,-49.5 19,-49.5"/>
+<text text-anchor="start" x="27" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_dynamics_unsplit</text>
+<text text-anchor="middle" x="80.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::step_mom_dyn_unsplit</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M196.7773,-78.5932C181.2824,-76.6308 165.179,-74.5913 150.1944,-72.6935"/>
-<polygon fill="#191970" stroke="#191970" points="196.4933,-82.0851 206.8539,-79.8694 197.3729,-75.1406 196.4933,-82.0851"/>
+<path fill="none" stroke="#191970" d="M186.6863,-78.6189C171.8321,-76.6439 156.3832,-74.5897 142.0185,-72.6797"/>
+<polygon fill="#191970" stroke="#191970" points="186.4801,-82.1223 196.8542,-79.9709 187.4028,-75.1833 186.4801,-82.1223"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="namespacemom__dynamics__unsplit__rk2.html#a25424d65cc3339442e528c0a92b173a3" target="_top" xlink:title="Step the MOM6 dynamics using an unsplit quasi&#45;2nd order Runge&#45;Kutta scheme.">
-<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-30.5 171,-30.5 171,-.5 0,-.5"/>
+<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-30.5 161,-30.5 161,-.5 0,-.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_dynamics_unsplit</text>
-<text text-anchor="middle" x="85.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_rk2::step_mom_dyn_unsplit_rk2</text>
+<text text-anchor="middle" x="80.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_rk2::step_mom_dyn_unsplit_rk2</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node2&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M236.3656,-69.0097C217.0266,-59.6824 193.0846,-48.7733 171,-40.5 161.5864,-36.9735 151.4412,-33.6261 141.5426,-30.5942"/>
-<polygon fill="#191970" stroke="#191970" points="234.9387,-72.2078 245.4613,-73.443 238.0057,-65.9154 234.9387,-72.2078"/>
+<path fill="none" stroke="#191970" d="M223.2127,-68.7473C204.7384,-59.509 182.0069,-48.7523 161,-40.5 152.0103,-36.9685 142.3052,-33.5962 132.8513,-30.5358"/>
+<polygon fill="#191970" stroke="#191970" points="221.6792,-71.8939 232.1829,-73.2804 224.8364,-65.6463 221.6792,-71.8939"/>
 </g>
 </g>
 </svg>

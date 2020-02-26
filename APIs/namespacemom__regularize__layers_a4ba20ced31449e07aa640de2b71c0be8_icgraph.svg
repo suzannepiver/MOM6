@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 758;
+var viewWidth = 717;
 var viewHeight = 39;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,80 +54,80 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_regularize_layers::find_deficit_ratios</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-35 754,-35 754,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-35 713,-35 713,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="This subroutine determines the amount by which the harmonic mean thickness at velocity points differ ...">
-<polygon fill="#bfbfbf" stroke="#000000" points="624,-.5 624,-30.5 750,-30.5 750,-.5 624,-.5"/>
-<text text-anchor="start" x="632" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_regularize_layers</text>
-<text text-anchor="middle" x="687" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::find_deficit_ratios</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="592,-.5 592,-30.5 709,-30.5 709,-.5 592,-.5"/>
+<text text-anchor="start" x="600" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_regularize_layers</text>
+<text text-anchor="middle" x="650.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::find_deficit_ratios</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="namespacemom__regularize__layers.html#af8738e3c92f1d19b3f2269cb97f7eaf7" target="_top" xlink:title="This subroutine ensures that there is a degree of horizontal smoothness in the depths of the near&#45;sur...">
-<polygon fill="#ffffff" stroke="#000000" points="462,-.5 462,-30.5 588,-30.5 588,-.5 462,-.5"/>
-<text text-anchor="start" x="470" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_regularize_layers</text>
-<text text-anchor="middle" x="525" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::regularize_surface</text>
+<g id="a_node2"><a xlink:href="namespacemom__regularize__layers.html#a220f46f9b601c8d813a3a94fba61ca0e" target="_top" xlink:title="This subroutine ensures that there is a degree of horizontal smoothness in the depths of the near&#45;sur...">
+<polygon fill="#ffffff" stroke="#000000" points="439,-.5 439,-30.5 556,-30.5 556,-.5 439,-.5"/>
+<text text-anchor="start" x="447" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_regularize_layers</text>
+<text text-anchor="middle" x="497.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::regularize_surface</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M613.6264,-15.5C605.135,-15.5 596.5308,-15.5 588.1916,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="613.9027,-19.0001 623.9027,-15.5 613.9027,-12.0001 613.9027,-19.0001"/>
+<path fill="none" stroke="#191970" d="M581.5068,-15.5C573.0073,-15.5 564.383,-15.5 556.0591,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="581.7838,-19.0001 591.7838,-15.5 581.7837,-12.0001 581.7838,-19.0001"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="namespacemom__regularize__layers.html#a32e5e07fe85a2f1861fe05f60576fe59" target="_top" xlink:title="This subroutine partially steps the bulk mixed layer model. The following processes are executed,...">
-<polygon fill="#ffffff" stroke="#000000" points="300,-.5 300,-30.5 426,-30.5 426,-.5 300,-.5"/>
-<text text-anchor="start" x="308" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_regularize_layers</text>
-<text text-anchor="middle" x="363" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::regularize_layers</text>
+<g id="a_node3"><a xlink:href="namespacemom__regularize__layers.html#a6cd6e85c8425099cc30c8d67de17c1ed" target="_top" xlink:title="This subroutine partially steps the bulk mixed layer model. The following processes are executed,...">
+<polygon fill="#ffffff" stroke="#000000" points="286,-.5 286,-30.5 403,-30.5 403,-.5 286,-.5"/>
+<text text-anchor="start" x="294" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_regularize_layers</text>
+<text text-anchor="middle" x="344.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::regularize_layers</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M451.6264,-15.5C443.135,-15.5 434.5308,-15.5 426.1916,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="451.9027,-19.0001 461.9027,-15.5 451.9027,-12.0001 451.9027,-19.0001"/>
+<path fill="none" stroke="#191970" d="M428.5068,-15.5C420.0073,-15.5 411.383,-15.5 403.0591,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="428.7838,-19.0001 438.7838,-15.5 428.7837,-12.0001 428.7838,-19.0001"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__diabatic__driver.html#a71d8d849db16be4b87c2650b49f01c82" target="_top" xlink:title="Imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentum and tracers us...">
-<polygon fill="#ffffff" stroke="#000000" points="150,-.5 150,-30.5 264,-30.5 264,-.5 150,-.5"/>
-<text text-anchor="start" x="158" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diabatic_driver</text>
-<text text-anchor="middle" x="207" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::layered_diabatic</text>
+<polygon fill="#ffffff" stroke="#000000" points="143,-.5 143,-30.5 250,-30.5 250,-.5 143,-.5"/>
+<text text-anchor="start" x="151" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diabatic_driver</text>
+<text text-anchor="middle" x="196.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::layered_diabatic</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M289.9214,-15.5C281.2839,-15.5 272.5656,-15.5 264.1925,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="289.9985,-19.0001 299.9985,-15.5 289.9985,-12.0001 289.9985,-19.0001"/>
+<path fill="none" stroke="#191970" d="M275.4146,-15.5C267.0215,-15.5 258.5436,-15.5 250.4155,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="275.5813,-19.0001 285.5812,-15.5 275.5812,-12.0001 275.5813,-19.0001"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__diabatic__driver.html#a9005de9f3ad26b32de53e3cd9826b9b9" target="_top" xlink:title="This subroutine imposes the diapycnal mass fluxes and the accompanying diapycnal advection of momentu...">
-<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-30.5 114,-30.5 114,-.5 0,-.5"/>
+<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-30.5 107,-30.5 107,-.5 0,-.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diabatic_driver</text>
-<text text-anchor="middle" x="57" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::diabatic</text>
+<text text-anchor="middle" x="53.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::diabatic</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M139.6894,-15.5C131.2716,-15.5 122.7232,-15.5 114.4745,-15.5"/>
-<polygon fill="#191970" stroke="#191970" points="139.8636,-19.0001 149.8635,-15.5 139.8635,-12.0001 139.8636,-19.0001"/>
+<path fill="none" stroke="#191970" d="M132.6762,-15.5C124.2548,-15.5 115.6897,-15.5 107.4555,-15.5"/>
+<polygon fill="#191970" stroke="#191970" points="132.8453,-19.0001 142.8452,-15.5 132.8452,-12.0001 132.8453,-19.0001"/>
 </g>
 </g>
 </svg>

@@ -118,13 +118,13 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a4bb1a5c22d55cfd27f7b3301fb2d9380"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that is used to regulate the timing of diagnostic output.  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#a4bb1a5c22d55cfd27f7b3301fb2d9380">More...</a><br /></td></tr>
 <tr class="separator:a4bb1a5c22d55cfd27f7b3301fb2d9380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a4a11932f64632602253ac86eaa11e8"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#a9a4a11932f64632602253ac86eaa11e8">tke_itide_max</a></td></tr>
-<tr class="memdesc:a9a4a11932f64632602253ac86eaa11e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum Internal tide conversion available to mix above the BBL [W m-2].  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#a9a4a11932f64632602253ac86eaa11e8">More...</a><br /></td></tr>
+<tr class="memdesc:a9a4a11932f64632602253ac86eaa11e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum Internal tide conversion available to mix above the BBL [R Z3 T-3 ~&gt; W m-2].  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#a9a4a11932f64632602253ac86eaa11e8">More...</a><br /></td></tr>
 <tr class="separator:a9a4a11932f64632602253ac86eaa11e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f1caf1ed7c4484db3cf595f61a891e5"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#a9f1caf1ed7c4484db3cf595f61a891e5">kappa_fill</a></td></tr>
 <tr class="memdesc:a9f1caf1ed7c4484db3cf595f61a891e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical diffusivity used to interpolate sensible values of T &amp; S into thin layers [Z2 T-1 ~&gt; m2 s-1].  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#a9f1caf1ed7c4484db3cf595f61a891e5">More...</a><br /></td></tr>
 <tr class="separator:a9f1caf1ed7c4484db3cf595f61a891e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1adfde4d4f6846eb9a912780d64c2a02"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#a1adfde4d4f6846eb9a912780d64c2a02">tke_itidal_coef</a></td></tr>
-<tr class="memdesc:a1adfde4d4f6846eb9a912780d64c2a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time-invariant field that enters the TKE_itidal input calculation [J m-2].  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#a1adfde4d4f6846eb9a912780d64c2a02">More...</a><br /></td></tr>
+<tr class="memdesc:a1adfde4d4f6846eb9a912780d64c2a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time-invariant field that enters the TKE_itidal input calculation [R Z3 T-2 ~&gt; J m-2].  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#a1adfde4d4f6846eb9a912780d64c2a02">More...</a><br /></td></tr>
 <tr class="separator:a1adfde4d4f6846eb9a912780d64c2a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72cc47218418b1a2dea79766cf40c48f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="version__variable_8h.html#acda997fe1761de4c6bca0f27dc786964">character</a>(len=200)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__int__tide__input_1_1int__tide__input__cs.html#a72cc47218418b1a2dea79766cf40c48f">inputdir</a></td></tr>
 <tr class="memdesc:a72cc47218418b1a2dea79766cf40c48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The directory for input files.  <a href="structmom__int__tide__input_1_1int__tide__input__cs.html#a72cc47218418b1a2dea79766cf40c48f">More...</a><br /></td></tr>
@@ -372,7 +372,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The time-invariant field that enters the TKE_itidal input calculation [J m-2]. </p>
+<p>The time-invariant field that enters the TKE_itidal input calculation [R Z3 T-2 ~&gt; J m-2]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00044">44</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: TKE_itidal_coef</div>
@@ -391,7 +391,7 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Maximum Internal tide conversion available to mix above the BBL [W m-2]. </p>
+<p>Maximum Internal tide conversion available to mix above the BBL [R Z3 T-3 ~&gt; W m-2]. </p>
 
 <p class="definition">Definition at line <a class="el" href="MOM__internal__tide__input_8F90_source.html#l00039">39</a> of file <a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a>.</p>
 <div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">  real</span> :: TKE_itide_max<span class="comment"> !&lt; Maximum Internal tide conversion</span></div>
@@ -399,7 +399,7 @@ Public variables and constants</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__internal__tide__input_8F90_source.html">MOM_internal_tide_input.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

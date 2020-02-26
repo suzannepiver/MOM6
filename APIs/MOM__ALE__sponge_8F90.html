@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/parameterizations/vertical/MOM_ALE_sponge.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/vertical/MOM_ALE_sponge.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('MOM__ALE__sponge_8F90.html','');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_ALE_sponge.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__ALE__sponge_8F90__incl.svg" width="299" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__ALE__sponge_8F90__incl.svg" width="280" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -149,7 +149,7 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memdesc:a56eb18da6c1d40f6abb544e5b7114293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the thicknesses used for the data with a fixed ALE sponge.  <a href="namespacemom__ale__sponge.html#a56eb18da6c1d40f6abb544e5b7114293">More...</a><br /></td></tr>
 <tr class="separator:a56eb18da6c1d40f6abb544e5b7114293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0febb96fb2fd40a72580d078ca023098"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ale__sponge.html#a0febb96fb2fd40a72580d078ca023098">mom_ale_sponge::initialize_ale_sponge_varying</a> (Iresttime, G, param_file, CS)</td></tr>
-<tr class="memdesc:a0febb96fb2fd40a72580d078ca023098"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine determines the number of points which are within sponges in this computational domain. Only points that have positive values of Iresttime and which mask2dT indicates are ocean points are included in the sponges.  <a href="namespacemom__ale__sponge.html#a0febb96fb2fd40a72580d078ca023098">More...</a><br /></td></tr>
+<tr class="memdesc:a0febb96fb2fd40a72580d078ca023098"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine determines the number of points which are to be restoref in the computational domain. Only points that have positive values of Iresttime and which mask2dT indicates are ocean points are included in the sponges.  <a href="namespacemom__ale__sponge.html#a0febb96fb2fd40a72580d078ca023098">More...</a><br /></td></tr>
 <tr class="separator:a0febb96fb2fd40a72580d078ca023098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed1ab3e7a8063222f1c9b0d3d2336cbe"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ale__sponge.html#aed1ab3e7a8063222f1c9b0d3d2336cbe">mom_ale_sponge::init_ale_sponge_diags</a> (Time, G, diag, CS)</td></tr>
 <tr class="memdesc:aed1ab3e7a8063222f1c9b0d3d2336cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize diagnostics for the ALE_sponge module.  <a href="namespacemom__ale__sponge.html#aed1ab3e7a8063222f1c9b0d3d2336cbe">More...</a><br /></td></tr>
@@ -157,9 +157,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a7b00598b2cf45b865f56515ed5d2ed0a"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ale__sponge.html#a7b00598b2cf45b865f56515ed5d2ed0a">mom_ale_sponge::set_up_ale_sponge_field_fixed</a> (sp_val, G, f_ptr, CS)</td></tr>
 <tr class="memdesc:a7b00598b2cf45b865f56515ed5d2ed0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine stores the reference profile at h points for the variable whose address is given by f_ptr.  <a href="namespacemom__ale__sponge.html#a7b00598b2cf45b865f56515ed5d2ed0a">More...</a><br /></td></tr>
 <tr class="separator:a7b00598b2cf45b865f56515ed5d2ed0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af49797b217422ea44da5e0781f763c36"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ale__sponge.html#af49797b217422ea44da5e0781f763c36">mom_ale_sponge::set_up_ale_sponge_field_varying</a> (filename, fieldname, Time, G, GV, f_ptr, CS)</td></tr>
-<tr class="memdesc:af49797b217422ea44da5e0781f763c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine stores the reference profile at h points for the variable whose address is given by filename and fieldname.  <a href="namespacemom__ale__sponge.html#af49797b217422ea44da5e0781f763c36">More...</a><br /></td></tr>
-<tr class="separator:af49797b217422ea44da5e0781f763c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5222905f5cfddd07b77e05428e88dd85"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ale__sponge.html#a5222905f5cfddd07b77e05428e88dd85">mom_ale_sponge::set_up_ale_sponge_field_varying</a> (filename, fieldname, Time, G, GV, US, f_ptr, CS)</td></tr>
+<tr class="memdesc:a5222905f5cfddd07b77e05428e88dd85"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine stores the reference profile at h points for the variable whose address is given by filename and fieldname.  <a href="namespacemom__ale__sponge.html#a5222905f5cfddd07b77e05428e88dd85">More...</a><br /></td></tr>
+<tr class="separator:a5222905f5cfddd07b77e05428e88dd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eb21c5a149d573ba0d67fdb3a932115"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__ale__sponge.html#a6eb21c5a149d573ba0d67fdb3a932115">mom_ale_sponge::set_up_ale_sponge_vel_field_fixed</a> (u_val, v_val, G, u_ptr, v_ptr, CS)</td></tr>
 <tr class="memdesc:a6eb21c5a149d573ba0d67fdb3a932115"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine stores the reference profile at u and v points for the variable whose address is given by u_ptr and v_ptr.  <a href="namespacemom__ale__sponge.html#a6eb21c5a149d573ba0d67fdb3a932115">More...</a><br /></td></tr>
 <tr class="separator:a6eb21c5a149d573ba0d67fdb3a932115"><td class="memSeparator" colspan="2">&#160;</td></tr>

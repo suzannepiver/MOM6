@@ -101,11 +101,11 @@ $(document).ready(function(){initNavTree('structmom__variables_1_1thermo__var__p
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Pointers to an assortment of thermodynamic fields that may be available, including potential temperature, salinity, heat capacity, and the equation of state control structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00082">82</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_variables::thermo_var_ptrs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__variables_1_1thermo__var__ptrs__coll__graph.svg" width="399" height="259"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__variables_1_1thermo__var__ptrs__coll__graph.svg" width="368" height="259"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -139,10 +139,10 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a4d25f994b07979395e1c8f73c48fee8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The energy needed to heat the ocean column to the freezing point since calculate_surface_state was2 last called [J m-2].  <a href="structmom__variables_1_1thermo__var__ptrs.html#a4d25f994b07979395e1c8f73c48fee8a">More...</a><br /></td></tr>
 <tr class="separator:a4d25f994b07979395e1c8f73c48fee8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d618272645b33d6663125cc0eecf5a4"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__variables_1_1thermo__var__ptrs.html#a2d618272645b33d6663125cc0eecf5a4">salt_deficit</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a2d618272645b33d6663125cc0eecf5a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The salt needed to maintain the ocean column at a minimum salinity of MIN_SALINITY since the last time that calculate_surface_state was called, [gSalt m-2].  <a href="structmom__variables_1_1thermo__var__ptrs.html#a2d618272645b33d6663125cc0eecf5a4">More...</a><br /></td></tr>
+<tr class="memdesc:a2d618272645b33d6663125cc0eecf5a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The salt needed to maintain the ocean column at a minimum salinity of MIN_SALINITY since the last time that calculate_surface_state was called, [ppt R Z ~&gt; gSalt m-2].  <a href="structmom__variables_1_1thermo__var__ptrs.html#a2d618272645b33d6663125cc0eecf5a4">More...</a><br /></td></tr>
 <tr class="separator:a2d618272645b33d6663125cc0eecf5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af761f6f50ae74033ee6ba4bb00197579"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__variables_1_1thermo__var__ptrs.html#af761f6f50ae74033ee6ba4bb00197579">tempxpme</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:af761f6f50ae74033ee6ba4bb00197579"><td class="mdescLeft">&#160;</td><td class="mdescRight">The net inflow of water into the ocean times the temperature at which this inflow occurs since the last call to calculate_surface_state [degC kg m-2]. This should be prescribed in the forcing fields, but as it often is not, this is a useful heat budget diagnostic.  <a href="structmom__variables_1_1thermo__var__ptrs.html#af761f6f50ae74033ee6ba4bb00197579">More...</a><br /></td></tr>
+<tr class="memdesc:af761f6f50ae74033ee6ba4bb00197579"><td class="mdescLeft">&#160;</td><td class="mdescRight">The net inflow of water into the ocean times the temperature at which this inflow occurs since the last call to calculate_surface_state [degC R Z ~&gt; degC kg m-2]. This should be prescribed in the forcing fields, but as it often is not, this is a useful heat budget diagnostic.  <a href="structmom__variables_1_1thermo__var__ptrs.html#af761f6f50ae74033ee6ba4bb00197579">More...</a><br /></td></tr>
 <tr class="separator:af761f6f50ae74033ee6ba4bb00197579"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf1569bb92d829510be548299993d3db"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__variables_1_1thermo__var__ptrs.html#abf1569bb92d829510be548299993d3db">internal_heat</a> =&gt; NULL()</td></tr>
 <tr class="memdesc:abf1569bb92d829510be548299993d3db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any internal or geothermal heat sources that have been applied to the ocean since the last call to calculate_surface_state [degC kg m-2].  <a href="structmom__variables_1_1thermo__var__ptrs.html#abf1569bb92d829510be548299993d3db">More...</a><br /></td></tr>
@@ -163,8 +163,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The heat capacity of seawater [J degC-1 kg-1]. When conservative temperature is used, this is constant and exactly 3991.86795711963 J degC-1 kg-1. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">  real</span> :: C_p<span class="comment">            !&lt;   The heat capacity of seawater [J degC-1 kg-1].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">  real</span> :: C_p<span class="comment">            !&lt;   The heat capacity of seawater [J degC-1 kg-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -182,8 +182,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Type that indicates the equation of state to use. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">type</span>(EOS_type), <span class="keywordtype">pointer</span> :: eqn_of_state =&gt; null() <span class="comment">!&lt; Type that indicates the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00082">82</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">type</span>(EOS_type), <span class="keywordtype">pointer</span> :: eqn_of_state =&gt; null() <span class="comment">!&lt; Type that indicates the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -201,8 +201,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The energy needed to heat the ocean column to the freezing point since calculate_surface_state was2 last called [J m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00101">101</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: frazil =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00097">97</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: frazil =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -220,8 +220,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Any internal or geothermal heat sources that have been applied to the ocean since the last call to calculate_surface_state [degC kg m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00115">115</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: internal_heat =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: internal_heat =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -239,8 +239,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The minimum value of salinity when BOUND_SALINITY=True [ppt]. The default is 0.01 for backward compatibility but should be 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00098">98</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">  real</span> :: min_salinity = 0.01<span class="comment"> !&lt; The minimum value of salinity when BOUND_SALINITY=True [ppt].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">  real</span> :: min_salinity = 0.01<span class="comment"> !&lt; The minimum value of salinity when BOUND_SALINITY=True [ppt].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -258,8 +258,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The coordinate-density reference pressure [Pa]. This is the pressure used to calculate Rml from T and S when eqn_of_state is associated. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00088">88</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">  real</span> :: P_Ref<span class="comment">          !&lt;   The coordinate-density reference pressure [Pa].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00084">84</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">  real</span> :: P_Ref<span class="comment">          !&lt;   The coordinate-density reference pressure [Pa].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -277,8 +277,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Salnity [PSU] or [gSalt/kg], generically [ppt]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: S(:,:,:) =&gt; null() <span class="comment">!&lt; Salnity [PSU] or [gSalt/kg], generically [ppt].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00081">81</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: S(:,:,:) =&gt; null() <span class="comment">!&lt; Salnity [PSU] or [gSalt/kg], generically [ppt].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -296,8 +296,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the salinity variable tvS is actually the absolute salinity in units of [gSalt/kg]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00096">96</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">logical</span> :: S_is_absS = .false. <span class="comment">!&lt; If true, the salinity variable tv%S is</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00092">92</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">logical</span> :: S_is_absS = .false. <span class="comment">!&lt; If true, the salinity variable tv%S is</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -313,10 +313,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The salt needed to maintain the ocean column at a minimum salinity of MIN_SALINITY since the last time that calculate_surface_state was called, [gSalt m-2]. </p>
+<p>The salt needed to maintain the ocean column at a minimum salinity of MIN_SALINITY since the last time that calculate_surface_state was called, [ppt R Z ~&gt; gSalt m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00105">105</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: salt_deficit =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00101">101</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: salt_deficit =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -334,8 +334,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Potential temperature [degC]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00084">84</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: T(:,:,:) =&gt; null() <span class="comment">!&lt; Potential temperature [degC].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00080">80</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: T(:,:,:) =&gt; null() <span class="comment">!&lt; Potential temperature [degC].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -353,8 +353,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the temperature variable tvT is actually the conservative temperature [degC]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">logical</span> :: T_is_conT = .false. <span class="comment">!&lt; If true, the temperature variable tv%T is</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">logical</span> :: T_is_conT = .false. <span class="comment">!&lt; If true, the temperature variable tv%T is</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -370,15 +370,15 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The net inflow of water into the ocean times the temperature at which this inflow occurs since the last call to calculate_surface_state [degC kg m-2]. This should be prescribed in the forcing fields, but as it often is not, this is a useful heat budget diagnostic. </p>
+<p>The net inflow of water into the ocean times the temperature at which this inflow occurs since the last call to calculate_surface_state [degC R Z ~&gt; degC kg m-2]. This should be prescribed in the forcing fields, but as it often is not, this is a useful heat budget diagnostic. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: TempxPmE =&gt; null()</div>
+<p class="definition">Definition at line <a class="el" href="MOM__variables_8F90_source.html#l00105">105</a> of file <a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">dimension(:,:)</span>, <span class="keywordtype">pointer</span> :: TempxPmE =&gt; null()</div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/core/<a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/core/<a class="el" href="MOM__variables_8F90_source.html">MOM_variables.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

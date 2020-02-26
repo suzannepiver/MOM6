@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/tracer/advection_test_tracer.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/tracer/advection_test_tracer.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('advection__test__tracer_8F90.html','')
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for advection_test_tracer.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="advection__test__tracer_8F90__incl.svg" width="299" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="advection__test__tracer_8F90__incl.svg" width="280" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -131,9 +131,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a1d5fcff30ba8ec9f30012aa4d6cec981"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceadvection__test__tracer.html#a1d5fcff30ba8ec9f30012aa4d6cec981">advection_test_tracer::initialize_advection_test_tracer</a> (restart, day, G, GV, h, diag, OBC, CS, sponge_CSp)</td></tr>
 <tr class="memdesc:a1d5fcff30ba8ec9f30012aa4d6cec981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the NTR tracer fields in tr(:,:,:,:) and it sets up the tracer output.  <a href="namespaceadvection__test__tracer.html#a1d5fcff30ba8ec9f30012aa4d6cec981">More...</a><br /></td></tr>
 <tr class="separator:a1d5fcff30ba8ec9f30012aa4d6cec981"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02a7937d0c46fd2b70a64161d25ed378"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceadvection__test__tracer.html#a02a7937d0c46fd2b70a64161d25ed378">advection_test_tracer::advection_test_tracer_column_physics</a> (h_old, h_new, ea, eb, fluxes, dt, G, GV, CS, evap_CFL_limit, minimum_forcing_depth)</td></tr>
-<tr class="memdesc:a02a7937d0c46fd2b70a64161d25ed378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies diapycnal diffusion and any other column tracer physics or chemistry to the tracers from this package. This is a simple example of a set of advected passive tracers.  <a href="namespaceadvection__test__tracer.html#a02a7937d0c46fd2b70a64161d25ed378">More...</a><br /></td></tr>
-<tr class="separator:a02a7937d0c46fd2b70a64161d25ed378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475d1016ef9ccf0151bc3b40ccd89931"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceadvection__test__tracer.html#a475d1016ef9ccf0151bc3b40ccd89931">advection_test_tracer::advection_test_tracer_column_physics</a> (h_old, h_new, ea, eb, fluxes, dt, G, GV, US, CS, evap_CFL_limit, minimum_forcing_depth)</td></tr>
+<tr class="memdesc:a475d1016ef9ccf0151bc3b40ccd89931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies diapycnal diffusion and any other column tracer physics or chemistry to the tracers from this package. This is a simple example of a set of advected passive tracers.  <a href="namespaceadvection__test__tracer.html#a475d1016ef9ccf0151bc3b40ccd89931">More...</a><br /></td></tr>
+<tr class="separator:a475d1016ef9ccf0151bc3b40ccd89931"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6c4f896548db1962d80657113320936"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceadvection__test__tracer.html#aa6c4f896548db1962d80657113320936">advection_test_tracer::advection_test_tracer_surface_state</a> (state, h, G, CS)</td></tr>
 <tr class="memdesc:aa6c4f896548db1962d80657113320936"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine extracts the surface fields from this tracer package that are to be shared with the atmosphere in coupled configurations. This particular tracer package does not report anything back to the coupler.  <a href="namespaceadvection__test__tracer.html#aa6c4f896548db1962d80657113320936">More...</a><br /></td></tr>
 <tr class="separator:aa6c4f896548db1962d80657113320936"><td class="memSeparator" colspan="2">&#160;</td></tr>

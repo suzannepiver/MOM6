@@ -52,7 +52,7 @@ digraph "regrid_edge_values::bound_edge_values"
   Node21 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node22 [label="mom_tidal_mixing::calculate\l_tidal_mixing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__tidal__mixing.html#abf084268fd9c71f20880838d2bce7e3e",tooltip="Depending on whether or not CVMix is active, calls the associated subroutine to compute internal tida..."];
   Node16 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node23 [label="mom_state_initialization\l::cut_off_column_top",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__state__initialization.html#a69c6f01824f00611082b6d5f1b6ca738",tooltip="Adjust the layer thicknesses by removing the top of the water column above the depth where the hydros..."];
+  Node23 [label="mom_state_initialization\l::cut_off_column_top",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__state__initialization.html#ad87698589f0044e235382ae99662493d",tooltip="Adjust the layer thicknesses by removing the top of the water column above the depth where the hydros..."];
   Node23 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node24 [label="mom_state_initialization\l::mom_state_init_tests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__state__initialization.html#a807c1c2bb13f172945c7c25f3af7abd1",tooltip="Run simple unit tests."];
   Node23 -> Node25 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -68,7 +68,7 @@ digraph "regrid_edge_values::bound_edge_values"
   Node16 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node30 [label="mom_oda_driver_mod\l::set_prior_tracer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__oda__driver__mod.html#a24806346258e5d9143e233999eef0e7f",tooltip="Copy ensemble member tracers to ensemble vector."];
   Node30 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node31 [label="mom::step_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#a972730596703580d4646320f2c9085a5",tooltip="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to..."];
+  Node31 [label="mom::step_mom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom.html#ad55f786e26bcd3445a7224f2fad54f7e",tooltip="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to..."];
   Node31 -> Node28 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node16 -> Node32 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node32 [label="mom_wave_speed::wave\l_speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemom__wave__speed.html#a2bb7c3c0482510f3d50a2f2e933e4229",tooltip="Calculates the wave speed of the first baroclinic mode."];

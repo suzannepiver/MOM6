@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/core/MOM_interface_heights.F90 Source File</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/core/MOM_interface_heights.F90 Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('MOM__interface__heights_8F90_source.ht
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  z_to_eta = 1.0 ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(eta_to_m)) z_to_eta = us%Z_to_m / eta_to_m</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  h_to_eta = gv%H_to_Z * z_to_eta</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  h_to_rho_eta =  gv%H_to_kg_m2 * (us%m_to_Z * z_to_eta)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  h_to_rho_eta =  gv%H_to_RZ * z_to_eta</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  i_gearth = z_to_eta /  (us%Z_to_m * gv%mks_g_Earth)</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">!$OMP parallel default(shared) private(dilate,htot)</span></div>
@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('MOM__interface__heights_8F90_source.ht
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">!$OMP do</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keywordflow">do</span> j=jsv,jev ;  <span class="keywordflow">do</span> k=nz,1,-1; <span class="keywordflow">do</span> i=isv,iev</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        eta(i,j,k) = eta(i,j,k+1) + h_to_rho_eta*h(i,j,k)/gv%Rlay(k)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        eta(i,j,k) = eta(i,j,k+1) + h_to_rho_eta*h(i,j,k) / gv%Rlay(k)</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordflow">      enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keywordflow">    endif</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(eta_bt)) <span class="keywordflow">then</span></div>
@@ -270,7 +270,7 @@ $(document).ready(function(){initNavTree('MOM__interface__heights_8F90_source.ht
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  z_to_eta = 1.0 ; <span class="keywordflow">if</span> (<span class="keyword">present</span>(eta_to_m)) z_to_eta = us%Z_to_m / eta_to_m</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  h_to_eta = gv%H_to_Z * z_to_eta</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  h_to_rho_eta =  gv%H_to_kg_m2 * (us%m_to_Z * z_to_eta)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  h_to_rho_eta =  gv%H_to_RZ * z_to_eta</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  i_gearth = z_to_eta / (us%Z_to_m * gv%mks_g_Earth)</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">!$OMP parallel default(shared) private(htot)</span></div>
@@ -311,7 +311,7 @@ $(document).ready(function(){initNavTree('MOM__interface__heights_8F90_source.ht
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">!$OMP do</span></div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;      <span class="keywordflow">do</span> j=js,je ; <span class="keywordflow">do</span> k=1,nz ; <span class="keywordflow">do</span> i=is,ie</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        eta(i,j) = eta(i,j) + h_to_rho_eta*h(i,j,k)/gv%Rlay(k)</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        eta(i,j) = eta(i,j) + h_to_rho_eta*h(i,j,k) / gv%Rlay(k)</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="keywordflow">      enddo</span> ;<span class="keywordflow"> enddo</span> ;<span class="keywordflow"> enddo</span></div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keywordflow">    endif</span></div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">present</span>(eta_bt)) <span class="keywordflow">then</span></div>
@@ -335,10 +335,10 @@ $(document).ready(function(){initNavTree('MOM__interface__heights_8F90_source.ht
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keyword">end module </span><a class="code" href="namespacemom__interface__heights.html">mom_interface_heights</a></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacemom__eos_html_a792633967cd29eb6155762b557f35959"><div class="ttname"><a href="namespacemom__eos.html#a792633967cd29eb6155762b557f35959">mom_eos::int_specific_vol_dp</a></div><div class="ttdeci">subroutine, public int_specific_vol_dp(T, S, p_t, p_b, alpha_ref, HI, EOS, dza, intp_dza, intx_dza, inty_dza, halo_size, bathyP, dP_tiny, useMassWghtInterp)</div><div class="ttdoc">Calls the appropriate subroutine to alculate analytical and nearly-analytical integrals in pressure a...</div><div class="ttdef"><b>Definition:</b> <a href="MOM__EOS_8F90_source.html#l00568">MOM_EOS.F90:568</a></div></div>
+<div class="ttc" id="anamespacemom__eos_html_a792633967cd29eb6155762b557f35959"><div class="ttname"><a href="namespacemom__eos.html#a792633967cd29eb6155762b557f35959">mom_eos::int_specific_vol_dp</a></div><div class="ttdeci">subroutine, public int_specific_vol_dp(T, S, p_t, p_b, alpha_ref, HI, EOS, dza, intp_dza, intx_dza, inty_dza, halo_size, bathyP, dP_tiny, useMassWghtInterp)</div><div class="ttdoc">Calls the appropriate subroutine to alculate analytical and nearly-analytical integrals in pressure a...</div><div class="ttdef"><b>Definition:</b> <a href="MOM__EOS_8F90_source.html#l00665">MOM_EOS.F90:665</a></div></div>
 <div class="ttc" id="anamespacemom__verticalgrid_html"><div class="ttname"><a href="namespacemom__verticalgrid.html">mom_verticalgrid</a></div><div class="ttdoc">Provides a transparent vertical ocean grid type and supporting routines.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__verticalGrid_8F90_source.html#l00002">MOM_verticalGrid.F90:2</a></div></div>
 <div class="ttc" id="ainterfacemom__file__parser_1_1log__version_html"><div class="ttname"><a href="interfacemom__file__parser_1_1log__version.html">mom_file_parser::log_version</a></div><div class="ttdoc">An overloaded interface to log version information about modules.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__file__parser_8F90_source.html#l00109">MOM_file_parser.F90:109</a></div></div>
-<div class="ttc" id="astructmom__variables_1_1thermo__var__ptrs_html"><div class="ttname"><a href="structmom__variables_1_1thermo__var__ptrs.html">mom_variables::thermo_var_ptrs</a></div><div class="ttdoc">Pointers to an assortment of thermodynamic fields that may be available, including potential temperat...</div><div class="ttdef"><b>Definition:</b> <a href="MOM__variables_8F90_source.html#l00082">MOM_variables.F90:82</a></div></div>
+<div class="ttc" id="astructmom__variables_1_1thermo__var__ptrs_html"><div class="ttname"><a href="structmom__variables_1_1thermo__var__ptrs.html">mom_variables::thermo_var_ptrs</a></div><div class="ttdoc">Pointers to an assortment of thermodynamic fields that may be available, including potential temperat...</div><div class="ttdef"><b>Definition:</b> <a href="MOM__variables_8F90_source.html#l00078">MOM_variables.F90:78</a></div></div>
 <div class="ttc" id="anamespacemom__eos_html"><div class="ttname"><a href="namespacemom__eos.html">mom_eos</a></div><div class="ttdoc">Provides subroutines for quantities specific to the equation of state.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__EOS_8F90_source.html#l00002">MOM_EOS.F90:2</a></div></div>
 <div class="ttc" id="astructmom__unit__scaling_1_1unit__scale__type_html"><div class="ttname"><a href="structmom__unit__scaling_1_1unit__scale__type.html">mom_unit_scaling::unit_scale_type</a></div><div class="ttdoc">Describes various unit conversion factors.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__unit__scaling_8F90_source.html#l00014">MOM_unit_scaling.F90:14</a></div></div>
 <div class="ttc" id="astructmom__verticalgrid_1_1verticalgrid__type_html"><div class="ttname"><a href="structmom__verticalgrid_1_1verticalgrid__type.html">mom_verticalgrid::verticalgrid_type</a></div><div class="ttdoc">Describes the vertical ocean grid, including unit conversion factors.</div><div class="ttdef"><b>Definition:</b> <a href="MOM__verticalGrid_8F90_source.html#l00024">MOM_verticalGrid.F90:24</a></div></div>

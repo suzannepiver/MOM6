@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOM6: /glade/work/altuntas/doxygen/MOM6/src/framework/MOM_spatial_means.F90 File Reference</title>
+<title>MOM6: /glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/framework/MOM_spatial_means.F90 File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('MOM__spatial__means_8F90.html','');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MOM_spatial_means.F90:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__spatial__means_8F90__incl.svg" width="231" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MOM__spatial__means_8F90__incl.svg" width="232" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -116,30 +116,30 @@ Modules</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions/Subroutines</h2></td></tr>
-<tr class="memitem:aa49abab62973a263d6f5a1c776f62a11"><td class="memItemLeft" align="right" valign="top">real function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#aa49abab62973a263d6f5a1c776f62a11">mom_spatial_means::global_area_mean</a> (var, G)</td></tr>
-<tr class="memdesc:aa49abab62973a263d6f5a1c776f62a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the global area mean of a variable. This uses reproducing sums.  <a href="namespacemom__spatial__means.html#aa49abab62973a263d6f5a1c776f62a11">More...</a><br /></td></tr>
-<tr class="separator:aa49abab62973a263d6f5a1c776f62a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee0e9ccdac32367f6ae1064f49e41771"><td class="memItemLeft" align="right" valign="top">real function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#aee0e9ccdac32367f6ae1064f49e41771">mom_spatial_means::global_area_integral</a> (var, G)</td></tr>
-<tr class="memdesc:aee0e9ccdac32367f6ae1064f49e41771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the global area integral of a variable. This uses reproducing sums.  <a href="namespacemom__spatial__means.html#aee0e9ccdac32367f6ae1064f49e41771">More...</a><br /></td></tr>
-<tr class="separator:aee0e9ccdac32367f6ae1064f49e41771"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02cafdc5a7ca5146c9051b94b42ef82d"><td class="memItemLeft" align="right" valign="top">real function, dimension(gv %ke), public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#a02cafdc5a7ca5146c9051b94b42ef82d">mom_spatial_means::global_layer_mean</a> (var, h, G, GV)</td></tr>
-<tr class="memdesc:a02cafdc5a7ca5146c9051b94b42ef82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the layerwise global thickness-weighted mean of a variable. This uses reproducing sums.  <a href="namespacemom__spatial__means.html#a02cafdc5a7ca5146c9051b94b42ef82d">More...</a><br /></td></tr>
-<tr class="separator:a02cafdc5a7ca5146c9051b94b42ef82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bc8ef486b8672d21fc91f2f59d4c301"><td class="memItemLeft" align="right" valign="top">real function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#a3bc8ef486b8672d21fc91f2f59d4c301">mom_spatial_means::global_volume_mean</a> (var, h, G, GV)</td></tr>
-<tr class="memdesc:a3bc8ef486b8672d21fc91f2f59d4c301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the global thickness-weighted mean of a variable. This uses reproducing sums.  <a href="namespacemom__spatial__means.html#a3bc8ef486b8672d21fc91f2f59d4c301">More...</a><br /></td></tr>
-<tr class="separator:a3bc8ef486b8672d21fc91f2f59d4c301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6888b20896f49dcf7db3d8d60c329abb"><td class="memItemLeft" align="right" valign="top">real function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#a6888b20896f49dcf7db3d8d60c329abb">mom_spatial_means::global_mass_integral</a> (h, G, GV, var, on_PE_only)</td></tr>
-<tr class="memdesc:a6888b20896f49dcf7db3d8d60c329abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the global mass-weighted integral of a variable. This uses reproducing sums.  <a href="namespacemom__spatial__means.html#a6888b20896f49dcf7db3d8d60c329abb">More...</a><br /></td></tr>
-<tr class="separator:a6888b20896f49dcf7db3d8d60c329abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1268ed073db7e190a1d06fa72bd7a8de"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#a1268ed073db7e190a1d06fa72bd7a8de">mom_spatial_means::global_i_mean</a> (array, i_mean, G, mask)</td></tr>
-<tr class="memdesc:a1268ed073db7e190a1d06fa72bd7a8de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the global mean of a field along rows of constant i, returning it in a 1-d array using the local indexing. This uses reproducing sums.  <a href="namespacemom__spatial__means.html#a1268ed073db7e190a1d06fa72bd7a8de">More...</a><br /></td></tr>
-<tr class="separator:a1268ed073db7e190a1d06fa72bd7a8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0862005dff883cfbd1b9ffc1ef15cdbf"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#a0862005dff883cfbd1b9ffc1ef15cdbf">mom_spatial_means::global_j_mean</a> (array, j_mean, G, mask)</td></tr>
-<tr class="memdesc:a0862005dff883cfbd1b9ffc1ef15cdbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the global mean of a field along rows of constant j, returning it in a 1-d array using the local indexing. This uses reproducing sums.  <a href="namespacemom__spatial__means.html#a0862005dff883cfbd1b9ffc1ef15cdbf">More...</a><br /></td></tr>
-<tr class="separator:a0862005dff883cfbd1b9ffc1ef15cdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d9711f9d5508ec92838893d260a0eef"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#a7d9711f9d5508ec92838893d260a0eef">mom_spatial_means::adjust_area_mean_to_zero</a> (array, G, scaling)</td></tr>
-<tr class="memdesc:a7d9711f9d5508ec92838893d260a0eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust 2d array such that area mean is zero without moving the zero contour.  <a href="namespacemom__spatial__means.html#a7d9711f9d5508ec92838893d260a0eef">More...</a><br /></td></tr>
-<tr class="separator:a7d9711f9d5508ec92838893d260a0eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87cad4a44f65c4849de870d15cc3f2a6"><td class="memItemLeft" align="right" valign="top">real function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#a87cad4a44f65c4849de870d15cc3f2a6">mom_spatial_means::global_area_mean</a> (var, G, scale)</td></tr>
+<tr class="memdesc:a87cad4a44f65c4849de870d15cc3f2a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the global area mean of a variable. This uses reproducing sums.  <a href="namespacemom__spatial__means.html#a87cad4a44f65c4849de870d15cc3f2a6">More...</a><br /></td></tr>
+<tr class="separator:a87cad4a44f65c4849de870d15cc3f2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d951fba81cfeb94f2d924f586fbda46"><td class="memItemLeft" align="right" valign="top">real function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#a4d951fba81cfeb94f2d924f586fbda46">mom_spatial_means::global_area_integral</a> (var, G, scale)</td></tr>
+<tr class="memdesc:a4d951fba81cfeb94f2d924f586fbda46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the global area integral of a variable. This uses reproducing sums.  <a href="namespacemom__spatial__means.html#a4d951fba81cfeb94f2d924f586fbda46">More...</a><br /></td></tr>
+<tr class="separator:a4d951fba81cfeb94f2d924f586fbda46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91bb6f6bd366e02268c5bae2d2c2d79c"><td class="memItemLeft" align="right" valign="top">real function, dimension(gv %ke), public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#a91bb6f6bd366e02268c5bae2d2c2d79c">mom_spatial_means::global_layer_mean</a> (var, h, G, GV, scale)</td></tr>
+<tr class="memdesc:a91bb6f6bd366e02268c5bae2d2c2d79c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the layerwise global thickness-weighted mean of a variable. This uses reproducing sums.  <a href="namespacemom__spatial__means.html#a91bb6f6bd366e02268c5bae2d2c2d79c">More...</a><br /></td></tr>
+<tr class="separator:a91bb6f6bd366e02268c5bae2d2c2d79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a974cd43b127c910090103890d0bef"><td class="memItemLeft" align="right" valign="top">real function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#a54a974cd43b127c910090103890d0bef">mom_spatial_means::global_volume_mean</a> (var, h, G, GV, scale)</td></tr>
+<tr class="memdesc:a54a974cd43b127c910090103890d0bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the global thickness-weighted mean of a variable. This uses reproducing sums.  <a href="namespacemom__spatial__means.html#a54a974cd43b127c910090103890d0bef">More...</a><br /></td></tr>
+<tr class="separator:a54a974cd43b127c910090103890d0bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c637edc1baf0fbac110c0c6b98ee161"><td class="memItemLeft" align="right" valign="top">real function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#a4c637edc1baf0fbac110c0c6b98ee161">mom_spatial_means::global_mass_integral</a> (h, G, GV, var, on_PE_only, scale)</td></tr>
+<tr class="memdesc:a4c637edc1baf0fbac110c0c6b98ee161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the global mass-weighted integral of a variable. This uses reproducing sums.  <a href="namespacemom__spatial__means.html#a4c637edc1baf0fbac110c0c6b98ee161">More...</a><br /></td></tr>
+<tr class="separator:a4c637edc1baf0fbac110c0c6b98ee161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257babe85df2c4435f119236b94eafe9"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#a257babe85df2c4435f119236b94eafe9">mom_spatial_means::global_i_mean</a> (array, i_mean, G, mask, scale, tmp_scale)</td></tr>
+<tr class="memdesc:a257babe85df2c4435f119236b94eafe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the global mean of a field along rows of constant i, returning it in a 1-d array using the local indexing. This uses reproducing sums.  <a href="namespacemom__spatial__means.html#a257babe85df2c4435f119236b94eafe9">More...</a><br /></td></tr>
+<tr class="separator:a257babe85df2c4435f119236b94eafe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c955830f3b9d150d657cb4c18c4b2d9"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#a3c955830f3b9d150d657cb4c18c4b2d9">mom_spatial_means::global_j_mean</a> (array, j_mean, G, mask, scale, tmp_scale)</td></tr>
+<tr class="memdesc:a3c955830f3b9d150d657cb4c18c4b2d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the global mean of a field along rows of constant j, returning it in a 1-d array using the local indexing. This uses reproducing sums.  <a href="namespacemom__spatial__means.html#a3c955830f3b9d150d657cb4c18c4b2d9">More...</a><br /></td></tr>
+<tr class="separator:a3c955830f3b9d150d657cb4c18c4b2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9473cfc35e049c8cd062b94a5acfc7a"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__spatial__means.html#ad9473cfc35e049c8cd062b94a5acfc7a">mom_spatial_means::adjust_area_mean_to_zero</a> (array, G, scaling, unit_scale)</td></tr>
+<tr class="memdesc:ad9473cfc35e049c8cd062b94a5acfc7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust 2d array such that area mean is zero without moving the zero contour.  <a href="namespacemom__spatial__means.html#ad9473cfc35e049c8cd062b94a5acfc7a">More...</a><br /></td></tr>
+<tr class="separator:ad9473cfc35e049c8cd062b94a5acfc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -342,8 +342,11 @@ Private functions</h2></td></tr>
 <div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160;<span class="keywordtype">  real</span>,             <span class="keywordtype">intent(in)</span> :: aMax<span class="comment"> !&lt; The maximum value of the array</span></div>
 <div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;  <span class="keywordtype">integer</span>,          <span class="keywordtype">intent(in)</span> :: iounit<span class="comment"> !&lt; Checksum logger IO unit</span></div>
 <div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160; </div>
-<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;  <span class="keywordflow">if</span> (is_root_pe()) <span class="keyword">write</span>(iounit, <span class="stringliteral">&#39;(A,3(A,ES25.16,1X),A)&#39;</span>) &amp;</div>
-<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;    fmsg, <span class="stringliteral">&quot; mean=&quot;</span>, amean, <span class="stringliteral">&quot;min=&quot;</span>, amin, <span class="stringliteral">&quot;max=&quot;</span>, amax, trim(mesg)</div>
+<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;  <span class="comment">! NOTE: We add zero to aMin and aMax to remove any negative zeros.</span></div>
+<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;  <span class="comment">! This is due to inconsistencies of signed zero in local vs MPI calculations.</span></div>
+<div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160; </div>
+<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;  <span class="keywordflow">if</span> (is_root_pe()) <span class="keyword">write</span>(iounit, <span class="stringliteral">&#39;(A,3(A,ES25.16,1X),A)&#39;</span>) &amp;</div>
+<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;    fmsg, <span class="stringliteral">&quot; mean=&quot;</span>, amean, <span class="stringliteral">&quot;min=&quot;</span>, (0. + amin), <span class="stringliteral">&quot;max=&quot;</span>, (0. + amax), trim(mesg)</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -448,7 +451,7 @@ Private functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/framework/<a class="el" href="MOM__checksums_8F90_source.html">MOM_checksums.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/framework/<a class="el" href="MOM__checksums_8F90_source.html">MOM_checksums.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

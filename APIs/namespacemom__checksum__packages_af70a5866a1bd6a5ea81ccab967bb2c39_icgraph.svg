@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 649;
+var viewWidth = 625;
 var viewHeight = 165;
 var sectionId = 'dynsection-3';
 </script>
@@ -54,14 +54,14 @@ var sectionId = 'dynsection-3';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_checksum_packages::mom_surface_chksum</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-161 645,-161 645,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-161 621,-161 621,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Write out chksums for the ocean surface variables.">
-<polygon fill="#bfbfbf" stroke="#000000" points="498,-91 498,-121 641,-121 641,-91 498,-91"/>
-<text text-anchor="start" x="506" y="-109" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_checksum_packages</text>
-<text text-anchor="middle" x="569.5" y="-98" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::mom_surface_chksum</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="481,-91 481,-121 617,-121 617,-91 481,-91"/>
+<text text-anchor="start" x="489" y="-109" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_checksum_packages</text>
+<text text-anchor="middle" x="549" y="-98" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::mom_surface_chksum</text>
 </a>
 </g>
 </g>
@@ -69,137 +69,137 @@ var sectionId = 'dynsection-3';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="namespacemom.html#a6ba3b54bd0edbba06730741653552d58" target="_top" xlink:title="Set the surface (return) properties of the ocean model by setting the appropriate fields in sfc_state...">
-<polygon fill="#ffffff" stroke="#000000" points="346,-91 346,-121 462,-121 462,-91 346,-91"/>
-<text text-anchor="start" x="354" y="-109" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom::extract_surface</text>
-<text text-anchor="middle" x="404" y="-98" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_state</text>
+<polygon fill="#ffffff" stroke="#000000" points="333,-91 333,-121 445,-121 445,-91 333,-91"/>
+<text text-anchor="start" x="341" y="-109" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom::extract_surface</text>
+<text text-anchor="middle" x="389" y="-98" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_state</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M487.7214,-106C479.0497,-106 470.3638,-106 462.0446,-106"/>
-<polygon fill="#191970" stroke="#191970" points="487.8719,-109.5001 497.8718,-106 487.8718,-102.5001 487.8719,-109.5001"/>
+<path fill="none" stroke="#191970" d="M470.5889,-106C461.9614,-106 453.3092,-106 445.034,-106"/>
+<polygon fill="#191970" stroke="#191970" points="470.6815,-109.5001 480.6815,-106 470.6815,-102.5001 470.6815,-109.5001"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="MOM__driver_8F90.html#a08fffeb2d8e8acbf9ed4609be6d258c6" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="42,-137.5 42,-156.5 110,-156.5 110,-137.5 42,-137.5"/>
-<text text-anchor="middle" x="76" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_main</text>
+<polygon fill="#ffffff" stroke="#000000" points="40,-137.5 40,-156.5 105,-156.5 105,-137.5 40,-137.5"/>
+<text text-anchor="middle" x="72.5" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_main</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M365.4499,-125.3547C348.8281,-132.6964 328.8976,-140.1989 310,-144 240.0973,-158.0605 156.0637,-154.2526 110.1265,-150.4676"/>
-<polygon fill="#191970" stroke="#191970" points="367.1759,-128.4144 374.8215,-121.0798 364.2707,-122.0457 367.1759,-128.4144"/>
+<path fill="none" stroke="#191970" d="M351.3112,-125.3493C335.0498,-132.6901 315.5373,-140.1934 297,-144 229.9898,-157.7603 149.3476,-154.0639 105.2572,-150.3785"/>
+<polygon fill="#191970" stroke="#191970" points="352.8939,-128.4732 360.478,-121.0751 349.9357,-122.129 352.8939,-128.4732"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespaceocn__comp__mct.html#a5f19e1874046a092e4773c541467593b" target="_top" xlink:title="It has to be separate from the ocean_initialization call because the coupler module allocates the spa...">
-<polygon fill="#ffffff" stroke="#000000" points="188,-20 188,-50 310,-50 310,-20 188,-20"/>
-<text text-anchor="start" x="196" y="-38" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ocn_comp_mct::ocean</text>
-<text text-anchor="middle" x="249" y="-27" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_model_init_sfc</text>
+<polygon fill="#ffffff" stroke="#000000" points="181,-20 181,-50 297,-50 297,-20 181,-20"/>
+<text text-anchor="start" x="189" y="-38" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ocn_comp_mct::ocean</text>
+<text text-anchor="middle" x="239" y="-27" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_model_init_sfc</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M361.8189,-86.6784C336.6413,-75.1454 305.1373,-60.7145 281.8241,-50.0356"/>
-<polygon fill="#191970" stroke="#191970" points="360.5793,-89.9602 371.1285,-90.9427 363.4945,-83.5961 360.5793,-89.9602"/>
+<path fill="none" stroke="#191970" d="M347.8572,-86.5258C323.5457,-75.0183 293.227,-60.6675 270.7653,-50.0356"/>
+<polygon fill="#191970" stroke="#191970" points="346.6528,-89.8279 357.1889,-90.9427 349.6477,-83.5009 346.6528,-89.8279"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="namespacemom.html#a972730596703580d4646320f2c9085a5" target="_top" xlink:title="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to...">
-<polygon fill="#ffffff" stroke="#000000" points="203,-115.5 203,-134.5 295,-134.5 295,-115.5 203,-115.5"/>
-<text text-anchor="middle" x="249" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom::step_mom</text>
+<g id="a_node6"><a xlink:href="namespacemom.html#ad55f786e26bcd3445a7224f2fad54f7e" target="_top" xlink:title="This subroutine orchestrates the time stepping of MOM. The adiabatic dynamics are stepped by calls to...">
+<polygon fill="#ffffff" stroke="#000000" points="194,-115.5 194,-134.5 284,-134.5 284,-115.5 194,-115.5"/>
+<text text-anchor="middle" x="239" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom::step_mom</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node2&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M335.5579,-114.3897C321.9757,-116.0546 308.0172,-117.7656 295.3821,-119.3145"/>
-<polygon fill="#191970" stroke="#191970" points="336.3429,-117.8197 345.8427,-113.129 335.4912,-110.8717 336.3429,-117.8197"/>
+<path fill="none" stroke="#191970" d="M322.4866,-114.425C309.6007,-116.0573 296.3762,-117.7324 284.3611,-119.2543"/>
+<polygon fill="#191970" stroke="#191970" points="323.2379,-117.8579 332.7188,-113.129 322.3582,-110.9134 323.2379,-117.8579"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="namespacemom.html#ade4f7557fcda73ffc12284d3cecf4182" target="_top" xlink:title="step_offline is the main driver for running tracers offline in MOM6. This has been primarily develope...">
-<polygon fill="#ffffff" stroke="#000000" points="200,-77.5 200,-96.5 298,-96.5 298,-77.5 200,-77.5"/>
-<text text-anchor="middle" x="249" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom::step_offline</text>
+<polygon fill="#ffffff" stroke="#000000" points="191.5,-77.5 191.5,-96.5 286.5,-96.5 286.5,-77.5 191.5,-77.5"/>
+<text text-anchor="middle" x="239" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom::step_offline</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node7 -->
 <g id="edge7" class="edge">
 <title>Node2&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M335.8255,-97.6431C323.213,-96.0971 310.2662,-94.5101 298.3475,-93.0491"/>
-<polygon fill="#191970" stroke="#191970" points="335.4911,-101.1283 345.8427,-98.871 336.3429,-94.1803 335.4911,-101.1283"/>
+<path fill="none" stroke="#191970" d="M322.662,-97.5972C310.5711,-96.0657 298.1757,-94.4956 286.7557,-93.0491"/>
+<polygon fill="#191970" stroke="#191970" points="322.3582,-101.0866 332.7188,-98.871 323.2379,-94.1421 322.3582,-101.0866"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespaceocn__comp__mct.html#adfe794cbbae40df4bdb9fcec95d4ff9c" target="_top" xlink:title="This subroutine initializes MOM6.">
-<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-19.5 152,-19.5 152,-.5 0,-.5"/>
-<text text-anchor="middle" x="76" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ocn_comp_mct::ocn_init_mct</text>
+<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-19.5 145,-19.5 145,-.5 0,-.5"/>
+<text text-anchor="middle" x="72.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ocn_comp_mct::ocn_init_mct</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M177.3446,-24.6452C165.6309,-22.9524 153.5428,-21.2056 141.9746,-19.5339"/>
-<polygon fill="#191970" stroke="#191970" points="177.1218,-28.1492 187.5196,-26.1155 178.123,-21.2212 177.1218,-28.1492"/>
+<path fill="none" stroke="#191970" d="M170.7375,-24.7504C159.182,-23.0153 147.2281,-21.2204 135.8064,-19.5055"/>
+<polygon fill="#191970" stroke="#191970" points="170.3575,-28.2325 180.7664,-26.2562 171.397,-21.3101 170.3575,-28.2325"/>
 </g>
 <!-- Node6&#45;&gt;Node3 -->
 <g id="edge6" class="edge">
 <title>Node6&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M192.4673,-132.1891C165.282,-135.6462 133.5907,-139.6763 110.1357,-142.659"/>
-<polygon fill="#191970" stroke="#191970" points="193.1606,-135.6292 202.6392,-130.8956 192.2775,-128.6852 193.1606,-135.6292"/>
+<path fill="none" stroke="#191970" d="M183.8143,-132.2918C157.7588,-135.7346 127.5496,-139.7262 105.1817,-142.6817"/>
+<polygon fill="#191970" stroke="#191970" points="184.4874,-135.7334 193.9427,-130.9535 183.5704,-128.7937 184.4874,-135.7334"/>
 </g>
 <!-- Node7&#45;&gt;Node3 -->
 <g id="edge8" class="edge">
 <title>Node7&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M203.6824,-99.7365C198.3226,-101.6459 192.9889,-103.7406 188,-106 170.9189,-113.7358 169.2945,-120.7539 152,-128 138.7034,-133.5711 123.388,-137.7861 110.0053,-140.8129"/>
-<polygon fill="#191970" stroke="#191970" points="204.9277,-103.0104 213.2895,-96.5041 202.6954,-96.3759 204.9277,-103.0104"/>
+<path fill="none" stroke="#191970" d="M195.7299,-99.9378C190.6967,-101.805 185.6898,-103.8346 181,-106 163.9759,-113.8604 162.2532,-120.6561 145,-128 132.429,-133.3509 117.9736,-137.5088 105.2944,-140.552"/>
+<polygon fill="#191970" stroke="#191970" points="197.0892,-103.1701 205.3649,-96.5546 194.77,-96.5654 197.0892,-103.1701"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="namespacemom__ocean__model__mct.html#a422ba42ca07c0bf28ec5113aba4f1e96" target="_top" xlink:title="update_ocean_model uses the forcing in Ice_ocean_boundary to advance the ocean model&#39;s state from the...">
-<polygon fill="#ffffff" stroke="#000000" points="10.5,-88 10.5,-118 141.5,-118 141.5,-88 10.5,-88"/>
-<text text-anchor="start" x="18.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_ocean_model_mct</text>
-<text text-anchor="middle" x="76" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::update_ocean_model</text>
+<polygon fill="#ffffff" stroke="#000000" points="11,-88 11,-118 134,-118 134,-88 11,-88"/>
+<text text-anchor="start" x="19" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_ocean_model_mct</text>
+<text text-anchor="middle" x="72.5" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::update_ocean_model</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge9" class="edge">
 <title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M189.9038,-92.4655C174.3865,-93.9007 157.5571,-95.4571 141.7161,-96.9222"/>
-<polygon fill="#191970" stroke="#191970" points="190.2527,-95.9483 199.8879,-91.5422 189.608,-88.978 190.2527,-95.9483"/>
+<path fill="none" stroke="#191970" d="M181.0352,-92.5702C165.9012,-94.0245 149.5355,-95.5972 134.2147,-97.0695"/>
+<polygon fill="#191970" stroke="#191970" points="181.6685,-96.0256 191.2878,-91.585 180.9988,-89.0576 181.6685,-96.0256"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="namespacemom__ocean__model__nuopc.html#a02a87b4944febcc6828c55e8e4375e62" target="_top" xlink:title="update_ocean_model uses the forcing in Ice_ocean_boundary to advance the ocean model&#39;s state from the...">
-<polygon fill="#ffffff" stroke="#000000" points="4.5,-39 4.5,-69 147.5,-69 147.5,-39 4.5,-39"/>
-<text text-anchor="start" x="12.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_ocean_model_nuopc</text>
-<text text-anchor="middle" x="76" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::update_ocean_model</text>
+<polygon fill="#ffffff" stroke="#000000" points="6,-39 6,-69 139,-69 139,-39 6,-39"/>
+<text text-anchor="start" x="14" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_ocean_model_nuopc</text>
+<text text-anchor="middle" x="72.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::update_ocean_model</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node9 -->
 <g id="edge10" class="edge">
 <title>Node7&#45;&gt;Node9</title>
-<path fill="none" stroke="#191970" d="M189.7201,-75.6923C176.1361,-73.1011 161.555,-70.3197 147.5169,-67.6419"/>
-<polygon fill="#191970" stroke="#191970" points="189.4092,-79.196 199.8879,-77.6318 190.7208,-72.32 189.4092,-79.196"/>
+<path fill="none" stroke="#191970" d="M181.1437,-75.533C167.5898,-72.8466 153.0428,-69.9634 139.14,-67.2079"/>
+<polygon fill="#191970" stroke="#191970" points="180.7981,-79.0325 191.2878,-77.5435 182.1591,-72.1661 180.7981,-79.0325"/>
 </g>
 </g>
 </svg>

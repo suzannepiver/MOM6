@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('structmom__hor__visc_1_1hor__visc__cs.
 </div><div class="dynheader">
 Collaboration diagram for mom_hor_visc::hor_visc_cs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__hor__visc_1_1hor__visc__cs__coll__graph.svg" width="526" height="274"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__hor__visc_1_1hor__visc__cs__coll__graph.svg" width="495" height="274"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -174,6 +174,9 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:afc0be8b2eb595a4fcdbfdaa37f2c342d"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#afc0be8b2eb595a4fcdbfdaa37f2c342d">anisotropic</a></td></tr>
 <tr class="memdesc:afc0be8b2eb595a4fcdbfdaa37f2c342d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, allow anisotropic component to the viscosity.  <a href="structmom__hor__visc_1_1hor__visc__cs.html#afc0be8b2eb595a4fcdbfdaa37f2c342d">More...</a><br /></td></tr>
 <tr class="separator:afc0be8b2eb595a4fcdbfdaa37f2c342d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db0b831b7ea3867f092827a42de125c"><td class="memItemLeft" align="right" valign="top">logical&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#a7db0b831b7ea3867f092827a42de125c">add_les_viscosity</a></td></tr>
+<tr class="memdesc:a7db0b831b7ea3867f092827a42de125c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, adds the viscosity from Smagorinsky and Leith to the background viscosity instead of taking the maximum.  <a href="structmom__hor__visc_1_1hor__visc__cs.html#a7db0b831b7ea3867f092827a42de125c">More...</a><br /></td></tr>
+<tr class="separator:a7db0b831b7ea3867f092827a42de125c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63bf0c07a7d9e8988204e88c88d41433"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#a63bf0c07a7d9e8988204e88c88d41433">kh_aniso</a></td></tr>
 <tr class="memdesc:a63bf0c07a7d9e8988204e88c88d41433"><td class="mdescLeft">&#160;</td><td class="mdescRight">The anisotropic viscosity [L2 T-1 ~&gt; m2 s-1].  <a href="structmom__hor__visc_1_1hor__visc__cs.html#a63bf0c07a7d9e8988204e88c88d41433">More...</a><br /></td></tr>
 <tr class="separator:a63bf0c07a7d9e8988204e88c88d41433"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,13 +193,13 @@ Public variables and constants</h2></td></tr>
 <tr class="memdesc:a5b88c7b8acab9d01773ffe65773d05e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, use the order of arithmetic and expressions that recover the answers from the end of 2018. Otherwise, use updated and more robust forms of the same expressions.  <a href="structmom__hor__visc_1_1hor__visc__cs.html#a5b88c7b8acab9d01773ffe65773d05e9">More...</a><br /></td></tr>
 <tr class="separator:a5b88c7b8acab9d01773ffe65773d05e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c7a8e52d0339f6505e5a29db36034a"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#a99c7a8e52d0339f6505e5a29db36034a">gme_h0</a></td></tr>
-<tr class="memdesc:a99c7a8e52d0339f6505e5a29db36034a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The strength of GME tapers quadratically to zero when the bathymetric depth is shallower than GME_H0 [m].  <a href="structmom__hor__visc_1_1hor__visc__cs.html#a99c7a8e52d0339f6505e5a29db36034a">More...</a><br /></td></tr>
+<tr class="memdesc:a99c7a8e52d0339f6505e5a29db36034a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The strength of GME tapers quadratically to zero when the bathymetric depth is shallower than GME_H0 [Z ~&gt; m].  <a href="structmom__hor__visc_1_1hor__visc__cs.html#a99c7a8e52d0339f6505e5a29db36034a">More...</a><br /></td></tr>
 <tr class="separator:a99c7a8e52d0339f6505e5a29db36034a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a522924f5e6d4c0287b7a3f6e793a37a1"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#a522924f5e6d4c0287b7a3f6e793a37a1">gme_efficiency</a></td></tr>
 <tr class="memdesc:a522924f5e6d4c0287b7a3f6e793a37a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The nondimensional prefactor multiplying the GME coefficient [nondim].  <a href="structmom__hor__visc_1_1hor__visc__cs.html#a522924f5e6d4c0287b7a3f6e793a37a1">More...</a><br /></td></tr>
 <tr class="separator:a522924f5e6d4c0287b7a3f6e793a37a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5c27c4f122a85fa04238575f21f97f0"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#af5c27c4f122a85fa04238575f21f97f0">gme_limiter</a></td></tr>
-<tr class="memdesc:af5c27c4f122a85fa04238575f21f97f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The absolute maximum value the GME coefficient is allowed to take [m2 s-1].  <a href="structmom__hor__visc_1_1hor__visc__cs.html#af5c27c4f122a85fa04238575f21f97f0">More...</a><br /></td></tr>
+<tr class="memdesc:af5c27c4f122a85fa04238575f21f97f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The absolute maximum value the GME coefficient is allowed to take [L2 T-1 ~&gt; m2 s-1].  <a href="structmom__hor__visc_1_1hor__visc__cs.html#af5c27c4f122a85fa04238575f21f97f0">More...</a><br /></td></tr>
 <tr class="separator:af5c27c4f122a85fa04238575f21f97f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4631724b8daee34d96a6f52df8598c3"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#af4631724b8daee34d96a6f52df8598c3">kh_bg_xx</a></td></tr>
 <tr class="memdesc:af4631724b8daee34d96a6f52df8598c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The background Laplacian viscosity at h points [L2 T-1 ~&gt; m2 s-1]. The actual viscosity may be the larger of this viscosity and the Smagorinsky and Leith viscosities.  <a href="structmom__hor__visc_1_1hor__visc__cs.html#af4631724b8daee34d96a6f52df8598c3">More...</a><br /></td></tr>
@@ -207,9 +210,6 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:ac1efd636e044acd790440f52c8dd90e2"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#ac1efd636e044acd790440f52c8dd90e2">ah_bg_xx</a></td></tr>
 <tr class="memdesc:ac1efd636e044acd790440f52c8dd90e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The background biharmonic viscosity at h points [L4 T-1 ~&gt; m4 s-1]. The actual viscosity may be the larger of this viscosity and the Smagorinsky and Leith viscosities.  <a href="structmom__hor__visc_1_1hor__visc__cs.html#ac1efd636e044acd790440f52c8dd90e2">More...</a><br /></td></tr>
 <tr class="separator:ac1efd636e044acd790440f52c8dd90e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6df026976f768350f455f0c2c0c6ea1f"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#a6df026976f768350f455f0c2c0c6ea1f">biharm5_const2_xx</a></td></tr>
-<tr class="memdesc:a6df026976f768350f455f0c2c0c6ea1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constant relating the biharmonic viscosity to the square of the velocity shear [m4 s]. This value is set to be the magnitude of the Coriolis terms once the velocity differences reach a value of order 1/2 MAXVEL.  <a href="structmom__hor__visc_1_1hor__visc__cs.html#a6df026976f768350f455f0c2c0c6ea1f">More...</a><br /></td></tr>
-<tr class="separator:a6df026976f768350f455f0c2c0c6ea1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85e797e0a8c8610d1d46b279d17447c4"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#a85e797e0a8c8610d1d46b279d17447c4">reduction_xx</a></td></tr>
 <tr class="memdesc:a85e797e0a8c8610d1d46b279d17447c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount by which stresses through h points are reduced due to partial barriers [nondim].  <a href="structmom__hor__visc_1_1hor__visc__cs.html#a85e797e0a8c8610d1d46b279d17447c4">More...</a><br /></td></tr>
 <tr class="separator:a85e797e0a8c8610d1d46b279d17447c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,9 +231,6 @@ Public variables and constants</h2></td></tr>
 <tr class="memitem:a0d88370f21172942f12542a60fddfd4b"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#a0d88370f21172942f12542a60fddfd4b">ah_bg_xy</a></td></tr>
 <tr class="memdesc:a0d88370f21172942f12542a60fddfd4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The background biharmonic viscosity at q points [L4 T-1 ~&gt; m4 s-1]. The actual viscosity may be the larger of this viscosity and the Smagorinsky and Leith viscosities.  <a href="structmom__hor__visc_1_1hor__visc__cs.html#a0d88370f21172942f12542a60fddfd4b">More...</a><br /></td></tr>
 <tr class="separator:a0d88370f21172942f12542a60fddfd4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f1e9a9f6c9524411a3af9cfd05cd70d"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#a9f1e9a9f6c9524411a3af9cfd05cd70d">biharm5_const2_xy</a></td></tr>
-<tr class="memdesc:a9f1e9a9f6c9524411a3af9cfd05cd70d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constant relating the biharmonic viscosity to the square of the velocity shear [m4 s]. This value is set to be the magnitude of the Coriolis terms once the velocity differences reach a value of order 1/2 MAXVEL.  <a href="structmom__hor__visc_1_1hor__visc__cs.html#a9f1e9a9f6c9524411a3af9cfd05cd70d">More...</a><br /></td></tr>
-<tr class="separator:a9f1e9a9f6c9524411a3af9cfd05cd70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f994c493f16b11af70f3ef93493110c"><td class="memItemLeft" align="right" valign="top">real, dimension(:, :), allocatable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__hor__visc_1_1hor__visc__cs.html#a7f994c493f16b11af70f3ef93493110c">reduction_xy</a></td></tr>
 <tr class="memdesc:a7f994c493f16b11af70f3ef93493110c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount by which stresses through q points are reduced due to partial barriers [nondim].  <a href="structmom__hor__visc_1_1hor__visc__cs.html#a7f994c493f16b11af70f3ef93493110c">More...</a><br /></td></tr>
 <tr class="separator:a7f994c493f16b11af70f3ef93493110c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -360,6 +357,25 @@ Public variables and constants</h2></td></tr>
 <tr class="separator:af03733edb779441de594e9248d2cb6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variables and constants</h2>
+<a id="a7db0b831b7ea3867f092827a42de125c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7db0b831b7ea3867f092827a42de125c">&#9670;&nbsp;</a></span>add_les_viscosity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">logical mom_hor_visc::hor_visc_cs::add_les_viscosity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, adds the viscosity from Smagorinsky and Leith to the background viscosity instead of taking the maximum. </p>
+
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">logical</span> :: add_LES_viscosity<span class="comment">!&lt; If true, adds the viscosity from Smagorinsky and Leith to</span></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ac1efd636e044acd790440f52c8dd90e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1efd636e044acd790440f52c8dd90e2">&#9670;&nbsp;</a></span>ah_bg_xx</h2>
 
@@ -373,9 +389,10 @@ Public variables and constants</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The background biharmonic viscosity at h points [L4 T-1 ~&gt; m4 s-1]. The actual viscosity may be the larger of this viscosity and the Smagorinsky and Leith viscosities. </p>
+<p>A constant relating the biharmonic viscosity to the square of the velocity shear [L4 T ~&gt; m4 s]. This value is set to be the magnitude of the Coriolis terms once the velocity differences reach a value of order 1/2 MAXVEL. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00100">100</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: Ah_bg_xx</div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00102">102</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: Ah_bg_xx</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -392,9 +409,10 @@ Public variables and constants</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The background biharmonic viscosity at q points [L4 T-1 ~&gt; m4 s-1]. The actual viscosity may be the larger of this viscosity and the Smagorinsky and Leith viscosities. </p>
+<p>A constant relating the biharmonic viscosity to the square of the velocity shear [L4 T ~&gt; m4 s]. This value is set to be the magnitude of the Coriolis terms once the velocity differences reach a value of order 1/2 MAXVEL. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00122">122</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: Ah_bg_xy</div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00124">124</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: Ah_bg_xy</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -412,7 +430,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The maximum permitted biharmonic viscosity [L4 T-1 ~&gt; m4 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -430,7 +448,7 @@ Public variables and constants</h2></td></tr>
 
 <p>The maximum permitted biharmonic viscosity [L4 T-1 ~&gt; m4 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00134">134</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00136">136</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -467,8 +485,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use the order of arithmetic and expressions that recover the answers from the end of 2018. Otherwise, use updated and more robust forms of the same expressions. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00084">84</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">logical</span> :: answers_2018<span class="comment">    !&lt; If true, use the order of arithmetic and expressions that recover the</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00086">86</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">logical</span> :: answers_2018<span class="comment">    !&lt; If true, use the order of arithmetic and expressions that recover the</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -510,44 +528,6 @@ Public variables and constants</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a6df026976f768350f455f0c2c0c6ea1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6df026976f768350f455f0c2c0c6ea1f">&#9670;&nbsp;</a></span>biharm5_const2_xx</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">real, dimension( : , : ), allocatable mom_hor_visc::hor_visc_cs::biharm5_const2_xx</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A constant relating the biharmonic viscosity to the square of the velocity shear [m4 s]. This value is set to be the magnitude of the Coriolis terms once the velocity differences reach a value of order 1/2 MAXVEL. </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00104">104</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: Biharm5_const2_xx</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a9f1e9a9f6c9524411a3af9cfd05cd70d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f1e9a9f6c9524411a3af9cfd05cd70d">&#9670;&nbsp;</a></span>biharm5_const2_xy</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">real, dimension( : , : ), allocatable mom_hor_visc::hor_visc_cs::biharm5_const2_xy</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A constant relating the biharmonic viscosity to the square of the velocity shear [m4 s]. This value is set to be the magnitude of the Coriolis terms once the velocity differences reach a value of order 1/2 MAXVEL. </p>
-
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00126">126</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: Biharm5_const2_xy</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a0b5f150d4dd58c77a2ac9673c2d1f2cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b5f150d4dd58c77a2ac9673c2d1f2cd">&#9670;&nbsp;</a></span>biharm5_const_xx</h2>
 
@@ -562,7 +542,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Biharmonic metric-dependent constants [L5 ~&gt; m5]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00159">159</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00161">161</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -580,7 +560,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Biharmonic metric-dependent constants [L5 ~&gt; m5]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00168">168</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -598,7 +578,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Biharmonic metric-dependent constants [T L4 ~&gt; s m4]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00159">159</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00161">161</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -616,7 +596,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Biharmonic metric-dependent constants [T L4 ~&gt; s m4]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00168">168</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -634,7 +614,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Biharmonic metric-dependent constants [L4 ~&gt; m4]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00159">159</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00161">161</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -652,7 +632,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Biharmonic metric-dependent constants [L4 ~&gt; m4]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00168">168</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -784,8 +764,8 @@ Public variables and constants</h2></td></tr>
 
 <p>structure to regulate diagnostics </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00173">173</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; structure to regulate diagnostics</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00175">175</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; structure to regulate diagnostics</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -803,12 +783,12 @@ Public variables and constants</h2></td></tr>
 
 <p>Pre-calculated dx^2 at h points [L2 ~&gt; m2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00140">140</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: &amp;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    dx2h,   &amp; !&lt; Pre-calculated dx^2 at h points [L2 ~&gt; m2]</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    dy2h,   &amp; !&lt; Pre-calculated dy^2 at h points [L2 ~&gt; m2]</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    dx_dyT, &amp; !&lt; Pre-calculated dx/dy at h points [nondim]</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    dy_dxT<span class="comment">    !&lt; Pre-calculated dy/dx at h points [nondim]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00142">142</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: &amp;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    dx2h,   &amp; !&lt; Pre-calculated dx^2 at h points [L2 ~&gt; m2]</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    dy2h,   &amp; !&lt; Pre-calculated dy^2 at h points [L2 ~&gt; m2]</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    dx_dyT, &amp; !&lt; Pre-calculated dx/dy at h points [nondim]</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    dy_dxT<span class="comment">    !&lt; Pre-calculated dy/dx at h points [nondim]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -826,12 +806,12 @@ Public variables and constants</h2></td></tr>
 
 <p>Pre-calculated dx^2 at q points [L2 ~&gt; m2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00145">145</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: &amp;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    dx2q,    &amp; !&lt; Pre-calculated dx^2 at q points [L2 ~&gt; m2]</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    dy2q,    &amp; !&lt; Pre-calculated dy^2 at q points [L2 ~&gt; m2]</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    dx_dyBu, &amp; !&lt; Pre-calculated dx/dy at q points [nondim]</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    dy_dxBu<span class="comment">    !&lt; Pre-calculated dy/dx at q points [nondim]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00147">147</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: &amp;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    dx2q,    &amp; !&lt; Pre-calculated dx^2 at q points [L2 ~&gt; m2]</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    dy2q,    &amp; !&lt; Pre-calculated dy^2 at q points [L2 ~&gt; m2]</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    dx_dyBu, &amp; !&lt; Pre-calculated dx/dy at q points [nondim]</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    dy_dxBu<span class="comment">    !&lt; Pre-calculated dy/dx at q points [nondim]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -849,7 +829,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Pre-calculated dx/dy at q points [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00145">145</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00147">147</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -867,7 +847,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Pre-calculated dx/dy at h points [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00140">140</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00142">142</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -885,7 +865,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Pre-calculated dy^2 at h points [L2 ~&gt; m2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00140">140</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00142">142</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -903,7 +883,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Pre-calculated dy^2 at q points [L2 ~&gt; m2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00145">145</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00147">147</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -921,7 +901,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Pre-calculated dy/dx at q points [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00145">145</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00147">147</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -939,7 +919,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Pre-calculated dy/dx at h points [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00140">140</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00142">142</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -957,8 +937,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the anisotropic viscosity is recomputed as a function of state. This is set depending on ANISOTROPIC_MODE. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00079">79</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">logical</span> :: dynamic_aniso<span class="comment">   !&lt; If true, the anisotropic viscosity is recomputed as a function</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00081">81</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">logical</span> :: dynamic_aniso<span class="comment">   !&lt; If true, the anisotropic viscosity is recomputed as a function</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -976,8 +956,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The nondimensional prefactor multiplying the GME coefficient [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00089">89</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">  real</span>    :: GME_efficiency<span class="comment">  !&lt; The nondimensional prefactor multiplying the GME coefficient [nondim]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00091">91</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">  real</span>    :: GME_efficiency<span class="comment">  !&lt; The nondimensional prefactor multiplying the GME coefficient [nondim]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -993,10 +973,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The strength of GME tapers quadratically to zero when the bathymetric depth is shallower than GME_H0 [m]. </p>
+<p>The strength of GME tapers quadratically to zero when the bathymetric depth is shallower than GME_H0 [Z ~&gt; m]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00087">87</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">  real</span>    :: GME_h0<span class="comment">          !&lt; The strength of GME tapers quadratically to zero when the bathymetric</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00089">89</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">  real</span>    :: GME_h0<span class="comment">          !&lt; The strength of GME tapers quadratically to zero when the bathymetric</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1012,10 +992,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The absolute maximum value the GME coefficient is allowed to take [m2 s-1]. </p>
+<p>The absolute maximum value the GME coefficient is allowed to take [L2 T-1 ~&gt; m2 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00090">90</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">  real</span>    :: GME_limiter<span class="comment">     !&lt; The absolute maximum value the GME coefficient is allowed to take [m2 s-1].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00092">92</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">  real</span>    :: GME_limiter<span class="comment">     !&lt; The absolute maximum value the GME coefficient is allowed to take [L2 T-1 ~&gt; m2 s-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1033,8 +1013,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic id. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00178">178</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordtype">integer</span> :: id_Ah_h      = -1, id_ah_q          = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00180">180</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordtype">integer</span> :: id_Ah_h      = -1, id_ah_q          = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1052,7 +1032,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic id. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00178">178</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00180">180</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -1070,8 +1050,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic id. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00177">177</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">integer</span> :: id_diffu     = -1, id_diffv         = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00179">179</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordtype">integer</span> :: id_diffu     = -1, id_diffv         = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1089,7 +1069,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic id. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00177">177</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00179">179</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -1107,7 +1087,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic id. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00181">181</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00183">183</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -1125,8 +1105,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic id. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00182">182</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordtype">integer</span> :: id_FrictWork = -1, id_frictworkintz = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00184">184</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordtype">integer</span> :: id_FrictWork = -1, id_frictworkintz = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1144,8 +1124,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic id. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00183">183</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">integer</span> :: id_FrictWork_GME = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00185">185</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordtype">integer</span> :: id_FrictWork_GME = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1163,7 +1143,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic id. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00182">182</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00184">184</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -1181,8 +1161,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic id. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00180">180</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordtype">integer</span> :: id_GME_coeff_h = -1, id_gme_coeff_q = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00182">182</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordtype">integer</span> :: id_GME_coeff_h = -1, id_gme_coeff_q = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1200,7 +1180,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic id. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00180">180</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00182">182</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -1218,8 +1198,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic id. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00179">179</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordtype">integer</span> :: id_Kh_h      = -1, id_kh_q          = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00181">181</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordtype">integer</span> :: id_Kh_h      = -1, id_kh_q          = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1237,7 +1217,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic id. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00179">179</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00181">181</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -1255,8 +1235,8 @@ Public variables and constants</h2></td></tr>
 
 <p>Diagnostic id. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00181">181</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordtype">integer</span> :: id_vort_xy_q = -1, id_div_xx_h      = -1</div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00183">183</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">integer</span> :: id_vort_xy_q = -1, id_div_xx_h      = -1</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1274,10 +1254,10 @@ Public variables and constants</h2></td></tr>
 
 <p>1/(dx^2 dy) at u points [L-3 ~&gt; m-3] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00150">150</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEM_)</span> :: &amp;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    Idx2dyCu, &amp; !&lt; 1/(dx^2 dy) at u points [L-3 ~&gt; m-3]</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    Idxdy2u<span class="comment">     !&lt; 1/(dx dy^2) at u points [L-3 ~&gt; m-3]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00152">152</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEM_)</span> :: &amp;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    Idx2dyCu, &amp; !&lt; 1/(dx^2 dy) at u points [L-3 ~&gt; m-3]</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    Idxdy2u<span class="comment">     !&lt; 1/(dx dy^2) at u points [L-3 ~&gt; m-3]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1295,10 +1275,10 @@ Public variables and constants</h2></td></tr>
 
 <p>1/(dx^2 dy) at v points [L-3 ~&gt; m-3] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00153">153</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEMB_PTR_)</span> :: &amp;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    Idx2dyCv, &amp; !&lt; 1/(dx^2 dy) at v points [L-3 ~&gt; m-3]</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    Idxdy2v<span class="comment">     !&lt; 1/(dx dy^2) at v points [L-3 ~&gt; m-3]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00155">155</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEMB_PTR_)</span> :: &amp;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    Idx2dyCv, &amp; !&lt; 1/(dx^2 dy) at v points [L-3 ~&gt; m-3]</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    Idxdy2v<span class="comment">     !&lt; 1/(dx dy^2) at v points [L-3 ~&gt; m-3]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1316,7 +1296,7 @@ Public variables and constants</h2></td></tr>
 
 <p>1/(dx dy^2) at u points [L-3 ~&gt; m-3] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00150">150</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00152">152</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -1334,7 +1314,7 @@ Public variables and constants</h2></td></tr>
 
 <p>1/(dx dy^2) at v points [L-3 ~&gt; m-3] </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00153">153</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00155">155</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -1352,8 +1332,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The anisotropic viscosity [L2 T-1 ~&gt; m2 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00078">78</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">  real</span>    :: Kh_aniso<span class="comment">        !&lt; The anisotropic viscosity [L2 T-1 ~&gt; m2 s-1].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00080">80</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">  real</span>    :: Kh_aniso<span class="comment">        !&lt; The anisotropic viscosity [L2 T-1 ~&gt; m2 s-1].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1371,8 +1351,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The background Laplacian viscosity at h points [L2 T-1 ~&gt; m2 s-1]. The actual viscosity may be the larger of this viscosity and the Smagorinsky and Leith viscosities. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00096">96</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: Kh_bg_2d</div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00098">98</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: Kh_bg_2d</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1409,8 +1389,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The background Laplacian viscosity at h points [L2 T-1 ~&gt; m2 s-1]. The actual viscosity may be the larger of this viscosity and the Smagorinsky and Leith viscosities. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00092">92</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: Kh_bg_xx</div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00094">94</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: Kh_bg_xx</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1428,8 +1408,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The background Laplacian viscosity at q points [L2 T-1 ~&gt; m2 s-1]. The actual viscosity may be the larger of this viscosity and the Smagorinsky and Leith viscosities. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00118">118</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: Kh_bg_xy</div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00120">120</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: Kh_bg_xy</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1447,12 +1427,12 @@ Public variables and constants</h2></td></tr>
 
 <p>The maximum permitted Laplacian viscosity [L2 T-1 ~&gt; m2 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: &amp;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    Kh_Max_xx,      &amp; !&lt; The maximum permitted Laplacian viscosity [L2 T-1 ~&gt; m2 s-1].</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    Ah_Max_xx,      &amp; !&lt; The maximum permitted biharmonic viscosity [L4 T-1 ~&gt; m4 s-1].</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    n1n2_h,         &amp; !&lt; Factor n1*n2 in the anisotropic direction tensor at h-points</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    n1n1_m_n2n2_h<span class="comment">     !&lt; Factor n1**2-n2**2 in the anisotropic direction tensor at h-points</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: &amp;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    Kh_Max_xx,      &amp; !&lt; The maximum permitted Laplacian viscosity [L2 T-1 ~&gt; m2 s-1].</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    Ah_Max_xx,      &amp; !&lt; The maximum permitted biharmonic viscosity [L4 T-1 ~&gt; m4 s-1].</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    n1n2_h,         &amp; !&lt; Factor n1*n2 in the anisotropic direction tensor at h-points</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    n1n1_m_n2n2_h<span class="comment">     !&lt; Factor n1**2-n2**2 in the anisotropic direction tensor at h-points</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1470,12 +1450,12 @@ Public variables and constants</h2></td></tr>
 
 <p>The maximum permitted Laplacian viscosity [L2 T-1 ~&gt; m2 s-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00134">134</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: &amp;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    Kh_Max_xy,      &amp; !&lt; The maximum permitted Laplacian viscosity [L2 T-1 ~&gt; m2 s-1].</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    Ah_Max_xy,      &amp; !&lt; The maximum permitted biharmonic viscosity [L4 T-1 ~&gt; m4 s-1].</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    n1n2_q,         &amp; !&lt; Factor n1*n2 in the anisotropic direction tensor at q-points</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    n1n1_m_n2n2_q<span class="comment">     !&lt; Factor n1**2-n2**2 in the anisotropic direction tensor at q-points</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00136">136</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: &amp;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    Kh_Max_xy,      &amp; !&lt; The maximum permitted Laplacian viscosity [L2 T-1 ~&gt; m2 s-1].</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    Ah_Max_xy,      &amp; !&lt; The maximum permitted biharmonic viscosity [L4 T-1 ~&gt; m4 s-1].</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    n1n2_q,         &amp; !&lt; Factor n1*n2 in the anisotropic direction tensor at q-points</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    n1n1_m_n2n2_q<span class="comment">     !&lt; Factor n1**2-n2**2 in the anisotropic direction tensor at q-points</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1493,13 +1473,13 @@ Public variables and constants</h2></td></tr>
 
 <p>Laplacian metric-dependent constants [L2 ~&gt; m2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00159">159</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: &amp;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    Laplac2_const_xx, &amp; !&lt; Laplacian  metric-dependent constants [L2 ~&gt; m2]</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    Biharm5_const_xx, &amp; !&lt; Biharmonic metric-dependent constants [L5 ~&gt; m5]</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    Laplac3_const_xx, &amp; !&lt; Laplacian  metric-dependent constants [L3 ~&gt; m3]</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    Biharm_const_xx,  &amp; !&lt; Biharmonic metric-dependent constants [L4 ~&gt; m4]</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    Biharm_const2_xx<span class="comment">    !&lt; Biharmonic metric-dependent constants [T L4 ~&gt; s m4]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00161">161</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: &amp;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    Laplac2_const_xx, &amp; !&lt; Laplacian  metric-dependent constants [L2 ~&gt; m2]</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    Biharm5_const_xx, &amp; !&lt; Biharmonic metric-dependent constants [L5 ~&gt; m5]</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    Laplac3_const_xx, &amp; !&lt; Laplacian  metric-dependent constants [L3 ~&gt; m3]</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    Biharm_const_xx,  &amp; !&lt; Biharmonic metric-dependent constants [L4 ~&gt; m4]</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    Biharm_const2_xx<span class="comment">    !&lt; Biharmonic metric-dependent constants [T L4 ~&gt; s m4]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1517,13 +1497,13 @@ Public variables and constants</h2></td></tr>
 
 <p>Laplacian metric-dependent constants [L2 ~&gt; m2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: &amp;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    Laplac2_const_xy, &amp; !&lt; Laplacian  metric-dependent constants [L2 ~&gt; m2]</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    Biharm5_const_xy, &amp; !&lt; Biharmonic metric-dependent constants [L5 ~&gt; m5]</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    Laplac3_const_xy, &amp; !&lt; Laplacian  metric-dependent constants [L3 ~&gt; m3]</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    Biharm_const_xy,  &amp; !&lt; Biharmonic metric-dependent constants [L4 ~&gt; m4]</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    Biharm_const2_xy<span class="comment">    !&lt; Biharmonic metric-dependent constants [T L4 ~&gt; s m4]</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00168">168</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: &amp;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    Laplac2_const_xy, &amp; !&lt; Laplacian  metric-dependent constants [L2 ~&gt; m2]</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    Biharm5_const_xy, &amp; !&lt; Biharmonic metric-dependent constants [L5 ~&gt; m5]</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    Laplac3_const_xy, &amp; !&lt; Laplacian  metric-dependent constants [L3 ~&gt; m3]</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    Biharm_const_xy,  &amp; !&lt; Biharmonic metric-dependent constants [L4 ~&gt; m4]</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    Biharm_const2_xy<span class="comment">    !&lt; Biharmonic metric-dependent constants [T L4 ~&gt; s m4]</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1541,7 +1521,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Laplacian metric-dependent constants [L3 ~&gt; m3]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00159">159</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00161">161</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -1559,7 +1539,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Laplacian metric-dependent constants [L3 ~&gt; m3]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00166">166</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00168">168</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -1653,7 +1633,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Factor n1**2-n2**2 in the anisotropic direction tensor at h-points. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -1671,7 +1651,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Factor n1**2-n2**2 in the anisotropic direction tensor at q-points. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00134">134</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00136">136</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -1689,7 +1669,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Factor n1*n2 in the anisotropic direction tensor at h-points. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00112">112</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00114">114</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -1707,7 +1687,7 @@ Public variables and constants</h2></td></tr>
 
 <p>Factor n1*n2 in the anisotropic direction tensor at q-points. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00134">134</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00136">136</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
 
 </div>
 </div>
@@ -1744,8 +1724,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The amount by which stresses through h points are reduced due to partial barriers [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00109">109</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: reduction_xx</div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00111">111</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEM_,NJMEM_)</span> :: reduction_xx</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1763,8 +1743,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The amount by which stresses through q points are reduced due to partial barriers [nondim]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00131">131</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: reduction_xy</div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00133">133</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keywordtype">  real</span> ALLOCABLE_, <span class="keywordtype">dimension(NIMEMB_PTR_,NJMEMB_PTR_)</span> :: reduction_xy</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1782,8 +1762,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, the viscosity contribution from MEKE is scaled by the resolution function. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00081">81</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">logical</span> :: res_scale_MEKE<span class="comment">  !&lt; If true, the viscosity contribution from MEKE is scaled by</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00083">83</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">logical</span> :: res_scale_MEKE<span class="comment">  !&lt; If true, the viscosity contribution from MEKE is scaled by</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1858,8 +1838,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, use GME backscatter scheme. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00083">83</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">logical</span> :: use_GME<span class="comment">         !&lt; If true, use GME backscatter scheme.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__hor__visc_8F90_source.html#l00085">85</a> of file <a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">logical</span> :: use_GME<span class="comment">         !&lt; If true, use GME backscatter scheme.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1921,7 +1901,7 @@ Public variables and constants</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/parameterizations/lateral/<a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/lateral/<a class="el" href="MOM__hor__visc_8F90_source.html">MOM_hor_visc.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

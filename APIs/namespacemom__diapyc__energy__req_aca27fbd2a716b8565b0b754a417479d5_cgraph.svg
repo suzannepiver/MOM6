@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 620;
+var viewWidth = 581;
 var viewHeight = 137;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,96 +54,96 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>mom_diapyc_energy_req::diapyc_energy_req_calc</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-133 616,-133 616,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-133 577,-133 577,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="This subroutine uses a substantially refactored tridiagonal equation for diapycnal mixing of temperat...">
-<polygon fill="#bfbfbf" stroke="#000000" points="0,-49.5 0,-79.5 137,-79.5 137,-49.5 0,-49.5"/>
+<polygon fill="#bfbfbf" stroke="#000000" points="0,-49.5 0,-79.5 128,-79.5 128,-49.5 0,-49.5"/>
 <text text-anchor="start" x="8" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diapyc_energy_req</text>
-<text text-anchor="middle" x="68.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::diapyc_energy_req_calc</text>
+<text text-anchor="middle" x="64" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::diapyc_energy_req_calc</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="namespacemom__eos.html#ab6ed65d2df376be9bbea2050f50fe46e" target="_top" xlink:title="Calls the appropriate subroutine to calculate specific volume derivatives for an array.">
-<polygon fill="#ffffff" stroke="#000000" points="185.5,-98.5 185.5,-128.5 297.5,-128.5 297.5,-98.5 185.5,-98.5"/>
-<text text-anchor="start" x="193.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_eos::calculate</text>
-<text text-anchor="middle" x="241.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_specific_vol_derivs</text>
+<g id="a_node2"><a xlink:href="namespacemom__eos.html#a2532426c3797952ec6e9cd628e7708a0" target="_top" xlink:title="Calls the appropriate subroutine to calculate specific volume derivatives for an array.">
+<polygon fill="#ffffff" stroke="#000000" points="174,-98.5 174,-128.5 279,-128.5 279,-98.5 174,-98.5"/>
+<text text-anchor="start" x="182" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_eos::calculate</text>
+<text text-anchor="middle" x="226.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_specific_vol_derivs</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M121.8173,-79.6014C139.7425,-84.6785 159.9084,-90.3902 178.5057,-95.6577"/>
-<polygon fill="#191970" stroke="#191970" points="177.7834,-99.0907 188.3587,-98.4484 179.691,-92.3557 177.7834,-99.0907"/>
+<path fill="none" stroke="#191970" d="M114.0813,-79.6014C130.6857,-84.6083 149.3372,-90.2324 166.6037,-95.439"/>
+<polygon fill="#191970" stroke="#191970" points="165.9994,-98.9123 176.5841,-98.4484 168.0203,-92.2104 165.9994,-98.9123"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="namespacemom__diapyc__energy__req.html#a2bed511a4b1df9de0e2230c24389bc82" target="_top" xlink:title="This subroutine calculates the change in potential energy and or derivatives for several changes in a...">
-<polygon fill="#ffffff" stroke="#000000" points="173,-49.5 173,-79.5 310,-79.5 310,-49.5 173,-49.5"/>
-<text text-anchor="start" x="181" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diapyc_energy_req</text>
-<text text-anchor="middle" x="241.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::find_pe_chg</text>
+<polygon fill="#ffffff" stroke="#000000" points="164,-49.5 164,-79.5 289,-79.5 289,-49.5 164,-49.5"/>
+<text text-anchor="start" x="172" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diapyc_energy_req</text>
+<text text-anchor="middle" x="226.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::find_pe_chg</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M137.3713,-64.5C145.678,-64.5 154.2111,-64.5 162.6466,-64.5"/>
-<polygon fill="#191970" stroke="#191970" points="162.8657,-68.0001 172.8657,-64.5 162.8657,-61.0001 162.8657,-68.0001"/>
+<path fill="none" stroke="#191970" d="M128.2243,-64.5C136.5496,-64.5 145.1245,-64.5 153.5779,-64.5"/>
+<polygon fill="#191970" stroke="#191970" points="153.8041,-68.0001 163.804,-64.5 153.804,-61.0001 153.8041,-68.0001"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="namespacemom__diapyc__energy__req.html#afb1736a09e8f04ae84f561924e157691" target="_top" xlink:title="This subroutine calculates the change in potential energy and or derivatives for several changes in a...">
-<polygon fill="#ffffff" stroke="#000000" points="173,-.5 173,-30.5 310,-30.5 310,-.5 173,-.5"/>
-<text text-anchor="start" x="181" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diapyc_energy_req</text>
-<text text-anchor="middle" x="241.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::find_pe_chg_orig</text>
+<polygon fill="#ffffff" stroke="#000000" points="164,-.5 164,-30.5 289,-30.5 289,-.5 164,-.5"/>
+<text text-anchor="start" x="172" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_diapyc_energy_req</text>
+<text text-anchor="middle" x="226.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::find_pe_chg_orig</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M121.8173,-49.3986C139.7425,-44.3215 159.9084,-38.6098 178.5057,-33.3423"/>
-<polygon fill="#191970" stroke="#191970" points="179.691,-36.6443 188.3587,-30.5516 177.7834,-29.9093 179.691,-36.6443"/>
+<path fill="none" stroke="#191970" d="M114.0813,-49.3986C130.6857,-44.3917 149.3372,-38.7676 166.6037,-33.561"/>
+<polygon fill="#191970" stroke="#191970" points="168.0203,-36.7896 176.5841,-30.5516 165.9994,-30.0877 168.0203,-36.7896"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="namespacemom__error__handler.html#a460cfb79a06c29fc249952c2a3710d67" target="_top" xlink:title="This provides a convenient interface for writing an mpp_error message with run&#45;time filter based on a...">
-<polygon fill="#ffffff" stroke="#000000" points="346,-98.5 346,-128.5 461,-128.5 461,-98.5 346,-98.5"/>
-<text text-anchor="start" x="354" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="403.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
+<polygon fill="#ffffff" stroke="#000000" points="325,-98.5 325,-128.5 431,-128.5 431,-98.5 325,-98.5"/>
+<text text-anchor="start" x="333" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="378" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M297.7051,-113.5C309.9636,-113.5 323.0607,-113.5 335.7154,-113.5"/>
-<polygon fill="#191970" stroke="#191970" points="335.745,-117.0001 345.745,-113.5 335.745,-110.0001 335.745,-117.0001"/>
+<path fill="none" stroke="#191970" d="M279.0622,-113.5C290.4975,-113.5 302.713,-113.5 314.5199,-113.5"/>
+<polygon fill="#191970" stroke="#191970" points="314.7607,-117.0001 324.7607,-113.5 314.7607,-110.0001 314.7607,-117.0001"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="namespacemom__error__handler.html#ad5f00a53059c72fe2332d1436c80ca71" target="_top" xlink:title="This returns .true. if the current PE is the root PE.">
-<polygon fill="#ffffff" stroke="#000000" points="497,-98.5 497,-128.5 612,-128.5 612,-98.5 497,-98.5"/>
-<text text-anchor="start" x="505" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
-<text text-anchor="middle" x="554.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
+<polygon fill="#ffffff" stroke="#000000" points="467,-98.5 467,-128.5 573,-128.5 573,-98.5 467,-98.5"/>
+<text text-anchor="start" x="475" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">mom_error_handler::</text>
+<text text-anchor="middle" x="520" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">is_root_pe</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M461.0174,-113.5C469.4639,-113.5 478.2292,-113.5 486.8561,-113.5"/>
-<polygon fill="#191970" stroke="#191970" points="486.8926,-117.0001 496.8925,-113.5 486.8925,-110.0001 486.8926,-117.0001"/>
+<path fill="none" stroke="#191970" d="M431.2796,-113.5C439.56,-113.5 448.184,-113.5 456.6606,-113.5"/>
+<polygon fill="#191970" stroke="#191970" points="456.8941,-117.0001 466.8941,-113.5 456.8941,-110.0001 456.8941,-117.0001"/>
 </g>
 </g>
 </svg>

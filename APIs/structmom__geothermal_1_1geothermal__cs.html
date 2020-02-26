@@ -101,21 +101,21 @@ $(document).ready(function(){initNavTree('structmom__geothermal_1_1geothermal__c
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Control structure for geothermal heating. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00024">24</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00025">25</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
 </div><div class="dynheader">
 Collaboration diagram for mom_geothermal::geothermal_cs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__geothermal_1_1geothermal__cs__coll__graph.svg" width="616" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structmom__geothermal_1_1geothermal__cs__coll__graph.svg" width="571" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public variables and constants</h2></td></tr>
 <tr class="memitem:a7be08d190b5890de1a1c16de10313d54"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__geothermal_1_1geothermal__cs.html#a7be08d190b5890de1a1c16de10313d54">drcv_dt_inplace</a></td></tr>
-<tr class="memdesc:a7be08d190b5890de1a1c16de10313d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value of dRcv_dT above which (dRcv_dT is negative) the water is heated in place instead of moving upward between layers [kg m-3 degC-1].  <a href="structmom__geothermal_1_1geothermal__cs.html#a7be08d190b5890de1a1c16de10313d54">More...</a><br /></td></tr>
+<tr class="memdesc:a7be08d190b5890de1a1c16de10313d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value of dRcv_dT above which (dRcv_dT is negative) the water is heated in place instead of moving upward between layers [R degC-1 ~&gt; kg m-3 degC-1].  <a href="structmom__geothermal_1_1geothermal__cs.html#a7be08d190b5890de1a1c16de10313d54">More...</a><br /></td></tr>
 <tr class="separator:a7be08d190b5890de1a1c16de10313d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5382ca998f1d5f179ad8bce79f45e6f9"><td class="memItemLeft" align="right" valign="top">real, dimension(:,:), pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__geothermal_1_1geothermal__cs.html#a5382ca998f1d5f179ad8bce79f45e6f9">geo_heat</a> =&gt; NULL()</td></tr>
-<tr class="memdesc:a5382ca998f1d5f179ad8bce79f45e6f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geothermal heat flux [W m-2].  <a href="structmom__geothermal_1_1geothermal__cs.html#a5382ca998f1d5f179ad8bce79f45e6f9">More...</a><br /></td></tr>
+<tr class="memdesc:a5382ca998f1d5f179ad8bce79f45e6f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geothermal heat flux [J m-2 T-1 ~&gt; W m-2].  <a href="structmom__geothermal_1_1geothermal__cs.html#a5382ca998f1d5f179ad8bce79f45e6f9">More...</a><br /></td></tr>
 <tr class="separator:a5382ca998f1d5f179ad8bce79f45e6f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d97e680ef006348b8805692d8686de"><td class="memItemLeft" align="right" valign="top">real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__geothermal_1_1geothermal__cs.html#ab4d97e680ef006348b8805692d8686de">geothermal_thick</a></td></tr>
 <tr class="memdesc:ab4d97e680ef006348b8805692d8686de"><td class="mdescLeft">&#160;</td><td class="mdescRight">The thickness over which geothermal heating is applied [m] (not [H]).  <a href="structmom__geothermal_1_1geothermal__cs.html#ab4d97e680ef006348b8805692d8686de">More...</a><br /></td></tr>
@@ -154,8 +154,8 @@ Public variables and constants</h2></td></tr>
 
 <p>If true, geothermal heating will be applied otherwise GEOTHERMAL_SCALE has been set to 0 and there is no heat to apply. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00031">31</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">logical</span> :: apply_geothermal<span class="comment"> !&lt; If true, geothermal heating will be applied</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00032">32</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">logical</span> :: apply_geothermal<span class="comment"> !&lt; If true, geothermal heating will be applied</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -173,8 +173,8 @@ Public variables and constants</h2></td></tr>
 
 <p>A structure that is used to regulate the timing of diagnostic output. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00036">36</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00037">37</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">type</span>(diag_ctrl), <span class="keywordtype">pointer</span> :: diag =&gt; null() <span class="comment">!&lt; A structure that is used to</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -190,10 +190,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The value of dRcv_dT above which (dRcv_dT is negative) the water is heated in place instead of moving upward between layers [kg m-3 degC-1]. </p>
+<p>The value of dRcv_dT above which (dRcv_dT is negative) the water is heated in place instead of moving upward between layers [R degC-1 ~&gt; kg m-3 degC-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00025">25</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">  real</span>    :: dRcv_dT_inplace<span class="comment"> !&lt;   The value of dRcv_dT above which (dRcv_dT is</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00026">26</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">  real</span>    :: dRcv_dT_inplace<span class="comment"> !&lt;   The value of dRcv_dT above which (dRcv_dT is</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -209,10 +209,10 @@ Public variables and constants</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The geothermal heat flux [W m-2]. </p>
+<p>The geothermal heat flux [J m-2 T-1 ~&gt; W m-2]. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00028">28</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: geo_heat(:,:) =&gt; null() <span class="comment">!&lt; The geothermal heat flux [W m-2].</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00029">29</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">  real</span>, <span class="keywordtype">pointer</span> :: geo_heat(:,:) =&gt; null() <span class="comment">!&lt; The geothermal heat flux [J m-2 T-1 ~&gt; W m-2].</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -230,8 +230,8 @@ Public variables and constants</h2></td></tr>
 
 <p>The thickness over which geothermal heating is applied [m] (not [H]). </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00029">29</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">  real</span>    :: geothermal_thick<span class="comment"> !&lt; The thickness over which geothermal heating is</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00030">30</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">  real</span>    :: geothermal_thick<span class="comment"> !&lt; The thickness over which geothermal heating is</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -249,8 +249,8 @@ Public variables and constants</h2></td></tr>
 
 <p>ID for diagnostic of thickness tendency. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00040">40</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">integer</span> :: id_internal_heat_h_tendency = -1<span class="comment">      !&lt; ID for diagnostic of thickness tendency</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00041">41</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">integer</span> :: id_internal_heat_h_tendency = -1<span class="comment">      !&lt; ID for diagnostic of thickness tendency</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -268,8 +268,8 @@ Public variables and constants</h2></td></tr>
 
 <p>ID for diagnostic of heat tendency. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00038">38</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">integer</span> :: id_internal_heat_heat_tendency = -1<span class="comment">   !&lt; ID for diagnostic of heat tendency</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00039">39</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">integer</span> :: id_internal_heat_heat_tendency = -1<span class="comment">   !&lt; ID for diagnostic of heat tendency</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -287,8 +287,8 @@ Public variables and constants</h2></td></tr>
 
 <p>ID for diagnostic of temperature tendency. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00039">39</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">integer</span> :: id_internal_heat_temp_tendency = -1<span class="comment">   !&lt; ID for diagnostic of temperature tendency</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00040">40</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">integer</span> :: id_internal_heat_temp_tendency = -1<span class="comment">   !&lt; ID for diagnostic of temperature tendency</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -306,13 +306,13 @@ Public variables and constants</h2></td></tr>
 
 <p>A pointer to the ocean model's clock. </p>
 
-<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00035">35</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time =&gt; null() <span class="comment">!&lt; A pointer to the ocean model&#39;s clock.</span></div>
+<p class="definition">Definition at line <a class="el" href="MOM__geothermal_8F90_source.html#l00036">36</a> of file <a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">type</span>(time_type), <span class="keywordtype">pointer</span> :: Time =&gt; null() <span class="comment">!&lt; A pointer to the ocean model&#39;s clock.</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this type was generated from the following file:<ul>
-<li>/glade/work/altuntas/doxygen/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a></li>
+<li>/glade/work/altuntas/cesm.sandboxes/cesm2_2_alpha_X_mom/components/mom/MOM6/src/parameterizations/vertical/<a class="el" href="MOM__geothermal_8F90_source.html">MOM_geothermal.F90</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

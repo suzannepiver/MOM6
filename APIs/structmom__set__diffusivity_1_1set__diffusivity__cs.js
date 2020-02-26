@@ -54,7 +54,6 @@ var structmom__set__diffusivity_1_1set__diffusivity__cs =
     [ "omega", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#aa1bb6ef3e913624e457e3601eec4ba29", null ],
     [ "simple_tke_to_kd", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a7dd07a38210928ffaeb539fe917a80e1", null ],
     [ "tke_decay", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#aca05b08438ce900ee5ea810bf7c8db9d", null ],
-    [ "tke_itide_max", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a3b5a5785d79a37eb5951b092937572a6", null ],
     [ "tm_csp", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a1b66e8616487fc579d521e3ab63753b9", null ],
     [ "use_cvmix_ddiff", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a985026588438405515722a2ea58cf870", null ],
     [ "use_cvmix_shear", "structmom__set__diffusivity_1_1set__diffusivity__cs.html#a6738ec61fbe533b499d25ec15c5e539b", null ],
