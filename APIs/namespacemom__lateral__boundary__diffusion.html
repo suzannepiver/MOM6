@@ -101,7 +101,63 @@ $(document).ready(function(){initNavTree('namespacemom__lateral__boundary__diffu
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Calculates and applies diffusive fluxes as a parameterization of lateral mixing (non-neutral) by mesoscale eddies near the top and bottom (to be implemented) boundary layers of the ocean. </p>
-</div><table class="memberdecls">
+<h1><a class="anchor" id="section_LBD"></a>
+The Lateral Boundary Diffusion (LBD) framework</h1>
+<p>The LBD framework accounts for the effects of diabatic mesoscale fluxes within surface and bottom boundary layers. Unlike the equivalent adiabatic fluxes, which is applied along neutral density surfaces, LBD is purely horizontal.</p>
+<p>The bottom boundary layer fluxes remain to be implemented, although most of the steps needed to do so have already been added and tested.</p>
+<p>Boundary lateral diffusion can be applied using one of the three methods:</p>
+<ul>
+<li><a class="el" href="namespacemom__lateral__boundary__diffusion.html#section_method1">Method #1: Bulk layer</a> (default);</li>
+<li><a class="el" href="namespacemom__lateral__boundary__diffusion.html#section_method2">Method #2: Along layer</a>;</li>
+</ul>
+<p>A brief summary of these methods is provided below.</p>
+<h2><a class="anchor" id="section_method1"></a>
+Bulk layer approach (Method #1)</h2>
+<p>Apply the lateral boundary diffusive fluxes calculated from a 'bulk model'.This is a lower order representation (Kraus-Turner like approach) which assumes that eddies are acting along well mixed layers (i.e., eddies do not know care about vertical tracer gradients within the boundary layer).</p>
+<p>Step #1: compute vertical indices containing boundary layer (boundary_k_range). For the TOP boundary layer, these are:</p>
+<p>k_top, k_bot, zeta_top, zeta_bot</p>
+<p>Step #2: compute bulk averages (thickness weighted) tracer averages (phi_L and phi_R), then calculate the bulk diffusive flux (F_{bulk}):</p>
+<p class="formulaDsp">
+\[ F_{bulk} = -KHTR \times h_{eff} \times (\phi_R - \phi_L), \]
+</p>
+<p> where h_eff is the <a class="el" href="namespacemom__lateral__boundary__diffusion.html#section_harmonic_mean">harmonic mean</a> of the boundary layer depth in the left and right columns ( </p><p class="formulaDsp">
+\[ HBL_L \]
+</p>
+<p> and </p><p class="formulaDsp">
+\[ HBL_R \]
+</p>
+<p>, respectively).</p>
+<p>Step #3: decompose F_bulk onto individual layers:</p>
+<p class="formulaDsp">
+\[ F_{layer}(k) = F_{bulk} \times h_{frac}(k) , \]
+</p>
+<p>where h_{frac} is</p>
+<p class="formulaDsp">
+\[ h_{frac}(k) = h_u(k) \times \frac{1}{\sum(h_u)}. \]
+</p>
+<p>h_u is the <a class="el" href="namespacemom__lateral__boundary__diffusion.html#section_harmonic_mean">harmonic mean</a> of thicknesses at each layer. Special care (layer reconstruction) must be taken at k_min = min(k_botL, k_bot_R).</p>
+<p>Step #4: limit the tracer flux so that 1) only down-gradient fluxes are applied, and 2) the flux cannot be larger than F_max, which is defined using the tracer gradient:</p>
+<p class="formulaDsp">
+\[ F_{max} = -0.2 \times [(V_R(k) \times \phi_R(k)) - (V_L(k) \times \phi_L(k))], \]
+</p>
+<p> where V is the cell volume. Why 0.2? t=0 t=inf 0 .2 0 1 0 .2.2.2 0 .2</p>
+<h2><a class="anchor" id="section_method2"></a>
+Along layer approach (Method #2)</h2>
+<p>This is a more straight forward method where diffusion is applied layer by layer using only information from neighboring cells.</p>
+<p>Step #1: compute vertical indices containing boundary layer (boundary_k_range). For the TOP boundary layer, these are:</p>
+<p>k_top, k_bot, zeta_top, zeta_bot</p>
+<p>Step #2: calculate the diffusive flux at each layer:</p>
+<p class="formulaDsp">
+\[ F_{k} = -KHTR \times h_{eff}(k) \times (\phi_R(k) - \phi_L(k)), \]
+</p>
+<p> where h_eff is the <a class="el" href="namespacemom__lateral__boundary__diffusion.html#section_harmonic_mean">harmonic mean</a> of the layer thickness in the left and right columns. Special care (layer reconstruction) must be taken at k_min = min(k_botL, k_bot_R). This method does not require a limiter since KHTR is already limted based on a diffusive CFL condition prior to the call of this module.</p>
+<h2><a class="anchor" id="section_harmonic_mean"></a>
+Harmonic Mean</h2>
+<p>The harmonic mean (HM) betwen h1 and h2 is defined as:</p>
+<p class="formulaDsp">
+\[ HM = \frac{2 \times h1 \times h2}{h1 + h2} \]
+</p>
+ </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Types</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">type &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmom__lateral__boundary__diffusion_1_1lateral__boundary__diffusion__cs.html">lateral_boundary_diffusion_cs</a></td></tr>
@@ -119,16 +175,16 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a764405ce85234799f6b81be25a8df1b7"><td class="memItemLeft" align="right" valign="top">real function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__lateral__boundary__diffusion.html#a764405ce85234799f6b81be25a8df1b7">bulk_average</a> (boundary, nk, deg, h, hBLT, phi, ppoly0_E, ppoly0_coefs, method, k_top, zeta_top, k_bot, zeta_bot)</td></tr>
 <tr class="separator:a764405ce85234799f6b81be25a8df1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c98f54ad462ab45918fdccc0b403948"><td class="memItemLeft" align="right" valign="top">real function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__lateral__boundary__diffusion.html#a6c98f54ad462ab45918fdccc0b403948">harmonic_mean</a> (h1, h2)</td></tr>
-<tr class="memdesc:a6c98f54ad462ab45918fdccc0b403948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the harmonic mean of two quantities See <a class="el" href="namespacemom__lbd.html#section_harmonic_mean">Harmonic Mean</a>.  <a href="namespacemom__lateral__boundary__diffusion.html#a6c98f54ad462ab45918fdccc0b403948">More...</a><br /></td></tr>
+<tr class="memdesc:a6c98f54ad462ab45918fdccc0b403948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the harmonic mean of two quantities See <a class="el" href="namespacemom__lateral__boundary__diffusion.html#section_harmonic_mean">Harmonic Mean</a>.  <a href="namespacemom__lateral__boundary__diffusion.html#a6c98f54ad462ab45918fdccc0b403948">More...</a><br /></td></tr>
 <tr class="separator:a6c98f54ad462ab45918fdccc0b403948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cd84e0a8f4ddaba3c8ece5f149c7a9f"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__lateral__boundary__diffusion.html#a9cd84e0a8f4ddaba3c8ece5f149c7a9f">boundary_k_range</a> (boundary, nk, h, hbl, k_top, zeta_top, k_bot, zeta_bot)</td></tr>
 <tr class="memdesc:a9cd84e0a8f4ddaba3c8ece5f149c7a9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the k-index range corresponding to the layers that are within the boundary-layer region.  <a href="namespacemom__lateral__boundary__diffusion.html#a9cd84e0a8f4ddaba3c8ece5f149c7a9f">More...</a><br /></td></tr>
 <tr class="separator:a9cd84e0a8f4ddaba3c8ece5f149c7a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35884fe17f3fd06e1a212f35a13041c1"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__lateral__boundary__diffusion.html#a35884fe17f3fd06e1a212f35a13041c1">fluxes_layer_method</a> (boundary, nk, deg, h_L, h_R, hbl_L, hbl_R, area_L, area_R, phi_L, phi_R, ppoly0_coefs_L, ppoly0_coefs_R, ppoly0_E_L, ppoly0_E_R, method, khtr_u, F_layer)</td></tr>
-<tr class="memdesc:a35884fe17f3fd06e1a212f35a13041c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the lateral boundary diffusive fluxes using the layer by layer method. See <a class="el" href="namespacemom__lbd.html#section_method2">Along layer approach (Method #2)</a>.  <a href="namespacemom__lateral__boundary__diffusion.html#a35884fe17f3fd06e1a212f35a13041c1">More...</a><br /></td></tr>
+<tr class="memdesc:a35884fe17f3fd06e1a212f35a13041c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the lateral boundary diffusive fluxes using the layer by layer method. See <a class="el" href="namespacemom__lateral__boundary__diffusion.html#section_method2">Along layer approach (Method #2)</a>.  <a href="namespacemom__lateral__boundary__diffusion.html#a35884fe17f3fd06e1a212f35a13041c1">More...</a><br /></td></tr>
 <tr class="separator:a35884fe17f3fd06e1a212f35a13041c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5482d0612f4d387c7bc9d11edd6f042"><td class="memItemLeft" align="right" valign="top">subroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__lateral__boundary__diffusion.html#ab5482d0612f4d387c7bc9d11edd6f042">fluxes_bulk_method</a> (boundary, nk, deg, h_L, h_R, hbl_L, hbl_R, area_L, area_R, phi_L, phi_R, ppoly0_coefs_L, ppoly0_coefs_R, ppoly0_E_L, ppoly0_E_R, method, khtr_u, F_bulk, F_layer, F_limit)</td></tr>
-<tr class="memdesc:ab5482d0612f4d387c7bc9d11edd6f042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the lateral boundary diffusive fluxes calculated from a 'bulk model' See <a class="el" href="namespacemom__lbd.html#section_method1">Bulk layer approach (Method #1)</a>.  <a href="namespacemom__lateral__boundary__diffusion.html#ab5482d0612f4d387c7bc9d11edd6f042">More...</a><br /></td></tr>
+<tr class="memdesc:ab5482d0612f4d387c7bc9d11edd6f042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the lateral boundary diffusive fluxes calculated from a 'bulk model' See <a class="el" href="namespacemom__lateral__boundary__diffusion.html#section_method1">Bulk layer approach (Method #1)</a>.  <a href="namespacemom__lateral__boundary__diffusion.html#ab5482d0612f4d387c7bc9d11edd6f042">More...</a><br /></td></tr>
 <tr class="separator:ab5482d0612f4d387c7bc9d11edd6f042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5590830aab282e34bcd5d4df052d4578"><td class="memItemLeft" align="right" valign="top">logical function, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemom__lateral__boundary__diffusion.html#a5590830aab282e34bcd5d4df052d4578">near_boundary_unit_tests</a> (verbose)</td></tr>
 <tr class="memdesc:a5590830aab282e34bcd5d4df052d4578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit tests for near-boundary horizontal mixing.  <a href="namespacemom__lateral__boundary__diffusion.html#a5590830aab282e34bcd5d4df052d4578">More...</a><br /></td></tr>
@@ -638,7 +694,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Apply the lateral boundary diffusive fluxes calculated from a 'bulk model' See <a class="el" href="namespacemom__lbd.html#section_method1">Bulk layer approach (Method #1)</a>. </p>
+<p>Apply the lateral boundary diffusive fluxes calculated from a 'bulk model' See <a class="el" href="namespacemom__lateral__boundary__diffusion.html#section_method1">Bulk layer approach (Method #1)</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">boundary</td><td>Which boundary layer SURFACE or BOTTOM [nondim] </td></tr>
@@ -988,7 +1044,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Calculate the lateral boundary diffusive fluxes using the layer by layer method. See <a class="el" href="namespacemom__lbd.html#section_method2">Along layer approach (Method #2)</a>. </p>
+<p>Calculate the lateral boundary diffusive fluxes using the layer by layer method. See <a class="el" href="namespacemom__lateral__boundary__diffusion.html#section_method2">Along layer approach (Method #2)</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">boundary</td><td>Which boundary layer SURFACE or BOTTOM [nondim] </td></tr>
@@ -1174,7 +1230,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Calculate the harmonic mean of two quantities See <a class="el" href="namespacemom__lbd.html#section_harmonic_mean">Harmonic Mean</a>. </p>
+<p>Calculate the harmonic mean of two quantities See <a class="el" href="namespacemom__lateral__boundary__diffusion.html#section_harmonic_mean">Harmonic Mean</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">h1</td><td>Scalar quantity </td></tr>
