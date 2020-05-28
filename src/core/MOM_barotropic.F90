@@ -642,7 +642,17 @@ subroutine btstep(U_in, V_in, eta_in, dt, bc_accel_u, bc_accel_v, forces, pbce, 
   integer :: is, ie, js, je, nz, Isq, Ieq, Jsq, Jeq
   integer :: isd, ied, jsd, jed, IsdB, IedB, JsdB, JedB
   integer :: ioff, joff
+ 
+  !SMP Temporary variables
+  !naming: use _gpu for these temps ex: "CS_q_gpu"
+  real, dimension(NIMEMBW_,NJMEMBW_) :: CS_q_D_gpu 
+  !real, dimension(SZIBW_(CS),SZJBW_(CS)) :: CS_q_gpu 
+  real, dimension(NIMEMBW_,NJMEMW_) ::  CS_D_u_Cor_gpu
+  real, dimension(NIMEMW_,NJMEMBW_) :: CS_D_v_Cor_gpu 
+  real, dimension(NIMEM_,NJMEM_) ::  G_bathyT_gpu, G_areaT_gpu, G_CoriolisBu_gpu
+  
 
+!NIMEM_,NJMEM_
   if (.not.associated(CS)) call MOM_error(FATAL, &
       "btstep: Module MOM_barotropic must be initialized before it is used.")
   if (.not.CS%split) return
@@ -801,37 +811,68 @@ subroutine btstep(U_in, V_in, eta_in, dt, bc_accel_u, bc_accel_v, forces, pbce, 
 ! barotropic momentum equations.  This has to be done quite early to start
 ! the halo update that needs to be completed before the next calculations.
   if (CS%linearized_BT_PV) then
+    print *, "First loop"
     !$OMP parallel do default(shared)
+    !SMP added temp variables
+    print *,"size of NIMEMBW_: ", NIMEMBW_
+    print *,"size of NJMEMBW_: ", NJMEMBW_ 
+    print *,"shape of CS_q_D_gpu: ", shape(CS_q_D_gpu) 
+    print *,"shape of CS%q_D: ", shape(CS%q_D)
+    CS_q_D_gpu=CS%q_D
+    print *,"SMP: 816: j=", jsvf-2-jevf+1, "i=",isvf-2-ievf+1
+    !$acc parallel loop collapse(2)
     do J=jsvf-2,jevf+1 ; do I=isvf-2,ievf+1
-      q(I,J) = CS%q_D(I,j)
+      q(I,J) = CS_q_D_gpu(I,j)
     enddo ; enddo
+    !$acc end parallel 
     !$OMP parallel do default(shared)
+    CS_D_u_Cor_gpu=CS%D_u_Cor
+    print *,"SMP: 824: j=", jsvf-1-jevf+1, "i=", isvf-2-ievf+1
+    !$acc parallel loop collapse(2) 
     do j=jsvf-1,jevf+1 ; do I=isvf-2,ievf+1
-      DCor_u(I,j) = CS%D_u_Cor(I,j)
+      DCor_u(I,j) = CS_D_u_Cor_gpu(I,j)
     enddo ; enddo
+    !$acc end parallel 
     !$OMP parallel do default(shared)
+    CS_D_v_Cor_gpu=CS%D_v_Cor
+    print *,"SMP: 832: j=", jsvf-2-jevf+1, "i=", isvf-1-ievf+1
+    !$acc parallel loop collapse(2) 
     do J=jsvf-2,jevf+1 ; do i=isvf-1,ievf+1
-      DCor_v(i,J) = CS%D_v_Cor(i,J)
+      DCor_v(i,J) = CS_D_v_Cor_gpu(i,J)
     enddo ; enddo
+    !$acc end parallel 
   else
+    print *, "Second Loop"
     q(:,:) = 0.0 ; DCor_u(:,:) = 0.0 ; DCor_v(:,:) = 0.0
     !  This option has not yet been written properly.
     !  ### bathyT here should be replaced with bathyT+eta(Bous) or eta(non-Bous).
     !$OMP parallel do default(shared)
+    G_bathyT_gpu=G%bathyT
+    print *,"SMP: 844: j=",js-je, "i=", is-1-ie
+    !$acc parallel loop collapse(2)
     do j=js,je ; do I=is-1,ie
-      DCor_u(I,j) = 0.5 * (G%bathyT(i+1,j) + G%bathyT(i,j))
+      DCor_u(I,j) = 0.5 * (G_bathyT_gpu(i+1,j) + G_bathyT_gpu(i,j))
     enddo ; enddo
+    !$acc end parallel 
     !$OMP parallel do default(shared)
+    print *,"SMP: 851: j=", js-1-je, "i=", is-ie
+    !$acc parallel loop collapse(2) 
     do J=js-1,je ; do i=is,ie
-      DCor_v(i,J) = 0.5 * (G%bathyT(i,j+1) + G%bathyT(i,j))
+      DCor_v(i,J) = 0.5 * (G_bathyT_gpu(i,j+1) + G_bathyT_gpu(i,j))
     enddo ; enddo
+    !$acc end parallel 
     !$OMP parallel do default(shared)
+    G_areaT_gpu=G%areaT
+    G_CoriolisBu_gpu=G%CoriolisBu
+    print *,"SMP: 860: j=",js-1-je, "i=", is-1-ie
+    !$acc parallel loop collapse(2) 
     do J=js-1,je ; do I=is-1,ie
-      q(I,J) = 0.25 * G%CoriolisBu(I,J) * &
-           ((G%areaT(i,j) + G%areaT(i+1,j+1)) + (G%areaT(i+1,j) + G%areaT(i,j+1))) / &
-           ((G%areaT(i,j) * G%bathyT(i,j) + G%areaT(i+1,j+1) * G%bathyT(i+1,j+1)) + &
-            (G%areaT(i+1,j) * G%bathyT(i+1,j) + G%areaT(i,j+1) * G%bathyT(i,j+1)) )
+      q(I,J) = 0.25 *  G_CoriolisBu_gpu(I,J) * &
+           ((G_areaT_gpu(i,j) + G_areaT_gpu(i+1,j+1)) + (G_areaT_gpu(i+1,j) + G_areaT_gpu(i,j+1))) / &
+           ((G_areaT_gpu(i,j) * G_bathyT_gpu(i,j) + G_areaT_gpu(i+1,j+1) * G_bathyT_gpu(i+1,j+1)) + &
+            (G_areaT_gpu(i+1,j) * G_bathyT_gpu(i+1,j) + G_areaT_gpu(i,j+1) * G_bathyT_gpu(i,j+1)) )
     enddo ; enddo
+    !$acc end parallel 
 
     ! With very wide halos, q and D need to be calculated on the available data
     ! domain and then updated onto the full computational domain.
@@ -915,8 +956,8 @@ subroutine btstep(U_in, V_in, eta_in, dt, bc_accel_u, bc_accel_v, forces, pbce, 
   ! including the viscous remnant.
   !$OMP parallel do default(shared)
   !SP added OpenACC loop directive
-  !$acc parallel loop
-  do j=js-1,je+1 ; do I=is-1,ie ; ubt_Cor(I,j) = 0.0 ; enddo ; enddo
+  !$acc parallel loop collapse(2)
+  do j=js-1,je+1 ; do I=is-1,ie ; ubt_Cor(I,j) = 0.0 ; enddo ; enddo 
   !$OMP parallel do default(shared)
   do J=js-1,je ; do i=is-1,ie+1 ; vbt_Cor(i,J) = 0.0 ; enddo ; enddo
   !$OMP parallel do default(shared)
@@ -933,14 +974,18 @@ subroutine btstep(U_in, V_in, eta_in, dt, bc_accel_u, bc_accel_v, forces, pbce, 
   ! locations of the faces to the pressure point.  They will have their halos
   ! updated later on.
   !$OMP parallel do default(shared)
+  !$acc parallel loop
   do j=js,je
+    !$acc loop
     do k=1,nz ; do I=is-1,ie
       gtot_E(i,j)   = gtot_E(i,j)   + pbce(i,j,k)   * wt_u(I,j,k)
       gtot_W(i+1,j) = gtot_W(i+1,j) + pbce(i+1,j,k) * wt_u(I,j,k)
     enddo ; enddo
   enddo
   !$OMP parallel do default(shared)
+  !$acc parallel loop
   do J=js-1,je
+     !$acc loop
      do k=1,nz ; do i=is,ie
       gtot_N(i,j)   = gtot_N(i,j)   + pbce(i,j,k)   * wt_v(i,J,k)
       gtot_S(i,j+1) = gtot_S(i,j+1) + pbce(i,j+1,k) * wt_v(i,J,k)
